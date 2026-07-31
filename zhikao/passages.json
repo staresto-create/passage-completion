@@ -1,0 +1,3637 @@
+[
+ {
+  "id": "z110",
+  "year": "110年",
+  "exam": "指考",
+  "examType": "正式考試",
+  "title": "110年 文意選填",
+  "titleStatus": "暫定，主題式標題待審定",
+  "blankCount": 10,
+  "optionCount": 12,
+  "eliminationValid": false,
+  "unusedOptions": [
+   "C",
+   "L"
+  ],
+  "blankRange": [
+   21,
+   30
+  ],
+  "options": {
+   "A": "recognized",
+   "B": "determine",
+   "C": "sound",
+   "D": "trouble",
+   "E": "comprehension",
+   "F": "ground",
+   "G": "right",
+   "H": "converse",
+   "I": "similar",
+   "J": "prestigious",
+   "K": "distinguish",
+   "L": "particular"
+  },
+  "flagNote": null,
+  "sourceNote": null,
+  "paras": [
+   {
+    "label": null,
+    "segs": [
+     [
+      "Some people say that Cantonese is a dialect of Chinese. Others insist that it is a language in its own ",
+      null
+     ],
+     [
+      "21",
+      "blank"
+     ],
+     [
+      " . Who is correct? How do dialects differ from languages?",
+      null
+     ]
+    ]
+   },
+   {
+    "label": null,
+    "segs": [
+     [
+      "Two kinds of criteria are used to ",
+      null
+     ],
+     [
+      "22",
+      "blank"
+     ],
+     [
+      " languages from dialects. The first are social and political: In this view, “languages” are typically written, official, and ",
+      null
+     ],
+     [
+      "23",
+      "blank"
+     ],
+     [
+      " , whereas “dialects” are mostly spoken, unofficial, and looked down upon. As a saying goes, “A language is a dialect with an army and a navy.” This implies that a powerful group of people like an army or a government can ",
+      null
+     ],
+     [
+      "24",
+      "blank"
+     ],
+     [
+      " which dialect is chosen as the official language of a state.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": null,
+    "segs": [
+     [
+      "Linguists have a different criterion: If two kinds of speech are so ",
+      null
+     ],
+     [
+      "25",
+      "blank"
+     ],
+     [
+      " in grammar, vocabulary, and pronunciation that their speakers can understand each other, they are regarded as dialects of a single language. On the other hand, if ",
+      null
+     ],
+     [
+      "26",
+      "blank"
+     ],
+     [
+      " is difficult or even impossible, they are different languages. On this ",
+      null
+     ],
+     [
+      "27",
+      "blank"
+     ],
+     [
+      " , Mexican Spanish and Argentine Spanish are dialects of the same language (Spanish). Speakers of these dialects normally have little ",
+      null
+     ],
+     [
+      "28",
+      "blank"
+     ],
+     [
+      " communicating with each other. Cantonese, on the other hand, is not considered a dialect of Chinese because speakers of the two languages can hardly ",
+      null
+     ],
+     [
+      "29",
+      "blank"
+     ],
+     [
+      " with each other. This criterion of mutual understandability, though objective, can annoy nationalists. For example, Danes and Norwegians have no difficulty understanding each other, making Danish and Norwegian ",
+      null
+     ],
+     [
+      "30",
+      "blank"
+     ],
+     [
+      " as dialects of the same language. Yet, few Danes or Norwegians would actually feel happy about this classification.",
+      null
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "id": "z109",
+  "year": "109年",
+  "exam": "指考",
+  "examType": "正式考試",
+  "title": "109年 文意選填",
+  "titleStatus": "暫定，主題式標題待審定",
+  "blankCount": 10,
+  "optionCount": 12,
+  "eliminationValid": false,
+  "unusedOptions": [
+   "C",
+   "E"
+  ],
+  "blankRange": [
+   21,
+   30
+  ],
+  "options": {
+   "A": "keen",
+   "B": "breed",
+   "C": "release",
+   "D": "banned",
+   "E": "supportive",
+   "F": "imprisonment",
+   "G": "illness",
+   "H": "separated",
+   "I": "nickname",
+   "J": "effective",
+   "K": "pleaded",
+   "L": "privilege"
+  },
+  "flagNote": null,
+  "sourceNote": null,
+  "paras": [
+   {
+    "label": null,
+    "segs": [
+     [
+      "Robert Stroud (1890－1963) was an American prisoner who reared and sold birds and became an ornithologist while in prison. He became known as the “Birdman of Alcatraz.” Despite this ",
+      null
+     ],
+     [
+      "21",
+      "blank"
+     ],
+     [
+      " , he actually kept birds only at Leavenworth Prison, before he was transferred to Alcatraz.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": null,
+    "segs": [
+     [
+      "Stroud is one of the most notorious criminals in American history. He was convicted of first-degree murder and sentenced to death by hanging in 1916. His mother desperately ",
+      null
+     ],
+     [
+      "22",
+      "blank"
+     ],
+     [
+      " for his life. Finally, in 1920, President Woodrow Wilson changed his death sentence to life ",
+      null
+     ],
+     [
+      "23",
+      "blank"
+     ],
+     [
+      " without parole. But because of Stroud’s unpredictable and violent outbursts, the warden directed that Stroud be placed in a ",
+      null
+     ],
+     [
+      "24",
+      "blank"
+     ],
+     [
+      " unit to live out his sentence in total isolation.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": null,
+    "segs": [
+     [
+      "While at Leavenworth (1912－1942), Stroud developed a ",
+      null
+     ],
+     [
+      "25",
+      "blank"
+     ],
+     [
+      " interest in birds after finding an injured sparrow in the prison yard. He was given a special right to ",
+      null
+     ],
+     [
+      "26",
+      "blank"
+     ],
+     [
+      " birds and maintain a lab inside his two prison cells. It was felt that this activity would allow for productive use of his time. As a result of this ",
+      null
+     ],
+     [
+      "27",
+      "blank"
+     ],
+     [
+      " , Stroud was able to author two books on canaries and their diseases. He had raised nearly 300 birds in his cells, carefully studying their habits and physiology. He even developed and marketed medicines for various kinds of bird ",
+      null
+     ],
+     [
+      "28",
+      "blank"
+     ],
+     [
+      " . Although it is widely debated whether the remedies he developed were ",
+      null
+     ],
+     [
+      "29",
+      "blank"
+     ],
+     [
+      " , Stroud was able to make scientific observations that would later benefit research on the canary species.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": null,
+    "segs": [
+     [
+      "In 1942, Stroud was transferred to Alcatraz. He spent the next seventeen years there, but was not allowed to keep pets. While there, he wrote two more manuscripts, but these were never published because it was ",
+      null
+     ],
+     [
+      "30",
+      "blank"
+     ],
+     [
+      " by the prison authorities. In 1963, he died in a medical center in Missouri.",
+      null
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "id": "z109b",
+  "year": "109年補考",
+  "exam": "指考",
+  "examType": "補考",
+  "title": "109年補考 文意選填",
+  "titleStatus": "暫定，主題式標題待審定",
+  "blankCount": 10,
+  "optionCount": 12,
+  "eliminationValid": false,
+  "unusedOptions": [
+   "B",
+   "C"
+  ],
+  "blankRange": [
+   21,
+   30
+  ],
+  "options": {
+   "A": "act",
+   "B": "follow",
+   "C": "managing",
+   "D": "disappointing",
+   "E": "protection",
+   "F": "dismiss",
+   "G": "delicate",
+   "H": "founded",
+   "I": "expanded",
+   "J": "accidental",
+   "K": "reduce",
+   "L": "addicted"
+  },
+  "flagNote": null,
+  "sourceNote": null,
+  "paras": [
+   {
+    "label": null,
+    "segs": [
+     [
+      "Bubble wrap, a sheet of thin plastic filled with air bubbles, is one of the most common packing materials. Before it was invented, people used balled-up newspaper to safeguard items during shipping. But it was messy and didn’t offer that much ",
+      null
+     ],
+     [
+      "21",
+      "blank"
+     ],
+     [
+      " . Bubble wrap solved these problems and was a “godsend” for the shipping industry. However, the invention of bubble wrap was actually quite ",
+      null
+     ],
+     [
+      "22",
+      "blank"
+     ],
+     [
+      " .",
+      null
+     ]
+    ]
+   },
+   {
+    "label": null,
+    "segs": [
+     [
+      "Originally, bubble wrap was created in the late 1950s by two engineers for use as a wallpaper that would appeal to the young postwar generation. They placed two pieces of plastic shower curtain through a heat-sealing machine to create the texture. But the result was ",
+      null
+     ],
+     [
+      "23",
+      "blank"
+     ],
+     [
+      " . What turned out was only a plastic sheet with trapped air bubbles in it, far from the material they had intended to produce.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": null,
+    "segs": [
+     [
+      "However, the inventors did not totally ",
+      null
+     ],
+     [
+      "24",
+      "blank"
+     ],
+     [
+      " their failed product. They found that their invention could have a different use. The air bubbles created excellent cushions to ",
+      null
+     ],
+     [
+      "25",
+      "blank"
+     ],
+     [
+      " shock, perfect for packaging and shipping fragile items. To market this invention, the two engineers ",
+      null
+     ],
+     [
+      "26",
+      "blank"
+     ],
+     [
+      " a company in 1960 and named their product Bubble Wrap. Meanwhile, IBM, the leading computer maker at the time, needed a safe way of packing their ",
+      null
+     ],
+     [
+      "27",
+      "blank"
+     ],
+     [
+      " electronic devices for transit. They found bubble wrap to be the answer to their problem. That opened the door for a lot of other businesses to start using bubble wrap. During the 1970s and 1980s, the company branched into creating more packing products. Bubble wrap has since evolved into different shapes, sizes, and thicknesses for ",
+      null
+     ],
+     [
+      "28",
+      "blank"
+     ],
+     [
+      " applications.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": null,
+    "segs": [
+     [
+      "Besides using it for shipping, people find great joy in popping those air-filled pockets. Some are even ",
+      null
+     ],
+     [
+      "29",
+      "blank"
+     ],
+     [
+      " to doing it—always needing to have just one more pop. Scientific research has found an explanation for this phenomenon: The simple ",
+      null
+     ],
+     [
+      "30",
+      "blank"
+     ],
+     [
+      " of popping helps to release muscle tension and take the mind off a stressful situation. From packing material to a therapeutic tool, bubble wrap has come a long way since its original purpose as wallpaper.",
+      null
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "id": "z108",
+  "year": "108年",
+  "exam": "指考",
+  "examType": "正式考試",
+  "title": "108年 文意選填",
+  "titleStatus": "暫定，主題式標題待審定",
+  "blankCount": 10,
+  "optionCount": 12,
+  "eliminationValid": false,
+  "unusedOptions": [
+   "F",
+   "I"
+  ],
+  "blankRange": [
+   21,
+   30
+  ],
+  "options": {
+   "A": "delight",
+   "B": "explorations",
+   "C": "turn",
+   "D": "surprised",
+   "E": "imported",
+   "F": "over-emphasized",
+   "G": "artistic",
+   "H": "hidden",
+   "I": "foundations",
+   "J": "materials",
+   "K": "house",
+   "L": "ever-changing"
+  },
+  "flagNote": null,
+  "sourceNote": null,
+  "paras": [
+   {
+    "label": null,
+    "segs": [
+     [
+      "The Getty Center sits more than 800 feet above sea level, towering above the city of Los Angeles. A 0.75-mile-long tramway takes visitors to the top of the hill. At the top, four exhibit pavilions and a visitor center form the heart of an eleven-building complex. The museum was originally constructed to ",
+      null
+     ],
+     [
+      "21",
+      "blank"
+     ],
+     [
+      " the vast art collection belonging to oil tycoon J. Paul Getty. Today, it is stocked with so many art works that the exhibit arenas can show just a part of them at a time, making the ",
+      null
+     ],
+     [
+      "22",
+      "blank"
+     ],
+     [
+      " special exhibitions a highlight of any visit to the Getty.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": null,
+    "segs": [
+     [
+      "The Center's award-winning architect, Richard Meier, did an outstanding job of creating a public space that has ",
+      null
+     ],
+     [
+      "23",
+      "blank"
+     ],
+     [
+      " many visitors. Visitors go to the Getty thinking they are visiting a museum with works of art on the inside. What they discover instead is a work of art with a museum inside. The idea is interesting: The outdoor space can be a completely satisfying ",
+      null
+     ],
+     [
+      "24",
+      "blank"
+     ],
+     [
+      " experience.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": null,
+    "segs": [
+     [
+      "Meier took a few basic ",
+      null
+     ],
+     [
+      "25",
+      "blank"
+     ],
+     [
+      " : metal, stone and glass. Working with a billion-dollar budget, he combined them to create a work of architecture that can excite visitors as much as the art collection inside does. Around every corner and at every ",
+      null
+     ],
+     [
+      "26",
+      "blank"
+     ],
+     [
+      " , there is a new view to enchant guests. And then, just when they think they have seen it all, a new fountain or landscape pops up.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": null,
+    "segs": [
+     [
+      "The building stone is travertine, ",
+      null
+     ],
+     [
+      "27",
+      "blank"
+     ],
+     [
+      " from Italy, the same source as for the historic buildings in Rome. A special cutting process exposes the fossils long buried inside the stone, which reveals the delicate treasures ",
+      null
+     ],
+     [
+      "28",
+      "blank"
+     ],
+     [
+      " under the rough surface. Some of them are set as “feature” stones scattered about the site, waiting to ",
+      null
+     ],
+     [
+      "29",
+      "blank"
+     ],
+     [
+      " those who find them. The most fantastic one is on the arrival plaza wall, across from the tram station.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": null,
+    "segs": [
+     [
+      "In addition to museum tours, the Getty also provides various free on-site tours, including tours of the gardens. These ",
+      null
+     ],
+     [
+      "30",
+      "blank"
+     ],
+     [
+      " are a must for anyone interested in learning more about Meier's techniques and ideas.",
+      null
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "id": "z107",
+  "year": "107年",
+  "exam": "指考",
+  "examType": "正式考試",
+  "title": "107年 文意選填",
+  "titleStatus": "暫定，主題式標題待審定",
+  "blankCount": 10,
+  "optionCount": 12,
+  "eliminationValid": false,
+  "unusedOptions": [
+   "G",
+   "L"
+  ],
+  "blankRange": [
+   21,
+   30
+  ],
+  "options": {
+   "A": "spread",
+   "B": "culture",
+   "C": "trapped",
+   "D": "adored",
+   "E": "alive",
+   "F": "monopoly",
+   "G": "delicious",
+   "H": "illegal",
+   "I": "supply",
+   "J": "wealthier",
+   "K": "evidence",
+   "L": "treated"
+  },
+  "flagNote": null,
+  "sourceNote": null,
+  "paras": [
+   {
+    "label": null,
+    "segs": [
+     [
+      "Aquaculture is the farming of any aquatic plant or animal. Aquaculture is of great importance because it reduces the possibility of over fishing wild fish, and also improves the quality and increases the ",
+      null
+     ],
+     [
+      "21",
+      "blank"
+     ],
+     [
+      " of fish for human consumption.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": null,
+    "segs": [
+     [
+      "Ancient civilizations throughout the world engaged in different types of fish farming. The indigenous people in Australia are believed to have raised eels as early as 6000 BC. Abundant ",
+      null
+     ],
+     [
+      "22",
+      "blank"
+     ],
+     [
+      " indicates they developed volcanic floodplains near Lake Condah into channels and dams, then captured eels and preserved them to eat all year round. The earliest records of fish ",
+      null
+     ],
+     [
+      "23",
+      "blank"
+     ],
+     [
+      " , however, are from China, where the practice was in wide use around 2500 BC. When the waters subsided after river floods, some fish, mainly carp, were ",
+      null
+     ],
+     [
+      "24",
+      "blank"
+     ],
+     [
+      " in lakes. Early fish farmers then fed their brood using nymphs and silkworm feces, and ate them afterwards.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": null,
+    "segs": [
+     [
+      "In Europe, aquaculture first began in ancient Rome. The Romans, who ",
+      null
+     ],
+     [
+      "25",
+      "blank"
+     ],
+     [
+      " sea fish and oysters, created oyster farms which were similar to swimming pools. Fish and crustaceans (such as shrimps and crabs) caught in lagoons were kept ",
+      null
+     ],
+     [
+      "26",
+      "blank"
+     ],
+     [
+      " in these pools until it was time to eat them. The farms were often built inside ",
+      null
+     ],
+     [
+      "27",
+      "blank"
+     ],
+     [
+      " homes, where well-to-do families could invite their guests over and choose the fish they wished to eat. This Roman tradition was later adopted by Christian monasteries in central Europe.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": null,
+    "segs": [
+     [
+      "During the Middle Ages, aquaculture ",
+      null
+     ],
+     [
+      "28",
+      "blank"
+     ],
+     [
+      " in Europe, since far away from the seacoasts and the big rivers, fish had to be salted so they did not rot. Throughout feudal Europe, monastic orders and the aristocracy were the main users of freshwater fish, for they had a ",
+      null
+     ],
+     [
+      "29",
+      "blank"
+     ],
+     [
+      " over the land, forests, and water courses while the common people could seldom build ponds of their own. As with hunting, ",
+      null
+     ],
+     [
+      "30",
+      "blank"
+     ],
+     [
+      " fishing was severely punished and the less well-off would have to wait a few centuries before fresh fish was served on their plates.",
+      null
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "id": "z106",
+  "year": "106年",
+  "exam": "指考",
+  "examType": "正式考試",
+  "title": "106年 文意選填",
+  "titleStatus": "暫定，主題式標題待審定",
+  "blankCount": 10,
+  "optionCount": 12,
+  "eliminationValid": false,
+  "unusedOptions": [
+   "A",
+   "E"
+  ],
+  "blankRange": [
+   21,
+   30
+  ],
+  "options": {
+   "A": "provokes",
+   "B": "exotic",
+   "C": "delicacy",
+   "D": "dates back",
+   "E": "refreshed",
+   "F": "implies",
+   "G": "appetizing",
+   "H": "mixture",
+   "I": "goes by",
+   "J": "unchanged",
+   "K": "challenge",
+   "L": "favor"
+  },
+  "flagNote": null,
+  "sourceNote": null,
+  "paras": [
+   {
+    "label": null,
+    "segs": [
+     [
+      "Hundreds of years ago, a savory idea—called the century egg—was hatched in rural China. As the story goes, a farmer found naturally preserved duck eggs in a muddy pool of water and slaked lime. After surviving a tasting, he set out to replicate them manually, resulting in a ",
+      null
+     ],
+     [
+      "21",
+      "blank"
+     ],
+     [
+      " that would endure for centuries as a comfort food in Hong Kong, China and parts of Southeast Asia.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": null,
+    "segs": [
+     [
+      "Though details of the century egg’s discovery are undocumented, scientists estimate that it ",
+      null
+     ],
+     [
+      "22",
+      "blank"
+     ],
+     [
+      " more than 500 years to the Ming Dynasty. And aside from some techniques used for large-scale production today, the egg preservation process has remained relatively ",
+      null
+     ],
+     [
+      "23",
+      "blank"
+     ],
+     [
+      " .",
+      null
+     ]
+    ]
+   },
+   {
+    "label": null,
+    "segs": [
+     [
+      "To make the eggs, a vat is typically filled with a combination of strong black tea, lime, salt and freshly burned wood ashes, and left to cool overnight. The next day, duck, quail, or chicken eggs are added to the ",
+      null
+     ],
+     [
+      "24",
+      "blank"
+     ],
+     [
+      " . Then they soak anywhere from seven weeks to five months—not for a century as the name ",
+      null
+     ],
+     [
+      "25",
+      "blank"
+     ],
+     [
+      " .",
+      null
+     ]
+    ]
+   },
+   {
+    "label": null,
+    "segs": [
+     [
+      "The century egg also ",
+      null
+     ],
+     [
+      "26",
+      "blank"
+     ],
+     [
+      " many other names, such as hundred-year egg, thousand-year egg, or millennium egg. But no matter what it’s called, this common snack has a rather uncommon taste and is often grouped by travelers with other ",
+      null
+     ],
+     [
+      "27",
+      "blank"
+     ],
+     [
+      " Asian foods such as chicken feet or snake soup. Getting beyond the egg’s appearance is the first ",
+      null
+     ],
+     [
+      "28",
+      "blank"
+     ],
+     [
+      " . Instead of being white with a bright orange yolk, the jelly- like egg takes on a less ",
+      null
+     ],
+     [
+      "29",
+      "blank"
+     ],
+     [
+      " dark brown and swampy green hue. There’s also a pungent ammonia-like odor to contend with, which has earned the snack yet another nickname: the “horse urine egg.”",
+      null
+     ]
+    ]
+   },
+   {
+    "label": null,
+    "segs": [
+     [
+      "While the century egg draws a following from older generations and curious travelers, it is falling out of ",
+      null
+     ],
+     [
+      "30",
+      "blank"
+     ],
+     [
+      " with the younger set, who are weary of China’s preserved and fermented foods. The future of the humble snack is uncertain, but chefs in Chinese restaurants are still trying to preserve this nostalgic bite of culinary heritage.",
+      null
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "id": "zref107",
+  "year": "107年起施測參考試卷",
+  "exam": "指考",
+  "examType": "參考試卷",
+  "title": "107年起施測參考試卷 文意選填",
+  "titleStatus": "暫定，主題式標題待審定",
+  "blankCount": 10,
+  "optionCount": 12,
+  "eliminationValid": false,
+  "unusedOptions": [
+   "A",
+   "I"
+  ],
+  "blankRange": [
+   21,
+   30
+  ],
+  "options": {
+   "A": "attracted",
+   "B": "appeal",
+   "C": "accompanied",
+   "D": "conduct",
+   "E": "director",
+   "F": "figures",
+   "G": "occasions",
+   "H": "succeed",
+   "I": "transparent",
+   "J": "supporting",
+   "K": "techniques",
+   "L": "worship"
+  },
+  "flagNote": "本篇與 101 年指考文意選填為同一組題目：空格、選項、答案完全相同，正文僅第四段少了 processions and 共 16 個字元。兩份都收錄，練過其中一份再練另一份不會有新的收穫。",
+  "sourceNote": "本篇出自大考中心公布的參考試卷，不是正式考試的試題，沒有考生作答資料。",
+  "paras": [
+   {
+    "label": null,
+    "segs": [
+     [
+      "The Taiwanese puppet show (“Budaixi”) is a distinguished form of performing arts in Taiwan. Although basically hand puppets, the ",
+      null
+     ],
+     [
+      "21",
+      "blank"
+     ],
+     [
+      " appear as complete forms, with hands and feet, on an elaborately decorated stage.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": null,
+    "segs": [
+     [
+      "The puppet performance is typically ",
+      null
+     ],
+     [
+      "22",
+      "blank"
+     ],
+     [
+      " by a small orchestra. The backstage music is directed by the drum player. The drummer needs to pay attention to what is going on in the plot and follow the rhythm of the characters. He also uses the drum to ",
+      null
+     ],
+     [
+      "23",
+      "blank"
+     ],
+     [
+      " the other musicians. There are generally around four to five musicians who perform the backstage music. The form of music used is often associated with various performance ",
+      null
+     ],
+     [
+      "24",
+      "blank"
+     ],
+     [
+      " , including acrobatics and skills like window-jumping, stage movement, and fighting. Sometimes unusual animal puppets also appear on stage for extra ",
+      null
+     ],
+     [
+      "25",
+      "blank"
+     ],
+     [
+      " , especially for children in the audience.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": null,
+    "segs": [
+     [
+      "In general, a show needs two performers. The main performer is generally the chief or ",
+      null
+     ],
+     [
+      "26",
+      "blank"
+     ],
+     [
+      " of the troupe. He is the one in charge of the whole show, manipulating the main puppets, singing, and narrating. The ",
+      null
+     ],
+     [
+      "27",
+      "blank"
+     ],
+     [
+      " performer manipulates the puppets to coordinate with the main performer. He also changes the costumes of the puppets, and takes care of the stage. The relationship between the main performer and his partner is one of master and apprentice. Frequently, the master trains his sons to eventually ",
+      null
+     ],
+     [
+      "28",
+      "blank"
+     ],
+     [
+      " him as puppet masters.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": null,
+    "segs": [
+     [
+      "Budaixi troupes are often hired to perform at festivals held in honor of local gods, and on happy ",
+      null
+     ],
+     [
+      "29",
+      "blank"
+     ],
+     [
+      " such as weddings, births, and promotions. The main purpose of Budaixi is to ",
+      null
+     ],
+     [
+      "30",
+      "blank"
+     ],
+     [
+      " and offer thanks to the deities. The shows also serve as a popular means of folk entertainment.",
+      null
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "id": "z105",
+  "year": "105年",
+  "exam": "指考",
+  "examType": "正式考試",
+  "title": "105年 文意選填",
+  "titleStatus": "暫定，主題式標題待審定",
+  "blankCount": 10,
+  "optionCount": 12,
+  "eliminationValid": false,
+  "unusedOptions": [
+   "C",
+   "L"
+  ],
+  "blankRange": [
+   21,
+   30
+  ],
+  "options": {
+   "A": "movable",
+   "B": "installed",
+   "C": "diversified",
+   "D": "problem",
+   "E": "aged",
+   "F": "planning",
+   "G": "measured",
+   "H": "constructing",
+   "I": "exact",
+   "J": "deteriorating",
+   "K": "statue",
+   "L": "religious"
+  },
+  "flagNote": null,
+  "sourceNote": null,
+  "paras": [
+   {
+    "label": null,
+    "segs": [
+     [
+      "The Great Sphinx in the Giza desert is a mythological creature with the body of a lion and the head of a human being. This monumental ",
+      null
+     ],
+     [
+      "21",
+      "blank"
+     ],
+     [
+      " is often regarded as a national symbol of Egypt, having guarded the famous Egyptian pyramids for 4,000 years. Nevertheless, the stone creature does not look like it did 4,000 years ago; wind, water, pollution, and human contact have slowly ",
+      null
+     ],
+     [
+      "22",
+      "blank"
+     ],
+     [
+      " the rock. Scientists are now trying to restore it. They not only want it to look like it did when it was first built but also are looking for ways to keep it from ",
+      null
+     ],
+     [
+      "23",
+      "blank"
+     ],
+     [
+      " more than it has.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": null,
+    "segs": [
+     [
+      "Fixing the Sphinx, however, is not an easy job. It takes several years of ",
+      null
+     ],
+     [
+      "24",
+      "blank"
+     ],
+     [
+      " before the work begins. Each stone in the Sphinx is carefully ",
+      null
+     ],
+     [
+      "25",
+      "blank"
+     ],
+     [
+      " . Scientists use computers to help figure out the size and shape of each stone. Each old stone is given a number. Then, one by one, replacement stones are carved by hand, just like people did long ago, in the ",
+      null
+     ],
+     [
+      "26",
+      "blank"
+     ],
+     [
+      " sizes and shapes as the ones they are replacing. When the new stones are ready, they are ",
+      null
+     ],
+     [
+      "27",
+      "blank"
+     ],
+     [
+      " and the worn ones removed.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": null,
+    "segs": [
+     [
+      "Scientists are also worried about how to keep the Sphinx from falling apart again. They have talked about ",
+      null
+     ],
+     [
+      "28",
+      "blank"
+     ],
+     [
+      " a wall around the Sphinx to protect it from the wind and sand, or perhaps covering it completely with a glass pyramid. Some think that burying part of it in the sand would serve the purpose. One scientist has even suggested building a ",
+      null
+     ],
+     [
+      "29",
+      "blank"
+     ],
+     [
+      " shelter to protect it at night and during bad weather. The walls of the shelter could be retracted into the ground during the day so that visitors could see the Sphinx.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": null,
+    "segs": [
+     [
+      "There are no easy solutions to the ",
+      null
+     ],
+     [
+      "30",
+      "blank"
+     ],
+     [
+      " , not to mention solutions that are agreeable to all parties. The one thing that is agreed upon is that something needs to be done to protect this ancient sculpture.",
+      null
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "id": "z104",
+  "year": "104年",
+  "exam": "指考",
+  "examType": "正式考試",
+  "title": "104年 文意選填",
+  "titleStatus": "暫定，主題式標題待審定",
+  "blankCount": 10,
+  "optionCount": 12,
+  "eliminationValid": false,
+  "unusedOptions": [
+   "B",
+   "F"
+  ],
+  "blankRange": [
+   21,
+   30
+  ],
+  "options": {
+   "A": "military",
+   "B": "crisis",
+   "C": "harder",
+   "D": "wider",
+   "E": "deadly",
+   "F": "come across",
+   "G": "shipments",
+   "H": "infected",
+   "I": "preceded",
+   "J": "warn",
+   "K": "accelerated",
+   "L": "sweep through"
+  },
+  "flagNote": null,
+  "sourceNote": null,
+  "paras": [
+   {
+    "label": null,
+    "segs": [
+     [
+      "The 1918 influenza epidemic, which occurred during World War I, was one of the most devastating health crises of the 20th century. Between September 1918 and June 1919, more than 600,000 Americans died of influenza and pneumonia, making the epidemic far more ",
+      null
+     ],
+     [
+      "21",
+      "blank"
+     ],
+     [
+      " than the war itself. The influenza hit Americans in two waves. The first wave attacked the army camps and was less fatal than the second. The second wave arrived in the port city of Boston in September 1918 with war ",
+      null
+     ],
+     [
+      "22",
+      "blank"
+     ],
+     [
+      " of machinery and supplies. Other wartime events enabled the disease to ",
+      null
+     ],
+     [
+      "23",
+      "blank"
+     ],
+     [
+      " the country quickly. As men across the nation were joining the ",
+      null
+     ],
+     [
+      "24",
+      "blank"
+     ],
+     [
+      " to serve the country, they brought the virus with them everywhere they went. In October 1918 alone, the virus killed almost 200,000. In the following month, the end of World War I resulted in an even ",
+      null
+     ],
+     [
+      "25",
+      "blank"
+     ],
+     [
+      " spread of the disease. The celebration of the end of the war with parades and parties was a complete disaster from the standpoint of public health. This ",
+      null
+     ],
+     [
+      "26",
+      "blank"
+     ],
+     [
+      " the spread of the disease in some cities. The flu that winter was destructive beyond imagination as millions were ",
+      null
+     ],
+     [
+      "27",
+      "blank"
+     ],
+     [
+      " and thousands died. In fact, it caused many more deaths than any of the other epidemics which had ",
+      null
+     ],
+     [
+      "28",
+      "blank"
+     ],
+     [
+      " it.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": null,
+    "segs": [
+     [
+      "Medical scientists ",
+      null
+     ],
+     [
+      "29",
+      "blank"
+     ],
+     [
+      " that another epidemic will attack people at some point in the future. Today’s worldwide transportation makes it even ",
+      null
+     ],
+     [
+      "30",
+      "blank"
+     ],
+     [
+      " to control an epidemic. Therefore, doctors advise that we continue to get our annual flu shots in order to stay healthy.",
+      null
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "id": "z103",
+  "year": "103年",
+  "exam": "指考",
+  "examType": "正式考試",
+  "title": "103年 文意選填",
+  "titleStatus": "暫定，主題式標題待審定",
+  "blankCount": 10,
+  "optionCount": 12,
+  "eliminationValid": false,
+  "unusedOptions": [
+   "B",
+   "E"
+  ],
+  "blankRange": [
+   21,
+   30
+  ],
+  "options": {
+   "A": "replaced",
+   "G": "collected",
+   "B": "mortal",
+   "H": "purchase",
+   "C": "spirit",
+   "I": "alive",
+   "D": "available",
+   "J": "needs",
+   "E": "journey",
+   "K": "limited",
+   "F": "luxurious",
+   "L": "images"
+  },
+  "flagNote": null,
+  "sourceNote": null,
+  "paras": [
+   {
+    "label": null,
+    "segs": [
+     [
+      "The practice of burning paper money or paper model offerings at funerals in Chinese society can be traced back to the Tang dynasty (618-907 AD). Chinese people believe that when someone passes away, there is a death of the body, but the ",
+      null
+     ],
+     [
+      "21",
+      "blank"
+     ],
+     [
+      " continues to live in the next world. This “next world” is a mirror of the human world, where the “residents” need places to live, money to spend, daily necessities, and entertainment just like when they were ",
+      null
+     ],
+     [
+      "22",
+      "blank"
+     ],
+     [
+      " . Some of these necessities are buried with the deceased, while most others are “shipped” to them by burning paper models. As the ashes fly high, the offerings are ",
+      null
+     ],
+     [
+      "23",
+      "blank"
+     ],
+     [
+      " by the residents in the next world.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": null,
+    "segs": [
+     [
+      "Relatives of the deceased want to see their beloved family members live comfortably in the next world, so the paper houses are big and the cars are very ",
+      null
+     ],
+     [
+      "24",
+      "blank"
+     ],
+     [
+      " , mostly Mercedes-Benzes. A complete package of paper offerings may include a couple of servants, cash, and credit cards so that the deceased will have all their ",
+      null
+     ],
+     [
+      "25",
+      "blank"
+     ],
+     [
+      " satisfied.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": null,
+    "segs": [
+     [
+      "These traditional paper offerings were sold only at specialty stores in the past. The style and variety of the products were ",
+      null
+     ],
+     [
+      "26",
+      "blank"
+     ],
+     [
+      " . For example, “houses” looked all the same and were built by pasting paper around a bamboo frame, with ",
+      null
+     ],
+     [
+      "27",
+      "blank"
+     ],
+     [
+      " of a door, windows, and a roof printed on it. There were no trendy, modern supplies to choose from. Now, the ",
+      null
+     ],
+     [
+      "28",
+      "blank"
+     ],
+     [
+      " can be made on the Internet. And with the incorporation of new materials and designs, paper offerings come in many more varieties. The old one-style-fits-all houses have been ",
+      null
+     ],
+     [
+      "29",
+      "blank"
+     ],
+     [
+      " by buildings that are fully equipped with decorations, furniture, and household appliances. Digital cameras, iPhones, and even skin care products are also ",
+      null
+     ],
+     [
+      "30",
+      "blank"
+     ],
+     [
+      " . It seems that, with the help of a simple click, this old Chinese tradition has been given a face-lift.",
+      null
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "id": "z102",
+  "year": "102年",
+  "exam": "指考",
+  "examType": "正式考試",
+  "title": "102年 文意選填",
+  "titleStatus": "暫定，主題式標題待審定",
+  "blankCount": 10,
+  "optionCount": 12,
+  "eliminationValid": false,
+  "unusedOptions": [
+   "D",
+   "J"
+  ],
+  "blankRange": [
+   21,
+   30
+  ],
+  "options": {
+   "A": "breath",
+   "G": "moisture",
+   "B": "careful",
+   "H": "offer",
+   "C": "check in",
+   "I": "purpose",
+   "D": "deposit",
+   "J": "sufficient",
+   "E": "frozen",
+   "K": "warm up",
+   "F": "impossible",
+   "L": "withstand"
+  },
+  "flagNote": null,
+  "sourceNote": null,
+  "paras": [
+   {
+    "label": null,
+    "segs": [
+     [
+      "People who want to experience an overnight stay in arctic-like cold may try the ice hotel—a building of frozen water. Despite the seemingly unattractive prospect of sleeping in a room at minus 15 degrees Celsius, every year about 4,000 people ",
+      null
+     ],
+     [
+      "21",
+      "blank"
+     ],
+     [
+      " to an ice hotel in a town in Canada.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": null,
+    "segs": [
+     [
+      "The only warm things at the ice hotel are the candles on the bedside tables. The air is so cold that you can see your ",
+      null
+     ],
+     [
+      "22",
+      "blank"
+     ],
+     [
+      " , which turns to liquid and appears as tiny droplets at the opening of your sleeping bag. The tip of your nose feels numb—almost as though it were ",
+      null
+     ],
+     [
+      "23",
+      "blank"
+     ],
+     [
+      " . Getting up for a little while—to drink a glass of water or go to the bathroom—seems ",
+      null
+     ],
+     [
+      "24",
+      "blank"
+     ],
+     [
+      " without risking death.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": null,
+    "segs": [
+     [
+      "Since an adventurous spirit alone is not enough to ",
+      null
+     ],
+     [
+      "25",
+      "blank"
+     ],
+     [
+      " more than two hours at the icy hotel, the staff briefs guests on what to wear and how to behave. Normal winter boots and outfits ",
+      null
+     ],
+     [
+      "26",
+      "blank"
+     ],
+     [
+      " little protection from the cold. The guests also learn how to ",
+      null
+     ],
+     [
+      "27",
+      "blank"
+     ],
+     [
+      " quickly in their arctic sleeping bags and how to prevent eyeglasses from freezing.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": null,
+    "segs": [
+     [
+      "For individuals who need to escape the cold for a brief period, there are outdoor hot tubs in the hotel courtyard. You should make sure you have stopped sweating before you go to bed, though, because any ",
+      null
+     ],
+     [
+      "28",
+      "blank"
+     ],
+     [
+      " freezes immediately. Guests who are not ",
+      null
+     ],
+     [
+      "29",
+      "blank"
+     ],
+     [
+      " can quickly get cold feet and a blocked nose.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": null,
+    "segs": [
+     [
+      "Comfort, however, is not the ",
+      null
+     ],
+     [
+      "30",
+      "blank"
+     ],
+     [
+      " to stay in the ice hotel. Guests want to feel like polar explorers. For them, the first hot cup of post-expedition coffee is pure delight.",
+      null
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "id": "zref99",
+  "year": "99課綱參考試卷（102年施測）",
+  "exam": "指考",
+  "examType": "參考試卷",
+  "title": "99課綱參考試卷（102年施測） 文意選填",
+  "titleStatus": "暫定，主題式標題待審定",
+  "blankCount": 10,
+  "optionCount": 12,
+  "eliminationValid": false,
+  "unusedOptions": [
+   "H",
+   "K"
+  ],
+  "blankRange": [
+   21,
+   30
+  ],
+  "options": {
+   "A": "reliable",
+   "B": "label",
+   "C": "invented",
+   "D": "measurement",
+   "E": "technically",
+   "F": "digitally",
+   "G": "protective",
+   "H": "remotely",
+   "I": "middle",
+   "J": "primitive",
+   "K": "player",
+   "L": "converted"
+  },
+  "flagNote": null,
+  "sourceNote": "本篇出自大考中心公布的參考試卷，不是正式考試的試題，沒有考生作答資料。",
+  "paras": [
+   {
+    "label": null,
+    "segs": [
+     [
+      "A compact disc (CD) is a thin, circular disc of metal and plastic about 12cm in diameter. It’s actually made of three layers. A CD is made mostly from a plastic base called polycarbonate. Sandwiched in the ",
+      null
+     ],
+     [
+      "21",
+      "blank"
+     ],
+     [
+      " there is a thin layer of aluminum. Finally, on top of the aluminum, is a ",
+      null
+     ],
+     [
+      "22",
+      "blank"
+     ],
+     [
+      " layer of polish to prevent it from being scratched easily. CDs are shiny on one side and dull on the other. The dull side usually has a ",
+      null
+     ],
+     [
+      "23",
+      "blank"
+     ],
+     [
+      " on it telling you what’s on the CD; but the shiny side is the important part. It’s shiny so that a laser beam can bounce off the disc and read the information stored on it.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": null,
+    "segs": [
+     [
+      "Before CDs were ",
+      null
+     ],
+     [
+      "24",
+      "blank"
+     ],
+     [
+      " , music was typically stored on plastic LP (long-playing) records and cassette tapes. LPs scratched easily, while tapes could sometimes be distorted entirely. They were not ",
+      null
+     ],
+     [
+      "25",
+      "blank"
+     ],
+     [
+      " ways of storing music. In fact, the technology employed by LPs and tapes in storing music was rather ",
+      null
+     ],
+     [
+      "26",
+      "blank"
+     ],
+     [
+      " compared to that of CDs. On a CD, music is stored ",
+      null
+     ],
+     [
+      "27",
+      "blank"
+     ],
+     [
+      " —as a long string of numbers. After the music has been recorded, it is ",
+      null
+     ],
+     [
+      "28",
+      "blank"
+     ],
+     [
+      " into numbers by a process called “sampling.” During the sampling process, an electronic device in a CD measures the sound recorded; then, the device turns the ",
+      null
+     ],
+     [
+      "29",
+      "blank"
+     ],
+     [
+      " into a number, and stores it in binary format, that is, as a long list of ones and zeros . In other words, there is ",
+      null
+     ],
+     [
+      "30",
+      "blank"
+     ],
+     [
+      " no music on a CD at all—just a huge long list of numbers!",
+      null
+     ]
+    ]
+   },
+   {
+    "label": null,
+    "segs": [
+     [
+      "Although CDs have been around for more than 30 years, because of their reliability and compactness they are still a very popular way of storing music and computer data .",
+      null
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "id": "z101",
+  "year": "101年",
+  "exam": "指考",
+  "examType": "正式考試",
+  "title": "101年 文意選填",
+  "titleStatus": "暫定，主題式標題待審定",
+  "blankCount": 10,
+  "optionCount": 12,
+  "eliminationValid": false,
+  "unusedOptions": [
+   "A",
+   "I"
+  ],
+  "blankRange": [
+   21,
+   30
+  ],
+  "options": {
+   "A": "attracted",
+   "G": "occasions",
+   "B": "appeal",
+   "H": "succeed",
+   "C": "accompanied",
+   "I": "transparent",
+   "D": "conduct",
+   "J": "supporting",
+   "E": "director",
+   "K": "techniques",
+   "F": "figures",
+   "L": "worship"
+  },
+  "flagNote": "本篇與「107 年起施測參考試卷」文意選填為同一組題目（正文差 16 個字元）。",
+  "sourceNote": null,
+  "paras": [
+   {
+    "label": null,
+    "segs": [
+     [
+      "The Taiwanese puppet show (“Budaixi”) is a distinguished form of performing arts in Taiwan. Although basically hand puppets, the ",
+      null
+     ],
+     [
+      "21",
+      "blank"
+     ],
+     [
+      " appear as complete forms, with hands and feet, on an elaborately decorated stage.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": null,
+    "segs": [
+     [
+      "The puppet performance is typically ",
+      null
+     ],
+     [
+      "22",
+      "blank"
+     ],
+     [
+      " by a small orchestra. The backstage music is directed by the drum player. The drummer needs to pay attention to what is going on in the plot and follow the rhythm of the characters. He also uses the drum to ",
+      null
+     ],
+     [
+      "23",
+      "blank"
+     ],
+     [
+      " the other musicians. There are generally around four to five musicians who perform the backstage music. The form of music used is often associated with various performance ",
+      null
+     ],
+     [
+      "24",
+      "blank"
+     ],
+     [
+      " , including acrobatics and skills like window-jumping, stage movement, and fighting. Sometimes unusual animal puppets also appear on stage for extra ",
+      null
+     ],
+     [
+      "25",
+      "blank"
+     ],
+     [
+      " , especially for children in the audience.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": null,
+    "segs": [
+     [
+      "In general, a show needs two performers. The main performer is generally the chief or ",
+      null
+     ],
+     [
+      "26",
+      "blank"
+     ],
+     [
+      " of the troupe. He is the one in charge of the whole show, manipulating the main puppets, singing, and narrating. The ",
+      null
+     ],
+     [
+      "27",
+      "blank"
+     ],
+     [
+      " performer manipulates the puppets to coordinate with the main performer. He also changes the costumes of the puppets, and takes care of the stage. The relationship between the main performer and his partner is one of master and apprentice. Frequently, the master trains his sons to eventually ",
+      null
+     ],
+     [
+      "28",
+      "blank"
+     ],
+     [
+      " him as puppet masters.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": null,
+    "segs": [
+     [
+      "Budaixi troupes are often hired to perform at processions and festivals held in honor of local gods, and on happy ",
+      null
+     ],
+     [
+      "29",
+      "blank"
+     ],
+     [
+      " such as weddings, births, and promotions. The main purpose of Budaixi is to ",
+      null
+     ],
+     [
+      "30",
+      "blank"
+     ],
+     [
+      " and offer thanks to the deities. The shows also serve as a popular means of folk entertainment.",
+      null
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "id": "z100",
+  "year": "100年",
+  "exam": "指考",
+  "examType": "正式考試",
+  "title": "100年 文意選填",
+  "titleStatus": "暫定，主題式標題待審定",
+  "blankCount": 10,
+  "optionCount": 12,
+  "eliminationValid": false,
+  "unusedOptions": [
+   "D",
+   "K"
+  ],
+  "blankRange": [
+   21,
+   30
+  ],
+  "options": {
+   "A": "expense",
+   "G": "users",
+   "B": "fading",
+   "H": "rapid",
+   "C": "colors",
+   "I": "gaining",
+   "D": "research",
+   "J": "medium",
+   "E": "replacing",
+   "K": "circular",
+   "F": "offer",
+   "L": "unknown"
+  },
+  "flagNote": null,
+  "sourceNote": null,
+  "paras": [
+   {
+    "label": null,
+    "segs": [
+     [
+      "The history of the written word goes back 6,000 years. Words express feelings, open doors into the ",
+      null
+     ],
+     [
+      "21",
+      "blank"
+     ],
+     [
+      " , create pictures of worlds never seen, and allow adventures never dared. Therefore, the original ",
+      null
+     ],
+     [
+      "22",
+      "blank"
+     ],
+     [
+      " of words, such as storytellers, poets, and singers, were respected in all cultures in the past.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": null,
+    "segs": [
+     [
+      "But now the romance is ",
+      null
+     ],
+     [
+      "23",
+      "blank"
+     ],
+     [
+      " . Imagination is being surpassed by the instant picture. In a triumphant march, movies, TV, videos, and DVDs are ",
+      null
+     ],
+     [
+      "24",
+      "blank"
+     ],
+     [
+      " storytellers and books. A visual culture is taking over the world—at the ",
+      null
+     ],
+     [
+      "25",
+      "blank"
+     ],
+     [
+      " of the written word. Our literacy, and with it our verbal and communication skills, are in ",
+      null
+     ],
+     [
+      "26",
+      "blank"
+     ],
+     [
+      " decline.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": null,
+    "segs": [
+     [
+      "The only category of novel that is ",
+      null
+     ],
+     [
+      "27",
+      "blank"
+     ],
+     [
+      " ground in our increasingly visual world is the graphic novel. A growing number of adults and young people worldwide are reading graphic novels, and educators are beginning to realize the power of this ",
+      null
+     ],
+     [
+      "28",
+      "blank"
+     ],
+     [
+      " . The graphic novel looks like a comic book, but it is longer, more sophisticated, and may come in black and white or multiple ",
+      null
+     ],
+     [
+      "29",
+      "blank"
+     ],
+     [
+      " and appear in many sizes. In fact, some of the most interesting, daring, and most heartbreaking art being created right now is being published in graphic novels. Graphic novels ",
+      null
+     ],
+     [
+      "30",
+      "blank"
+     ],
+     [
+      " the opportunity to examine the increasingly visual world of communications today while exploring serious social and literary topics. The graphic novel can be used to develop a sense of visual literacy, in much the same way that students are introduced to art appreciation.",
+      null
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "id": "z99",
+  "year": "99年",
+  "exam": "指考",
+  "examType": "正式考試",
+  "title": "99年 文意選填",
+  "titleStatus": "暫定，主題式標題待審定",
+  "blankCount": 10,
+  "optionCount": 10,
+  "eliminationValid": true,
+  "unusedOptions": [],
+  "blankRange": [
+   21,
+   30
+  ],
+  "options": {
+   "A": "quickly",
+   "B": "criticized",
+   "C": "likely",
+   "D": "abbreviated",
+   "E": "replace",
+   "F": "remove",
+   "G": "standard",
+   "H": "ignorance",
+   "I": "popularity",
+   "J": "symbol"
+  },
+  "flagNote": null,
+  "sourceNote": null,
+  "paras": [
+   {
+    "label": null,
+    "segs": [
+     [
+      "Textese (also known as chatspeak, texting language, or txt talk) is a term for the abbreviations and slang most commonly used among young people today. The ",
+      null
+     ],
+     [
+      "21",
+      "blank"
+     ],
+     [
+      " of textese is largely due to the necessary brevity of mobile phone text messaging, though its use is also very common on the Internet, including e-mail and instant messaging.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": null,
+    "segs": [
+     [
+      "There are no ",
+      null
+     ],
+     [
+      "22",
+      "blank"
+     ],
+     [
+      " rules for writing textese. However, the common practice is to use single letters, pictures, or numbers to represent whole words. For example, “i <3 u” uses the picture ",
+      null
+     ],
+     [
+      "23",
+      "blank"
+     ],
+     [
+      " of a heart “<3” for “love,” and the letter “u” to ",
+      null
+     ],
+     [
+      "24",
+      "blank"
+     ],
+     [
+      " “you.” For words which have no common abbreviation, textese users often ",
+      null
+     ],
+     [
+      "25",
+      "blank"
+     ],
+     [
+      " the vowels from a word, and the reader is forced to interpret a string of consonants by re-adding the vowels. Thus, “dictionary” becomes “dctnry,” and “keyboard” becomes “kybrd.” The reader must interpret the ",
+      null
+     ],
+     [
+      "26",
+      "blank"
+     ],
+     [
+      " words depending on the context in which it is used, as there are many examples of words or phrases which use the same abbreviations. So if someone says “ttyl, lol” they probably mean “talk to you later, lots of love” not “talk to you later, laugh out loud,” and if someone says “omg, lol” they most ",
+      null
+     ],
+     [
+      "27",
+      "blank"
+     ],
+     [
+      " mean “oh my god, laugh out loud” not “oh my god, lots of love.”",
+      null
+     ]
+    ]
+   },
+   {
+    "label": null,
+    "segs": [
+     [
+      "The emergence of textese is clearly due to a desire to type less and to communicate more ",
+      null
+     ],
+     [
+      "28",
+      "blank"
+     ],
+     [
+      " than one can manage without such shortcuts. Yet it has been severely ",
+      null
+     ],
+     [
+      "29",
+      "blank"
+     ],
+     [
+      " as “wrecking our language.” Some scholars even consider the use of textese as “irritating” and essentially lazy behavior. They’re worried that “sloppy” habits gained while using textese will result in students’ growing ",
+      null
+     ],
+     [
+      "30",
+      "blank"
+     ],
+     [
+      " of proper spelling, grammar and punctuation.",
+      null
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "id": "z98",
+  "year": "98年",
+  "exam": "指考",
+  "examType": "正式考試",
+  "title": "98年 文意選填",
+  "titleStatus": "暫定，主題式標題待審定",
+  "blankCount": 10,
+  "optionCount": 10,
+  "eliminationValid": true,
+  "unusedOptions": [],
+  "blankRange": [
+   21,
+   30
+  ],
+  "options": {
+   "A": "support",
+   "B": "qualify",
+   "C": "affection",
+   "D": "ashamed",
+   "E": "make up for",
+   "F": "leaving",
+   "G": "turn to",
+   "H": "buying",
+   "I": "self-esteem",
+   "J": "contentment"
+  },
+  "flagNote": null,
+  "sourceNote": null,
+  "paras": [
+   {
+    "label": null,
+    "segs": [
+     [
+      "Oniomania is the technical term for the compulsive desire to shop, more commonly referred to as compulsive shopping or shopping addiction. Victims often experience feelings of ",
+      null
+     ],
+     [
+      "21",
+      "blank"
+     ],
+     [
+      " when they are in the process of purchasing, which seems to give their life meaning while letting them forget about their sorrows. Once ",
+      null
+     ],
+     [
+      "22",
+      "blank"
+     ],
+     [
+      " the environment where the purchasing occurred, the feeling of a personal reward would be gone. To compensate, the addicted person would go shopping again. Eventually a feeling of suppression will overcome the person. For example, cases have shown that the bought goods will be hidden or destroyed, because the person concerned feels ",
+      null
+     ],
+     [
+      "23",
+      "blank"
+     ],
+     [
+      " of their addiction and tries to conceal it. He or she is either regretful or depressed. In order to cope with the feelings, the addicted person is prompted to ",
+      null
+     ],
+     [
+      "24",
+      "blank"
+     ],
+     [
+      " another purchase.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": null,
+    "segs": [
+     [
+      "Compulsive shopping often begins at an early age. Children who experienced parental neglect often grew up with low ",
+      null
+     ],
+     [
+      "25",
+      "blank"
+     ],
+     [
+      " because throughout much of their childhood they felt that they were not important as a person. As a result, they used toys to ",
+      null
+     ],
+     [
+      "26",
+      "blank"
+     ],
+     [
+      " their feelings of loneliness. Because of the ongoing sentiment of deprivation they endured as children, adults that have depended on materials for emotional ",
+      null
+     ],
+     [
+      "27",
+      "blank"
+     ],
+     [
+      " when they were much younger are more likely to become addicted to shopping. During adulthood, the purchase, instead of the toy, is substituted for ",
+      null
+     ],
+     [
+      "28",
+      "blank"
+     ],
+     [
+      " . The victims are unable to deal with their everyday problems, especially those that alter their self-esteem. Important issues in their lives are repressed by ",
+      null
+     ],
+     [
+      "29",
+      "blank"
+     ],
+     [
+      " something. According to studies, as many as 8.9 percent of the American population ",
+      null
+     ],
+     [
+      "30",
+      "blank"
+     ],
+     [
+      " as compulsive buyers. Research has also found that men and women suffer from this problem at about the same rate.",
+      null
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "id": "zref95",
+  "year": "95課綱參考試卷（98年施測）",
+  "exam": "指考",
+  "examType": "參考試卷",
+  "title": "95課綱參考試卷（98年施測） 文意選填",
+  "titleStatus": "暫定，主題式標題待審定",
+  "blankCount": 10,
+  "optionCount": 10,
+  "eliminationValid": true,
+  "unusedOptions": [],
+  "blankRange": [
+   21,
+   30
+  ],
+  "options": {
+   "A": "day",
+   "B": "strange",
+   "C": "cloudy",
+   "D": "identified",
+   "E": "assistance",
+   "F": "undetected",
+   "G": "profession",
+   "H": "polished",
+   "I": "persisted",
+   "J": "observation"
+  },
+  "flagNote": null,
+  "sourceNote": "本篇出自大考中心公布的參考試卷，不是正式考試的試題，沒有考生作答資料。",
+  "paras": [
+   {
+    "label": null,
+    "segs": [
+     [
+      "If amateur astronomers look to someone as their ideal, it is undoubtedly William Herschel. He was a musician by ",
+      null
+     ],
+     [
+      "21",
+      "blank"
+     ],
+     [
+      " —first in a German band, then in the English spa town of Bath, where he played the oboe in an orchestra, served as organist in a church and gave music lessons. By ",
+      null
+     ],
+     [
+      "22",
+      "blank"
+     ],
+     [
+      " , that is. By night he was an astronomer when skies were clear and a mirror maker when they were ",
+      null
+     ],
+     [
+      "23",
+      "blank"
+     ],
+     [
+      " . He personally ground and ",
+      null
+     ],
+     [
+      "24",
+      "blank"
+     ],
+     [
+      " the mirrors for his telescopes—more than two hundred of them! People wondered when Herschel ever found time to sleep. He spent most of his time at night observing stars, with the faithful ",
+      null
+     ],
+     [
+      "25",
+      "blank"
+     ],
+     [
+      " of his sister Caroline. Scanning the solar system for as yet ",
+      null
+     ],
+     [
+      "26",
+      "blank"
+     ],
+     [
+      " objects, he compiled lists of double stars, colored stars and nebulas (i.e., clouds of dust and gas that are to become stars). His first major discovery, in 1774, was the Great Nebula in Orion, which modern astrophysicists have since ",
+      null
+     ],
+     [
+      "27",
+      "blank"
+     ],
+     [
+      " as a “nursery” for new stars. In the course of his systematic ",
+      null
+     ],
+     [
+      "28",
+      "blank"
+     ],
+     [
+      " of star fields, he detected a peculiar object. The entry in his log for March 13, 1781 includes a note about a ",
+      null
+     ],
+     [
+      "29",
+      "blank"
+     ],
+     [
+      " nebulous star that he “suspected to be a comet.” Since the object moved during the next few nights, Herschel ",
+      null
+     ],
+     [
+      "30",
+      "blank"
+     ],
+     [
+      " in this belief. On April 26, he submitted his findings to the Royal Society in a paper entitled “Account of a Comet.”",
+      null
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "id": "z97",
+  "year": "97年",
+  "exam": "指考",
+  "examType": "正式考試",
+  "title": "97年 文意選填",
+  "titleStatus": "暫定，主題式標題待審定",
+  "blankCount": 10,
+  "optionCount": 10,
+  "eliminationValid": true,
+  "unusedOptions": [],
+  "blankRange": [
+   31,
+   40
+  ],
+  "options": {
+   "A": "conform",
+   "B": "prevent",
+   "C": "obey",
+   "D": "guidance",
+   "E": "excellent",
+   "F": "techniques",
+   "G": "professional",
+   "H": "team",
+   "I": "at risk",
+   "J": "to the limit"
+  },
+  "flagNote": null,
+  "sourceNote": null,
+  "paras": [
+   {
+    "label": null,
+    "segs": [
+     [
+      "Athletes and sports competitors compete in organized, officiated sports events to entertain spectators. When playing a game, athletes are required to understand the strategies of their game and ",
+      null
+     ],
+     [
+      "31",
+      "blank"
+     ],
+     [
+      " the rules and regulations of the sport. The events in which they compete include both ",
+      null
+     ],
+     [
+      "32",
+      "blank"
+     ],
+     [
+      " sports, such as baseball, basketball, and soccer, and individual sports, such as golf, tennis, and bowling. The level of play varies from unpaid high school athletics to ",
+      null
+     ],
+     [
+      "33",
+      "blank"
+     ],
+     [
+      " sports, in which the best from around the world compete in events broadcast on international television.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": null,
+    "segs": [
+     [
+      "Being an athlete involves more than competing in athletic events. Athletes spend many hours each day practicing skills and improving teamwork under the ",
+      null
+     ],
+     [
+      "34",
+      "blank"
+     ],
+     [
+      " of a coach or a sports instructor. They view videotapes not only to critique their own performances and ",
+      null
+     ],
+     [
+      "35",
+      "blank"
+     ],
+     [
+      " but also to learn their opponents’ tendencies and weaknesses to gain a competitive advantage. Some athletes work regularly with strength trainers to gain muscle and to ",
+      null
+     ],
+     [
+      "36",
+      "blank"
+     ],
+     [
+      " injury. Many athletes push their bodies ",
+      null
+     ],
+     [
+      "37",
+      "blank"
+     ],
+     [
+      " during both practice and play, so career-ending injury always is a risk. Even minor injuries may put a player ",
+      null
+     ],
+     [
+      "38",
+      "blank"
+     ],
+     [
+      " of replacement. Because competition at all levels is extremely intense and job security is always unstable, many athletes train year round to maintain ",
+      null
+     ],
+     [
+      "39",
+      "blank"
+     ],
+     [
+      " form and technique and peak physical condition. Athletes also must ",
+      null
+     ],
+     [
+      "40",
+      "blank"
+     ],
+     [
+      " to strictly controlled diets during their sports season to supplement any physical training program.",
+      null
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "id": "z96",
+  "year": "96年",
+  "exam": "指考",
+  "examType": "正式考試",
+  "title": "96年 文意選填",
+  "titleStatus": "暫定，主題式標題待審定",
+  "blankCount": 10,
+  "optionCount": 10,
+  "eliminationValid": true,
+  "unusedOptions": [],
+  "blankRange": [
+   31,
+   40
+  ],
+  "options": {
+   "A": "powerful",
+   "B": "expensive",
+   "C": "likely",
+   "D": "informed",
+   "E": "persuades",
+   "F": "increases",
+   "G": "influence",
+   "H": "privacy",
+   "I": "product",
+   "J": "satisfaction"
+  },
+  "flagNote": null,
+  "sourceNote": null,
+  "paras": [
+   {
+    "label": null,
+    "segs": [
+     [
+      "A trip to the supermarket has now become an exercise in psychological warfare. Shopkeepers know that filling a store with the smell of freshly baked bread makes people feel hungry and ",
+      null
+     ],
+     [
+      "31",
+      "blank"
+     ],
+     [
+      " them to buy more food than they intended. Stocking the most ",
+      null
+     ],
+     [
+      "32",
+      "blank"
+     ],
+     [
+      " products at eye level helps them sell faster than cheaper but less visible competitors.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": null,
+    "segs": [
+     [
+      "Researchers on customer behavior are now investigating how “swarm intelligence” (that is, how social animals like ants or bees behave in a crowd) can be used to ",
+      null
+     ],
+     [
+      "33",
+      "blank"
+     ],
+     [
+      " what people buy. The idea is that, if a certain product is seen to be popular, shoppers are ",
+      null
+     ],
+     [
+      "34",
+      "blank"
+     ],
+     [
+      " to choose it too. With the help of modern technology, some supermarkets are now able to keep customers ",
+      null
+     ],
+     [
+      "35",
+      "blank"
+     ],
+     [
+      " about what others are buying. As a customer walks past a shelf of goods in one of these supermarkets, a screen on the shelf will tell him how many people currently in the store have chosen that particular ",
+      null
+     ],
+     [
+      "36",
+      "blank"
+     ],
+     [
+      " . As it turns out, such a “swarm moves” model ",
+      null
+     ],
+     [
+      "37",
+      "blank"
+     ],
+     [
+      " sales without the need to give people discounts. The reason is simple: it gives shoppers the ",
+      null
+     ],
+     [
+      "38",
+      "blank"
+     ],
+     [
+      " of knowing that they bought the “right” product—that is, the one everyone else bought.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": null,
+    "segs": [
+     [
+      "The psychology that works in physical stores is just as ",
+      null
+     ],
+     [
+      "39",
+      "blank"
+     ],
+     [
+      " on the Internet. Online retailers such as Amazon are good at telling shoppers which products are popular with like-minded consumers. Even in the ",
+      null
+     ],
+     [
+      "40",
+      "blank"
+     ],
+     [
+      " of your home, you can still be part of the swarm.",
+      null
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "id": "z95",
+  "year": "95年",
+  "exam": "指考",
+  "examType": "正式考試",
+  "title": "95年 文意選填",
+  "titleStatus": "暫定，主題式標題待審定",
+  "blankCount": 10,
+  "optionCount": 10,
+  "eliminationValid": true,
+  "unusedOptions": [],
+  "blankRange": [
+   31,
+   40
+  ],
+  "options": {
+   "A": "award",
+   "B": "challenged",
+   "C": "concerned",
+   "D": "consequence",
+   "E": "divorce",
+   "F": "fight",
+   "G": "increase",
+   "H": "took place",
+   "I": "traditional",
+   "J": "unusual"
+  },
+  "flagNote": null,
+  "sourceNote": null,
+  "paras": [
+   {
+    "label": null,
+    "segs": [
+     [
+      "With one out of every two American marriages ending in divorce, custody of children has become an issue in the American society. Up until the late 1970s, it had been common practice in the United States to automatically ",
+      null
+     ],
+     [
+      "31",
+      "blank"
+     ],
+     [
+      " custody to the mother when a divorce occurred.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": null,
+    "segs": [
+     [
+      "However, since the 1970s, this practice has been ",
+      null
+     ],
+     [
+      "32",
+      "blank"
+     ],
+     [
+      " . Most custody battles today are decided, in theory, on the basis of who is the more fit parent for the child. The reality, nevertheless, is that most women still win custody of their children in a ",
+      null
+     ],
+     [
+      "33",
+      "blank"
+     ],
+     [
+      " .",
+      null
+     ]
+    ]
+   },
+   {
+    "label": null,
+    "segs": [
+     [
+      "This legal change was the result of the social changes that ",
+      null
+     ],
+     [
+      "34",
+      "blank"
+     ],
+     [
+      " in the United States during the 1960s and 1970s. These changes challenged many of the ",
+      null
+     ],
+     [
+      "35",
+      "blank"
+     ],
+     [
+      " roles men and women were expected to play. As a ",
+      null
+     ],
+     [
+      "36",
+      "blank"
+     ],
+     [
+      " , it is not uncommon nowadays to find women working outside their homes and being very ",
+      null
+     ],
+     [
+      "37",
+      "blank"
+     ],
+     [
+      " about their careers and personal lives. It is also not ",
+      null
+     ],
+     [
+      "38",
+      "blank"
+     ],
+     [
+      " to see men accepting roles that were once considered the exclusive domain of women, such as shopping for groceries, driving their children to and from school, or cleaning their homes.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": null,
+    "segs": [
+     [
+      "Because of the ",
+      null
+     ],
+     [
+      "39",
+      "blank"
+     ],
+     [
+      " in the divorce rate, the change in the roles that men and women are expected to play, and the changing attitude of the judicial system toward child custody, more men have started to ",
+      null
+     ],
+     [
+      "40",
+      "blank"
+     ],
+     [
+      " for and win custody of their children when divorce occurs.",
+      null
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "id": "z94",
+  "year": "94年",
+  "exam": "指考",
+  "examType": "正式考試",
+  "title": "94年 文意選填",
+  "titleStatus": "暫定，主題式標題待審定",
+  "blankCount": 10,
+  "optionCount": 10,
+  "eliminationValid": true,
+  "unusedOptions": [],
+  "blankRange": [
+   31,
+   40
+  ],
+  "options": {
+   "A": "attractions",
+   "B": "between",
+   "C": "for",
+   "D": "location",
+   "E": "masterpiece",
+   "F": "nearly",
+   "G": "particularly",
+   "H": "preserved",
+   "I": "even",
+   "J": "uninhabited"
+  },
+  "flagNote": null,
+  "sourceNote": null,
+  "paras": [
+   {
+    "label": null,
+    "segs": [
+     [
+      "Like pearls scattered in the East Sea, the Penghu archipelago is situated in the southwest of the Taiwan Strait. It consists of ",
+      null
+     ],
+     [
+      "31",
+      "blank"
+     ],
+     [
+      " one hundred islands, of which many are famous for their pure white-sand beaches. The broad beaches and beautiful underwater scenery are the major ",
+      null
+     ],
+     [
+      "32",
+      "blank"
+     ],
+     [
+      " of Penghu islands.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": null,
+    "segs": [
+     [
+      "Among the one hundred or so islands, only 20 are inhabited. The ",
+      null
+     ],
+     [
+      "33",
+      "blank"
+     ],
+     [
+      " islands of Penghu have been kept intact without human intervention. The primitive conditions on these islands, their unique basalt rock formations and rich ecology bring ",
+      null
+     ],
+     [
+      "34",
+      "blank"
+     ],
+     [
+      " more surprises for visitors. These islands are designated as natural reservations, ",
+      null
+     ],
+     [
+      "35",
+      "blank"
+     ],
+     [
+      " they are endowed with remarkable and rare resources. For instance, Gupo (Grand Aunt) Island is the largest uninhabited island in the North Sea area and the main ",
+      null
+     ],
+     [
+      "36",
+      "blank"
+     ],
+     [
+      " of seaweed production. Like Gupo Island, Baisha (White Sand) Island is also uninhabited and has ",
+      null
+     ],
+     [
+      "37",
+      "blank"
+     ],
+     [
+      " the primitive, unspoiled character. The island features well-developed columnar basalt formations, which on the southern coastline are ",
+      null
+     ],
+     [
+      "38",
+      "blank"
+     ],
+     [
+      " spectacular. This is also one of the best areas of the Penghu Islands for bird watching. In addition, there are also pillar-shaped rock formations that are Mother Nature’s ",
+      null
+     ],
+     [
+      "39",
+      "blank"
+     ],
+     [
+      " sculptures.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": null,
+    "segs": [
+     [
+      "Like gifts from God, the yellow flowers that bloom ",
+      null
+     ],
+     [
+      "40",
+      "blank"
+     ],
+     [
+      " the basalt rock cracks and the beautiful songs of little singing birds on the meadows turn these islands into a paradise.",
+      null
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "id": "z93",
+  "year": "93年",
+  "exam": "指考",
+  "examType": "正式考試",
+  "title": "93年 文意選填",
+  "titleStatus": "暫定，主題式標題待審定",
+  "blankCount": 10,
+  "optionCount": 10,
+  "eliminationValid": true,
+  "unusedOptions": [],
+  "blankRange": [
+   31,
+   40
+  ],
+  "options": {
+   "A": "miniature",
+   "B": "elaborate",
+   "C": "applying",
+   "D": "programs",
+   "E": "founded",
+   "F": "firms",
+   "G": "leading",
+   "H": "population",
+   "I": "varies",
+   "J": "offered"
+  },
+  "flagNote": null,
+  "sourceNote": null,
+  "paras": [
+   {
+    "label": null,
+    "segs": [
+     [
+      "Junior Achievement was started in Springfield, Massachusetts, in 1919 by Horace A. Moses. Mr. Moses, who had been a poor farm boy, had worked his way up to become one of the ",
+      null
+     ],
+     [
+      "31",
+      "blank"
+     ],
+     [
+      " industrialists in the United States. He was concerned that so many of the young people ",
+      null
+     ],
+     [
+      "32",
+      "blank"
+     ],
+     [
+      " for positions with his firm knew absolutely nothing about the way a corporation is run. As a solution to this problem, he ",
+      null
+     ],
+     [
+      "33",
+      "blank"
+     ],
+     [
+      " Junior Achievement, Inc.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": null,
+    "segs": [
+     [
+      "In essence, Junior Achievement is an organization that gives high-school boys and girls a chance to become part of the operation of a ",
+      null
+     ],
+     [
+      "34",
+      "blank"
+     ],
+     [
+      " corporation while still in school. Every September, students are ",
+      null
+     ],
+     [
+      "35",
+      "blank"
+     ],
+     [
+      " the opportunity to join Junior Achievement through the co-operation of local school systems. Some students make products that range in size from earrings to quite ",
+      null
+     ],
+     [
+      "36",
+      "blank"
+     ],
+     [
+      " furniture for the home. Others produce weekly radio and television shows or operate banks, accounting ",
+      null
+     ],
+     [
+      "37",
+      "blank"
+     ],
+     [
+      ", and advertising agencies.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": null,
+    "segs": [
+     [
+      "Junior Achievement ",
+      null
+     ],
+     [
+      "38",
+      "blank"
+     ],
+     [
+      " range in size from those in the big cities, like New York and Los Angeles, to those in small towns with a ",
+      null
+     ],
+     [
+      "39",
+      "blank"
+     ],
+     [
+      " of a few thousand. Each program ",
+      null
+     ],
+     [
+      "40",
+      "blank"
+     ],
+     [
+      " with the size of the area and the amount of industrial and business activity in the city.",
+      null
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "id": "z93b",
+  "year": "93年敏督利補考",
+  "exam": "指考",
+  "examType": "補考",
+  "title": "93年敏督利補考 文意選填",
+  "titleStatus": "暫定，主題式標題待審定",
+  "blankCount": 10,
+  "optionCount": 10,
+  "eliminationValid": true,
+  "unusedOptions": [],
+  "blankRange": [
+   31,
+   40
+  ],
+  "options": {
+   "A": "direct",
+   "B": "reserves",
+   "C": "diverse",
+   "D": "sparingly",
+   "E": "in advance",
+   "F": "measures",
+   "G": "festivals",
+   "H": "mammals",
+   "I": "entirely",
+   "J": "in existence"
+  },
+  "flagNote": null,
+  "sourceNote": null,
+  "paras": [
+   {
+    "label": null,
+    "segs": [
+     [
+      "Bhutan first flung open its doors to tourists in 1974. Since then, the tiny country has revealed to the rest of the world its enviable nature ",
+      null
+     ],
+     [
+      "31",
+      "blank"
+     ],
+     [
+      ", exotic animals, and a one-of-a-kind government. Bhutan’s ruler, King Jigme Singye Wangchuck, who was elected in 1972, runs the only Democratic Monarchy ",
+      null
+     ],
+     [
+      "32",
+      "blank"
+     ],
+     [
+      ".",
+      null
+     ]
+    ]
+   },
+   {
+    "label": null,
+    "segs": [
+     [
+      "Bordered by India, Tibet, and China, Bhutan ",
+      null
+     ],
+     [
+      "33",
+      "blank"
+     ],
+     [
+      " about 18,000 square miles and has a population of about 750,000. Bhutan is home to several rare ",
+      null
+     ],
+     [
+      "34",
+      "blank"
+     ],
+     [
+      ", including red pandas, blue sheep, and musk deer. Its ",
+      null
+     ],
+     [
+      "35",
+      "blank"
+     ],
+     [
+      " landscape includes snowcapped peaks, bamboo jungles, meadows, and grasslands.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": null,
+    "segs": [
+     [
+      "The strongly religious Bhutanese rely almost ",
+      null
+     ],
+     [
+      "36",
+      "blank"
+     ],
+     [
+      " on agriculture for their survival, raising cattle and living in rural villages. To celebrate their Buddhism, the Bhutanese hold many unique ",
+      null
+     ],
+     [
+      "37",
+      "blank"
+     ],
+     [
+      ", called teschus, and stake prayer flags in the ground, which worshippers believe offer a ",
+      null
+     ],
+     [
+      "38",
+      "blank"
+     ],
+     [
+      " line to the gods.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": null,
+    "segs": [
+     [
+      "Tourists who would like to visit Bhutan should plan their trips far ",
+      null
+     ],
+     [
+      "39",
+      "blank"
+     ],
+     [
+      ". They must provide a travel visa and itinerary upon arrival. Moreover, they should pack ",
+      null
+     ],
+     [
+      "40",
+      "blank"
+     ],
+     [
+      ": The country’s only airline, Druk Air, has just two planes—both with limited storage space.",
+      null
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "id": "z92",
+  "year": "92年",
+  "exam": "指考",
+  "examType": "正式考試",
+  "title": "92年 文意選填",
+  "titleStatus": "暫定，主題式標題待審定",
+  "blankCount": 10,
+  "optionCount": 10,
+  "eliminationValid": true,
+  "unusedOptions": [],
+  "blankRange": [
+   31,
+   40
+  ],
+  "options": {
+   "A": "keen",
+   "B": "following",
+   "C": "for good",
+   "D": "in action",
+   "E": "wondered",
+   "F": "just",
+   "G": "snoozing",
+   "H": "pouch",
+   "I": "amazing",
+   "J": "until"
+  },
+  "flagNote": null,
+  "sourceNote": null,
+  "paras": [
+   {
+    "label": null,
+    "segs": [
+     [
+      "There are more than 50 different kinds of kangaroos in the world today. The smallest ones are only five centimeters tall but the biggest are more than two meters. Kangaroos cannot walk or run. They ",
+      null
+     ],
+     [
+      "31",
+      "blank"
+     ],
+     [
+      " jump. The best time to see kangaroos ",
+      null
+     ],
+     [
+      "32",
+      "blank"
+     ],
+     [
+      " is the evening and early morning. They spend the daytime ",
+      null
+     ],
+     [
+      "33",
+      "blank"
+     ],
+     [
+      " in the shade.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": null,
+    "segs": [
+     [
+      "Straight after they are born, the joeys (baby kangaroos), which are only about two-and-a-half centimeters long, have to drag themselves to their mother’s ",
+      null
+     ],
+     [
+      "34",
+      "blank"
+     ],
+     [
+      " . They find their way there by ",
+      null
+     ],
+     [
+      "35",
+      "blank"
+     ],
+     [
+      " the pattern of their mother’s hairs. They stay in the pouch ",
+      null
+     ],
+     [
+      "36",
+      "blank"
+     ],
+     [
+      " they are eight months old. After that, they leave home ",
+      null
+     ],
+     [
+      "37",
+      "blank"
+     ],
+     [
+      " . Sometimes the joeys aren’t too ",
+      null
+     ],
+     [
+      "38",
+      "blank"
+     ],
+     [
+      " on making their way in the big wide world. A 50 pound joey, for example, was once found still living in its mother’s pouch.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": null,
+    "segs": [
+     [
+      "Have you ever ",
+      null
+     ],
+     [
+      "39",
+      "blank"
+     ],
+     [
+      " why these animals are called “kangaroos”? Well, according to one story, when Captain Cook landed in Australia and heard the aborigines calling these ",
+      null
+     ],
+     [
+      "40",
+      "blank"
+     ],
+     [
+      " animals “Kangooroo,” he wrote the name down as “kangaroo.” That’s how this animal got its name.",
+      null
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "id": "z91",
+  "year": "91年",
+  "exam": "指考",
+  "examType": "正式考試",
+  "title": "91年 文意選填",
+  "titleStatus": "暫定，主題式標題待審定",
+  "blankCount": 10,
+  "optionCount": 10,
+  "eliminationValid": true,
+  "unusedOptions": [],
+  "blankRange": [
+   31,
+   40
+  ],
+  "options": {
+   "A": "For one thing",
+   "B": "full of",
+   "C": "understand",
+   "D": "familiar with",
+   "E": "find",
+   "F": "In either case",
+   "G": "For example",
+   "H": "traditional",
+   "I": "snail mail",
+   "J": "colorful"
+  },
+  "flagNote": null,
+  "sourceNote": null,
+  "paras": [
+   {
+    "label": null,
+    "segs": [
+     [
+      "Are you someone who practically lives in front of the computer—a mouse potato? Or are you nervous about new technology—a technophobe? ",
+      null
+     ],
+     [
+      "31",
+      "blank"
+     ],
+     [
+      ", if you want to master the English language, you will need to be ",
+      null
+     ],
+     [
+      "32",
+      "blank"
+     ],
+     [
+      " those new computer words that seem to be popping up everywhere.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": null,
+    "segs": [
+     [
+      "Luckily, most computer words are easy to learn. ",
+      null
+     ],
+     [
+      "33",
+      "blank"
+     ],
+     [
+      ", many of these words probably already have similar forms in your own language. ",
+      null
+     ],
+     [
+      "34",
+      "blank"
+     ],
+     [
+      ", the German word for computer is Computer, in South American Spanish it is computador, and in Japanese we ",
+      null
+     ],
+     [
+      "35",
+      "blank"
+     ],
+     [
+      " konpyuta.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": null,
+    "segs": [
+     [
+      "Another reason why computer words are easy to learn is that many of them are so ",
+      null
+     ],
+     [
+      "36",
+      "blank"
+     ],
+     [
+      ". They are words that often make us smile when we first hear them such as ",
+      null
+     ],
+     [
+      "37",
+      "blank"
+     ],
+     [
+      " (traditional mail rather than Internet-based mail) or wysiwyg (what-you-see-is-what-you-get).",
+      null
+     ]
+    ]
+   },
+   {
+    "label": null,
+    "segs": [
+     [
+      "To get a feeling for computer words, it helps to ",
+      null
+     ],
+     [
+      "38",
+      "blank"
+     ],
+     [
+      " the world that created them— cyberculture, as it is often called. The computer industry is ",
+      null
+     ],
+     [
+      "39",
+      "blank"
+     ],
+     [
+      " young people who think of themselves as very different from ",
+      null
+     ],
+     [
+      "40",
+      "blank"
+     ],
+     [
+      " business people in suits. It is a world that avoids heavy scientific-sounding language in favor of words that are simple, fresh and playful.",
+      null
+     ]
+    ]
+   }
+  ]
+ }
+]
