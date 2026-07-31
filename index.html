@@ -217,9 +217,9 @@ details.skill[open] > summary::after{content:'－ 收合';}
       <div class="home-lead">開始練習前</div>
       <p class="home-desc">本題庫收錄學測 90–115 年、指考 91–110 年的文意選填歷屆試題，含補考與參考試卷，共 560 題、56 篇。學測部分附逐格解析、七大分類與線索範圍標註，並收錄部分年度大考中心公布的官方逐題答對率；<b>指考部分目前只有題目與答案，解析陸續建置中</b>。</p>
 
-      <details class="skill" style="margin:14px 0 18px;">
-        <summary><b style="font-family:'Noto Serif TC',serif; font-size:14.5px;">選項會不會剛好用完，看年度</b></summary>
-        <div style="font-size:13px; line-height:1.85; margin-top:10px;">
+      <details class="skill sk-box">
+        <summary><div class="sk-title">選項會不會剛好用完，看年度</div></summary>
+        <div style="margin-top:2px;">
           有些年度的選項數剛好等於空格數，選項一個不剩——這時最後一格必然是剩下的那一個，<b>刪去法完全有效</b>。有些年度多給了誘答選項，用不到的會留下來，<b>刪去法就失效</b>，不能靠「剩下哪個填哪個」。<br><br>
           學測文意選填一律 10 選 10，刪去法都有效。指考 99 年以前 10 選 10，<b>100 年起改成 12 選 10</b>，從那年起刪去法失效。<br><br>
           每一篇的實際選項數都標在篇名旁邊。
@@ -613,7 +613,7 @@ function setMode(m){
 function buildSingleYearGrid(){
   const grid = document.getElementById('singleYearGrid');
   grid.innerHTML = '';
-  Object.values(PASSAGES).filter(examOk).sort((a,b)=> yearSortKey(a) - yearSortKey(b)).forEach(p => {
+  Object.values(PASSAGES).filter(examOk).sort(cmpYear).forEach(p => {
     const chip = document.createElement('div');
     chip.className = 'chip' + (selectedSingleYears.has(p.id) ? ' active' : '');
     chip.textContent = p.exam + ' ' + p.year;
@@ -717,10 +717,15 @@ function yearSortKey(p){
   const isRef = (p.year.includes('課綱')||p.year.includes('參考試卷')||p.year.includes('試辦')||p.year.includes('＝')) ? 1 : 0;
   return num*10 + isMakeup*2 + isRef;
 }
+function cmpYear(a,b){
+  const na = Math.floor(yearSortKey(a)/10), nb = Math.floor(yearSortKey(b)/10);
+  if(na !== nb) return nb - na;                          // 年度：新到舊
+  return (yearSortKey(a)%10) - (yearSortKey(b)%10);      // 同年度：正式考試在前，補考／參考在後
+}
 function buildYearList(){
   const list = document.getElementById('yearList');
   list.innerHTML = '';
-  Object.values(PASSAGES).filter(examOk).sort((a,b)=> yearSortKey(a) - yearSortKey(b)).forEach(p => {
+  Object.values(PASSAGES).filter(examOk).sort(cmpYear).forEach(p => {
     const cnt = ITEMS.filter(it=>it.passageId===p.id).length;
     const row = document.createElement('div');
     row.className = 'year-item'; row.style.cursor='pointer';
@@ -1122,7 +1127,7 @@ function updateFullProgress(){
   if(bar) bar.style.width = (total ? (done/total*100) : 0) + '%';
 }
 function fullPassageOrder(){
-  return Object.values(PASSAGES).filter(examOk).sort((a,b)=> yearSortKey(a) - yearSortKey(b)).map(x=>x.id);
+  return Object.values(PASSAGES).filter(examOk).sort(cmpYear).map(x=>x.id);
 }
 function nextFullPassage(){
   const order = fullPassageOrder();
