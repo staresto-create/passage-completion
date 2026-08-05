@@ -2057,7 +2057,7 @@
   "titleStatus": null,
   "sourceNote": null,
   "title": "微波爆米花健康疑慮（Health Concerns About Microwave Popcorn）",
-  "flagNote": "本篇原始選項清單只印出 8 個選項，(C) popping 與 (H) responsible 是依上下文語意與答案字母還原補齊的，對應題號下方有★訂正標記。若與手邊試卷版本不同，歡迎使用頁面下方的回報按鈕告知。",
+  "flagNote": "本篇原始選項清單只印出 8 個選項，(C) popping 與 (H) responsible 這兩個字是依上下文語意與答案字母還原補齊的。若與你手邊的試卷不同，請用下方的回報按鈕告知。",
   "options": {
    "A": "chemical",
    "B": "amount",
@@ -2256,7 +2256,7 @@
    "研究人員發現，商業爆米花公司經常在微波爆米花袋上塗上一種名為全氟辛酸(PFOA)的化學物質，這種物質已被發現會在實驗動物身上引發癌症和肺部疾病。更糟的是，微波爆米花通常搭配的人工奶油代用品，含有一種常見的食品調味物質。根據健康科學家的說法，這種物質正是導致某些嚴重肺部疾病的元兇。",
    "為了提供簡單又健康的替代方案，營養師建議我們自己爆爆米花。所需要的東西只有一個大而深的鍋子、大約四湯匙的植物油，以及一小把有機玉米粒。當玉米粒開始爆開時，搖晃鍋子讓蒸氣散出，並讓沒爆開的玉米粒落到鍋底。一旦爆裂聲逐漸變慢，就把鍋子從爐子上移開。接著把爆米花倒進碗裡，撒上少許真奶油或橄欖油，以及天然鹽調味即可。這樣一份健康又有趣的零食就完成了。"
   ],
-  "internalNote": "原稿選項清單漏列C、H兩個選項文字(僅印出8個選項)，已依上下文語意與答案字母反推補回：C＝popping，H＝responsible，並在下方對應題號註記★訂正。建議您核對官方試卷確認這兩個字正確無誤。"
+  "internalNote": "原稿選項清單漏列C、H兩個選項文字(僅印出8個選項)，已依上下文語意與答案字母反推補回：C＝popping，H＝responsible。原 flagNote 承諾的逐題訂正記號從未實作(全庫 index.html 相關符號數為 0)，2026-08-05 已刪去該項承諾，改為請使用者回報。建議核對官方試卷確認這兩個字正確無誤。"
  },
  {
   "id": "y99",
@@ -3752,7 +3752,7 @@
   "titleStatus": null,
   "sourceNote": null,
   "title": "壓力的雙面性（The Two Faces of Stress）",
-  "flagNote": "這篇的十個選項裡，about、from、even、as、like、to、that 共七個是虛詞，只有 managing、unusual、leading 三個是實詞——全站三十篇裡唯一一篇以虛詞為主的考題，其餘各篇虛詞最多只有四個。十題的線索也全部落在空格所在句之內。你可以拿它練虛詞的語感，但別把它當成文意選填的代表性練習。",
+  "flagNote": "這篇的十個選項裡，about、from、even、as、like、to、that 共七個是虛詞，只有 managing、unusual、leading 三個是實詞。同樣型態的還有 92 年補考那一篇，其餘各篇以實詞為主；這兩篇的十題線索也都落在空格所在句之內。你可以拿它練虛詞的語感，但別把它當成文意選填的代表性練習。",
   "options": {
    "A": "about",
    "B": "from",
@@ -3928,7 +3928,7 @@
   "titleStatus": null,
   "sourceNote": null,
   "title": "生活水準的衡量（Measuring the Standard of Living）",
-  "flagNote": "第 38 題的選項字母與語意不符（F 已用於第 31 題，且「Americans not only different backgrounds」語意不通），本站以 (H) with 為正解——Americans with different backgrounds 才通順。",
+  "flagNote": "第 38 題的選項字母與語意不符（F 已用於第 31 題，且「Americans not only different backgrounds」語意不通），本站以 (H) with 為正解——Americans with different backgrounds 才通順。另外，這篇的十個選項裡 these、other、while、not only、with、such as、also 共七個是虛詞，只有 lower、methods、evenly 三個是實詞，與 92 年正式考那一篇同型；拿來練沒問題，但別把它當成文意選填的代表性練習。",
   "options": {
    "A": "these",
    "B": "lower",
@@ -6466,7 +6466,7 @@
   "id": "y110t",
   "year": "110年試辦考試",
   "exam": "學測",
-  "examType": "參考試卷",
+  "examType": "試辦考試",
   "blankCount": 10,
   "optionCount": 10,
   "eliminationValid": true,
