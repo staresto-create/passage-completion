@@ -481,6 +481,7 @@ function loadHistory(){ try{ return JSON.parse(localStorage.getItem(HISTORY_KEY)
 function saveHistory(h){ localStorage.setItem(HISTORY_KEY, JSON.stringify(h)); }
 function loadWrongIds(){ try{ return JSON.parse(localStorage.getItem(WRONG_KEY)) || []; }catch(e){ return []; } }
 function saveWrongIds(w){ localStorage.setItem(WRONG_KEY, JSON.stringify(w)); }
+function shuffle(arr){ const a=[...arr]; for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1)); [a[i],a[j]]=[a[j],a[i]];} return a; }
 
 /* 單次資料轉移：109 年題目 id 由 V109_XX 改為 Vy109_XX（全站 id 統一加 y 前綴），
    將使用者瀏覽器裡既有的作答紀錄與錯題清單一併改寫，避免舊紀錄對不上題目。 */
@@ -559,7 +560,7 @@ function quickStart(){
 function startWrongBook(){
   const wrong = loadWrongIds();
   if(wrong.length === 0){ alert('錯題本目前是空的，還沒有答錯的題目。'); return; }
-  singleQueue = ITEMS.filter(it => wrong.includes(it.id)).sort(()=>Math.random()-0.5);
+  singleQueue = shuffle(ITEMS.filter(it => wrong.includes(it.id)));
   singleIdx = 0;
   currentMode = 'single';
   document.getElementById('homeView').style.display='none';
@@ -749,7 +750,7 @@ function startPractice(){
       return catOk && yearOk && spanOk;
     });
     if(pool.length===0){ alert('這個篩選條件下沒有題目'); return; }
-    singleQueue = pool.sort(()=>Math.random()-0.5);
+    singleQueue = shuffle(pool);
     singleIdx = 0;
     document.getElementById('homeView').style.display='none';
     document.getElementById('practiceView').style.display='block';
