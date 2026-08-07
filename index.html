@@ -580,7 +580,17 @@ let currentLevel = 'mid'; // low/mid/high
 let hintsOn = true;
 
 const SPANS = ["句內","跨句","篇章"];
-const CATS = ["搭配詞／固定用法","字義辨析／多義字","詞性判斷","同義改寫／替代指涉","句型／固定搭配句構","上下文線索／邏輯推論"];
+// 分類清單一律由 items.json 導出，避免資料檔與渲染碼脫節；
+// CAT_ORDER 只決定顯示順序，資料中出現而未列於此的分類，依題數多寡自動接在後面。
+const CAT_ORDER = ["字詞搭配","字彙選義","詞性判斷","同義呼應","代名詞／指示詞","句型結構","語意連貫"];
+let CATS = [];
+function buildCatList(){
+  const count = {};
+  ITEMS.forEach(it => (it.categories || []).forEach(c => count[c] = (count[c] || 0) + 1));
+  const listed = CAT_ORDER.filter(c => count[c]);
+  const extra = Object.keys(count).filter(c => !CAT_ORDER.includes(c)).sort((a,b) => count[b] - count[a]);
+  CATS = listed.concat(extra);
+}
 
 async function init(){
   const dirs = ['gsat','zhikao'];
@@ -593,6 +603,7 @@ async function init(){
     ps.forEach(p => { p.exam = p.exam || examName; PASSAGES[p.id] = p; });
     its.forEach(it => { it.exam = it.exam || examName; ITEMS.push(it); });
   });
+  buildCatList();
   buildExamGrid();
   buildCatGrid();
   buildSingleYearGrid();
