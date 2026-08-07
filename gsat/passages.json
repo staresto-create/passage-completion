@@ -233,8 +233,8 @@
     ]
    }
   ],
-  "thesis": "“most dimples are actually a genetic flaw caused by shortened facial muscles”",
-  "thesisExplain": "全文以「酒窩＝美的象徵」這個普遍認知開場（hook），再用 Though 轉折點出「其實多數酒窩是肌肉發育造成的生理現象」，這是貫穿全文的核心翻轉；後面兩段（非遺傳性成因、人工創造方法）都是圍繞這個「重新定義酒窩本質」的核心概念展開的延伸說明，而非各自獨立的主旨。",
+  "thesis": "“most dimples are actually a genetic ___ caused by shortened facial muscles”",
+  "thesisExplain": "酒窩人人愛，這篇偏要從另一個角度講。全文的中心思想落在這一句，關鍵在第 33 格：前面先鋪「酒窩＝好看」這個大家都同意的說法，Though 一轉，整篇對酒窩的定調就換了；這一格填什麼，定調就是什麼。位置上，它夾在 a genetic ___ caused by 中間，前面是冠詞加形容詞、後面是過去分詞片語，詞性就這樣固定下來，剩下才是挑意思。往下讀，dimples、such dimples、they 這條隱形連結，加上 In fact、though、for、As 幾個轉承點，就是後兩段（嬰兒肥消掉就跟著不見的那種、後天做出來的那種）扣回主旨的方式。寫作上這個骨架直接搬得動：先寫大家普遍怎麼想，再用一句轉折立自己的主張，後面每段回頭扣它。86 年學測問你同不同意 Laughter is better than medicine，用的就是這一招。",
   "macro": {
    "structure": "先破後立型 — 普遍認知(hook) → Though轉折點出科學真相 → 補充例外情況 → 提出解決方案",
    "patterns": "現象解釋 (Phenomenon Explanation) ＋ 問題解決 (Problem-Solution)",
@@ -683,8 +683,8 @@
     ]
    }
   ],
-  "thesis": "“There are several competing stories about the origin of the fortune cookie. None of them, however, has been proven to be entirely true.”",
-  "thesisExplain": "全文並列三種幸運餅乾起源說法(中國元朝起義傳說、David Jung版本、Hagiwara主流版本)，開頭這句話就是貫穿全文的核心思想——起源眾說紛紜、沒有一個被證實完全屬實，後面三段分別是三種說法的展開，彼此平行、互相對照，而非誰對誰錯的辯證關係。",
+  "thesis": "“There are several ___ stories about the origin of the fortune cookie. None of them, however, has been proven to be entirely true.”",
+  "thesisExplain": "幸運餅乾到底哪裡來的？開頭兩句合起來才是完整的中心思想，關鍵落在第 31 格。several ___ stories：前面是數量詞、後面是名詞，中間只剩形容詞的位置，這是先定位置、再定意思最標準的例子。第二句的 None of them, however 是另外一半——them 回指 stories，however 把「說法好幾種」轉成「一種都沒被證實」，兩句缺一不可。後面三段（元朝起義的傳說、David Jung 的版本、Hagiwara 的版本）彼此平行、互相對照，不是誰對誰錯的辯論。寫作上這是並列式說明文的標準開場：先說有幾種，再說它們彼此的關係。100 年指考問畢業典禮該溫馨、熱鬧還是嚴肅，先並列三種再表態，是同一個做法。",
   "macro": {
    "structure": "多方並陳型 — 提出核心懸念(起源眾說紛紜) → 說法一(中國起義傳說，but轉折指出證據不足) → 說法二(David Jung慈善說) → 說法三(Hagiwara主流公認版本，However標示最終採信對象)",
    "transitions": "however（開頭：懸念鋪陳）→ but（說法一：可信但無證據）→ Another（說法二起始，並列標記）→ However（說法三起始，標示「更普遍被接受」）→ but（Hagiwara改編：日式點心→美式口味）",
@@ -898,8 +898,8 @@
     ]
    }
   ],
-  "thesis": "“no culture admired onions quite as much as the ancient Egyptians”",
-  "thesisExplain": "全文開頭先承認洋蔥在古代世界普遍被使用，再用 Nonetheless 轉折點出「沒有一個文化像古埃及人那樣崇拜洋蔥」，這是貫穿全文的核心思想；後面三段(精神象徵、墓葬證據、學者推測用途)都是在具體佐證「埃及人對洋蔥的特殊崇拜」這個核心概念，而非各自獨立的主旨。",
+  "thesis": "“no culture ___ onions quite as much as the ancient Egyptians”",
+  "thesisExplain": "洋蔥在古代到處都有人吃，但把它一路帶進墓室裡陪葬的，只有一個地方。中心思想落在這一句，關鍵在第 31 格。no culture ___ onions quite as much as… 是「否定主詞＋as…as」的最高級說法，整組結構把這一格鎖成動詞，連時態都一併定下來，認出來幾乎不用猜。文章先承認洋蔥本來就用得普遍，Nonetheless 一轉才推到這一句；後面三段（精神象徵、墓葬裡的證據、學者推測的用途）都是佐證，不是各自獨立的主旨。寫作上，「別人都有，但沒有誰像 X 這樣」一句話就能把主題推到最高點。108 年學測要你談臺灣最讓你引以為榮的兩個面向，主題句用這個句型最有力。",
   "macro": {
    "structure": "先普遍後特殊型 — 普遍現象(洋蔥全球皆用) → Nonetheless轉折(埃及人格外崇拜) → 精神意義說明 → 考古證據佐證 → 學者推測用途(結尾並列兩種理論，不下定論)",
    "transitions": "Nonetheless（轉折，帶出全文中心思想）→ but（精神意義段內部轉折：醫療用途被視為魔法而非醫學）",
@@ -1125,8 +1125,8 @@
     ]
    }
   ],
-  "thesis": "“A man from rural India proves that this is not necessarily true.”(呼應開頭提問：森林是否一定由大自然創造？)",
-  "thesisExplain": "全文以「森林是否一定是大自然創造的？」這個提問開場，再用 Kareem 的故事證明答案是否定的——森林也可以由人一手打造。這句話點出全文的核心命題，後面三段(開墾過程、順應自然理念、成果)都是圍繞「人如何以一己之力創造出一片森林」這個核心概念展開的敘事佐證。",
+  "thesis": "“A man from rural India proves that this is not necessarily ___.”(呼應開頭提問：森林是否一定由大自然創造？)",
+  "thesisExplain": "森林一定是大自然長出來的嗎？開頭先問，緊接著這一句給答案，中心思想就在這裡，關鍵落在第 31 格。this 回指前面那個提問，not necessarily ___ 又把詞性框住；指涉和詞性兩條線在這一格交會，最適合拿來練「先確認 this 指什麼，再決定填什麼」。後面三段（買下一片滿是石頭的荒地、不施肥不噴藥、最後養出上千種動植物）都是這句話的敘事佐證。寫作上：先設問，再用一個具體的人一句話回答，是記敘與論說混寫時很好用的開場。83 年學測的 Things Are Not As Difficult As They Appear，立意方式一模一樣。",
   "macro": {
    "structure": "提問破題型 — 提出疑問(森林是否必為天然) → 破題(一介平凡人證明並非如此) → 開墾歷程(挫折與突破) → 順應自然理念 → 成果與迴響",
    "transitions": "Though（讓步，凸顯主角非科班出身卻博學）→ But（對比，他不理會旁人質疑）→ However（轉折，前兩年失敗、第三年終於成功）",
@@ -1805,8 +1805,8 @@
     ]
    }
   ],
-  "thesis": "“There are thousands of reefs in the world; sadly, however, they are now in serious danger.”",
-  "thesisExplain": "第一段先建立珊瑚礁對海洋生態的重要性，第二段用 sadly, however 轉折點出核心問題——珊瑚礁數量雖多，卻正陷入嚴重危機，並預告「三大原因」，這是貫穿全文的核心思想；第三、四段分別展開污染、暖化、人為破壞三個原因，都是圍繞這個核心問題的具體佐證。",
+  "thesis": "“There are thousands of reefs in the world; ___, however, they are now in serious danger.”",
+  "thesisExplain": "海裡的「公寓大樓」住著四分之一的海洋生物，現在正在垮。中心思想落在這一句，關鍵在第 33 格。這一格被分號和 however 夾在中間，前後各是一個完整句子，光看位置就知道它不是句子的骨幹，而是作者表態的地方——先想清楚這一格在句中扮演什麼角色，再挑字。分號把「數量很多」和「處境危險」擺在一起對照，they 回指 reefs，however 標出轉折，三個線索指向同一件事。後面依序講三個成因（陸地污染、氣候變遷、人為破壞），都是這句的展開。寫作上：分號＋一個表態的副詞＋however，一句話就能把「看起來很好、其實不然」寫清楚。110 年學測那張遊客踩進花田的圖，第一段正好這樣落筆。",
   "macro": {
    "structure": "問題成因型 — 建立重要性(珊瑚礁是海洋生物的家) → sadly however轉折(核心問題：珊瑚礁正面臨嚴重危機，全文中心思想) → 原因一二(污染、暖化) → 原因三(人為破壞)＋結語呼籲",
    "transitions": "sadly, however（轉折，帶出全文中心思想）→ but（讓步：原因未完全查明，但已找出三大主因）",
@@ -2239,8 +2239,8 @@
     ]
    }
   ],
-  "thesis": "“the modern way of preparing this popular snack may carry an unhappy secret”",
-  "thesisExplain": "全文先肯定爆米花是廣受歡迎的看電影良伴，再用 However 轉折點出「現代微波爆米花的製作方式暗藏健康隱憂」，這是貫穿全文的核心思想；第二段具體說明化學塗層與奶油調味劑的危害，第三段則提出「自己動手做」的健康替代方案，前後呼應「隱憂→解方」的完整脈絡。",
+  "thesis": "“the modern way of preparing this ___ snack may carry an unhappy secret”",
+  "thesisExplain": "進電影院手上那一桶爆米花，這篇要講的是它的另一面。中心思想落在這一句，關鍵在第 31 格。this ___ snack：指示詞在前、名詞在後，中間是形容詞的位置；this 回指前一段講的爆米花，所以這一格填的字必須接得回前文，線索就藏在這條隱形連結裡。前面先鋪爆米花和看電影的關係，However 一轉帶出問題；第二段講包裝塗層和奶油調味劑，第三段給「自己動手做」的替代方案，「問題→解方」扣得很緊。寫作上，先給讀者熟悉的好處、再轉出問題、最後給做法，是說明文最穩的三段式。113 年學測要你挑一項青少年的困擾、說明原因再談解方，結構完全一樣。",
   "macro": {
    "structure": "問題解方型 — 建立好感(爆米花是看電影的樂趣) → However轉折(現代製法暗藏健康隱憂，全文中心思想) → 具體危害說明(化學塗層、奶油調味劑) → 健康替代方案(自製爆米花步驟)",
    "transitions": "However（轉折，帶出全文中心思想）→ Making matters worse（遞進，追加另一項危害）→ As soon as（步驟段的時間銜接）→ Then（步驟段的順序銜接）",
@@ -2445,8 +2445,8 @@
     ]
    }
   ],
-  "thesis": "“Football is more than a sport; it is also an invaluable teacher.”",
-  "thesisExplain": "開頭這句話點出全文核心思想：足球不只是運動，更是教導年輕人團隊合作的老師。後面三段依序從「球場上學到的合作」延伸到「離開球場後在社會中的自我定位」，再到「落實為公民生活中的合作精神」，都是圍繞「足球=社會化教育」這個核心概念層層展開。",
+  "thesis": "“Football is more than a sport; it is also an invaluable ___.”",
+  "thesisExplain": "球場上沒有人能自己一個人贏——這就是這篇要講的事。中心思想落在開頭這一句，關鍵在第 31 格。an invaluable ___ 前面是冠詞加形容詞，位置定死了要填名詞；分號前的 more than a sport 又規定這個名詞得跳出「運動」的範圍：位置決定形式，分號前那半句決定意思，兩邊都限制住了，能填的其實不多。後面三段順著這條線往外走，從球場上的合作，到離開球場後在社會裡怎麼定位自己，最後落到公民生活；the players、he、the former player、the man who has played football 換了好幾種說法，講的其實是同一個人，這條隱形連結沒認出來，讀到後面會以為換了主角。寫作上，「X 不只是 A，更是 B」是主題句最快立起來的句型。104 年學測要你從兩本推薦書挑一本說明理由，主題句寫成「這本書不只是……，更是……」最快站住。",
   "macro": {
    "structure": "定義延伸型 — 定義(足球是老師) → 球場上的合作課 → 延伸到社會角色(不再是獨行俠) → 結論(合作精神＝現代公民必備)",
    "transitions": "So（結尾，帶出結果：因為理解合作，適應各種社會角色毫無困難）",
@@ -3302,8 +3302,8 @@
     ]
    }
   ],
-  "thesis": "“Keeping yourself healthy has to be your own responsibility.”",
-  "thesisExplain": "開頭這句話點出全文中心思想：健康無法用錢買、也無法靠看一次醫生解決，維持健康是每個人自己的責任。後面三段依序說明「忽視健康習慣的代價」「wellness因人而異的定義」「疾病無法完全避免但風險可以自己降低」，都是圍繞「健康是自己的責任」這個核心概念展開。",
+  "thesis": "“Keeping yourself healthy has to be your own ___.”",
+  "thesisExplain": "健康這件事，錢買不到，看一次醫生也解決不了——說完這兩句，作者把話收回到讀者身上，中心思想就落在這一句，關鍵在第 32 格。your own ___ 前面是所有格加 own、後面是句點，位置只容得下名詞；has to be 這個說法本身帶著「不得不」的味道，也限定了這一格要接得住這種語氣。這裡要留意：前後兩句之間一個轉折詞都沒有，靠的是意思直接接上去——這種沒有明顯標記的接法，讀的時候要自己把關係補起來。後面三段依序談壞習慣的代價、wellness 因人而異、風險歸零不可能但可以壓低，都圍著這一句轉。寫作上，一句話把「該由誰來做、由誰來扛」講清楚，很適合當論說文的主題句，89 年學測談 Weight Loss 的成因時就很好用。",
   "macro": {
    "structure": "責任歸屬型 — 破題(健康買不到，是自己的責任，全文中心思想) → 忽視習慣的後果 → wellness的定義(因人而異，理解自己的身體) → 疾病無法完全避免，但風險可自行降低",
    "transitions": "While（第三段內部對比：不同人偏好不同運動強度）→ Nevertheless（第四段：雖無法避免意外與慢性病，但仍可自行降低風險）",
@@ -3894,8 +3894,8 @@
     ]
    }
   ],
-  "thesis": "“Yet, while stress may damage our health, it is sometimes necessary, even desirable.”",
-  "thesisExplain": "前兩段先鋪陳壓力如何普遍存在、對健康造成的具體危害(數據佐證)，第三段用 Yet, while 轉折點出全文真正的核心思想：壓力雖然有害，卻有時是必要、甚至值得擁有的——好事(如生小孩、升遷)帶來的壓力不亞於壞事，若完全沒有壓力，生活反而會顯得枯燥乏味。",
+  "thesis": "“Yet, while stress may damage our health, it is sometimes necessary, ___ desirable.”",
+  "thesisExplain": "前兩段先把壓力有多普遍、對健康的傷害有多具體講得很足，第三段用 Yet, while 一轉，全文真正的中心思想才登場，關鍵落在第 38 格。necessary, ___ desirable 是兩個形容詞並列、後面那個比前面那個再往上一層的寫法；這一格要填的就是把語氣往上推的那個字——看的是兩個形容詞之間的強弱關係，不是單看某個字的意思。往下讀，好事帶來的壓力（生小孩、升遷）一點都不比壞事少，而完全沒有壓力的日子反而單調，全都在撐這一句。寫作上，兩個形容詞並列、後者再加一層，主張一句話就有層次。92 年指考要你從 Exams of all kinds have become part of… 寫起，談考試壓力，正好套得上。",
   "macro": {
    "structure": "先害後益型 — 現象鋪陳(壓力是熱門話題) → 具體危害數據(死因排名、醫療支出占比) → Yet/while轉折(壓力也有其必要性，全文中心思想)",
    "transitions": "Yet / while（轉折，帶出全文中心思想：壓力並非全然負面）",
@@ -4307,8 +4307,8 @@
     ]
    }
   ],
-  "thesis": "“As a result, much of the salt melted in the water, ruining the salt for Amir but lightening the load for the donkey.”",
-  "thesisExplain": "這句話點出全文的核心轉折機制：鹽泡水會溶解變輕，對阿米爾是損失、對驢子卻是好處——這個發現促使驢子屢次故技重施，也促使阿米爾最終想出「用沙子取代鹽」的對策(沙子泡水反而變重)，讓驢子自食惡果、學到教訓。全文情節都圍繞「泡水後重量變化」這個物理現象的巧妙運用展開。",
+  "thesis": "“As a result, much of the salt melted in the water, ruining the salt for Amir but ___ the load for the donkey.”",
+  "thesisExplain": "鹽泡到水裡會怎樣，驢子比阿米爾先想通。這一句點出全文的關鍵所在，重量落在第 33 格。ruining… but ___… 是一組對照並列：but 前後結構一樣、方向相反，前半對阿米爾是損失，後半對驢子就該是相反的結果——認出這個對稱，這一格幾乎是被前半句決定的。而 the load 這個受詞又限制了能跟它搭配的動詞，意思和搭配兩條線在這裡收攏。後面情節全從這個現象長出來：驢子食髓知味，阿米爾改裝沙子，驢子自己學到教訓。寫作上，敘事文最有力的一句往往不是結局，而是把「為什麼會變成這樣」講清楚的那一句。93 年指考寫 Travel Is The Best Teacher，也得靠這樣一句話把經驗和道理接起來。",
   "macro": {
    "structure": "以彼之道還施彼身型 — 意外發現(鹽泡水變輕，全文關鍵機制) → 屢次故技重施 → 主人想出對策(換成沙子，泡水反而變重) → 結語(驢子學到教訓，從此盡責)",
    "transitions": "but（×2，第二段：驢子故技重施、阿米爾苦惱卻不知如何是好）",
@@ -4956,8 +4956,8 @@
     ]
    }
   ],
-  "thesis": "“Stunt work emerged out of necessity over time.”",
-  "thesisExplain": "這句話點出全文核心思想：特技演員這個職業並非一開始就存在的專門分工，而是因應演員實際受傷的需求逐漸演變而成。後面段落依序說明「需求如何隨默片、西部片興起而擴大」「科技如何從實體特效演進到CGI」，但即使CGI技術發達，真人特技仍有其無可取代的真實感，呼應開頭「因應需求而生」的核心思想——這個行業會因應時代持續存在下去。",
+  "thesis": "“Stunt work emerged out of ___ over time.”",
+  "thesisExplain": "特技演員這一行，不是電影一開始就有的，是被現實逼出來的。這一句就是全文的中心思想，關鍵落在第 22 格。emerge out of ___ 是一組很常見的字詞搭配，後面習慣接抽象名詞，out of curiosity、out of habit 都是同一類用法，光憑這個組合就能先刷掉一半選項。句尾的 over time 又預告了全文按時間走：默片和西部片時期需要的人變多、實體特效、再到 CGI——技術再厲害，真人從樓上翻下來那一下的真實感還是換不掉，結尾又扣回開頭。寫作上，要交代「某個行業或習慣是怎麼冒出來的」，用這種一句話講成因、後面照時間排的寫法最清楚。105 年指考談「碩士報考清潔隊員」這類現象，開頭正好可以這樣立。",
   "macro": {
    "structure": "演變溯源型 — 定義(特技演員的工作內容) → 起源(因應演員受傷的實際需求，全文中心思想) → 需求成長(默片到西部片時代) → 科技演進(實體特效到CGI，結語仍有存在價值)",
    "transitions": "however（早期缺乏專業特技人員）→ However（CGI技術發達但仍有其局限）→ So（結語，特技產業不會消失）",
@@ -5164,8 +5164,8 @@
     ]
    }
   ],
-  "thesis": "“Sleep experts say this teen behavior actually has a physical cause”",
-  "thesisExplain": "全文用 But 破除「青少年晚起是懶惰」的迷思，點出核心思想：晚起其實是生理上的睡眠時鐘使然，並非態度問題。後面段落依序說明生理時鐘與上學時間的衝突如何造成睡眠不足及其負面影響，再以「延後上學時間」的實際案例佐證，改變作息確實能帶來正面成效——整體呼應開頭破除迷思的核心思想。",
+  "thesis": "“Sleep experts say this teen behavior actually has a physical ___”",
+  "thesisExplain": "「早上叫不起來就是懶」，這篇用 But 把這個說法翻掉，中心思想落在這一句，關鍵在第 32 格。a physical ___ 前面有冠詞和形容詞，後面緊接著冒號——冒號之後那句話就是替這一格作的說明，讀的時候前後對起來看，這一格自己會浮出來。physical 和後文的 biologically programmed 是同一條意思線，這種同義呼應在文意選填裡最常當線索用。後面依序講生理時鐘和上學時間打架、睡不夠帶來的影響，再用延後上學的實例收尾，正面回應開頭那個說法。寫作上：先點出一般人的誤解，再用一句話把真正的關鍵交代清楚，後面全部拿來佐證。103 年指考那題高中生時間分配圖表，第二段比較臺美差異時就用得上。",
   "macro": {
    "structure": "破除迷思型 — 常見誤解(晚起=懶惰) → But破題(其實是生理原因，全文中心思想) → 問題說明(生理時鐘與上學時間衝突，睡眠不足的負面影響) → 解方佐證(延後上學時間的正面成效)",
    "transitions": "But（破除迷思，帶出全文中心思想）",
@@ -5576,8 +5576,8 @@
     ]
    }
   ],
-  "thesis": "“Grieving is a natural mechanism for coping with loss of a loved one, and people grieve in various ways.”",
-  "thesisExplain": "全文以「風之電話」這個真實故事，具體呈現結尾這句話揭示的核心思想：哀悼是人類應對失去至親的天生機制，而每個人哀悼的方式不同。從佐佐木謙個人的私密悼念空間，到海嘯後開放給大眾使用，再到全球各地仿效設立(甚至用於COVID-19疫情逝者)，全文層層鋪陳「風之電話」如何成為一種獨特而普世的哀悼方式，呼應結尾「哀悼機制因人而異、但希望始終都在」的核心思想。",
+  "thesis": "“Grieving is a natural ___ for coping with loss of a loved one, and people grieve in various ways.”",
+  "thesisExplain": "一具沒有接線的電話，卻有人排隊等著打。全文用「風之電話」這個真實故事鋪了一路，到結尾才把話收在這一句，中心思想在這裡，關鍵落在第 29 格。這一格前面有 a 和 natural、後面接 for coping with，前後兩邊一起把詞性定住，意思是後面才要考慮的事；順序顛倒過來做，很容易被意思相近的選項牽走。故事從佐佐木謙一個人的悼念，寫到海嘯後開放給所有人，再寫到世界各地跟著設立，Sasaki、others、people、they 接成的隱形連結，把「一個人的做法」一路擴成「大家的做法」，結尾那句 in various ways 才站得住。寫作上這是「從一個人收到所有人」的結尾法：先講一個具體的人怎麼做，最後一句再把它說成人人都有的事。106 年指考寫「寂寞的時候怎麼排解」，正適合這樣收。",
   "macro": {
    "structure": "個案見證型 — 引言(海嘯後的電話亭) → 起源(設計師的私人悼念空間) → 推廣(從私人到公眾、從日本到全球) → 結語(哀悼機制與希望，全文核心思想)",
    "transitions": "Hence（結果，帶出風之電話的獨特意義）→ after（時間承接，海嘯後開放給大眾）",
@@ -5772,8 +5772,8 @@
     ]
    }
   ],
-  "thesis": "“Located at the heart of Paris, this medieval cathedral is noted for its intricate architecture, stunning stained glass windows, and, above all, its bells.”",
-  "thesisExplain": "開頭這句話點出全文焦點：聖母院最為人知的其實是它的鐘聲(above all點出重點)。後面段落依序介紹鐘的歷史(唯一倖存法國大革命的Emmanuel鐘)、鐘聲在巴黎生活中扮演的多重角色(報時、宗教、示警、慶典、哀悼)，最後以2019年大火後鐘聲沉寂、2024年修復重響作結，全文緊扣「鐘聲」這個核心意象，呼應開頭「above all, its bells」的強調。",
+  "thesis": "“Located at the heart of Paris, this medieval cathedral is ___ for its intricate architecture, stunning stained glass windows, and, above all, its bells.”",
+  "thesisExplain": "聖母院有拱頂、有彩繪玻璃，但這篇真正要談的是鐘。開頭這一句就是全文焦點，關鍵在第 21 格。這一格落在 be 動詞和 for 之間，是一組固定的組合，能站進去的形式先少掉一半；先認出組合再挑語意，比只憑中文意思快也準。整句用「A、B，and, above all, C」三項並列，above all 把重點推到最後一項，後面各段就照這個重點走：唯一躲過法國大革命的 Emmanuel 鐘、鐘聲在巴黎人生活裡身兼多職（報時、禮拜、示警、慶典、送別），最後停在 2019 年那場大火之後的沉默，還有 2024 年重新響起的那一刻。寫作上，「三項並列＋above all 收在最重的一項」一句話就撐得起一整段開頭，92 年學測寫 Music Is An Important Part of Our Life 這類題目最好用。",
   "macro": {
    "structure": "重點聚焦型 — 引言(聖母院以鐘聲聞名，全文中心思想) → 鐘的歷史(倖存法國大革命的Emmanuel鐘) → 鐘聲的多重功能(報時、宗教、示警、慶典、哀悼) → 結語(大火沉寂到修復重響)",
    "transitions": "However（結尾轉折，帶出2019年大火造成的沉寂）",
@@ -6000,8 +6000,8 @@
     ]
    }
   ],
-  "thesis": "“Taking a nap in the middle of the day is by no means unproductive.”",
-  "thesisExplain": "開頭用問句破除「午睡有罪惡感」的迷思，點出全文核心思想：午睡並非沒有生產力的行為。後面段落依序從科學角度(大腦健康、記憶)說明午睡的好處，再從實務角度(時間長短、環境布置)教讀者如何有效午睡，前後呼應「午睡是值得推廣的健康習慣」這個核心概念。",
+  "thesis": "“Taking a nap in the middle of the day is by no means ___.”",
+  "thesisExplain": "午休鐘一響就趴下去的那二十分鐘，到底值不值得？開頭第一句就把立場講明了，全文的中心思想在這裡，整句的重量壓在第 21 格。這一格前面是 by no means，把話整個推翻的全否定；先弄清楚它要推翻的是哪一種看法，就不必一個一個代選項去試。往下讀，nap、napping、naps 一路重複出現，中間用 In fact、however、Furthermore 接住，走向很清楚：先翻掉成見，再搬科學證據（大腦、記憶），最後給做法（睡多久、房間怎麼弄暗）。這個骨架寫作直接搬得動——第一句先否定一個大家習以為常的說法，第二段擺證據，第三段給做法。101 年學測要你寫信勸好友別再熬夜打電玩，也是這一套：先把對方的想法接住再翻轉，比一開口就訓話有用。",
   "macro": {
    "structure": "破除迷思型 — 破題(午睡不是沒有生產力，全文中心思想) → 科學實證(大腦健康與記憶效益) → 實務建議一(午睡時長因人而異) → 實務建議二(午睡環境的重要性)",
    "transitions": "however（×2，午睡者大腦保存較好／最佳長度因人而異）→ while（不同研究建議不同時長對比）→ Furthermore（遞進，環境因素）",
@@ -6228,8 +6228,8 @@
     ]
    }
   ],
-  "thesis": "“Research shows that modest amounts of exercise—even just 15 minutes a day—helps ease depression, enhance self-image, relieve stress, and much more.”",
-  "thesisExplain": "開頭點出全文核心思想——研究顯示「少量運動」(即使一天只有15分鐘)就能有效舒緩憂鬱、提升自我形象、緩解壓力，破除「沒時間運動」的藉口。後面段落依序說明「不必是健身狂熱者也能開始」的心態、「no pain, no gain」迷思的破除，以及溫和運動(散步、游泳、伸展)一樣有效，前後呼應「少量而規律的運動就有幫助」這個核心思想。",
+  "thesis": "“Research shows that ___ amounts of exercise—even just 15 minutes a day—helps ease depression, enhance self-image, relieve stress, and much more.”",
+  "thesisExplain": "「沒時間運動」這個藉口，這篇第一句就拆了。中心思想落在這裡，關鍵在第 31 格。這一格是形容詞的位置，修飾後面的 amounts of exercise；而緊接著的破折號補述，就在同一句裡等你拿來比對——文意選填最值得養成的習慣就是這個：先在同一句裡找補述、同位語或例子，再回頭決定這一格。後面 ease、enhance、relieve 三個動詞並列把好處疊出來，也預告了全篇要處理的正是「不夠拚就沒用」這種想法（no pain, no gain 那一段）。寫作上：主張句＋破折號補述＋動詞並列，一句話就撐得起一段開頭。101 年指考要你描述最常從事的運動，第二段講好處時最用得上。",
   "macro": {
    "structure": "破除迷思型 — 破題(少量運動就有效，全文中心思想) → 心態建立(輕鬆開始、不必狂熱) → 破除迷思(no pain no gain已過時) → 結語(溫和運動同樣有效，鼓勵擠出時間運動)",
    "transitions": "In fact（×2，點出現代研究推翻舊觀念、運動過度可能反而是受傷警訊）→ but（運動雖然會喘、痠痛，但不該疼痛）→ So（結語，呼籲行動）",
@@ -6442,8 +6442,8 @@
     ]
    }
   ],
-  "thesis": "“Yet, is water always the healthiest drink we can reach for? Well, it depends on who and where we are, and what we're doing.”",
-  "thesisExplain": "前兩句先鋪陳一般人的common sense——白開水無糖、無熱量，是補水首選；接著用 Yet 帶出反問句推翻這個直覺，並立刻自答「it depends on who and where we are, and what we're doing」。這一問一答就是全文的核心主張：水並非在任何情況下都是最健康的飲品，要看人、看場合、看活動。第一段後半用流汗同時失水失鹽的生理機制，以及牛奶、椰子水兩個反例來支撐；第二段再用 however 把焦點拉回一般人，補上「該怎麼喝」的方法，前後都扣住同一個中心思想。",
+  "thesis": "“Yet, is water always the healthiest drink we can ___? Well, it depends on who and where we are, and what we're doing.”",
+  "thesisExplain": "流完汗猛灌白開水，其實不一定最好。這篇的中心思想是用一問一答立起來的，關鍵落在第 21 格。這一格所在的 the healthiest drink we can ___ 省略了關係代名詞，drink 既是先行詞、也是這個動作的受詞；認出這層關係，能填的形式馬上少一半。Yet 把前面「白開水最好」的鋪陳整個轉開，Well, it depends 再把答案交給條件（who、where、what we're doing），後面每一段都在補條件：在太陽底下工作的人、整天坐辦公室的人、流汗流掉的鹽分，還有牛奶為什麼有時反而更合適。寫作上，「先設問，再用 it depends 帶出條件」是論說文很省力的開場，一開頭就不會把話說死。96 年指考問「你能想像沒有電的世界嗎」，用的也是同一招。",
   "macro": {
    "structure": "破除迷思型 — 背景鋪陳(水占體重一半、白開水看似最佳選擇) → 反問破題(水永遠最健康嗎？答案因人、因地、因活動而異，全文中心思想) → 生理機制說明(流汗同時流失水與鹽，只補白開水反而以排尿失衡) → 反例佐證(牛奶、椰子水在特定情況更有效) → 轉折回到一般人(水仍是好選擇) → 提出正確喝水方法(別等口渴、全天分次補充)",
    "patterns": "說明文 (Expository) ＋ 比較對比 (Compare/Contrast)",
