@@ -5,7 +5,7 @@
   "passageId": "y109",
   "blankNum": 31,
   "categories": [
-   "上下文線索／邏輯推論"
+   "語意連貫"
   ],
   "options": {
    "A": "flaw",
@@ -33,7 +33,7 @@
   "passageId": "y109",
   "blankNum": 32,
   "categories": [
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "flaw",
@@ -61,9 +61,9 @@
   "passageId": "y109",
   "blankNum": 33,
   "categories": [
-   "上下文線索／邏輯推論",
-   "字義辨析／多義字",
-   "同義改寫／替代指涉",
+   "語意連貫",
+   "字彙選義",
+   "同義呼應",
    "詞性判斷"
   ],
   "options": {
@@ -93,8 +93,8 @@
   "blankNum": 34,
   "categories": [
    "詞性判斷",
-   "字義辨析／多義字",
-   "搭配詞／固定用法"
+   "字彙選義",
+   "字詞搭配"
   ],
   "options": {
    "A": "flaw",
@@ -123,7 +123,7 @@
   "blankNum": 35,
   "categories": [
    "詞性判斷",
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "flaw",
@@ -152,8 +152,8 @@
   "passageId": "y109",
   "blankNum": 36,
   "categories": [
-   "字義辨析／多義字",
-   "搭配詞／固定用法"
+   "字彙選義",
+   "字詞搭配"
   ],
   "options": {
    "A": "flaw",
@@ -181,7 +181,7 @@
   "passageId": "y109",
   "blankNum": 37,
   "categories": [
-   "上下文線索／邏輯推論"
+   "語意連貫"
   ],
   "options": {
    "A": "flaw",
@@ -209,7 +209,7 @@
   "passageId": "y109",
   "blankNum": 38,
   "categories": [
-   "搭配詞／固定用法",
+   "字詞搭配",
    "詞性判斷"
   ],
   "options": {
@@ -238,7 +238,7 @@
   "passageId": "y109",
   "blankNum": 39,
   "categories": [
-   "字義辨析／多義字"
+   "字彙選義"
   ],
   "options": {
    "A": "flaw",
@@ -266,9 +266,9 @@
   "passageId": "y109",
   "blankNum": 40,
   "categories": [
-   "搭配詞／固定用法",
+   "字詞搭配",
    "詞性判斷",
-   "同義改寫／替代指涉"
+   "代名詞／指示詞"
   ],
   "options": {
    "A": "flaw",
@@ -296,7 +296,7 @@
   "passageId": "y108",
   "blankNum": 31,
   "categories": [
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "little",
@@ -324,8 +324,8 @@
   "passageId": "y108",
   "blankNum": 32,
   "categories": [
-   "搭配詞／固定用法",
-   "句型／固定搭配句構"
+   "字詞搭配",
+   "句型結構"
   ],
   "options": {
    "A": "little",
@@ -353,7 +353,7 @@
   "passageId": "y108",
   "blankNum": 33,
   "categories": [
-   "句型／固定搭配句構"
+   "句型結構"
   ],
   "options": {
    "A": "little",
@@ -410,7 +410,7 @@
   "passageId": "y108",
   "blankNum": 35,
   "categories": [
-   "同義改寫／替代指涉"
+   "同義呼應"
   ],
   "options": {
    "A": "little",
@@ -439,7 +439,7 @@
   "passageId": "y108",
   "blankNum": 36,
   "categories": [
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "little",
@@ -467,7 +467,7 @@
   "passageId": "y108",
   "blankNum": 37,
   "categories": [
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "little",
@@ -495,7 +495,7 @@
   "passageId": "y108",
   "blankNum": 38,
   "categories": [
-   "上下文線索／邏輯推論"
+   "語意連貫"
   ],
   "options": {
    "A": "little",
@@ -551,7 +551,7 @@
   "passageId": "y108",
   "blankNum": 40,
   "categories": [
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "little",
@@ -579,7 +579,7 @@
   "passageId": "y107",
   "blankNum": 31,
   "categories": [
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "account",
@@ -608,7 +608,7 @@
   "passageId": "y107",
   "blankNum": 32,
   "categories": [
-   "搭配詞／固定用法",
+   "字詞搭配",
    "詞性判斷"
   ],
   "options": {
@@ -637,7 +637,7 @@
   "passageId": "y107",
   "blankNum": 33,
   "categories": [
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "account",
@@ -665,7 +665,7 @@
   "passageId": "y107",
   "blankNum": 34,
   "categories": [
-   "句型／固定搭配句構"
+   "句型結構"
   ],
   "options": {
    "A": "account",
@@ -693,7 +693,7 @@
   "passageId": "y107",
   "blankNum": 35,
   "categories": [
-   "同義改寫／替代指涉"
+   "同義呼應"
   ],
   "options": {
    "A": "account",
@@ -721,7 +721,7 @@
   "passageId": "y107",
   "blankNum": 36,
   "categories": [
-   "同義改寫／替代指涉"
+   "同義呼應"
   ],
   "options": {
    "A": "account",
@@ -750,7 +750,7 @@
   "blankNum": 37,
   "categories": [
    "詞性判斷",
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "account",
@@ -778,7 +778,7 @@
   "passageId": "y107",
   "blankNum": 38,
   "categories": [
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "account",
@@ -806,7 +806,7 @@
   "passageId": "y107",
   "blankNum": 39,
   "categories": [
-   "字義辨析／多義字"
+   "字彙選義"
   ],
   "options": {
    "A": "account",
@@ -834,7 +834,7 @@
   "passageId": "y107",
   "blankNum": 40,
   "categories": [
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "account",
@@ -862,7 +862,7 @@
   "passageId": "y106",
   "blankNum": 31,
   "categories": [
-   "上下文線索／邏輯推論"
+   "語意連貫"
   ],
   "options": {
    "A": "reflected",
@@ -891,7 +891,7 @@
   "passageId": "y106",
   "blankNum": 32,
   "categories": [
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "reflected",
@@ -919,9 +919,9 @@
   "passageId": "y106",
   "blankNum": 33,
   "categories": [
-   "搭配詞／固定用法",
+   "字詞搭配",
    "詞性判斷",
-   "上下文線索／邏輯推論"
+   "語意連貫"
   ],
   "options": {
    "A": "reflected",
@@ -950,8 +950,8 @@
   "passageId": "y106",
   "blankNum": 34,
   "categories": [
-   "字義辨析／多義字",
-   "同義改寫／替代指涉",
+   "字彙選義",
+   "同義呼應",
    "詞性判斷"
   ],
   "options": {
@@ -981,7 +981,7 @@
   "passageId": "y106",
   "blankNum": 35,
   "categories": [
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "reflected",
@@ -1010,7 +1010,7 @@
   "blankNum": 36,
   "categories": [
    "詞性判斷",
-   "句型／固定搭配句構"
+   "句型結構"
   ],
   "options": {
    "A": "reflected",
@@ -1039,7 +1039,7 @@
   "blankNum": 37,
   "categories": [
    "詞性判斷",
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "reflected",
@@ -1067,7 +1067,7 @@
   "passageId": "y106",
   "blankNum": 38,
   "categories": [
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "reflected",
@@ -1123,7 +1123,7 @@
   "passageId": "y106",
   "blankNum": 40,
   "categories": [
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "reflected",
@@ -1151,7 +1151,7 @@
   "passageId": "y105",
   "blankNum": 31,
   "categories": [
-   "上下文線索／邏輯推論"
+   "語意連貫"
   ],
   "options": {
    "A": "deserted",
@@ -1180,7 +1180,7 @@
   "passageId": "y105",
   "blankNum": 32,
   "categories": [
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "deserted",
@@ -1208,7 +1208,7 @@
   "passageId": "y105",
   "blankNum": 33,
   "categories": [
-   "句型／固定搭配句構"
+   "句型結構"
   ],
   "options": {
    "A": "deserted",
@@ -1236,7 +1236,7 @@
   "passageId": "y105",
   "blankNum": 34,
   "categories": [
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "deserted",
@@ -1265,7 +1265,7 @@
   "passageId": "y105",
   "blankNum": 35,
   "categories": [
-   "句型／固定搭配句構"
+   "句型結構"
   ],
   "options": {
    "A": "deserted",
@@ -1293,7 +1293,7 @@
   "passageId": "y105",
   "blankNum": 36,
   "categories": [
-   "上下文線索／邏輯推論"
+   "語意連貫"
   ],
   "options": {
    "A": "deserted",
@@ -1351,7 +1351,7 @@
   "passageId": "y105",
   "blankNum": 38,
   "categories": [
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "deserted",
@@ -1379,7 +1379,7 @@
   "passageId": "y105",
   "blankNum": 39,
   "categories": [
-   "字義辨析／多義字"
+   "字彙選義"
   ],
   "options": {
    "A": "deserted",
@@ -1408,7 +1408,7 @@
   "passageId": "y105",
   "blankNum": 40,
   "categories": [
-   "同義改寫／替代指涉"
+   "同義呼應"
   ],
   "options": {
    "A": "deserted",
@@ -1437,7 +1437,7 @@
   "passageId": "y104",
   "blankNum": 31,
   "categories": [
-   "字義辨析／多義字"
+   "字彙選義"
   ],
   "options": {
    "A": "familiar",
@@ -1494,7 +1494,7 @@
   "passageId": "y104",
   "blankNum": 33,
   "categories": [
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "familiar",
@@ -1522,8 +1522,8 @@
   "passageId": "y104",
   "blankNum": 34,
   "categories": [
-   "搭配詞／固定用法",
-   "句型／固定搭配句構",
+   "字詞搭配",
+   "句型結構",
    "詞性判斷"
   ],
   "options": {
@@ -1552,7 +1552,7 @@
   "passageId": "y104",
   "blankNum": 35,
   "categories": [
-   "字義辨析／多義字"
+   "字彙選義"
   ],
   "options": {
    "A": "familiar",
@@ -1581,7 +1581,7 @@
   "passageId": "y104",
   "blankNum": 36,
   "categories": [
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "familiar",
@@ -1609,7 +1609,7 @@
   "passageId": "y104",
   "blankNum": 37,
   "categories": [
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "familiar",
@@ -1638,7 +1638,7 @@
   "passageId": "y104",
   "blankNum": 38,
   "categories": [
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "familiar",
@@ -1667,8 +1667,8 @@
   "blankNum": 39,
   "categories": [
    "詞性判斷",
-   "搭配詞／固定用法",
-   "上下文線索／邏輯推論"
+   "字詞搭配",
+   "語意連貫"
   ],
   "options": {
    "A": "familiar",
@@ -1725,7 +1725,7 @@
   "passageId": "y103",
   "blankNum": 31,
   "categories": [
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "drawn to",
@@ -1781,7 +1781,7 @@
   "passageId": "y103",
   "blankNum": 33,
   "categories": [
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "drawn to",
@@ -1809,7 +1809,7 @@
   "passageId": "y103",
   "blankNum": 34,
   "categories": [
-   "上下文線索／邏輯推論"
+   "語意連貫"
   ],
   "options": {
    "A": "drawn to",
@@ -1839,8 +1839,8 @@
   "blankNum": 35,
   "categories": [
    "詞性判斷",
-   "句型／固定搭配句構",
-   "字義辨析／多義字"
+   "句型結構",
+   "字彙選義"
   ],
   "options": {
    "A": "drawn to",
@@ -1868,7 +1868,7 @@
   "passageId": "y103",
   "blankNum": 36,
   "categories": [
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "drawn to",
@@ -1896,7 +1896,7 @@
   "passageId": "y103",
   "blankNum": 37,
   "categories": [
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "drawn to",
@@ -1924,7 +1924,7 @@
   "passageId": "y103",
   "blankNum": 38,
   "categories": [
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "drawn to",
@@ -1952,7 +1952,7 @@
   "passageId": "y103",
   "blankNum": 39,
   "categories": [
-   "字義辨析／多義字"
+   "字彙選義"
   ],
   "options": {
    "A": "drawn to",
@@ -1980,7 +1980,7 @@
   "passageId": "y103",
   "blankNum": 40,
   "categories": [
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "drawn to",
@@ -2008,7 +2008,7 @@
   "passageId": "y102",
   "blankNum": 31,
   "categories": [
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "resistance",
@@ -2064,7 +2064,7 @@
   "passageId": "y102",
   "blankNum": 33,
   "categories": [
-   "句型／固定搭配句構"
+   "句型結構"
   ],
   "options": {
    "A": "resistance",
@@ -2092,7 +2092,7 @@
   "passageId": "y102",
   "blankNum": 34,
   "categories": [
-   "字義辨析／多義字"
+   "字彙選義"
   ],
   "options": {
    "A": "resistance",
@@ -2149,7 +2149,7 @@
   "passageId": "y102",
   "blankNum": 36,
   "categories": [
-   "上下文線索／邏輯推論"
+   "語意連貫"
   ],
   "options": {
    "A": "resistance",
@@ -2177,7 +2177,7 @@
   "passageId": "y102",
   "blankNum": 37,
   "categories": [
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "resistance",
@@ -2205,7 +2205,7 @@
   "passageId": "y102",
   "blankNum": 38,
   "categories": [
-   "字義辨析／多義字"
+   "字彙選義"
   ],
   "options": {
    "A": "resistance",
@@ -2233,7 +2233,7 @@
   "passageId": "y102",
   "blankNum": 39,
   "categories": [
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "resistance",
@@ -2261,7 +2261,7 @@
   "passageId": "y102",
   "blankNum": 40,
   "categories": [
-   "上下文線索／邏輯推論"
+   "語意連貫"
   ],
   "options": {
    "A": "resistance",
@@ -2289,7 +2289,7 @@
   "passageId": "y101",
   "blankNum": 31,
   "categories": [
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "request",
@@ -2317,7 +2317,7 @@
   "passageId": "y101",
   "blankNum": 32,
   "categories": [
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "request",
@@ -2345,7 +2345,7 @@
   "passageId": "y101",
   "blankNum": 33,
   "categories": [
-   "上下文線索／邏輯推論"
+   "語意連貫"
   ],
   "options": {
    "A": "request",
@@ -2373,8 +2373,8 @@
   "passageId": "y101",
   "blankNum": 34,
   "categories": [
-   "字義辨析／多義字",
-   "搭配詞／固定用法"
+   "字彙選義",
+   "字詞搭配"
   ],
   "options": {
    "A": "request",
@@ -2402,7 +2402,7 @@
   "passageId": "y101",
   "blankNum": 35,
   "categories": [
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "request",
@@ -2458,7 +2458,7 @@
   "passageId": "y101",
   "blankNum": 37,
   "categories": [
-   "字義辨析／多義字"
+   "字彙選義"
   ],
   "options": {
    "A": "request",
@@ -2486,7 +2486,7 @@
   "passageId": "y101",
   "blankNum": 38,
   "categories": [
-   "上下文線索／邏輯推論"
+   "語意連貫"
   ],
   "options": {
    "A": "request",
@@ -2515,7 +2515,7 @@
   "passageId": "y101",
   "blankNum": 39,
   "categories": [
-   "句型／固定搭配句構"
+   "句型結構"
   ],
   "options": {
    "A": "request",
@@ -2543,7 +2543,7 @@
   "passageId": "y101",
   "blankNum": 40,
   "categories": [
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "request",
@@ -2571,7 +2571,7 @@
   "passageId": "y100",
   "blankNum": 31,
   "categories": [
-   "上下文線索／邏輯推論"
+   "語意連貫"
   ],
   "options": {
    "A": "chemical",
@@ -2600,7 +2600,7 @@
   "passageId": "y100",
   "blankNum": 32,
   "categories": [
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "chemical",
@@ -2628,7 +2628,7 @@
   "passageId": "y100",
   "blankNum": 33,
   "categories": [
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "chemical",
@@ -2656,7 +2656,7 @@
   "passageId": "y100",
   "blankNum": 34,
   "categories": [
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "chemical",
@@ -2684,7 +2684,7 @@
   "passageId": "y100",
   "blankNum": 35,
   "categories": [
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "chemical",
@@ -2712,7 +2712,7 @@
   "passageId": "y100",
   "blankNum": 36,
   "categories": [
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "chemical",
@@ -2797,7 +2797,7 @@
   "passageId": "y100",
   "blankNum": 39,
   "categories": [
-   "上下文線索／邏輯推論"
+   "語意連貫"
   ],
   "options": {
    "A": "chemical",
@@ -2825,7 +2825,7 @@
   "passageId": "y100",
   "blankNum": 40,
   "categories": [
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "chemical",
@@ -2853,7 +2853,7 @@
   "passageId": "y99",
   "blankNum": 31,
   "categories": [
-   "字義辨析／多義字"
+   "字彙選義"
   ],
   "options": {
    "A": "cooperation",
@@ -2882,7 +2882,7 @@
   "passageId": "y99",
   "blankNum": 32,
   "categories": [
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "cooperation",
@@ -2911,8 +2911,8 @@
   "blankNum": 33,
   "categories": [
    "詞性判斷",
-   "上下文線索／邏輯推論",
-   "句型／固定搭配句構"
+   "語意連貫",
+   "句型結構"
   ],
   "options": {
    "A": "cooperation",
@@ -2940,7 +2940,7 @@
   "passageId": "y99",
   "blankNum": 34,
   "categories": [
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "cooperation",
@@ -2968,7 +2968,7 @@
   "passageId": "y99",
   "blankNum": 35,
   "categories": [
-   "上下文線索／邏輯推論"
+   "語意連貫"
   ],
   "options": {
    "A": "cooperation",
@@ -2996,7 +2996,7 @@
   "passageId": "y99",
   "blankNum": 36,
   "categories": [
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "cooperation",
@@ -3024,8 +3024,8 @@
   "passageId": "y99",
   "blankNum": 37,
   "categories": [
-   "搭配詞／固定用法",
-   "同義改寫／替代指涉",
+   "字詞搭配",
+   "代名詞／指示詞",
    "詞性判斷"
   ],
   "options": {
@@ -3054,8 +3054,8 @@
   "passageId": "y99",
   "blankNum": 38,
   "categories": [
-   "搭配詞／固定用法",
-   "字義辨析／多義字",
+   "字詞搭配",
+   "字彙選義",
    "詞性判斷"
   ],
   "options": {
@@ -3084,7 +3084,7 @@
   "passageId": "y99",
   "blankNum": 39,
   "categories": [
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "cooperation",
@@ -3112,8 +3112,8 @@
   "passageId": "y99",
   "blankNum": 40,
   "categories": [
-   "句型／固定搭配句構",
-   "上下文線索／邏輯推論",
+   "句型結構",
+   "語意連貫",
    "詞性判斷"
   ],
   "options": {
@@ -3142,7 +3142,7 @@
   "passageId": "y98",
   "blankNum": 31,
   "categories": [
-   "同義改寫／替代指涉"
+   "代名詞／指示詞"
   ],
   "options": {
    "A": "arranged",
@@ -3170,7 +3170,7 @@
   "passageId": "y98",
   "blankNum": 32,
   "categories": [
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "arranged",
@@ -3198,7 +3198,7 @@
   "passageId": "y98",
   "blankNum": 33,
   "categories": [
-   "字義辨析／多義字"
+   "字彙選義"
   ],
   "options": {
    "A": "arranged",
@@ -3226,7 +3226,7 @@
   "passageId": "y98",
   "blankNum": 34,
   "categories": [
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "arranged",
@@ -3254,7 +3254,7 @@
   "passageId": "y98",
   "blankNum": 35,
   "categories": [
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "arranged",
@@ -3282,7 +3282,7 @@
   "passageId": "y98",
   "blankNum": 36,
   "categories": [
-   "同義改寫／替代指涉"
+   "同義呼應"
   ],
   "options": {
    "A": "arranged",
@@ -3310,7 +3310,7 @@
   "passageId": "y98",
   "blankNum": 37,
   "categories": [
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "arranged",
@@ -3339,8 +3339,8 @@
   "blankNum": 38,
   "categories": [
    "詞性判斷",
-   "字義辨析／多義字",
-   "上下文線索／邏輯推論"
+   "字彙選義",
+   "語意連貫"
   ],
   "options": {
    "A": "arranged",
@@ -3368,7 +3368,7 @@
   "passageId": "y98",
   "blankNum": 39,
   "categories": [
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "arranged",
@@ -3396,8 +3396,8 @@
   "passageId": "y98",
   "blankNum": 40,
   "categories": [
-   "同義改寫／替代指涉",
-   "上下文線索／邏輯推論"
+   "同義呼應",
+   "語意連貫"
   ],
   "options": {
    "A": "arranged",
@@ -3426,7 +3426,7 @@
   "passageId": "y97",
   "blankNum": 31,
   "categories": [
-   "同義改寫／替代指涉"
+   "同義呼應"
   ],
   "options": {
    "A": "shock",
@@ -3455,7 +3455,7 @@
   "passageId": "y97",
   "blankNum": 32,
   "categories": [
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "shock",
@@ -3483,7 +3483,7 @@
   "passageId": "y97",
   "blankNum": 33,
   "categories": [
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "shock",
@@ -3511,9 +3511,9 @@
   "passageId": "y97",
   "blankNum": 34,
   "categories": [
-   "字義辨析／多義字",
+   "字彙選義",
    "詞性判斷",
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "shock",
@@ -3541,7 +3541,7 @@
   "passageId": "y97",
   "blankNum": 35,
   "categories": [
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "shock",
@@ -3569,7 +3569,7 @@
   "passageId": "y97",
   "blankNum": 36,
   "categories": [
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "shock",
@@ -3598,7 +3598,7 @@
   "passageId": "y97",
   "blankNum": 37,
   "categories": [
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "shock",
@@ -3626,7 +3626,7 @@
   "passageId": "y97",
   "blankNum": 38,
   "categories": [
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "shock",
@@ -3654,7 +3654,7 @@
   "passageId": "y97",
   "blankNum": 39,
   "categories": [
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "shock",
@@ -3682,7 +3682,7 @@
   "passageId": "y97",
   "blankNum": 40,
   "categories": [
-   "字義辨析／多義字"
+   "字彙選義"
   ],
   "options": {
    "A": "shock",
@@ -3710,7 +3710,7 @@
   "passageId": "y96",
   "blankNum": 31,
   "categories": [
-   "上下文線索／邏輯推論"
+   "語意連貫"
   ],
   "options": {
    "A": "disappointed",
@@ -3739,7 +3739,7 @@
   "passageId": "y96",
   "blankNum": 32,
   "categories": [
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "disappointed",
@@ -3767,7 +3767,7 @@
   "passageId": "y96",
   "blankNum": 33,
   "categories": [
-   "上下文線索／邏輯推論"
+   "語意連貫"
   ],
   "options": {
    "A": "disappointed",
@@ -3823,7 +3823,7 @@
   "passageId": "y96",
   "blankNum": 35,
   "categories": [
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "disappointed",
@@ -3851,7 +3851,7 @@
   "passageId": "y96",
   "blankNum": 36,
   "categories": [
-   "上下文線索／邏輯推論"
+   "語意連貫"
   ],
   "options": {
    "A": "disappointed",
@@ -3879,7 +3879,7 @@
   "passageId": "y96",
   "blankNum": 37,
   "categories": [
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "disappointed",
@@ -3907,7 +3907,7 @@
   "passageId": "y96",
   "blankNum": 38,
   "categories": [
-   "同義改寫／替代指涉"
+   "同義呼應"
   ],
   "options": {
    "A": "disappointed",
@@ -3936,7 +3936,7 @@
   "passageId": "y96",
   "blankNum": 39,
   "categories": [
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "disappointed",
@@ -3964,7 +3964,7 @@
   "passageId": "y96",
   "blankNum": 40,
   "categories": [
-   "上下文線索／邏輯推論"
+   "語意連貫"
   ],
   "options": {
    "A": "disappointed",
@@ -3992,7 +3992,7 @@
   "passageId": "y95",
   "blankNum": 31,
   "categories": [
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "ruin",
@@ -4020,7 +4020,7 @@
   "passageId": "y95",
   "blankNum": 32,
   "categories": [
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "ruin",
@@ -4076,8 +4076,8 @@
   "passageId": "y95",
   "blankNum": 34,
   "categories": [
-   "字義辨析／多義字",
-   "搭配詞／固定用法"
+   "字彙選義",
+   "字詞搭配"
   ],
   "options": {
    "A": "ruin",
@@ -4105,8 +4105,8 @@
   "passageId": "y95",
   "blankNum": 35,
   "categories": [
-   "句型／固定搭配句構",
-   "字義辨析／多義字",
+   "句型結構",
+   "字彙選義",
    "詞性判斷"
   ],
   "options": {
@@ -4135,7 +4135,7 @@
   "passageId": "y95",
   "blankNum": 36,
   "categories": [
-   "上下文線索／邏輯推論"
+   "語意連貫"
   ],
   "options": {
    "A": "ruin",
@@ -4163,7 +4163,7 @@
   "passageId": "y95",
   "blankNum": 37,
   "categories": [
-   "字義辨析／多義字"
+   "字彙選義"
   ],
   "options": {
    "A": "ruin",
@@ -4191,9 +4191,9 @@
   "passageId": "y95",
   "blankNum": 38,
   "categories": [
-   "字義辨析／多義字",
-   "搭配詞／固定用法",
-   "上下文線索／邏輯推論"
+   "字彙選義",
+   "字詞搭配",
+   "語意連貫"
   ],
   "options": {
    "A": "ruin",
@@ -4221,7 +4221,7 @@
   "passageId": "y95",
   "blankNum": 39,
   "categories": [
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "ruin",
@@ -4250,8 +4250,8 @@
   "blankNum": 40,
   "categories": [
    "詞性判斷",
-   "同義改寫／替代指涉",
-   "搭配詞／固定用法"
+   "同義呼應",
+   "字詞搭配"
   ],
   "options": {
    "A": "ruin",
@@ -4279,7 +4279,7 @@
   "passageId": "y94",
   "blankNum": 31,
   "categories": [
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "breaks down",
@@ -4307,8 +4307,8 @@
   "passageId": "y94",
   "blankNum": 32,
   "categories": [
-   "字義辨析／多義字",
-   "搭配詞／固定用法"
+   "字彙選義",
+   "字詞搭配"
   ],
   "options": {
    "A": "breaks down",
@@ -4336,8 +4336,8 @@
   "passageId": "y94",
   "blankNum": 33,
   "categories": [
-   "搭配詞／固定用法",
-   "上下文線索／邏輯推論",
+   "字詞搭配",
+   "語意連貫",
    "詞性判斷"
   ],
   "options": {
@@ -4366,7 +4366,7 @@
   "passageId": "y94",
   "blankNum": 34,
   "categories": [
-   "句型／固定搭配句構"
+   "句型結構"
   ],
   "options": {
    "A": "breaks down",
@@ -4394,7 +4394,7 @@
   "passageId": "y94",
   "blankNum": 35,
   "categories": [
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "breaks down",
@@ -4422,7 +4422,7 @@
   "passageId": "y94",
   "blankNum": 36,
   "categories": [
-   "句型／固定搭配句構"
+   "句型結構"
   ],
   "options": {
    "A": "breaks down",
@@ -4451,9 +4451,9 @@
   "passageId": "y94",
   "blankNum": 37,
   "categories": [
-   "搭配詞／固定用法",
-   "字義辨析／多義字",
-   "上下文線索／邏輯推論"
+   "字詞搭配",
+   "字彙選義",
+   "語意連貫"
   ],
   "options": {
    "A": "breaks down",
@@ -4481,7 +4481,7 @@
   "passageId": "y94",
   "blankNum": 38,
   "categories": [
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "breaks down",
@@ -4509,7 +4509,7 @@
   "passageId": "y94",
   "blankNum": 39,
   "categories": [
-   "句型／固定搭配句構"
+   "句型結構"
   ],
   "options": {
    "A": "breaks down",
@@ -4538,8 +4538,8 @@
   "blankNum": 40,
   "categories": [
    "詞性判斷",
-   "句型／固定搭配句構",
-   "上下文線索／邏輯推論"
+   "句型結構",
+   "語意連貫"
   ],
   "options": {
    "A": "breaks down",
@@ -4567,7 +4567,7 @@
   "passageId": "y93",
   "blankNum": 31,
   "categories": [
-   "字義辨析／多義字"
+   "字彙選義"
   ],
   "options": {
    "A": "as well as",
@@ -4596,7 +4596,7 @@
   "blankNum": 32,
   "categories": [
    "詞性判斷",
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "as well as",
@@ -4624,7 +4624,7 @@
   "passageId": "y93",
   "blankNum": 33,
   "categories": [
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "as well as",
@@ -4652,8 +4652,8 @@
   "passageId": "y93",
   "blankNum": 34,
   "categories": [
-   "句型／固定搭配句構",
-   "搭配詞／固定用法"
+   "句型結構",
+   "字詞搭配"
   ],
   "options": {
    "A": "as well as",
@@ -4681,7 +4681,7 @@
   "passageId": "y93",
   "blankNum": 35,
   "categories": [
-   "句型／固定搭配句構",
+   "句型結構",
    "詞性判斷"
   ],
   "options": {
@@ -4710,9 +4710,9 @@
   "passageId": "y93",
   "blankNum": 36,
   "categories": [
-   "字義辨析／多義字",
+   "字彙選義",
    "詞性判斷",
-   "句型／固定搭配句構"
+   "句型結構"
   ],
   "options": {
    "A": "as well as",
@@ -4740,7 +4740,7 @@
   "passageId": "y93",
   "blankNum": 37,
   "categories": [
-   "字義辨析／多義字"
+   "字彙選義"
   ],
   "options": {
    "A": "as well as",
@@ -4768,7 +4768,7 @@
   "passageId": "y93",
   "blankNum": 38,
   "categories": [
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "as well as",
@@ -4796,9 +4796,9 @@
   "passageId": "y93",
   "blankNum": 39,
   "categories": [
-   "搭配詞／固定用法",
-   "句型／固定搭配句構",
-   "上下文線索／邏輯推論"
+   "字詞搭配",
+   "句型結構",
+   "語意連貫"
   ],
   "options": {
    "A": "as well as",
@@ -4826,7 +4826,7 @@
   "passageId": "y93",
   "blankNum": 40,
   "categories": [
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "as well as",
@@ -4854,7 +4854,7 @@
   "passageId": "y92",
   "blankNum": 31,
   "categories": [
-   "上下文線索／邏輯推論"
+   "語意連貫"
   ],
   "options": {
    "A": "about",
@@ -4910,7 +4910,7 @@
   "passageId": "y92",
   "blankNum": 33,
   "categories": [
-   "句型／固定搭配句構",
+   "句型結構",
    "詞性判斷"
   ],
   "options": {
@@ -4939,7 +4939,7 @@
   "passageId": "y92",
   "blankNum": 34,
   "categories": [
-   "搭配詞／固定用法",
+   "字詞搭配",
    "詞性判斷"
   ],
   "options": {
@@ -4968,7 +4968,7 @@
   "passageId": "y92",
   "blankNum": 35,
   "categories": [
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "about",
@@ -4997,8 +4997,8 @@
   "blankNum": 36,
   "categories": [
    "詞性判斷",
-   "搭配詞／固定用法",
-   "字義辨析／多義字"
+   "字詞搭配",
+   "字彙選義"
   ],
   "options": {
    "A": "about",
@@ -5027,8 +5027,8 @@
   "blankNum": 37,
   "categories": [
    "詞性判斷",
-   "字義辨析／多義字",
-   "搭配詞／固定用法"
+   "字彙選義",
+   "字詞搭配"
   ],
   "options": {
    "A": "about",
@@ -5056,9 +5056,9 @@
   "passageId": "y92",
   "blankNum": 38,
   "categories": [
-   "句型／固定搭配句構",
+   "句型結構",
    "詞性判斷",
-   "上下文線索／邏輯推論"
+   "語意連貫"
   ],
   "options": {
    "A": "about",
@@ -5086,10 +5086,10 @@
   "passageId": "y92",
   "blankNum": 39,
   "categories": [
-   "字義辨析／多義字",
+   "字彙選義",
    "詞性判斷",
-   "同義改寫／替代指涉",
-   "句型／固定搭配句構"
+   "代名詞／指示詞",
+   "句型結構"
   ],
   "options": {
    "A": "about",
@@ -5117,8 +5117,8 @@
   "passageId": "y92",
   "blankNum": 40,
   "categories": [
-   "句型／固定搭配句構",
-   "同義改寫／替代指涉"
+   "句型結構",
+   "代名詞／指示詞"
   ],
   "options": {
    "A": "about",
@@ -5146,7 +5146,7 @@
   "passageId": "y92b",
   "blankNum": 31,
   "categories": [
-   "句型／固定搭配句構"
+   "句型結構"
   ],
   "options": {
    "A": "these",
@@ -5174,7 +5174,7 @@
   "passageId": "y92b",
   "blankNum": 32,
   "categories": [
-   "搭配詞／固定用法",
+   "字詞搭配",
    "詞性判斷"
   ],
   "options": {
@@ -5203,7 +5203,7 @@
   "passageId": "y92b",
   "blankNum": 33,
   "categories": [
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "these",
@@ -5231,7 +5231,7 @@
   "passageId": "y92b",
   "blankNum": 34,
   "categories": [
-   "同義改寫／替代指涉"
+   "代名詞／指示詞"
   ],
   "options": {
    "A": "these",
@@ -5259,7 +5259,7 @@
   "passageId": "y92b",
   "blankNum": 35,
   "categories": [
-   "句型／固定搭配句構"
+   "句型結構"
   ],
   "options": {
    "A": "these",
@@ -5287,7 +5287,7 @@
   "passageId": "y92b",
   "blankNum": 36,
   "categories": [
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "these",
@@ -5315,7 +5315,7 @@
   "passageId": "y92b",
   "blankNum": 37,
   "categories": [
-   "句型／固定搭配句構"
+   "句型結構"
   ],
   "options": {
    "A": "these",
@@ -5343,7 +5343,7 @@
   "passageId": "y92b",
   "blankNum": 38,
   "categories": [
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "these",
@@ -5371,7 +5371,7 @@
   "passageId": "y92b",
   "blankNum": 39,
   "categories": [
-   "上下文線索／邏輯推論"
+   "語意連貫"
   ],
   "options": {
    "A": "these",
@@ -5399,7 +5399,7 @@
   "passageId": "y92b",
   "blankNum": 40,
   "categories": [
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "these",
@@ -5427,7 +5427,7 @@
   "passageId": "y91",
   "blankNum": 31,
   "categories": [
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "dutifully",
@@ -5455,7 +5455,7 @@
   "passageId": "y91",
   "blankNum": 32,
   "categories": [
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "dutifully",
@@ -5483,7 +5483,7 @@
   "passageId": "y91",
   "blankNum": 33,
   "categories": [
-   "字義辨析／多義字"
+   "字彙選義"
   ],
   "options": {
    "A": "dutifully",
@@ -5511,7 +5511,7 @@
   "passageId": "y91",
   "blankNum": 34,
   "categories": [
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "dutifully",
@@ -5567,7 +5567,7 @@
   "passageId": "y91",
   "blankNum": 36,
   "categories": [
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "dutifully",
@@ -5595,7 +5595,7 @@
   "passageId": "y91",
   "blankNum": 37,
   "categories": [
-   "上下文線索／邏輯推論"
+   "語意連貫"
   ],
   "options": {
    "A": "dutifully",
@@ -5623,7 +5623,7 @@
   "passageId": "y91",
   "blankNum": 38,
   "categories": [
-   "句型／固定搭配句構"
+   "句型結構"
   ],
   "options": {
    "A": "dutifully",
@@ -5651,7 +5651,7 @@
   "passageId": "y91",
   "blankNum": 39,
   "categories": [
-   "上下文線索／邏輯推論"
+   "語意連貫"
   ],
   "options": {
    "A": "dutifully",
@@ -5680,8 +5680,8 @@
   "blankNum": 40,
   "categories": [
    "詞性判斷",
-   "上下文線索／邏輯推論",
-   "搭配詞／固定用法"
+   "語意連貫",
+   "字詞搭配"
   ],
   "options": {
    "A": "dutifully",
@@ -5709,7 +5709,7 @@
   "passageId": "y91b",
   "blankNum": 31,
   "categories": [
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "also",
@@ -5737,7 +5737,7 @@
   "passageId": "y91b",
   "blankNum": 32,
   "categories": [
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "also",
@@ -5765,7 +5765,7 @@
   "passageId": "y91b",
   "blankNum": 33,
   "categories": [
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "also",
@@ -5793,7 +5793,7 @@
   "passageId": "y91b",
   "blankNum": 34,
   "categories": [
-   "字義辨析／多義字"
+   "字彙選義"
   ],
   "options": {
    "A": "also",
@@ -5821,7 +5821,7 @@
   "passageId": "y91b",
   "blankNum": 35,
   "categories": [
-   "上下文線索／邏輯推論"
+   "語意連貫"
   ],
   "options": {
    "A": "also",
@@ -5877,7 +5877,7 @@
   "passageId": "y91b",
   "blankNum": 37,
   "categories": [
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "also",
@@ -5905,7 +5905,7 @@
   "passageId": "y91b",
   "blankNum": 38,
   "categories": [
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "also",
@@ -5933,7 +5933,7 @@
   "passageId": "y91b",
   "blankNum": 39,
   "categories": [
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "also",
@@ -5961,7 +5961,7 @@
   "passageId": "y91b",
   "blankNum": 40,
   "categories": [
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "also",
@@ -6017,7 +6017,7 @@
   "passageId": "y90",
   "blankNum": 32,
   "categories": [
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "sorry",
@@ -6045,7 +6045,7 @@
   "passageId": "y90",
   "blankNum": 33,
   "categories": [
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "sorry",
@@ -6073,7 +6073,7 @@
   "passageId": "y90",
   "blankNum": 34,
   "categories": [
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "sorry",
@@ -6101,7 +6101,7 @@
   "passageId": "y90",
   "blankNum": 35,
   "categories": [
-   "上下文線索／邏輯推論"
+   "語意連貫"
   ],
   "options": {
    "A": "sorry",
@@ -6129,7 +6129,7 @@
   "passageId": "y90",
   "blankNum": 36,
   "categories": [
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "sorry",
@@ -6157,7 +6157,7 @@
   "passageId": "y90",
   "blankNum": 37,
   "categories": [
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "sorry",
@@ -6213,7 +6213,7 @@
   "passageId": "y90",
   "blankNum": 39,
   "categories": [
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "sorry",
@@ -6241,7 +6241,7 @@
   "passageId": "y90",
   "blankNum": 40,
   "categories": [
-   "句型／固定搭配句構"
+   "句型結構"
   ],
   "options": {
    "A": "sorry",
@@ -6269,7 +6269,7 @@
   "passageId": "y111r",
   "blankNum": 21,
   "categories": [
-   "上下文線索／邏輯推論"
+   "語意連貫"
   ],
   "options": {
    "A": "possible",
@@ -6297,8 +6297,8 @@
   "passageId": "y111r",
   "blankNum": 22,
   "categories": [
-   "搭配詞／固定用法",
-   "上下文線索／邏輯推論"
+   "字詞搭配",
+   "語意連貫"
   ],
   "options": {
    "A": "possible",
@@ -6327,7 +6327,7 @@
   "passageId": "y111r",
   "blankNum": 23,
   "categories": [
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "possible",
@@ -6355,7 +6355,7 @@
   "passageId": "y111r",
   "blankNum": 24,
   "categories": [
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "possible",
@@ -6383,7 +6383,7 @@
   "passageId": "y111r",
   "blankNum": 25,
   "categories": [
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "possible",
@@ -6411,7 +6411,7 @@
   "passageId": "y111r",
   "blankNum": 26,
   "categories": [
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "possible",
@@ -6439,7 +6439,7 @@
   "passageId": "y111r",
   "blankNum": 27,
   "categories": [
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "possible",
@@ -6467,9 +6467,9 @@
   "passageId": "y111r",
   "blankNum": 28,
   "categories": [
-   "字義辨析／多義字",
+   "字彙選義",
    "詞性判斷",
-   "上下文線索／邏輯推論"
+   "語意連貫"
   ],
   "options": {
    "A": "possible",
@@ -6497,7 +6497,7 @@
   "passageId": "y111r",
   "blankNum": 29,
   "categories": [
-   "句型／固定搭配句構"
+   "句型結構"
   ],
   "options": {
    "A": "possible",
@@ -6526,8 +6526,8 @@
   "blankNum": 30,
   "categories": [
    "詞性判斷",
-   "字義辨析／多義字",
-   "句型／固定搭配句構"
+   "字彙選義",
+   "句型結構"
   ],
   "options": {
    "A": "possible",
@@ -6555,7 +6555,7 @@
   "passageId": "y99r",
   "blankNum": 31,
   "categories": [
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "therefore",
@@ -6583,7 +6583,7 @@
   "passageId": "y99r",
   "blankNum": 32,
   "categories": [
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "therefore",
@@ -6611,7 +6611,7 @@
   "passageId": "y99r",
   "blankNum": 33,
   "categories": [
-   "字義辨析／多義字"
+   "字彙選義"
   ],
   "options": {
    "A": "therefore",
@@ -6639,7 +6639,7 @@
   "passageId": "y99r",
   "blankNum": 34,
   "categories": [
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "therefore",
@@ -6667,7 +6667,7 @@
   "passageId": "y99r",
   "blankNum": 35,
   "categories": [
-   "句型／固定搭配句構"
+   "句型結構"
   ],
   "options": {
    "A": "therefore",
@@ -6696,7 +6696,7 @@
   "passageId": "y99r",
   "blankNum": 36,
   "categories": [
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "therefore",
@@ -6724,7 +6724,7 @@
   "passageId": "y99r",
   "blankNum": 37,
   "categories": [
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "therefore",
@@ -6752,7 +6752,7 @@
   "passageId": "y99r",
   "blankNum": 38,
   "categories": [
-   "句型／固定搭配句構",
+   "句型結構",
    "詞性判斷"
   ],
   "options": {
@@ -6781,7 +6781,7 @@
   "passageId": "y99r",
   "blankNum": 39,
   "categories": [
-   "句型／固定搭配句構"
+   "句型結構"
   ],
   "options": {
    "A": "therefore",
@@ -6809,7 +6809,7 @@
   "passageId": "y99r",
   "blankNum": 40,
   "categories": [
-   "上下文線索／邏輯推論"
+   "語意連貫"
   ],
   "options": {
    "A": "therefore",
@@ -6837,7 +6837,7 @@
   "passageId": "y95r",
   "blankNum": 31,
   "categories": [
-   "上下文線索／邏輯推論"
+   "語意連貫"
   ],
   "options": {
    "A": "work",
@@ -6865,7 +6865,7 @@
   "passageId": "y95r",
   "blankNum": 32,
   "categories": [
-   "上下文線索／邏輯推論"
+   "語意連貫"
   ],
   "options": {
    "A": "work",
@@ -6893,7 +6893,7 @@
   "passageId": "y95r",
   "blankNum": 33,
   "categories": [
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "work",
@@ -6921,7 +6921,7 @@
   "passageId": "y95r",
   "blankNum": 34,
   "categories": [
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "work",
@@ -6949,7 +6949,7 @@
   "passageId": "y95r",
   "blankNum": 35,
   "categories": [
-   "同義改寫／替代指涉"
+   "同義呼應"
   ],
   "options": {
    "A": "work",
@@ -6977,7 +6977,7 @@
   "passageId": "y95r",
   "blankNum": 36,
   "categories": [
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "work",
@@ -7005,7 +7005,7 @@
   "passageId": "y95r",
   "blankNum": 37,
   "categories": [
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "work",
@@ -7033,7 +7033,7 @@
   "passageId": "y95r",
   "blankNum": 38,
   "categories": [
-   "上下文線索／邏輯推論"
+   "語意連貫"
   ],
   "options": {
    "A": "work",
@@ -7061,7 +7061,7 @@
   "passageId": "y95r",
   "blankNum": 39,
   "categories": [
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "work",
@@ -7089,7 +7089,7 @@
   "passageId": "y95r",
   "blankNum": 40,
   "categories": [
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "work",
@@ -7117,8 +7117,8 @@
   "passageId": "y113",
   "blankNum": 21,
   "categories": [
-   "字義辨析／多義字",
-   "同義改寫／替代指涉",
+   "字彙選義",
+   "同義呼應",
    "詞性判斷"
   ],
   "options": {
@@ -7147,7 +7147,7 @@
   "passageId": "y113",
   "blankNum": 22,
   "categories": [
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "passed on",
@@ -7175,9 +7175,9 @@
   "passageId": "y113",
   "blankNum": 23,
   "categories": [
-   "搭配詞／固定用法",
-   "句型／固定搭配句構",
-   "字義辨析／多義字"
+   "字詞搭配",
+   "句型結構",
+   "字彙選義"
   ],
   "options": {
    "A": "passed on",
@@ -7205,7 +7205,7 @@
   "passageId": "y113",
   "blankNum": 24,
   "categories": [
-   "字義辨析／多義字"
+   "字彙選義"
   ],
   "options": {
    "A": "passed on",
@@ -7234,8 +7234,8 @@
   "blankNum": 25,
   "categories": [
    "詞性判斷",
-   "字義辨析／多義字",
-   "句型／固定搭配句構"
+   "字彙選義",
+   "句型結構"
   ],
   "options": {
    "A": "passed on",
@@ -7263,7 +7263,7 @@
   "passageId": "y113",
   "blankNum": 26,
   "categories": [
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "passed on",
@@ -7291,7 +7291,7 @@
   "passageId": "y113",
   "blankNum": 27,
   "categories": [
-   "句型／固定搭配句構"
+   "句型結構"
   ],
   "options": {
    "A": "passed on",
@@ -7319,7 +7319,7 @@
   "passageId": "y113",
   "blankNum": 28,
   "categories": [
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "passed on",
@@ -7347,7 +7347,7 @@
   "passageId": "y113",
   "blankNum": 29,
   "categories": [
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "passed on",
@@ -7375,7 +7375,7 @@
   "passageId": "y113",
   "blankNum": 30,
   "categories": [
-   "上下文線索／邏輯推論"
+   "語意連貫"
   ],
   "options": {
    "A": "passed on",
@@ -7403,9 +7403,9 @@
   "passageId": "y114",
   "blankNum": 21,
   "categories": [
-   "字義辨析／多義字",
-   "搭配詞／固定用法",
-   "同義改寫／替代指涉"
+   "字彙選義",
+   "字詞搭配",
+   "同義呼應"
   ],
   "options": {
    "A": "reference",
@@ -7433,8 +7433,8 @@
   "passageId": "y114",
   "blankNum": 22,
   "categories": [
-   "搭配詞／固定用法",
-   "字義辨析／多義字",
+   "字詞搭配",
+   "字彙選義",
    "詞性判斷"
   ],
   "options": {
@@ -7463,9 +7463,9 @@
   "passageId": "y114",
   "blankNum": 23,
   "categories": [
-   "字義辨析／多義字",
+   "字彙選義",
    "詞性判斷",
-   "句型／固定搭配句構"
+   "句型結構"
   ],
   "options": {
    "A": "reference",
@@ -7493,7 +7493,7 @@
   "passageId": "y114",
   "blankNum": 24,
   "categories": [
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "reference",
@@ -7521,7 +7521,7 @@
   "passageId": "y114",
   "blankNum": 25,
   "categories": [
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "reference",
@@ -7549,7 +7549,7 @@
   "passageId": "y114",
   "blankNum": 26,
   "categories": [
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "reference",
@@ -7578,8 +7578,8 @@
   "blankNum": 27,
   "categories": [
    "詞性判斷",
-   "句型／固定搭配句構",
-   "字義辨析／多義字"
+   "句型結構",
+   "字彙選義"
   ],
   "options": {
    "A": "reference",
@@ -7607,7 +7607,7 @@
   "passageId": "y114",
   "blankNum": 28,
   "categories": [
-   "上下文線索／邏輯推論"
+   "語意連貫"
   ],
   "options": {
    "A": "reference",
@@ -7635,7 +7635,7 @@
   "passageId": "y114",
   "blankNum": 29,
   "categories": [
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "reference",
@@ -7663,7 +7663,7 @@
   "passageId": "y114",
   "blankNum": 30,
   "categories": [
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "reference",
@@ -7691,7 +7691,7 @@
   "passageId": "y115",
   "blankNum": 21,
   "categories": [
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "retain",
@@ -7719,7 +7719,7 @@
   "passageId": "y115",
   "blankNum": 22,
   "categories": [
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "retain",
@@ -7747,7 +7747,7 @@
   "passageId": "y115",
   "blankNum": 23,
   "categories": [
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "retain",
@@ -7775,7 +7775,7 @@
   "passageId": "y115",
   "blankNum": 24,
   "categories": [
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "retain",
@@ -7803,7 +7803,7 @@
   "passageId": "y115",
   "blankNum": 25,
   "categories": [
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "retain",
@@ -7831,7 +7831,7 @@
   "passageId": "y115",
   "blankNum": 26,
   "categories": [
-   "字義辨析／多義字"
+   "字彙選義"
   ],
   "options": {
    "A": "retain",
@@ -7859,7 +7859,7 @@
   "passageId": "y115",
   "blankNum": 27,
   "categories": [
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "retain",
@@ -7887,7 +7887,7 @@
   "passageId": "y115",
   "blankNum": 28,
   "categories": [
-   "上下文線索／邏輯推論"
+   "語意連貫"
   ],
   "options": {
    "A": "retain",
@@ -7915,7 +7915,7 @@
   "passageId": "y115",
   "blankNum": 29,
   "categories": [
-   "上下文線索／邏輯推論"
+   "語意連貫"
   ],
   "options": {
    "A": "retain",
@@ -7943,7 +7943,7 @@
   "passageId": "y115",
   "blankNum": 30,
   "categories": [
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "retain",
@@ -7971,9 +7971,9 @@
   "passageId": "y110",
   "blankNum": 31,
   "categories": [
-   "字義辨析／多義字",
+   "字彙選義",
    "詞性判斷",
-   "上下文線索／邏輯推論"
+   "語意連貫"
   ],
   "options": {
    "A": "means",
@@ -8002,8 +8002,8 @@
   "blankNum": 32,
   "categories": [
    "詞性判斷",
-   "搭配詞／固定用法",
-   "上下文線索／邏輯推論"
+   "字詞搭配",
+   "語意連貫"
   ],
   "options": {
    "A": "means",
@@ -8031,8 +8031,8 @@
   "passageId": "y110",
   "blankNum": 33,
   "categories": [
-   "搭配詞／固定用法",
-   "句型／固定搭配句構",
+   "字詞搭配",
+   "句型結構",
    "詞性判斷"
   ],
   "options": {
@@ -8061,7 +8061,7 @@
   "passageId": "y110",
   "blankNum": 34,
   "categories": [
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "means",
@@ -8089,7 +8089,7 @@
   "passageId": "y110",
   "blankNum": 35,
   "categories": [
-   "句型／固定搭配句構"
+   "句型結構"
   ],
   "options": {
    "A": "means",
@@ -8118,8 +8118,8 @@
   "blankNum": 36,
   "categories": [
    "詞性判斷",
-   "搭配詞／固定用法",
-   "字義辨析／多義字"
+   "字詞搭配",
+   "字彙選義"
   ],
   "options": {
    "A": "means",
@@ -8147,7 +8147,7 @@
   "passageId": "y110",
   "blankNum": 37,
   "categories": [
-   "字義辨析／多義字"
+   "字彙選義"
   ],
   "options": {
    "A": "means",
@@ -8175,7 +8175,7 @@
   "passageId": "y110",
   "blankNum": 38,
   "categories": [
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "means",
@@ -8204,8 +8204,8 @@
   "blankNum": 39,
   "categories": [
    "詞性判斷",
-   "字義辨析／多義字",
-   "同義改寫／替代指涉"
+   "字彙選義",
+   "同義呼應"
   ],
   "options": {
    "A": "means",
@@ -8233,7 +8233,7 @@
   "passageId": "y110",
   "blankNum": 40,
   "categories": [
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "means",
@@ -8261,7 +8261,7 @@
   "passageId": "y112",
   "blankNum": 21,
   "categories": [
-   "搭配詞／固定用法",
+   "字詞搭配",
    "詞性判斷"
   ],
   "options": {
@@ -8291,7 +8291,7 @@
   "blankNum": 22,
   "categories": [
    "詞性判斷",
-   "上下文線索／邏輯推論"
+   "語意連貫"
   ],
   "options": {
    "A": "absorption",
@@ -8320,8 +8320,8 @@
   "blankNum": 23,
   "categories": [
    "詞性判斷",
-   "字義辨析／多義字",
-   "搭配詞／固定用法"
+   "字彙選義",
+   "字詞搭配"
   ],
   "options": {
    "A": "absorption",
@@ -8350,8 +8350,8 @@
   "blankNum": 24,
   "categories": [
    "詞性判斷",
-   "同義改寫／替代指涉",
-   "上下文線索／邏輯推論"
+   "同義呼應",
+   "語意連貫"
   ],
   "options": {
    "A": "absorption",
@@ -8380,7 +8380,7 @@
   "blankNum": 25,
   "categories": [
    "詞性判斷",
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "absorption",
@@ -8408,8 +8408,8 @@
   "passageId": "y112",
   "blankNum": 26,
   "categories": [
-   "搭配詞／固定用法",
-   "字義辨析／多義字"
+   "字詞搭配",
+   "字彙選義"
   ],
   "options": {
    "A": "absorption",
@@ -8437,8 +8437,8 @@
   "passageId": "y112",
   "blankNum": 27,
   "categories": [
-   "搭配詞／固定用法",
-   "同義改寫／替代指涉"
+   "字詞搭配",
+   "同義呼應"
   ],
   "options": {
    "A": "absorption",
@@ -8467,8 +8467,8 @@
   "blankNum": 28,
   "categories": [
    "詞性判斷",
-   "字義辨析／多義字",
-   "搭配詞／固定用法"
+   "字彙選義",
+   "字詞搭配"
   ],
   "options": {
    "A": "absorption",
@@ -8496,8 +8496,8 @@
   "passageId": "y112",
   "blankNum": 29,
   "categories": [
-   "搭配詞／固定用法",
-   "上下文線索／邏輯推論"
+   "字詞搭配",
+   "語意連貫"
   ],
   "options": {
    "A": "absorption",
@@ -8526,8 +8526,8 @@
   "blankNum": 30,
   "categories": [
    "詞性判斷",
-   "字義辨析／多義字",
-   "搭配詞／固定用法"
+   "字彙選義",
+   "字詞搭配"
   ],
   "options": {
    "A": "absorption",
@@ -8556,8 +8556,8 @@
   "blankNum": 21,
   "categories": [
    "詞性判斷",
-   "同義改寫／替代指涉",
-   "上下文線索／邏輯推論"
+   "同義呼應",
+   "語意連貫"
   ],
   "options": {
    "A": "due",
@@ -8585,8 +8585,8 @@
   "passageId": "y110t",
   "blankNum": 22,
   "categories": [
-   "搭配詞／固定用法",
-   "字義辨析／多義字",
+   "字詞搭配",
+   "字彙選義",
    "詞性判斷"
   ],
   "options": {
@@ -8616,7 +8616,7 @@
   "blankNum": 23,
   "categories": [
    "詞性判斷",
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "due",
@@ -8644,7 +8644,7 @@
   "passageId": "y110t",
   "blankNum": 24,
   "categories": [
-   "搭配詞／固定用法",
+   "字詞搭配",
    "詞性判斷"
   ],
   "options": {
@@ -8674,7 +8674,7 @@
   "blankNum": 25,
   "categories": [
    "詞性判斷",
-   "上下文線索／邏輯推論"
+   "語意連貫"
   ],
   "options": {
    "A": "due",
@@ -8703,7 +8703,7 @@
   "blankNum": 26,
   "categories": [
    "詞性判斷",
-   "上下文線索／邏輯推論"
+   "語意連貫"
   ],
   "options": {
    "A": "due",
@@ -8731,8 +8731,8 @@
   "passageId": "y110t",
   "blankNum": 27,
   "categories": [
-   "搭配詞／固定用法",
-   "字義辨析／多義字",
+   "字詞搭配",
+   "字彙選義",
    "詞性判斷"
   ],
   "options": {
@@ -8762,7 +8762,7 @@
   "blankNum": 28,
   "categories": [
    "詞性判斷",
-   "搭配詞／固定用法"
+   "字詞搭配"
   ],
   "options": {
    "A": "due",
@@ -8791,8 +8791,8 @@
   "blankNum": 29,
   "categories": [
    "詞性判斷",
-   "搭配詞／固定用法",
-   "上下文線索／邏輯推論"
+   "字詞搭配",
+   "語意連貫"
   ],
   "options": {
    "A": "due",
@@ -8820,9 +8820,9 @@
   "passageId": "y110t",
   "blankNum": 30,
   "categories": [
-   "字義辨析／多義字",
-   "句型／固定搭配句構",
-   "上下文線索／邏輯推論"
+   "字彙選義",
+   "句型結構",
+   "語意連貫"
   ],
   "options": {
    "A": "due",
