@@ -130,7 +130,7 @@
   ],
   "gloss": "決定",
   "collocation": "can ___ which dialect is chosen；determine + wh- 子句（決定…）",
-  "explanation": "後面接 which 引導的子句，這一格講誰有權決定。易與 distinguish 混淆，但區分要接 from 帶出被分開的另一邊。",
+  "explanation": "determine + wh- 子句 是決定何者，後面接的正是 which 引導的子句。易與 distinguish 混淆，但那要走 distinguish A from B。",
   "accuracyRate": 62,
   "discrimination": 72,
   "contextSpan": "句內"
@@ -165,7 +165,7 @@
   ],
   "gloss": "相似的",
   "collocation": "are so ___ in grammar…that…；be similar to sth；so…that 句型",
-  "explanation": "so 與 that 中間要形容詞，這一格說兩種話在文法與發音上接近。易與 recognized 混淆，但被承認接不上這個程度句型。",
+  "explanation": "so + adj + that + 子句 是如此以致於，這一格說兩種話在文法與發音上接近。易與 recognized 混淆，但那要走 be recognized as + N。",
   "accuracyRate": 74,
   "discrimination": 60,
   "contextSpan": "句內"
@@ -199,7 +199,7 @@
   ],
   "gloss": "理解",
   "collocation": "if ___ is difficult or even impossible；reading comprehension（閱讀理解）",
-  "explanation": "前一句說彼此聽得懂，這一格是它的名詞說法，放在主詞位置。易與 trouble 混淆，但那要接 V-ing 講做某事有困難。",
+  "explanation": "前一句說彼此聽得懂，這一格是它的名詞說法，放在主詞位置。易與 trouble 混淆，但那要走 have trouble + in + V-ing。",
   "accuracyRate": 48,
   "discrimination": 63,
   "contextSpan": "跨句"
@@ -268,7 +268,7 @@
   ],
   "gloss": "困難",
   "collocation": "have little ___ communicating；have trouble + V-ing（做…有困難）",
-  "explanation": "have trouble 後面直接接動名詞，這一格講溝通幾乎沒障礙。易與 comprehension 混淆，但理解不能直接接 communicating。",
+  "explanation": "have trouble／difficulty／fun／a good time + in + V-ing，in 常省略，動名詞其實是介系詞的受詞。這一格講溝通幾乎沒障礙。易與 comprehension 混淆，但那不屬於這一族。",
   "accuracyRate": 71,
   "discrimination": 60,
   "contextSpan": "句內"
@@ -542,7 +542,7 @@
   ],
   "gloss": "飼養繁殖",
   "collocation": "a special right to ___ birds；breed birds／animals（飼養繁殖）",
-  "explanation": "to 後面接原形，這一格講獄方特准他養鳥繁殖。易與 release 混淆，但放走鳥與後面在牢房裡設實驗室互相矛盾。",
+  "explanation": "a right to + V 後面接原形，這一格講獄方特准他養鳥繁殖。易與 release 混淆，但放走鳥與後面在牢房裡設實驗室矛盾。",
   "accuracyRate": 61,
   "discrimination": 76,
   "contextSpan": "句內"
@@ -678,7 +678,7 @@
   ],
   "gloss": "被禁止",
   "collocation": "it was ___ by the prison authorities；ban sb from V-ing（禁止某人做…）",
-  "explanation": "後面接 by 帶出獄方，這一格是被動，講書稿被禁。易與 separated 混淆，但分隔講的是空間，不是出版與否。",
+  "explanation": "be banned by + N 是被某方禁止，這一格是被動，講書稿被禁。易與 separated 混淆，但分隔講的是空間，不是出版與否。",
   "accuracyRate": 68,
   "discrimination": 70,
   "contextSpan": "句內"
@@ -984,7 +984,7 @@
   ],
   "gloss": "上癮的",
   "collocation": "Some are even ___ to doing it；be addicted to + 名詞或動名詞",
-  "explanation": "be addicted to 後面接名詞或動名詞，這一格講有人捏到上癮。易與 delicate 混淆，但那形容東西易碎，接不上 to doing。",
+  "explanation": "be addicted to + N／V-ing，這裡的 to 是介系詞不是不定詞，所以接 doing。易與 delicate 混淆，但那形容東西易碎。",
   "accuracyRate": null,
   "discrimination": null,
   "contextSpan": "句內"
@@ -1327,7 +1327,7 @@
   ],
   "gloss": "（動詞）使欣喜",
   "collocation": "waiting to ___ those who find them；delight sb（使某人欣喜）",
-  "explanation": "to 後面接原形，這一格講那些石頭等著讓發現的人驚喜。易與 surprised 混淆，但那是過去分詞，接在 to 後面不成立。",
+  "explanation": "waiting to + V 後面接原形，這一格講那些石頭等著讓發現的人驚喜。易與 surprised 混淆，但那是過去分詞，接在 to 後面不成立。",
   "accuracyRate": 52,
   "discrimination": 73,
   "contextSpan": "句內"
@@ -1908,7 +1908,7 @@
   ],
   "gloss": "以…為名、被稱作",
   "collocation": "also ___ many other names；go by the name of sth（以…之名為人所知）",
-  "explanation": "go by 加名字是以某名為人所知，後面接的正是一串別名。易與 implies 混淆，但暗示的受詞是意思，不是名稱本身。",
+  "explanation": "go by + 名字 是以某名為人所知，後面接的正是一串別名。易與 implies 混淆，但暗示的受詞是意思，不是名稱本身。",
   "accuracyRate": 45,
   "discrimination": 58,
   "contextSpan": "句內"
@@ -2493,7 +2493,7 @@
   ],
   "gloss": "惡化、劣化",
   "collocation": "keep it from ___ more than it has；keep sb／sth from V-ing（阻止…）",
-  "explanation": "keep sth from V-ing 後面要動名詞，這一格講不讓它繼續劣化。易與 aged 混淆，但那接在 from 後面詞形不合。",
+  "explanation": "keep + sth + from + V-ing 是阻止某物繼續做某事，這一格講不讓它繼續劣化。易與 aged 混淆，但那接在 from 後面詞形不合。",
   "accuracyRate": 49,
   "discrimination": 67,
   "contextSpan": "句內"
@@ -2666,7 +2666,7 @@
   ],
   "gloss": "建造",
   "collocation": "talked about ___ a wall；talk about + V-ing；construct a wall／bridge",
-  "explanation": "talk about 後面接動名詞，這一格講的是築一道牆。易與 installed 混淆，但安裝的受詞是零件或設備，不是圍牆。",
+  "explanation": "talk about + V-ing，介系詞後面要動名詞，這一格講的是築一道牆。易與 installed 混淆，但安裝的受詞是零件或設備，不是圍牆。",
   "accuracyRate": 65,
   "discrimination": 72,
   "contextSpan": "句內"
@@ -2837,7 +2837,7 @@
   ],
   "gloss": "席捲、迅速蔓延過",
   "collocation": "enabled the disease to ___ the country；sweep through a region（席捲一地）",
-  "explanation": "sweep through 是席捲一地，後面直接接國家當受詞。易與 accelerated 混淆，但那是過去式，接在 to 後面不成立。",
+  "explanation": "sweep through + N 是席捲一地，後面直接接國家。易與 accelerated 混淆，但那是過去式，接在 to 後面不成立。",
   "accuracyRate": 45,
   "discrimination": 66,
   "contextSpan": "句內"
@@ -2905,7 +2905,7 @@
   ],
   "gloss": "更廣的",
   "collocation": "an even ___ spread of the disease；a wide spread／range（廣泛散布、範圍）",
-  "explanation": "even 後面要比較級，這一格形容散布的範圍更廣。易與 harder 混淆，但困難形容的是事情，不是散布的幅度。",
+  "explanation": "even + 比較級 是加強比較語氣，這一格形容散布的範圍更廣。易與 harder 混淆，但困難形容的是事情，不是散布的幅度。",
   "accuracyRate": 51,
   "discrimination": 74,
   "contextSpan": "句內"
@@ -3041,7 +3041,7 @@
   ],
   "gloss": "警告",
   "collocation": "Medical scientists ___ that…；warn sb of／about sth；warn sb to V",
-  "explanation": "後面接 that 子句，這一格講科學家提出警告。易與 accelerated 混淆，但加速要接被加速的東西，接不了子句。",
+  "explanation": "warn + that 子句 是提出警告，這一格的主詞是醫學界。易與 accelerated 混淆，但加速要接被加速的東西，接不了子句。",
   "accuracyRate": 60,
   "discrimination": 74,
   "contextSpan": "句內"
@@ -3076,7 +3076,7 @@
   ],
   "gloss": "更困難的",
   "collocation": "makes it even ___ to control；make it + 形容詞 + to V（虛受詞句型）",
-  "explanation": "make it 加形容詞加不定詞是虛受詞句型，這一格填更難。易與 wider 混淆，但更廣講的是範圍，不是控制起來的難度。",
+  "explanation": "make it + adj + to V 是虛受詞句型，這一格填更難。易與 wider 混淆，但更廣講的是範圍，不是控制起來的難度。",
   "accuracyRate": 63,
   "discrimination": 77,
   "contextSpan": "句內"
@@ -3144,7 +3144,7 @@
   ],
   "gloss": "活著的",
   "collocation": "just like when they were ___；be／stay alive；alive 不置於名詞前",
-  "explanation": "alive 只能放在 be 動詞後面，不放名詞前面，這裡講他們還在世的時候。易與 available 混淆，但買得到是用來講商品的。",
+  "explanation": "be／stay + alive，alive 這類 a- 開頭的形容詞只作主詞補語，不置於名詞前。易與 available 混淆，但買得到是用來講商品的。",
   "accuracyRate": 75,
   "discrimination": 60,
   "contextSpan": "句內"
@@ -3590,7 +3590,7 @@
   ],
   "gloss": "承受、耐得住",
   "collocation": "not enough to ___ more than two hours；withstand cold／pressure（耐寒、耐壓）",
-  "explanation": "withstand 後面接要耐住的東西，這裡是兩個多小時的酷寒。易與 warm up 混淆，但暖和起來帶不了時間當受詞。",
+  "explanation": "withstand + N 是耐住某事物，這裡是兩個多小時的酷寒。易與 warm up 混淆，但那是不及物，帶不了時間當受詞。",
   "accuracyRate": 51,
   "discrimination": 74,
   "contextSpan": "句內"
@@ -3658,7 +3658,7 @@
   ],
   "gloss": "暖和起來",
   "collocation": "learn how to ___ quickly；warm up（暖和起來、暖身）",
-  "explanation": "how to 後面接原形，這一格講在睡袋裡怎麼快點暖起來。易與 withstand 混淆，但那是及物動詞，後面必須有受詞。",
+  "explanation": "how to + V 後面接原形，這一格講在睡袋裡怎麼快點暖起來。易與 withstand 混淆，但那是及物動詞，後面必須有受詞。",
   "accuracyRate": 73,
   "discrimination": 56,
   "contextSpan": "句內"
@@ -5051,7 +5051,7 @@
   ],
   "gloss": "快速地",
   "collocation": "to communicate more ___ than one can…；communicate quickly（快速溝通）",
-  "explanation": "more 後面接副詞，這一句講的是打字更少、溝通更快。易與 likely 混淆，但可能性沒有快慢之分，也接不上 than 的比較。",
+  "explanation": "more + adv + than 的比較句，這一句講打字更少、溝通更快。易與 likely 混淆，但可能性沒有快慢之分。",
   "accuracyRate": 69,
   "discrimination": 67,
   "contextSpan": "句內"
@@ -5181,7 +5181,7 @@
   ],
   "gloss": "離開",
   "collocation": "Once ___ the environment；once + V-ing（一旦…），分詞構句省略主詞",
-  "explanation": "Once 後面接分詞、再帶受詞，講的是一離開那個購物現場。易與 buying 混淆，但購買放在這裡會與後半句獎賞消失的邏輯相反。",
+  "explanation": "once + V-ing 是分詞構句省略主詞，講的是一離開那個購物現場。易與 buying 混淆，但購買會與後半句獎賞消失的邏輯相反。",
   "accuracyRate": 44,
   "discrimination": 71,
   "contextSpan": "句內"
@@ -5405,7 +5405,7 @@
   ],
   "gloss": "購買",
   "collocation": "are repressed by ___ something；by + V-ing（藉由做…）",
-  "explanation": "by 後面要動名詞，這一格說他們靠著買東西把問題壓下去。易與 leaving 混淆，但離開已用在第一段，而且離開也壓不住問題。",
+  "explanation": "by + V-ing 是藉由做某事，這一格說他們靠著買東西把問題壓下去。易與 leaving 混淆，但離開已用在第一段，也壓不住問題。",
   "accuracyRate": 51,
   "discrimination": 57,
   "contextSpan": "句內"
@@ -5631,7 +5631,7 @@
   ],
   "gloss": "尚未被發現的",
   "collocation": "Scanning for as yet ___ objects；as yet undetected（迄今尚未偵測到的）",
-  "explanation": "as yet 後面要一個表示還沒被找到的分詞，他掃視的正是這種天體。易與 strange 混淆，但奇特形容的是樣子，說不出還沒被發現。",
+  "explanation": "as yet + p.p. 指迄今尚未如何，他掃視的正是還沒被發現的天體。易與 strange 混淆，但奇特形容的是樣子，說不出還沒被發現。",
   "accuracyRate": null,
   "discrimination": null,
   "contextSpan": "句內"
@@ -6115,7 +6115,7 @@
   ],
   "gloss": "說服",
   "collocation": "___ them to buy more food；persuade sb to V（說服某人做…）",
-  "explanation": "這一格與前面的 makes 並列，主詞是麵包香氣，後面接受詞加不定詞。易與 influence 混淆，但影響後面不接 to，句型接不起來。",
+  "explanation": "persuade + sb + to V 是說服某人做某事，主詞是麵包香氣。易與 influence 混淆，但那是 influence + sb 直接接受詞，不接 to。",
   "accuracyRate": 45,
   "discrimination": 71,
   "contextSpan": "句內"
@@ -6180,7 +6180,7 @@
   ],
   "gloss": "（動詞）影響",
   "collocation": "can be used to ___ what people buy；influence + wh- 子句（影響…）",
-  "explanation": "be used to 後面要動詞原形，受詞是一個 wh- 子句。易與 persuades 混淆，但那必須先接人再接不定詞，不能直接接子句。",
+  "explanation": "be used to + V 後面接原形，這一格再帶一個 wh- 子句當受詞。易與 persuades 混淆，但那要走 persuade + sb + to V，不能直接接子句。",
   "accuracyRate": 35,
   "discrimination": 62,
   "contextSpan": "句內"
@@ -6245,7 +6245,7 @@
   ],
   "gloss": "知悉的",
   "collocation": "keep customers ___ about what others buy；keep sb informed（讓某人知悉）",
-  "explanation": "這一格是受詞補語，講超市讓顧客知道別人買了什麼。易與 likely 混淆，但那要接不定詞，放在受詞後面當補語不成立。",
+  "explanation": "keep + sb + informed 是讓某人隨時知悉，informed 在這裡是受詞補語。易與 likely 混淆，但那要走 be likely + to V。",
   "accuracyRate": 31,
   "discrimination": 60,
   "contextSpan": "句內"
@@ -6374,7 +6374,7 @@
   ],
   "gloss": "強而有力的",
   "collocation": "is just as ___ on the Internet；as + 形容詞 + as（同樣地…）",
-  "explanation": "as 與 as 中間要一個形容詞，說明這套心理學在網路上一樣管用。易與 likely 混淆，但有可能講的是機率，不能形容效力強弱。",
+  "explanation": "as + adj + as 中間要形容詞，說明這套心理學在網路上一樣管用。易與 likely 混淆，但有可能講的是機率，不能形容效力強弱。",
   "accuracyRate": 27,
   "discrimination": 55,
   "contextSpan": "句內"
@@ -6759,7 +6759,7 @@
   ],
   "gloss": "將近、幾乎",
   "collocation": "consists of ___ one hundred islands；nearly + 數字（將近…）",
-  "explanation": "後面接一百這個整數，這一格要一個表示逼近但未達的副詞。易與 even 混淆，但那要用在比較級前面加強語氣，直接接數字並不通。",
+  "explanation": "nearly + 數字 表示逼近但未達，後面接的是一百這個整數。易與 even 混淆，但那要用在比較級前面，直接接數字不通。",
   "accuracyRate": 56,
   "discrimination": 77,
   "contextSpan": "句內"
@@ -6952,7 +6952,7 @@
   ],
   "gloss": "保存",
   "collocation": "has also ___ the primitive character；preserve a character（保存特色）",
-  "explanation": "has 後面要過去分詞，白沙嶼把原始未受破壞的樣貌保存下來。易與 uninhabited 混淆，但無人居住同句前半已寫過，這裡要的是動作。",
+  "explanation": "have + p.p. 的現在完成式，白沙嶼把原始未受破壞的樣貌保存下來。易與 uninhabited 混淆，但無人居住同句前半已寫過。",
   "accuracyRate": 52,
   "discrimination": 71,
   "contextSpan": "句內"
@@ -6984,7 +6984,7 @@
   ],
   "gloss": "格外、特別",
   "collocation": "which are ___ spectacular；particularly + 形容詞（格外…）",
-  "explanation": "這一格修飾後面的壯觀，指南岸那一段格外突出。易與 even 混淆，但那要用在比較級前面，這裡後面接的是原級形容詞。",
+  "explanation": "particularly + adj 表示格外如何，這一格修飾後面的壯觀。易與 even 混淆，但那要接比較級，這裡是原級形容詞。",
   "accuracyRate": 37,
   "discrimination": 64,
   "contextSpan": "句內"
@@ -7341,7 +7341,7 @@
   ],
   "gloss": "人口",
   "collocation": "with a ___ of a few thousand；a population of + 數字（人口為…）",
-  "explanation": "a population of 後面接數字，是說明人口規模的固定說法。易與 programs 混淆，但方案數量不會拿來說明一個小鎮有多小。",
+  "explanation": "a population of + 數字 是人口為多少，後面接的正是幾千。易與 programs 混淆，但方案數量不會拿來說明一個小鎮有多小。",
   "accuracyRate": 32,
   "discrimination": 51,
   "contextSpan": "句內"
@@ -7569,7 +7569,7 @@
   ],
   "gloss": "完全地",
   "collocation": "rely almost ___ on agriculture；rely entirely on sth（完全仰賴）",
-  "explanation": "almost 後面要一個副詞，用來說明仰賴農業的程度接近全部。易與 sparingly 混淆，但節制少量會把幾乎完全整個反過來說。",
+  "explanation": "rely + entirely + on sth，almost 後面要接副詞才說得出程度。易與 sparingly 混淆，但節制少量會把幾乎完全整個反過來說。",
   "accuracyRate": null,
   "discrimination": null,
   "contextSpan": "句內"
@@ -7858,7 +7858,7 @@
   ],
   "gloss": "循著、跟隨",
   "collocation": "find their way there by ___ the pattern；by + V-ing（藉由做…）",
-  "explanation": "by 後面要動名詞，幼袋鼠靠著母袋鼠毛的走向一路循過去。易與 snoozing 混淆，但打盹已用在白天那一句，而且睡覺也沒辦法找到路。",
+  "explanation": "by + V-ing 是藉由做某事，幼袋鼠靠著母袋鼠毛的走向一路循過去。易與 snoozing 混淆，但打盹已用在白天那一句，也找不到路。",
   "accuracyRate": 62,
   "discrimination": 66,
   "contextSpan": "句內"
@@ -7890,7 +7890,7 @@
   ],
   "gloss": "直到…為止",
   "collocation": "stay in the pouch ___ they are eight…；stay until + 子句（待到…為止）",
-  "explanation": "這一格要一個能接子句的連接詞，把待在育兒袋的時間收在八個月大。易與 for good 混淆，但那指永久不回頭，與八個月後就離開正好衝突。",
+  "explanation": "stay until + 子句，這一格要能接子句的連接詞，把時間收在八個月大。易與 for good 混淆，但那指永久不回頭，與八個月後就離開衝突。",
   "accuracyRate": 81,
   "discrimination": 50,
   "contextSpan": "句內"
@@ -7986,7 +7986,7 @@
   ],
   "gloss": "納悶、想知道",
   "collocation": "Have you ever ___ why…；wonder why／whether + 子句（納悶為何）",
-  "explanation": "現在完成式後面要過去分詞，而且要能接 why 子句。易與 following 混淆，但那是動名詞或現在分詞，接在 have ever 後面不成立。",
+  "explanation": "have + p.p. 的現在完成式，這裡還要能走 wonder + why 子句。易與 following 混淆，但那是動名詞或現在分詞，接在 have ever 後面不成立。",
   "accuracyRate": 65,
   "discrimination": 69,
   "contextSpan": "句內"
