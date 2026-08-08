@@ -580,7 +580,7 @@ let currentLevel = 'mid'; // low/mid/high
 let hintsOn = true;
 
 const SPANS = ["句內","跨句","篇章"];
-// 分類清單一律由 items.json 導出，避免資料檔與渲染碼脫節；
+// 分類清單一律取自 items.json，避免資料檔與渲染碼脫節；
 // CAT_ORDER 只決定顯示順序，資料中出現而未列於此的分類，依題數多寡自動接在後面。
 const CAT_ORDER = ["字詞搭配","字彙選義","詞性判斷","同義呼應","代名詞／指示詞","句型結構","語意連貫"];
 let CATS = [];
