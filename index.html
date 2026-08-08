@@ -215,7 +215,7 @@ details.skill[open] > summary::after{content:'－ 收合';}
   <div id="homeView">
     <div class="card">
       <div class="home-lead">開始練習前</div>
-      <p class="home-desc">本題庫收錄學測 90–115 年、指考 91–110 年的文意選填歷屆試題，含補考與參考試卷，共 560 題、56 篇。學測部分附逐格解析、六大分類與線索範圍標註，並收錄部分年度大考中心公布的官方逐題答對率；<b>指考部分目前有題目、答案與官方答對率／鑑別度，逐格解析、中譯與線索範圍標註尚在建置中</b>。</p>
+      <p class="home-desc">本題庫收錄學測 90–115 年、指考 91–110 年的文意選填歷屆試題，含補考與參考試卷，共 560 題、56 篇。兩站皆附逐格解析、六大分類與線索範圍標註，並收錄部分年度大考中心公布的官方逐題答對率；<b>指考部分的段落主旨句標記與巨觀結構分析尚在建置中</b>。</p>
 
       <details class="skill sk-box">
         <summary><div class="sk-title">選項會不會剛好用完，看年度<span style="font-weight:400; font-size:11.5px; color:var(--ink-soft); margin-left:6px;">（點此展開／收合）</span></div></summary>
@@ -411,7 +411,7 @@ details.skill[open] > summary::after{content:'－ 收合';}
         <div class="sec-title">依線索範圍篩選<span style="font-weight:400; text-transform:none; letter-spacing:0; font-size:11px; margin-left:6px;">（可複選，不選則不限範圍）</span></div>
         <div class="cat-grid" id="spanGrid"></div>
         <div class="span-legend">
-          每一格需要的線索範圍並不一樣。<b>句內</b>＝讀懂空格所在的那一句就足以作答；<b>跨句</b>＝必須回頭看前一句或後一句；<b>篇章</b>＝要跨段落、或掌握全文走向才選得出來。標籤與線索說明都是在你作答之後才出現，先自己判斷一次，再對照。<b>目前只有學測題完成標註</b>，勾選線索範圍時只會篩到學測題。
+          每一格需要的線索範圍並不一樣。<b>句內</b>＝讀懂空格所在的那一句就足以作答；<b>跨句</b>＝必須回頭看前一句或後一句；<b>篇章</b>＝要跨段落、或掌握全文走向才選得出來。標籤與線索說明都是在你作答之後才出現，先自己判斷一次，再對照。<b>學測 310 題與指考 250 題均已完成標註</b>，勾選線索範圍時兩站的題目都篩得到。
         </div>
 
       </div>
@@ -452,7 +452,7 @@ details.skill[open] > summary::after{content:'－ 收合';}
       <div id="histByCategory"></div>
       <div class="sec-title">各線索範圍表現</div>
       <div id="histBySpan"></div>
-      <div class="span-legend">題數少的時候比率會跳動得很厲害，累積幾十題以後再看比較準。三個範圍的題數本來就不平均（學測 310 題中，句內 272、跨句 32、篇章 6），比率低不一定代表你弱，先看分母。</div>
+      <div class="span-legend">題數少的時候比率會跳動得很厲害，累積幾十題以後再看比較準。三個範圍的題數本來就不平均（學測 310 題中，句內 272、跨句 32、篇章 6；指考 250 題中，句內 219、跨句 29、篇章 2），比率低不一定代表你弱，先看分母。</div>
       <div class="sec-title">最近作答記錄</div>
       <div id="histRecent"></div>
     </div>
@@ -951,16 +951,16 @@ function renderFull(pid){
     <div class="level-btn ${currentLevel==='mid'?'active':''}" onclick="setLevel('mid')">中間群考生(開提示)</div>
     <div class="level-btn ${currentLevel==='high'?'active':''}" onclick="setLevel('high')">高分群考生(關提示，模擬考場)</div>
   </div>
-  ${p.macro ? `<div class="hint-toggle"><span class="switch ${hintsOn?'on':''}" onclick="toggleHints()"><span class="dot"></span></span> 主旨句／轉折詞提示：${hintsOn?'開':'關'}</div>
+  ${hasMarks(p) ? `<div class="hint-toggle"><span class="switch ${hintsOn?'on':''}" onclick="toggleHints()"><span class="dot"></span></span> 主旨句／轉折詞提示：${hintsOn?'開':'關'}</div>
   <div class="legend"><span class="lg-both">兩者皆是</span><span class="lg-thesis">全文中心思想</span><span class="lg-topic">段落主旨句</span><span class="lg-trans">轉折詞</span></div>` : ''}
-  ${p.macro ? '' : '<div style="font-size:12px; color:var(--ink-soft); margin:-6px 0 14px; line-height:1.7;">📌 本篇的段落主旨句標記、巨觀結構分析與全文中譯尚在建置中，目前提供題目、選項與正解。</div>'}
-  <div style="font-size:12px; color:var(--ink-soft); margin:-6px 0 14px; line-height:1.7; ${p.macro ? '' : 'display:none;'}">📌 並非每段都有一句「明講」的主旨句，也不是每篇文章的核心思想都剛好對應某一句話——本站標示的是「最能呼應」的代表句，僅供參考，不代表唯一答案。</div>
+  ${pendingNote(p)}
+  <div style="font-size:12px; color:var(--ink-soft); margin:-6px 0 14px; line-height:1.7; ${hasMarks(p) ? '' : 'display:none;'}">📌 並非每段都有一句「明講」的主旨句，也不是每篇文章的核心思想都剛好對應某一句話——本站標示的是「最能呼應」的代表句，僅供參考，不代表唯一答案。</div>
   <div class="sec-title">選項<span style="font-weight:400; text-transform:none; letter-spacing:0; font-size:11px; margin-left:6px;">（本篇 ${p.optionCount} 個選項填 ${p.blankCount} 格，每個最多用一次；${p.eliminationValid ? '選項剛好用完，<b>刪去法可以收尾</b>' : '會有 ' + (p.optionCount - p.blankCount) + ' 個選項用不到，<b>刪去法收不了尾</b>'}；點文章中的空格即可作答）</span></div>
   <div class="opts-table" id="optsTable"></div>
   <div class="passage-text ${hintsOn?'':'hints-off'}" id="passageText"></div>
   <div style="text-align:center; margin:22px 0;">
     <button class="grade-btn" id="gradeBtn" onclick="gradeFullPassage()">送出批改<span class="gb-count" id="gbCount"></span></button>
-    <div style="font-size:11.5px; color:var(--ink-soft); margin-top:8px;">全部填完再送出，中途不會公布正解；送出後會顯示官方答對率與逐題檢討，學測篇另附逐格解析與全文中譯。</div>
+    <div style="font-size:11.5px; color:var(--ink-soft); margin-top:8px;">全部填完再送出，中途不會公布正解；送出後會顯示官方答對率與逐題檢討，並附逐格解析、全文主旨與全文中譯。</div>
   </div>
   <div id="gradeResult"></div>`;
 
@@ -979,6 +979,20 @@ function renderFull(pid){
   document.getElementById('practiceBody').innerHTML = html;
   renderPassageText(p, items);
 }
+// 該篇的段落文字是否真的帶有主旨句／轉折詞標記；沒有標記時不顯示提示開關與圖例
+function hasMarks(p){
+  const HL = ['topic','thesis','gradient','trans'];
+  return (p.paras||[]).some(pa => (pa.segs||[]).some(sg => HL.indexOf(sg[1]) >= 0));
+}
+// 依該篇實際缺哪幾項，據實列出尚在建置中的部分；三項都有資料時不顯示
+function pendingNote(p){
+  const pend = [];
+  if(!hasMarks(p)) pend.push('段落主旨句與轉折詞標記');
+  if(!p.macro) pend.push('巨觀結構分析');
+  if(!(Array.isArray(p.zhTranslation) && p.zhTranslation.length)) pend.push('全文中譯');
+  if(!pend.length) return '';
+  return `<div style="font-size:12px; color:var(--ink-soft); margin:-6px 0 14px; line-height:1.7;">📌 本篇的${pend.join('、')}尚在建置中，其餘功能不受影響。</div>`;
+}
 function setLevel(l){ currentLevel = l; hintsOn = (l !== 'high'); renderFull(window.__lastPid); }
 function toggleHints(){ hintsOn = !hintsOn; renderFull(window.__lastPid); }
 let revealedBlanks = new Set(); window.__blankChoices = {};
@@ -991,7 +1005,7 @@ function renderPassageText(p, items){
   const letters = Object.keys(p.options).sort();
   let out = '';
   p.paras.forEach((para, idx) => {
-    out += (hintsOn ? `<div class="p-label">${para.label}</div>` : '') + `<p>`;
+    out += (hintsOn && para.label ? `<div class="p-label">${para.label}</div>` : '') + `<p>`;
     const blankNumsInPara = [];
     para.segs.forEach((seg, si) => {
       let [text, type] = seg;
@@ -1123,8 +1137,12 @@ function gradeFullPassage(){
     box += `<div class="feedback" style="border-left:3px solid var(--crimson);">
       <b>⚠ 優先檢討</b>：以下題目全體考生答對率偏高，屬於「本來該拿到」的分數<ul style="margin:6px 0 0 18px;">${priority}</ul></div>`;
   }
-  box += `<div class="rv-list">${review}</div>
-    <div class="sec-title">全文中譯</div><div class="feedback">${zh}</div>`;
+  box += `<div class="rv-list">${review}</div>`;
+  const pg = PASSAGES[window.__lastPid] || {};
+  if(pg.thesis || pg.thesisExplain){
+    box += `<div class="sec-title">全文主旨</div><div class="feedback">${pg.thesis ? `<b>主旨句：</b>${pg.thesis}<br><br>` : ''}${pg.thesisExplain || ''}</div>`;
+  }
+  box += `<div class="sec-title">全文中譯</div><div class="feedback">${zh}</div>`;
   fullGraded = true;
   document.getElementById('gradeBtn').style.display = 'none';
   document.getElementById('gradeResult').innerHTML = box;
