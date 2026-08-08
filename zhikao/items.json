@@ -23,13 +23,15 @@
    "L": "particular"
   },
   "answer": "G",
-  "categories": [],
+  "categories": [
+   "字詞搭配"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 17,
   "discrimination": 20,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz110_22",
@@ -55,13 +57,15 @@
    "L": "particular"
   },
   "answer": "K",
-  "categories": [],
+  "categories": [
+   "字詞搭配"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 55,
   "discrimination": 82,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz110_23",
@@ -87,13 +91,15 @@
    "L": "particular"
   },
   "answer": "J",
-  "categories": [],
+  "categories": [
+   "語意連貫"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 32,
   "discrimination": 50,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz110_24",
@@ -119,13 +125,15 @@
    "L": "particular"
   },
   "answer": "B",
-  "categories": [],
+  "categories": [
+   "字詞搭配"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 62,
   "discrimination": 72,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz110_25",
@@ -151,13 +159,16 @@
    "L": "particular"
   },
   "answer": "I",
-  "categories": [],
+  "categories": [
+   "句型結構",
+   "語意連貫"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 74,
   "discrimination": 60,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz110_26",
@@ -183,13 +194,15 @@
    "L": "particular"
   },
   "answer": "E",
-  "categories": [],
+  "categories": [
+   "同義呼應"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 48,
   "discrimination": 63,
-  "contextSpan": null
+  "contextSpan": "跨句"
  },
  {
   "id": "Vz110_27",
@@ -215,13 +228,16 @@
    "L": "particular"
   },
   "answer": "F",
-  "categories": [],
+  "categories": [
+   "字詞搭配",
+   "字彙選義"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 36,
   "discrimination": 39,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz110_28",
@@ -247,13 +263,15 @@
    "L": "particular"
   },
   "answer": "D",
-  "categories": [],
+  "categories": [
+   "字詞搭配"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 71,
   "discrimination": 60,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz110_29",
@@ -279,13 +297,16 @@
    "L": "particular"
   },
   "answer": "H",
-  "categories": [],
+  "categories": [
+   "字詞搭配",
+   "字彙選義"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 48,
   "discrimination": 69,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz110_30",
@@ -311,13 +332,15 @@
    "L": "particular"
   },
   "answer": "A",
-  "categories": [],
+  "categories": [
+   "字詞搭配"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 35,
   "discrimination": 52,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz109_21",
@@ -343,13 +366,15 @@
    "L": "privilege"
   },
   "answer": "I",
-  "categories": [],
+  "categories": [
+   "同義呼應"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 77,
   "discrimination": 54,
-  "contextSpan": null
+  "contextSpan": "跨句"
  },
  {
   "id": "Vz109_22",
@@ -375,13 +400,15 @@
    "L": "privilege"
   },
   "answer": "K",
-  "categories": [],
+  "categories": [
+   "字詞搭配"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 52,
   "discrimination": 82,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz109_23",
@@ -407,13 +434,15 @@
    "L": "privilege"
   },
   "answer": "F",
-  "categories": [],
+  "categories": [
+   "字詞搭配"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 48,
   "discrimination": 80,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz109_24",
@@ -439,13 +468,15 @@
    "L": "privilege"
   },
   "answer": "H",
-  "categories": [],
+  "categories": [
+   "同義呼應"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 45,
   "discrimination": 84,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz109_25",
@@ -471,13 +502,15 @@
    "L": "privilege"
   },
   "answer": "A",
-  "categories": [],
+  "categories": [
+   "字詞搭配"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 46,
   "discrimination": 72,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz109_26",
@@ -503,13 +536,16 @@
    "L": "privilege"
   },
   "answer": "B",
-  "categories": [],
+  "categories": [
+   "字詞搭配",
+   "語意連貫"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 61,
   "discrimination": 76,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz109_27",
@@ -535,13 +571,15 @@
    "L": "privilege"
   },
   "answer": "L",
-  "categories": [],
+  "categories": [
+   "同義呼應"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 51,
   "discrimination": 81,
-  "contextSpan": null
+  "contextSpan": "跨句"
  },
  {
   "id": "Vz109_28",
@@ -567,13 +605,15 @@
    "L": "privilege"
   },
   "answer": "G",
-  "categories": [],
+  "categories": [
+   "字詞搭配"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 64,
   "discrimination": 77,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz109_29",
@@ -599,13 +639,15 @@
    "L": "privilege"
   },
   "answer": "J",
-  "categories": [],
+  "categories": [
+   "字詞搭配"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 51,
   "discrimination": 81,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz109_30",
@@ -631,13 +673,15 @@
    "L": "privilege"
   },
   "answer": "D",
-  "categories": [],
+  "categories": [
+   "語意連貫"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 68,
   "discrimination": 70,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz109b_21",
@@ -663,13 +707,15 @@
    "L": "addicted"
   },
   "answer": "E",
-  "categories": [],
+  "categories": [
+   "同義呼應"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": null,
   "discrimination": null,
-  "contextSpan": null
+  "contextSpan": "跨句"
  },
  {
   "id": "Vz109b_22",
@@ -695,13 +741,15 @@
    "L": "addicted"
   },
   "answer": "J",
-  "categories": [],
+  "categories": [
+   "語意連貫"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": null,
   "discrimination": null,
-  "contextSpan": null
+  "contextSpan": "篇章"
  },
  {
   "id": "Vz109b_23",
@@ -727,13 +775,15 @@
    "L": "addicted"
   },
   "answer": "D",
-  "categories": [],
+  "categories": [
+   "語意連貫"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": null,
   "discrimination": null,
-  "contextSpan": null
+  "contextSpan": "跨句"
  },
  {
   "id": "Vz109b_24",
@@ -759,13 +809,15 @@
    "L": "addicted"
   },
   "answer": "F",
-  "categories": [],
+  "categories": [
+   "字彙選義"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": null,
   "discrimination": null,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz109b_25",
@@ -791,13 +843,15 @@
    "L": "addicted"
   },
   "answer": "K",
-  "categories": [],
+  "categories": [
+   "字詞搭配"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": null,
   "discrimination": null,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz109b_26",
@@ -823,13 +877,15 @@
    "L": "addicted"
   },
   "answer": "H",
-  "categories": [],
+  "categories": [
+   "字詞搭配"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": null,
   "discrimination": null,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz109b_27",
@@ -855,13 +911,15 @@
    "L": "addicted"
   },
   "answer": "G",
-  "categories": [],
+  "categories": [
+   "語意連貫"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": null,
   "discrimination": null,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz109b_28",
@@ -887,13 +945,15 @@
    "L": "addicted"
   },
   "answer": "I",
-  "categories": [],
+  "categories": [
+   "語意連貫"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": null,
   "discrimination": null,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz109b_29",
@@ -919,13 +979,15 @@
    "L": "addicted"
   },
   "answer": "L",
-  "categories": [],
+  "categories": [
+   "字詞搭配"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": null,
   "discrimination": null,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz109b_30",
@@ -951,13 +1013,15 @@
    "L": "addicted"
   },
   "answer": "A",
-  "categories": [],
+  "categories": [
+   "字詞搭配"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": null,
   "discrimination": null,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz108_21",
@@ -983,13 +1047,16 @@
    "L": "ever-changing"
   },
   "answer": "K",
-  "categories": [],
+  "categories": [
+   "字彙選義",
+   "詞性判斷"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 42,
   "discrimination": 80,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz108_22",
@@ -1015,13 +1082,15 @@
    "L": "ever-changing"
   },
   "answer": "L",
-  "categories": [],
+  "categories": [
+   "語意連貫"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 36,
   "discrimination": 65,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz108_23",
@@ -1047,13 +1116,15 @@
    "L": "ever-changing"
   },
   "answer": "D",
-  "categories": [],
+  "categories": [
+   "語意連貫"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 70,
   "discrimination": 63,
-  "contextSpan": null
+  "contextSpan": "跨句"
  },
  {
   "id": "Vz108_24",
@@ -1079,13 +1150,15 @@
    "L": "ever-changing"
   },
   "answer": "G",
-  "categories": [],
+  "categories": [
+   "語意連貫"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 39,
   "discrimination": 62,
-  "contextSpan": null
+  "contextSpan": "跨句"
  },
  {
   "id": "Vz108_25",
@@ -1111,13 +1184,15 @@
    "L": "ever-changing"
   },
   "answer": "J",
-  "categories": [],
+  "categories": [
+   "語意連貫"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 69,
   "discrimination": 64,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz108_26",
@@ -1143,13 +1218,16 @@
    "L": "ever-changing"
   },
   "answer": "C",
-  "categories": [],
+  "categories": [
+   "字詞搭配",
+   "字彙選義"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 38,
   "discrimination": 62,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz108_27",
@@ -1175,13 +1253,15 @@
    "L": "ever-changing"
   },
   "answer": "E",
-  "categories": [],
+  "categories": [
+   "字詞搭配"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 65,
   "discrimination": 79,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz108_28",
@@ -1207,13 +1287,15 @@
    "L": "ever-changing"
   },
   "answer": "H",
-  "categories": [],
+  "categories": [
+   "同義呼應"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 68,
   "discrimination": 65,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz108_29",
@@ -1239,13 +1321,16 @@
    "L": "ever-changing"
   },
   "answer": "A",
-  "categories": [],
+  "categories": [
+   "語意連貫",
+   "詞性判斷"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 52,
   "discrimination": 73,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz108_30",
@@ -1271,13 +1356,15 @@
    "L": "ever-changing"
   },
   "answer": "B",
-  "categories": [],
+  "categories": [
+   "同義呼應"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 48,
   "discrimination": 58,
-  "contextSpan": null
+  "contextSpan": "跨句"
  },
  {
   "id": "Vz107_21",
@@ -1303,13 +1390,15 @@
    "L": "treated"
   },
   "answer": "I",
-  "categories": [],
+  "categories": [
+   "字詞搭配"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 52,
   "discrimination": 80,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz107_22",
@@ -1335,13 +1424,15 @@
    "L": "treated"
   },
   "answer": "K",
-  "categories": [],
+  "categories": [
+   "字詞搭配"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 52,
   "discrimination": 84,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz107_23",
@@ -1367,13 +1458,15 @@
    "L": "treated"
   },
   "answer": "B",
-  "categories": [],
+  "categories": [
+   "字彙選義"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 50,
   "discrimination": 56,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz107_24",
@@ -1399,13 +1492,15 @@
    "L": "treated"
   },
   "answer": "C",
-  "categories": [],
+  "categories": [
+   "語意連貫"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 57,
   "discrimination": 67,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz107_25",
@@ -1431,13 +1526,15 @@
    "L": "treated"
   },
   "answer": "D",
-  "categories": [],
+  "categories": [
+   "語意連貫"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 49,
   "discrimination": 66,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz107_26",
@@ -1463,13 +1560,16 @@
    "L": "treated"
   },
   "answer": "E",
-  "categories": [],
+  "categories": [
+   "字詞搭配",
+   "語意連貫"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 62,
   "discrimination": 67,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz107_27",
@@ -1495,13 +1595,15 @@
    "L": "treated"
   },
   "answer": "J",
-  "categories": [],
+  "categories": [
+   "同義呼應"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 41,
   "discrimination": 64,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz107_28",
@@ -1527,13 +1629,15 @@
    "L": "treated"
   },
   "answer": "A",
-  "categories": [],
+  "categories": [
+   "語意連貫"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 56,
   "discrimination": 70,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz107_29",
@@ -1559,13 +1663,15 @@
    "L": "treated"
   },
   "answer": "F",
-  "categories": [],
+  "categories": [
+   "字詞搭配"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 34,
   "discrimination": 64,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz107_30",
@@ -1591,13 +1697,16 @@
    "L": "treated"
   },
   "answer": "H",
-  "categories": [],
+  "categories": [
+   "字詞搭配",
+   "語意連貫"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 61,
   "discrimination": 77,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz106_21",
@@ -1623,13 +1732,15 @@
    "L": "favor"
   },
   "answer": "C",
-  "categories": [],
+  "categories": [
+   "語意連貫"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 46,
   "discrimination": 61,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz106_22",
@@ -1655,13 +1766,15 @@
    "L": "favor"
   },
   "answer": "D",
-  "categories": [],
+  "categories": [
+   "字詞搭配"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 68,
   "discrimination": 67,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz106_23",
@@ -1687,13 +1800,16 @@
    "L": "favor"
   },
   "answer": "J",
-  "categories": [],
+  "categories": [
+   "字詞搭配",
+   "語意連貫"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 47,
   "discrimination": 77,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz106_24",
@@ -1719,13 +1835,15 @@
    "L": "favor"
   },
   "answer": "H",
-  "categories": [],
+  "categories": [
+   "同義呼應"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 61,
   "discrimination": 62,
-  "contextSpan": null
+  "contextSpan": "跨句"
  },
  {
   "id": "Vz106_25",
@@ -1751,13 +1869,15 @@
    "L": "favor"
   },
   "answer": "F",
-  "categories": [],
+  "categories": [
+   "字詞搭配"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 42,
   "discrimination": 69,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz106_26",
@@ -1783,13 +1903,15 @@
    "L": "favor"
   },
   "answer": "I",
-  "categories": [],
+  "categories": [
+   "字詞搭配"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 45,
   "discrimination": 58,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz106_27",
@@ -1815,13 +1937,15 @@
    "L": "favor"
   },
   "answer": "B",
-  "categories": [],
+  "categories": [
+   "語意連貫"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 35,
   "discrimination": 48,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz106_28",
@@ -1847,13 +1971,15 @@
    "L": "favor"
   },
   "answer": "K",
-  "categories": [],
+  "categories": [
+   "語意連貫"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 61,
   "discrimination": 63,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz106_29",
@@ -1879,13 +2005,15 @@
    "L": "favor"
   },
   "answer": "G",
-  "categories": [],
+  "categories": [
+   "語意連貫"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 22,
   "discrimination": 38,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz106_30",
@@ -1911,13 +2039,16 @@
    "L": "favor"
   },
   "answer": "L",
-  "categories": [],
+  "categories": [
+   "字詞搭配",
+   "字彙選義"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 33,
   "discrimination": 58,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vzref107_21",
@@ -1943,13 +2074,16 @@
    "L": "worship"
   },
   "answer": "F",
-  "categories": [],
+  "categories": [
+   "字彙選義",
+   "語意連貫"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": null,
   "discrimination": null,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vzref107_22",
@@ -1975,13 +2109,15 @@
    "L": "worship"
   },
   "answer": "C",
-  "categories": [],
+  "categories": [
+   "字詞搭配"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": null,
   "discrimination": null,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vzref107_23",
@@ -2007,13 +2143,16 @@
    "L": "worship"
   },
   "answer": "D",
-  "categories": [],
+  "categories": [
+   "字彙選義",
+   "語意連貫"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": null,
   "discrimination": null,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vzref107_24",
@@ -2039,13 +2178,15 @@
    "L": "worship"
   },
   "answer": "K",
-  "categories": [],
+  "categories": [
+   "同義呼應"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": null,
   "discrimination": null,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vzref107_25",
@@ -2071,13 +2212,16 @@
    "L": "worship"
   },
   "answer": "B",
-  "categories": [],
+  "categories": [
+   "字彙選義",
+   "語意連貫"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": null,
   "discrimination": null,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vzref107_26",
@@ -2103,13 +2247,15 @@
    "L": "worship"
   },
   "answer": "E",
-  "categories": [],
+  "categories": [
+   "同義呼應"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": null,
   "discrimination": null,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vzref107_27",
@@ -2135,13 +2281,16 @@
    "L": "worship"
   },
   "answer": "J",
-  "categories": [],
+  "categories": [
+   "字詞搭配",
+   "語意連貫"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": null,
   "discrimination": null,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vzref107_28",
@@ -2167,13 +2316,16 @@
    "L": "worship"
   },
   "answer": "H",
-  "categories": [],
+  "categories": [
+   "字彙選義",
+   "語意連貫"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": null,
   "discrimination": null,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vzref107_29",
@@ -2199,13 +2351,15 @@
    "L": "worship"
   },
   "answer": "G",
-  "categories": [],
+  "categories": [
+   "字詞搭配"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": null,
   "discrimination": null,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vzref107_30",
@@ -2231,13 +2385,15 @@
    "L": "worship"
   },
   "answer": "L",
-  "categories": [],
+  "categories": [
+   "語意連貫"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": null,
   "discrimination": null,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz105_21",
@@ -2263,13 +2419,15 @@
    "L": "religious"
   },
   "answer": "K",
-  "categories": [],
+  "categories": [
+   "語意連貫"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 70,
   "discrimination": 69,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz105_22",
@@ -2295,13 +2453,16 @@
    "L": "religious"
   },
   "answer": "E",
-  "categories": [],
+  "categories": [
+   "字彙選義",
+   "詞性判斷"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 27,
   "discrimination": 49,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz105_23",
@@ -2327,13 +2488,15 @@
    "L": "religious"
   },
   "answer": "J",
-  "categories": [],
+  "categories": [
+   "語意連貫"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 49,
   "discrimination": 67,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz105_24",
@@ -2359,13 +2522,16 @@
    "L": "religious"
   },
   "answer": "F",
-  "categories": [],
+  "categories": [
+   "字詞搭配",
+   "語意連貫"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 75,
   "discrimination": 58,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz105_25",
@@ -2391,13 +2557,15 @@
    "L": "religious"
   },
   "answer": "G",
-  "categories": [],
+  "categories": [
+   "語意連貫"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 51,
   "discrimination": 76,
-  "contextSpan": null
+  "contextSpan": "跨句"
  },
  {
   "id": "Vz105_26",
@@ -2423,13 +2591,16 @@
    "L": "religious"
   },
   "answer": "I",
-  "categories": [],
+  "categories": [
+   "字詞搭配",
+   "句型結構"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 47,
   "discrimination": 64,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz105_27",
@@ -2455,13 +2626,15 @@
    "L": "religious"
   },
   "answer": "B",
-  "categories": [],
+  "categories": [
+   "語意連貫"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 53,
   "discrimination": 70,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz105_28",
@@ -2487,13 +2660,16 @@
    "L": "religious"
   },
   "answer": "H",
-  "categories": [],
+  "categories": [
+   "字詞搭配",
+   "語意連貫"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 65,
   "discrimination": 72,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz105_29",
@@ -2519,13 +2695,15 @@
    "L": "religious"
   },
   "answer": "A",
-  "categories": [],
+  "categories": [
+   "語意連貫"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 58,
   "discrimination": 75,
-  "contextSpan": null
+  "contextSpan": "跨句"
  },
  {
   "id": "Vz105_30",
@@ -2551,13 +2729,15 @@
    "L": "religious"
   },
   "answer": "D",
-  "categories": [],
+  "categories": [
+   "字詞搭配"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 77,
   "discrimination": 55,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz104_21",
@@ -2583,13 +2763,15 @@
    "L": "sweep through"
   },
   "answer": "E",
-  "categories": [],
+  "categories": [
+   "語意連貫"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 49,
   "discrimination": 71,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz104_22",
@@ -2615,13 +2797,15 @@
    "L": "sweep through"
   },
   "answer": "G",
-  "categories": [],
+  "categories": [
+   "語意連貫"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 48,
   "discrimination": 71,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz104_23",
@@ -2647,13 +2831,16 @@
    "L": "sweep through"
   },
   "answer": "L",
-  "categories": [],
+  "categories": [
+   "字詞搭配",
+   "語意連貫"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 45,
   "discrimination": 66,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz104_24",
@@ -2679,13 +2866,15 @@
    "L": "sweep through"
   },
   "answer": "A",
-  "categories": [],
+  "categories": [
+   "字詞搭配"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 63,
   "discrimination": 68,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz104_25",
@@ -2711,13 +2900,15 @@
    "L": "sweep through"
   },
   "answer": "D",
-  "categories": [],
+  "categories": [
+   "字詞搭配"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 51,
   "discrimination": 74,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz104_26",
@@ -2743,13 +2934,15 @@
    "L": "sweep through"
   },
   "answer": "K",
-  "categories": [],
+  "categories": [
+   "語意連貫"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 40,
   "discrimination": 78,
-  "contextSpan": null
+  "contextSpan": "跨句"
  },
  {
   "id": "Vz104_27",
@@ -2775,13 +2968,15 @@
    "L": "sweep through"
   },
   "answer": "H",
-  "categories": [],
+  "categories": [
+   "語意連貫"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 61,
   "discrimination": 74,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz104_28",
@@ -2807,13 +3002,15 @@
    "L": "sweep through"
   },
   "answer": "I",
-  "categories": [],
+  "categories": [
+   "字彙選義"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 41,
   "discrimination": 46,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz104_29",
@@ -2839,13 +3036,15 @@
    "L": "sweep through"
   },
   "answer": "J",
-  "categories": [],
+  "categories": [
+   "字詞搭配"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 60,
   "discrimination": 74,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz104_30",
@@ -2871,13 +3070,16 @@
    "L": "sweep through"
   },
   "answer": "C",
-  "categories": [],
+  "categories": [
+   "句型結構",
+   "語意連貫"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 63,
   "discrimination": 77,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz103_21",
@@ -2903,13 +3105,15 @@
    "L": "images"
   },
   "answer": "C",
-  "categories": [],
+  "categories": [
+   "語意連貫"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 79,
   "discrimination": 55,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz103_22",
@@ -2935,13 +3139,15 @@
    "L": "images"
   },
   "answer": "I",
-  "categories": [],
+  "categories": [
+   "語意連貫"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 75,
   "discrimination": 60,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz103_23",
@@ -2967,13 +3173,15 @@
    "L": "images"
   },
   "answer": "G",
-  "categories": [],
+  "categories": [
+   "語意連貫"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 59,
   "discrimination": 72,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz103_24",
@@ -2999,13 +3207,15 @@
    "L": "images"
   },
   "answer": "F",
-  "categories": [],
+  "categories": [
+   "語意連貫"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 83,
   "discrimination": 44,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz103_25",
@@ -3031,13 +3241,16 @@
    "L": "images"
   },
   "answer": "J",
-  "categories": [],
+  "categories": [
+   "字詞搭配",
+   "語意連貫"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 58,
   "discrimination": 63,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz103_26",
@@ -3063,13 +3276,15 @@
    "L": "images"
   },
   "answer": "K",
-  "categories": [],
+  "categories": [
+   "語意連貫"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 63,
   "discrimination": 74,
-  "contextSpan": null
+  "contextSpan": "跨句"
  },
  {
   "id": "Vz103_27",
@@ -3095,13 +3310,15 @@
    "L": "images"
   },
   "answer": "L",
-  "categories": [],
+  "categories": [
+   "語意連貫"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 48,
   "discrimination": 75,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz103_28",
@@ -3127,13 +3344,16 @@
    "L": "images"
   },
   "answer": "H",
-  "categories": [],
+  "categories": [
+   "字詞搭配",
+   "詞性判斷"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 47,
   "discrimination": 66,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz103_29",
@@ -3159,13 +3379,15 @@
    "L": "images"
   },
   "answer": "A",
-  "categories": [],
+  "categories": [
+   "字詞搭配"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 73,
   "discrimination": 63,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz103_30",
@@ -3191,13 +3413,15 @@
    "L": "images"
   },
   "answer": "D",
-  "categories": [],
+  "categories": [
+   "語意連貫"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 62,
   "discrimination": 69,
-  "contextSpan": null
+  "contextSpan": "跨句"
  },
  {
   "id": "Vz102_21",
@@ -3223,13 +3447,15 @@
    "L": "withstand"
   },
   "answer": "C",
-  "categories": [],
+  "categories": [
+   "字詞搭配"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 79,
   "discrimination": 40,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz102_22",
@@ -3255,13 +3481,16 @@
    "L": "withstand"
   },
   "answer": "A",
-  "categories": [],
+  "categories": [
+   "字詞搭配",
+   "語意連貫"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 80,
   "discrimination": 42,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz102_23",
@@ -3287,13 +3516,15 @@
    "L": "withstand"
   },
   "answer": "E",
-  "categories": [],
+  "categories": [
+   "語意連貫"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 73,
   "discrimination": 57,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz102_24",
@@ -3319,13 +3550,16 @@
    "L": "withstand"
   },
   "answer": "F",
-  "categories": [],
+  "categories": [
+   "語意連貫",
+   "字彙選義"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 49,
   "discrimination": 67,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz102_25",
@@ -3351,13 +3585,15 @@
    "L": "withstand"
   },
   "answer": "L",
-  "categories": [],
+  "categories": [
+   "字彙選義"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 51,
   "discrimination": 74,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz102_26",
@@ -3383,13 +3619,15 @@
    "L": "withstand"
   },
   "answer": "H",
-  "categories": [],
+  "categories": [
+   "字詞搭配"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 58,
   "discrimination": 75,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz102_27",
@@ -3415,13 +3653,15 @@
    "L": "withstand"
   },
   "answer": "K",
-  "categories": [],
+  "categories": [
+   "字詞搭配"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 73,
   "discrimination": 56,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz102_28",
@@ -3447,13 +3687,15 @@
    "L": "withstand"
   },
   "answer": "G",
-  "categories": [],
+  "categories": [
+   "同義呼應"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 55,
   "discrimination": 70,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz102_29",
@@ -3479,13 +3721,15 @@
    "L": "withstand"
   },
   "answer": "B",
-  "categories": [],
+  "categories": [
+   "語意連貫"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 61,
   "discrimination": 69,
-  "contextSpan": null
+  "contextSpan": "跨句"
  },
  {
   "id": "Vz102_30",
@@ -3511,13 +3755,15 @@
    "L": "withstand"
   },
   "answer": "I",
-  "categories": [],
+  "categories": [
+   "語意連貫"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 58,
   "discrimination": 73,
-  "contextSpan": null
+  "contextSpan": "跨句"
  },
  {
   "id": "Vzref99_21",
@@ -3543,13 +3789,16 @@
    "L": "converted"
   },
   "answer": "I",
-  "categories": [],
+  "categories": [
+   "字詞搭配",
+   "語意連貫"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": null,
   "discrimination": null,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vzref99_22",
@@ -3575,13 +3824,16 @@
    "L": "converted"
   },
   "answer": "G",
-  "categories": [],
+  "categories": [
+   "字詞搭配",
+   "語意連貫"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": null,
   "discrimination": null,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vzref99_23",
@@ -3607,13 +3859,16 @@
    "L": "converted"
   },
   "answer": "B",
-  "categories": [],
+  "categories": [
+   "字詞搭配",
+   "語意連貫"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": null,
   "discrimination": null,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vzref99_24",
@@ -3639,13 +3894,15 @@
    "L": "converted"
   },
   "answer": "C",
-  "categories": [],
+  "categories": [
+   "語意連貫"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": null,
   "discrimination": null,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vzref99_25",
@@ -3671,13 +3928,15 @@
    "L": "converted"
   },
   "answer": "A",
-  "categories": [],
+  "categories": [
+   "語意連貫"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": null,
   "discrimination": null,
-  "contextSpan": null
+  "contextSpan": "跨句"
  },
  {
   "id": "Vzref99_26",
@@ -3703,13 +3962,16 @@
    "L": "converted"
   },
   "answer": "J",
-  "categories": [],
+  "categories": [
+   "語意連貫",
+   "字彙選義"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": null,
   "discrimination": null,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vzref99_27",
@@ -3735,13 +3997,15 @@
    "L": "converted"
   },
   "answer": "F",
-  "categories": [],
+  "categories": [
+   "語意連貫"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": null,
   "discrimination": null,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vzref99_28",
@@ -3767,13 +4031,15 @@
    "L": "converted"
   },
   "answer": "L",
-  "categories": [],
+  "categories": [
+   "字詞搭配"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": null,
   "discrimination": null,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vzref99_29",
@@ -3799,13 +4065,15 @@
    "L": "converted"
   },
   "answer": "D",
-  "categories": [],
+  "categories": [
+   "同義呼應"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": null,
   "discrimination": null,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vzref99_30",
@@ -3831,13 +4099,15 @@
    "L": "converted"
   },
   "answer": "E",
-  "categories": [],
+  "categories": [
+   "語意連貫"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": null,
   "discrimination": null,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz101_21",
@@ -3863,13 +4133,15 @@
    "L": "worship"
   },
   "answer": "F",
-  "categories": [],
+  "categories": [
+   "語意連貫"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 40,
   "discrimination": 58,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz101_22",
@@ -3895,13 +4167,15 @@
    "L": "worship"
   },
   "answer": "C",
-  "categories": [],
+  "categories": [
+   "字詞搭配"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 47,
   "discrimination": 58,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz101_23",
@@ -3927,13 +4201,16 @@
    "L": "worship"
   },
   "answer": "D",
-  "categories": [],
+  "categories": [
+   "詞性判斷",
+   "字彙選義"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 41,
   "discrimination": 52,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz101_24",
@@ -3959,13 +4236,15 @@
    "L": "worship"
   },
   "answer": "K",
-  "categories": [],
+  "categories": [
+   "同義呼應"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 52,
   "discrimination": 69,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz101_25",
@@ -3991,13 +4270,16 @@
    "L": "worship"
   },
   "answer": "B",
-  "categories": [],
+  "categories": [
+   "詞性判斷",
+   "字彙選義"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 19,
   "discrimination": 29,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz101_26",
@@ -4023,13 +4305,15 @@
    "L": "worship"
   },
   "answer": "E",
-  "categories": [],
+  "categories": [
+   "同義呼應"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 66,
   "discrimination": 67,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz101_27",
@@ -4055,13 +4339,15 @@
    "L": "worship"
   },
   "answer": "J",
-  "categories": [],
+  "categories": [
+   "語意連貫"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 33,
   "discrimination": 59,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz101_28",
@@ -4087,13 +4373,15 @@
    "L": "worship"
   },
   "answer": "H",
-  "categories": [],
+  "categories": [
+   "字彙選義"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 29,
   "discrimination": 50,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz101_29",
@@ -4119,13 +4407,15 @@
    "L": "worship"
   },
   "answer": "G",
-  "categories": [],
+  "categories": [
+   "字詞搭配"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 69,
   "discrimination": 69,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz101_30",
@@ -4151,13 +4441,16 @@
    "L": "worship"
   },
   "answer": "L",
-  "categories": [],
+  "categories": [
+   "語意連貫",
+   "句型結構"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 30,
   "discrimination": 53,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz100_21",
@@ -4183,13 +4476,16 @@
    "L": "unknown"
   },
   "answer": "L",
-  "categories": [],
+  "categories": [
+   "詞性判斷",
+   "語意連貫"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 39,
   "discrimination": 58,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz100_22",
@@ -4215,13 +4511,15 @@
    "L": "unknown"
   },
   "answer": "G",
-  "categories": [],
+  "categories": [
+   "語意連貫"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 58,
   "discrimination": 66,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz100_23",
@@ -4247,13 +4545,15 @@
    "L": "unknown"
   },
   "answer": "B",
-  "categories": [],
+  "categories": [
+   "語意連貫"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 55,
   "discrimination": 64,
-  "contextSpan": null
+  "contextSpan": "跨句"
  },
  {
   "id": "Vz100_24",
@@ -4279,13 +4579,15 @@
    "L": "unknown"
   },
   "answer": "E",
-  "categories": [],
+  "categories": [
+   "語意連貫"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 68,
   "discrimination": 62,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz100_25",
@@ -4311,13 +4613,15 @@
    "L": "unknown"
   },
   "answer": "A",
-  "categories": [],
+  "categories": [
+   "字詞搭配"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 24,
   "discrimination": 33,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz100_26",
@@ -4343,13 +4647,16 @@
    "L": "unknown"
   },
   "answer": "H",
-  "categories": [],
+  "categories": [
+   "字詞搭配",
+   "字彙選義"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 52,
   "discrimination": 79,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz100_27",
@@ -4375,13 +4682,15 @@
    "L": "unknown"
   },
   "answer": "I",
-  "categories": [],
+  "categories": [
+   "字詞搭配"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 45,
   "discrimination": 62,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz100_28",
@@ -4407,13 +4716,16 @@
    "L": "unknown"
   },
   "answer": "J",
-  "categories": [],
+  "categories": [
+   "字彙選義",
+   "代名詞／指示詞"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 26,
   "discrimination": 37,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz100_29",
@@ -4439,13 +4751,16 @@
    "L": "unknown"
   },
   "answer": "C",
-  "categories": [],
+  "categories": [
+   "字詞搭配",
+   "語意連貫"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 68,
   "discrimination": 61,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz100_30",
@@ -4471,13 +4786,15 @@
    "L": "unknown"
   },
   "answer": "F",
-  "categories": [],
+  "categories": [
+   "字詞搭配"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 69,
   "discrimination": 64,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz99_21",
@@ -4501,13 +4818,15 @@
    "J": "symbol"
   },
   "answer": "I",
-  "categories": [],
+  "categories": [
+   "語意連貫"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 59,
   "discrimination": 77,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz99_22",
@@ -4531,13 +4850,15 @@
    "J": "symbol"
   },
   "answer": "G",
-  "categories": [],
+  "categories": [
+   "字詞搭配"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 59,
   "discrimination": 70,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz99_23",
@@ -4561,13 +4882,15 @@
    "J": "symbol"
   },
   "answer": "J",
-  "categories": [],
+  "categories": [
+   "字詞搭配"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 60,
   "discrimination": 59,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz99_24",
@@ -4591,13 +4914,15 @@
    "J": "symbol"
   },
   "answer": "E",
-  "categories": [],
+  "categories": [
+   "語意連貫"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 61,
   "discrimination": 61,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz99_25",
@@ -4621,13 +4946,16 @@
    "J": "symbol"
   },
   "answer": "F",
-  "categories": [],
+  "categories": [
+   "字詞搭配",
+   "語意連貫"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 61,
   "discrimination": 68,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz99_26",
@@ -4651,13 +4979,15 @@
    "J": "symbol"
   },
   "answer": "D",
-  "categories": [],
+  "categories": [
+   "語意連貫"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 45,
   "discrimination": 73,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz99_27",
@@ -4681,13 +5011,15 @@
    "J": "symbol"
   },
   "answer": "C",
-  "categories": [],
+  "categories": [
+   "字詞搭配"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 69,
   "discrimination": 68,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz99_28",
@@ -4711,13 +5043,16 @@
    "J": "symbol"
   },
   "answer": "A",
-  "categories": [],
+  "categories": [
+   "語意連貫",
+   "字彙選義"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 69,
   "discrimination": 67,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz99_29",
@@ -4741,13 +5076,16 @@
    "J": "symbol"
   },
   "answer": "B",
-  "categories": [],
+  "categories": [
+   "字詞搭配",
+   "語意連貫"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 61,
   "discrimination": 80,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz99_30",
@@ -4771,13 +5109,15 @@
    "J": "symbol"
   },
   "answer": "H",
-  "categories": [],
+  "categories": [
+   "字詞搭配"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 51,
   "discrimination": 77,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz98_21",
@@ -4801,13 +5141,16 @@
    "J": "contentment"
   },
   "answer": "J",
-  "categories": [],
+  "categories": [
+   "字詞搭配",
+   "語意連貫"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 30,
   "discrimination": 52,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz98_22",
@@ -4831,13 +5174,15 @@
    "J": "contentment"
   },
   "answer": "F",
-  "categories": [],
+  "categories": [
+   "句型結構"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 44,
   "discrimination": 71,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz98_23",
@@ -4861,13 +5206,15 @@
    "J": "contentment"
   },
   "answer": "D",
-  "categories": [],
+  "categories": [
+   "字詞搭配"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 59,
   "discrimination": 70,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz98_24",
@@ -4891,13 +5238,15 @@
    "J": "contentment"
   },
   "answer": "G",
-  "categories": [],
+  "categories": [
+   "字詞搭配"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 34,
   "discrimination": 55,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz98_25",
@@ -4921,13 +5270,15 @@
    "J": "contentment"
   },
   "answer": "I",
-  "categories": [],
+  "categories": [
+   "字詞搭配"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 40,
   "discrimination": 59,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz98_26",
@@ -4951,13 +5302,15 @@
    "J": "contentment"
   },
   "answer": "E",
-  "categories": [],
+  "categories": [
+   "字詞搭配"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 45,
   "discrimination": 50,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz98_27",
@@ -4981,13 +5334,15 @@
    "J": "contentment"
   },
   "answer": "A",
-  "categories": [],
+  "categories": [
+   "字詞搭配"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 25,
   "discrimination": 48,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz98_28",
@@ -5011,13 +5366,15 @@
    "J": "contentment"
   },
   "answer": "C",
-  "categories": [],
+  "categories": [
+   "語意連貫"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 17,
   "discrimination": 27,
-  "contextSpan": null
+  "contextSpan": "篇章"
  },
  {
   "id": "Vz98_29",
@@ -5041,13 +5398,15 @@
    "J": "contentment"
   },
   "answer": "H",
-  "categories": [],
+  "categories": [
+   "句型結構"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 51,
   "discrimination": 57,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz98_30",
@@ -5071,13 +5430,15 @@
    "J": "contentment"
   },
   "answer": "B",
-  "categories": [],
+  "categories": [
+   "字詞搭配"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 28,
   "discrimination": 51,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vzref95_21",
@@ -5101,13 +5462,15 @@
    "J": "observation"
   },
   "answer": "G",
-  "categories": [],
+  "categories": [
+   "字詞搭配"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": null,
   "discrimination": null,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vzref95_22",
@@ -5131,13 +5494,16 @@
    "J": "observation"
   },
   "answer": "A",
-  "categories": [],
+  "categories": [
+   "字詞搭配",
+   "語意連貫"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": null,
   "discrimination": null,
-  "contextSpan": null
+  "contextSpan": "跨句"
  },
  {
   "id": "Vzref95_23",
@@ -5161,13 +5527,15 @@
    "J": "observation"
   },
   "answer": "C",
-  "categories": [],
+  "categories": [
+   "語意連貫"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": null,
   "discrimination": null,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vzref95_24",
@@ -5191,13 +5559,16 @@
    "J": "observation"
   },
   "answer": "H",
-  "categories": [],
+  "categories": [
+   "字詞搭配",
+   "句型結構"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": null,
   "discrimination": null,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vzref95_25",
@@ -5221,13 +5592,15 @@
    "J": "observation"
   },
   "answer": "E",
-  "categories": [],
+  "categories": [
+   "字詞搭配"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": null,
   "discrimination": null,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vzref95_26",
@@ -5251,13 +5624,15 @@
    "J": "observation"
   },
   "answer": "F",
-  "categories": [],
+  "categories": [
+   "語意連貫"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": null,
   "discrimination": null,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vzref95_27",
@@ -5281,13 +5656,15 @@
    "J": "observation"
   },
   "answer": "D",
-  "categories": [],
+  "categories": [
+   "字詞搭配"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": null,
   "discrimination": null,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vzref95_28",
@@ -5311,13 +5688,15 @@
    "J": "observation"
   },
   "answer": "J",
-  "categories": [],
+  "categories": [
+   "字詞搭配"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": null,
   "discrimination": null,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vzref95_29",
@@ -5341,13 +5720,15 @@
    "J": "observation"
   },
   "answer": "B",
-  "categories": [],
+  "categories": [
+   "同義呼應"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": null,
   "discrimination": null,
-  "contextSpan": null
+  "contextSpan": "跨句"
  },
  {
   "id": "Vzref95_30",
@@ -5371,13 +5752,15 @@
    "J": "observation"
   },
   "answer": "I",
-  "categories": [],
+  "categories": [
+   "字詞搭配"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": null,
   "discrimination": null,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz97_31",
@@ -5401,13 +5784,15 @@
    "J": "to the limit"
   },
   "answer": "C",
-  "categories": [],
+  "categories": [
+   "字詞搭配"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 61,
   "discrimination": 71,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz97_32",
@@ -5431,13 +5816,16 @@
    "J": "to the limit"
   },
   "answer": "H",
-  "categories": [],
+  "categories": [
+   "字詞搭配",
+   "語意連貫"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 62,
   "discrimination": 69,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz97_33",
@@ -5461,13 +5849,16 @@
    "J": "to the limit"
   },
   "answer": "G",
-  "categories": [],
+  "categories": [
+   "字詞搭配",
+   "語意連貫"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 45,
   "discrimination": 77,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz97_34",
@@ -5491,13 +5882,15 @@
    "J": "to the limit"
   },
   "answer": "D",
-  "categories": [],
+  "categories": [
+   "字詞搭配"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 56,
   "discrimination": 79,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz97_35",
@@ -5521,13 +5914,15 @@
    "J": "to the limit"
   },
   "answer": "F",
-  "categories": [],
+  "categories": [
+   "句型結構"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 64,
   "discrimination": 70,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz97_36",
@@ -5551,13 +5946,15 @@
    "J": "to the limit"
   },
   "answer": "B",
-  "categories": [],
+  "categories": [
+   "字詞搭配"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 65,
   "discrimination": 75,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz97_37",
@@ -5581,13 +5978,15 @@
    "J": "to the limit"
   },
   "answer": "J",
-  "categories": [],
+  "categories": [
+   "字詞搭配"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 56,
   "discrimination": 65,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz97_38",
@@ -5611,13 +6010,15 @@
    "J": "to the limit"
   },
   "answer": "I",
-  "categories": [],
+  "categories": [
+   "字詞搭配"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 51,
   "discrimination": 74,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz97_39",
@@ -5641,13 +6042,16 @@
    "J": "to the limit"
   },
   "answer": "E",
-  "categories": [],
+  "categories": [
+   "語意連貫",
+   "字彙選義"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 48,
   "discrimination": 82,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz97_40",
@@ -5671,13 +6075,15 @@
    "J": "to the limit"
   },
   "answer": "A",
-  "categories": [],
+  "categories": [
+   "字詞搭配"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 46,
   "discrimination": 77,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz96_31",
@@ -5701,13 +6107,16 @@
    "J": "satisfaction"
   },
   "answer": "E",
-  "categories": [],
+  "categories": [
+   "字詞搭配",
+   "句型結構"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 45,
   "discrimination": 71,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz96_32",
@@ -5731,13 +6140,16 @@
    "J": "satisfaction"
   },
   "answer": "B",
-  "categories": [],
+  "categories": [
+   "語意連貫",
+   "字彙選義"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 66,
   "discrimination": 59,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz96_33",
@@ -5761,13 +6173,15 @@
    "J": "satisfaction"
   },
   "answer": "G",
-  "categories": [],
+  "categories": [
+   "詞性判斷"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 35,
   "discrimination": 62,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz96_34",
@@ -5791,13 +6205,15 @@
    "J": "satisfaction"
   },
   "answer": "C",
-  "categories": [],
+  "categories": [
+   "字詞搭配"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 54,
   "discrimination": 70,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz96_35",
@@ -5821,13 +6237,16 @@
    "J": "satisfaction"
   },
   "answer": "D",
-  "categories": [],
+  "categories": [
+   "字詞搭配",
+   "句型結構"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 31,
   "discrimination": 60,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz96_36",
@@ -5851,13 +6270,15 @@
    "J": "satisfaction"
   },
   "answer": "I",
-  "categories": [],
+  "categories": [
+   "代名詞／指示詞"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 54,
   "discrimination": 76,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz96_37",
@@ -5881,13 +6302,15 @@
    "J": "satisfaction"
   },
   "answer": "F",
-  "categories": [],
+  "categories": [
+   "字詞搭配"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 32,
   "discrimination": 62,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz96_38",
@@ -5911,13 +6334,15 @@
    "J": "satisfaction"
   },
   "answer": "J",
-  "categories": [],
+  "categories": [
+   "字詞搭配"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 37,
   "discrimination": 63,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz96_39",
@@ -5941,13 +6366,16 @@
    "J": "satisfaction"
   },
   "answer": "A",
-  "categories": [],
+  "categories": [
+   "語意連貫",
+   "句型結構"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 27,
   "discrimination": 55,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz96_40",
@@ -5971,13 +6399,15 @@
    "J": "satisfaction"
   },
   "answer": "H",
-  "categories": [],
+  "categories": [
+   "字詞搭配"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 45,
   "discrimination": 74,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz95_31",
@@ -6001,13 +6431,15 @@
    "J": "unusual"
   },
   "answer": "A",
-  "categories": [],
+  "categories": [
+   "字詞搭配"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 32,
   "discrimination": 62,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz95_32",
@@ -6031,13 +6463,15 @@
    "J": "unusual"
   },
   "answer": "B",
-  "categories": [],
+  "categories": [
+   "語意連貫"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 42,
   "discrimination": 52,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz95_33",
@@ -6061,13 +6495,16 @@
    "J": "unusual"
   },
   "answer": "E",
-  "categories": [],
+  "categories": [
+   "字詞搭配",
+   "語意連貫"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 37,
   "discrimination": 61,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz95_34",
@@ -6091,13 +6528,15 @@
    "J": "unusual"
   },
   "answer": "H",
-  "categories": [],
+  "categories": [
+   "字詞搭配"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 46,
   "discrimination": 67,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz95_35",
@@ -6121,13 +6560,15 @@
    "J": "unusual"
   },
   "answer": "I",
-  "categories": [],
+  "categories": [
+   "語意連貫"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 53,
   "discrimination": 71,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz95_36",
@@ -6151,13 +6592,15 @@
    "J": "unusual"
   },
   "answer": "D",
-  "categories": [],
+  "categories": [
+   "字詞搭配"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 45,
   "discrimination": 65,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz95_37",
@@ -6181,13 +6624,15 @@
    "J": "unusual"
   },
   "answer": "C",
-  "categories": [],
+  "categories": [
+   "字詞搭配"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 38,
   "discrimination": 64,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz95_38",
@@ -6211,13 +6656,15 @@
    "J": "unusual"
   },
   "answer": "J",
-  "categories": [],
+  "categories": [
+   "同義呼應"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 48,
   "discrimination": 77,
-  "contextSpan": null
+  "contextSpan": "跨句"
  },
  {
   "id": "Vz95_39",
@@ -6241,13 +6688,15 @@
    "J": "unusual"
   },
   "answer": "G",
-  "categories": [],
+  "categories": [
+   "字詞搭配"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 48,
   "discrimination": 82,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz95_40",
@@ -6271,13 +6720,15 @@
    "J": "unusual"
   },
   "answer": "F",
-  "categories": [],
+  "categories": [
+   "字詞搭配"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 41,
   "discrimination": 72,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz94_31",
@@ -6301,13 +6752,15 @@
    "J": "uninhabited"
   },
   "answer": "F",
-  "categories": [],
+  "categories": [
+   "字彙選義"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 56,
   "discrimination": 77,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz94_32",
@@ -6331,13 +6784,15 @@
    "J": "uninhabited"
   },
   "answer": "A",
-  "categories": [],
+  "categories": [
+   "字詞搭配"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 51,
   "discrimination": 79,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz94_33",
@@ -6361,13 +6816,15 @@
    "J": "uninhabited"
   },
   "answer": "J",
-  "categories": [],
+  "categories": [
+   "語意連貫"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 52,
   "discrimination": 80,
-  "contextSpan": null
+  "contextSpan": "跨句"
  },
  {
   "id": "Vz94_34",
@@ -6391,13 +6848,15 @@
    "J": "uninhabited"
   },
   "answer": "I",
-  "categories": [],
+  "categories": [
+   "句型結構"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 38,
   "discrimination": 55,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz94_35",
@@ -6421,13 +6880,16 @@
    "J": "uninhabited"
   },
   "answer": "C",
-  "categories": [],
+  "categories": [
+   "詞性判斷",
+   "字彙選義"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 29,
   "discrimination": 56,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz94_36",
@@ -6451,13 +6913,15 @@
    "J": "uninhabited"
   },
   "answer": "D",
-  "categories": [],
+  "categories": [
+   "字詞搭配"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 42,
   "discrimination": 72,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz94_37",
@@ -6481,13 +6945,15 @@
    "J": "uninhabited"
   },
   "answer": "H",
-  "categories": [],
+  "categories": [
+   "字詞搭配"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 52,
   "discrimination": 71,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz94_38",
@@ -6511,13 +6977,15 @@
    "J": "uninhabited"
   },
   "answer": "G",
-  "categories": [],
+  "categories": [
+   "字彙選義"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 37,
   "discrimination": 64,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz94_39",
@@ -6541,13 +7009,16 @@
    "J": "uninhabited"
   },
   "answer": "E",
-  "categories": [],
+  "categories": [
+   "詞性判斷",
+   "字彙選義"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 39,
   "discrimination": 68,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz94_40",
@@ -6571,13 +7042,15 @@
    "J": "uninhabited"
   },
   "answer": "B",
-  "categories": [],
+  "categories": [
+   "字詞搭配"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 63,
   "discrimination": 61,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz93_31",
@@ -6601,13 +7074,15 @@
    "J": "offered"
   },
   "answer": "G",
-  "categories": [],
+  "categories": [
+   "字彙選義"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 31,
   "discrimination": 60,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz93_32",
@@ -6631,13 +7106,16 @@
    "J": "offered"
   },
   "answer": "C",
-  "categories": [],
+  "categories": [
+   "字詞搭配",
+   "句型結構"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 38,
   "discrimination": 42,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz93_33",
@@ -6661,13 +7139,16 @@
    "J": "offered"
   },
   "answer": "E",
-  "categories": [],
+  "categories": [
+   "字詞搭配",
+   "同義呼應"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 48,
   "discrimination": 65,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz93_34",
@@ -6691,13 +7172,15 @@
    "J": "offered"
   },
   "answer": "A",
-  "categories": [],
+  "categories": [
+   "語意連貫"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 24,
   "discrimination": 20,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz93_35",
@@ -6721,13 +7204,15 @@
    "J": "offered"
   },
   "answer": "J",
-  "categories": [],
+  "categories": [
+   "句型結構"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 30,
   "discrimination": 51,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz93_36",
@@ -6751,13 +7236,16 @@
    "J": "offered"
   },
   "answer": "B",
-  "categories": [],
+  "categories": [
+   "詞性判斷",
+   "語意連貫"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 17,
   "discrimination": 24,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz93_37",
@@ -6781,13 +7269,16 @@
    "J": "offered"
   },
   "answer": "F",
-  "categories": [],
+  "categories": [
+   "字詞搭配",
+   "句型結構"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 15,
   "discrimination": 11,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz93_38",
@@ -6811,13 +7302,15 @@
    "J": "offered"
   },
   "answer": "D",
-  "categories": [],
+  "categories": [
+   "句型結構"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 12,
   "discrimination": 13,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz93_39",
@@ -6841,13 +7334,15 @@
    "J": "offered"
   },
   "answer": "H",
-  "categories": [],
+  "categories": [
+   "字詞搭配"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 32,
   "discrimination": 51,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz93_40",
@@ -6871,13 +7366,16 @@
    "J": "offered"
   },
   "answer": "I",
-  "categories": [],
+  "categories": [
+   "字詞搭配",
+   "句型結構"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 16,
   "discrimination": 24,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz93b_31",
@@ -6901,13 +7399,16 @@
    "J": "in existence"
   },
   "answer": "B",
-  "categories": [],
+  "categories": [
+   "字詞搭配",
+   "句型結構"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": null,
   "discrimination": null,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz93b_32",
@@ -6931,13 +7432,15 @@
    "J": "in existence"
   },
   "answer": "J",
-  "categories": [],
+  "categories": [
+   "字詞搭配"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": null,
   "discrimination": null,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz93b_33",
@@ -6961,13 +7464,16 @@
    "J": "in existence"
   },
   "answer": "F",
-  "categories": [],
+  "categories": [
+   "詞性判斷",
+   "字彙選義"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": null,
   "discrimination": null,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz93b_34",
@@ -6991,13 +7497,15 @@
    "J": "in existence"
   },
   "answer": "H",
-  "categories": [],
+  "categories": [
+   "語意連貫"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": null,
   "discrimination": null,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz93b_35",
@@ -7021,13 +7529,16 @@
    "J": "in existence"
   },
   "answer": "C",
-  "categories": [],
+  "categories": [
+   "語意連貫",
+   "字彙選義"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": null,
   "discrimination": null,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz93b_36",
@@ -7051,13 +7562,15 @@
    "J": "in existence"
   },
   "answer": "I",
-  "categories": [],
+  "categories": [
+   "字詞搭配"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": null,
   "discrimination": null,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz93b_37",
@@ -7081,13 +7594,16 @@
    "J": "in existence"
   },
   "answer": "G",
-  "categories": [],
+  "categories": [
+   "字詞搭配",
+   "語意連貫"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": null,
   "discrimination": null,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz93b_38",
@@ -7111,13 +7627,15 @@
    "J": "in existence"
   },
   "answer": "A",
-  "categories": [],
+  "categories": [
+   "字詞搭配"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": null,
   "discrimination": null,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz93b_39",
@@ -7141,13 +7659,15 @@
    "J": "in existence"
   },
   "answer": "E",
-  "categories": [],
+  "categories": [
+   "字詞搭配"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": null,
   "discrimination": null,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz93b_40",
@@ -7171,13 +7691,15 @@
    "J": "in existence"
   },
   "answer": "D",
-  "categories": [],
+  "categories": [
+   "語意連貫"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": null,
   "discrimination": null,
-  "contextSpan": null
+  "contextSpan": "跨句"
  },
  {
   "id": "Vz92_31",
@@ -7201,13 +7723,15 @@
    "J": "until"
   },
   "answer": "F",
-  "categories": [],
+  "categories": [
+   "語意連貫"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 79,
   "discrimination": 50,
-  "contextSpan": null
+  "contextSpan": "跨句"
  },
  {
   "id": "Vz92_32",
@@ -7231,13 +7755,15 @@
    "J": "until"
   },
   "answer": "D",
-  "categories": [],
+  "categories": [
+   "字詞搭配"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 49,
   "discrimination": 65,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz92_33",
@@ -7261,13 +7787,15 @@
    "J": "until"
   },
   "answer": "G",
-  "categories": [],
+  "categories": [
+   "句型結構"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 54,
   "discrimination": 72,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz92_34",
@@ -7291,13 +7819,15 @@
    "J": "until"
   },
   "answer": "H",
-  "categories": [],
+  "categories": [
+   "語意連貫"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 68,
   "discrimination": 65,
-  "contextSpan": null
+  "contextSpan": "跨句"
  },
  {
   "id": "Vz92_35",
@@ -7321,13 +7851,15 @@
    "J": "until"
   },
   "answer": "B",
-  "categories": [],
+  "categories": [
+   "句型結構"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 62,
   "discrimination": 66,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz92_36",
@@ -7351,13 +7883,15 @@
    "J": "until"
   },
   "answer": "J",
-  "categories": [],
+  "categories": [
+   "句型結構"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 81,
   "discrimination": 50,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz92_37",
@@ -7381,13 +7915,15 @@
    "J": "until"
   },
   "answer": "C",
-  "categories": [],
+  "categories": [
+   "字彙選義"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 50,
   "discrimination": 68,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz92_38",
@@ -7411,13 +7947,15 @@
    "J": "until"
   },
   "answer": "A",
-  "categories": [],
+  "categories": [
+   "字詞搭配"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 44,
   "discrimination": 71,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz92_39",
@@ -7441,13 +7979,15 @@
    "J": "until"
   },
   "answer": "E",
-  "categories": [],
+  "categories": [
+   "字詞搭配"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 65,
   "discrimination": 69,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz92_40",
@@ -7471,13 +8011,16 @@
    "J": "until"
   },
   "answer": "I",
-  "categories": [],
+  "categories": [
+   "語意連貫",
+   "字彙選義"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 46,
   "discrimination": 72,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz91_31",
@@ -7501,13 +8044,16 @@
    "J": "colorful"
   },
   "answer": "F",
-  "categories": [],
+  "categories": [
+   "字詞搭配",
+   "語意連貫"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 39,
   "discrimination": 50,
-  "contextSpan": null
+  "contextSpan": "跨句"
  },
  {
   "id": "Vz91_32",
@@ -7531,13 +8077,15 @@
    "J": "colorful"
   },
   "answer": "D",
-  "categories": [],
+  "categories": [
+   "字詞搭配"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 47,
   "discrimination": 66,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz91_33",
@@ -7561,13 +8109,16 @@
    "J": "colorful"
   },
   "answer": "A",
-  "categories": [],
+  "categories": [
+   "字詞搭配",
+   "語意連貫"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 49,
   "discrimination": 40,
-  "contextSpan": null
+  "contextSpan": "跨句"
  },
  {
   "id": "Vz91_34",
@@ -7591,13 +8142,16 @@
    "J": "colorful"
   },
   "answer": "G",
-  "categories": [],
+  "categories": [
+   "字詞搭配",
+   "語意連貫"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 57,
   "discrimination": 50,
-  "contextSpan": null
+  "contextSpan": "跨句"
  },
  {
   "id": "Vz91_35",
@@ -7621,13 +8175,15 @@
    "J": "colorful"
   },
   "answer": "E",
-  "categories": [],
+  "categories": [
+   "語意連貫"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 51,
   "discrimination": 55,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz91_36",
@@ -7651,13 +8207,16 @@
    "J": "colorful"
   },
   "answer": "J",
-  "categories": [],
+  "categories": [
+   "語意連貫",
+   "字彙選義"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 64,
   "discrimination": 49,
-  "contextSpan": null
+  "contextSpan": "跨句"
  },
  {
   "id": "Vz91_37",
@@ -7681,13 +8240,15 @@
    "J": "colorful"
   },
   "answer": "I",
-  "categories": [],
+  "categories": [
+   "同義呼應"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 77,
   "discrimination": 50,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz91_38",
@@ -7711,13 +8272,15 @@
    "J": "colorful"
   },
   "answer": "C",
-  "categories": [],
+  "categories": [
+   "語意連貫"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 46,
   "discrimination": 52,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz91_39",
@@ -7741,13 +8304,15 @@
    "J": "colorful"
   },
   "answer": "B",
-  "categories": [],
+  "categories": [
+   "字詞搭配"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 65,
   "discrimination": 53,
-  "contextSpan": null
+  "contextSpan": "句內"
  },
  {
   "id": "Vz91_40",
@@ -7771,12 +8336,14 @@
    "J": "colorful"
   },
   "answer": "H",
-  "categories": [],
+  "categories": [
+   "語意連貫"
+  ],
   "gloss": null,
   "collocation": null,
   "explanation": null,
   "accuracyRate": 61,
   "discrimination": 65,
-  "contextSpan": null
+  "contextSpan": "句內"
  }
 ]
