@@ -146,6 +146,11 @@
   .choice.wrong{border-color:var(--crimson); background:#FBEAE8;}
   .feedback{margin-top:14px; padding:14px; border-radius:4px; background:#F6F1E4; font-size:13.5px; line-height:1.8;}
   .feedback .exp{margin-top:6px;}
+  /* 2026-08-10 第三十四場：解析小標改為獨立一行，向克漏字站 .sec h3 看齊。
+     只作用於 expHtml 產生的區塊；中譯／字詞搭配線索兩列仍維持行內粗體。 */
+  .feedback .exp.exp-sec{margin-top:14px;}
+  .feedback .exp.exp-sec b.exp-h{display:block; font-family:'Noto Serif TC',serif;
+    font-weight:700; font-size:14.5px; color:var(--sage); margin:0 0 5px; line-height:1.55;}
   .pdTag{font-family:'IBM Plex Mono',monospace; font-size:11px; color:var(--ink-soft); margin-top:8px;}
   .pdTag b{color:var(--ink);}
 
@@ -731,10 +736,12 @@ function expSplit(str){
   return out;
 }
 function expHtml(str, lead){
-  // 單題回饋區：每段各自一個 .exp 區塊，沿用既有樣式
+  // 單題回饋區：每段各自一個 .exp 區塊。
+  // 2026-08-10 第三十四場：小標由行內粗體加冒號改為獨立一行（.exp-h），
+  // 理由是同一行時小標與內文分不開，長解析尤其看不出分段。expInline 不動。
   if(!str) return '';
   return expSplit(str).map(s =>
-    `<div class="exp"><b>${renderNote(s.h || lead)}：</b>${renderNote(s.body)}</div>`
+    `<div class="exp exp-sec"><b class="exp-h">${renderNote(s.h || lead)}</b>${renderNote(s.body)}</div>`
   ).join('');
 }
 function expInline(str){
