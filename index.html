@@ -718,6 +718,32 @@ function ctxBoxHtml(it){
 function renderNote(str){
   return escapeHtml(str).replace(/`([^`]+)`/g, '<code>$1</code>');
 }
+function expSplit(str){
+  // 依【小標】切段；回傳 [{h, body}]，第一段 h 為 null
+  const parts = String(str).split(/【(.+?)】/);
+  const out = [];
+  const lead = parts[0].trim();
+  if(lead) out.push({h:null, body:lead});
+  for(let i=1;i<parts.length;i+=2){
+    const body = (parts[i+1]||'').trim();
+    if(body) out.push({h:parts[i], body:body});
+  }
+  return out;
+}
+function expHtml(str, lead){
+  // 單題回饋區：每段各自一個 .exp 區塊，沿用既有樣式
+  if(!str) return '';
+  return expSplit(str).map(s =>
+    `<div class="exp"><b>${renderNote(s.h || lead)}：</b>${renderNote(s.body)}</div>`
+  ).join('');
+}
+function expInline(str){
+  // 交卷複習列表：不另開區塊，只把小標粗體化並換行
+  if(!str) return '';
+  return expSplit(str).map(s =>
+    (s.h ? `<b>${renderNote(s.h)}</b>：` : '') + renderNote(s.body)
+  ).join('<br>');
+}
 function tierOf(p, d){
   if(d != null && d < 0) return '特殊';
   if(p==null) return null;
@@ -924,7 +950,7 @@ function answerSingle(letter){
       ${correct?'✓ 正確！':'✕ 正解是 ('+it.answer+') '+it.options[it.answer]}${spanTag}
       ${it.gloss ? `<div class="exp"><b>中譯：</b>${it.gloss}</div>` : ''}
       ${it.collocation ? `<div class="exp"><b>字詞搭配線索：</b>${it.collocation}</div>` : ''}
-      ${it.explanation ? `<div class="exp"><b>答題陷阱：</b>${it.explanation}</div>` : ''}
+      ${expHtml(it.explanation, '答題陷阱')}
       ${(!it.gloss && !it.collocation && !it.explanation) ? `<div class="exp">本題的逐格解析尚在建置中，目前只提供正解。</div>` : ''}
       ${ctxHtml}
       ${pd}
@@ -1124,7 +1150,7 @@ function gradeFullPassage(){
     review += `<div class="rv-item ${ok?'ok':'ng'}">
       <div class="rv-hd"><b>第${it.blankNum}題</b>　${ok ? '✓ 答對' : '✕ 你選 '+(chosen?'('+chosen+') '+it.options[chosen]:'未作答')+'　正解 ('+it.answer+') '+it.options[it.answer]}${spanTagHtml(it)}</div>
       <div class="rv-bd"><b>${it.options[it.answer]}</b>　${it.gloss||''}<br>
-        <span class="rv-col">字詞搭配：${it.collocation||'—'}</span><br>${it.explanation||''}</div>
+        <span class="rv-col">字詞搭配：${it.collocation||'—'}</span><br>${expInline(it.explanation)}</div>
       ${ctxBoxHtml(it)}
       ${pd}
       <a class="report-btn" style="margin-top:6px;" target="_blank" rel="noopener"
