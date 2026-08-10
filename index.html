@@ -165,6 +165,8 @@
   .flagLine{font-family:'IBM Plex Mono',monospace; font-size:11px; color:var(--crimson); cursor:pointer; text-decoration:underline; display:inline-block; margin:2px 0 8px;}
   .flagBox{display:none; margin:0 0 10px; padding:10px 12px; background:#FBF1EE; border:1px solid var(--rule); border-left:3px solid var(--crimson); border-radius:3px; font-size:12.5px; line-height:1.8; color:var(--ink-soft);}
   .flagBox.show{display:block;}
+  .infoLine{font-family:'IBM Plex Mono',monospace; font-size:11px; color:var(--ink-soft); cursor:pointer; text-decoration:underline; display:inline-block; margin:2px 0 8px;}
+  .metaLine{font-size:11.5px; color:var(--ink-soft); line-height:1.8; margin:18px 0 4px; padding-top:10px; border-top:1px solid var(--rule);}
 
   .navRow{display:flex; gap:10px; margin-top:16px;}
   .navRow button{flex:1;}
@@ -907,17 +909,39 @@ function renderSingle(){
         <a class="report-btn" style="margin-left:10px;" target="_blank" rel="noopener"
            href="https://docs.google.com/forms/d/e/1FAIpQLSd6P1s7HqjvOmGqOzNDWcBQQ3F539SifSNiAfXvi6NqD2YP-Q/viewform?usp=pp_url&entry.1257494378=${encodeURIComponent(it.id)}">🐛 回報這題</a>
       </div>
-      ${p.flagNote ? `<div class="flagLine" onclick="toggleFlag(this)">⚠ 本篇提醒（點此展開）</div><div class="flagBox">${escapeHtml(p.flagNote)}</div>` : ''}
+      ${flagPre(p)}
       <div class="catTagBar">${elimTagHtml(p)}${examTypeTagHtml(p)}${(it.categories||[]).map((c,i)=>`<span class="catTag ${i===0?'primary':''}">${c}</span>`).join('')}</div>
       ${p.sourceNote ? `<div class="ctx-box">${escapeHtml(p.sourceNote)}</div>` : ''}
       <div class="single-sentence">${context}</div>
       <div class="choice-grid">${choicesHtml}</div>
       <div id="fbBox"></div>
+      ${flagMeta(p)}
     </div>
     <div class="navRow">
       <button class="ghost-btn" onclick="nextSingle()">下一題 →</button>
     </div>
   `;
+}
+function flagKinds(p){ return Array.isArray(p.flagKind) ? p.flagKind : (p.flagKind ? [p.flagKind] : []); }
+function flagWarn(p){ return `<div class="flagLine" onclick="toggleFlag(this)">\u26a0 \u672c\u7bc7\u63d0\u9192\uff08\u9ede\u6b64\u5c55\u958b\uff09</div><div class="flagBox">${escapeHtml(p.flagNote)}</div>`; }
+function flagPre(p){
+  if(!p.flagNote) return '';
+  const k = flagKinds(p);
+  if(k.length === 0) return flagWarn(p);
+  if(k.includes('\u8cc7\u6599\u6821\u8a02') || k.includes('\u975e\u5178\u578b\u63d0\u9192')) return flagWarn(p);
+  if(k.includes('\u6cbf\u7528\u984c\u6307\u8a8d')) return `<div class="infoLine" onclick="toggleFlag(this)">\u2139 \u672c\u7bc7\u8aaa\u660e\uff08\u9ede\u6b64\u5c55\u958b\uff09</div><div class="flagBox">${escapeHtml(p.flagNote)}</div>`;
+  return '';
+}
+function flagPost(p){
+  if(!p || !p.flagNote) return '';
+  return flagKinds(p).includes('\u8a9e\u8a00\u73fe\u8c61\u8aaa\u660e') ? `<div class="exp"><b>\u672c\u7bc7\u8a9e\u8a00\u73fe\u8c61\uff1a</b>${escapeHtml(p.flagNote)}</div>` : '';
+}
+function flagMeta(p){
+  if(!p || !p.flagNote) return '';
+  const k = flagKinds(p);
+  if(!k.includes('\u51fa\u8655\u8aaa\u660e')) return '';
+  if(k.includes('\u8cc7\u6599\u6821\u8a02') || k.includes('\u975e\u5178\u578b\u63d0\u9192') || k.includes('\u6cbf\u7528\u984c\u6307\u8a8d')) return '';
+  return `<div class="metaLine">${escapeHtml(p.flagNote)}</div>`;
 }
 function toggleSpanNote(){
   const el = document.getElementById('spanNoteBox');
@@ -960,6 +984,7 @@ function answerSingle(letter){
       ${expHtml(it.explanation, '答題陷阱')}
       ${(!it.gloss && !it.collocation && !it.explanation) ? `<div class="exp">本題的逐格解析尚在建置中，目前只提供正解。</div>` : ''}
       ${ctxHtml}
+      ${flagPost(PASSAGES[it.passageId])}
       ${pd}
     </div>`;
 }
@@ -978,7 +1003,7 @@ function renderFull(pid){
   let html = '';
   html += `<div class="catTagBar" style="margin-bottom:10px;">${elimTagHtml(p)}${examTypeTagHtml(p)}${p.titleStatus ? '<span class="catTag">暫定標題</span>' : ''}</div>`;
   if(p.sourceNote) html += `<div class="ctx-box" style="margin-bottom:12px;">${escapeHtml(p.sourceNote)}</div>`;
-  if(p.flagNote) html += `<div class="feedback" style="margin-bottom:16px;">⚠ ${p.flagNote}</div>`;
+  html += flagPre(p);
   html += `<div class="level-row">
     <div class="level-btn ${currentLevel==='low'?'active':''}" onclick="setLevel('low')">低分群考生(開提示)</div>
     <div class="level-btn ${currentLevel==='mid'?'active':''}" onclick="setLevel('mid')">中間群考生(開提示)</div>
@@ -1004,6 +1029,7 @@ function renderFull(pid){
     <b>綱要：</b><br>${p.macro.outline.map(o=>o).join('<br>')}
   </div>`;
 
+  html += flagMeta(p);
   html += `  <div class="next-row">
     <button class="ghost-btn" onclick="goHome()">← 回首頁</button>
     <button class="ghost-btn" id="fullNextBtn" style="display:none;" onclick="nextFullPassage()">下一篇 →</button>
@@ -1178,6 +1204,7 @@ function gradeFullPassage(){
   if(pg.thesis || pg.thesisExplain){
     box += `<div class="sec-title">全文主旨</div><div class="feedback">${pg.thesis ? `<b>主旨句：</b>${pg.thesis}<br><br>` : ''}${pg.thesisExplain || ''}<div style="font-size:11.5px; color:var(--ink-soft); margin-top:10px; line-height:1.7;">📌 不是每篇文章的核心思想都剛好對應某一句話。這裡標的是「最能呼應」的代表句，僅供參考，不代表唯一答案。</div></div>`;
   }
+  box += flagPost(PASSAGES[window.__lastPid]);
   box += `<div class="sec-title">全文中譯</div><div class="feedback">${zh}</div>`;
   fullGraded = true;
   document.getElementById('gradeBtn').style.display = 'none';
