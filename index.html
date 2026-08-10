@@ -225,8 +225,9 @@ details.skill[open] > summary::after{content:'－ 收合';}
       <details class="skill sk-box">
         <summary><div class="sk-title">選項會不會剛好用完，看年度<span style="font-weight:400; font-size:11.5px; color:var(--ink-soft); margin-left:6px;">（點此展開／收合）</span></div></summary>
         <div style="margin-top:2px;">
-          有些年度的選項數剛好等於空格數，選項一個不剩——這時最後一格必然是剩下的那一個，<b>刪去法可以收尾</b>。有些年度多給了誘答選項，用不到的會留下來，<b>刪去法就收不了尾</b>，不能靠「剩下哪個填哪個」。<br><br>
-          學測文意選填一律 10 選 10，刪去法都收得了尾。指考 99 年以前 10 選 10，<b>100 年起改成 12 選 10</b>，從那年起刪去法就收不了尾。<br><br>
+          選項數與空格數的關係逐年不同。有些年度選項數剛好等於空格數，填完一個不剩；有些年度多給了誘答選項，會有幾個從頭到尾用不到。<br><br>
+          學測文意選填一律 10 選 10。指考 99 年以前 10 選 10，<b>100 年起改成 12 選 10</b>。<br><br>
+          差別在哪裡：<b>選項會用不到的年度，不能靠「剩下哪個填哪個」收尾</b>，每一格都得自己讀出來。<br><br>
           每一篇的實際選項數都標在篇名旁邊。
         </div>
       </details>
@@ -385,7 +386,6 @@ details.skill[open] > summary::after{content:'－ 收合';}
             <span class="sk-src">111 學年度起適用 · 115 學年度起適用</span>
             <p class="sk-en">依據篇章文意發展，掌握實詞詞彙（含慣用語及轉折詞）運用的能力。</p>
           </div>
-          <p>本站收錄的學測 31 篇，每一篇都是十個空格搭配十個選項——選項剛好用完，最後一格可以靠刪去法收尾。</p>
           <p>逐題作答說明裡，官方把線索指向的位置與本站標示的一致：段落主題句裡的關鍵詞、空格前後兩句之間的語意關係、字詞的搭配用法。作答時就照這個順序找：先讀懂空格所在的那一句，不夠就回頭看前一句或後一句，還是不夠再往段落主題句去找。</p>
           <div class="diff-note">本站收錄 90–115 年；90–101 年沒有對應的公開考試說明。<br>資料來源：財團法人大學入學考試中心基金會《學科能力測驗英文考科考試說明》三種版本（100 年 9 月、108 年 9 月、113 年 7 月公告）。著作權屬該基金會所有，載明供非營利目的使用並註明出處；本站為免費、無廣告之自學題庫。</div>
         </div>
@@ -647,8 +647,8 @@ function examOf(x){ return x.exam || (PASSAGES[x.passageId] ? PASSAGES[x.passage
 function examOk(x){ return selectedExams.size === 0 || selectedExams.has(examOf(x)); }
 function elimLabel(p){
   return p.eliminationValid
-    ? `${p.optionCount}選${p.blankCount}・刪去法可收尾`
-    : `${p.optionCount}選${p.blankCount}・刪去法不收尾`;
+    ? `${p.optionCount}選${p.blankCount}・選項剛好用完`
+    : `${p.optionCount}選${p.blankCount}・有${p.optionCount - p.blankCount}個選項用不到`;
 }
 function elimTagHtml(p){
   const cls = p.eliminationValid ? 'catTag primary' : 'catTag';
@@ -988,7 +988,7 @@ function renderFull(pid){
   <div class="legend"><span class="lg-both">兩者皆是</span><span class="lg-thesis">全文中心思想</span><span class="lg-topic">段落主旨句</span><span class="lg-trans">轉折詞</span></div>` : ''}
   ${pendingNote(p)}
   <div style="font-size:12px; color:var(--ink-soft); margin:-6px 0 14px; line-height:1.7; ${claimsThesis(p) ? '' : 'display:none;'}">📌 提醒：並非每一段都有一句「明講」的主旨句——開頭鋪陳段、承接前段的延伸段、或敘事／描述性段落，主旨常常是「隱含」的，沒有一句能直接畫線；整篇文章的核心思想，也不一定剛好對應某一句話。本站標示的是「最能呼應」的代表句，僅供參考，不代表唯一答案。</div>
-  <div class="sec-title">選項<span style="font-weight:400; text-transform:none; letter-spacing:0; font-size:11px; margin-left:6px;">（本篇 ${p.optionCount} 個選項填 ${p.blankCount} 格，每個最多用一次；${p.eliminationValid ? '選項剛好用完，<b>刪去法可以收尾</b>' : '會有 ' + (p.optionCount - p.blankCount) + ' 個選項用不到，<b>刪去法收不了尾</b>'}；點文章中的空格即可作答）</span></div>
+  <div class="sec-title">選項<span style="font-weight:400; text-transform:none; letter-spacing:0; font-size:11px; margin-left:6px;">（本篇 ${p.optionCount} 個選項填 ${p.blankCount} 格，每個最多用一次；${p.eliminationValid ? '<b>選項剛好用完</b>' : '會有 ' + (p.optionCount - p.blankCount) + ' 個<b>選項用不到</b>'}；點文章中的空格即可作答）</span></div>
   <div class="opts-table" id="optsTable"></div>
   <div class="passage-text ${hintsOn?'':'hints-off'}" id="passageText"></div>
   <div style="text-align:center; margin:22px 0;">
@@ -1091,7 +1091,7 @@ function renderPassageText(p, items){
   }
   if(!fullGraded) updateFullProgress();
 
-  // 選項總覽：同步標示已用掉的選項（刪去法收尾用）
+  // 選項總覽：同步標示已用掉的選項（作答管理用）
   const ot = document.getElementById('optsTable');
   if(ot){
     const used = usedLetterMap();
