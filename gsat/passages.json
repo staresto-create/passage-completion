@@ -269,6 +269,7 @@
   "sourceNote": null,
   "title": "失憶父親的溫暖（A Forgetful Father's Love）",
   "flagNote": "開頭的 “Or so my mother told us.” 是省略句式，用來表示這是母親轉述、並非敘事者親眼所見的語氣，詳見下方的巨觀結構分析。",
+  "flagKind": ["語言現象說明"],
   "options": {
    "A": "little",
    "B": "purchases",
@@ -1842,6 +1843,7 @@
   "sourceNote": null,
   "title": "颱風命名方式（Typhoon Naming Conventions）",
   "flagNote": "第 40 題的原始選項字母與語意對不上，本站依語意、並依「每個選項只用一次」的原則另作判定，與部分坊間版本可能不同。判定依據寫在該題的解析裡，作答後可以看到。若與你手邊的試卷不同，歡迎用下方的回報按鈕告訴我。",
+  "flagKind": ["資料校訂"],
   "options": {
    "A": "request",
    "B": "favor",
@@ -2058,6 +2060,7 @@
   "sourceNote": null,
   "title": "微波爆米花健康疑慮（Health Concerns About Microwave Popcorn）",
   "flagNote": "本篇原始選項清單只印出 8 個選項，另外兩個字是本站依上下文語意與答案字母還原補齊的，因此這兩個選項的用字可能與你手邊的試卷不同。哪兩個、怎麼還原的，寫在對應題目的解析裡。若有出入，請用下方的回報按鈕告知。",
+  "flagKind": ["資料校訂"],
   "options": {
    "A": "chemical",
    "B": "amount",
@@ -2482,6 +2485,7 @@
   "sourceNote": null,
   "title": "龜兔賽跑的新解讀（A New Ending to the Tortoise and the Hare）",
   "flagNote": "第 40 題後面那兩句（Another moral which also means a great deal is…）在原始試卷上就是直接相連的寫法，並非排版跑位。",
+  "flagKind": ["資料校訂"],
   "options": {
    "A": "arranged",
    "B": "challenges",
@@ -2701,6 +2705,7 @@
   "sourceNote": null,
   "title": "師徒與轉世小豬（The Guru, the Disciple, and the Pig）",
   "flagNote": "第 36、37 題的句子依大考中心原始試卷還原：第 36 題後有逗號（Soon after their __36__, the guru died…），第 37 題原文為 the disciple __37__ his knife。",
+  "flagKind": ["資料校訂"],
   "options": {
    "A": "shock",
    "B": "conversation",
@@ -3753,6 +3758,7 @@
   "sourceNote": null,
   "title": "壓力的雙面性（The Two Faces of Stress）",
   "flagNote": "這篇的十個選項裡，about、from、even、as、like、to、that 共七個是虛詞，只有 managing、unusual、leading 三個是實詞。同樣型態的還有 92 年補考那一篇，其餘各篇以實詞為主；這兩篇的十題線索也都落在空格所在句之內。你可以拿它練虛詞的語感，但別把它當成文意選填的代表性練習。",
+  "flagKind": ["非典型提醒"],
   "options": {
    "A": "about",
    "B": "from",
@@ -3929,6 +3935,7 @@
   "sourceNote": null,
   "title": "生活水準的衡量（Measuring the Standard of Living）",
   "flagNote": "這篇的十個選項裡，these、other、while、not only、with、such as、also 共七個是虛詞，只有 lower、methods、evenly 三個是實詞，與 92 年正式考那一篇同型；拿來練沒問題，但別把它當成文意選填的代表性練習。另外，第 38 題的原始選項字母與語意對不上，本站依語意另作判定，判定依據寫在該題的解析裡，作答後可以看到。",
+  "flagKind": ["非典型提醒", "資料校訂"],
   "options": {
    "A": "these",
    "B": "lower",
@@ -4543,6 +4550,7 @@
   "sourceNote": null,
   "title": "劇院寄放雙腿的夢（A Strange Dream at the Theater Cloakroom）",
   "flagNote": "90 年學測正式考題。這是學測文意選填現存最早的年份，89 年以前的學測沒有這個題型。",
+  "flagKind": ["出處說明"],
   "options": {
    "A": "sorry",
    "B": "outside",
@@ -4774,6 +4782,7 @@
   "sourceNote": "本篇為 111 年學測正式試題；115 學年度參考試卷沿用同一內容。",
   "title": "特技演員的崛起（The Rise of Stunt Performers）",
   "flagNote": "111 年學測正式考題（第 21–30 題，選項 A–J）。附大考中心官方答對率（P）與鑑別度（D）。115 學年度參考試卷沿用了同一篇內容。",
+  "flagKind": ["出處說明", "沿用題指認"],
   "options": {
    "A": "possible",
    "B": "sensation",
@@ -4994,6 +5003,7 @@
   "sourceNote": "99 課綱學測參考試卷（102 年施測），非正式施測，大考中心未公布逐題答對率。",
   "title": "青少年晚起之謎（Teenage Sleep Patterns）",
   "flagNote": "99 課綱適用的學測參考試卷內容（非正式考題）。",
+  "flagKind": ["出處說明"],
   "options": {
    "A": "therefore",
    "B": "alert",
@@ -5202,6 +5212,7 @@
   "sourceNote": "95 課綱學測參考試卷（98 年施測），非正式施測，大考中心未公布逐題答對率。",
   "title": "太陽能的發展歷程（Solar Energy Over Time）",
   "flagNote": "95 課綱適用的學測參考試卷內容（非正式考題）。",
+  "flagKind": ["出處說明"],
   "options": {
    "A": "work",
    "B": "absorb",
@@ -5418,6 +5429,7 @@
   "sourceNote": null,
   "title": "風之電話（The Wind Phone）",
   "flagNote": "113 年學測正式考題（第 21–30 題）。附大考中心官方答對率（P）與鑑別度（D）。",
+  "flagKind": ["出處說明"],
   "options": {
    "A": "passed on",
    "B": "bridge",
@@ -5614,6 +5626,7 @@
   "sourceNote": null,
   "title": "巴黎聖母院的鐘聲（The Bells of Notre-Dame）",
   "flagNote": "114 年學測正式考題（第 21–30 題）。附大考中心官方答對率（P）與鑑別度（D）。",
+  "flagKind": ["出處說明"],
   "options": {
    "A": "reference",
    "B": "bearing",
@@ -5810,6 +5823,7 @@
   "sourceNote": null,
   "title": "午睡的科學（The Science of Napping）",
   "flagNote": "115 年學測正式考題（第 21–30 題）。附大考中心官方答對率（P）與鑑別度（D）。115 學年度起題型改版：詞彙題 1–10、綜合測驗 11–20、文意選填 21–30、篇章結構 31–34、閱讀測驗 35–46。",
+  "flagKind": ["出處說明"],
   "options": {
    "A": "retain",
    "B": "depend on",
@@ -6038,6 +6052,7 @@
   "sourceNote": null,
   "title": "運動不必痛苦（Exercise Without Pain）",
   "flagNote": "110 年學測正式考題（第 31–40 題，當年文意選填的題號與現行不同）。附大考中心官方答對率（P）與鑑別度（D）。",
+  "flagKind": ["出處說明"],
   "options": {
    "A": "means",
    "B": "soreness",
@@ -6266,6 +6281,7 @@
   "sourceNote": null,
   "title": "喝水的迷思（Myths About Drinking Water）",
   "flagNote": "112 年學測正式考題（第 21–30 題，10 選 10，選項 A–J）。附大考中心官方答對率（P）與鑑別度（D）。",
+  "flagKind": ["出處說明"],
   "options": {
    "A": "absorption",
    "B": "active",
@@ -6479,6 +6495,7 @@
   "sourceNote": "110 年試辦考試（適用於 108 課綱），非正式施測，大考中心未公布逐題答對率。",
   "title": "非洲傳統宗教的亡者信仰（African Traditional Religions）",
   "flagNote": "110 年試辦考試內容（適用於 108 課綱，非正式考題），第 21–30 題。大考中心未公布本場逐題答對率與鑑別度。",
+  "flagKind": ["出處說明"],
   "options": {
    "A": "due",
    "B": "subjects",
