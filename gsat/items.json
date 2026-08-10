@@ -2560,7 +2560,7 @@
   "answer": "G",
   "gloss": "被取代",
   "collocation": "were ___ with other names in 2007；replace A with B 字詞搭配",
-  "explanation": "這一題的官方答對率是對官方公布的答案計算的，本站正解與官方不同，兩者請分開看。replace...with... 是字詞搭配，「用…取代…」。原稿選項字母此處疑似誤植為 C(disadvantage)，但 C 已用於32題且語意不通，依語意與選項不重複使用之通例訂正為 G。",
+  "explanation": "這一題的官方答對率是對官方公布的答案計算的，本站正解與官方不同，兩者請分開看。replace...with... 是字詞搭配，「用…取代…」。原稿選項字母此處疑似誤植為 C(disadvantage)：「與其他名字 disadvantage」語意接不起來，依語意訂正為 G(replaced)。",
   "accuracyRate": 58,
   "discrimination": 80,
   "contextSpan": "句內"
@@ -5360,7 +5360,7 @@
   "answer": "H",
   "gloss": "具有、帶有",
   "collocation": "Americans ___ different racial and educational backgrounds；with + N 修飾主詞",
-  "explanation": "with 引導的介系詞片語修飾 Americans，「具有不同種族與教育背景的美國人」。原稿此處答案字母疑似誤植為 F(not only)，但 F 已用於31題且語意不合，已依語意訂正為 H。",
+  "explanation": "with 引導的介系詞片語修飾 Americans，「具有不同種族與教育背景的美國人」。原稿此處答案字母疑似誤植為 F(not only)：「Americans not only different backgrounds」語意接不起來，依語意訂正為 H(with)。",
   "accuracyRate": null,
   "discrimination": null,
   "contextSpan": "句內"
@@ -8426,7 +8426,7 @@
   "answer": "H",
   "gloss": "狀態（此處指體液平衡的狀態）",
   "collocation": "maintain a normal fluid ___；fluid status（體液狀態）；restore and maintain a normal + 名詞（恢復並維持正常的…）",
-  "explanation": "只有26%答對。你的 status 只記得「地位、身分」（social status、marital status），碰到科普語境的「狀態」就轉不過來。a normal fluid ___ 前有冠詞與形容詞，須填單數名詞，且 restore and maintain 共用這個受詞；absorption 已用於25格、option 留給27格，用刪去法即可逼出 status。常考搭配：fluid status、health status、nutritional status。",
+  "explanation": "只有26%答對。你的 status 只記得「地位、身分」（social status、marital status），碰到科普語境的「狀態」就轉不過來。a normal fluid ___ 前有冠詞與形容詞，須填單數名詞，且 restore and maintain 共用這個受詞。fluid status（體液狀態）是醫學與科普語境的固定字詞搭配；absorption（吸收）接不上 fluid，option（選項）也不是 restore and maintain 的合理受詞。常考搭配：fluid status、health status、nutritional status。",
   "accuracyRate": 26,
   "discrimination": 41,
   "contextSpan": "句內"
