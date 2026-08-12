@@ -74,10 +74,9 @@
   .prog{font-family:'IBM Plex Mono',monospace; font-size:12px; color:var(--ink-soft); display:flex; justify-content:space-between; margin-bottom:8px;}
   .bar{height:4px; background:var(--rule); border-radius:2px; overflow:hidden; margin-bottom:22px;}
   .bar-fill{height:100%; background:var(--crimson); transition:width .2s;}
-  .level-row{display:flex; gap:8px; flex-wrap:wrap; margin-bottom:14px;}
-  .level-btn{flex:1; min-width:120px; padding:10px; border:1.5px solid var(--rule); border-radius:4px; background:#fff; cursor:pointer; font-size:13px; text-align:center;}
-  .level-btn.active{border-color:var(--gold); background:#FBF6E8;}
-  .hint-toggle{display:flex; align-items:center; gap:8px; font-size:13px; margin-bottom:18px;}
+  .hint-toggle{display:flex; align-items:center; gap:8px; font-size:13px; margin-bottom:6px;}
+  .hint-note{font-size:11.5px; color:var(--ink-soft); line-height:1.7; margin-bottom:16px;}
+  .macro-note{font-size:11.5px; color:var(--ink-soft); line-height:1.7; margin-bottom:10px;}
   .switch{width:36px; height:20px; border-radius:10px; background:var(--rule); position:relative; cursor:pointer;}
   .switch .dot{width:16px; height:16px; border-radius:50%; background:#fff; position:absolute; top:2px; left:2px; transition:left .15s; box-shadow:0 1px 2px rgba(0,0,0,.3);}
   .switch.on{background:var(--sage);} .switch.on .dot{left:18px;}
@@ -584,7 +583,6 @@ let selectedSpans = new Set();
 let selectedExams = new Set();
 let selectedSingleYears = new Set();
 let singleQueue = [], singleIdx = 0;
-let currentLevel = 'mid'; // low/mid/high
 let hintsOn = true;
 
 const SPANS = ["句內","跨句","篇章"];
@@ -1005,12 +1003,8 @@ function renderFull(pid){
   html += `<div class="catTagBar" style="margin-bottom:10px;">${elimTagHtml(p)}${examTypeTagHtml(p)}${p.titleStatus ? '<span class="catTag">暫定標題</span>' : ''}</div>`;
   if(p.sourceNote) html += `<div class="ctx-box" style="margin-bottom:12px;">${escapeHtml(p.sourceNote)}</div>`;
   html += flagPre(p);
-  html += `<div class="level-row">
-    <div class="level-btn ${currentLevel==='low'?'active':''}" onclick="setLevel('low')">低分群考生(開提示)</div>
-    <div class="level-btn ${currentLevel==='mid'?'active':''}" onclick="setLevel('mid')">中間群考生(開提示)</div>
-    <div class="level-btn ${currentLevel==='high'?'active':''}" onclick="setLevel('high')">高分群考生(關提示，模擬考場)</div>
-  </div>
-  ${hasMarks(p) ? `<div class="hint-toggle"><span class="switch ${hintsOn?'on':''}" onclick="toggleHints()"><span class="dot"></span></span> 主旨句／轉折詞提示：${hintsOn?'開':'關'}</div>
+  html += `${hasMarks(p) ? `<div class="hint-toggle"><span class="switch ${hintsOn?'on':''}" onclick="toggleHints()"><span class="dot"></span></span> 顯示主旨句與轉折詞提示</div>
+  <div class="hint-note">開著的時候，文章裡會用顏色標出<b>段落主旨句</b>與<b>轉折詞</b>。讀長文章抓不到重點時，建議開著；想模擬真正考場的樣子，就關掉。隨時可以切換，不影響你已經選好的答案。</div>
   <div class="legend"><span class="lg-both">兩者皆是</span><span class="lg-thesis">全文中心思想</span><span class="lg-topic">段落主旨句</span><span class="lg-trans">轉折詞</span></div>` : ''}
   ${pendingNote(p)}
   <div style="font-size:12px; color:var(--ink-soft); margin:-6px 0 14px; line-height:1.7; ${claimsThesis(p) ? '' : 'display:none;'}">📌 提醒：並非每一段都有一句「明講」的主旨句——開頭鋪陳段、承接前段的延伸段、或敘事／描述性段落，主旨常常是「隱含」的，沒有一句能直接畫線；整篇文章的核心思想，也不一定剛好對應某一句話。本站標示的是「最能呼應」的代表句，僅供參考，不代表唯一答案。</div>
@@ -1022,13 +1016,6 @@ function renderFull(pid){
     <div style="font-size:11.5px; color:var(--ink-soft); margin-top:8px;">全部填完再送出，中途不會公布正解；送出後會顯示官方答對率與逐題檢討，並附逐格解析、全文主旨與全文中譯。</div>
   </div>
   <div id="gradeResult"></div>`;
-
-  if(hintsOn && p.macro) html += `<div class="sec-title">巨觀結構分析</div><div class="feedback">
-    <b>主要結構：</b>${p.macro.structure}<br>
-    <b>文章結構類型：</b>${p.macro.patterns||'—'}<br>
-    <b>關鍵轉折詞：</b>${p.macro.transitions}<br>
-    <b>綱要：</b><br>${p.macro.outline.map(o=>o).join('<br>')}
-  </div>`;
 
   html += flagMeta(p);
   html += `  <div class="next-row">
@@ -1056,7 +1043,6 @@ function pendingNote(p){
   if(!pend.length) return '';
   return `<div style="font-size:12px; color:var(--ink-soft); margin:-6px 0 14px; line-height:1.7;">📌 本篇的${pend.join('、')}尚在建置中，其餘功能不受影響。</div>`;
 }
-function setLevel(l){ currentLevel = l; hintsOn = (l !== 'high'); renderFull(window.__lastPid); }
 function toggleHints(){ hintsOn = !hintsOn; renderFull(window.__lastPid); }
 let revealedBlanks = new Set(); window.__blankChoices = {};
 let fullGraded = false;
@@ -1068,7 +1054,7 @@ function renderPassageText(p, items){
   const letters = Object.keys(p.options).sort();
   let out = '';
   p.paras.forEach((para, idx) => {
-    out += (hintsOn && para.label ? `<div class="p-label">${para.label}</div>` : '') + `<p>`;
+    out += (fullGraded && para.label ? `<div class="p-label">${para.label}</div>` : '') + `<p>`;
     const blankNumsInPara = [];
     para.segs.forEach((seg, si) => {
       let [text, type] = seg;
@@ -1207,6 +1193,17 @@ function gradeFullPassage(){
   }
   box += flagPost(PASSAGES[window.__lastPid]);
   box += `<div class="sec-title">全文中譯</div><div class="feedback">${zh}</div>`;
+  // 骨架層（巨觀結構、段落大意）由「答完了沒」控制，與提示開關無關。
+  // 提示層是作答中的線索、骨架層是作答後的檢討工具，兩者不共用一個開關。
+  if(pg.macro){
+    box += `<div class="sec-title">巨觀結構分析</div><div class="feedback">
+    <div class="macro-note">這是答完才出現的，用來檢討。回頭比對一次：你剛才讀的時候，這篇的走法跟這裡寫的一不一樣？不一樣的地方，常常就是失分的地方。</div>
+    <b>主要結構：</b>${pg.macro.structure}<br>
+    <b>文章結構類型：</b>${pg.macro.patterns||'—'}<br>
+    <b>關鍵轉折詞：</b>${pg.macro.transitions}<br>
+    <b>綱要：</b><br>${pg.macro.outline.map(o=>o).join('<br>')}
+  </div>`;
+  }
   fullGraded = true;
   document.getElementById('gradeBtn').style.display = 'none';
   document.getElementById('gradeResult').innerHTML = box;
