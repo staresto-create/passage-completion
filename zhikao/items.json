@@ -374,6 +374,7 @@
   "explanation": "前一句剛給了他鳥人這個稱號，這一格就是回指那個綽號。易與 privilege 混淆，但特權是後面獄方給的待遇，不是稱呼。",
   "accuracyRate": 77,
   "discrimination": 54,
+  "groupRates": [99, 97, 89, 70, 32],
   "contextSpan": "跨句"
  },
  {
@@ -408,6 +409,7 @@
   "explanation": "plead for sth 是為某事懇求，後面的 for his life 正是求他一命。易與 banned 混淆，但禁止要用被動，主詞也不會是母親。",
   "accuracyRate": 52,
   "discrimination": 82,
+  "groupRates": [97, 83, 50, 20, 7],
   "contextSpan": "句內"
  },
  {
@@ -442,6 +444,7 @@
   "explanation": "life imprisonment 是無期徒刑，這裡說死刑改判成它。易與 illness 混淆，但疾病與判決無關，後面的假釋也接不上。",
   "accuracyRate": 48,
   "discrimination": 80,
+  "groupRates": [96, 77, 41, 17, 8],
   "contextSpan": "句內"
  },
  {
@@ -476,6 +479,7 @@
   "explanation": "同一句後面說完全隔離，這一格要的是單獨的囚區。易與 banned 混淆，但被禁止形容不出一個空間。",
   "accuracyRate": 45,
   "discrimination": 84,
+  "groupRates": [96, 76, 36, 10, 6],
   "contextSpan": "句內"
  },
  {
@@ -510,6 +514,7 @@
   "explanation": "a keen interest in sth 是濃厚的興趣。keen 要成串記：keen competition 競爭激烈、keen eyes 目光銳利、be keen on 熱衷於。易與 effective 混淆，但有效形容的是療法。",
   "accuracyRate": 46,
   "discrimination": 72,
+  "groupRates": [90, 71, 43, 18, 10],
   "contextSpan": "句內"
  },
  {
@@ -545,6 +550,7 @@
   "explanation": "a right to + V 後面接原形，這一格講獄方特准他養鳥繁殖。易與 release 混淆，但放走鳥與後面在牢房裡設實驗室矛盾。",
   "accuracyRate": 61,
   "discrimination": 76,
+  "groupRates": [98, 92, 69, 34, 14],
   "contextSpan": "句內"
  },
  {
@@ -579,6 +585,7 @@
   "explanation": "這一格回指上一句那項特准，也就是他拿到的殊遇。易與 nickname 混淆，但綽號不會讓人寫得出兩本專書。",
   "accuracyRate": 51,
   "discrimination": 81,
+  "groupRates": [96, 83, 49, 18, 8],
   "contextSpan": "跨句"
  },
  {
@@ -613,6 +620,7 @@
   "explanation": "他研發的是治鳥病的藥，這一格就是那些病。易與 imprisonment 混淆，但監禁是判決那一段的字，鳥不會被判刑。",
   "accuracyRate": 64,
   "discrimination": 77,
+  "groupRates": [99, 95, 77, 38, 12],
   "contextSpan": "句內"
  },
  {
@@ -647,6 +655,7 @@
   "explanation": "這一格講他那些藥到底有沒有效，後面接著說觀察仍有價值。易與 keen 混淆，但濃厚形容的是興趣，不是療效。",
   "accuracyRate": 51,
   "discrimination": 81,
+  "groupRates": [96, 83, 50, 18, 8],
   "contextSpan": "句內"
  },
  {
@@ -681,6 +690,7 @@
   "explanation": "be banned by + N 是被某方禁止，這一格是被動，講書稿被禁。易與 separated 混淆，但分隔講的是空間，不是出版與否。",
   "accuracyRate": 68,
   "discrimination": 70,
+  "groupRates": [99, 94, 80, 51, 17],
   "contextSpan": "句內"
  },
  {
