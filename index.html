@@ -725,12 +725,20 @@ function spanTagHtml(it){
   return it.contextSpan
     ? `<span class="spanTag${it.contextSpan !== '句內' ? ' cross' : ''}">線索：${it.contextSpan}</span>` : '';
 }
-function grpBoxHtml(it){
+function grpBoxHtml(it, full){
   const g = it.groupRates;
   if(!Array.isArray(g) || g.length !== 5) return '';
-  return `<div class="grpBox"><span class="grpHd">五等分組答對率</span>　把到考考生依總分分成五等分，這一題各組的答對率是<br>
+  // full=false 用於全文模式檢討區的第二格以後：十格並排時原理只講一次。
+  // 單題模式一律 full=true——該模式順序為隨機，學生可能第一題就抽到這裡。
+  const head = full
+    ? '<span class="grpHd">五等分組答對率</span>　把到考考生依總分分成五等分，這一題各組的答對率是<br>'
+    : '<span class="grpHd">五等分組答對率</span><br>';
+  const tail = full
+    ? `最高的一組與最低的一組相差 <b>${g[0]-g[4]}</b> 個百分點。這五個數字取的是五等分組，跟上面的鑑別度 D（前三分之一對後三分之一）算法不同，數字對不起來是正常的。`
+    : `最高與最低的一組相差 <b>${g[0]-g[4]}</b> 個百分點。`;
+  return `<div class="grpBox">${head}
     <span class="grpNums">${g.join('％　→　')}％</span><br>
-    最高的一組與最低的一組相差 <b>${g[0]-g[4]}</b> 個百分點。這五個數字取的是五等分組，跟上面的鑑別度 D（前三分之一對後三分之一）算法不同，數字對不起來是正常的。</div>`;
+    ${tail}</div>`;
 }
 function ctxBoxHtml(it){
   if(it.contextNote) return `<div class="ctx-box">${renderNote(it.contextNote)}</div>`;
@@ -1001,7 +1009,7 @@ function answerSingle(letter){
       ${ctxHtml}
       ${flagPost(PASSAGES[it.passageId])}
       ${pd}
-      ${grpBoxHtml(it)}
+      ${grpBoxHtml(it, true)}
     </div>`;
 }
 function nextSingle(){
@@ -1175,10 +1183,12 @@ function gradeFullPassage(){
     if(!confirm(`還有 ${blank.length} 格未作答（第 ${blank.map(i=>i.blankNum).join('、')} 題）。確定要送出批改嗎？`)) return;
   }
   const testMode = document.getElementById('testModeToggle') && document.getElementById('testModeToggle').checked;
-  let correctCount = 0, review = '', priority = '';
+  let correctCount = 0, review = '', priority = '', grpShown = false;
   items.forEach(it => {
     const chosen = ch[it.blankNum];
     const ok = chosen === it.answer;
+    const grpFull = !grpShown && Array.isArray(it.groupRates) && it.groupRates.length === 5;
+    if(grpFull) grpShown = true;
     if(ok) correctCount++;
     if(!testMode) recordAnswer(it.id, ok);
     const pd = (it.accuracyRate != null)
@@ -1190,7 +1200,7 @@ function gradeFullPassage(){
         <span class="rv-col">字詞搭配：${it.collocation||'—'}</span><br>${expInline(it.explanation)}</div>
       ${ctxBoxHtml(it)}
       ${pd}
-      ${grpBoxHtml(it)}
+      ${grpBoxHtml(it, grpFull)}
       <a class="report-btn" style="margin-top:6px;" target="_blank" rel="noopener"
          href="https://docs.google.com/forms/d/e/1FAIpQLSd6P1s7HqjvOmGqOzNDWcBQQ3F539SifSNiAfXvi6NqD2YP-Q/viewform?usp=pp_url&entry.1257494378=${encodeURIComponent(it.id)}">🐛 回報這題</a></div>`;
     if(!ok && it.accuracyRate != null && it.accuracyRate >= 70){
