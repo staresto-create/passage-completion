@@ -152,6 +152,9 @@
   .feedback .exp.exp-sec b.exp-h{display:block; font-family:'Noto Serif TC',serif;
     font-weight:700; font-size:14.5px; color:var(--sage); margin:0 0 5px; line-height:1.55;}
   .pdTag{font-family:'IBM Plex Mono',monospace; font-size:11px; color:var(--ink-soft); margin-top:8px;}
+  .grpBox{margin-top:8px; padding:9px 11px; border-radius:4px; background:#F6F1E4; font-size:12.5px; line-height:1.75;}
+  .grpBox .grpHd{font-weight:700;}
+  .grpBox .grpNums{font-family:'IBM Plex Mono',monospace; font-size:13px; letter-spacing:.5px;}
   .pdTag b{color:var(--ink);}
 
   .spanTag{display:inline-block; font-size:11px; padding:3px 8px; border-radius:10px; border:1px solid var(--sage); color:var(--sage); background:#F1F5EF; margin-left:6px; vertical-align:middle;}
@@ -260,9 +263,15 @@ details.skill[open] > summary::after{content:'－ 收合';}
         <b>主題勾環(核心軸線)</b>：看這個選項跟文章的核心人物／事件／現象搭不搭得上。<br>
         <b>邏輯勾環(轉折詞)</b>：however 轉折、therefore 因果、for example 舉例。</p>
         <h3>🎯 五大核心戰術</h3>
-        <p>1. 作答前先標註選項詞性　2. 看句型判斷空格需要什麼詞性　3. 對照前後<b>字詞搭配</b>(collocation)　4. 讀到代名詞回頭找它指的是誰　5. 對照段落主旨(黃底標示)</p>
+        <p>1. 作答前先標註選項的<b>詞性與字尾形態</b>（複數 -s、V-ing、p.p.、to-V）　2. 看句型判斷空格需要什麼詞性　3. 對照前後<b>字詞搭配</b>(collocation)　4. 讀到代名詞回頭找它指的是誰　5. 對照段落主旨(黃底標示)</p>
         <p style="background:#F6F1E4; padding:10px 12px; border-radius:4px; font-size:13px;">📌 <b>提醒</b>：並非每一段都有一句「明講」的主旨句——開頭鋪陳段、承接前段的延伸段，主旨常常是「隱含」的，沒有一句能直接畫線。遇到這種段落，與其硬找一句話，不如問自己「這段在做什麼」，用自己的話歸納出這段的重點即可。<b>全文中心思想(藍底)也是同樣道理</b>：有些文章的核心思想是綜合全文歸納出來的，不一定剛好對應到某一句話，本站標示的藍底句是「最能呼應核心思想」的代表句，並非唯一標準答案，僅供參考。</p>
-        <p style="font-style:italic; color:var(--ink-soft);">💡 小叮嚀：先看「詞性與句型」，再看「前後字詞搭配」，最後才讀「完整句子」。不要把選項一個一個代入去翻翻看。</p>
+        <p style="font-style:italic; color:var(--ink-soft);">💡 小叮嚀：先看「詞性與字尾形態」和句型，再看「前後字詞搭配」，最後才讀「完整句子」。不要把選項一個一個代入去翻翻看。</p>
+        <h3>📏 每題右上角的「線索：句內／跨句／篇章」是什麼</h3>
+        <p>那是<b>這一題要看多遠</b>的半徑。猶豫在兩個選項之間時，把範圍一圈一圈往外放：先看空格所在的那一句，再看前後句，最後才到全篇。<br>
+        全站 560 題實測，<b>句內 489 題（87%）、跨句 63 題、篇章 8 題</b>（學測 310 題為 272／32／6，指考 250 題為 217／31／2）。<b>多數題目不必跑遠</b>，猶豫時通常第一圈就找得到答案；一開始就回頭重讀整篇，多半是白費力氣。</p>
+        <h3>📊 部分題目附有「五等分組答對率」</h3>
+        <p>那是把到考考生依總分分成五等分後，各組在該題的答對率，資料來自大考中心。它顯示的是這一題<b>在哪一段程度上把人分開</b>——有些題目五組一路平緩，有些則在某一組之間出現斷層。<br>
+        落差這麼大，通常是因為知不知道這一題在考什麼。看懂它考什麼、再多練幾題同型的、每題都確實檢討，<b>功力一定會提升</b>。</p>
       </div>
 
       <details class="skill sk-box">
@@ -716,6 +725,13 @@ function spanTagHtml(it){
   return it.contextSpan
     ? `<span class="spanTag${it.contextSpan !== '句內' ? ' cross' : ''}">線索：${it.contextSpan}</span>` : '';
 }
+function grpBoxHtml(it){
+  const g = it.groupRates;
+  if(!Array.isArray(g) || g.length !== 5) return '';
+  return `<div class="grpBox"><span class="grpHd">五等分組答對率</span>　把到考考生依總分分成五等分，這一題各組的答對率是<br>
+    <span class="grpNums">${g.join('％　→　')}％</span><br>
+    最高的一組與最低的一組相差 <b>${g[0]-g[4]}</b> 個百分點。這五個數字取的是五等分組，跟上面的鑑別度 D（前三分之一對後三分之一）算法不同，數字對不起來是正常的。</div>`;
+}
 function ctxBoxHtml(it){
   if(it.contextNote) return `<div class="ctx-box">${renderNote(it.contextNote)}</div>`;
   if(it.contextSpan === '句內') return `<div class="ctx-box inner">這一格是<b>句內</b>：讀懂空格所在的那一句就足以作答，不必回頭翻前後文。上面那條字詞搭配線索就落在本句之內，把它記下來。</div>`;
@@ -985,6 +1001,7 @@ function answerSingle(letter){
       ${ctxHtml}
       ${flagPost(PASSAGES[it.passageId])}
       ${pd}
+      ${grpBoxHtml(it)}
     </div>`;
 }
 function nextSingle(){
@@ -1173,6 +1190,7 @@ function gradeFullPassage(){
         <span class="rv-col">字詞搭配：${it.collocation||'—'}</span><br>${expInline(it.explanation)}</div>
       ${ctxBoxHtml(it)}
       ${pd}
+      ${grpBoxHtml(it)}
       <a class="report-btn" style="margin-top:6px;" target="_blank" rel="noopener"
          href="https://docs.google.com/forms/d/e/1FAIpQLSd6P1s7HqjvOmGqOzNDWcBQQ3F539SifSNiAfXvi6NqD2YP-Q/viewform?usp=pp_url&entry.1257494378=${encodeURIComponent(it.id)}">🐛 回報這題</a></div>`;
     if(!ok && it.accuracyRate != null && it.accuracyRate >= 70){
