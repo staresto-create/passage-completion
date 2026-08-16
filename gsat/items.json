@@ -439,7 +439,8 @@
   "passageId": "y108",
   "blankNum": 36,
   "categories": [
-   "字詞搭配"
+   "字詞搭配",
+   "句型結構"
   ],
   "options": {
    "A": "little",
@@ -609,7 +610,8 @@
   "blankNum": 32,
   "categories": [
    "字詞搭配",
-   "詞性判斷"
+   "詞性判斷",
+   "句型結構"
   ],
   "options": {
    "A": "account",
@@ -1039,7 +1041,8 @@
   "blankNum": 37,
   "categories": [
    "詞性判斷",
-   "字詞搭配"
+   "字詞搭配",
+   "句型結構"
   ],
   "options": {
    "A": "reflected",
@@ -1123,7 +1126,8 @@
   "passageId": "y106",
   "blankNum": 40,
   "categories": [
-   "字詞搭配"
+   "字詞搭配",
+   "句型結構"
   ],
   "options": {
    "A": "reflected",
@@ -1781,7 +1785,8 @@
   "passageId": "y103",
   "blankNum": 33,
   "categories": [
-   "字詞搭配"
+   "字詞搭配",
+   "句型結構"
   ],
   "options": {
    "A": "drawn to",
@@ -1797,7 +1802,7 @@
   },
   "answer": "E",
   "gloss": "維持",
-  "collocation": "to ___ a family surname going；keep + O + Ving 使役結構",
+  "collocation": "to ___ a family surname going；keep + O + V-ing（讓…持續下去）",
   "explanation": "keep...going 是固定句型，「讓…持續下去」，你要辨認 keep 在此的動詞用法。",
   "accuracyRate": 61,
   "discrimination": 71,
@@ -1868,7 +1873,8 @@
   "passageId": "y103",
   "blankNum": 36,
   "categories": [
-   "字詞搭配"
+   "字詞搭配",
+   "句型結構"
   ],
   "options": {
    "A": "drawn to",
@@ -1896,7 +1902,8 @@
   "passageId": "y103",
   "blankNum": 37,
   "categories": [
-   "字詞搭配"
+   "字詞搭配",
+   "句型結構"
   ],
   "options": {
    "A": "drawn to",
@@ -1980,7 +1987,8 @@
   "passageId": "y103",
   "blankNum": 40,
   "categories": [
-   "字詞搭配"
+   "字詞搭配",
+   "句型結構"
   ],
   "options": {
    "A": "drawn to",
@@ -2289,7 +2297,8 @@
   "passageId": "y101",
   "blankNum": 31,
   "categories": [
-   "字詞搭配"
+   "字詞搭配",
+   "句型結構"
   ],
   "options": {
    "A": "request",
@@ -2656,7 +2665,8 @@
   "passageId": "y100",
   "blankNum": 34,
   "categories": [
-   "字詞搭配"
+   "字詞搭配",
+   "句型結構"
   ],
   "options": {
    "A": "chemical",
@@ -3026,7 +3036,8 @@
   "categories": [
    "字詞搭配",
    "代名詞／指示詞",
-   "詞性判斷"
+   "詞性判斷",
+   "句型結構"
   ],
   "options": {
    "A": "cooperation",
@@ -3056,7 +3067,8 @@
   "categories": [
    "字詞搭配",
    "字彙選義",
-   "詞性判斷"
+   "詞性判斷",
+   "句型結構"
   ],
   "options": {
    "A": "cooperation",
@@ -3226,7 +3238,8 @@
   "passageId": "y98",
   "blankNum": 34,
   "categories": [
-   "字詞搭配"
+   "字詞搭配",
+   "句型結構"
   ],
   "options": {
    "A": "arranged",
@@ -3483,7 +3496,8 @@
   "passageId": "y97",
   "blankNum": 33,
   "categories": [
-   "字詞搭配"
+   "字詞搭配",
+   "句型結構"
   ],
   "options": {
    "A": "shock",
@@ -4481,7 +4495,8 @@
   "passageId": "y94",
   "blankNum": 38,
   "categories": [
-   "字詞搭配"
+   "字詞搭配",
+   "句型結構"
   ],
   "options": {
    "A": "breaks down",
@@ -5028,7 +5043,8 @@
   "categories": [
    "詞性判斷",
    "字彙選義",
-   "字詞搭配"
+   "字詞搭配",
+   "句型結構"
   ],
   "options": {
    "A": "about",
@@ -5175,7 +5191,8 @@
   "blankNum": 32,
   "categories": [
    "字詞搭配",
-   "詞性判斷"
+   "詞性判斷",
+   "句型結構"
   ],
   "options": {
    "A": "these",
@@ -5567,7 +5584,8 @@
   "passageId": "y91",
   "blankNum": 36,
   "categories": [
-   "字詞搭配"
+   "字詞搭配",
+   "句型結構"
   ],
   "options": {
    "A": "dutifully",
@@ -5933,7 +5951,8 @@
   "passageId": "y91b",
   "blankNum": 39,
   "categories": [
-   "字詞搭配"
+   "字詞搭配",
+   "句型結構"
   ],
   "options": {
    "A": "also",
@@ -6383,7 +6402,8 @@
   "passageId": "y111r",
   "blankNum": 25,
   "categories": [
-   "字詞搭配"
+   "字詞搭配",
+   "句型結構"
   ],
   "options": {
    "A": "possible",
@@ -6555,7 +6575,8 @@
   "passageId": "y99r",
   "blankNum": 31,
   "categories": [
-   "字詞搭配"
+   "字詞搭配",
+   "句型結構"
   ],
   "options": {
    "A": "therefore",
@@ -6724,7 +6745,8 @@
   "passageId": "y99r",
   "blankNum": 37,
   "categories": [
-   "字詞搭配"
+   "字詞搭配",
+   "句型結構"
   ],
   "options": {
    "A": "therefore",
@@ -7405,7 +7427,8 @@
   "categories": [
    "字彙選義",
    "字詞搭配",
-   "同義呼應"
+   "同義呼應",
+   "句型結構"
   ],
   "options": {
    "A": "reference",
@@ -7435,7 +7458,8 @@
   "categories": [
    "字詞搭配",
    "字彙選義",
-   "詞性判斷"
+   "詞性判斷",
+   "句型結構"
   ],
   "options": {
    "A": "reference",
@@ -8262,7 +8286,8 @@
   "blankNum": 21,
   "categories": [
    "字詞搭配",
-   "詞性判斷"
+   "詞性判斷",
+   "句型結構"
   ],
   "options": {
    "A": "absorption",
@@ -8468,7 +8493,8 @@
   "categories": [
    "詞性判斷",
    "字彙選義",
-   "字詞搭配"
+   "字詞搭配",
+   "句型結構"
   ],
   "options": {
    "A": "absorption",
@@ -8497,7 +8523,8 @@
   "blankNum": 29,
   "categories": [
    "字詞搭配",
-   "語意連貫"
+   "語意連貫",
+   "句型結構"
   ],
   "options": {
    "A": "absorption",
@@ -8616,7 +8643,8 @@
   "blankNum": 23,
   "categories": [
    "詞性判斷",
-   "字詞搭配"
+   "字詞搭配",
+   "句型結構"
   ],
   "options": {
    "A": "due",
