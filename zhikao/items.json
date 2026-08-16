@@ -96,7 +96,7 @@
   ],
   "gloss": "享有聲望的",
   "collocation": "written, official, and ___；a prestigious school／award（名校、大獎）",
-  "explanation": "與 written、official 並列，這一格說語言享有聲望。易與 recognized 混淆，但被承認要接 as，這裡是形容詞並列。",
+  "explanation": "are typically written, official, and ___，and 前面是 written 與 official 兩個形容詞，這一格要與它們並列，也得是形容詞。prestigious 你大概只在「名校、大獎」這類說法裡遇過（a prestigious university、a prestigious award），但這一題考的是它形容一種語言的地位：享有聲望、被看得起。看下半句就知道要什麼——那裡把「方言」寫成不成文、非官方、而且被看不起，三個特徵一一相對，這一格對到的正是「被看不起」的反面。易與 recognized 混淆——recognized 也擺得進並列位置，但它講的是「獲得官方承認」，與同一串裡的 official 說的是同一件事；三個並列的形容詞不會把同一個特徵講兩次。",
   "accuracyRate": 32,
   "discrimination": 50,
   "contextSpan": "句內"
@@ -1097,7 +1097,7 @@
   ],
   "gloss": "不斷更換的",
   "collocation": "making the ___ special exhibitions a highlight；ever- + 分詞（不斷…的）",
-  "explanation": "前面說一次只能展出一部分，這一格講特展因此不斷更換。易與 hidden 混淆，但藏起來的是石頭裡的化石，不是展覽。",
+  "explanation": "making the ___ special exhibitions a highlight，這一格夾在 the 與 special exhibitions 之間，要形容詞。ever-changing 你大概只讀成 ever 的「曾經」，但這一題考的是 ever- 當構詞前綴、後面接分詞，表示「不斷…的」：ever-growing、ever-increasing 同一型，ever 在這裡是「始終、不斷」。前一句說館藏太多、一次只展得出一部分，特展因此得輪流換檔。易與 hidden 混淆——hidden 也是形容詞，也擺得進同一個位置，但這一句說的是展覽一直在換，不是展覽被藏起來。",
   "accuracyRate": 36,
   "discrimination": 65,
   "contextSpan": "句內"
@@ -1165,7 +1165,7 @@
   ],
   "gloss": "藝術的",
   "collocation": "a completely satisfying ___ experience；an artistic experience／style",
-  "explanation": "這一格形容戶外空間帶來的體驗，指的是藝術上的。易與 hidden 混淆，但隱藏的形容不出一場體驗。",
+  "explanation": "a completely satisfying ___ experience，這一格夾在 satisfying 與 experience 之間，要形容詞，修飾的是 experience。artistic 你大概只讀成「有藝術天分的」（an artistic child），但這一題考的是它的另一個意思：屬於藝術的、藝術上的。這一段說遊客本以為要看館內的作品，結果發現建築本身就是作品，所以人待在戶外也構成一次完整的藝術體驗。易與 surprised 混淆——surprised 是 -ed 分詞形容詞，形容的是人的感受（visitors are surprised），修飾不了 experience 本身；要修飾事物得用 -ing 那一邊，說 a surprising experience。",
   "accuracyRate": 39,
   "discrimination": 62,
   "contextSpan": "跨句"
@@ -1952,7 +1952,7 @@
   ],
   "gloss": "異國風味的、奇特的",
   "collocation": "other ___ Asian foods；exotic food／places（異國食物、地方）",
-  "explanation": "後面舉的雞爪與蛇羹在外國旅客眼中都很獵奇。易與 appetizing 混淆，但誘人食慾與這幾樣給人的印象正好相反。",
+  "explanation": "other ___ Asian foods，這一格夾在 other 與 Asian foods 之間，要形容詞。exotic 你大概只讀成「異國情調的」，帶著度假風的浪漫（exotic beaches）；但這一題考的是它的另一面：在外地人眼中新奇、少見、不熟悉。這一句的立足點是 travelers，皮蛋和後面舉的那兩樣，在他們眼裡都屬於沒見過的東西。易與 appetizing 混淆——appetizing 也是形容詞，也擺得進同一個位置，但它說的是「看了就想吃」；這一句是從外地旅客的陌生感在寫，不是在誇這些食物誘人。",
   "accuracyRate": 35,
   "discrimination": 48,
   "contextSpan": "句內"
@@ -2332,7 +2332,7 @@
   ],
   "gloss": "（動詞）繼任、接替",
   "collocation": "to eventually ___ him as puppet masters；succeed sb as sth（接替某人）",
-  "explanation": "succeed 你大概只記得成功，但它當及物動詞是繼任、接替，後面接 as 帶出職位。易與 conduct 混淆，但指揮的受詞是樂團，接不上 as。",
+  "explanation": "to eventually ___ him as puppet masters，to 後面要原形動詞，而且動詞後面直接跟受詞 him，這一格要的是及物動詞。succeed 你大概只讀成不及物的「成功」，記的是 succeed in doing sth；但這一題考的是它當及物動詞：接替、繼任，succeed sb as sth。這一句說師父訓練兒子日後接下他的位子，as puppet masters 帶出的正是接替之後的職稱。易與 worship 混淆——worship 也是及物動詞，也接得上 him，但它講的是敬拜、崇拜；徒弟接的是師父的位子，不是把師父當神明拜，而且敬拜也接不上 as ＋職稱這個結構。",
   "accuracyRate": null,
   "discrimination": null,
   "contextSpan": "句內"
@@ -2400,7 +2400,7 @@
   ],
   "gloss": "敬拜、崇拜",
   "collocation": "is to ___ and offer thanks；worship a deity（敬拜神明），為及物動詞",
-  "explanation": "worship 是及物動詞，受詞就是後面的神明，與 offer thanks 並列。易與 conduct 混淆，但指揮的對象是樂師，不是神明。",
+  "explanation": "is to ___ and offer thanks to the deities，to 後面要原形動詞，而且這一格與 offer 並列，要一個和「答謝神明」並得起來的動作。worship 你大概只讀成名詞「崇拜、禮拜」，記的是 a place of worship；但這一題考的是它當及物動詞：敬拜，受詞就是後面的神明。整段講布袋戲多在酬神場合演出，這一句正是說明它的主要目的。易與 conduct 混淆——conduct 也是及物動詞，也擺得進 to 後面，但它的受詞是活動或事務（conduct a survey、conduct a ceremony），神明是敬拜的對象，不是被執行的事情。",
   "accuracyRate": null,
   "discrimination": null,
   "contextSpan": "句內"
@@ -4391,7 +4391,7 @@
   ],
   "gloss": "（動詞）繼任、接替",
   "collocation": "to eventually ___ him as puppet masters；succeed sb as sth（接替某人）",
-  "explanation": "succeed 你大概只記得成功，但它當及物動詞是繼任、接替，後面接 as 帶出職位。易與 conduct 混淆，但指揮的受詞是樂團，接不上 as。",
+  "explanation": "to eventually ___ him as puppet masters，to 後面要原形動詞，而且動詞後面直接跟受詞 him，這一格要的是及物動詞。succeed 你大概只讀成不及物的「成功」，記的是 succeed in doing sth；但這一題考的是它當及物動詞：接替、繼任，succeed sb as sth。這一句說師父訓練兒子日後接下他的位子，as puppet masters 帶出的正是接替之後的職稱。易與 worship 混淆——worship 也是及物動詞，也接得上 him，但它講的是敬拜、崇拜；徒弟接的是師父的位子，不是把師父當神明拜，而且敬拜也接不上 as ＋職稱這個結構。",
   "accuracyRate": 29,
   "discrimination": 50,
   "contextSpan": "句內"
@@ -4459,7 +4459,7 @@
   ],
   "gloss": "敬拜、崇拜",
   "collocation": "is to ___ and offer thanks；worship a deity（敬拜神明），為及物動詞",
-  "explanation": "worship 是及物動詞，受詞就是後面的神明，與 offer thanks 並列。易與 conduct 混淆，但指揮的對象是樂師，不是神明。",
+  "explanation": "is to ___ and offer thanks to the deities，to 後面要原形動詞，而且這一格與 offer 並列，要一個和「答謝神明」並得起來的動作。worship 你大概只讀成名詞「崇拜、禮拜」，記的是 a place of worship；但這一題考的是它當及物動詞：敬拜，受詞就是後面的神明。整段講布袋戲多在酬神場合演出，這一句正是說明它的主要目的。易與 conduct 混淆——conduct 也是及物動詞，也擺得進 to 後面，但它的受詞是活動或事務（conduct a survey、conduct a ceremony），神明是敬拜的對象，不是被執行的事情。",
   "accuracyRate": 30,
   "discrimination": 53,
   "contextSpan": "句內"
@@ -7091,7 +7091,7 @@
   ],
   "gloss": "（形容詞）頂尖的、居領導地位的",
   "collocation": "one of the ___ industrialists；a leading figure／company（頂尖人物、公司）",
-  "explanation": "這一格是形容詞修飾實業家，配合前面白手起家一路做到頂尖的敘述。易與 elaborate 混淆，但精緻繁複用來形容物件的設計，不形容人的地位。",
+  "explanation": "one of the ___ industrialists，one of the 後面接複數名詞，而這一格夾在 the 與 industrialists 之間，要形容詞。leading 你大概只讀成 lead 的現在分詞「正在帶領」，但這一題考的是它已經固化成形容詞：頂尖的、居領導地位的，a leading company、a leading figure 都是這個用法。前面說他出身貧農、一路做上來，這一格說的正是他最後站上的位置。易與 elaborate 混淆——elaborate 也是形容詞，也擺得進同一個位置，但它形容的是東西做得精緻繁複（an elaborate design），講的是物件的做工，說不了一個人在業界的地位。",
   "accuracyRate": 31,
   "discrimination": 60,
   "contextSpan": "句內"
@@ -7221,7 +7221,7 @@
   ],
   "gloss": "被提供",
   "collocation": "students are ___ the opportunity；offer sb sth（提供某人某物），此為被動",
-  "explanation": "offer 是授與動詞，offer sb sth 轉成被動後直接受詞留在後面，本句主詞正是學生。易與 applying 混淆，但那是學生主動爭取。",
+  "explanation": "students are ___ the opportunity，are 後面要過去分詞，可是分詞後面還跟著一個名詞 the opportunity——一般的被動句後面不會再留一個受詞。offer 你大概只讀成 offer sth to sb，但這一題考的是授與動詞的雙受詞被動：offer sb sth 有兩個受詞，把「人」提到主詞位置變成被動之後，另一個受詞就留在動詞後面，成為 students are offered the opportunity。這和國中學過的 I was given a book. 是同一個結構。易與 applying 混淆——applying 是現在分詞，are applying 會變成進行式、主詞成了主動去做的人；但 apply 當「申請」是不及物動詞，後面接不了 the opportunity 這個受詞。",
   "accuracyRate": 30,
   "discrimination": 51,
   "contextSpan": "句內"
