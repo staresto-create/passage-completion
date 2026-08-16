@@ -2469,7 +2469,7 @@
   ],
   "gloss": "（動詞）使風化、使老化",
   "collocation": "have slowly ___ the rock；age 此處為及物動詞，非名詞「年齡」",
-  "explanation": "age 在這裡是及物動詞，講風雨與人為接觸讓岩石老化。易與 measured 混淆，但測量是科學家修復時做的事，不是風雨做的。",
+  "explanation": "have slowly ___ the rock，have 後面要過去分詞，而且分詞後面直接跟著受詞 the rock，這一格要的是及物動詞。age 你大概只讀成名詞「年齡」，或形容詞 aged「年老的」，但這一題考的是它當及物動詞：使…老化、使…風化。主詞是風、水、汙染與人為接觸，受詞是那塊岩石——四千年來把石頭磨老的正是這些。易與 deteriorating 混淆——deteriorate 也講劣化、變壞，但它是不及物動詞，後面接不了 the rock 這個受詞。",
   "accuracyRate": 27,
   "discrimination": 49,
   "contextSpan": "句內"
@@ -4494,7 +4494,7 @@
   ],
   "gloss": "（名詞）未知的事物",
   "collocation": "open doors into the ___；the + 形容詞作名詞，the unknown（未知領域）",
-  "explanation": "看到 the 就想填名詞，是這一格最常失手的地方。the 加形容詞可以指一類人或一類事物，the rich、the poor 都是，這裡指的是未知的領域。易與 users 混淆，那正是名詞直覺。",
+  "explanation": "open doors into the ___，into 是介系詞、後面又有 the，這一格要的是名詞性的東西。unknown 你大概只讀成形容詞「未知的」，但這一題考的是「the ＋形容詞」當名詞用：the unknown 就是未知的領域，和 the rich、the poor 同一個結構。這一句四個並列的動作（表達情感、開門、造出沒見過的世界、帶你去沒人敢去的地方）講的都是文字把人帶到未曾抵達之處，這一格正是那個「處」。易與 users 混淆——users 也是名詞，也擺得進 the 後面，但它指的是人；門打開後通向的是一片領域，不是一群人。",
   "accuracyRate": 39,
   "discrimination": 58,
   "contextSpan": "句內"
@@ -4734,7 +4734,7 @@
   ],
   "gloss": "（名詞）媒介、表現形式",
   "collocation": "the power of this ___；a medium of communication（傳播媒介），複數為 media",
-  "explanation": "medium 你大概只記得中等，這裡是媒介、表現形式，複數不規則變成 media。易與 expense 混淆，但代價無法用 this 回指前面那個文類。",
+  "explanation": "the power of this ___，this 後面要一個單數可數名詞，回指同一句前半剛講的東西。medium 你大概只讀成形容詞「中等的」（medium size、medium rare），但這一題考的是它當名詞：媒介、表現形式。同一句前半說愈來愈多大人與年輕人在讀圖像小說，教育界看見的就是這個表現形式的力量；順帶記它的複數不規則，是 media。易與 expense 混淆——expense 也是名詞，也接得上 this，但它講的是代價、花費；圖像小說是一種表現形式，不是一筆代價，this 回指不到那個意思上。",
   "accuracyRate": 26,
   "discrimination": 37,
   "contextSpan": "句內"
@@ -6190,7 +6190,7 @@
   ],
   "gloss": "（動詞）影響",
   "collocation": "can be used to ___ what people buy；influence + wh- 子句（影響…）",
-  "explanation": "be used to + V 後面接原形，這一格再帶一個 wh- 子句當受詞。易與 persuades 混淆，但那要走 persuade + sb + to V，不能直接接子句。",
+  "explanation": "can be used to ___ what people buy，to 後面要原形動詞，而且這一格還得帶著 what people buy 這個 wh- 子句當受詞，要的是及物動詞。be used to 有三種讀法：used to ＋原形（前面沒有 be）＝以前…，現在不了；be used to ＋ V-ing 或名詞＝習慣於；be used to ＋原形＝use sth to do sth 的被動，被用來…。分辨要看主詞：這一句的主詞是 swarm intelligence，是被拿來用的工具，不是會養成習慣的人，所以是第三種，to 後面接原形。influence 你大概只讀成名詞「影響力」，記的是 have an influence on 這個字詞搭配；但這一題考的是它當及物動詞，直接接受詞、中間不加介系詞——influence what people buy。這正是它和中文「對…有影響」最不一樣的地方。易與 persuades 混淆——persuade 也是及物動詞，也講說服、影響，但它的字詞搭配是 persuade ＋ 人 ＋ to V，受詞必須是人，接不了一個 wh- 子句。",
   "accuracyRate": 35,
   "discrimination": 62,
   "contextSpan": "句內"
@@ -6384,7 +6384,7 @@
   ],
   "gloss": "強而有力的",
   "collocation": "is just as ___ on the Internet；as + 形容詞 + as（同樣地…）",
-  "explanation": "as + adj + as 中間要形容詞，說明這套心理學在網路上一樣管用。易與 likely 混淆，但有可能講的是機率，不能形容效力強弱。",
+  "explanation": "is just as ___ on the Internet，as ... as 中間只放原級，前面又是 be 動詞，這一格要形容詞。powerful 你大概只讀成「強壯的、有權力的」，但這一題考的是它形容效力：管用、發揮得出作用。整段講的是實體店裡那套心理戰法，這一句把場景換到網路上，說它一樣有效。易與 likely 混淆——likely 也是形容詞，也擺得進 as ... as 中間，但它講的是「可能會發生」，說的是機率；這一句要說的是這套手法的效力強弱，不是它發不發生。",
   "accuracyRate": 27,
   "discrimination": 55,
   "contextSpan": "句內"
