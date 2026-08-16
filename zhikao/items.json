@@ -126,7 +126,8 @@
   },
   "answer": "B",
   "categories": [
-   "字詞搭配"
+   "字詞搭配",
+   "句型結構"
   ],
   "gloss": "決定",
   "collocation": "can ___ which dialect is chosen；determine + wh- 子句（決定…）",
@@ -264,7 +265,8 @@
   },
   "answer": "D",
   "categories": [
-   "字詞搭配"
+   "字詞搭配",
+   "句型結構"
   ],
   "gloss": "困難",
   "collocation": "have little ___ communicating；have trouble + V-ing（做…有困難）",
@@ -299,7 +301,8 @@
   "answer": "H",
   "categories": [
    "字詞搭配",
-   "字彙選義"
+   "字彙選義",
+   "句型結構"
   ],
   "gloss": "（動詞）交談",
   "collocation": "can hardly ___ with each other；converse with sb（與某人交談）",
@@ -402,7 +405,8 @@
   },
   "answer": "K",
   "categories": [
-   "字詞搭配"
+   "字詞搭配",
+   "句型結構"
   ],
   "gloss": "懇求",
   "collocation": "His mother desperately ___ for his life；plead for sth（為…懇求）",
@@ -990,7 +994,8 @@
   },
   "answer": "L",
   "categories": [
-   "字詞搭配"
+   "字詞搭配",
+   "句型結構"
   ],
   "gloss": "上癮的",
   "collocation": "Some are even ___ to doing it；be addicted to + 名詞或動名詞",
@@ -1264,7 +1269,8 @@
   },
   "answer": "E",
   "categories": [
-   "字詞搭配"
+   "字詞搭配",
+   "句型結構"
   ],
   "gloss": "進口的",
   "collocation": "travertine, ___ from Italy；be imported from（自…進口）",
@@ -1674,7 +1680,8 @@
   },
   "answer": "F",
   "categories": [
-   "字詞搭配"
+   "字詞搭配",
+   "句型結構"
   ],
   "gloss": "獨占、壟斷",
   "collocation": "they had a ___ over the land；have a monopoly over／on sth（獨占）",
@@ -1777,7 +1784,8 @@
   },
   "answer": "D",
   "categories": [
-   "字詞搭配"
+   "字詞搭配",
+   "句型結構"
   ],
   "gloss": "追溯至、起源於",
   "collocation": "it ___ more than 500 years to…；date back to + 年代（追溯到）",
@@ -1914,7 +1922,8 @@
   },
   "answer": "I",
   "categories": [
-   "字詞搭配"
+   "字詞搭配",
+   "句型結構"
   ],
   "gloss": "以…為名、被稱作",
   "collocation": "also ___ many other names；go by the name of sth（以…之名為人所知）",
@@ -2051,7 +2060,8 @@
   "answer": "L",
   "categories": [
    "字詞搭配",
-   "字彙選義"
+   "字彙選義",
+   "句型結構"
   ],
   "gloss": "（名詞）喜愛、青睞",
   "collocation": "falling out of ___ with the younger set；fall out of favor with sb",
@@ -2362,7 +2372,8 @@
   },
   "answer": "G",
   "categories": [
-   "字詞搭配"
+   "字詞搭配",
+   "句型結構"
   ],
   "gloss": "（名詞複數）場合",
   "collocation": "on happy ___ such as weddings；on ... occasions（介系詞用 on）",
@@ -3047,7 +3058,8 @@
   },
   "answer": "J",
   "categories": [
-   "字詞搭配"
+   "字詞搭配",
+   "句型結構"
   ],
   "gloss": "警告",
   "collocation": "Medical scientists ___ that…；warn sb of／about sth；warn sb to V",
@@ -4421,7 +4433,8 @@
   },
   "answer": "G",
   "categories": [
-   "字詞搭配"
+   "字詞搭配",
+   "句型結構"
   ],
   "gloss": "（名詞複數）場合",
   "collocation": "on happy ___ such as weddings；on ... occasions（介系詞用 on）",
@@ -4626,7 +4639,8 @@
   },
   "answer": "A",
   "categories": [
-   "字詞搭配"
+   "字詞搭配",
+   "句型結構"
   ],
   "gloss": "（名詞）代價",
   "collocation": "taking over the world at the ___ of…；at the expense of sth（以…為代價）",
@@ -4799,11 +4813,12 @@
   },
   "answer": "F",
   "categories": [
-   "字詞搭配"
+   "字詞搭配",
+   "句型結構"
   ],
   "gloss": "提供",
-  "collocation": "Graphic novels ___ the opportunity；offer sb the opportunity to V（提供機會）",
-  "explanation": "offer the opportunity to V 是提供機會的固定句式。易與 gaining 混淆，但取得與提供方向相反，主詞是書本時說不通。",
+  "collocation": "Graphic novels ___ the opportunity；offer sb sth（提供某人某物）",
+  "explanation": "offer 是授與動詞，offer sb sth——空格後面先接「人」再接「物」，the opportunity 就是那個「物」。to examine 是接在 opportunity 後面的不定詞，不是接在空格後面。易與 gaining 混淆，但取得與提供方向相反，主詞是書本時說不通。",
   "accuracyRate": 69,
   "discrimination": 64,
   "contextSpan": "句內"
@@ -4960,7 +4975,8 @@
   "answer": "F",
   "categories": [
    "字詞搭配",
-   "語意連貫"
+   "語意連貫",
+   "句型結構"
   ],
   "gloss": "去除",
   "collocation": "textese users often ___ the vowels；remove sth from sth（從…去除）",
@@ -5024,7 +5040,8 @@
   },
   "answer": "C",
   "categories": [
-   "字詞搭配"
+   "字詞搭配",
+   "句型結構"
   ],
   "gloss": "（副詞）很可能",
   "collocation": "they most ___ mean…；most likely + 動詞（極可能…），此處非形容詞",
@@ -5219,7 +5236,8 @@
   },
   "answer": "D",
   "categories": [
-   "字詞搭配"
+   "字詞搭配",
+   "句型結構"
   ],
   "gloss": "感到羞愧的",
   "collocation": "feels ___ of their addiction；be ashamed of sth（以…為恥）",
@@ -5251,7 +5269,8 @@
   },
   "answer": "G",
   "categories": [
-   "字詞搭配"
+   "字詞搭配",
+   "句型結構"
   ],
   "gloss": "轉而訴諸",
   "collocation": "is prompted to ___ another purchase；turn to sth（轉而訴諸…）",
@@ -5315,7 +5334,8 @@
   },
   "answer": "E",
   "categories": [
-   "字詞搭配"
+   "字詞搭配",
+   "句型結構"
   ],
   "gloss": "彌補",
   "collocation": "used toys to ___ their loneliness；make up for sth（彌補…）",
@@ -5443,7 +5463,8 @@
   },
   "answer": "B",
   "categories": [
-   "字詞搭配"
+   "字詞搭配",
+   "句型結構"
   ],
   "gloss": "符合資格、算得上",
   "collocation": "8.9 percent of the population ___；qualify as sth（夠格稱為…）",
@@ -5605,7 +5626,8 @@
   },
   "answer": "E",
   "categories": [
-   "字詞搭配"
+   "字詞搭配",
+   "句型結構"
   ],
   "gloss": "協助",
   "collocation": "with the faithful ___ of his sister；with the assistance of sb（在某人協助下）",
@@ -5895,7 +5917,8 @@
   },
   "answer": "D",
   "categories": [
-   "字詞搭配"
+   "字詞搭配",
+   "句型結構"
   ],
   "gloss": "指導",
   "collocation": "under the ___ of a coach；under the guidance of sb（在某人指導下）",
@@ -5991,7 +6014,8 @@
   },
   "answer": "J",
   "categories": [
-   "字詞搭配"
+   "字詞搭配",
+   "句型結構"
   ],
   "gloss": "到極限",
   "collocation": "athletes push their bodies ___；push sth to the limit（推到極限）",
@@ -6023,7 +6047,8 @@
   },
   "answer": "I",
   "categories": [
-   "字詞搭配"
+   "字詞搭配",
+   "句型結構"
   ],
   "gloss": "面臨…的風險",
   "collocation": "may put a player ___ of replacement；put sb at risk of sth（使某人有…之虞）",
@@ -6218,7 +6243,8 @@
   },
   "answer": "C",
   "categories": [
-   "字詞搭配"
+   "字詞搭配",
+   "句型結構"
   ],
   "gloss": "有可能的",
   "collocation": "shoppers are ___ to choose it too；be likely to V（有可能做…）",
@@ -6412,7 +6438,8 @@
   },
   "answer": "H",
   "categories": [
-   "字詞搭配"
+   "字詞搭配",
+   "句型結構"
   ],
   "gloss": "隱私",
   "collocation": "Even in the ___ of your home；in the privacy of one's home（在自家隱密處）",
@@ -6444,7 +6471,8 @@
   },
   "answer": "A",
   "categories": [
-   "字詞搭配"
+   "字詞搭配",
+   "句型結構"
   ],
   "gloss": "（動詞）判給、授予",
   "collocation": "automatically ___ custody to the mother；award custody to sb（判給監護權）",
@@ -6637,7 +6665,8 @@
   },
   "answer": "C",
   "categories": [
-   "字詞搭配"
+   "字詞搭配",
+   "句型結構"
   ],
   "gloss": "在意的、關切的",
   "collocation": "being very ___ about their careers；be concerned about sth（在意、關切）",
@@ -6701,7 +6730,8 @@
   },
   "answer": "G",
   "categories": [
-   "字詞搭配"
+   "字詞搭配",
+   "句型結構"
   ],
   "gloss": "（名詞）增加",
   "collocation": "Because of the ___ in the divorce rate；an increase in sth（…的增加）",
@@ -6733,7 +6763,8 @@
   },
   "answer": "F",
   "categories": [
-   "字詞搭配"
+   "字詞搭配",
+   "句型結構"
   ],
   "gloss": "（動詞）爭取",
   "collocation": "have started to ___ for custody；fight for sth（爭取…）",
@@ -7768,7 +7799,8 @@
   },
   "answer": "D",
   "categories": [
-   "字詞搭配"
+   "字詞搭配",
+   "句型結構"
   ],
   "gloss": "活動時的樣子",
   "collocation": "The best time to see kangaroos ___；see sb／sth in action（看…實際活動）",
@@ -7960,7 +7992,8 @@
   },
   "answer": "A",
   "categories": [
-   "字詞搭配"
+   "字詞搭配",
+   "句型結構"
   ],
   "gloss": "熱衷的、積極的",
   "collocation": "aren't too ___ on making their way；be keen on sth（熱衷於）",
@@ -7992,7 +8025,8 @@
   },
   "answer": "E",
   "categories": [
-   "字詞搭配"
+   "字詞搭配",
+   "句型結構"
   ],
   "gloss": "納悶、想知道",
   "collocation": "Have you ever ___ why…；wonder why／whether + 子句（納悶為何）",
@@ -8090,7 +8124,8 @@
   },
   "answer": "D",
   "categories": [
-   "字詞搭配"
+   "字詞搭配",
+   "句型結構"
   ],
   "gloss": "熟悉的",
   "collocation": "need to be ___ those new words；be familiar with sth（熟悉某事物）",
@@ -8317,7 +8352,8 @@
   },
   "answer": "B",
   "categories": [
-   "字詞搭配"
+   "字詞搭配",
+   "句型結構"
   ],
   "gloss": "充滿…的",
   "collocation": "The computer industry is ___ young people；be full of sth（充滿）",
