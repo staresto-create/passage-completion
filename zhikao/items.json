@@ -200,7 +200,7 @@
   ],
   "gloss": "理解",
   "collocation": "if ___ is difficult or even impossible；reading comprehension（閱讀理解）",
-  "explanation": "前一句說彼此聽得懂，這一格是它的名詞說法，放在主詞位置。易與 trouble 混淆，但那要走 have trouble + in + V-ing。",
+  "explanation": "前一句說彼此聽得懂，這一格是它的名詞說法，放在主詞位置。易與 trouble 混淆，但那要走 have trouble (in) V-ing。",
   "accuracyRate": 48,
   "discrimination": 63,
   "contextSpan": "跨句"
@@ -269,8 +269,8 @@
    "句型結構"
   ],
   "gloss": "困難",
-  "collocation": "have little ___ communicating；have trouble + V-ing（做…有困難）",
-  "explanation": "have trouble／difficulty／fun／a good time + in + V-ing，in 常省略，動名詞其實是介系詞的受詞。這一格講溝通幾乎沒障礙。易與 comprehension 混淆，但那不屬於這一族。",
+  "collocation": "have little ___ communicating；have trouble (in) V-ing（做…有困難）",
+  "explanation": "have trouble (in) V-ing，difficulty 走同一個公式；括號表示 in 可省。不省時動名詞是 in 的受詞，這也是這裡不能改用 to V 的原因。have fun、have a good time 亦同型。這一格講溝通幾乎沒障礙。易與 comprehension 混淆，但那不屬於這一族。",
   "accuracyRate": 71,
   "discrimination": 60,
   "contextSpan": "句內"
