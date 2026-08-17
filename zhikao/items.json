@@ -306,7 +306,7 @@
   ],
   "gloss": "（動詞）交談",
   "collocation": "can hardly ___ with each other；converse with sb（與某人交談）",
-  "explanation": "converse 當動詞是交談，與 conversation 同源。易與 distinguish 混淆，但區分要接受詞，這裡後面只有 with each other。",
+  "explanation": "`converse with sb` 是與某人交談，與 conversation 同源，這一格後面正是 with each other。易與 distinguish 混淆，但區分要接受詞。",
   "accuracyRate": 48,
   "discrimination": 69,
   "contextSpan": "句內"
@@ -586,7 +586,7 @@
   ],
   "gloss": "特權、殊遇",
   "collocation": "As a result of this ___；grant sb a privilege（給予某人特權）",
-  "explanation": "這一格回指上一句那項特准，也就是他拿到的殊遇。易與 nickname 混淆，但綽號不會讓人寫得出兩本專書。",
+  "explanation": "`grant sb a privilege` 是給予某人特權。這一格回指上一句那項特准，也就是他拿到的殊遇。易與 nickname 混淆，但綽號不會讓人寫得出兩本專書。",
   "accuracyRate": 51,
   "discrimination": 81,
   "groupRates": [96, 83, 49, 18, 8],
@@ -1377,7 +1377,7 @@
   ],
   "gloss": "（名詞複數）探索之旅",
   "collocation": "These ___ are a must；an exploration of sth（對…的探索）",
-  "explanation": "這一格回指前一句的各種免費導覽，把它們收成一趟趟探索。易與 materials 混淆，但材料是第三段講建材時用的字。",
+  "explanation": "`an exploration of sth` 是對某物的探索。這一格回指前一句的各種免費導覽，把它們收成一趟趟探索。易與 materials 混淆，但材料是第三段講建材時用的字。",
   "accuracyRate": 48,
   "discrimination": 58,
   "contextSpan": "跨句"
@@ -1411,7 +1411,7 @@
   ],
   "gloss": "（名詞）供給量",
   "collocation": "increases the ___ of fish；increase／meet the supply of sth（增加、滿足供給）",
-  "explanation": "與前面的 quality 並列，這一格講的是供給量。易與 evidence 混淆，但證據不會用 increase 接 of fish 這樣講。",
+  "explanation": "`increase the supply of sth` 是增加某物的供給量，與前面的 quality 並列。易與 evidence 混淆，但證據不會用 increase 接 of fish 這樣講。",
   "accuracyRate": 52,
   "discrimination": 80,
   "contextSpan": "句內"
@@ -1858,7 +1858,7 @@
   ],
   "gloss": "混合物",
   "collocation": "eggs are added to the ___；a mixture of A and B（A 與 B 的混合物）",
-  "explanation": "前一段列了濃茶、石灰、鹽與草木灰，這一格就是那缸混合物。易與 delicacy 混淆，但佳餚是成品，不是拿來泡蛋的液體。",
+  "explanation": "`a mixture of A and B` 是 A 與 B 的混合物。前一段列了濃茶、石灰、鹽與草木灰，這一格就是那缸東西。易與 delicacy 混淆，但佳餚是成品，不是拿來泡蛋的液體。",
   "accuracyRate": 61,
   "discrimination": 62,
   "contextSpan": "跨句"
@@ -5339,7 +5339,7 @@
   ],
   "gloss": "彌補",
   "collocation": "used toys to ___ their loneliness；make up for sth（彌補…）",
-  "explanation": "這一格說孩子用玩具來補上孤單的缺口。易與 turn to 混淆，但轉而訴諸的受詞應該是玩具本身，而不是孤單這種感受。",
+  "explanation": "`make up for sth` 是彌補某物。這一格說孩子用玩具來補上孤單的缺口。易與 turn to 混淆，但轉而訴諸的受詞應該是玩具本身，而不是孤單這種感受。",
   "accuracyRate": 45,
   "discrimination": 50,
   "contextSpan": "句內"
@@ -6019,7 +6019,7 @@
   ],
   "gloss": "到極限",
   "collocation": "athletes push their bodies ___；push sth to the limit（推到極限）",
-  "explanation": "這一格說選手把身體逼到極限，才會有下一句的生涯終結風險。易與 at risk 混淆，但那要接 of 帶出風險的內容，語序也不合。",
+  "explanation": "`push sth to the limit` 是把某物推到極限。這一格說選手把身體逼到極限，才會有下一句的生涯終結風險。易與 at risk 混淆，但那要接 of 帶出風險的內容，語序也不合。",
   "accuracyRate": 56,
   "discrimination": 65,
   "contextSpan": "句內"
@@ -6248,7 +6248,7 @@
   ],
   "gloss": "有可能的",
   "collocation": "shoppers are ___ to choose it too；be likely to V（有可能做…）",
-  "explanation": "這一格說某樣商品看起來熱門，顧客就有可能跟著選。易與 informed 混淆，但知悉要接 about，而且那是下一句才登場的機制。",
+  "explanation": "`be likely to V` 是有可能做某事。商品看起來熱門，顧客就有可能跟著選。易與 informed 混淆，但知悉要接 about，而且那是下一句才登場的機制。",
   "accuracyRate": 54,
   "discrimination": 70,
   "contextSpan": "句內"
@@ -6443,7 +6443,7 @@
   ],
   "gloss": "隱私",
   "collocation": "Even in the ___ of your home；in the privacy of one's home（在自家隱密處）",
-  "explanation": "這一格說的是在自家這種最私密的地方也逃不掉。易與 satisfaction 混淆，但滿足感是上一段購物當下的感受，不是一個空間。",
+  "explanation": "`in the privacy of one's home` 是在自家隱密處。這一格說的是連在自家這種最私密的地方也逃不掉。易與 satisfaction 混淆，但滿足感是上一段購物當下的感受，不是一個空間。",
   "accuracyRate": 45,
   "discrimination": 74,
   "contextSpan": "句內"
@@ -6702,7 +6702,7 @@
   ],
   "gloss": "不尋常的",
   "collocation": "It is also not ___ to see men…；it is not unusual to V（並不罕見）",
-  "explanation": "前一句用了 not uncommon，這一格是同一個說法換個字再講一次。易與 traditional 混淆，但男性做這些事正好與傳統相反。",
+  "explanation": "`it is not unusual to V` 是做某事並不罕見。前一句用了 not uncommon，這一格是同一個說法換個字再講一次。易與 traditional 混淆，但男性做這些事正好與傳統相反。",
   "accuracyRate": 48,
   "discrimination": 77,
   "contextSpan": "跨句"
@@ -6961,7 +6961,7 @@
   ],
   "gloss": "產地、所在地",
   "collocation": "the main ___ of seaweed production；the location of sth（…的所在地）",
-  "explanation": "這一格說的是海菜主要的產地所在。易與 attractions 混淆，但那指吸引遊客之處，這裡談的是生產，且 the main 後面要接單數。",
+  "explanation": "`the location of sth` 是某物的所在地，這一格說的是海菜主要的產地。易與 attractions 混淆，但那指吸引遊客之處，這裡談的是生產，且 the main 後面要接單數。",
   "accuracyRate": 42,
   "discrimination": 72,
   "contextSpan": "句內"
@@ -7804,7 +7804,7 @@
   ],
   "gloss": "活動時的樣子",
   "collocation": "The best time to see kangaroos ___；see sb／sth in action（看…實際活動）",
-  "explanation": "這一格說的是看袋鼠實際活動的最佳時機，清晨與傍晚正是牠們動起來的時候。易與 snoozing 混淆，但打盹是下一句白天的事，剛好相反。",
+  "explanation": "`see sth in action` 是看某物實際活動。清晨與傍晚正是袋鼠動起來的時候。易與 snoozing 混淆，但打盹是下一句白天的事，剛好相反。",
   "accuracyRate": 49,
   "discrimination": 65,
   "contextSpan": "句內"
@@ -8357,7 +8357,7 @@
   ],
   "gloss": "充滿…的",
   "collocation": "The computer industry is ___ young people；be full of sth（充滿）",
-  "explanation": "產業裡都是年輕人，空格要的是表示充滿的組合。易與 familiar with 混淆，但那是人熟悉事物，主詞換成產業就說不通。",
+  "explanation": "`be full of sth` 是充滿某物。這一格的主詞是產業，裡面都是年輕人。易與 familiar with 混淆，但那是人熟悉事物，主詞換成產業就說不通。",
   "accuracyRate": 65,
   "discrimination": 53,
   "contextSpan": "句內"
