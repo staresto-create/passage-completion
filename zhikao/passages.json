@@ -147,7 +147,7 @@
   "macro": {
    "structure": "綱領展開型 — 以粵語的爭議提問開場 → 綱領：判準有兩種(全文中心思想) → 判準一：社會政治面 → 判準二：語言學的互通性 → 收尾：丹麥語與挪威語的例子",
    "transitions": "whereas（對比，兩者的社會地位）→ As a saying goes（引用，帶出那句名言）→ On the other hand（對比，互通有困難就算不同語言）→ though（讓步，客觀卻惹人不快）→ Yet（轉折，收在民族情感）",
-   "patterns": "論說文 (Argumentation) ＋ 分類論述 (Classification)",
+   "patterns": "論說文 (Argumentation) + 分類論述 (Classification)",
    "outline": [
     "1. 開場：粵語是漢語的方言，還是自成一種語言？",
     "2. 綱領：語言與方言的分界，有兩套判準",
@@ -318,7 +318,7 @@
   "macro": {
    "structure": "破除誤解型 — 介紹其人與那個叫法 → 點破：他養鳥的地方其實在移送之前(全文中心思想) → 回溯：死刑改判與獨自服刑 → 養鳥與著書的三十年 → 收尾：移送之後不准養鳥，手稿也未能出版",
    "transitions": "Despite（讓步，點破稱呼與事實的落差）→ Finally（時間，帶出改判）→ But because of（因果，說明獨自服刑的理由）→ While at Leavenworth（時間背景）→ As a result of（因果，帶出著書）→ Although（讓步，療效有爭論）",
-   "patterns": "記敘文 (Narrative) ＋ 人物側寫 (Profile)",
+   "patterns": "記敘文 (Narrative) + 人物側寫 (Profile)",
    "outline": [
     "1. 其人：美國囚犯，在獄中養鳥、賣鳥，後來成為鳥類學家",
     "2. 點破：他養鳥的地方，其實是移送惡魔島之前的那一座監獄",
@@ -490,7 +490,7 @@
   "macro": {
    "structure": "反差開場型 — 用途與價值：取代揉皺的報紙 → 一句反轉：發明的由來和大家想的不同(全文中心思想) → 失敗：本來要做的是壁紙 → 轉用：氣泡成了緩衝，IBM 帶動市場 → 延伸：捏氣泡成了紓壓",
    "transitions": "But（轉折，指出舊做法的缺點）→ However（轉折，帶出全文中心思想）→ Originally（時間回溯，交代原始構想）→ Meanwhile（同時，帶出 IBM 這個轉機）→ Besides（追加，轉入紓壓那一層）",
-   "patterns": "說明文 (Exposition) ＋ 現象解釋 (Phenomenon Explanation)",
+   "patterns": "說明文 (Exposition) + 現象解釋 (Phenomenon Explanation)",
    "outline": [
     "1. 價值：在它問世前，人們用揉成一團的報紙包裝，既凌亂又不好用",
     "2. 反轉：這項發明的由來，和大家想的不一樣",
@@ -671,7 +671,7 @@
   "macro": {
    "structure": "顛倒預期型 — 位置與規模：山頂上的十一棟建築群 → 翻轉：來看美術館，看到的是一件裝著美術館的藝術品(全文中心思想) → 建築本身與視野 → 石頭裡的化石 → 收尾：免費導覽",
    "transitions": "Today（時間轉折，帶出館藏過多、只能分批展出）→ instead（翻轉，點出全文中心思想）→ Working with（伴隨，帶出預算規模）→ And then, just when（時間巧合，製造驚喜感）→ In addition to（追加，補上導覽）",
-   "patterns": "說明文 (Exposition) ＋ 景物描寫 (Descriptive Writing)",
+   "patterns": "說明文 (Exposition) + 景物描寫 (Descriptive Writing)",
    "outline": [
     "1. 位置與規模：海拔超過八百英尺，纜車上山，十一棟建築構成的園區",
     "2. 翻轉：訪客以為要看美術館，看到的卻是一件裝著美術館的作品",
@@ -844,7 +844,7 @@
   "macro": {
    "structure": "價值加史述型 — 定義與價值：減輕野生魚的捕撈壓力(全文中心思想) → 上古：澳洲原住民與中國的早期做法 → 羅馬：海魚與牡蠣的池養 → 中世紀歐洲：淡水魚落入修道院與貴族手中",
    "transitions": "however（轉折，最早的文字記載其實在中國）→ When the waters subsided（時間條件，帶出洪水退後的取魚）→ In Europe（空間轉換，轉入羅馬）→ During the Middle Ages（時間推進）→ As with hunting（類比，與狩獵並論）",
-   "patterns": "說明文 (Exposition) ＋ 歷史敘述 (Historical Account)",
+   "patterns": "說明文 (Exposition) + 歷史敘述 (Historical Account)",
    "outline": [
     "1. 定義與價值：養殖水生動植物，可減輕野生魚被過度捕撈的壓力",
     "2. 上古：澳洲原住民養鰻可上推至西元前六千年；中國約西元前二五〇〇年已廣為採用",
@@ -1025,7 +1025,7 @@
   "macro": {
    "structure": "起源展開型 — 起源故事：農夫的偶然發現(全文中心思想) → 年代考據 → 製作過程與浸泡時間 → 別名、外觀與氣味 → 收尾：世代之間的接受度差很多",
    "transitions": "As the story goes（帶出傳說的口吻）→ Though（讓步，記載不全但仍可估算年代）→ And aside from（排除，區隔出大量生產的技術）→ Then（順序，帶出浸泡）→ But no matter what（讓步，轉入口味的討論）→ While（對比，收在世代差異）",
-   "patterns": "說明文 (Exposition) ＋ 過程描述 (Process Description)",
+   "patterns": "說明文 (Exposition) + 過程描述 (Process Description)",
    "outline": [
     "1. 起源：數百年前的中國農村，農夫在泥水與石灰中發現自然醃成的鴨蛋",
     "2. 年代：學者估計已有五百多年歷史，起源的細節並沒有留下記載",
@@ -1199,7 +1199,7 @@
   "macro": {
    "structure": "定義展開型 — 開篇定義：布袋戲是台灣重要的表演藝術(全文中心思想) → 後場音樂與鼓師的角色 → 兩位演師的分工與師徒關係 → 演出時機與用意",
    "transitions": "Although（讓步，戲偶雖為掌中操作卻做成完整形體）→ He also（並列，鼓師的第二項職責）→ In general（總說，帶出演師人數）→ Frequently（頻率，帶出師徒傳承）",
-   "patterns": "說明文 (Exposition) ＋ 文化介紹 (Cultural Introduction)",
+   "patterns": "說明文 (Exposition) + 文化介紹 (Cultural Introduction)",
    "outline": [
     "1. 定義與外形：台灣重要的表演藝術；戲偶雖為掌中操作，卻有手有腳",
     "2. 後場：約四到五位樂師，由鼓師帶頭，音樂跟著劇情與角色節奏走",
@@ -1371,7 +1371,7 @@
   "macro": {
    "structure": "議題陳列型 — 介紹與現況：守望四千年的獅身人面像正在受損 → 修復工法：記錄、編號、手工雕鑿、逐塊替換 → 保護構想的各種提案 → 收尾：方法談不攏，但「必須有所作為」是共識(全文中心思想)",
    "transitions": "Nevertheless（轉折，從國家象徵翻到受損現況）→ however（轉折，點出修復不易）→ Then, one by one（順序，帶出逐塊替換）→ or perhaps（並列，列出另一種提案）→ not to mention（遞進，難度再加一層）",
-   "patterns": "說明文 (Exposition) ＋ 問題解決 (Problem-Solution)",
+   "patterns": "說明文 (Exposition) + 問題解決 (Problem-Solution)",
    "outline": [
     "1. 現況：獅身人面像守望金字塔四千年，風、水、污染與人的碰觸已使岩石受損",
     "2. 修復：動工前需要好幾年的前置作業，每塊石頭都仔細記錄、編號",
@@ -1525,7 +1525,7 @@
   "macro": {
    "structure": "先斷後證型 — 開篇下判斷：二十世紀最慘重的健康危機之一(全文中心思想) → 數據佐證：九個月內超過六十萬美國人死亡 → 兩波疫情與擴散途徑 → 第二段：專家的預警與年度疫苗建議",
    "transitions": "making（分詞結果，帶出與戰爭本身的對比）→ The first wave…The second wave（並列，兩波對照）→ As（伴隨，人員流動同時帶著病毒）→ In fact（補充，與歷來疫病相比）→ Therefore（因果，收在建議）",
-   "patterns": "說明文 (Exposition) ＋ 因果分析 (Cause and Effect)",
+   "patterns": "說明文 (Exposition) + 因果分析 (Cause and Effect)",
    "outline": [
     "1. 判斷：一九一八年流感是二十世紀最慘重的健康危機之一",
     "2. 規模：一九一八年九月到一九一九年六月，超過六十萬美國人死於流感與肺炎",
@@ -1686,7 +1686,7 @@
   "macro": {
    "structure": "信念展開型 — 溯源至唐代 → 立下前提：另一個世界是人間的鏡像(全文中心思想) → 家屬的心意與紙紮的內容 → 今昔對照：從專賣店到網路",
    "transitions": "while（對比，隨葬與焚燒兩種送達方式）→ so（因果，家屬心意決定紙紮的規格）→ For example（舉例，說明過去的做法）→ Now（時間轉折，帶出今昔對照）→ It seems that（收束，下一個總結性的判斷）",
-   "patterns": "說明文 (Exposition) ＋ 今昔對比 (Then and Now)",
+   "patterns": "說明文 (Exposition) + 今昔對比 (Then and Now)",
    "outline": [
     "1. 溯源：華人社會焚燒紙錢與紙紮的習俗，可上溯至唐代",
     "2. 前提：人過世後肉身死亡，另一個世界是人間的一面鏡子",
@@ -1866,7 +1866,7 @@
   "macro": {
    "structure": "懸念後解型 — 現象：零下十五度仍有四千人上門 → 體感細節：床頭蠟燭、鼻尖發麻、半夜起身的難處 → 行前說明：該穿什麼、該怎麼做 → 戶外熱水池與睡前提醒 → 最後才給出理由(全文中心思想)",
    "transitions": "Despite（讓步，聽來毫不吸引人卻仍有人前往）→ so…that（因果，冷到看得見自己吐出的白氣）→ Since（因果，帶出行前說明的理由）→ though（讓步，提醒睡前別出汗）→ however（轉折，收在真正的理由）",
-   "patterns": "說明文 (Exposition) ＋ 懸念解答 (Question and Answer)",
+   "patterns": "說明文 (Exposition) + 懸念解答 (Question and Answer)",
    "outline": [
     "1. 現象：明明是零下十五度的房間，每年仍有約四千人上門",
     "2. 體感：唯一溫暖的是床頭蠟燭；鼻尖發麻，半夜起身簡直像在拚命",
@@ -2030,7 +2030,7 @@
   "macro": {
    "structure": "先技術後翻轉型 — 第一段：CD 的三層構造與正反兩面 → 第二段：CD 之前的儲存方式有什麼毛病 → 取樣原理：把聲音變成數字 → 收束：CD 上其實沒有音樂 → 第三段：三十多年後仍然普及",
    "transitions": "Finally（順序，帶出第三層）→ Before CDs were（時間回溯）→ In fact（補充比較）→ After the music has been recorded（時間承接，帶出取樣）→ In other words（換句話說，收束全段）→ Although（讓步收尾）",
-   "patterns": "說明文 (Exposition) ＋ 過程描述 (Process Description)",
+   "patterns": "說明文 (Exposition) + 過程描述 (Process Description)",
    "outline": [
     "1. 構造：直徑約十二公分，塑膠基底、一層薄鋁、最上面一層拋光",
     "2. 兩面：亮的一面供雷射讀取，霧的一面印著內容說明",
@@ -2202,7 +2202,7 @@
   "macro": {
    "structure": "定義展開型 — 開篇定義：布袋戲是台灣重要的表演藝術(全文中心思想) → 後場音樂與鼓師的角色 → 兩位演師的分工與師徒關係 → 演出時機與用意",
    "transitions": "Although（讓步，戲偶雖為掌中操作卻做成完整形體）→ He also（並列，鼓師的第二項職責）→ In general（總說，帶出演師人數）→ Frequently（頻率，帶出師徒傳承）",
-   "patterns": "說明文 (Exposition) ＋ 文化介紹 (Cultural Introduction)",
+   "patterns": "說明文 (Exposition) + 文化介紹 (Cultural Introduction)",
    "outline": [
     "1. 定義與外形：台灣重要的表演藝術；戲偶雖為掌中操作，卻有手有腳",
     "2. 後場：約四到五位樂師，由鼓師帶頭，音樂跟著劇情與角色節奏走",
@@ -2365,7 +2365,7 @@
   "macro": {
    "structure": "頌轉例外型 — 第一段：文字的力量與說故事者的地位 → But 轉折：視覺文化壓過文字(全文中心思想) → 第三段再轉：圖像小說是唯一的例外 → 收尾：可用來培養視覺識讀",
    "transitions": "Therefore（因果，帶出說故事者受敬重的理由）→ But now（轉折，全文的分水嶺）→ In a triumphant march（比喻，形容影像的推進）→ In fact（補充，強化圖像小說的分量）",
-   "patterns": "說明文 (Exposition) ＋ 對比論述 (Contrast)",
+   "patterns": "說明文 (Exposition) + 對比論述 (Contrast)",
    "outline": [
     "1. 文字的力量：表達情感、造出從未見過的世界、帶來不敢想的冒險",
     "2. 轉折：想像力被即時影像超越，電影、電視與 DVD 大舉推進",
@@ -2518,11 +2518,11 @@
    }
   ],
   "thesis": "“The emergence of textese is clearly due to a desire to type less and to communicate more ___ than one can manage without such shortcuts.”",
-  "thesisExplain": "前兩段講的是「是什麼」與「怎麼寫」，第三段第一句才回答「為什麼會有」——中心思想在這裡，關鍵落在第 28 格。這一格前面是 communicate、後面接 than，more ＋ 修飾語 ＋ than 這一整組把詞性框死，要填的是修飾動詞的副詞；只想到「快」這個意思，沒注意到這組結構，就會挑到形容詞。緊接著的 Yet 一轉，把整篇從「為什麼會出現」推到「代價是什麼」，第 29 與第 30 格全落在反面那一半。寫作上這是「先給理由、再給反面」的收法，論點才不會只有一邊。",
+  "thesisExplain": "前兩段講的是「是什麼」與「怎麼寫」，第三段第一句才回答「為什麼會有」——中心思想在這裡，關鍵落在第 28 格。這一格前面是 communicate、後面接 than，more + 修飾語 + than 這一整組把詞性框死，要填的是修飾動詞的副詞；只想到「快」這個意思，沒注意到這組結構，就會挑到形容詞。緊接著的 Yet 一轉，把整篇從「為什麼會出現」推到「代價是什麼」，第 29 與第 30 格全落在反面那一半。寫作上這是「先給理由、再給反面」的收法，論點才不會只有一邊。",
   "macro": {
    "structure": "現象解釋型 — 定義 textese 並說明它為何四處可見 → 寫法：字母、圖形、數字表示整字，並只留子音 → 成因：想少打字、少花時間(全文中心思想) → Yet 轉折：學者的疑慮",
    "transitions": "though（讓步，補上簡訊以外的使用場合）→ However（轉折，帶出實際的通行做法）→ For example（舉例）→ Thus（結果，示範只留子音的寫法）→ Yet（轉折，從成因翻到反面意見）",
-   "patterns": "說明文 (Exposition) ＋ 現象解釋 (Phenomenon Explanation)",
+   "patterns": "說明文 (Exposition) + 現象解釋 (Phenomenon Explanation)",
    "outline": [
     "1. 定義：textese 是年輕人常用的縮寫與俚語，起因於簡訊必須簡短",
     "2. 寫法：以單一字母、圖形或數字表示整個字；沒有通用寫法時只留子音",
@@ -2670,7 +2670,7 @@
   "macro": {
    "structure": "定義展開型 — 開篇為 Oniomania 下定義(全文中心思想) → 現象：購買當下與事後的心理循環 → 追溯童年經驗 → 數據收尾：約 8.9% 的美國人，男女比例相近",
    "transitions": "Once（時間條件，帶出情緒的轉折）→ To compensate（目的，說明再次購物的理由）→ For example（舉例佐證）→ As a result（因果，從童年推進到成年）→ According to studies（數據佐證）",
-   "patterns": "說明文 (Exposition) ＋ 因果分析 (Cause and Effect)",
+   "patterns": "說明文 (Exposition) + 因果分析 (Cause and Effect)",
    "outline": [
     "1. 定義：Oniomania 指強迫性的購物慾望，俗稱購物成癮",
     "2. 現象：購買當下彷彿人生有了意義，一旦不在那個場景，獎賞感就消失",
@@ -2808,7 +2808,7 @@
   "macro": {
    "structure": "先判後證型 — 開篇下判斷：業餘天文學家的典範(全文中心思想) → 本業與副業的對照 → 自製器材與家人相伴 → 發現與紀錄：星雲清單與獵戶座大星雲 → 收尾：一七八一年那則「疑似彗星」的紀錄",
    "transitions": "first…then（時間推進，交代音樂本業的兩段經歷）→ In the course of（時間背景，帶出關鍵發現）→ Since（因果，說明判斷的依據）→ i.e.（補充定義，解釋星雲是什麼）",
-   "patterns": "記敘文 (Narrative) ＋ 人物側寫 (Profile)",
+   "patterns": "記敘文 (Narrative) + 人物側寫 (Profile)",
    "outline": [
     "1. 判斷：業餘天文學家心中的典範，非 William Herschel 莫屬",
     "2. 對照：樂團樂手與音樂教師，入夜後看星星，天候不許可就磨鏡片",
@@ -2954,7 +2954,7 @@
   "macro": {
    "structure": "先立後轉型 — 第一段：比賽本身(戰術、規則、項目類型、層級) → 第二段首句轉折：當運動員不只是上場比賽(全文中心思想) → 展開：教練陪練、影片研究、體能訓練、傷病風險、賽季飲食",
    "transitions": "When playing a game（情境設定）→ The level of play varies from…to（層級對比）→ involves more than（轉折，把範圍推開）→ not only…but also（並列兩個目的）→ Because（因果，解釋長年訓練的理由）",
-   "patterns": "說明文 (Exposition) ＋ 職業描述 (Occupational Description)",
+   "patterns": "說明文 (Exposition) + 職業描述 (Occupational Description)",
    "outline": [
     "1. 比賽面：戰術與規則都要掌握，項目分成兩大類",
     "2. 層級：從沒有酬勞的高中校隊，到國際電視轉播的最高層級",
@@ -3110,7 +3110,7 @@
   "macro": {
    "structure": "一句定調型 — 開篇即下判斷：逛超市是一場心理戰(全文中心思想) → 舉證一：氣味與陳列高度 → 舉證二：群體智慧與貨架螢幕 → 延伸：同一套心理學搬到網路",
    "transitions": "Stocking…helps（並列，帶出第二項手法）→ The idea is that（說明原理）→ With the help of modern technology（帶出新手法）→ As it turns out（結果揭曉）→ The reason is simple（解釋原因）→ Even in（讓步收尾）",
-   "patterns": "說明文 (Exposition) ＋ 主張舉證 (Claim and Evidence)",
+   "patterns": "說明文 (Exposition) + 主張舉證 (Claim and Evidence)",
    "outline": [
     "1. 定調：上一趟超市已經是一場心理戰",
     "2. 手法一：現烤麵包的香氣讓人覺得餓，以及把某些商品擺在視線高度",
@@ -3276,7 +3276,7 @@
   "macro": {
    "structure": "因果推演型 — 現象與舊慣例(離婚時監護權多半歸母親) → 舊慣例開始鬆動 → 追溯成因：六〇、七〇年代的社會變遷 → 結果：取得監護權的父親變多(全文中心思想)",
    "transitions": "However（轉折，帶出舊慣例的鬆動）→ nevertheless（讓步，理論與現實仍有落差）→ This legal change was the result of（明示因果的接點）→ It is also（並列，補上另一半的角色鬆動）→ Because of（總結三項原因，帶出結論）",
-   "patterns": "說明文 (Exposition) ＋ 因果分析 (Cause and Effect)",
+   "patterns": "說明文 (Exposition) + 因果分析 (Cause and Effect)",
    "outline": [
     "1. 現象：美國離婚率高，子女監護權成為社會議題",
     "2. 轉變：理論上改看誰更適任，實際上母親仍多半勝出",
@@ -3434,7 +3434,7 @@
   "macro": {
    "structure": "明喻框架型 — 以珍珠明喻開場並交代位置(hook) → 點出沙灘與水下景觀是全文重心(全文中心思想) → 逐項展開：人跡罕至的島嶼、玄武岩地景、生態與賞鳥、石柱 → 以另一個明喻收尾，前後呼應",
    "transitions": "Like pearls（明喻破題）→ Among…only 20（縮小範圍）→ For instance（舉例）→ Like Gupo Island（類比承接第二座島）→ In addition（追加，補上石柱地景）→ Like gifts from God（明喻收尾，呼應開頭）",
-   "patterns": "說明文 (Exposition) ＋ 景物描寫 (Descriptive Writing)",
+   "patterns": "說明文 (Exposition) + 景物描寫 (Descriptive Writing)",
    "outline": [
     "1. 開場：以珍珠明喻帶出澎湖位在台灣海峽西南方，由上百座島嶼組成",
     "2. 主旨：全文重心落在寬闊沙灘與水下景觀",
@@ -3591,7 +3591,7 @@
   "macro": {
    "structure": "問題解決型 — 創辦人的出身與憂慮(問題：年輕人對企業運作一無所知) → 一句話定義這個組織(全文中心思想) → 學生實際在做的事 → 規模差異：從大城市到小鎮",
    "transitions": "who had been（插入補述，帶出創辦人的出身）→ As a solution to this problem（明示問題與解答的接點）→ In essence（下定義，帶出全文中心思想）→ Some…Others（並列，展開實作內容）→ range in size from…to（範圍對比，收在規模差異）",
-   "patterns": "說明文 (Exposition) ＋ 問題解決 (Problem-Solution)",
+   "patterns": "說明文 (Exposition) + 問題解決 (Problem-Solution)",
    "outline": [
     "1. 緣起：創辦人出身貧農之家，憂心年輕人對企業運作一無所知",
     "2. 定義：讓高中生還在學就參與公司營運的組織",
@@ -3757,7 +3757,7 @@
   "macro": {
    "structure": "預告式清單型 — 開放觀光的時間點(hook) → 一句列出自然、動物、政體三項(全文中心思想) → 地理與物種 → 宗教生活 → 旅人提醒",
    "transitions": "Since then（時間承接，帶出開放之後的樣貌）→ Bordered by（補述地理位置）→ To celebrate（目的，帶出宗教實踐）→ Moreover（追加，補上第二項提醒）",
-   "patterns": "說明文 (Exposition) ＋ 清單展開 (List Expansion)",
+   "patterns": "說明文 (Exposition) + 清單展開 (List Expansion)",
    "outline": [
     "1. 開場：1974 年開放觀光，國王於 1972 年獲選",
     "2. 地理與物種：國土約一萬八千平方英里，紅貓熊、藍羊、麝鹿",
@@ -3911,11 +3911,11 @@
    }
   ],
   "thesis": "“There are more than 50 different kinds of kangaroos in the world today.”",
-  "thesisExplain": "這篇沒有一句「明講」的中心思想，是典型的動物說明文，三段各講一個主題：體型與作息、小袋鼠怎麼長大、名字的由來。開頭這句先給讀者一個量的概念，後面才逐項展開，所以標它為代表句。全篇的難處不在結構而在字：第 31 格考副詞放在動詞前面的位置，第 33 格考 spend＋時間＋動名詞這一整組句型，第 37 格是介系詞片語當副詞用。三題都在空格所在句裡就能解決，回頭翻前後文幫不上忙。寫作上，分項說明最容易寫成流水帳，本文靠一隻五十磅重卻還賴著不走的小袋鼠撐住讀者的注意力。",
+  "thesisExplain": "這篇沒有一句「明講」的中心思想，是典型的動物說明文，三段各講一個主題：體型與作息、小袋鼠怎麼長大、名字的由來。開頭這句先給讀者一個量的概念，後面才逐項展開，所以標它為代表句。全篇的難處不在結構而在字：第 31 格考副詞放在動詞前面的位置，第 33 格考 spend + 時間 + 動名詞這一整組句型，第 37 格是介系詞片語當副詞用。三題都在空格所在句裡就能解決，回頭翻前後文幫不上忙。寫作上，分項說明最容易寫成流水帳，本文靠一隻五十磅重卻還賴著不走的小袋鼠撐住讀者的注意力。",
   "macro": {
    "structure": "分項說明型 — 體型與作息(第一段) → 育兒過程：從出生到獨立(第二段) → 名稱由來的傳說(第三段，以問句帶出)",
    "transitions": "Straight after（時間起點，出生的那一刻）→ After that（時間推進，離開母親之後）→ Sometimes（轉入例外情況）→ for example（舉例佐證）→ according to one story（帶出傳說，語氣保留）",
-   "patterns": "說明文 (Exposition) ＋ 過程描述 (Process Description)",
+   "patterns": "說明文 (Exposition) + 過程描述 (Process Description)",
    "outline": [
     "1. 體型與作息：五十多種，五公分到兩公尺，傍晚與清晨才活動",
     "2. 育兒：出生僅約兩公分半，循著母袋鼠毛髮的紋路找到路",
@@ -4081,7 +4081,7 @@
   "macro": {
    "structure": "提問破題型 — 兩種相反的讀者(hook) → 點出電腦新詞是學好英文躲不掉的一環(全文中心思想) → 理由一：多數語言早有形式相近的說法 → 理由二：造詞本身好記 → 收尾：詞語背後的電腦文化",
    "transitions": "Luckily（承接，帶出「好學」這個主張）→ Another reason（並列，帶出第二項理由）→ such as（舉例）→ rather than（對比）→ in favor of（取捨對比，收在文風上）",
-   "patterns": "說明文 (Exposition) ＋ 原因列舉 (Reason Enumeration)",
+   "patterns": "說明文 (Exposition) + 原因列舉 (Reason Enumeration)",
    "outline": [
     "1. 破題：以兩種相反的讀者提問開場，帶出電腦新詞躲不掉",
     "2. 理由一：多數語言早有形式相近的說法（德文、西班牙文、日文為例）",

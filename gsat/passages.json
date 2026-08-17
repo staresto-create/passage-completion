@@ -237,7 +237,7 @@
   "thesisExplain": "酒窩人人愛，這篇偏要從另一個角度講。全文的中心思想落在這一句，關鍵在第 33 格：前面先鋪「酒窩＝好看」這個大家都同意的說法，Though 一轉，整篇對酒窩的定調就換了；這一格填什麼，定調就是什麼。位置上，它夾在 a genetic ___ caused by 中間，前面是冠詞加形容詞、後面是過去分詞片語，詞性就這樣固定下來，剩下才是挑意思。往下讀，dimples、such dimples、they 這條隱形連結，加上 In fact、though、for、As 幾個轉承點，就是後兩段（嬰兒肥消掉就跟著不見的那種、後天做出來的那種）扣回主旨的方式。寫作上這個骨架直接搬得動：先寫大家普遍怎麼想，再用一句轉折立自己的主張，後面每段回頭扣它。86 年學測問你同不同意 Laughter is better than medicine，用的就是這一招。",
   "macro": {
    "structure": "先破後立型 — 普遍認知(hook) → Though轉折點出科學真相 → 補充例外情況 → 提出解決方案",
-   "patterns": "現象解釋 (Phenomenon Explanation) ＋ 問題解決 (Problem-Solution)",
+   "patterns": "現象解釋 (Phenomenon Explanation) + 問題解決 (Problem-Solution)",
    "transitions": "Though（讓步轉折，帶出全文中心思想）→ In fact（補充具體研究細節）→ though（第二段再次讓步轉折，帶出例外）→ for（因果說明）→ As（伴隨時間關係）",
    "outline": [
     "1. 現象定義與文化觀感（酒窩罕見／被視為吸引力象徵）",
@@ -469,7 +469,7 @@
   "macro": {
    "structure": "生活軼事型 — 現象鋪陳(健忘的困擾) → though轉折(健忘的意外優點) → 舉例佐證(鄰居信任) → 溫馨收尾(唯一不忘的事)",
    "transitions": "for（因果，×2）→ But（對比，×2）→ though（讓步轉折，帶出全文中心思想）→ Because of（因果）",
-   "patterns": "記敘文 (Narrative) ＋ 因果關係 (Cause-Effect)",
+   "patterns": "記敘文 (Narrative) + 因果關係 (Cause-Effect)",
    "outline": [
     "1. 引言：父親婚後開始健忘，連結婚紀念日都記錯",
     "2. 例子：買菜清單記憶錯亂的生活趣事",
@@ -689,7 +689,7 @@
   "macro": {
    "structure": "多方並陳型 — 提出核心懸念(起源眾說紛紜) → 說法一(中國起義傳說，but轉折指出證據不足) → 說法二(David Jung慈善說) → 說法三(Hagiwara主流公認版本，However標示最終採信對象)",
    "transitions": "however（開頭：懸念鋪陳）→ but（說法一：可信但無證據）→ Another（說法二起始，並列標記）→ However（說法三起始，標示「更普遍被接受」）→ but（Hagiwara改編：日式點心→美式口味）",
-   "patterns": "說明文 (Expository) ＋ 比較對比 (Compare/Contrast)",
+   "patterns": "說明文 (Expository) + 比較對比 (Compare/Contrast)",
    "outline": [
     "1. 引言：幸運餅乾起源眾說紛紜，無一被證實",
     "2. 說法一：中國元朝抗蒙起義藏字條傳說(可信但無實證)",
@@ -900,11 +900,11 @@
    }
   ],
   "thesis": "“no culture ___ onions quite as much as the ancient Egyptians”",
-  "thesisExplain": "洋蔥在古代到處都有人吃，但把它一路帶進墓室裡陪葬的，只有一個地方。中心思想落在這一句，關鍵在第 31 格。no culture ___ onions quite as much as… 是「否定主詞＋as…as」的最高級說法，整組結構把這一格鎖成動詞，連時態都一併定下來，認出來幾乎不用猜。文章先承認洋蔥本來就用得普遍，Nonetheless 一轉才推到這一句；後面三段（精神象徵、墓葬裡的證據、學者推測的用途）都是佐證，不是各自獨立的主旨。寫作上，「別人都有，但沒有誰像 X 這樣」一句話就能把主題推到最高點。108 年學測要你談臺灣最讓你引以為榮的兩個面向，主題句用這個句型最有力。",
+  "thesisExplain": "洋蔥在古代到處都有人吃，但把它一路帶進墓室裡陪葬的，只有一個地方。中心思想落在這一句，關鍵在第 31 格。no culture ___ onions quite as much as… 是「否定主詞 + as…as」的最高級說法，整組結構把這一格鎖成動詞，連時態都一併定下來，認出來幾乎不用猜。文章先承認洋蔥本來就用得普遍，Nonetheless 一轉才推到這一句；後面三段（精神象徵、墓葬裡的證據、學者推測的用途）都是佐證，不是各自獨立的主旨。寫作上，「別人都有，但沒有誰像 X 這樣」一句話就能把主題推到最高點。108 年學測要你談臺灣最讓你引以為榮的兩個面向，主題句用這個句型最有力。",
   "macro": {
    "structure": "先普遍後特殊型 — 普遍現象(洋蔥全球皆用) → Nonetheless轉折(埃及人格外崇拜) → 精神意義說明 → 考古證據佐證 → 學者推測用途(結尾並列兩種理論，不下定論)",
    "transitions": "Nonetheless（轉折，帶出全文中心思想）→ but（精神意義段內部轉折：醫療用途被視為魔法而非醫學）",
-   "patterns": "說明文 (Expository) ＋ 現象解釋 (Phenomenon Explanation)",
+   "patterns": "說明文 (Expository) + 現象解釋 (Phenomenon Explanation)",
    "outline": [
     "1. 引言：洋蔥雖全球皆用，但埃及人格外崇拜(全文中心思想)",
     "2. 精神意義：洋蔥象徵永恆生命，圈中圈結構呼應存在的永恆",
@@ -1131,7 +1131,7 @@
   "macro": {
    "structure": "提問破題型 — 提出疑問(森林是否必為天然) → 破題(一介平凡人證明並非如此) → 開墾歷程(挫折與突破) → 順應自然理念 → 成果與迴響",
    "transitions": "Though（讓步，凸顯主角非科班出身卻博學）→ But（對比，他不理會旁人質疑）→ However（轉折，前兩年失敗、第三年終於成功）",
-   "patterns": "記敘文 (Narrative) ＋ 時序發展 (Chronological)",
+   "patterns": "記敘文 (Narrative) + 時序發展 (Chronological)",
    "outline": [
     "1. 引言：提問破題，Kareem證明森林不一定是天然的",
     "2. 開墾歷程：買下荒地、旁人質疑、頭兩年失敗、第三年終於成功",
@@ -1382,7 +1382,7 @@
   "macro": {
    "structure": "溯源考據型 — 定義提問(這個小物從何而來) → 演變過程(別針→鋼絲夾) → 發明者爭議(掛名者與實際設計者不同，全文中心思想) → 象徵意義延伸(挪威愛國象徵，even though收尾呼應反諷)",
    "transitions": "But（提問轉折）→ Although（讓步：別針便宜卻有缺陷）→ However（轉折，帶出全文中心思想）→ Thus（結果，帶出配戴迴紋針的抗議行動）→ even though（結尾讓步，凸顯反諷收尾）",
-   "patterns": "說明文 (Expository) ＋ 時序發展 (Chronological)",
+   "patterns": "說明文 (Expository) + 時序發展 (Chronological)",
    "outline": [
     "1. 引言：迴紋針的定義，提問其起源",
     "2. 演變：從別針到鋼絲夾的材質與設計演進",
@@ -1602,7 +1602,7 @@
   "macro": {
    "structure": "總分列舉型 — 總綱(五大命名因素，全文中心思想) → 分項一：家族傳承 → 分項二：宗教 → 分項三：自然 → 分項四：文化媒體與個人喜好",
    "transitions": "However（自然段起始，與宗教段對比）→ However（結尾，個人喜好雖不重理由，仍會挑吉日）",
-   "patterns": "說明文 (Expository) ＋ 分類 (Classification)",
+   "patterns": "說明文 (Expository) + 分類 (Classification)",
    "outline": [
     "1. 引言：命名受五大因素影響(傳承/宗教/自然/文化/時尚)——全文總綱",
     "2. 傳承：紀念親人、傳父名或母姓",
@@ -1811,7 +1811,7 @@
   "macro": {
    "structure": "問題成因型 — 建立重要性(珊瑚礁是海洋生物的家) → however 轉折(核心問題：珊瑚礁正面臨嚴重危機，全文中心思想) → 原因一二(污染、暖化) → 原因三(人為破壞)＋結語呼籲",
    "transitions": "however（轉折，帶出全文中心思想）→ but（讓步：原因未完全查明，但已找出三大主因）",
-   "patterns": "問題解決 (Problem-Solution) ＋ 因果關係 (Cause-Effect)",
+   "patterns": "問題解決 (Problem-Solution) + 因果關係 (Cause-Effect)",
    "outline": [
     "1. 引言：珊瑚礁是四分之一海洋物種的家，作用如同「海底公寓」",
     "2. 核心問題：珊瑚礁數量雖多，卻正嚴重瀕危(全文中心思想)，已找出三大主因",
@@ -2027,7 +2027,7 @@
   "macro": {
    "structure": "對比展開型 — 總綱(兩種命名慣例) → 數字式的缺點(對比襯托) → 清單式的起源與性別平等演變 → 亞洲命名規則 → 除名機制與實例",
    "transitions": "however（第一段：數字式的缺點）→ on the other hand（段落轉換至清單式）→ however（1979年男性名字納入的轉折）→ But（第四段：名字可被更改）",
-   "patterns": "分類 (Classification) ＋ 比較對比 (Compare/Contrast)",
+   "patterns": "分類 (Classification) + 比較對比 (Compare/Contrast)",
    "outline": [
     "1. 引言：兩種命名慣例(數字式／清單式)——全文中心思想",
     "2. 數字式缺點：數字難記；清單式起源：早期只用女性名字，1979年起納入男性名字",
@@ -2247,7 +2247,7 @@
   "macro": {
    "structure": "問題解方型 — 建立好感(爆米花是看電影的樂趣) → However轉折(現代製法暗藏健康隱憂，全文中心思想) → 具體危害說明(化學塗層、奶油調味劑) → 健康替代方案(自製爆米花步驟)",
    "transitions": "However（轉折，帶出全文中心思想）→ Making matters worse（遞進，追加另一項危害）→ As soon as（步驟段的時間銜接）→ Then（步驟段的順序銜接）",
-   "patterns": "問題解決 (Problem-Solution) ＋ 現象解釋 (Phenomenon Explanation)",
+   "patterns": "問題解決 (Problem-Solution) + 現象解釋 (Phenomenon Explanation)",
    "outline": [
     "1. 引言：爆米花雖是看電影良伴，現代製法卻暗藏健康隱憂(全文中心思想)",
     "2. 危害說明：PFOA化學塗層致癌、人工奶油調味劑導致肺病",
@@ -2453,7 +2453,7 @@
   "macro": {
    "structure": "定義延伸型 — 定義(足球是老師) → 球場上的合作課 → 延伸到社會角色(不再是獨行俠) → 結論(合作精神＝現代公民必備)",
    "transitions": "So（結尾，帶出結果：因為理解合作，適應各種社會角色毫無困難）",
-   "patterns": "說明文 (Expository) ＋ 定義 (Definition)",
+   "patterns": "說明文 (Expository) + 定義 (Definition)",
    "outline": [
     "1. 引言：足球是教導合作的老師(全文中心思想)",
     "2. 球場：唯有隊員合作才能獲勝",
@@ -2670,7 +2670,7 @@
   "macro": {
    "structure": "多次翻轉型 — 提出經典版本 → but轉折(可延伸新版本) → 第二次賽跑(速度致勝) → 第三次賽跑(揚長避短) → But轉折(第四次賽跑：合作取代競爭)＋結語點出雙重寓意",
    "transitions": "but（第一段：帶出「寓言可以被改寫」的全文中心思想）→ But（第四段：故事還沒完，帶出最終合作版本）",
-   "patterns": "記敘文 (Narrative) ＋ 比較對比 (Compare/Contrast)",
+   "patterns": "記敘文 (Narrative) + 比較對比 (Compare/Contrast)",
    "outline": [
     "1. 引言：經典寓言可以被重新詮釋(全文中心思想)",
     "2. 第二次賽跑：兔子不休息，快而穩定獲勝",
@@ -2869,7 +2869,7 @@
   "macro": {
    "structure": "計畫翻轉型 — 引言(師父預知來世) → 交代任務(認出小豬並了結) → 弟子依約行事 → 轉折(小豬開口求饒，翻轉全文預設，帶出核心寓意)",
    "transitions": "but（第三段：弟子雖傷心仍依約行事）",
-   "patterns": "記敘文 (Narrative) ＋ 比較對比 (Compare/Contrast)",
+   "patterns": "記敘文 (Narrative) + 比較對比 (Compare/Contrast)",
    "outline": [
     "1. 引言：師父預見來世，弟子承諾報答師恩",
     "2. 任務交代：師父指示弟子如何認出並了結轉世小豬，以求解脫",
@@ -3093,7 +3093,7 @@
   "macro": {
    "structure": "逐步瓦解型 — 引言(老人反常地付錢請男孩繼續玩，全文核心手法) → 第一二週(全額，男孩開心) → 第三四週(逐週減薪，男孩失望) → 第五週(減到最低，男孩憤而離去)",
    "transitions": "however（第三週起的轉折，開始減薪）→ but（第五週：道歉但仍減薪）",
-   "patterns": "記敘文 (Narrative) ＋ 問題解決 (Problem-Solution)",
+   "patterns": "記敘文 (Narrative) + 問題解決 (Problem-Solution)",
    "outline": [
     "1. 引言：老人提議每週付25盧比請男孩在門前打板球(核心手法)",
     "2. 第一二週：男孩開心領全額",
@@ -3312,7 +3312,7 @@
   "macro": {
    "structure": "責任歸屬型 — 破題(健康買不到，是自己的責任，全文中心思想) → 忽視習慣的後果 → wellness的定義(因人而異，理解自己的身體) → 疾病無法完全避免，但風險可自行降低",
    "transitions": "While（第三段內部對比：不同人偏好不同運動強度）→ Nevertheless（第四段：雖無法避免意外與慢性病，但仍可自行降低風險）",
-   "patterns": "說明文 (Expository) ＋ 定義 (Definition)",
+   "patterns": "說明文 (Expository) + 定義 (Definition)",
    "outline": [
     "1. 引言：健康買不到，維持健康是自己的責任(全文中心思想)",
     "2. 忽視壞習慣、不理健康警訊的後果",
@@ -3511,7 +3511,7 @@
   "macro": {
    "structure": "首尾呼應型 — 開場(愛情的魔力，全文中心思想) → But轉折(現實落差：性別期待不同) → 衝突循環(不理解→抱怨→溝通瓦解) → 結語呼應開頭(理解差異，愛情魔力得以延續)",
    "transitions": "But（第二段：現實生活的轉折）→ Yet（第四段：儘管少數，仍會發生）",
-   "patterns": "說明文 (Expository) ＋ 因果關係 (Cause-Effect)",
+   "patterns": "說明文 (Expository) + 因果關係 (Cause-Effect)",
    "outline": [
     "1. 引言：墜入愛河總是充滿魔力(全文中心思想)",
     "2. 轉折：現實生活來臨，男女對彼此有錯誤期待",
@@ -3726,7 +3726,7 @@
   "macro": {
    "structure": "眾說紛紜型 — 破題(存在未證實但廣泛被猜測，全文中心思想) → 起源與影響地球的各種說法(Some...Others...Still others) → 考古證據佐證 → 意圖眾說紛紜，結語存疑不下定論",
    "transitions": "Although（開頭讓步，帶出全文中心思想）→ while（第四段：兩派意圖猜測的對比）",
-   "patterns": "說明文 (Expository) ＋ 比較對比 (Compare/Contrast)",
+   "patterns": "說明文 (Expository) + 比較對比 (Compare/Contrast)",
    "outline": [
     "1. 引言：外星人存在雖未證實，卻被廣泛猜測(全文中心思想)",
     "2. 起源說法：地球生命源自外星／外星人暗中觀察地球／古文明神祇即外星人／古文明滅亡與外星人有關",
@@ -3905,7 +3905,7 @@
   "macro": {
    "structure": "先害後益型 — 現象鋪陳(壓力是熱門話題) → 具體危害數據(死因排名、醫療支出占比) → Yet/while轉折(壓力也有其必要性，全文中心思想)",
    "transitions": "Yet / while（轉折，帶出全文中心思想：壓力並非全然負面）",
-   "patterns": "說明文 (Expository) ＋ 因果關係 (Cause-Effect)",
+   "patterns": "說明文 (Expository) + 因果關係 (Cause-Effect)",
    "outline": [
     "1. 引言：壓力是日常話題，人人都在努力控制它",
     "2. 危害數據：43%成人受壓力影響健康，壓力與六大死因相關，醫療支出占GDP約12%",
@@ -4103,7 +4103,7 @@
   "macro": {
    "structure": "定義展開型 — 定義(生活水準的高低標準，全文中心思想) → 衡量方式(必需品支出比例法) → 美國案例(生活水準高但分配不均) → 影響因素(種族、教育、地區、家庭組成)",
    "transitions": "But（第三段：轉折點出美國雖生活水準高卻分配不均）",
-   "patterns": "定義 (Definition) ＋ 比較對比 (Compare/Contrast)",
+   "patterns": "定義 (Definition) + 比較對比 (Compare/Contrast)",
    "outline": [
     "1. 引言：生活水準的定義，高低標準的判斷方式(全文中心思想)",
     "2. 衡量方式：經濟學家以必需品支出占收入比例來衡量(比例越高，生活水準越低)",
@@ -4319,7 +4319,7 @@
   "macro": {
    "structure": "以彼之道還施彼身型 — 意外發現(鹽泡水變輕，全文關鍵機制) → 屢次故技重施 → 主人想出對策(換成沙子，泡水反而變重) → 結語(驢子學到教訓，從此盡責)",
    "transitions": "but（×2，第二段：驢子故技重施、阿米爾苦惱卻不知如何是好）",
-   "patterns": "記敘文 (Narrative) ＋ 問題解決 (Problem-Solution)",
+   "patterns": "記敘文 (Narrative) + 問題解決 (Problem-Solution)",
    "outline": [
     "1. 引言：驢子意外發現鹽泡水會溶解變輕(全文關鍵機制)",
     "2. 驢子屢次故技重施，阿米爾苦惱不知如何是好",
@@ -4518,7 +4518,7 @@
   "macro": {
    "structure": "提問實證型 — 提出疑問(孩童能否改變政策，全文中心思想) → 問題說明(漁網誤捕海豚致死的原因) → 海豚受困窒息死亡的過程 → 孩子們發起寫信行動，成功促成改變(回答開頭提問)",
    "transitions": "however（第二段：現代大型漁網造成的新問題，與過去對比）",
-   "patterns": "記敘文 (Narrative) ＋ 問題解決 (Problem-Solution)",
+   "patterns": "記敘文 (Narrative) + 問題解決 (Problem-Solution)",
    "outline": [
     "1. 引言：孩童能否透過影響長輩改變政策的提問(全文中心思想)",
     "2. 問題：現代大型漁網捕鮪魚時意外捕獲大量海豚",
@@ -4747,7 +4747,7 @@
   "macro": {
    "structure": "荒誕接受型 — 離奇情境開場(寄放雙腿的規定) → 對方解釋緣由 → 敘事者雖懷疑卻選擇順從 → 意外發現腿真能拆下 → 結語點破夢境邏輯(全文中心思想)",
    "transitions": "but（店員解釋原因的讓步）→ Therefore（規定訂立的結果）→ However（不願鬧事，選擇順從）→ But（店員示範拆卸方式）",
-   "patterns": "記敘文 (Narrative) ＋ 因果關係 (Cause-Effect)",
+   "patterns": "記敘文 (Narrative) + 因果關係 (Cause-Effect)",
    "outline": [
     "1. 夢境開場：劇院要求寄放雙腿的離奇規定",
     "2. 店員解釋：因為別人的腿總是「擋路」，所以訂立此規定",
@@ -4970,7 +4970,7 @@
   "macro": {
    "structure": "演變溯源型 — 定義(特技演員的工作內容) → 起源(因應演員受傷的實際需求，全文中心思想) → 需求成長(默片到西部片時代) → 科技演進(實體特效到CGI，結語仍有存在價值)",
    "transitions": "however（早期缺乏專業特技人員）→ However（CGI技術發達但仍有其局限）→ So（結語，特技產業不會消失）",
-   "patterns": "說明文 (Expository) ＋ 時序發展 (Chronological)",
+   "patterns": "說明文 (Expository) + 時序發展 (Chronological)",
    "outline": [
     "1. 定義：特技演員從事電影/電視中的危險動作",
     "2. 起源：早期演員自己上陣受傷，逐漸演變出因應需求的專門職業(全文中心思想)",
@@ -5179,7 +5179,7 @@
   "macro": {
    "structure": "破除迷思型 — 常見誤解(晚起=懶惰) → But破題(其實是生理原因，全文中心思想) → 問題說明(生理時鐘與上學時間衝突，睡眠不足的負面影響) → 解方佐證(延後上學時間的正面成效)",
    "transitions": "But（破除迷思，帶出全文中心思想）",
-   "patterns": "現象解釋 (Phenomenon Explanation) ＋ 問題解決 (Problem-Solution)",
+   "patterns": "現象解釋 (Phenomenon Explanation) + 問題解決 (Problem-Solution)",
    "outline": [
     "1. 常見誤解：以為青少年晚起是因為懶惰",
     "2. 科學解釋：青少年生理時鐘天生較晚(全文中心思想)",
@@ -5396,7 +5396,7 @@
   "macro": {
    "structure": "優勢展開型 — 破題(太陽能的優勢：免費且不污染，全文中心思想) → 發展歷程(原始使用→石油危機後才受重視) → 生活應用實例(曬衣服、太陽能板) → 結語(未來展望更普及)",
    "transitions": "but（太陽能雖早被使用但方式原始／早期研究仍停留學術層面，×2）→ After（石油危機後研究才真正擴大）",
-   "patterns": "說明文 (Expository) ＋ 時序發展 (Chronological)",
+   "patterns": "說明文 (Expository) + 時序發展 (Chronological)",
    "outline": [
     "1. 破題：太陽能免費、不會造成污染，是最容易取得的能源(全文中心思想)",
     "2. 發展歷程：自古即被使用但方式原始，直到1970年代石油危機後才真正投入大規模研究",
@@ -5599,7 +5599,7 @@
     "3. 推廣：2011年開放給大眾使用，逐漸擴散到世界各地，甚至用於COVID-19疫情的悼念",
     "4. 結語：哀悼是天生的應對機制，人人方式不同，但希望永遠都在(全文核心思想)"
    ],
-   "patterns": "記敘文 (Narrative) ＋ 現象解釋 (Phenomenon Explanation)"
+   "patterns": "記敘文 (Narrative) + 現象解釋 (Phenomenon Explanation)"
   },
   "zhTranslation": [
    "在俯瞰日本東北部、曾遭受2011年海嘯重創的大槌町的一座山丘上，佇立著一座孤零零的白色電話亭，在風中兀自矗立。這座名為「風之電話」的孤單電話亭，讓家屬能與在這場奪走一萬八千條人命的海嘯中逝去的親人「連線」。人們前來這裡，向他們失去的人說話，訴說那些來不及在世時說出口的話語。",
@@ -5796,7 +5796,7 @@
     "3. 功能：鐘聲是巴黎生活的一部分，用於報時、宗教、示警、慶典與哀悼",
     "4. 結語：2019年大火後鐘聲沉寂，歷經修復，2024年重新在巴黎上空響起"
    ],
-   "patterns": "說明文 (Expository) ＋ 時序發展 (Chronological)"
+   "patterns": "說明文 (Expository) + 時序發展 (Chronological)"
   },
   "zhTranslation": [
    "巴黎聖母院是歐洲最著名的大教堂之一。這座位於巴黎市中心的中世紀教堂，以其精緻的建築、令人驚豔的彩繪玻璃窗聞名，但最為人稱道的，還是它的鐘聲。",
@@ -6025,7 +6025,7 @@
     "3. 實務建議一：理想午睡時長因人而異，需視個人體況與疲勞程度調整",
     "4. 實務建議二：安靜、昏暗的環境能提升午睡效果"
    ],
-   "patterns": "說明文 (Expository) ＋ 現象解釋 (Phenomenon Explanation)"
+   "patterns": "說明文 (Expository) + 現象解釋 (Phenomenon Explanation)"
   },
   "zhTranslation": [
    "你是否曾對自己每天下午小睡一下感到有點罪惡感？其實，你不需要這樣。白天小睡片刻，絕對不是沒有生產力的行為。事實上，你正在給大腦和身體一段時間充電，讓自己恢復精神、煥然一新。",
@@ -6254,7 +6254,7 @@
     "3. 破除迷思：「沒有痛苦就沒有收穫」已過時，現代研究證實運動不必疼痛才有效，疼痛反而可能是受傷警訊",
     "4. 結語：散步、游泳、伸展等溫和運動一樣有效，鼓勵不論多忙都要擠出時間運動"
    ],
-   "patterns": "說明文 (Expository) ＋ 問題解決 (Problem-Solution)"
+   "patterns": "說明文 (Expository) + 問題解決 (Problem-Solution)"
   },
   "zhTranslation": [
    "如果你找不到方法把運動排進忙碌的日常行程裡，別擔心！運動不一定得是件辛苦費力的事。研究顯示，適度的運動量——即使一天只有15分鐘——也有助於緩解憂鬱、提升自我形象、舒緩壓力，還有更多其他好處。",
@@ -6462,7 +6462,7 @@
   "thesisExplain": "流完汗猛灌白開水，其實不一定最好。這篇的中心思想是用一問一答立起來的，關鍵落在第 21 格。這一格所在的 the healthiest drink we can ___ 省略了關係代名詞，drink 既是先行詞、也是這個動作的受詞；認出這層關係，能填的形式馬上少一半。Yet 把前面「白開水最好」的鋪陳整個轉開，Well, it depends 再把答案交給條件（who、where、what we're doing），後面每一段都在補條件：在太陽底下工作的人、整天坐辦公室的人、流汗流掉的鹽分，還有牛奶為什麼有時反而更合適。寫作上，「先設問，再用 it depends 帶出條件」是論說文很省力的開場，一開頭就不會把話說死。96 年指考問「你能想像沒有電的世界嗎」，用的也是同一招。",
   "macro": {
    "structure": "破除迷思型 — 背景鋪陳(水占體重一半、白開水看似最佳選擇) → 反問破題(水永遠最健康嗎？答案因人、因地、因活動而異，全文中心思想) → 生理機制說明(流汗同時流失水與鹽，只補白開水反而以排尿失衡) → 反例佐證(牛奶、椰子水在特定情況更有效) → 轉折回到一般人(水仍是好選擇) → 提出正確喝水方法(別等口渴、全天分次補充)",
-   "patterns": "說明文 (Expository) ＋ 比較對比 (Compare/Contrast)",
+   "patterns": "說明文 (Expository) + 比較對比 (Compare/Contrast)",
    "transitions": "Yet（轉折，推翻「白開水最健康」的直覺，帶出全文中心思想）→ Obviously（舉例佐證，戶外勞動者vs.坐辦公室者，呼應「看你在做什麼」）→ But there's more to it than that（句子型轉折，慣用語，意思是「事情不只如此、還有更深一層的原因」——單字都很簡單，卻是本篇最容易讀錯的一句；it 指前面「該喝多少水」這件事，that 指前一句「活動量大小」這個理由，作者用這句宣告要從「活動量」推進到「體液平衡」的生理機制）→ For this reason（因果，推得牛奶比白開水更有效）→ however（第二段轉折，把焦點從特殊族群拉回一般人）→ Also（補充第二個喝水要點）",
    "outline": [
     "1. 背景：水分占體重一半以上，白開水無糖無熱量，被視為補水首選",
@@ -6695,7 +6695,7 @@
   "macro": {
    "structure": "概念說明型 — 破題(死亡不是終點，全文中心思想) → 亡靈的去處(地下／天上兩說) → 祖靈：自成一類與成為條件 → 祖靈與子孫：守護與懲罰 → 神話層面：祖先成為傳說題材",
    "transitions": "Other groups（帶出與前說並列的第二種說法）→ For instance（舉布希曼人為例）→ However（轉折，指出並非人人都能成為祖靈）→ But（轉折，由祖靈的幫助轉到懲罰）→ For example／Another example（連續舉布干達與丁卡兩例）",
-   "patterns": "說明文 (Expository) ＋ 分類 (Classification)",
+   "patterns": "說明文 (Expository) + 分類 (Classification)",
    "outline": [
     "1. 破題：在非洲傳統宗教裡生命不因死亡而結束，人死後以靈的形式存在；亡靈的去處有地下與天上兩種說法(全文中心思想)",
     "2. 祖靈：在眾靈中自成一類、擁有額外力量，成為祖靈是死後最好的指望，但生前須滿足條件",
