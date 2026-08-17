@@ -2,6 +2,7 @@
  {
   "id": "y109",
   "year": "109年",
+  "accuracyRateSource": "大考中心 109 學年度學科能力測驗統計圖表：英文科答對率及鑑別度表",
   "exam": "學測",
   "examType": "正式考試",
   "blankCount": 10,
@@ -255,6 +256,7 @@
  {
   "id": "y108",
   "year": "108年",
+  "accuracyRateSource": "大考中心 108 學年度學科能力測驗統計圖表：英文科答對率及鑑別度表",
   "exam": "學測",
   "examType": "正式考試",
   "blankCount": 10,
@@ -488,6 +490,7 @@
  {
   "id": "y107",
   "year": "107年",
+  "accuracyRateSource": "大考中心 107 學年度學科能力測驗統計圖表：英文科答對率及鑑別指數表",
   "exam": "學測",
   "examType": "正式考試",
   "blankCount": 10,
@@ -707,6 +710,7 @@
  {
   "id": "y106",
   "year": "106年",
+  "accuracyRateSource": "大考中心 106 學年度學科能力測驗統計圖表：英文科答對率及鑑別指數表",
   "exam": "學測",
   "examType": "正式考試",
   "blankCount": 10,
@@ -922,6 +926,7 @@
  {
   "id": "y105",
   "year": "105年",
+  "accuracyRateSource": "大考中心 105 學年度學科能力測驗統計圖表：英文科答對率及鑑別指數表",
   "exam": "學測",
   "examType": "正式考試",
   "blankCount": 10,
@@ -1149,6 +1154,7 @@
  {
   "id": "y104",
   "year": "104年",
+  "accuracyRateSource": "大考中心 104 學年度學科能力測驗統計圖表：英文科答對率及鑑別指數表",
   "exam": "學測",
   "examType": "正式考試",
   "blankCount": 10,
@@ -1400,6 +1406,7 @@
  {
   "id": "y103",
   "year": "103年",
+  "accuracyRateSource": "大考中心 103 學年度學科能力測驗統計圖表：英文科答對率及鑑別指數表",
   "exam": "學測",
   "examType": "正式考試",
   "blankCount": 10,
@@ -1622,6 +1629,7 @@
  {
   "id": "y102",
   "year": "102年",
+  "accuracyRateSource": "大考中心 102 學年度學科能力測驗統計圖表：英文科答對率及鑑別指數表",
   "exam": "學測",
   "examType": "正式考試",
   "blankCount": 10,
@@ -1829,6 +1837,7 @@
  {
   "id": "y101",
   "year": "101年",
+  "accuracyRateSource": "大考中心 101 學年度學科能力測驗統計圖表：英文科答對率及鑑別指數表",
   "exam": "學測",
   "examType": "正式考試",
   "blankCount": 10,
@@ -2046,6 +2055,7 @@
  {
   "id": "y100",
   "year": "100年",
+  "accuracyRateSource": "大考中心 100 學年度學科能力測驗統計圖表：英文科答對率及鑑別指數表",
   "exam": "學測",
   "examType": "正式考試",
   "blankCount": 10,
@@ -2264,6 +2274,7 @@
  {
   "id": "y99",
   "year": "99年",
+  "accuracyRateSource": "大考中心 99 學年度學科能力測驗統計圖表：英文科答對率及鑑別指數表",
   "exam": "學測",
   "examType": "正式考試",
   "blankCount": 10,
@@ -2471,6 +2482,7 @@
  {
   "id": "y98",
   "year": "98年",
+  "accuracyRateSource": "大考中心 98 學年度學科能力測驗統計圖表：英文科答對率及鑑別指數表",
   "exam": "學測",
   "examType": "正式考試",
   "blankCount": 10,
@@ -2691,6 +2703,7 @@
  {
   "id": "y97",
   "year": "97年",
+  "accuracyRateSource": "大考中心 97 學年度學科能力測驗統計圖表：英文科答對率及鑑別指數表",
   "exam": "學測",
   "examType": "正式考試",
   "blankCount": 10,
@@ -2888,6 +2901,7 @@
  {
   "id": "y96",
   "year": "96年",
+  "accuracyRateSource": "大考中心 96 學年度學科能力測驗統計圖表：英文科答對率及鑑別指數表",
   "exam": "學測",
   "examType": "正式考試",
   "blankCount": 10,
@@ -3111,6 +3125,7 @@
  {
   "id": "y95",
   "year": "95年",
+  "accuracyRateSource": "大考中心 95 學年度學科能力測驗統計圖表：英文科答對率及鑑別指數表",
   "exam": "學測",
   "examType": "正式考試",
   "blankCount": 10,
@@ -3330,6 +3345,7 @@
  {
   "id": "y94",
   "year": "94年",
+  "accuracyRateSource": "大考中心 94 學年度學科能力測驗統計圖表：英文科答對率及鑑別指數表",
   "exam": "學測",
   "examType": "正式考試",
   "blankCount": 10,
@@ -3529,6 +3545,7 @@
  {
   "id": "y93",
   "year": "93年",
+  "accuracyRateSource": "大考中心 93 學年度學科能力測驗統計圖表：英文科答對率及鑑別指數表",
   "exam": "學測",
   "examType": "正式考試",
   "blankCount": 10,
@@ -3744,6 +3761,7 @@
  {
   "id": "y92",
   "year": "92年",
+  "accuracyRateSource": "大考中心 92 學年度學科能力測驗統計圖表：英文科答對率及鑑別指數表",
   "exam": "學測",
   "examType": "正式考試",
   "blankCount": 10,
@@ -3921,6 +3939,7 @@
  {
   "id": "y92b",
   "year": "92年補考",
+  "accuracyRateSource": "大考中心未公布本卷逐題數據",
   "exam": "學測",
   "examType": "補考",
   "blankCount": 10,
@@ -4122,6 +4141,7 @@
  {
   "id": "y91",
   "year": "91年",
+  "accuracyRateSource": "大考中心 91 學年度學科能力測驗統計圖表：英文科答對率及鑑別指數表",
   "exam": "學測",
   "examType": "正式考試",
   "blankCount": 10,
@@ -4337,6 +4357,7 @@
  {
   "id": "y91b",
   "year": "91年補考",
+  "accuracyRateSource": "大考中心未公布本卷逐題數據",
   "exam": "學測",
   "examType": "補考",
   "blankCount": 10,
@@ -4536,6 +4557,7 @@
  {
   "id": "y90",
   "year": "90年",
+  "accuracyRateSource": "該屆逐題數據未公開",
   "exam": "學測",
   "examType": "正式考試",
   "blankCount": 10,
@@ -4768,6 +4790,7 @@
  {
   "id": "y111r",
   "year": "111年（＝115學年度參考試卷同內容）",
+  "accuracyRateSource": "大考中心 111 學年度學科能力測驗統計圖表：英文科答對率及鑑別度表",
   "exam": "學測",
   "examType": "正式考試",
   "blankCount": 10,
@@ -4989,6 +5012,7 @@
  {
   "id": "y99r",
   "year": "99課綱（102年施測）",
+  "accuracyRateSource": "本卷非正式施測，無答對率",
   "exam": "學測",
   "examType": "參考試卷",
   "blankCount": 10,
@@ -5198,6 +5222,7 @@
  {
   "id": "y95r",
   "year": "95課綱（98年施測）",
+  "accuracyRateSource": "本卷非正式施測，無答對率",
   "exam": "學測",
   "examType": "參考試卷",
   "blankCount": 10,
@@ -5415,6 +5440,7 @@
  {
   "id": "y113",
   "year": "113年",
+  "accuracyRateSource": "大考中心 113 學年度學科能力測驗統計圖表：英文科答對率及鑑別度表",
   "exam": "學測",
   "examType": "正式考試",
   "blankCount": 10,
@@ -5612,6 +5638,7 @@
  {
   "id": "y114",
   "year": "114年",
+  "accuracyRateSource": "大考中心 114 學年度學科能力測驗統計圖表：英文科答對率及鑑別度表",
   "exam": "學測",
   "examType": "正式考試",
   "blankCount": 10,
@@ -5809,6 +5836,7 @@
  {
   "id": "y115",
   "year": "115年",
+  "accuracyRateSource": "大考中心 115 學年度學科能力測驗統計圖表：英文科答對率及鑑別度表",
   "exam": "學測",
   "examType": "正式考試",
   "blankCount": 10,
@@ -6038,6 +6066,7 @@
  {
   "id": "y110",
   "year": "110年",
+  "accuracyRateSource": "大考中心 110 學年度學科能力測驗統計圖表：英文科答對率及鑑別度表",
   "exam": "學測",
   "examType": "正式考試",
   "blankCount": 10,
@@ -6267,6 +6296,7 @@
  {
   "id": "y112",
   "year": "112年",
+  "accuracyRateSource": "大考中心 112 學年度學科能力測驗統計圖表：英文科答對率及鑑別度表",
   "exam": "學測",
   "examType": "正式考試",
   "blankCount": 10,
@@ -6481,6 +6511,7 @@
  {
   "id": "y110t",
   "year": "110年試辦考試",
+  "accuracyRateSource": "本卷非正式施測，無答對率",
   "exam": "學測",
   "examType": "試辦考試",
   "blankCount": 10,
