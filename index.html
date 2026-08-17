@@ -213,6 +213,15 @@ details.skill > summary::-webkit-details-marker{display:none;}
 details.skill > summary::after{content:'＋ 展開'; white-space:nowrap;
   color:var(--crimson,#AE3626); font-weight:700; font-size:13px;}
 details.skill[open] > summary::after{content:'－ 收合';}
+
+/* 難題總表入口（2026-08-18 新增，對應 hard/） */
+.hard-entry{display:block; text-decoration:none; border:1.5px solid var(--crimson);
+  background:#FBF1EE; border-radius:4px; padding:14px 16px; margin:0 0 16px;}
+.hard-entry:hover{background:var(--crimson);}
+.hard-entry:hover .he-title, .hard-entry:hover .he-sub{color:#fff;}
+.he-title{display:block; font-family:'Noto Serif TC',serif; font-weight:700; font-size:15px;
+  color:var(--crimson);}
+.he-sub{display:block; margin-top:6px; font-size:12.5px; line-height:1.8; color:var(--ink-soft);}
 </style>
 </head>
 <body>
@@ -250,6 +259,11 @@ details.skill[open] > summary::after{content:'－ 收合';}
         <input type="checkbox" id="testModeToggle" style="width:15px; height:15px; cursor:pointer;">
         測試模式（本次作答不計入學習歷程與錯題本）
       </label>
+
+      <a class="hard-entry" href="hard/">
+        <span class="he-title">歷屆最難的 19 題（官方答對率 25% 以下）→</span>
+        <span class="he-sub">學測 8 題、指考 11 題，依答對率由低到高排列。數字來自大考中心公布的官方統計，不是估算值。點任何一題，會直接開啟該題，整篇文章與所有選項都在，作答後可以看完整解析。</span>
+      </a>
 
       <span class="strategy-toggle" onclick="toggleStrategy()">📖 展開／收合：作答前必看的五大戰術與隱形連結</span>
       <div class="strategy-box" id="strategyBox" style="display:none;">
