@@ -596,6 +596,29 @@ function startWrongBook(){
   renderSingle();
 }
 
+// 難題總表（hard/）的深連結入口：只讀 hash、不寫 hash，站內操作不受影響。
+// 隊列取同站答對率 25% 以下者，由低到高排序，並定位到被點的那一題，
+// 讀者按「下一題」即順著難題往下走。形狀比照 quickStart() 與 startWrongBook()。
+function startHard(){
+  const m = (location.hash || '').match(/^#hard-([A-Za-z0-9_]+)$/);
+  if(!m) return false;
+  const target = ITEMS.find(it => it.id === m[1]);
+  if(!target) return false;
+  const examName = examOf(target);
+  const pool = ITEMS
+    .filter(it => examOf(it) === examName
+                  && typeof it.accuracyRate === 'number' && it.accuracyRate <= 25)
+    .sort((a,b) => a.accuracyRate - b.accuracyRate || (a.id < b.id ? -1 : 1));
+  const idx = pool.findIndex(it => it.id === target.id);
+  singleQueue = idx >= 0 ? pool : [target];
+  singleIdx = idx >= 0 ? idx : 0;
+  currentMode = 'single';
+  document.getElementById('homeView').style.display='none';
+  document.getElementById('practiceView').style.display='block';
+  renderSingle();
+  return true;
+}
+
 let PASSAGES = {}, ITEMS = [];
 let currentMode = 'single';
 let selectedCats = new Set();
@@ -638,6 +661,7 @@ async function init(){
   buildSpanGrid();
   buildYearList();
   renderStatsBox();
+  startHard();
 }
 function toggleStrategy(){
   const el = document.getElementById('strategyBox');
