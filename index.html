@@ -94,8 +94,8 @@
 
   .opts-table{display:grid; grid-template-columns:repeat(5,1fr); gap:6px; margin:16px 0;}
   @media (max-width:560px){ .opts-table{grid-template-columns:repeat(2,1fr);} }
-  .opt-cell{border:1px solid var(--rule); border-radius:4px; padding:8px 6px; font-size:13px; text-align:center; background:#fff;}
-  .opt-cell b{color:var(--crimson);}
+  .opt-cell{border:1px solid var(--rule); border-radius:4px; padding:8px 6px; font-family:'Times New Roman',Times,'Liberation Serif','Noto Serif',serif; font-size:13px; text-align:center; background:#fff;}
+  .opt-cell b{font-family:'Times New Roman',Times,'Liberation Serif','Noto Serif',serif; color:var(--crimson);}
   .opt-cell.used{opacity:.42; background:#F2EEE2; text-decoration:line-through;}
   /* 空格彈出選單 */
   .sheet-mask{position:fixed; inset:0; background:rgba(34,31,26,.42); opacity:0; pointer-events:none; transition:opacity .18s; z-index:90;}
@@ -140,7 +140,7 @@
   .catTag.primary{background:var(--gold); color:#fff; font-weight:700;}
   .choice-grid{display:grid; grid-template-columns:repeat(2,1fr); gap:8px; margin-bottom:16px;}
   @media (max-width:480px){ .choice-grid{grid-template-columns:1fr;} }
-  .choice{border:1.5px solid var(--rule); border-radius:4px; padding:10px 12px; cursor:pointer; font-size:14px; background:#fff;}
+  .choice{border:1.5px solid var(--rule); border-radius:4px; padding:10px 12px; cursor:pointer; font-family:'Times New Roman',Times,'Liberation Serif','Noto Serif',serif; font-size:14px; background:#fff;}
   .choice:hover{border-color:var(--ink);}
   .choice.correct{border-color:var(--sage); background:#E7F3EA;}
   .choice.wrong{border-color:var(--crimson); background:#FBEAE8;}
