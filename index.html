@@ -133,6 +133,10 @@
   .rv-item.ok .rv-hd{color:var(--sage);} .rv-item.ng .rv-hd{color:var(--crimson);}
   .rv-bd{font-family:'Times New Roman',Times,'Liberation Serif','Noto Serif','Noto Sans TC',sans-serif;}
   .rv-col{color:var(--gold); font-size:12.5px;}
+  /* 延伸閱讀（readMore）：樣式比照克漏字站 .why-readmore，2026-10-03 加 */
+  .why-readmore{margin-top:8px;}
+  .why-readmore-hint{font-size:13px; color:var(--ink-soft); line-height:1.7; margin-bottom:6px; border-left:2px solid var(--sage); padding-left:8px;}
+  .why-readmore a{font-family:'IBM Plex Mono','Noto Sans TC',monospace; font-size:12px; color:var(--sage); text-decoration:underline;}
 
   .single-card{border:1px solid var(--rule); border-radius:4px; padding:22px; background:#fff; margin-bottom:16px;}
   .single-sentence{font-family:'Times New Roman',Times,'Liberation Serif','Noto Serif','Noto Sans TC',serif; font-size:17px; line-height:1.9; margin-bottom:16px;}
@@ -773,6 +777,15 @@ function escapeHtml(str){
   return String(str).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')
                     .replace(/"/g,'&quot;').replace(/'/g,'&#39;');
 }
+function escapeAttr(str){ return escapeHtml(str); }
+// 延伸閱讀（readMore）：單題回饋與交卷複習共用。2026-10-03 加
+function readMoreHtml(it){
+  const r = it.readMore;
+  if(!r || !r.url) return '';
+  return '<div class="why-readmore">'
+    + (r.hint ? '<div class="why-readmore-hint">'+escapeHtml(r.hint)+'</div>' : '')
+    + '<a href="'+escapeAttr(r.url)+'" target="_blank" rel="noopener">'+escapeHtml(r.label || '延伸閱讀')+' ↗</a></div>';
+}
 function spanTagHtml(it){
   return it.contextSpan
     ? `<span class="spanTag${it.contextSpan !== '句內' ? ' cross' : ''}">線索：${it.contextSpan}</span>` : '';
@@ -1057,6 +1070,7 @@ function answerSingle(letter){
       ${it.gloss ? `<div class="exp"><b>中譯：</b>${it.gloss}</div>` : ''}
       ${it.collocation ? `<div class="exp"><b>字詞搭配線索：</b>${it.collocation}</div>` : ''}
       ${expHtml(it.explanation, '答題陷阱')}
+      ${readMoreHtml(it)}
       ${(!it.gloss && !it.collocation && !it.explanation) ? `<div class="exp">本題的逐格解析尚在建置中，目前只提供正解。</div>` : ''}
       ${ctxHtml}
       ${flagPost(PASSAGES[it.passageId])}
@@ -1250,6 +1264,7 @@ function gradeFullPassage(){
       <div class="rv-hd"><b>第${it.blankNum}題</b>　${ok ? '✓ 答對' : '✕ 你選 '+(chosen?'('+chosen+') '+it.options[chosen]:'未作答')+'　正解 ('+it.answer+') '+it.options[it.answer]}${spanTagHtml(it)}</div>
       <div class="rv-bd"><b>${it.options[it.answer]}</b>　${it.gloss||''}<br>
         <span class="rv-col">字詞搭配：${it.collocation||'—'}</span><br>${expInline(it.explanation)}</div>
+      ${readMoreHtml(it)}
       ${ctxBoxHtml(it)}
       ${pd}
       ${grpBoxHtml(it, grpFull)}

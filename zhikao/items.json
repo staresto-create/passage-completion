@@ -31,7 +31,12 @@
   "explanation": "答對率 17%，鑑別度 20，高分群考生也一起錯。難的不是生字。right 人人認得，可是它詞性多、意思也多：當形容詞是「正確的、右邊的」，當副詞是「正好、就」，當名詞是「權利、資格」。這一格考的是 in its own right 這個固定用法。【作答線索】in its own ___ 是介系詞片語，中間要填名詞。【語意及字詞搭配】in its own right 指憑本身條件就站得住、自成一格，不必依附在別的東西底下。整段在問粵語究竟是漢語的方言，還是一種語言。這一格所在的句子主張它本身就是一種語言。",
   "accuracyRate": 17,
   "discrimination": 20,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "readMore": {
+   "label": "延伸閱讀：in its own right，憑本身的資格",
+   "url": "https://dictionary.cambridge.org/dictionary/english-chinese-traditional/in-own-right",
+   "hint": "重點：in your own right 指憑自己的條件或資格，不靠別人，如 She's a millionaire in her own right.（她全靠自己賺得百萬家產）。用在事物上就是 in its own right；a language in its own right 是說粵語本身就是一種語言，不是附屬在別的語言底下的方言。"
+  }
  },
  {
   "id": "Vz110_22",
@@ -2032,7 +2037,12 @@
   "explanation": "答對率 22%，鑑別度 38。【作答線索】a less ___ hue，這一格夾在 less 與名詞之間，要填形容詞。選項裡的形容詞不只一個，得看句子在比什麼。前半句說皮蛋不是蛋白配橘黃蛋黃，而是深褐帶墨綠。比的是顏色好不好看。【語意內涵】appetizing 指引人食慾的。less appetizing 就是看起來比較沒食慾。易與 exotic 混淆，但那講的是整道食物帶異國色彩，形容不了顏色本身。",
   "accuracyRate": 22,
   "discrimination": 38,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "readMore": {
+   "label": "延伸閱讀：appetizing，看了讓人想吃",
+   "url": "https://dictionary.cambridge.org/dictionary/english-chinese-traditional/appetizing",
+   "hint": "重點：appetizing 形容食物的樣子或氣味讓人想吃，如 appetizing smells from the kitchen（廚房飄來誘人的香味）。a less appetizing hue 就是顏色看起來比較引不起食慾，和後面那股像阿摩尼亞的刺鼻氣味講的是同一件事。"
+  }
  },
  {
   "id": "Vz106_30",
@@ -4302,7 +4312,12 @@
   "explanation": "答對率 19%，鑑別度 29。【作答線索】你大概只學過 appeal to 這個動詞用法，記的意思是「吸引」。標詞性時就會把 appeal 記成動詞，從名詞候選裡劃掉。這一格因此無解。appeal 當名詞是「吸引力」，跟你熟的那個動詞同一個意思，只是換了詞性；appeal to 另外也有「向…呼籲、訴諸」的用法，本題用不到。【語意內涵】for extra ___ 前面是介系詞、後面沒有受詞，中間又有 extra 修飾，這裡只能是名詞。原文說偶爾也會有動物造型的戲偶上場，為的是多添一分吸引力，尤其對台下的小朋友。常見組合：have wide appeal（有廣泛吸引力）、lose its appeal（失去吸引力）。",
   "accuracyRate": 19,
   "discrimination": 29,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "readMore": {
+   "label": "延伸閱讀：appeal 當名詞，「吸引力」",
+   "url": "https://dictionary.cambridge.org/dictionary/english-chinese-traditional/appeal",
+   "hint": "重點：appeal 當名詞有「吸引力、魅力」的意思，不可數，常見 have (a) wide appeal、lose its appeal。本題 for extra appeal 是為了多一點吸引力，尤其對台下的小朋友。"
+  }
  },
  {
   "id": "Vz101_26",
@@ -4647,7 +4662,12 @@
   "explanation": "答對率 24%，鑑別度 33。【作答線索】at the ___ of 是介系詞片語，中間要填名詞。選項裡的名詞不只一個。難的不是認字，是要認出整個片語。【語意及字詞搭配】at the expense of sth 指以某事物為代價。前一句說視覺文化正在接管世界。這一句接著要講被犧牲的是誰——就是文字。把 expense 只記成「費用」的人到這裡會卡住。在這個片語裡它是「代價」。",
   "accuracyRate": 24,
   "discrimination": 33,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "readMore": {
+   "label": "延伸閱讀：at the expense of sth，以…為代價",
+   "url": "https://dictionary.cambridge.org/dictionary/english-chinese-traditional/at-the-expense-of-sth",
+   "hint": "重點：做一件事 at the expense of 另一件事，表示做了前一件，後一件跟著受損。本題是視覺文化接管世界，付出代價的是文字；expense 在這個片語裡不是「費用」，而是「代價」。"
+  }
  },
  {
   "id": "Vz100_26",
@@ -5374,7 +5394,12 @@
   "explanation": "emotional support 是常見組合，指他們從物質上換來的情感支撐。易與 affection 混淆，但關愛是下一句被購買取代的那樣東西。【這一格考名詞用法】support 當名詞是「支持」，不可數，前面常加一個形容詞說明是哪一種：emotional support（情感支持）、financial support（經濟支援）、moral support（精神上的支持）。你比較熟的多半是動詞用法（支持、支撐、供養、證實）；這一題前面是介系詞 for，後面沒有受詞，即可看出這裡要填名詞。【跨年對照】101 年指考文意選填考的是形容詞 supporting，那是另一種詞性、另一個意思——「次要的、不是最主要的那一個」，a supporting actor 就是配角，答對率 33%。85 年學測字彙把 supported 放進誘答選項，那一題考的是 hold up 的同義替換，答案是 delayed，並沒有考 support 的意思。同一個字根，名詞是「支持」這件事本身，形容詞是「排第幾」，詞性不同，出現的位置也不同；只記一個中文「支持」，到考場上不夠用。",
   "accuracyRate": 25,
   "discrimination": 48,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "readMore": {
+   "label": "延伸閱讀：support 當名詞，情感上的支持",
+   "url": "https://dictionary.cambridge.org/us/dictionary/english-chinese-traditional/support",
+   "hint": "重點：support 當名詞，是情感上或實際上的幫助，前面常加形容詞說明是哪一種：emotional support（情感支持）、financial support（經濟支援）、moral support（精神上的支持）。本題 depended on materials for emotional support，是說小時候靠物品換來情感上的慰藉。"
+  }
  },
  {
   "id": "Vz98_28",
@@ -5406,7 +5431,12 @@
   "explanation": "答對率 17%，鑑別度 27，高分群考生也一起錯。【作答線索】substituted for 後面要接名詞。選項裡的抽象名詞不只一個，詞性幫不上忙，得順著整段讀。這一段從童年寫到成年。小時候被忽視、覺得自己不重要，於是用玩具填補孤單。長大以後換成購物。被填補的那樣東西從頭到尾沒有換過。【語意內涵】affection 指親人的關愛。那正是童年缺的、成年後仍在拿東西替代的一樣。substitute A for B 是以 A 取代 B，所以這一格填的是被取代掉的舊的那一個。",
   "accuracyRate": 17,
   "discrimination": 27,
-  "contextSpan": "篇章"
+  "contextSpan": "篇章",
+  "readMore": {
+   "label": "延伸閱讀：substitute A for B，用 A 代替 B",
+   "url": "https://dictionary.cambridge.org/dictionary/english-chinese-traditional/substitute",
+   "hint": "重點：substitute A for B 是用 A 代替 B，for 後面接的是換下來的那一個；寫成 A is substituted for B，意思一樣。本題 the purchase is substituted for ___，購物換下來的，正是小時候玩具換下來的那樣東西，也就是童年缺少的關愛。"
+  }
  },
  {
   "id": "Vz98_29",
@@ -7223,7 +7253,12 @@
   "explanation": "答對率 24%，鑑別度 20。【作答線索】corporation 這個字第一段就出現過。第一段說 Moses 擔心來應徵的年輕人不懂 a corporation 是怎麼運作的。同一個字在這裡再出現一次，指的卻不是同一種公司。這一格的形容詞就是用來標出差別的。關鍵在 while still in school：還在念書的高中生所經營的，不會是第一段講的那種真正的企業。【語意內涵】miniature 指縮小版的，正是「照真實企業縮小做一遍」那層意思。往下一段看，學生做的東西從耳環到家具，也是這個規模。易與 leading 混淆，但頂尖大企業與學生自製耳環、家具對不上。",
   "accuracyRate": 24,
   "discrimination": 20,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "readMore": {
+   "label": "延伸閱讀：miniature，照原樣縮小的",
+   "url": "https://dictionary.cambridge.org/dictionary/english-chinese-traditional/miniature",
+   "hint": "重點：miniature 形容照實物縮小的小型版本，如 miniature furniture for a doll's house（娃娃屋裡的迷你家具）。本題 a miniature corporation，就是學生在學期間照真正企業的樣子、縮小規模經營的公司。另外，空格前面是 a，elaborate 開頭是母音，也放不進這一格。"
+  }
  },
  {
   "id": "Vz93_35",
@@ -7288,7 +7323,12 @@
   "explanation": "答對率 17%。【作答線索】quite 後面要接形容詞。再看 range in size from A to B，這是由小到大的對比。A 端是耳環，這一格就得撐住大的那一端。【語意內涵】elaborate 本義是精緻繁複。做工繁複的家具，體積與工程都大，對比才立得起來。這一格難在要從對比反推語意，不是從字義直接判斷。易與 miniature 混淆，但填它會讓句子兩端都變小，from…to 的對比就沒了。",
   "accuracyRate": 17,
   "discrimination": 24,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "readMore": {
+   "label": "延伸閱讀：elaborate 當形容詞，精心製作、繁複的",
+   "url": "https://dictionary.cambridge.org/dictionary/english-chinese-traditional/elaborate",
+   "hint": "重點：elaborate 當形容詞，是細節多、做工精細繁複，和 plain（樸素簡單）相反，如 elaborate costumes（精心製作的服裝）。本題 from earrings to quite elaborate furniture，一端是小巧的耳環，另一端是做工繁複的家具。"
+  }
  },
  {
   "id": "Vz93_37",
@@ -7321,7 +7361,12 @@
   "explanation": "答對率 15%，鑑別度只有 11，高分群考生也一起錯。【作答線索】這是並列結構：operate banks, accounting ___, and advertising agencies。三項並列，第一項是銀行、第三項是廣告公司，都是機構，中間這一格就跟著定了——也得是機構的名稱。【語意及字詞搭配】accounting firm 就是會計事務所，構詞方式與 law firm 相同。易與 programs 混淆，但 accounting programs 指會計課程或會計軟體，不是能跟銀行、廣告公司並列去經營的東西。",
   "accuracyRate": 15,
   "discrimination": 11,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "readMore": {
+   "label": "延伸閱讀：firm 當名詞，提供專業服務的公司",
+   "url": "https://dictionary.cambridge.org/dictionary/english-chinese-traditional/firm",
+   "hint": "重點：firm 當名詞是公司、商號，特別指提供專業服務的事務所，常見 a law firm（律師事務所）、an accounting firm（會計師事務所）。本題 banks, accounting firms, and advertising agencies 三樣都是機構。"
+  }
  },
  {
   "id": "Vz93_38",
@@ -7353,7 +7398,12 @@
   "explanation": "答對率 12%，全篇最難。【作答線索】Junior Achievement 後面接的是複數動詞 range，中間這一格填的字才是真正的主詞，Junior Achievement 是用來修飾它的，所以要填複數名詞。句子後半 from those in the big cities... to those in small towns，those 回指的正是這一格：這個東西大城市有、幾千人的小鎮也有。再往後讀一句就確定了——原文寫 Each program {40} with the size of the area，文章自己把這個字印在下一句。【語意內涵】易與 firms 混淆，但學生經營的公司行號是這個計畫做出來的產物，不是各地都有的推行單位。",
   "accuracyRate": 12,
   "discrimination": 13,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "readMore": {
+   "label": "延伸閱讀：名詞片語的順序——中心名詞放在最後",
+   "url": "https://dictionary.cambridge.org/us/grammar/british-grammar/noun-phrases-order",
+   "hint": "重點：名詞片語裡，限定詞在最前面，接著是形容詞，再來是當修飾語的名詞，真正的中心名詞放在最後，如 my two favourite cowboy films。本題 Junior Achievement 是修飾語，空格才是中心名詞，也就是句子的主詞；動詞 range 沒有加 s，所以要填複數名詞。"
+  }
  },
  {
   "id": "Vz93_39",
@@ -7418,7 +7468,12 @@
   "explanation": "答對率 16%，鑑別度 24。【作答線索】主詞 Each program 是單數，動詞就要加 s。【語意及字詞搭配】vary 常接的句型有兩個：vary with sth（隨某事物而不同）、vary from A to B（由 A 到 B 各有不同）。本句用的是前者——每個方案隨地區大小、以及當地產業與商業活動的多寡而有差異。易與 offered 混淆，但 offer 沒有接 with 的用法，句子接不下去。",
   "accuracyRate": 16,
   "discrimination": 24,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "readMore": {
+   "label": "延伸閱讀：vary with，隨…而不同",
+   "url": "https://dictionary.cambridge.org/dictionary/english-chinese-traditional/vary",
+   "hint": "重點：vary 是「不同、呈現差異」，常接 with、from A to B、according to，如 Salary scales vary with each state.（薪資級距各州不同）。本題 Each program varies with the size of the area，每個方案隨地區大小而有差異。"
+  }
  },
  {
   "id": "Vz93b_31",
