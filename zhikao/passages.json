@@ -35,7 +35,7 @@
   "sourceNote": null,
   "paras": [
    {
-    "label": null,
+    "label": "【第一段】引言：粵語是方言還是語言？先丟出問題",
     "segs": [
      [
       "Some people say that Cantonese is a dialect of Chinese. Others insist that it is a language in its own ",
@@ -52,18 +52,22 @@
     ]
    },
    {
-    "label": null,
+    "label": "【第二段】點出主旨：分界標準有兩種；標準一：社會政治面",
     "segs": [
      [
       "Two kinds of criteria are used to ",
-      null
+      "gradient"
      ],
      [
       "22",
       "blank"
      ],
      [
-      " languages from dialects. The first are social and political: In this view, “languages” are typically written, official, and ",
+      " languages from dialects.",
+      "gradient"
+     ],
+     [
+      " The first are social and political: In this view, “languages” are typically written, official, and ",
       null
      ],
      [
@@ -71,7 +75,15 @@
       "blank"
      ],
      [
-      " , whereas “dialects” are mostly spoken, unofficial, and looked down upon. As a saying goes, “A language is a dialect with an army and a navy.” This implies that a powerful group of people like an army or a government can ",
+      " , ",
+      null
+     ],
+     [
+      "whereas",
+      "trans"
+     ],
+     [
+      " “dialects” are mostly spoken, unofficial, and looked down upon. As a saying goes, “A language is a dialect with an army and a navy.” This implies that a powerful group of people like an army or a government can ",
       null
      ],
      [
@@ -85,18 +97,30 @@
     ]
    },
    {
-    "label": null,
+    "label": "【第三段】標準二：語言學的互通性，以丹麥語與挪威語為例",
     "segs": [
      [
       "Linguists have a different criterion: If two kinds of speech are so ",
-      null
+      "topic"
      ],
      [
       "25",
       "blank"
      ],
      [
-      " in grammar, vocabulary, and pronunciation that their speakers can understand each other, they are regarded as dialects of a single language. On the other hand, if ",
+      " in grammar, vocabulary, and pronunciation that their speakers can understand each other, they are regarded as dialects of a single language.",
+      "topic"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "On the other hand",
+      "trans"
+     ],
+     [
+      ", if ",
       null
      ],
      [
@@ -120,7 +144,15 @@
       "blank"
      ],
      [
-      " communicating with each other. Cantonese, on the other hand, is not considered a dialect of Chinese because speakers of the two languages can hardly ",
+      " communicating with each other. Cantonese, ",
+      null
+     ],
+     [
+      "on the other hand",
+      "trans"
+     ],
+     [
+      ", is not considered a dialect of Chinese because speakers of the two languages can hardly ",
       null
      ],
      [
@@ -128,7 +160,23 @@
       "blank"
      ],
      [
-      " with each other. This criterion of mutual understandability, though objective, can annoy nationalists. For example, Danes and Norwegians have no difficulty understanding each other, making Danish and Norwegian ",
+      " with each other. This criterion of mutual understandability, ",
+      null
+     ],
+     [
+      "though",
+      "trans"
+     ],
+     [
+      " objective, can annoy nationalists. ",
+      null
+     ],
+     [
+      "For example",
+      "trans"
+     ],
+     [
+      ", Danes and Norwegians have no difficulty understanding each other, making Danish and Norwegian ",
       null
      ],
      [
@@ -136,7 +184,15 @@
       "blank"
      ],
      [
-      " as dialects of the same language. Yet, few Danes or Norwegians would actually feel happy about this classification.",
+      " as dialects of the same language. ",
+      null
+     ],
+     [
+      "Yet",
+      "trans"
+     ],
+     [
+      ", few Danes or Norwegians would actually feel happy about this classification.",
       null
      ]
     ]
@@ -197,11 +253,19 @@
   "sourceNote": null,
   "paras": [
    {
-    "label": null,
+    "label": "【第一段】其人與稱號：「惡魔島鳥人」其實名不副實",
     "segs": [
      [
-      "Robert Stroud (1890－1963) was an American prisoner who reared and sold birds and became an ornithologist while in prison. He became known as the “Birdman of Alcatraz.” Despite this ",
+      "Robert Stroud (1890－1963) was an American prisoner who reared and sold birds and became an ornithologist while in prison. He became known as the “Birdman of Alcatraz.” ",
       null
+     ],
+     [
+      "Despite",
+      "trans"
+     ],
+     [
+      " this ",
+      "gradient"
      ],
      [
       "21",
@@ -209,15 +273,19 @@
      ],
      [
       " , he actually kept birds only at Leavenworth Prison, before he was transferred to Alcatraz.",
-      null
+      "gradient"
      ]
     ]
    },
    {
-    "label": null,
+    "label": "【第二段】回溯：判處死刑、改判終身監禁、獨自服刑",
     "segs": [
      [
-      "Stroud is one of the most notorious criminals in American history. He was convicted of first-degree murder and sentenced to death by hanging in 1916. His mother desperately ",
+      "Stroud is one of the most notorious criminals in American history.",
+      "topic"
+     ],
+     [
+      " He was convicted of first-degree murder and sentenced to death by hanging in 1916. His mother desperately ",
       null
      ],
      [
@@ -225,7 +293,15 @@
       "blank"
      ],
      [
-      " for his life. Finally, in 1920, President Woodrow Wilson changed his death sentence to life ",
+      " for his life. ",
+      null
+     ],
+     [
+      "Finally",
+      "trans"
+     ],
+     [
+      ", in 1920, President Woodrow Wilson changed his death sentence to life ",
       null
      ],
      [
@@ -233,7 +309,15 @@
       "blank"
      ],
      [
-      " without parole. But because of Stroud’s unpredictable and violent outbursts, the warden directed that Stroud be placed in a ",
+      " without parole. ",
+      null
+     ],
+     [
+      "But because of",
+      "trans"
+     ],
+     [
+      " Stroud’s unpredictable and violent outbursts, the warden directed that Stroud be placed in a ",
       null
      ],
      [
@@ -247,18 +331,22 @@
     ]
    },
    {
-    "label": null,
+    "label": "【第三段】在 Leavenworth 監獄養鳥、著書的那段期間",
     "segs": [
      [
       "While at Leavenworth (1912－1942), Stroud developed a ",
-      null
+      "topic"
      ],
      [
       "25",
       "blank"
      ],
      [
-      " interest in birds after finding an injured sparrow in the prison yard. He was given a special right to ",
+      " interest in birds after finding an injured sparrow in the prison yard.",
+      "topic"
+     ],
+     [
+      " He was given a special right to ",
       null
      ],
      [
@@ -266,7 +354,15 @@
       "blank"
      ],
      [
-      " birds and maintain a lab inside his two prison cells. It was felt that this activity would allow for productive use of his time. As a result of this ",
+      " birds and maintain a lab inside his two prison cells. It was felt that this activity would allow for productive use of his time. ",
+      null
+     ],
+     [
+      "As a result of",
+      "trans"
+     ],
+     [
+      " this ",
       null
      ],
      [
@@ -282,7 +378,15 @@
       "blank"
      ],
      [
-      " . Although it is widely debated whether the remedies he developed were ",
+      " . ",
+      null
+     ],
+     [
+      "Although",
+      "trans"
+     ],
+     [
+      " it is widely debated whether the remedies he developed were ",
       null
      ],
      [
@@ -296,10 +400,30 @@
     ]
    },
    {
-    "label": null,
+    "label": "【第四段】結局：移送惡魔島後不准養鳥，手稿未能出版",
     "segs": [
      [
-      "In 1942, Stroud was transferred to Alcatraz. He spent the next seventeen years there, but was not allowed to keep pets. While there, he wrote two more manuscripts, but these were never published because it was ",
+      "In 1942, Stroud was transferred to Alcatraz.",
+      "topic"
+     ],
+     [
+      " He spent the next seventeen years there, ",
+      null
+     ],
+     [
+      "but",
+      "trans"
+     ],
+     [
+      " was not allowed to keep pets. While there, he wrote two more manuscripts, ",
+      null
+     ],
+     [
+      "but",
+      "trans"
+     ],
+     [
+      " these were never published because it was ",
       null
      ],
      [
@@ -369,10 +493,18 @@
   "sourceNote": null,
   "paras": [
    {
-    "label": null,
+    "label": "【第一段】引言：氣泡布取代報紙，發明的由來卻出乎意料",
     "segs": [
      [
-      "Bubble wrap, a sheet of thin plastic filled with air bubbles, is one of the most common packing materials. Before it was invented, people used balled-up newspaper to safeguard items during shipping. But it was messy and didn’t offer that much ",
+      "Bubble wrap, a sheet of thin plastic filled with air bubbles, is one of the most common packing materials. Before it was invented, people used balled-up newspaper to safeguard items during shipping. ",
+      null
+     ],
+     [
+      "But",
+      "trans"
+     ],
+     [
+      " it was messy and didn’t offer that much ",
       null
      ],
      [
@@ -380,8 +512,16 @@
       "blank"
      ],
      [
-      " . Bubble wrap solved these problems and was a “godsend” for the shipping industry. However, the invention of bubble wrap was actually quite ",
+      " . Bubble wrap solved these problems and was a “godsend” for the shipping industry. ",
       null
+     ],
+     [
+      "However",
+      "trans"
+     ],
+     [
+      ", the invention of bubble wrap was actually quite ",
+      "thesis"
      ],
      [
       "22",
@@ -389,15 +529,27 @@
      ],
      [
       " .",
-      null
+      "thesis"
      ]
     ]
    },
    {
-    "label": null,
+    "label": "【第二段】由來：原本要做壁紙，結果失敗",
     "segs": [
      [
-      "Originally, bubble wrap was created in the late 1950s by two engineers for use as a wallpaper that would appeal to the young postwar generation. They placed two pieces of plastic shower curtain through a heat-sealing machine to create the texture. But the result was ",
+      "Originally",
+      "trans"
+     ],
+     [
+      ", bubble wrap was created in the late 1950s by two engineers for use as a wallpaper that would appeal to the young postwar generation. They placed two pieces of plastic shower curtain through a heat-sealing machine to create the texture. ",
+      null
+     ],
+     [
+      "But",
+      "trans"
+     ],
+     [
+      " the result was ",
       null
      ],
      [
@@ -411,18 +563,26 @@
     ]
    },
    {
-    "label": null,
+    "label": "【第三段】轉機：改當緩衝材料，IBM 帶動市場",
     "segs": [
      [
-      "However, the inventors did not totally ",
-      null
+      "However",
+      "trans"
+     ],
+     [
+      ", the inventors did not totally ",
+      "topic"
      ],
      [
       "24",
       "blank"
      ],
      [
-      " their failed product. They found that their invention could have a different use. The air bubbles created excellent cushions to ",
+      " their failed product.",
+      "topic"
+     ],
+     [
+      " They found that their invention could have a different use. The air bubbles created excellent cushions to ",
       null
      ],
      [
@@ -438,7 +598,15 @@
       "blank"
      ],
      [
-      " a company in 1960 and named their product Bubble Wrap. Meanwhile, IBM, the leading computer maker at the time, needed a safe way of packing their ",
+      " a company in 1960 and named their product Bubble Wrap. ",
+      null
+     ],
+     [
+      "Meanwhile",
+      "trans"
+     ],
+     [
+      ", IBM, the leading computer maker at the time, needed a safe way of packing their ",
       null
      ],
      [
@@ -460,10 +628,18 @@
     ]
    },
    {
-    "label": null,
+    "label": "【第四段】延伸：捏氣泡成了紓壓的方法",
     "segs": [
      [
-      "Besides using it for shipping, people find great joy in popping those air-filled pockets. Some are even ",
+      "Besides",
+      "trans"
+     ],
+     [
+      " using it for shipping, people find great joy in popping those air-filled pockets.",
+      "topic"
+     ],
+     [
+      " Some are even ",
       null
      ],
      [
@@ -541,7 +717,7 @@
   "sourceNote": null,
   "paras": [
    {
-    "label": null,
+    "label": "【第一段】背景：山頂上的建築群與館藏",
     "segs": [
      [
       "The Getty Center sits more than 800 feet above sea level, towering above the city of Los Angeles. A 0.75-mile-long tramway takes visitors to the top of the hill. At the top, four exhibit pavilions and a visitor center form the heart of an eleven-building complex. The museum was originally constructed to ",
@@ -552,7 +728,15 @@
       "blank"
      ],
      [
-      " the vast art collection belonging to oil tycoon J. Paul Getty. Today, it is stocked with so many art works that the exhibit arenas can show just a part of them at a time, making the ",
+      " the vast art collection belonging to oil tycoon J. Paul Getty. ",
+      null
+     ],
+     [
+      "Today",
+      "trans"
+     ],
+     [
+      ", it is stocked with so many art works that the exhibit arenas can show just a part of them at a time, making the ",
       null
      ],
      [
@@ -566,7 +750,7 @@
     ]
    },
    {
-    "label": null,
+    "label": "【第二段】點出主旨：來看美術館，看到的是一件藝術品",
     "segs": [
      [
       "The Center's award-winning architect, Richard Meier, did an outstanding job of creating a public space that has ",
@@ -577,7 +761,23 @@
       "blank"
      ],
      [
-      " many visitors. Visitors go to the Getty thinking they are visiting a museum with works of art on the inside. What they discover instead is a work of art with a museum inside. The idea is interesting: The outdoor space can be a completely satisfying ",
+      " many visitors. Visitors go to the Getty thinking they are visiting a museum with works of art on the inside. ",
+      null
+     ],
+     [
+      "What they discover ",
+      "gradient"
+     ],
+     [
+      "instead",
+      "trans"
+     ],
+     [
+      " is a work of art with a museum inside.",
+      "gradient"
+     ],
+     [
+      " The idea is interesting: The outdoor space can be a completely satisfying ",
       null
      ],
      [
@@ -591,7 +791,7 @@
     ]
    },
    {
-    "label": null,
+    "label": "【第三段】建材與處處不同的景觀",
     "segs": [
      [
       "Meier took a few basic ",
@@ -602,7 +802,15 @@
       "blank"
      ],
      [
-      " : metal, stone and glass. Working with a billion-dollar budget, he combined them to create a work of architecture that can excite visitors as much as the art collection inside does. Around every corner and at every ",
+      " : metal, stone and glass. ",
+      null
+     ],
+     [
+      "Working with a billion-dollar budget, he combined them to create a work of architecture that can excite visitors as much as the art collection inside does.",
+      "topic"
+     ],
+     [
+      " Around every corner and at every ",
       null
      ],
      [
@@ -610,13 +818,21 @@
       "blank"
      ],
      [
-      " , there is a new view to enchant guests. And then, just when they think they have seen it all, a new fountain or landscape pops up.",
+      " , there is a new view to enchant guests. ",
+      null
+     ],
+     [
+      "And then",
+      "trans"
+     ],
+     [
+      ", just when they think they have seen it all, a new fountain or landscape pops up.",
       null
      ]
     ]
    },
    {
-    "label": null,
+    "label": "【第四段】石材：義大利石灰華裡的化石",
     "segs": [
      [
       "The building stone is travertine, ",
@@ -627,15 +843,23 @@
       "blank"
      ],
      [
-      " from Italy, the same source as for the historic buildings in Rome. A special cutting process exposes the fossils long buried inside the stone, which reveals the delicate treasures ",
+      " from Italy, the same source as for the historic buildings in Rome. ",
       null
+     ],
+     [
+      "A special cutting process exposes the fossils long buried inside the stone, which reveals the delicate treasures ",
+      "topic"
      ],
      [
       "28",
       "blank"
      ],
      [
-      " under the rough surface. Some of them are set as “feature” stones scattered about the site, waiting to ",
+      " under the rough surface.",
+      "topic"
+     ],
+     [
+      " Some of them are set as “feature” stones scattered about the site, waiting to ",
       null
      ],
      [
@@ -649,10 +873,18 @@
     ]
    },
    {
-    "label": null,
+    "label": "【第五段】收尾：免費導覽",
     "segs": [
      [
-      "In addition to museum tours, the Getty also provides various free on-site tours, including tours of the gardens. These ",
+      "In addition to",
+      "trans"
+     ],
+     [
+      " museum tours, the Getty also provides various free on-site tours, including tours of the gardens.",
+      "topic"
+     ],
+     [
+      " These ",
       null
      ],
      [
@@ -723,11 +955,23 @@
   "sourceNote": null,
   "paras": [
    {
-    "label": null,
+    "label": "【第一段】定義與主旨：水產養殖的價值",
     "segs": [
      [
-      "Aquaculture is the farming of any aquatic plant or animal. Aquaculture is of great importance because it reduces the possibility of over fishing wild fish, and also improves the quality and increases the ",
+      "Aquaculture is the farming of any aquatic plant or animal. ",
       null
+     ],
+     [
+      "Aquaculture is of great importance ",
+      "gradient"
+     ],
+     [
+      "because",
+      "trans"
+     ],
+     [
+      " it reduces the possibility of over fishing wild fish, and also improves the quality and increases the ",
+      "gradient"
      ],
      [
       "21",
@@ -735,15 +979,19 @@
      ],
      [
       " of fish for human consumption.",
-      null
+      "gradient"
      ]
     ]
    },
    {
-    "label": null,
+    "label": "【第二段】上古：澳洲原住民與中國的養殖",
     "segs": [
      [
-      "Ancient civilizations throughout the world engaged in different types of fish farming. The indigenous people in Australia are believed to have raised eels as early as 6000 BC. Abundant ",
+      "Ancient civilizations throughout the world engaged in different types of fish farming.",
+      "topic"
+     ],
+     [
+      " The indigenous people in Australia are believed to have raised eels as early as 6000 BC. Abundant ",
       null
      ],
      [
@@ -759,7 +1007,15 @@
       "blank"
      ],
      [
-      " , however, are from China, where the practice was in wide use around 2500 BC. When the waters subsided after river floods, some fish, mainly carp, were ",
+      " , ",
+      null
+     ],
+     [
+      "however",
+      "trans"
+     ],
+     [
+      ", are from China, where the practice was in wide use around 2500 BC. When the waters subsided after river floods, some fish, mainly carp, were ",
       null
      ],
      [
@@ -773,10 +1029,14 @@
     ]
    },
    {
-    "label": null,
+    "label": "【第三段】古羅馬：海魚與牡蠣的池養",
     "segs": [
      [
-      "In Europe, aquaculture first began in ancient Rome. The Romans, who ",
+      "In Europe, aquaculture first began in ancient Rome.",
+      "topic"
+     ],
+     [
+      " The Romans, who ",
       null
      ],
      [
@@ -806,18 +1066,38 @@
     ]
    },
    {
-    "label": null,
+    "label": "【第四段】中世紀歐洲：淡水魚只歸修院與貴族",
     "segs": [
      [
       "During the Middle Ages, aquaculture ",
-      null
+      "topic"
      ],
      [
       "28",
       "blank"
      ],
      [
-      " in Europe, since far away from the seacoasts and the big rivers, fish had to be salted so they did not rot. Throughout feudal Europe, monastic orders and the aristocracy were the main users of freshwater fish, for they had a ",
+      " in Europe, ",
+      "topic"
+     ],
+     [
+      "since",
+      "trans"
+     ],
+     [
+      " far away from the seacoasts and the big rivers, fish had to be salted so they did not rot.",
+      "topic"
+     ],
+     [
+      " Throughout feudal Europe, monastic orders and the aristocracy were the main users of freshwater fish, ",
+      null
+     ],
+     [
+      "for",
+      "trans"
+     ],
+     [
+      " they had a ",
       null
      ],
      [
@@ -825,7 +1105,15 @@
       "blank"
      ],
      [
-      " over the land, forests, and water courses while the common people could seldom build ponds of their own. As with hunting, ",
+      " over the land, forests, and water courses ",
+      null
+     ],
+     [
+      "while",
+      "trans"
+     ],
+     [
+      " the common people could seldom build ponds of their own. As with hunting, ",
       null
      ],
      [
@@ -895,11 +1183,15 @@
   "sourceNote": null,
   "paras": [
    {
-    "label": null,
+    "label": "【第一段】起源傳說：農夫偶然發現皮蛋",
     "segs": [
      [
-      "Hundreds of years ago, a savory idea—called the century egg—was hatched in rural China. As the story goes, a farmer found naturally preserved duck eggs in a muddy pool of water and slaked lime. After surviving a tasting, he set out to replicate them manually, resulting in a ",
+      "Hundreds of years ago, a savory idea—called the century egg—was hatched in rural China. As the story goes, a farmer found naturally preserved duck eggs in a muddy pool of water and slaked lime. ",
       null
+     ],
+     [
+      "After surviving a tasting, he set out to replicate them manually, resulting in a ",
+      "gradient"
      ],
      [
       "21",
@@ -907,15 +1199,19 @@
      ],
      [
       " that would endure for centuries as a comfort food in Hong Kong, China and parts of Southeast Asia.",
-      null
+      "gradient"
      ]
     ]
    },
    {
-    "label": null,
+    "label": "【第二段】年代：可追溯到明朝，做法幾乎沒變",
     "segs": [
      [
-      "Though details of the century egg’s discovery are undocumented, scientists estimate that it ",
+      "Though",
+      "trans"
+     ],
+     [
+      " details of the century egg’s discovery are undocumented, scientists estimate that it ",
       null
      ],
      [
@@ -923,7 +1219,15 @@
       "blank"
      ],
      [
-      " more than 500 years to the Ming Dynasty. And aside from some techniques used for large-scale production today, the egg preservation process has remained relatively ",
+      " more than 500 years to the Ming Dynasty. And ",
+      null
+     ],
+     [
+      "aside from",
+      "trans"
+     ],
+     [
+      " some techniques used for large-scale production today, the egg preservation process has remained relatively ",
       null
      ],
      [
@@ -937,10 +1241,18 @@
     ]
    },
    {
-    "label": null,
+    "label": "【第三段】做法：浸泡的材料與時間",
     "segs": [
      [
-      "To make the eggs, a vat is typically filled with a combination of strong black tea, lime, salt and freshly burned wood ashes, and left to cool overnight. The next day, duck, quail, or chicken eggs are added to the ",
+      "To make the eggs, a vat is typically filled with a combination of strong black tea, lime, salt and freshly burned wood ashes, and left to cool overnight. ",
+      null
+     ],
+     [
+      "The next day",
+      "trans"
+     ],
+     [
+      ", duck, quail, or chicken eggs are added to the ",
       null
      ],
      [
@@ -948,7 +1260,15 @@
       "blank"
      ],
      [
-      " . Then they soak anywhere from seven weeks to five months—not for a century as the name ",
+      " . ",
+      null
+     ],
+     [
+      "Then",
+      "trans"
+     ],
+     [
+      " they soak anywhere from seven weeks to five months—not for a century as the name ",
       null
      ],
      [
@@ -962,7 +1282,7 @@
     ]
    },
    {
-    "label": null,
+    "label": "【第四段】別名、外觀與氣味",
     "segs": [
      [
       "The century egg also ",
@@ -973,15 +1293,27 @@
       "blank"
      ],
      [
-      " many other names, such as hundred-year egg, thousand-year egg, or millennium egg. But no matter what it’s called, this common snack has a rather uncommon taste and is often grouped by travelers with other ",
+      " many other names, such as hundred-year egg, thousand-year egg, or millennium egg. ",
       null
+     ],
+     [
+      "But",
+      "trans"
+     ],
+     [
+      " no matter what it’s called, this common snack has a rather uncommon taste and is often grouped by travelers with other ",
+      "topic"
      ],
      [
       "27",
       "blank"
      ],
      [
-      " Asian foods such as chicken feet or snake soup. Getting beyond the egg’s appearance is the first ",
+      " Asian foods such as chicken feet or snake soup.",
+      "topic"
+     ],
+     [
+      " Getting beyond the egg’s appearance is the first ",
       null
      ],
      [
@@ -989,7 +1321,15 @@
       "blank"
      ],
      [
-      " . Instead of being white with a bright orange yolk, the jelly- like egg takes on a less ",
+      " . ",
+      null
+     ],
+     [
+      "Instead of",
+      "trans"
+     ],
+     [
+      " being white with a bright orange yolk, the jelly- like egg takes on a less ",
       null
      ],
      [
@@ -1003,10 +1343,14 @@
     ]
    },
    {
-    "label": null,
+    "label": "【第五段】收尾：年輕一代不愛吃，前途未卜",
     "segs": [
      [
-      "While the century egg draws a following from older generations and curious travelers, it is falling out of ",
+      "While",
+      "trans"
+     ],
+     [
+      " the century egg draws a following from older generations and curious travelers, it is falling out of ",
       null
      ],
      [
@@ -1014,8 +1358,20 @@
       "blank"
      ],
      [
-      " with the younger set, who are weary of China’s preserved and fermented foods. The future of the humble snack is uncertain, but chefs in Chinese restaurants are still trying to preserve this nostalgic bite of culinary heritage.",
+      " with the younger set, who are weary of China’s preserved and fermented foods. ",
       null
+     ],
+     [
+      "The future of the humble snack is uncertain, ",
+      "topic"
+     ],
+     [
+      "but",
+      "trans"
+     ],
+     [
+      " chefs in Chinese restaurants are still trying to preserve this nostalgic bite of culinary heritage.",
+      "topic"
      ]
     ]
    }
@@ -1078,10 +1434,22 @@
   "sourceNote": "本篇出自大考中心公布的參考試卷，不是正式考試的試題，沒有考生作答資料。",
   "paras": [
    {
-    "label": null,
+    "label": "【第一段】點出主旨：布袋戲是台灣重要的表演藝術",
     "segs": [
      [
-      "The Taiwanese puppet show (“Budaixi”) is a distinguished form of performing arts in Taiwan. Although basically hand puppets, the ",
+      "The Taiwanese puppet show (“Budaixi”) is a distinguished form of performing arts in Taiwan.",
+      "gradient"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "Although",
+      "trans"
+     ],
+     [
+      " basically hand puppets, the ",
       null
      ],
      [
@@ -1095,18 +1463,22 @@
     ]
    },
    {
-    "label": null,
+    "label": "【第二段】後場音樂與鼓師的角色",
     "segs": [
      [
       "The puppet performance is typically ",
-      null
+      "topic"
      ],
      [
       "22",
       "blank"
      ],
      [
-      " by a small orchestra. The backstage music is directed by the drum player. The drummer needs to pay attention to what is going on in the plot and follow the rhythm of the characters. He also uses the drum to ",
+      " by a small orchestra.",
+      "topic"
+     ],
+     [
+      " The backstage music is directed by the drum player. The drummer needs to pay attention to what is going on in the plot and follow the rhythm of the characters. He also uses the drum to ",
       null
      ],
      [
@@ -1136,10 +1508,14 @@
     ]
    },
    {
-    "label": null,
+    "label": "【第三段】兩位演師的分工與師徒關係",
     "segs": [
      [
-      "In general, a show needs two performers. The main performer is generally the chief or ",
+      "In general, a show needs two performers.",
+      "topic"
+     ],
+     [
+      " The main performer is generally the chief or ",
       null
      ],
      [
@@ -1169,7 +1545,7 @@
     ]
    },
    {
-    "label": null,
+    "label": "【第四段】演出的場合與用意",
     "segs": [
      [
       "Budaixi troupes are often hired to perform at festivals held in honor of local gods, and on happy ",
@@ -1250,7 +1626,7 @@
   "sourceNote": null,
   "paras": [
    {
-    "label": null,
+    "label": "【第一段】引言：獅身人面像正在受損，科學家著手修復",
     "segs": [
      [
       "The Great Sphinx in the Giza desert is a mythological creature with the body of a lion and the head of a human being. This monumental ",
@@ -1261,7 +1637,15 @@
       "blank"
      ],
      [
-      " is often regarded as a national symbol of Egypt, having guarded the famous Egyptian pyramids for 4,000 years. Nevertheless, the stone creature does not look like it did 4,000 years ago; wind, water, pollution, and human contact have slowly ",
+      " is often regarded as a national symbol of Egypt, having guarded the famous Egyptian pyramids for 4,000 years. ",
+      null
+     ],
+     [
+      "Nevertheless",
+      "trans"
+     ],
+     [
+      ", the stone creature does not look like it did 4,000 years ago; wind, water, pollution, and human contact have slowly ",
       null
      ],
      [
@@ -1283,10 +1667,22 @@
     ]
    },
    {
-    "label": null,
+    "label": "【第二段】修復工法：測量、編號、手工雕鑿、逐塊替換",
     "segs": [
      [
-      "Fixing the Sphinx, however, is not an easy job. It takes several years of ",
+      "Fixing the Sphinx, ",
+      "topic"
+     ],
+     [
+      "however",
+      "trans"
+     ],
+     [
+      ", is not an easy job.",
+      "topic"
+     ],
+     [
+      " It takes several years of ",
       null
      ],
      [
@@ -1302,7 +1698,15 @@
       "blank"
      ],
      [
-      " . Scientists use computers to help figure out the size and shape of each stone. Each old stone is given a number. Then, one by one, replacement stones are carved by hand, just like people did long ago, in the ",
+      " . Scientists use computers to help figure out the size and shape of each stone. Each old stone is given a number. ",
+      null
+     ],
+     [
+      "Then",
+      "trans"
+     ],
+     [
+      ", one by one, replacement stones are carved by hand, just like people did long ago, in the ",
       null
      ],
      [
@@ -1324,10 +1728,14 @@
     ]
    },
    {
-    "label": null,
+    "label": "【第三段】防護構想的各種提案",
     "segs": [
      [
-      "Scientists are also worried about how to keep the Sphinx from falling apart again. They have talked about ",
+      "Scientists are also worried about how to keep the Sphinx from falling apart again.",
+      "topic"
+     ],
+     [
+      " They have talked about ",
       null
      ],
      [
@@ -1349,7 +1757,7 @@
     ]
    },
    {
-    "label": null,
+    "label": "【第四段】收尾：方法談不攏，但必須保護是共識",
     "segs": [
      [
       "There are no easy solutions to the ",
@@ -1360,8 +1768,20 @@
       "blank"
      ],
      [
-      " , not to mention solutions that are agreeable to all parties. The one thing that is agreed upon is that something needs to be done to protect this ancient sculpture.",
+      " , ",
       null
+     ],
+     [
+      "not to mention",
+      "trans"
+     ],
+     [
+      " solutions that are agreeable to all parties. ",
+      null
+     ],
+     [
+      "The one thing that is agreed upon is that something needs to be done to protect this ancient sculpture.",
+      "gradient"
      ]
     ]
    }
@@ -1422,10 +1842,14 @@
   "sourceNote": null,
   "paras": [
    {
-    "label": null,
+    "label": "【第一段】點出主旨：二十世紀最慘重的健康危機之一；兩波疫情的經過",
     "segs": [
      [
-      "The 1918 influenza epidemic, which occurred during World War I, was one of the most devastating health crises of the 20th century. Between September 1918 and June 1919, more than 600,000 Americans died of influenza and pneumonia, making the epidemic far more ",
+      "The 1918 influenza epidemic, which occurred during World War I, was one of the most devastating health crises of the 20th century.",
+      "gradient"
+     ],
+     [
+      " Between September 1918 and June 1919, more than 600,000 Americans died of influenza and pneumonia, making the epidemic far more ",
       null
      ],
      [
@@ -1481,7 +1905,15 @@
       "blank"
      ],
      [
-      " and thousands died. In fact, it caused many more deaths than any of the other epidemics which had ",
+      " and thousands died. ",
+      null
+     ],
+     [
+      "In fact",
+      "trans"
+     ],
+     [
+      ", it caused many more deaths than any of the other epidemics which had ",
       null
      ],
      [
@@ -1495,18 +1927,22 @@
     ]
    },
    {
-    "label": null,
+    "label": "【第二段】收尾：專家預警，建議每年打流感疫苗",
     "segs": [
      [
       "Medical scientists ",
-      null
+      "topic"
      ],
      [
       "29",
       "blank"
      ],
      [
-      " that another epidemic will attack people at some point in the future. Today’s worldwide transportation makes it even ",
+      " that another epidemic will attack people at some point in the future.",
+      "topic"
+     ],
+     [
+      " Today’s worldwide transportation makes it even ",
       null
      ],
      [
@@ -1514,7 +1950,15 @@
       "blank"
      ],
      [
-      " to control an epidemic. Therefore, doctors advise that we continue to get our annual flu shots in order to stay healthy.",
+      " to control an epidemic. ",
+      null
+     ],
+     [
+      "Therefore",
+      "trans"
+     ],
+     [
+      ", doctors advise that we continue to get our annual flu shots in order to stay healthy.",
       null
      ]
     ]
@@ -1574,10 +2018,18 @@
   "sourceNote": null,
   "paras": [
    {
-    "label": null,
+    "label": "【第一段】點出主旨：燒紙錢源自唐代，另一個世界是人間的鏡像",
     "segs": [
      [
-      "The practice of burning paper money or paper model offerings at funerals in Chinese society can be traced back to the Tang dynasty (618-907 AD). Chinese people believe that when someone passes away, there is a death of the body, but the ",
+      "The practice of burning paper money or paper model offerings at funerals in Chinese society can be traced back to the Tang dynasty (618-907 AD). Chinese people believe that when someone passes away, there is a death of the body, ",
+      null
+     ],
+     [
+      "but",
+      "trans"
+     ],
+     [
+      " the ",
       null
      ],
      [
@@ -1585,15 +2037,31 @@
       "blank"
      ],
      [
-      " continues to live in the next world. This “next world” is a mirror of the human world, where the “residents” need places to live, money to spend, daily necessities, and entertainment just like when they were ",
+      " continues to live in the next world. ",
       null
+     ],
+     [
+      "This “next world” is a mirror of the human world, where the “residents” need places to live, money to spend, daily necessities, and entertainment just like when they were ",
+      "gradient"
      ],
      [
       "22",
       "blank"
      ],
      [
-      " . Some of these necessities are buried with the deceased, while most others are “shipped” to them by burning paper models. As the ashes fly high, the offerings are ",
+      " .",
+      "gradient"
+     ],
+     [
+      " Some of these necessities are buried with the deceased, ",
+      null
+     ],
+     [
+      "while",
+      "trans"
+     ],
+     [
+      " most others are “shipped” to them by burning paper models. As the ashes fly high, the offerings are ",
       null
      ],
      [
@@ -1607,18 +2075,30 @@
     ]
    },
    {
-    "label": null,
+    "label": "【第二段】家屬的心意：紙紮要大、要豪華",
     "segs": [
      [
-      "Relatives of the deceased want to see their beloved family members live comfortably in the next world, so the paper houses are big and the cars are very ",
-      null
+      "Relatives of the deceased want to see their beloved family members live comfortably in the next world, ",
+      "topic"
+     ],
+     [
+      "so",
+      "trans"
+     ],
+     [
+      " the paper houses are big and the cars are very ",
+      "topic"
      ],
      [
       "24",
       "blank"
      ],
      [
-      " , mostly Mercedes-Benzes. A complete package of paper offerings may include a couple of servants, cash, and credit cards so that the deceased will have all their ",
+      " , mostly Mercedes-Benzes.",
+      "topic"
+     ],
+     [
+      " A complete package of paper offerings may include a couple of servants, cash, and credit cards so that the deceased will have all their ",
       null
      ],
      [
@@ -1632,7 +2112,7 @@
     ]
    },
    {
-    "label": null,
+    "label": "【第三段】今昔對照：從專賣店到網路訂購",
     "segs": [
      [
       "These traditional paper offerings were sold only at specialty stores in the past. The style and variety of the products were ",
@@ -1643,7 +2123,15 @@
       "blank"
      ],
      [
-      " . For example, “houses” looked all the same and were built by pasting paper around a bamboo frame, with ",
+      " . ",
+      null
+     ],
+     [
+      "For example",
+      "trans"
+     ],
+     [
+      ", “houses” looked all the same and were built by pasting paper around a bamboo frame, with ",
       null
      ],
      [
@@ -1651,7 +2139,15 @@
       "blank"
      ],
      [
-      " of a door, windows, and a roof printed on it. There were no trendy, modern supplies to choose from. Now, the ",
+      " of a door, windows, and a roof printed on it. There were no trendy, modern supplies to choose from. ",
+      null
+     ],
+     [
+      "Now",
+      "trans"
+     ],
+     [
+      ", the ",
       null
      ],
      [
@@ -1675,8 +2171,12 @@
       "blank"
      ],
      [
-      " . It seems that, with the help of a simple click, this old Chinese tradition has been given a face-lift.",
+      " . ",
       null
+     ],
+     [
+      "It seems that, with the help of a simple click, this old Chinese tradition has been given a face-lift.",
+      "topic"
      ]
     ]
    }
@@ -1736,11 +2236,19 @@
   "sourceNote": null,
   "paras": [
    {
-    "label": null,
+    "label": "【第一段】引言：零下十五度，每年仍有四千人上門",
     "segs": [
      [
-      "People who want to experience an overnight stay in arctic-like cold may try the ice hotel—a building of frozen water. Despite the seemingly unattractive prospect of sleeping in a room at minus 15 degrees Celsius, every year about 4,000 people ",
+      "People who want to experience an overnight stay in arctic-like cold may try the ice hotel—a building of frozen water. ",
       null
+     ],
+     [
+      "Despite",
+      "trans"
+     ],
+     [
+      " the seemingly unattractive prospect of sleeping in a room at minus 15 degrees Celsius, every year about 4,000 people ",
+      "topic"
      ],
      [
       "21",
@@ -1748,15 +2256,19 @@
      ],
      [
       " to an ice hotel in a town in Canada.",
-      null
+      "topic"
      ]
     ]
    },
    {
-    "label": null,
+    "label": "【第二段】體感：冷到呼氣結成水珠、鼻尖發麻",
     "segs": [
      [
-      "The only warm things at the ice hotel are the candles on the bedside tables. The air is so cold that you can see your ",
+      "The only warm things at the ice hotel are the candles on the bedside tables.",
+      "topic"
+     ],
+     [
+      " The air is so cold that you can see your ",
       null
      ],
      [
@@ -1786,18 +2298,26 @@
     ]
    },
    {
-    "label": null,
+    "label": "【第三段】行前說明：該穿什麼、該怎麼做",
     "segs": [
      [
-      "Since an adventurous spirit alone is not enough to ",
-      null
+      "Since",
+      "trans"
+     ],
+     [
+      " an adventurous spirit alone is not enough to ",
+      "topic"
      ],
      [
       "25",
       "blank"
      ],
      [
-      " more than two hours at the icy hotel, the staff briefs guests on what to wear and how to behave. Normal winter boots and outfits ",
+      " more than two hours at the icy hotel, the staff briefs guests on what to wear and how to behave.",
+      "topic"
+     ],
+     [
+      " Normal winter boots and outfits ",
       null
      ],
      [
@@ -1819,10 +2339,26 @@
     ]
    },
    {
-    "label": null,
+    "label": "【第四段】熱水池與睡前提醒",
     "segs": [
      [
-      "For individuals who need to escape the cold for a brief period, there are outdoor hot tubs in the hotel courtyard. You should make sure you have stopped sweating before you go to bed, though, because any ",
+      "For individuals who need to escape the cold for a brief period, there are outdoor hot tubs in the hotel courtyard. You should make sure you have stopped sweating before you go to bed, ",
+      null
+     ],
+     [
+      "though",
+      "trans"
+     ],
+     [
+      ", ",
+      null
+     ],
+     [
+      "because",
+      "trans"
+     ],
+     [
+      " any ",
       null
      ],
      [
@@ -1844,18 +2380,30 @@
     ]
    },
    {
-    "label": null,
+    "label": "【第五段】收尾：住冰旅館真正的理由",
     "segs": [
      [
-      "Comfort, however, is not the ",
-      null
+      "Comfort, ",
+      "gradient"
+     ],
+     [
+      "however",
+      "trans"
+     ],
+     [
+      ", is not the ",
+      "gradient"
      ],
      [
       "30",
       "blank"
      ],
      [
-      " to stay in the ice hotel. Guests want to feel like polar explorers. For them, the first hot cup of post-expedition coffee is pure delight.",
+      " to stay in the ice hotel.",
+      "gradient"
+     ],
+     [
+      " Guests want to feel like polar explorers. For them, the first hot cup of post-expedition coffee is pure delight.",
       null
      ]
     ]
@@ -1918,10 +2466,18 @@
   "sourceNote": "本篇出自大考中心公布的參考試卷，不是正式考試的試題，沒有考生作答資料。",
   "paras": [
    {
-    "label": null,
+    "label": "【第一段】CD 的三層構造與亮暗兩面",
     "segs": [
      [
-      "A compact disc (CD) is a thin, circular disc of metal and plastic about 12cm in diameter. It’s actually made of three layers. A CD is made mostly from a plastic base called polycarbonate. Sandwiched in the ",
+      "A compact disc (CD) is a thin, circular disc of metal and plastic about 12cm in diameter. ",
+      null
+     ],
+     [
+      "It’s actually made of three layers.",
+      "topic"
+     ],
+     [
+      " A CD is made mostly from a plastic base called polycarbonate. Sandwiched in the ",
       null
      ],
      [
@@ -1929,7 +2485,15 @@
       "blank"
      ],
      [
-      " there is a thin layer of aluminum. Finally, on top of the aluminum, is a ",
+      " there is a thin layer of aluminum. ",
+      null
+     ],
+     [
+      "Finally",
+      "trans"
+     ],
+     [
+      ", on top of the aluminum, is a ",
       null
      ],
      [
@@ -1945,13 +2509,21 @@
       "blank"
      ],
      [
-      " on it telling you what’s on the CD; but the shiny side is the important part. It’s shiny so that a laser beam can bounce off the disc and read the information stored on it.",
+      " on it telling you what’s on the CD; ",
+      null
+     ],
+     [
+      "but",
+      "trans"
+     ],
+     [
+      " the shiny side is the important part. It’s shiny so that a laser beam can bounce off the disc and read the information stored on it.",
       null
      ]
     ]
    },
    {
-    "label": null,
+    "label": "【第二段】點出主旨：從唱片、錄音帶到數位取樣，CD 上其實沒有音樂",
     "segs": [
      [
       "Before CDs were ",
@@ -1962,7 +2534,15 @@
       "blank"
      ],
      [
-      " , music was typically stored on plastic LP (long-playing) records and cassette tapes. LPs scratched easily, while tapes could sometimes be distorted entirely. They were not ",
+      " , music was typically stored on plastic LP (long-playing) records and cassette tapes. LPs scratched easily, ",
+      null
+     ],
+     [
+      "while",
+      "trans"
+     ],
+     [
+      " tapes could sometimes be distorted entirely. They were not ",
       null
      ],
      [
@@ -1970,7 +2550,15 @@
       "blank"
      ],
      [
-      " ways of storing music. In fact, the technology employed by LPs and tapes in storing music was rather ",
+      " ways of storing music. ",
+      null
+     ],
+     [
+      "In fact",
+      "trans"
+     ],
+     [
+      ", the technology employed by LPs and tapes in storing music was rather ",
       null
      ],
      [
@@ -1994,7 +2582,15 @@
       "blank"
      ],
      [
-      " into numbers by a process called “sampling.” During the sampling process, an electronic device in a CD measures the sound recorded; then, the device turns the ",
+      " into numbers by a process called “sampling.” During the sampling process, an electronic device in a CD measures the sound recorded; ",
+      null
+     ],
+     [
+      "then",
+      "trans"
+     ],
+     [
+      ", the device turns the ",
       null
      ],
      [
@@ -2002,8 +2598,24 @@
       "blank"
      ],
      [
-      " into a number, and stores it in binary format, that is, as a long list of ones and zeros . In other words, there is ",
+      " into a number, and stores it in binary format, ",
       null
+     ],
+     [
+      "that is",
+      "trans"
+     ],
+     [
+      ", as a long list of ones and zeros . ",
+      null
+     ],
+     [
+      "In other words",
+      "trans"
+     ],
+     [
+      ", there is ",
+      "gradient"
      ],
      [
       "30",
@@ -2011,16 +2623,28 @@
      ],
      [
       " no music on a CD at all—just a huge long list of numbers!",
-      null
+      "gradient"
      ]
     ]
    },
    {
-    "label": null,
+    "label": "【第三段】收尾：三十多年後仍然普及",
     "segs": [
      [
-      "Although CDs have been around for more than 30 years, because of their reliability and compactness they are still a very popular way of storing music and computer data .",
-      null
+      "Although",
+      "trans"
+     ],
+     [
+      " CDs have been around for more than 30 years, ",
+      "topic"
+     ],
+     [
+      "because of",
+      "trans"
+     ],
+     [
+      " their reliability and compactness they are still a very popular way of storing music and computer data .",
+      "topic"
      ]
     ]
    }
@@ -2081,10 +2705,22 @@
   "sourceNote": null,
   "paras": [
    {
-    "label": null,
+    "label": "【第一段】點出主旨：布袋戲是台灣重要的表演藝術",
     "segs": [
      [
-      "The Taiwanese puppet show (“Budaixi”) is a distinguished form of performing arts in Taiwan. Although basically hand puppets, the ",
+      "The Taiwanese puppet show (“Budaixi”) is a distinguished form of performing arts in Taiwan.",
+      "gradient"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "Although",
+      "trans"
+     ],
+     [
+      " basically hand puppets, the ",
       null
      ],
      [
@@ -2098,18 +2734,22 @@
     ]
    },
    {
-    "label": null,
+    "label": "【第二段】後場音樂與鼓師的角色",
     "segs": [
      [
       "The puppet performance is typically ",
-      null
+      "topic"
      ],
      [
       "22",
       "blank"
      ],
      [
-      " by a small orchestra. The backstage music is directed by the drum player. The drummer needs to pay attention to what is going on in the plot and follow the rhythm of the characters. He also uses the drum to ",
+      " by a small orchestra.",
+      "topic"
+     ],
+     [
+      " The backstage music is directed by the drum player. The drummer needs to pay attention to what is going on in the plot and follow the rhythm of the characters. He also uses the drum to ",
       null
      ],
      [
@@ -2139,10 +2779,14 @@
     ]
    },
    {
-    "label": null,
+    "label": "【第三段】兩位演師的分工與師徒關係",
     "segs": [
      [
-      "In general, a show needs two performers. The main performer is generally the chief or ",
+      "In general, a show needs two performers.",
+      "topic"
+     ],
+     [
+      " The main performer is generally the chief or ",
       null
      ],
      [
@@ -2172,7 +2816,7 @@
     ]
    },
    {
-    "label": null,
+    "label": "【第四段】演出的場合與用意",
     "segs": [
      [
       "Budaixi troupes are often hired to perform at processions and festivals held in honor of local gods, and on happy ",
@@ -2253,18 +2897,34 @@
   "sourceNote": null,
   "paras": [
    {
-    "label": null,
+    "label": "【第一段】文字的力量，說故事的人受到敬重",
     "segs": [
      [
-      "The history of the written word goes back 6,000 years. Words express feelings, open doors into the ",
+      "The history of the written word goes back 6,000 years. ",
       null
+     ],
+     [
+      "Words express feelings, open doors into the ",
+      "topic"
      ],
      [
       "21",
       "blank"
      ],
      [
-      " , create pictures of worlds never seen, and allow adventures never dared. Therefore, the original ",
+      " , create pictures of worlds never seen, and allow adventures never dared.",
+      "topic"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "Therefore",
+      "trans"
+     ],
+     [
+      ", the original ",
       null
      ],
      [
@@ -2278,18 +2938,26 @@
     ]
    },
    {
-    "label": null,
+    "label": "【第二段】點出主旨：影像文化取代文字",
     "segs": [
      [
-      "But now the romance is ",
-      null
+      "But",
+      "trans"
+     ],
+     [
+      " now the romance is ",
+      "topic"
      ],
      [
       "23",
       "blank"
      ],
      [
-      " . Imagination is being surpassed by the instant picture. In a triumphant march, movies, TV, videos, and DVDs are ",
+      " .",
+      "topic"
+     ],
+     [
+      " Imagination is being surpassed by the instant picture. In a triumphant march, movies, TV, videos, and DVDs are ",
       null
      ],
      [
@@ -2297,15 +2965,23 @@
       "blank"
      ],
      [
-      " storytellers and books. A visual culture is taking over the world—at the ",
+      " storytellers and books. ",
       null
+     ],
+     [
+      "A visual culture is taking over the world—at the ",
+      "thesis"
      ],
      [
       "25",
       "blank"
      ],
      [
-      " of the written word. Our literacy, and with it our verbal and communication skills, are in ",
+      " of the written word.",
+      "thesis"
+     ],
+     [
+      " Our literacy, and with it our verbal and communication skills, are in ",
       null
      ],
      [
@@ -2319,18 +2995,22 @@
     ]
    },
    {
-    "label": null,
+    "label": "【第三段】例外：圖像小說逆勢成長",
     "segs": [
      [
       "The only category of novel that is ",
-      null
+      "topic"
      ],
      [
       "27",
       "blank"
      ],
      [
-      " ground in our increasingly visual world is the graphic novel. A growing number of adults and young people worldwide are reading graphic novels, and educators are beginning to realize the power of this ",
+      " ground in our increasingly visual world is the graphic novel.",
+      "topic"
+     ],
+     [
+      " A growing number of adults and young people worldwide are reading graphic novels, and educators are beginning to realize the power of this ",
       null
      ],
      [
@@ -2338,7 +3018,15 @@
       "blank"
      ],
      [
-      " . The graphic novel looks like a comic book, but it is longer, more sophisticated, and may come in black and white or multiple ",
+      " . The graphic novel looks like a comic book, ",
+      null
+     ],
+     [
+      "but",
+      "trans"
+     ],
+     [
+      " it is longer, more sophisticated, and may come in black and white or multiple ",
       null
      ],
      [
@@ -2346,7 +3034,15 @@
       "blank"
      ],
      [
-      " and appear in many sizes. In fact, some of the most interesting, daring, and most heartbreaking art being created right now is being published in graphic novels. Graphic novels ",
+      " and appear in many sizes. ",
+      null
+     ],
+     [
+      "In fact",
+      "trans"
+     ],
+     [
+      ", some of the most interesting, daring, and most heartbreaking art being created right now is being published in graphic novels. Graphic novels ",
       null
      ],
      [
@@ -2410,10 +3106,14 @@
   "sourceNote": null,
   "paras": [
    {
-    "label": null,
+    "label": "【第一段】定義：火星文是什麼，在哪裡使用",
     "segs": [
      [
-      "Textese (also known as chatspeak, texting language, or txt talk) is a term for the abbreviations and slang most commonly used among young people today. The ",
+      "Textese (also known as chatspeak, texting language, or txt talk) is a term for the abbreviations and slang most commonly used among young people today.",
+      "topic"
+     ],
+     [
+      " The ",
       null
      ],
      [
@@ -2421,13 +3121,21 @@
       "blank"
      ],
      [
-      " of textese is largely due to the necessary brevity of mobile phone text messaging, though its use is also very common on the Internet, including e-mail and instant messaging.",
+      " of textese is largely due to the necessary brevity of mobile phone text messaging, ",
+      null
+     ],
+     [
+      "though",
+      "trans"
+     ],
+     [
+      " its use is also very common on the Internet, including e-mail and instant messaging.",
       null
      ]
     ]
    },
    {
-    "label": null,
+    "label": "【第二段】寫法：用字母、圖形、數字代替整字，省略母音",
     "segs": [
      [
       "There are no ",
@@ -2438,7 +3146,27 @@
       "blank"
      ],
      [
-      " rules for writing textese. However, the common practice is to use single letters, pictures, or numbers to represent whole words. For example, “i <3 u” uses the picture ",
+      " rules for writing textese. ",
+      null
+     ],
+     [
+      "However",
+      "trans"
+     ],
+     [
+      ", the common practice is to use single letters, pictures, or numbers to represent whole words.",
+      "topic"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "For example",
+      "trans"
+     ],
+     [
+      ", “i <3 u” uses the picture ",
       null
      ],
      [
@@ -2462,7 +3190,15 @@
       "blank"
      ],
      [
-      " the vowels from a word, and the reader is forced to interpret a string of consonants by re-adding the vowels. Thus, “dictionary” becomes “dctnry,” and “keyboard” becomes “kybrd.” The reader must interpret the ",
+      " the vowels from a word, and the reader is forced to interpret a string of consonants by re-adding the vowels. ",
+      null
+     ],
+     [
+      "Thus",
+      "trans"
+     ],
+     [
+      ", “dictionary” becomes “dctnry,” and “keyboard” becomes “kybrd.” The reader must interpret the ",
       null
      ],
      [
@@ -2470,7 +3206,23 @@
       "blank"
      ],
      [
-      " words depending on the context in which it is used, as there are many examples of words or phrases which use the same abbreviations. So if someone says “ttyl, lol” they probably mean “talk to you later, lots of love” not “talk to you later, laugh out loud,” and if someone says “omg, lol” they most ",
+      " words depending on the context in which it is used, ",
+      null
+     ],
+     [
+      "as",
+      "trans"
+     ],
+     [
+      " there are many examples of words or phrases which use the same abbreviations. ",
+      null
+     ],
+     [
+      "So",
+      "trans"
+     ],
+     [
+      " if someone says “ttyl, lol” they probably mean “talk to you later, lots of love” not “talk to you later, laugh out loud,” and if someone says “omg, lol” they most ",
       null
      ],
      [
@@ -2484,26 +3236,42 @@
     ]
    },
    {
-    "label": null,
+    "label": "【第三段】成因與批評：為了少打字，卻遭學者批評",
     "segs": [
      [
       "The emergence of textese is clearly due to a desire to type less and to communicate more ",
-      null
+      "thesis"
      ],
      [
       "28",
       "blank"
      ],
      [
-      " than one can manage without such shortcuts. Yet it has been severely ",
+      " than one can manage without such shortcuts.",
+      "thesis"
+     ],
+     [
+      " ",
       null
+     ],
+     [
+      "Yet",
+      "trans"
+     ],
+     [
+      " it has been severely ",
+      "topic"
      ],
      [
       "29",
       "blank"
      ],
      [
-      " as “wrecking our language.” Some scholars even consider the use of textese as “irritating” and essentially lazy behavior. They’re worried that “sloppy” habits gained while using textese will result in students’ growing ",
+      " as “wrecking our language.”",
+      "topic"
+     ],
+     [
+      " Some scholars even consider the use of textese as “irritating” and essentially lazy behavior. They’re worried that “sloppy” habits gained while using textese will result in students’ growing ",
       null
      ],
      [
@@ -2567,10 +3335,14 @@
   "sourceNote": null,
   "paras": [
    {
-    "label": null,
+    "label": "【第一段】點出主旨：購物成癮的定義與心理循環",
     "segs": [
      [
-      "Oniomania is the technical term for the compulsive desire to shop, more commonly referred to as compulsive shopping or shopping addiction. Victims often experience feelings of ",
+      "Oniomania is the technical term for the compulsive desire to shop, more commonly referred to as compulsive shopping or shopping addiction.",
+      "gradient"
+     ],
+     [
+      " Victims often experience feelings of ",
       null
      ],
      [
@@ -2586,7 +3358,31 @@
       "blank"
      ],
      [
-      " the environment where the purchasing occurred, the feeling of a personal reward would be gone. To compensate, the addicted person would go shopping again. Eventually a feeling of suppression will overcome the person. For example, cases have shown that the bought goods will be hidden or destroyed, because the person concerned feels ",
+      " the environment where the purchasing occurred, the feeling of a personal reward would be gone. To compensate, the addicted person would go shopping again. ",
+      null
+     ],
+     [
+      "Eventually",
+      "trans"
+     ],
+     [
+      " a feeling of suppression will overcome the person. ",
+      null
+     ],
+     [
+      "For example",
+      "trans"
+     ],
+     [
+      ", cases have shown that the bought goods will be hidden or destroyed, ",
+      null
+     ],
+     [
+      "because",
+      "trans"
+     ],
+     [
+      " the person concerned feels ",
       null
      ],
      [
@@ -2608,10 +3404,14 @@
     ]
    },
    {
-    "label": null,
+    "label": "【第二段】成因：童年經驗；收尾：美國約 8.9% 的人口",
     "segs": [
      [
-      "Compulsive shopping often begins at an early age. Children who experienced parental neglect often grew up with low ",
+      "Compulsive shopping often begins at an early age.",
+      "topic"
+     ],
+     [
+      " Children who experienced parental neglect often grew up with low ",
       null
      ],
      [
@@ -2619,7 +3419,23 @@
       "blank"
      ],
      [
-      " because throughout much of their childhood they felt that they were not important as a person. As a result, they used toys to ",
+      " ",
+      null
+     ],
+     [
+      "because",
+      "trans"
+     ],
+     [
+      " throughout much of their childhood they felt that they were not important as a person. ",
+      null
+     ],
+     [
+      "As a result",
+      "trans"
+     ],
+     [
+      ", they used toys to ",
       null
      ],
      [
@@ -2627,7 +3443,15 @@
       "blank"
      ],
      [
-      " their feelings of loneliness. Because of the ongoing sentiment of deprivation they endured as children, adults that have depended on materials for emotional ",
+      " their feelings of loneliness. ",
+      null
+     ],
+     [
+      "Because of",
+      "trans"
+     ],
+     [
+      " the ongoing sentiment of deprivation they endured as children, adults that have depended on materials for emotional ",
       null
      ],
      [
@@ -2635,7 +3459,15 @@
       "blank"
      ],
      [
-      " when they were much younger are more likely to become addicted to shopping. During adulthood, the purchase, instead of the toy, is substituted for ",
+      " when they were much younger are more likely to become addicted to shopping. During adulthood, the purchase, ",
+      null
+     ],
+     [
+      "instead of",
+      "trans"
+     ],
+     [
+      " the toy, is substituted for ",
       null
      ],
      [
@@ -2714,10 +3546,14 @@
   "sourceNote": "本篇出自大考中心公布的參考試卷，不是正式考試的試題，沒有考生作答資料。",
   "paras": [
    {
-    "label": null,
+    "label": "【第一段】點出主旨：業餘天文學家的典範赫歇爾；白天教音樂，晚上觀星、磨鏡，發現天王星的經過",
     "segs": [
      [
-      "If amateur astronomers look to someone as their ideal, it is undoubtedly William Herschel. He was a musician by ",
+      "If amateur astronomers look to someone as their ideal, it is undoubtedly William Herschel.",
+      "gradient"
+     ],
+     [
+      " He was a musician by ",
       null
      ],
      [
@@ -2725,7 +3561,23 @@
       "blank"
      ],
      [
-      " —first in a German band, then in the English spa town of Bath, where he played the oboe in an orchestra, served as organist in a church and gave music lessons. By ",
+      " —",
+      null
+     ],
+     [
+      "first",
+      "trans"
+     ],
+     [
+      " in a German band, ",
+      null
+     ],
+     [
+      "then",
+      "trans"
+     ],
+     [
+      " in the English spa town of Bath, where he played the oboe in an orchestra, served as organist in a church and gave music lessons. By ",
       null
      ],
      [
@@ -2789,7 +3641,15 @@
       "blank"
      ],
      [
-      " nebulous star that he “suspected to be a comet.” Since the object moved during the next few nights, Herschel ",
+      " nebulous star that he “suspected to be a comet.” ",
+      null
+     ],
+     [
+      "Since",
+      "trans"
+     ],
+     [
+      " the object moved during the next few nights, Herschel ",
       null
      ],
      [
@@ -2851,10 +3711,14 @@
   "sourceNote": null,
   "paras": [
    {
-    "label": null,
+    "label": "【第一段】比賽本身：規則、團體與個人項目、各種層級",
     "segs": [
      [
-      "Athletes and sports competitors compete in organized, officiated sports events to entertain spectators. When playing a game, athletes are required to understand the strategies of their game and ",
+      "Athletes and sports competitors compete in organized, officiated sports events to entertain spectators.",
+      "topic"
+     ],
+     [
+      " When playing a game, athletes are required to understand the strategies of their game and ",
       null
      ],
      [
@@ -2884,10 +3748,14 @@
     ]
    },
    {
-    "label": null,
+    "label": "【第二段】點出主旨：當運動員不只是上場比賽",
     "segs": [
      [
-      "Being an athlete involves more than competing in athletic events. Athletes spend many hours each day practicing skills and improving teamwork under the ",
+      "Being an athlete involves more than competing in athletic events.",
+      "gradient"
+     ],
+     [
+      " Athletes spend many hours each day practicing skills and improving teamwork under the ",
       null
      ],
      [
@@ -2919,7 +3787,15 @@
       "blank"
      ],
      [
-      " during both practice and play, so career-ending injury always is a risk. Even minor injuries may put a player ",
+      " during both practice and play, ",
+      null
+     ],
+     [
+      "so",
+      "trans"
+     ],
+     [
+      " career-ending injury always is a risk. Even minor injuries may put a player ",
       null
      ],
      [
@@ -2927,7 +3803,15 @@
       "blank"
      ],
      [
-      " of replacement. Because competition at all levels is extremely intense and job security is always unstable, many athletes train year round to maintain ",
+      " of replacement. ",
+      null
+     ],
+     [
+      "Because",
+      "trans"
+     ],
+     [
+      " competition at all levels is extremely intense and job security is always unstable, many athletes train year round to maintain ",
       null
      ],
      [
@@ -2998,10 +3882,14 @@
   "sourceNote": null,
   "paras": [
    {
-    "label": null,
+    "label": "【第一段】點出主旨：逛超市是一場心理戰；氣味與陳列高度",
     "segs": [
      [
-      "A trip to the supermarket has now become an exercise in psychological warfare. Shopkeepers know that filling a store with the smell of freshly baked bread makes people feel hungry and ",
+      "A trip to the supermarket has now become an exercise in psychological warfare.",
+      "gradient"
+     ],
+     [
+      " Shopkeepers know that filling a store with the smell of freshly baked bread makes people feel hungry and ",
       null
      ],
      [
@@ -3023,18 +3911,22 @@
     ]
    },
    {
-    "label": null,
+    "label": "【第二段】群體智慧：貨架螢幕告訴你別人買了什麼",
     "segs": [
      [
       "Researchers on customer behavior are now investigating how “swarm intelligence” (that is, how social animals like ants or bees behave in a crowd) can be used to ",
-      null
+      "topic"
      ],
      [
       "33",
       "blank"
      ],
      [
-      " what people buy. The idea is that, if a certain product is seen to be popular, shoppers are ",
+      " what people buy.",
+      "topic"
+     ],
+     [
+      " The idea is that, if a certain product is seen to be popular, shoppers are ",
       null
      ],
      [
@@ -3080,18 +3972,22 @@
     ]
    },
    {
-    "label": null,
+    "label": "【第三段】延伸：同一套心理學搬到網路",
     "segs": [
      [
       "The psychology that works in physical stores is just as ",
-      null
+      "topic"
      ],
      [
       "39",
       "blank"
      ],
      [
-      " on the Internet. Online retailers such as Amazon are good at telling shoppers which products are popular with like-minded consumers. Even in the ",
+      " on the Internet.",
+      "topic"
+     ],
+     [
+      " Online retailers such as Amazon are good at telling shoppers which products are popular with like-minded consumers. Even in the ",
       null
      ],
      [
@@ -3155,7 +4051,7 @@
   "sourceNote": null,
   "paras": [
    {
-    "label": null,
+    "label": "【第一段】現象：離婚普遍，監護權過去自動判給母親",
     "segs": [
      [
       "With one out of every two American marriages ending in divorce, custody of children has become an issue in the American society. Up until the late 1970s, it had been common practice in the United States to automatically ",
@@ -3172,18 +4068,34 @@
     ]
    },
    {
-    "label": null,
+    "label": "【第二段】舊慣例鬆動，實際上仍多判給母親",
     "segs": [
      [
-      "However, since the 1970s, this practice has been ",
-      null
+      "However",
+      "trans"
+     ],
+     [
+      ", since the 1970s, this practice has been ",
+      "topic"
      ],
      [
       "32",
       "blank"
      ],
      [
-      " . Most custody battles today are decided, in theory, on the basis of who is the more fit parent for the child. The reality, nevertheless, is that most women still win custody of their children in a ",
+      " .",
+      "topic"
+     ],
+     [
+      " Most custody battles today are decided, in theory, on the basis of who is the more fit parent for the child. The reality, ",
+      null
+     ],
+     [
+      "nevertheless",
+      "trans"
+     ],
+     [
+      ", is that most women still win custody of their children in a ",
       null
      ],
      [
@@ -3197,18 +4109,22 @@
     ]
    },
    {
-    "label": null,
+    "label": "【第三段】成因：六〇、七〇年代的社會變遷",
     "segs": [
      [
       "This legal change was the result of the social changes that ",
-      null
+      "topic"
      ],
      [
       "34",
       "blank"
      ],
      [
-      " in the United States during the 1960s and 1970s. These changes challenged many of the ",
+      " in the United States during the 1960s and 1970s.",
+      "topic"
+     ],
+     [
+      " These changes challenged many of the ",
       null
      ],
      [
@@ -3246,11 +4162,15 @@
     ]
    },
    {
-    "label": null,
+    "label": "【第四段】點出主旨：爭取並取得監護權的父親變多",
     "segs": [
      [
-      "Because of the ",
-      null
+      "Because of",
+      "trans"
+     ],
+     [
+      " the ",
+      "gradient"
      ],
      [
       "39",
@@ -3258,7 +4178,7 @@
      ],
      [
       " in the divorce rate, the change in the roles that men and women are expected to play, and the changing attitude of the judicial system toward child custody, more men have started to ",
-      null
+      "gradient"
      ],
      [
       "40",
@@ -3266,7 +4186,7 @@
      ],
      [
       " for and win custody of their children when divorce occurs.",
-      null
+      "gradient"
      ]
     ]
    }
@@ -3322,7 +4242,7 @@
   "sourceNote": null,
   "paras": [
    {
-    "label": null,
+    "label": "【第一段】點出主旨：如珍珠散落的澎湖，沙灘與海底景觀最吸引人",
     "segs": [
      [
       "Like pearls scattered in the East Sea, the Penghu archipelago is situated in the southwest of the Taiwan Strait. It consists of ",
@@ -3333,8 +4253,12 @@
       "blank"
      ],
      [
-      " one hundred islands, of which many are famous for their pure white-sand beaches. The broad beaches and beautiful underwater scenery are the major ",
+      " one hundred islands, of which many are famous for their pure white-sand beaches. ",
       null
+     ],
+     [
+      "The broad beaches and beautiful underwater scenery are the major ",
+      "gradient"
      ],
      [
       "32",
@@ -3342,23 +4266,31 @@
      ],
      [
       " of Penghu islands.",
-      null
+      "gradient"
      ]
     ]
    },
    {
-    "label": null,
+    "label": "【第二段】無人島的原始風貌：玄武岩、生態、賞鳥",
     "segs": [
      [
-      "Among the one hundred or so islands, only 20 are inhabited. The ",
+      "Among the one hundred or so islands, only 20 are inhabited. ",
       null
+     ],
+     [
+      "The ",
+      "topic"
      ],
      [
       "33",
       "blank"
      ],
      [
-      " islands of Penghu have been kept intact without human intervention. The primitive conditions on these islands, their unique basalt rock formations and rich ecology bring ",
+      " islands of Penghu have been kept intact without human intervention.",
+      "topic"
+     ],
+     [
+      " The primitive conditions on these islands, their unique basalt rock formations and rich ecology bring ",
       null
      ],
      [
@@ -3374,7 +4306,15 @@
       "blank"
      ],
      [
-      " they are endowed with remarkable and rare resources. For instance, Gupo (Grand Aunt) Island is the largest uninhabited island in the North Sea area and the main ",
+      " they are endowed with remarkable and rare resources. ",
+      null
+     ],
+     [
+      "For instance",
+      "trans"
+     ],
+     [
+      ", Gupo (Grand Aunt) Island is the largest uninhabited island in the North Sea area and the main ",
       null
      ],
      [
@@ -3398,7 +4338,15 @@
       "blank"
      ],
      [
-      " spectacular. This is also one of the best areas of the Penghu Islands for bird watching. In addition, there are also pillar-shaped rock formations that are Mother Nature’s ",
+      " spectacular. This is also one of the best areas of the Penghu Islands for bird watching. ",
+      null
+     ],
+     [
+      "In addition",
+      "trans"
+     ],
+     [
+      ", there are also pillar-shaped rock formations that are Mother Nature’s ",
       null
      ],
      [
@@ -3412,11 +4360,11 @@
     ]
    },
    {
-    "label": null,
+    "label": "【第三段】收尾：花開鳥鳴，宛如天堂",
     "segs": [
      [
       "Like gifts from God, the yellow flowers that bloom ",
-      null
+      "topic"
      ],
      [
       "40",
@@ -3424,7 +4372,7 @@
      ],
      [
       " the basalt rock cracks and the beautiful songs of little singing birds on the meadows turn these islands into a paradise.",
-      null
+      "topic"
      ]
     ]
    }
@@ -3479,7 +4427,7 @@
   "sourceNote": null,
   "paras": [
    {
-    "label": null,
+    "label": "【第一段】緣起：創辦人擔心年輕人不懂企業運作",
     "segs": [
      [
       "Junior Achievement was started in Springfield, Massachusetts, in 1919 by Horace A. Moses. Mr. Moses, who had been a poor farm boy, had worked his way up to become one of the ",
@@ -3498,7 +4446,15 @@
       "blank"
      ],
      [
-      " for positions with his firm knew absolutely nothing about the way a corporation is run. As a solution to this problem, he ",
+      " for positions with his firm knew absolutely nothing about the way a corporation is run. ",
+      null
+     ],
+     [
+      "As a solution to this problem",
+      "trans"
+     ],
+     [
+      ", he ",
       null
      ],
      [
@@ -3512,18 +4468,26 @@
     ]
    },
    {
-    "label": null,
+    "label": "【第二段】點出主旨：讓高中生在學時參與經營公司",
     "segs": [
      [
-      "In essence, Junior Achievement is an organization that gives high-school boys and girls a chance to become part of the operation of a ",
-      null
+      "In essence",
+      "trans"
+     ],
+     [
+      ", Junior Achievement is an organization that gives high-school boys and girls a chance to become part of the operation of a ",
+      "gradient"
      ],
      [
       "34",
       "blank"
      ],
      [
-      " corporation while still in school. Every September, students are ",
+      " corporation while still in school.",
+      "gradient"
+     ],
+     [
+      " Every September, students are ",
       null
      ],
      [
@@ -3553,11 +4517,11 @@
     ]
    },
    {
-    "label": null,
+    "label": "【第三段】規模：從大城市到小鎮",
     "segs": [
      [
       "Junior Achievement ",
-      null
+      "topic"
      ],
      [
       "38",
@@ -3565,14 +4529,18 @@
      ],
      [
       " range in size from those in the big cities, like New York and Los Angeles, to those in small towns with a ",
-      null
+      "topic"
      ],
      [
       "39",
       "blank"
      ],
      [
-      " of a few thousand. Each program ",
+      " of a few thousand.",
+      "topic"
+     ],
+     [
+      " Each program ",
       null
      ],
      [
@@ -3636,18 +4604,30 @@
   "sourceNote": null,
   "paras": [
    {
-    "label": null,
+    "label": "【第一段】點出主旨：開放觀光後，世人看見不丹的自然、動物與政體",
     "segs": [
      [
-      "Bhutan first flung open its doors to tourists in 1974. Since then, the tiny country has revealed to the rest of the world its enviable nature ",
+      "Bhutan first flung open its doors to tourists in 1974. ",
       null
+     ],
+     [
+      "Since then",
+      "trans"
+     ],
+     [
+      ", the tiny country has revealed to the rest of the world its enviable nature ",
+      "gradient"
      ],
      [
       "31",
       "blank"
      ],
      [
-      ", exotic animals, and a one-of-a-kind government. Bhutan’s ruler, King Jigme Singye Wangchuck, who was elected in 1972, runs the only Democratic Monarchy ",
+      ", exotic animals, and a one-of-a-kind government.",
+      "gradient"
+     ],
+     [
+      " Bhutan’s ruler, King Jigme Singye Wangchuck, who was elected in 1972, runs the only Democratic Monarchy ",
       null
      ],
      [
@@ -3661,7 +4641,7 @@
     ]
    },
    {
-    "label": null,
+    "label": "【第二段】地理、人口、珍稀動物與地形",
     "segs": [
      [
       "Bordered by India, Tibet, and China, Bhutan ",
@@ -3694,7 +4674,7 @@
     ]
    },
    {
-    "label": null,
+    "label": "【第三段】宗教生活：務農、節慶與經幡",
     "segs": [
      [
       "The strongly religious Bhutanese rely almost ",
@@ -3727,18 +4707,30 @@
     ]
    },
    {
-    "label": null,
+    "label": "【第四段】旅人提醒：提早規劃、行李從簡",
     "segs": [
      [
       "Tourists who would like to visit Bhutan should plan their trips far ",
-      null
+      "topic"
      ],
      [
       "39",
       "blank"
      ],
      [
-      ". They must provide a travel visa and itinerary upon arrival. Moreover, they should pack ",
+      ".",
+      "topic"
+     ],
+     [
+      " They must provide a travel visa and itinerary upon arrival. ",
+      null
+     ],
+     [
+      "Moreover",
+      "trans"
+     ],
+     [
+      ", they should pack ",
       null
      ],
      [
@@ -3803,10 +4795,22 @@
   "sourceNote": null,
   "paras": [
    {
-    "label": null,
+    "label": "【第一段】點出主旨：袋鼠種類多；體型與作息",
     "segs": [
      [
-      "There are more than 50 different kinds of kangaroos in the world today. The smallest ones are only five centimeters tall but the biggest are more than two meters. Kangaroos cannot walk or run. They ",
+      "There are more than 50 different kinds of kangaroos in the world today.",
+      "gradient"
+     ],
+     [
+      " The smallest ones are only five centimeters tall ",
+      null
+     ],
+     [
+      "but",
+      "trans"
+     ],
+     [
+      " the biggest are more than two meters. Kangaroos cannot walk or run. They ",
       null
      ],
      [
@@ -3836,7 +4840,7 @@
     ]
    },
    {
-    "label": null,
+    "label": "【第二段】育兒過程：從出生到離開育兒袋",
     "segs": [
      [
       "Straight after they are born, the joeys (baby kangaroos), which are only about two-and-a-half centimeters long, have to drag themselves to their mother’s ",
@@ -3863,7 +4867,15 @@
       "blank"
      ],
      [
-      " they are eight months old. After that, they leave home ",
+      " they are eight months old. ",
+      null
+     ],
+     [
+      "After that",
+      "trans"
+     ],
+     [
+      ", they leave home ",
       null
      ],
      [
@@ -3879,13 +4891,21 @@
       "blank"
      ],
      [
-      " on making their way in the big wide world. A 50 pound joey, for example, was once found still living in its mother’s pouch.",
+      " on making their way in the big wide world. A 50 pound joey, ",
+      null
+     ],
+     [
+      "for example",
+      "trans"
+     ],
+     [
+      ", was once found still living in its mother’s pouch.",
       null
      ]
     ]
    },
    {
-    "label": null,
+    "label": "【第三段】名稱由來的傳說",
     "segs": [
      [
       "Have you ever ",
@@ -3960,7 +4980,7 @@
   "sourceNote": null,
   "paras": [
    {
-    "label": null,
+    "label": "【第一段】點出主旨：想學好英文，就得認識電腦新詞",
     "segs": [
      [
       "Are you someone who practically lives in front of the computer—a mouse potato? Or are you nervous about new technology—a technophobe? ",
@@ -3972,7 +4992,7 @@
      ],
      [
       ", if you want to master the English language, you will need to be ",
-      null
+      "gradient"
      ],
      [
       "32",
@@ -3980,15 +5000,19 @@
      ],
      [
       " those new computer words that seem to be popping up everywhere.",
-      null
+      "gradient"
      ]
     ]
    },
    {
-    "label": null,
+    "label": "【第二段】理由一：多數電腦用語在母語裡已有相近說法",
     "segs": [
      [
-      "Luckily, most computer words are easy to learn. ",
+      "Luckily, most computer words are easy to learn.",
+      "topic"
+     ],
+     [
+      " ",
       null
      ],
      [
@@ -4018,18 +5042,26 @@
     ]
    },
    {
-    "label": null,
+    "label": "【第三段】理由二：許多電腦用語很有趣",
     "segs": [
      [
-      "Another reason why computer words are easy to learn is that many of them are so ",
-      null
+      "Another reason",
+      "trans"
+     ],
+     [
+      " why computer words are easy to learn is that many of them are so ",
+      "topic"
      ],
      [
       "36",
       "blank"
      ],
      [
-      ". They are words that often make us smile when we first hear them such as ",
+      ".",
+      "topic"
+     ],
+     [
+      " They are words that often make us smile when we first hear them such as ",
       null
      ],
      [
@@ -4043,18 +5075,22 @@
     ]
    },
    {
-    "label": null,
+    "label": "【第四段】收尾：詞語背後的電腦文化",
     "segs": [
      [
       "To get a feeling for computer words, it helps to ",
-      null
+      "topic"
      ],
      [
       "38",
       "blank"
      ],
      [
-      " the world that created them— cyberculture, as it is often called. The computer industry is ",
+      " the world that created them— cyberculture, as it is often called.",
+      "topic"
+     ],
+     [
+      " The computer industry is ",
       null
      ],
      [
