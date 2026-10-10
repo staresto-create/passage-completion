@@ -233,13 +233,13 @@ details.skill[open] > summary::after{content:'－ 收合';}
 <div class="wrap">
   <header class="top">
     <div class="title">文意選填</div>
-    <div class="sub">學測 90–115 年 · 指考 91–110 年 · 560 題 / 56 篇 · 單題模式 / 全文模式</div>
+    <div class="sub">學測 90–115 年 · 指考 91–110 年 · 560 題 / 56 篇 · 改編練習 10 篇 · 單題模式 / 全文模式</div>
   </header>
 
   <div id="homeView">
     <div class="card">
       <div class="home-lead">開始練習前</div>
-      <p class="home-desc">本題庫收錄學測 90–115 年、指考 91–110 年的文意選填歷屆試題，含補考與參考試卷，共 560 題、56 篇。學測、指考兩部分都附逐格解析、六大分類與線索範圍標註，並收錄部分年度大考中心公布的官方逐題答對率；<b>指考部分的段落主旨句標記與巨觀結構分析尚在建置中</b>。</p>
+      <p class="home-desc">本題庫收錄學測 90–115 年、指考 91–110 年的文意選填歷屆試題，含補考與參考試卷，共 560 題、56 篇。學測、指考兩部分都附逐格解析、六大分類與線索範圍標註，並收錄部分年度大考中心公布的官方逐題答對率；<b>指考部分的段落主旨句標記與巨觀結構分析尚在建置中</b>。另有本題庫自己改編的<b>改編練習</b> 10 篇、100 題：文章改編自歷屆學測、指考閱讀測驗，照現行學測文意選填的版面出題（10 選 10），參考答案與解析由本題庫撰寫，沒有官方答對率。</p>
 
       <details class="skill sk-box">
         <summary><div class="sk-title">選項會不會剛好用完，看年度<span style="font-weight:400; font-size:11.5px; color:var(--ink-soft); margin-left:6px;">（點此展開／收合）</span></div></summary>
@@ -287,7 +287,7 @@ details.skill[open] > summary::after{content:'－ 收合';}
         <p style="font-style:italic; color:var(--ink-soft);">💡 小叮嚀：先看「詞性與字尾形態」和句型，再看「前後字詞搭配」，最後才讀「完整句子」。不要把選項一個一個代入去翻翻看。</p>
         <h3>📏 每題右上角的「線索：句內／跨句／篇章」是什麼</h3>
         <p>那是<b>這一題要看多遠</b>的半徑。猶豫在兩個選項之間時，把範圍一圈一圈往外放：先看空格所在的那一句，再看前後句，最後才到全篇。<br>
-        本題庫 560 題實測，<b>句內 489 題（87%）、跨句 63 題、篇章 8 題</b>（學測 310 題為 272／32／6，指考 250 題為 217／31／2）。<b>多數題目不必跑遠</b>，猶豫時通常第一圈就找得到答案；一開始就回頭重讀整篇，多半是白費力氣。</p>
+        歷屆 560 題實測，<b>句內 489 題（87%）、跨句 63 題、篇章 8 題</b>（學測 310 題為 272／32／6，指考 250 題為 217／31／2）。<b>多數題目不必跑遠</b>，猶豫時通常第一圈就找得到答案；一開始就回頭重讀整篇，多半是白費力氣。</p>
         <h3>📊 部分題目附有「五等分組答對率」</h3>
         <p>那是把到考考生依總分分成五等分後，各組在該題的答對率，資料來自大考中心。它顯示的是這一題<b>在哪一段程度上把人分開</b>——有些題目五組一路平緩，有些則在某一組之間出現斷層。<br>
         落差這麼大，通常是因為知不知道這一題在考什麼。看懂它考什麼、再多練幾題同型的、每題都確實檢討，<b>功力一定會提升</b>。</p>
@@ -446,7 +446,7 @@ details.skill[open] > summary::after{content:'－ 收合';}
       </div>
 
       <div id="singleControls">
-        <div class="sec-title">依考別篩選<span style="font-weight:400; text-transform:none; letter-spacing:0; font-size:11px; margin-left:6px;">（可複選，不選則兩種都練）</span></div>
+        <div class="sec-title">依考別篩選<span style="font-weight:400; text-transform:none; letter-spacing:0; font-size:11px; margin-left:6px;">（可複選，不選則三種都練）</span></div>
         <div class="cat-grid" id="examGrid"></div>
         <div class="sec-title">依年度篩選<span style="font-weight:400; text-transform:none; letter-spacing:0; font-size:11px; margin-left:6px;">（可複選，不選則不限年度）</span></div>
         <div class="cat-grid" id="singleYearGrid"></div>
@@ -458,13 +458,13 @@ details.skill[open] > summary::after{content:'－ 收合';}
         <div class="sec-title">依線索範圍篩選<span style="font-weight:400; text-transform:none; letter-spacing:0; font-size:11px; margin-left:6px;">（可複選，不選則不限範圍）</span></div>
         <div class="cat-grid" id="spanGrid"></div>
         <div class="span-legend">
-          每一格需要的線索範圍並不一樣。<b>句內</b>＝讀懂空格所在的那一句就足以作答；<b>跨句</b>＝必須回頭看前一句或後一句；<b>篇章</b>＝要跨段落、或掌握全文走向才選得出來。標籤與線索說明都是在你作答之後才出現，先自己判斷一次，再對照。<b>學測 310 題與指考 250 題都已完成標註</b>，勾選線索範圍時，學測、指考的題目都篩得到。
+          每一格需要的線索範圍並不一樣。<b>句內</b>＝讀懂空格所在的那一句就足以作答；<b>跨句</b>＝必須回頭看前一句或後一句；<b>篇章</b>＝要跨段落、或掌握全文走向才選得出來。標籤與線索說明都是在你作答之後才出現，先自己判斷一次，再對照。<b>學測 310 題、指考 250 題與改編練習 100 題都已完成標註</b>，勾選線索範圍時，三種題目都篩得到。
         </div>
 
       </div>
 
       <div id="fullControls" style="display:none;">
-        <div class="sec-title">依考別篩選<span style="font-weight:400; text-transform:none; letter-spacing:0; font-size:11px; margin-left:6px;">（可複選，不選則兩種都列）</span></div>
+        <div class="sec-title">依考別篩選<span style="font-weight:400; text-transform:none; letter-spacing:0; font-size:11px; margin-left:6px;">（可複選，不選則三種都列）</span></div>
         <div class="cat-grid" id="examGridFull"></div>
         <div class="sec-title">選擇年度／文章</div>
         <div class="year-list" id="yearList"></div>
@@ -508,13 +508,13 @@ details.skill[open] > summary::after{content:'－ 收合';}
   
   <div style="background:#FFFDF7; border:1px solid #DCD3BB; border-radius:4px; padding:13px 15px; margin:22px 0 6px; font-size:12.5px; line-height:1.8; color:#5B5648;">
     <b style="font-family:'Noto Serif TC',serif; font-size:13.5px; color:#221F1A;">關於本題庫的資料</b><br>
-    答對率（P 值）與鑑別度（D 值）取自大考中心公布的官方統計，部分年度未公布，這些題目不會顯示數據。參考試卷與試辦考試屬非正式施測，篇名旁會標明。六大分類與線索範圍是老師的教學判斷、不是官方分類，見仁見智之處在所難免。解析由老師與 AI 共同撰寫、老師逐則看過。<br>數字出處：大考中心統計資料索引頁<a href="https://www.ceec.edu.tw/xmdoc?xsmsid=0J018604485538810196" target="_blank" rel="noopener">學測各年度統計圖表↗</a>、<a href="https://www.ceec.edu.tw/xmdoc?xsmsid=0J018611000723433352" target="_blank" rel="noopener">指考／分科測驗各年度統計圖表↗</a>，逐題的「答對率及鑑別度表」就在各年度的統計圖表裡。名詞說明見大考中心<a href="https://www.ceec.edu.tw/xcepaper/cont?xsmsid=0J066588036013658199&amp;qunit=0J066614378153514816&amp;sid=0K042343829406896328" target="_blank" rel="noopener">《一起來認識學測與指考的試題答對率》↗</a>、<a href="https://www.ceec.edu.tw/xcepaper/cont?xsmsid=0J066588036013658199&amp;qunit=0J066614378153514816&amp;sid=0K073687789378174143" target="_blank" rel="noopener">《一起來認識學測與指考的試題鑑別度》↗</a>，收錄於「選才電子報 → 數字真相」專欄。<br>
+    答對率（P 值）與鑑別度（D 值）取自大考中心公布的官方統計，部分年度未公布，這些題目不會顯示數據。參考試卷與試辦考試屬非正式施測，篇名旁會標明。六大分類與線索範圍是老師的教學判斷、不是官方分類，見仁見智之處在所難免。解析由老師與 AI 共同撰寫、老師逐則看過。<br><b>改編練習</b>是本題庫自己改編的題目：文章改編自歷屆學測、指考閱讀測驗，照現行學測文意選填的版面出題，參考答案與解析都由本題庫撰寫。它們不是大考中心的試題，沒有官方答對率，也不算進 560 題、56 篇。<br>數字出處：大考中心統計資料索引頁<a href="https://www.ceec.edu.tw/xmdoc?xsmsid=0J018604485538810196" target="_blank" rel="noopener">學測各年度統計圖表↗</a>、<a href="https://www.ceec.edu.tw/xmdoc?xsmsid=0J018611000723433352" target="_blank" rel="noopener">指考／分科測驗各年度統計圖表↗</a>，逐題的「答對率及鑑別度表」就在各年度的統計圖表裡。名詞說明見大考中心<a href="https://www.ceec.edu.tw/xcepaper/cont?xsmsid=0J066588036013658199&amp;qunit=0J066614378153514816&amp;sid=0K042343829406896328" target="_blank" rel="noopener">《一起來認識學測與指考的試題答對率》↗</a>、<a href="https://www.ceec.edu.tw/xcepaper/cont?xsmsid=0J066588036013658199&amp;qunit=0J066614378153514816&amp;sid=0K073687789378174143" target="_blank" rel="noopener">《一起來認識學測與指考的試題鑑別度》↗</a>，收錄於「選才電子報 → 數字真相」專欄。<br>
     <b>錯誤仍然可能存在</b>，發現任何問題歡迎回報，我會逐筆核對更正。本題庫完全免費、不用註冊、沒有廣告，歡迎自由分享。
   </div>
 
   <footer>
     <div style="font-family:'Noto Sans TC',sans-serif; font-size:13px; line-height:2; margin-bottom:12px;"><a href="https://staresto-create.github.io/JCEE-vocab-questions/" style="color:#9C2C1E; font-weight:700; text-decoration:underline; text-underline-offset:2px; white-space:nowrap;">← 回題庫首頁</a><span style="padding:0 8px; opacity:.5;">·</span><a href="https://staresto-create.github.io/JCEE-vocab-questions/#rules" style="color:#9C2C1E; font-weight:700; text-decoration:underline; text-underline-offset:2px; white-space:nowrap;">🧩 五個詞：拼圖的規則</a></div>
-    資料來源：學測 90–115 年、指考 91–110 年歷屆文意選填（大考中心公布，部分年度含官方答對率與鑑別度）<br>
+    資料來源：學測 90–115 年、指考 91–110 年歷屆文意選填（大考中心公布，部分年度含官方答對率與鑑別度）；改編練習由本題庫改編自歷屆學測、指考閱讀測驗<br>
     © 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · <a href="https://staresto-create.github.io/JCEE-vocab-questions/#terms" style="color:#9C2C1E; font-weight:700; text-decoration:underline; text-underline-offset:2px; white-space:nowrap;">📖 使用與著作權</a><br>
     <a class="report-btn" id="reportLink" href="https://docs.google.com/forms/d/e/1FAIpQLSd6P1s7HqjvOmGqOzNDWcBQQ3F539SifSNiAfXvi6NqD2YP-Q/viewform?usp=pp_url&entry.1257494378=%E5%AD%B8%E6%B8%AC%E6%96%87%E6%84%8F%E9%81%B8%E5%A1%AB" target="_blank" rel="noopener">🐛 回報錯誤</a>
   </footer>
@@ -662,13 +662,13 @@ function buildCatList(){
 }
 
 async function init(){
-  const dirs = ['gsat','zhikao'];
+  const dirs = ['gsat','zhikao','adapt'];
   const res = await Promise.all(dirs.flatMap(d => [fetch(d+'/passages.json'), fetch(d+'/items.json')]));
   const data = await Promise.all(res.map(r => r.json()));
   ITEMS = [];
   dirs.forEach((d,k) => {
     const ps = data[k*2], its = data[k*2+1];
-    const examName = (d === 'gsat') ? '學測' : '指考';
+    const examName = (d === 'gsat') ? '學測' : (d === 'zhikao') ? '指考' : '改編練習';
     ps.forEach(p => { p.exam = p.exam || examName; PASSAGES[p.id] = p; });
     its.forEach(it => { it.exam = it.exam || examName; ITEMS.push(it); });
   });
@@ -699,12 +699,14 @@ function buildSingleYearGrid(){
   Object.values(PASSAGES).filter(examOk).sort(cmpYear).forEach(p => {
     const chip = document.createElement('div');
     chip.className = 'chip' + (selectedSingleYears.has(p.id) ? ' active' : '');
-    chip.textContent = p.exam + ' ' + p.year;
+    chip.textContent = examYear(p);
     chip.title = dispTitle(p) + '（' + elimLabel(p) + '）';
     chip.onclick = () => { chip.classList.toggle('active'); selectedSingleYears.has(p.id) ? selectedSingleYears.delete(p.id) : selectedSingleYears.add(p.id); };
     grid.appendChild(chip);
   });
 }
+// 改編練習的 year 是（一）（二）……，緊接在「改編練習」後面，不留空格
+function examYear(p){ return p.exam === '改編練習' ? p.exam + p.year : p.exam + ' ' + p.year; }
 function dispTitle(p){
   return (p.title && p.year && p.title.indexOf(p.year) === 0) ? p.title.slice(p.year.length).trim() : p.title;
 }
@@ -727,8 +729,9 @@ function buildExamGrid(){
     const grid = document.getElementById(gid);
     if(!grid) return;
     grid.innerHTML = '';
-    ['學測','指考'].forEach(e => {
+    ['學測','指考','改編練習'].forEach(e => {
       const cnt = ITEMS.filter(it => examOf(it) === e).length;
+      if(cnt === 0) return;
       const chip = document.createElement('div');
       chip.className = 'chip' + (selectedExams.has(e) ? ' active' : '');
       chip.textContent = e + ' ' + cnt + '題';
@@ -846,7 +849,16 @@ function tierOf(p, d){
   if(p==null) return null;
   return p<=25?'難':p<=75?'中':'易';
 }
+// 中文數字（一至九十九）轉成整數，給改編練習排序用
+function cnNum(s){
+  const d = '一二三四五六七八九';
+  const m = s.match(/^(.)?十(.)?$/);
+  if(m) return (m[1] ? d.indexOf(m[1]) + 1 : 1) * 10 + (m[2] ? d.indexOf(m[2]) + 1 : 0);
+  return d.indexOf(s) + 1;
+}
 function yearSortKey(p){
+  // 改編練習排在歷屆之後，依（一）（二）……的順序
+  if(p.exam === '改編練習') return -cnNum(p.year.replace(/[（）]/g,'')) * 10;
   const m = p.year.match(/^(\d+)/);
   const num = m ? parseInt(m[1]) : 999;
   const isMakeup = p.year.includes('補考') ? 1 : 0;
@@ -866,7 +878,7 @@ function buildYearList(){
     const row = document.createElement('div');
     row.className = 'year-item'; row.style.cursor='pointer';
     const tstat = p.titleStatus ? ' <span class="cnt">暫定標題</span>' : '';
-    row.innerHTML = `<span>${p.exam} ${p.year} · ${dispTitle(p)}${tstat}</span><span class="cnt">${cnt}題・${elimLabel(p)}</span>`;
+    row.innerHTML = `<span>${examYear(p)} · ${dispTitle(p)}${tstat}</span><span class="cnt">${cnt}題・${elimLabel(p)}</span>`;
     row.onclick = () => { document.querySelectorAll('.year-item').forEach(r=>r.style.background=''); row.style.background='#FBF1EE'; row.dataset.selected='1'; window.__selectedPassage = p.id; };
     list.appendChild(row);
   });
@@ -992,7 +1004,7 @@ function renderSingle(){
   const context = paraTextForBlank(p, it.blankNum);
   document.getElementById('practiceBody').innerHTML = `
     <div class="single-card">
-      <div class="p-label">${p.exam} ${p.year} · ${dispTitle(p)}${p.titleStatus ? '（暫定標題）' : ''} · 第${it.blankNum}題　
+      <div class="p-label">${examYear(p)} · ${dispTitle(p)}${p.titleStatus ? '（暫定標題）' : ''} · 第${it.blankNum}題　
         <span style="color:var(--crimson); text-decoration:underline; cursor:pointer;" onclick="viewFullFromSingle('${it.passageId}')">📖 查看全文</span>
         <a class="report-btn" style="margin-left:10px;" target="_blank" rel="noopener"
            href="https://docs.google.com/forms/d/e/1FAIpQLSd6P1s7HqjvOmGqOzNDWcBQQ3F539SifSNiAfXvi6NqD2YP-Q/viewform?usp=pp_url&entry.1257494378=${encodeURIComponent(it.id)}">🐛 回報這題</a>
@@ -1087,7 +1099,7 @@ function renderFull(pid){
   const p = PASSAGES[pid];
   const items = ITEMS.filter(it=>it.passageId===pid).sort((a,b)=>a.blankNum-b.blankNum);
   if(window.__lastPid !== pid){ fullGraded = false; window.__blankChoices = {}; }
-  document.getElementById('progText').innerHTML = `<span>全文模式</span><span>${p.exam} ${p.year} · ${dispTitle(p)}</span>`;
+  document.getElementById('progText').innerHTML = `<span>全文模式</span><span>${examYear(p)} · ${dispTitle(p)}</span>`;
   updateFullProgress();
 
   let html = '';
@@ -1104,7 +1116,7 @@ function renderFull(pid){
   <div class="passage-text ${hintsOn?'':'hints-off'}" id="passageText"></div>
   <div style="text-align:center; margin:22px 0;">
     <button class="grade-btn" id="gradeBtn" onclick="gradeFullPassage()">送出批改<span class="gb-count" id="gbCount"></span></button>
-    <div style="font-size:11.5px; color:var(--ink-soft); margin-top:8px;">全部填完再送出，中途不會公布正解；送出後會顯示官方答對率與逐題檢討，並附逐格解析、全文主旨與全文中譯。</div>
+    <div style="font-size:11.5px; color:var(--ink-soft); margin-top:8px;">全部填完再送出，中途不會公布正解；送出後會顯示${p.exam === '改編練習' ? '' : '官方答對率與'}逐題檢討，並附逐格解析、全文主旨與全文中譯。</div>
   </div>
   <div id="gradeResult"></div>`;
 
@@ -1259,7 +1271,7 @@ function gradeFullPassage(){
     if(!testMode) recordAnswer(it.id, ok);
     const pd = (it.accuracyRate != null)
       ? `<div class="pdTag">官方答對率 <b>P=${it.accuracyRate}%</b> ／ 鑑別度 <b>D=${it.discrimination}</b> ／ 難易度：<b>${tierOf(it.accuracyRate, it.discrimination)}</b></div>`
-      : `<div class="pdTag">本年度尚無官方答對率資料</div>`;
+      : (examOf(it) === '改編練習' ? '' : `<div class="pdTag">本年度尚無官方答對率資料</div>`);
     review += `<div class="rv-item ${ok?'ok':'ng'}">
       <div class="rv-hd"><b>第${it.blankNum}題</b>　${ok ? '✓ 答對' : '✕ 你選 '+(chosen?'('+chosen+') '+it.options[chosen]:'未作答')+'　正解 ('+it.answer+') '+it.options[it.answer]}${spanTagHtml(it)}</div>
       <div class="rv-bd"><b>${it.options[it.answer]}</b>　${it.gloss||''}<br>
