@@ -1399,7 +1399,7 @@
  },
  {
   "id": "zref107",
-  "year": "107年起施測參考試卷",
+  "year": "107學年度起適用參考試卷",
   "exam": "指考",
   "examType": "參考試卷",
   "title": "布袋戲：掌中的舞台（Taiwanese Puppet Show）",
@@ -2700,7 +2700,7 @@
    "F": "figures",
    "L": "worship"
   },
-  "flagNote": "本篇與「107 年起施測參考試卷」文意選填為同一組題目（正文差 16 個字元）。",
+  "flagNote": "本篇與「107 學年度起適用參考試卷」文意選填為同一組題目（正文差 16 個字元）。",
   "flagKind": ["沿用題指認"],
   "sourceNote": null,
   "paras": [
@@ -4575,7 +4575,7 @@
  },
  {
   "id": "z93b",
-  "year": "93年敏督利補考",
+  "year": "93年敏督利颱風受災地區考生補救考試",
   "exam": "指考",
   "examType": "補考",
   "title": "不丹的開門（Bhutan Opens Its Doors）",
