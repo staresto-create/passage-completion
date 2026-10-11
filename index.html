@@ -239,7 +239,7 @@ details.skill[open] > summary::after{content:'－ 收合';}
   <div id="homeView">
     <div class="card">
       <div class="home-lead">開始練習前</div>
-      <p class="home-desc">本題庫收錄學測 90–115 年、指考 91–110 年的文意選填歷屆試題，含補考與參考試卷，共 560 題、56 篇。學測、指考兩部分都附逐格解析、六大分類與線索範圍標註，並收錄部分年度大考中心公布的官方逐題答對率；<b>指考部分的段落主旨句標記與巨觀結構分析尚在建置中</b>。另有本題庫自己改編的<b>改編練習</b> 20 篇、200 題：文章改編自歷屆學測、指考閱讀測驗，照現行學測文意選填的版面出題（10 選 10），參考答案與解析由本題庫撰寫，沒有官方答對率。</p>
+      <p class="home-desc">本題庫收錄學測 90–115 年、指考 91–110 年的文意選填歷屆試題，含補考與參考試卷，共 560 題、56 篇。學測、指考兩部分都附逐格解析、七類分類與線索範圍標註，並收錄部分年度大考中心公布的官方逐題答對率；兩部分也都有段落主旨句標記與巨觀結構分析。另有本題庫自己改編的<b>改編練習</b> 20 篇、200 題：文章改編自歷屆學測、指考閱讀測驗，照現行學測文意選填的版面出題（10 選 10），參考答案與解析由本題庫撰寫，沒有官方答對率。</p>
 
       <details class="skill sk-box">
         <summary><div class="sk-title">選項會不會剛好用完，看年度<span style="font-weight:400; font-size:11.5px; color:var(--ink-soft); margin-left:6px;">（點此展開／收合）</span></div></summary>
@@ -348,7 +348,7 @@ details.skill[open] > summary::after{content:'－ 收合';}
           <p class="sk-core">➜ Some people pick a name. <em>（有些人挑一個名字。）</em></p>
           <p class="sk-tip">💡 the sound of which they like 是關係子句，修飾前面的 name。of which 就是 whose 的另一種寫法——換成 whose sound they like，意思完全一樣。</p>
         </div>
-          <div class="sk-more">這種長句在每一種題型裡都會遇到——克漏字、單字題、中翻英，一個也躲不掉。完整說明和其他題庫的例句在<a href="https://staresto-create.github.io/JCEE-vocab-questions/" target="_blank" rel="noopener">題庫入口頁</a>。</div>
+          <div class="sk-more">這種長句在每一種題型裡都會遇到——克漏字、單字題、中譯英，一個也躲不掉。完整說明和其他題庫的例句在<a href="https://staresto-create.github.io/JCEE-vocab-questions/" target="_blank" rel="noopener">題庫入口頁</a>。</div>
         </div>
         <span class="strategy-toggle" style="margin-top:12px;" onclick="var m=document.getElementById('skelMore'); m.style.display = m.style.display==='none' ? 'block' : 'none';">🔍 展開／收合：看七個例句</span>
       </details>
@@ -361,7 +361,7 @@ details.skill[open] > summary::after{content:'－ 收合';}
 
       <div class="sk-box">
         <div class="sk-title">🧭 句子的兩個顯眼位置：句首與句尾</div>
-        <p>骨幹找到了，那被搬走的那些成分呢？一篇文章是<b>一路往下鋪陳新資訊</b>的——句首接住上一句，句尾放新資訊。看懂這件事，倒裝就不再是怪規則。</p>
+        <p>骨幹找到了，那被搬走的那些成分呢？一篇文章是<b>一路往下鋪陳新資訊</b>的——句首承接上一句，句尾放新資訊。看懂這件事，倒裝就不再是怪規則。</p>
         <div id="focusMore" style="display:none;">
         <b>🔍 一個句子有兩個顯眼的位置</b><br>
         英文句子不是每個位置都一樣重要：<b>句首</b>用來接上一句，或刻意標出要強調的東西；<b>句尾</b>用來放新資訊，也放最長、最重的那一塊；中間是骨幹——誰／什麼＋怎麼了。<br>
@@ -437,7 +437,7 @@ details.skill[open] > summary::after{content:'－ 收合';}
       <div class="mode-grid">
         <div class="mode-card active" id="modeSingleCard" onclick="setMode('single')">
           <div class="m-name">單題模式</div>
-          <div class="m-desc">一次專注一格空格，依「單題模式六大分類」篩選練習，作答後立即看答案與解析。</div>
+          <div class="m-desc">一次專注一格空格，依「單題模式七類分類」篩選練習，作答後立即看答案與解析。</div>
         </div>
         <div class="mode-card" id="modeFullCard" onclick="setMode('full')">
           <div class="m-name">全文模式</div>
@@ -454,7 +454,7 @@ details.skill[open] > summary::after{content:'－ 收合';}
         <div class="cat-grid" id="catGrid"></div>
         <div class="sec-title">依難易度篩選<span style="font-weight:400; text-transform:none; letter-spacing:0; font-size:11px; margin-left:6px;">（選填，可複選；勾選後不限分類直接開始）</span></div>
         <div class="cat-grid" id="diffGrid"></div>
-        <div class="diff-note">難易度依大考中心公布的「全體考生答對率」（P 值）分成三級：<b>難</b>（P 值 25% 以下）／<b>中</b>（超過 25%、75% 以下）／<b>易</b>（超過 75%）。切點的由來：四選一的題目就算全部用猜的，期望答對率也有 25%，低於這條線代表全體考生的表現並不比亂猜好；75% 取的是對稱的另一端。<b>大考中心自己的難度用語是四級（難、中偏難、中偏易、易），與本題庫的三級不是同一套，不適合互相對照。</b><br><b>特殊</b>指鑑別度（D 值）為負值的題目。D 值＝高分群答對率－低分群答對率，官方的分組方式是把全體考生依原始得分排序後，取<b>前三分之一</b>與<b>後三分之一</b>；官方說明指出「良好試題的鑑別度應大於 0」，若為負值，代表低分群考生答對率反而高於高分群。本題庫 450 筆有鑑別度資料的題目<b>無一為負</b>（最小值學測 18、指考 11），所以這個籤目前篩不到任何題目；保留它是為了日後補進新年度資料時能立刻篩出。<br>難易度篩選同時涵蓋學測與指考的正式考題。有 110 題（學測 60、指考 50）沒有官方數據，勾選難易度時整批排除，原因分三種：<b>學測 90 年</b>——該年代大考中心只公布整卷層次的統計，逐題數據未公開；<b>四場補考</b>（學測 91、92，指考 93 敏督利、109）——大考中心未公布本卷逐題數據；<b>五份參考試卷與 110 年試辦考試</b>——非正式施測、沒有真實考生群，答對率這項統計並不存在，因此不宜拿參考卷的難度與正式卷相比。</div>
+        <div class="diff-note">難易度依大考中心公布的「全體考生答對率」（P 值）分成三級：<b>難</b>（P 值 25% 以下）／<b>中</b>（超過 25%、75% 以下）／<b>易</b>（超過 75%）。切點的由來：本題庫各題型的難易度都用同一套切點，方便互相比較。25% 原本是四選一的題目全部用猜的期望答對率；文意選填是 10 選 10 或 12 選 10，亂猜的期望答對率只有 10% 或更低，所以在這個題型，25% 以下表示四個考生裡答對的不到一個。75% 取的是對稱的另一端。<b>大考中心自己的難度用語是四級（難、中偏難、中偏易、易），與本題庫的三級不是同一套，不適合互相對照。</b><br><b>特殊</b>指鑑別度（D 值）為負值的題目。D 值＝高分群答對率－低分群答對率，官方的分組方式是把全體考生依原始得分排序後，取<b>前三分之一</b>與<b>後三分之一</b>；官方說明指出「良好試題的鑑別度應大於 0」，若為負值，代表低分群考生答對率反而高於高分群。本題庫 450 筆有鑑別度資料的題目<b>無一為負</b>（最小值學測 18、指考 11），所以這個籤目前篩不到任何題目；保留它是為了日後補進新年度資料時能立刻篩出。<br>難易度篩選同時涵蓋學測與指考的正式考題。有 110 題（學測 60、指考 50）沒有官方數據，勾選難易度時整批排除，原因分三種：<b>學測 90 年</b>——該年代大考中心只公布整卷層次的統計，逐題數據未公開；<b>四場補考</b>（學測 91、92，指考 93 敏督利、109）——大考中心未公布本卷逐題數據；<b>五份參考試卷與 110 年試辦考試</b>——非正式施測、沒有真實考生群，答對率這項統計並不存在，因此沒辦法拿參考卷的難度和正式卷相比。</div>
         <div class="sec-title">依線索範圍篩選<span style="font-weight:400; text-transform:none; letter-spacing:0; font-size:11px; margin-left:6px;">（可複選，不選則不限範圍）</span></div>
         <div class="cat-grid" id="spanGrid"></div>
         <div class="span-legend">
@@ -474,7 +474,7 @@ details.skill[open] > summary::after{content:'－ 收合';}
 <div class="diff-note" id="spanNoteBox" style="display:none;">
           <b>線索範圍與答對率是兩個各自獨立的維度，難題不一定是線索藏得遠。</b>學測 93 年第 36 題 <code>have since perished</code> 答對率只有 15%，學測 112 年第 23 題 <code>even things out</code> 答對率只有 14%，這兩題卻都是純句內題——難的是 since 單獨當時間副詞（＝since then）、even 用作動詞這兩個用法本身，不是線索躲得遠。所以請把這兩個標籤分開看，別把「跨句」直接讀成「比較難」——看到「跨句」就回頭讀前一句或後一句，看到答對率低就把那個字的用法本身查清楚，兩件事分開處理。<br><br>
           <b>學測 92 年（正式考）「壓力的雙面性」那篇請單獨看待。</b>它的十個選項裡 about、from、even、as、like、to、that 共七個是虛詞，只有 managing、unusual、leading 三個是實詞；同樣型態的還有 92 年補考那一篇，其餘各篇以實詞為主。這兩篇的十題線索都落在空格所在句之內。拿來練沒問題，但別把它們當成文意選填的代表性練習。<br><br>
-          <b>關於標註依據。</b>已完成標註的是學測 31 篇。其中 110 年試辦考試的逐題試題解析由大考中心免費公布於試辦考試專區；107 年與 108 年則見於大考中心出版的《107學年度學科能力測驗試題與解析-英文考科》與《108學年度學科能力測驗試題與解析-英文考科》。這三篇的官方逐題說明可供對照，其餘各篇是依同一套認定標準判定：只要空格所在句以外的句子對「選出答案」有貢獻，就算跨句；線索需跨段落或依賴全文，才算篇章；句中雖出現指涉詞、但答案實際由本句字詞搭配決定的，仍算句內。
+          <b>關於標註依據。</b>學測、指考 56 篇都已完成標註。其中學測 110 年試辦考試的逐題試題解析由大考中心免費公布於試辦考試專區；107 年與 108 年則見於大考中心出版的《107學年度學科能力測驗試題與解析-英文考科》與《108學年度學科能力測驗試題與解析-英文考科》。這三篇的官方逐題說明可供對照，其餘各篇是依同一套認定標準判定：只要空格所在句以外的句子對「選出答案」有貢獻，就算跨句；線索需跨段落或依賴全文，才算篇章；句中雖出現指涉詞、但答案實際由本句字詞搭配決定的，仍算句內。
         </div>
 
       <div class="row" style="margin-top:16px;">
@@ -499,7 +499,7 @@ details.skill[open] > summary::after{content:'－ 收合';}
       <div id="histByCategory"></div>
       <div class="sec-title">各線索範圍表現</div>
       <div id="histBySpan"></div>
-      <div class="span-legend">題數少的時候比率會跳動得很厲害，累積幾十題以後再看比較準。三個範圍的題數本來就不平均（學測 310 題中，句內 272、跨句 32、篇章 6；指考 250 題中，句內 219、跨句 29、篇章 2），比率低不一定代表你弱，先看分母。</div>
+      <div class="span-legend">題數少的時候比率會跳動得很厲害，累積幾十題以後再看比較準。三個範圍的題數本來就不平均（學測 310 題中，句內 272、跨句 32、篇章 6；指考 250 題中，句內 217、跨句 31、篇章 2），比率低不一定代表你弱，先看分母。</div>
       <div class="sec-title">最近作答記錄</div>
       <div id="histRecent"></div>
     </div>
@@ -508,7 +508,7 @@ details.skill[open] > summary::after{content:'－ 收合';}
   
   <div style="background:#FFFDF7; border:1px solid #DCD3BB; border-radius:4px; padding:13px 15px; margin:22px 0 6px; font-size:12.5px; line-height:1.8; color:#5B5648;">
     <b style="font-family:'Noto Serif TC',serif; font-size:13.5px; color:#221F1A;">關於本題庫的資料</b><br>
-    答對率（P 值）與鑑別度（D 值）取自大考中心公布的官方統計，部分年度未公布，這些題目不會顯示數據。參考試卷與試辦考試屬非正式施測，篇名旁會標明。六大分類與線索範圍是老師的教學判斷、不是官方分類，見仁見智之處在所難免。解析由老師與 AI 共同撰寫、老師逐則看過。<br><b>改編練習</b>是本題庫自己改編的題目：文章改編自歷屆學測、指考閱讀測驗，照現行學測文意選填的版面出題，參考答案與解析都由本題庫撰寫。它們不是大考中心的試題，沒有官方答對率，也不算進 560 題、56 篇。<br>數字出處：大考中心統計資料索引頁<a href="https://www.ceec.edu.tw/xmdoc?xsmsid=0J018604485538810196" target="_blank" rel="noopener">學測各年度統計圖表↗</a>、<a href="https://www.ceec.edu.tw/xmdoc?xsmsid=0J018611000723433352" target="_blank" rel="noopener">指考／分科測驗各年度統計圖表↗</a>，逐題的「答對率及鑑別度表」就在各年度的統計圖表裡。名詞說明見大考中心<a href="https://www.ceec.edu.tw/xcepaper/cont?xsmsid=0J066588036013658199&amp;qunit=0J066614378153514816&amp;sid=0K042343829406896328" target="_blank" rel="noopener">《一起來認識學測與指考的試題答對率》↗</a>、<a href="https://www.ceec.edu.tw/xcepaper/cont?xsmsid=0J066588036013658199&amp;qunit=0J066614378153514816&amp;sid=0K073687789378174143" target="_blank" rel="noopener">《一起來認識學測與指考的試題鑑別度》↗</a>，收錄於「選才電子報 → 數字真相」專欄。<br>
+    答對率（P 值）與鑑別度（D 值）取自大考中心公布的官方統計，部分年度未公布，這些題目不會顯示數據。參考試卷與試辦考試屬非正式施測，篇名旁會標明。七類分類與線索範圍是老師的教學判斷、不是官方分類，見仁見智之處在所難免。解析由老師與 AI 共同撰寫、老師逐則看過。<br><b>改編練習</b>是本題庫自己改編的題目：文章改編自歷屆學測、指考閱讀測驗，照現行學測文意選填的版面出題，參考答案與解析都由本題庫撰寫。它們不是大考中心的試題，沒有官方答對率，也不算進 560 題、56 篇。<br>數字出處：大考中心統計資料索引頁<a href="https://www.ceec.edu.tw/xmdoc?xsmsid=0J018604485538810196" target="_blank" rel="noopener">學測各年度統計圖表↗</a>、<a href="https://www.ceec.edu.tw/xmdoc?xsmsid=0J018611000723433352" target="_blank" rel="noopener">指考／分科測驗各年度統計圖表↗</a>，逐題的「答對率及鑑別度表」就在各年度的統計圖表裡。名詞說明見大考中心<a href="https://www.ceec.edu.tw/xcepaper/cont?xsmsid=0J066588036013658199&amp;qunit=0J066614378153514816&amp;sid=0K042343829406896328" target="_blank" rel="noopener">《一起來認識學測與指考的試題答對率》↗</a>、<a href="https://www.ceec.edu.tw/xcepaper/cont?xsmsid=0J066588036013658199&amp;qunit=0J066614378153514816&amp;sid=0K073687789378174143" target="_blank" rel="noopener">《一起來認識學測與指考的試題鑑別度》↗</a>，收錄於「選才電子報 → 數字真相」專欄。<br>
     <b>錯誤仍然可能存在</b>，發現任何問題歡迎回報，我會逐筆核對更正。本題庫完全免費、不用註冊、沒有廣告，歡迎自由分享。
   </div>
 
@@ -516,7 +516,7 @@ details.skill[open] > summary::after{content:'－ 收合';}
     <div style="font-family:'Noto Sans TC',sans-serif; font-size:13px; line-height:2; margin-bottom:12px;"><a href="https://staresto-create.github.io/JCEE-vocab-questions/" style="color:#9C2C1E; font-weight:700; text-decoration:underline; text-underline-offset:2px; white-space:nowrap;">← 回題庫首頁</a><span style="padding:0 8px; opacity:.5;">·</span><a href="https://staresto-create.github.io/JCEE-vocab-questions/#rules" style="color:#9C2C1E; font-weight:700; text-decoration:underline; text-underline-offset:2px; white-space:nowrap;">🧩 五個詞：拼圖的規則</a></div>
     資料來源：學測 90–115 年、指考 91–110 年歷屆文意選填（大考中心公布，部分年度含官方答對率與鑑別度）；改編練習由本題庫改編自歷屆學測、指考閱讀測驗<br>
     © 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · <a href="https://staresto-create.github.io/JCEE-vocab-questions/#terms" style="color:#9C2C1E; font-weight:700; text-decoration:underline; text-underline-offset:2px; white-space:nowrap;">📖 使用與著作權</a><br>
-    <a class="report-btn" id="reportLink" href="https://docs.google.com/forms/d/e/1FAIpQLSd6P1s7HqjvOmGqOzNDWcBQQ3F539SifSNiAfXvi6NqD2YP-Q/viewform?usp=pp_url&entry.1257494378=%E5%AD%B8%E6%B8%AC%E6%96%87%E6%84%8F%E9%81%B8%E5%A1%AB" target="_blank" rel="noopener">🐛 回報錯誤</a>
+    <a class="report-btn" id="reportLink" href="https://docs.google.com/forms/d/e/1FAIpQLSd6P1s7HqjvOmGqOzNDWcBQQ3F539SifSNiAfXvi6NqD2YP-Q/viewform?usp=pp_url&entry.1257494378=%E6%96%87%E6%84%8F%E9%81%B8%E5%A1%AB" target="_blank" rel="noopener">🐛 回報錯誤</a>
   </footer>
 </div>
 
@@ -1271,7 +1271,7 @@ function gradeFullPassage(){
     if(!testMode) recordAnswer(it.id, ok);
     const pd = (it.accuracyRate != null)
       ? `<div class="pdTag">官方答對率 <b>P=${it.accuracyRate}%</b> ／ 鑑別度 <b>D=${it.discrimination}</b> ／ 難易度：<b>${tierOf(it.accuracyRate, it.discrimination)}</b></div>`
-      : (examOf(it) === '改編練習' ? '' : `<div class="pdTag">本年度尚無官方答對率資料</div>`);
+      : (examOf(it) === '改編練習' ? '' : `<div class="pdTag">本場考試沒有官方逐題答對率</div>`);
     review += `<div class="rv-item ${ok?'ok':'ng'}">
       <div class="rv-hd"><b>第${it.blankNum}題</b>　${ok ? '✓ 答對' : '✕ 你選 '+(chosen?'('+chosen+') '+it.options[chosen]:'未作答')+'　正解 ('+it.answer+') '+it.options[it.answer]}${spanTagHtml(it)}</div>
       <div class="rv-bd"><b>${it.options[it.answer]}</b>　${it.gloss||''}<br>
