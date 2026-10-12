@@ -1338,7 +1338,19 @@ function nextFullPassage(){
   window.scrollTo({top:0, behavior:'smooth'});
 }
 function p_zh(){ const p = PASSAGES[window.__lastPid]; return (p && p.zhTranslation) ? p.zhTranslation : null; }
-init();
+/* #adapt：總站卡片直接連進改編練習（先選好改編練習，再捲到選擇範圍） */
+function applyAdaptHash(){
+  if(location.hash !== '#adapt') return;
+  const k = '改編練習';
+  if(!selectedExams.has(k)){
+    selectedExams.add(k);
+    selectedSingleYears.clear();
+    window.__selectedPassage = null;
+    buildExamGrid(); buildSingleYearGrid(); buildYearList();
+  }
+  const box = document.getElementById('examGrid'); if(box) (box.closest('.card') || box).scrollIntoView({block:'start'});
+}
+init().then(applyAdaptHash);
 </script>
 
 <div class="sheet-mask" id="sheetMask" onclick="closeSheet()"></div>
