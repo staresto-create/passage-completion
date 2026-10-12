@@ -28,7 +28,7 @@
   ],
   "gloss": "（名詞）資格、地位",
   "collocation": "a language in its own ___；in its own right（本身即是、憑自身條件）",
-  "explanation": "答對率 17%，鑑別度 20，高分群考生也一起錯。難的不是生字。right 人人認得，可是它詞性多、意思也多：當形容詞是「正確的、右邊的」，當副詞是「正好、就」，當名詞是「權利、資格」。這一格考的是 in its own right 這個固定用法。【作答線索】in its own ___ 是介系詞片語，中間要填名詞。【語意及字詞搭配】in its own right 指憑本身條件就站得住、自成一格，不必依附在別的東西底下。整段在問粵語究竟是漢語的方言，還是一種語言。這一格所在的句子主張它本身就是一種語言。",
+  "explanation": "答對率一成七，鑑別度 20，高分群考生也一起錯。難的不是生字。right 人人認得，可是它詞性多、意思也多：當形容詞是「正確的、右邊的」，當副詞是「正好、就」，當名詞是「權利、資格」。這一格考的是 in its own right 這個固定用法。【作答線索】in its own ___ 是介系詞片語，中間要填名詞。【語意及字詞搭配】in its own right 指憑本身條件就站得住、自成一格，不必依附在別的東西底下。整段在問粵語究竟是漢語的方言，還是一種語言。這一格所在的句子主張它本身就是一種語言。",
   "accuracyRate": 17,
   "discrimination": 20,
   "contextSpan": "句內",
@@ -101,7 +101,7 @@
   ],
   "gloss": "享有聲望的",
   "collocation": "written, official, and ___；a prestigious school／award（名校、大獎）",
-  "explanation": "are typically written, official, and ___，and 前面是 written 與 official 兩個形容詞，這一格要與它們並列，也得是形容詞。prestigious 你大概只在「名校、大獎」這類說法裡遇過（a prestigious university、a prestigious award），但這一題考的是它形容一種語言的地位：享有聲望、被看得起。看下半句就知道要什麼——那裡把「方言」寫成不成文、非官方、而且被看不起，三個特徵一一相對，這一格對到的正是「被看不起」的反面。易與 recognized 混淆——recognized 也擺得進並列位置，但它講的是「獲得官方承認」，與同一串裡的 official 說的是同一件事；三個並列的形容詞不會把同一個特徵講兩次。",
+  "explanation": "are typically written, official, and ___，and 前面是 written 與 official 兩個形容詞，這一格要與它們並列，也得是形容詞。prestigious 你大概只在「名校、大獎」這類說法裡遇過（a prestigious university、a prestigious award），但這一題考的是它形容一種語言的地位：享有聲望、被看得起。看下半句就知道要什麼——那裡把「方言」寫成口說的、非官方、而且被看不起，三個特徵一一相對，這一格對到的正是「被看不起」的反面。易與 recognized 混淆——recognized 也擺得進並列位置，但它講的是「獲得官方承認」，與同一串裡的 official 說的是同一件事；三個並列的形容詞不會把同一個特徵講兩次。",
   "accuracyRate": 32,
   "discrimination": 50,
   "contextSpan": "句內"
@@ -136,7 +136,7 @@
   ],
   "gloss": "決定",
   "collocation": "can ___ which dialect is chosen；determine + wh- 子句（決定…）",
-  "explanation": "determine + wh- 子句 是決定何者，後面接的正是 which 引導的子句。易與 distinguish 混淆，但那要走 distinguish A from B。",
+  "explanation": "determine + wh- 子句 是決定何者，後面接的正是 which 引導的子句。易與 distinguish 混淆，但這一句說的是有權力的一群人能決定哪種方言成為官方語言，不是分辨。",
   "accuracyRate": 62,
   "discrimination": 72,
   "contextSpan": "句內"
@@ -171,7 +171,7 @@
   ],
   "gloss": "相似的",
   "collocation": "are so ___ in grammar…that…；be similar to sth；so…that 句型",
-  "explanation": "so + adj + that + 子句 是如此以致於，這一格說兩種話在文法與發音上接近。易與 recognized 混淆，但那要走 be recognized as + N。",
+  "explanation": "so + adj + that + 子句 是如此以致於，這一格說兩種話在文法、詞彙與發音上接近。易與 recognized 混淆，但這一格要說兩種話像到彼此聽得懂，recognized 放進去講不通。",
   "accuracyRate": 74,
   "discrimination": 60,
   "contextSpan": "句內"
@@ -205,7 +205,7 @@
   ],
   "gloss": "理解",
   "collocation": "if ___ is difficult or even impossible；reading comprehension（閱讀理解）",
-  "explanation": "前一句說彼此聽得懂，這一格是它的名詞說法，放在主詞位置。易與 trouble 混淆，但那要走 have trouble (in) V-ing。",
+  "explanation": "前一句說彼此聽得懂，這一格是它的名詞說法，放在主詞位置。易與 trouble 混淆，但填進去就成了「麻煩有困難」，講不通。",
   "accuracyRate": 48,
   "discrimination": 63,
   "contextSpan": "跨句"
@@ -240,7 +240,7 @@
   ],
   "gloss": "（名詞）依據、理由",
   "collocation": "On this ___；on this ground（基於這個理由）；非「地面」義",
-  "explanation": "On this ___27___, Mexican Spanish and Argentine Spanish are dialects of the same language，空格是名詞。ground 你大概只記得「地面」，它引申為立足點、依據，on this ground 是「基於這個理由」，groundless 就是毫無根據——前一句剛講完語言學家的標準，這裡正是接著說「依這個標準」。易與 right 混淆——right 也可當名詞，但那是「權利」，用法是 have a right to sth，無法接在 on this 後面表示理由。",
+  "explanation": "On this ___27___, Mexican Spanish and Argentine Spanish are dialects of the same language，空格是名詞。ground 你大概只記得「地面」，它引申為立足點、依據，on this ground 是「基於這個理由」，groundless 就是毫無根據——前一句剛講完語言學家的標準，這裡正是接著說「依這個標準」。易與 right 混淆——on this right 講不出「基於這個理由」的意思。",
   "accuracyRate": 36,
   "discrimination": 39,
   "contextSpan": "句內"
@@ -311,7 +311,7 @@
   ],
   "gloss": "（動詞）交談",
   "collocation": "can hardly ___ with each other；converse with sb（與某人交談）",
-  "explanation": "`converse with sb` 是與某人交談，與 conversation 同源，這一格後面正是 with each other。易與 distinguish 混淆，但區分要接受詞。",
+  "explanation": "`converse with sb` 是與某人交談，與 conversation 同源，這一格後面正是 with each other。易與 distinguish 混淆，但 distinguish with each other 講不出「彼此交談」的意思。",
   "accuracyRate": 48,
   "discrimination": 69,
   "contextSpan": "句內"
@@ -345,7 +345,7 @@
   ],
   "gloss": "被認定、被承認",
   "collocation": "making Danish and Norwegian ___ as dialects；be recognized as（被認定為）",
-  "explanation": "making Danish and Norwegian ___30___ as dialects of the same language，空格是 make 的受詞補語，要過去分詞。recognize 你大概只讀成「認出來」，recognize A as B 是把 A 認定為 B，被動就是 be recognized as——這一句說丹麥語與挪威語因此被認定為同一語言的方言。易與 determine 混淆——determine 也可當動詞，但用法是 determine + 受詞或 that 子句，無法與 as 連用。",
+  "explanation": "making Danish and Norwegian ___30___ as dialects of the same language，空格是 make 的受詞補語，要過去分詞。recognize 你大概只讀成「認出來」，recognize A as B 是把 A 認定為 B，被動就是 be recognized as——這一句說丹麥語與挪威語因此被認定為同一語言的方言。易與 determine 混淆——但 determine（決定）放進去，與後面的 as dialects 接不起來。",
   "accuracyRate": 35,
   "discrimination": 52,
   "contextSpan": "句內"
@@ -379,7 +379,7 @@
   ],
   "gloss": "綽號",
   "collocation": "Despite this ___；earn／go by a nickname（獲得、以綽號為人所知）",
-  "explanation": "前一句剛給了他鳥人這個稱號，這一格就是回指那個綽號。易與 privilege 混淆，但特權是後面獄方給的待遇，不是稱呼。",
+  "explanation": "前一句剛給了他鳥人這個稱號，這一格就是回指那個綽號。易與 privilege 混淆，但前一句沒有提到任何特權，this 找不到可以回指的東西。",
   "accuracyRate": 77,
   "discrimination": 54,
   "groupRates": [99, 97, 89, 70, 32],
@@ -415,7 +415,7 @@
   ],
   "gloss": "懇求",
   "collocation": "His mother desperately ___ for his life；plead for sth（為…懇求）",
-  "explanation": "plead for sth 是為某事懇求，後面的 for his life 正是求他一命。易與 banned 混淆，但禁止要用被動，主詞也不會是母親。",
+  "explanation": "plead for sth 是為某事懇求，後面的 for his life 正是求他一命。易與 banned 混淆，但這一句講的是母親拚命救兒子一命，「禁止」放進去語意不合。",
   "accuracyRate": 52,
   "discrimination": 82,
   "groupRates": [97, 83, 50, 20, 7],
@@ -520,7 +520,7 @@
   ],
   "gloss": "濃厚的",
   "collocation": "developed a ___ interest in birds；a keen interest in sth（濃厚興趣）",
-  "explanation": "a keen interest in sth 是濃厚的興趣。keen 要成串記：keen competition 競爭激烈、keen eyes 目光銳利、be keen on 熱衷於。易與 effective 混淆，但有效形容的是療法。",
+  "explanation": "a keen interest in sth 是濃厚的興趣。keen 要成串記：keen competition 競爭激烈、keen eyes 目光銳利、be keen on 熱衷於。易與 effective 混淆，但 an effective interest 講不通，興趣沒有有效無效可言。",
   "accuracyRate": 46,
   "discrimination": 72,
   "groupRates": [90, 71, 43, 18, 10],
@@ -591,7 +591,7 @@
   ],
   "gloss": "特權、殊遇",
   "collocation": "As a result of this ___；grant sb a privilege（給予某人特權）",
-  "explanation": "`grant sb a privilege` 是給予某人特權。這一格回指上一句那項特准，也就是他拿到的殊遇。易與 nickname 混淆，但綽號不會讓人寫得出兩本專書。",
+  "explanation": "`grant sb a privilege` 是給予某人特權。這一格回指前面那項特准，也就是他拿到的殊遇。易與 nickname 混淆，但綽號不會讓人寫得出兩本專書。",
   "accuracyRate": 51,
   "discrimination": 81,
   "groupRates": [96, 83, 49, 18, 8],
@@ -626,7 +626,7 @@
   ],
   "gloss": "疾病",
   "collocation": "medicines for various kinds of bird ___；treat／cure an illness（治病）",
-  "explanation": "他研發的是治鳥病的藥，這一格就是那些病。易與 imprisonment 混淆，但監禁是判決那一段的字，鳥不會被判刑。",
+  "explanation": "他研發的是治鳥病的藥，這一格就是那些病。易與 imprisonment 混淆，但藥治的是病，bird imprisonment 講不通。",
   "accuracyRate": 64,
   "discrimination": 77,
   "groupRates": [99, 95, 77, 38, 12],
@@ -661,7 +661,7 @@
   ],
   "gloss": "有效的",
   "collocation": "whether the remedies were ___；an effective remedy／treatment（有效療法）",
-  "explanation": "這一格講他那些藥到底有沒有效，後面接著說觀察仍有價值。易與 keen 混淆，但濃厚形容的是興趣，不是療效。",
+  "explanation": "這一格講他那些藥到底有沒有效，後面接著說觀察仍有價值。易與 keen 混淆，但 the remedies were keen 講不出療效有無的意思。",
   "accuracyRate": 51,
   "discrimination": 81,
   "groupRates": [96, 83, 50, 18, 8],
@@ -731,7 +731,7 @@
   ],
   "gloss": "保護",
   "collocation": "didn't offer that much ___；offer／provide protection（提供保護）",
-  "explanation": "offer protection 是提供保護，這一句說報紙團起來擋不了什麼。易與 delicate 混淆，但那是形容詞，接不上 that much。",
+  "explanation": "offer protection 是提供保護，這一句說揉成一團的報紙提供不了多少保護。易與 delicate 混淆，但那是形容詞，接不上 that much。",
   "accuracyRate": null,
   "discrimination": null,
   "contextSpan": "跨句"
@@ -765,7 +765,7 @@
   ],
   "gloss": "偶然的、意外的",
   "collocation": "the invention was actually quite ___；an accidental discovery（意外的發現）",
-  "explanation": "後面整段在講它本來要做壁紙、結果做成別的，這一格收成偶然。易與 disappointing 混淆，但令人失望是下一段的形容。",
+  "explanation": "後面整段在講它本來要做壁紙、結果做成別的，這一格收成偶然。易與 disappointing 混淆，但前一句才說它是運輸業的天賜之物，這項發明本身談不上令人失望。",
   "accuracyRate": null,
   "discrimination": null,
   "contextSpan": "篇章"
@@ -799,7 +799,7 @@
   ],
   "gloss": "令人失望的",
   "collocation": "But the result was ___；disappointing 指令人失望的事物，非人的感受",
-  "explanation": "這一格形容那個結果令人失望；形容事物用 -ing 不用 -ed。易與 accidental 混淆，但偶然講的是整件發明的性質。",
+  "explanation": "這一格形容那個結果令人失望；形容事物用 -ing 不用 -ed。易與 accidental 混淆，但下一句說成品和原本想做的差很遠，講的是結果不如預期，不是碰巧。",
   "accuracyRate": null,
   "discrimination": null,
   "contextSpan": "跨句"
@@ -935,7 +935,7 @@
   ],
   "gloss": "精密易損的",
   "collocation": "packing their ___ electronic devices；a delicate instrument（精密儀器）",
-  "explanation": "這一格形容電子設備怕碰撞，所以才要找包材。易與 expanded 混淆，但擴大形容的是用途範圍，不是設備本身。",
+  "explanation": "這一格形容電子設備怕碰撞，所以才要找包材。易與 expanded 混淆，但 expanded electronic devices 講不通，設備談不上擴大。",
   "accuracyRate": null,
   "discrimination": null,
   "contextSpan": "句內"
@@ -969,7 +969,7 @@
   ],
   "gloss": "更廣的、擴大的",
   "collocation": "for ___ applications；expanded use／applications（更廣的用途）",
-  "explanation": "前面列了各種形狀厚度，這一格講用途因此變得更廣。易與 delicate 混淆，但精密易損形容的是被包的東西。",
+  "explanation": "前面列了各種形狀厚度，這一格講用途因此變得更廣。易與 delicate 混淆，但這一格修飾的是 applications，用途沒有精密易損可言。",
   "accuracyRate": null,
   "discrimination": null,
   "contextSpan": "句內"
@@ -1038,7 +1038,7 @@
   ],
   "gloss": "（名詞）動作、行為",
   "collocation": "The simple ___ of popping；the act of V-ing（做…這個動作）",
-  "explanation": "the act of V-ing 指做某事這個動作，這裡是捏爆氣泡。易與 protection 混淆，但保護是第一段講包材時用的字。",
+  "explanation": "the act of V-ing 指做某事這個動作，這裡是捏爆氣泡。易與 protection 混淆，但捏氣泡紓壓談不上保護，the protection of popping 講不通。",
   "accuracyRate": null,
   "discrimination": null,
   "contextSpan": "句內"
@@ -1073,7 +1073,7 @@
   ],
   "gloss": "（動詞）收藏、容納",
   "collocation": "constructed to ___ the vast art collection；house 此處為及物動詞",
-  "explanation": "house 你大概只記得房子，它當及物動詞是收藏、容納，讀音也要濁化。易與 imported 混淆，但進口要接 from 帶出來源。",
+  "explanation": "house 你大概只記得房子，它當及物動詞是收藏、容納，讀音也要濁化。易與 imported 混淆，但這裡的 to 是不定詞，後面要接原形動詞，imported 放不進去。",
   "accuracyRate": 42,
   "discrimination": 80,
   "contextSpan": "句內"
@@ -1107,7 +1107,7 @@
   ],
   "gloss": "不斷更換的",
   "collocation": "making the ___ special exhibitions a highlight；ever- + 分詞（不斷…的）",
-  "explanation": "making the ___ special exhibitions a highlight，這一格夾在 the 與 special exhibitions 之間，要形容詞。ever-changing 你大概只讀成 ever 的「曾經」，但這一題考的是 ever- 當字首、後面接分詞，表示「不斷…的」：ever-growing、ever-increasing 同一型，ever 在這裡是「始終、不斷」。前一句說館藏太多、一次只展得出一部分，特展因此得輪流換檔。易與 hidden 混淆——hidden 也是形容詞，也擺得進同一個位置，但這一句說的是展覽一直在換，不是展覽被藏起來。",
+  "explanation": "making the ___ special exhibitions a highlight，這一格夾在 the 與 special exhibitions 之間，要形容詞。ever-changing 你大概只讀成 ever 的「曾經」，但這一題考的是 ever- 當字首、後面接分詞，表示「不斷…的」：ever-growing、ever-increasing 同一型，ever 在這裡是「始終、不斷」。這一句前半說館藏太多、一次只展得出一部分，特展因此得輪流換檔。易與 hidden 混淆——hidden 也是形容詞，也擺得進同一個位置，但這一句說的是展覽一直在換，不是展覽被藏起來。",
   "accuracyRate": 36,
   "discrimination": 65,
   "contextSpan": "句內"
@@ -1141,7 +1141,7 @@
   ],
   "gloss": "使…感到意外",
   "collocation": "a public space that has ___ many visitors；surprise sb（使某人意外）",
-  "explanation": "下一段說訪客以為進美術館，卻發現整棟才是作品，這一格講那份意外。易與 delight 混淆，但那是原形，接不上 has。",
+  "explanation": "接下來兩句說訪客以為進美術館，卻發現整棟才是作品，這一格講那份意外。易與 delight 混淆，但那是原形，接不上 has。",
   "accuracyRate": 70,
   "discrimination": 63,
   "contextSpan": "跨句"
@@ -1175,7 +1175,7 @@
   ],
   "gloss": "藝術的",
   "collocation": "a completely satisfying ___ experience；an artistic experience／style",
-  "explanation": "a completely satisfying ___ experience，這一格夾在 satisfying 與 experience 之間，要形容詞，修飾的是 experience。artistic 你大概只讀成「有藝術天分的」（an artistic child），但這一題考的是它的另一個意思：屬於藝術的、藝術上的。這一段說遊客本以為要看館內的作品，結果發現建築本身就是作品，所以人待在戶外也構成一次完整的藝術體驗。易與 surprised 混淆——surprised 是 -ed 分詞形容詞，形容的是人的感受（visitors are surprised），修飾不了 experience 本身；要修飾事物得用 -ing 那一邊，說 a surprising experience。",
+  "explanation": "a completely satisfying ___ experience，這一格夾在 satisfying 與 experience 之間，要形容詞，修飾的是 experience。artistic 你大概只讀成「有藝術天分的」（an artistic child），但這一題考的是它的另一個意思：屬於藝術的、藝術上的。這一段說遊客本以為要看館內的作品，結果發現建築本身就是作品，所以人待在戶外也構成一次完整的藝術體驗。易與 surprised 混淆——surprised 是 -ed 分詞形容詞，形容的是人的感受（I was surprised），修飾不了 experience 本身；要修飾事物得用 -ing 那一邊，說 a surprising experience。",
   "accuracyRate": 39,
   "discrimination": 62,
   "contextSpan": "跨句"
@@ -1209,7 +1209,7 @@
   ],
   "gloss": "（名詞複數）材料",
   "collocation": "a few basic ___: metal, stone and glass；building materials（建材）",
-  "explanation": "冒號後面列的金屬、石材、玻璃都是建材。易與 explorations 混淆，但探索之旅是最後一段的導覽，接不上這三樣。",
+  "explanation": "冒號後面列的金屬、石材、玻璃都是建材。易與 explorations 混淆，但探索之旅接不上這三樣建材。",
   "accuracyRate": 69,
   "discrimination": 64,
   "contextSpan": "句內"
@@ -1244,7 +1244,7 @@
   ],
   "gloss": "（名詞）轉角",
   "collocation": "at every ___, there is a new view；at every turn（處處、每一轉角）",
-  "explanation": "Around every corner and at every ___26___, there is a new view to enchant guests，空格是單數名詞，與前面的 every corner 對仗。turn 你大概只讀成動詞「轉」，它也是名詞「轉彎處」，at every turn 是「處處、每一轉」——轉個彎就有新景致。易與 delight 混淆——delight 也是名詞，擺在 at every 後面詞性沒問題，但它指的是喜悅本身、不是地點，at every delight 不成說法。",
+  "explanation": "Around every corner and at every ___26___, there is a new view to enchant guests，空格是單數名詞，與前面的 every corner 對仗。turn 你大概只讀成動詞「轉」，它也是名詞「轉彎處」，at every turn 是「處處、每轉一個彎」——轉個彎就有新景致。易與 delight 混淆——delight 也是名詞，擺在 at every 後面詞性沒問題，但它指的是喜悅本身、不是地點，at every delight 不成說法。",
   "accuracyRate": 38,
   "discrimination": 62,
   "contextSpan": "句內"
@@ -1279,7 +1279,7 @@
   ],
   "gloss": "進口的",
   "collocation": "travertine, ___ from Italy；be imported from（自…進口）",
-  "explanation": "be imported from 是自某地進口，後面的 from Italy 正是產地。易與 hidden 混淆，但藏起來不接 from 帶國家。",
+  "explanation": "be imported from 是自某地進口，後面的 from Italy 正是產地。易與 hidden 混淆，但後面說這和羅馬歷史建築的來源相同，講的是石材的產地，不是藏起來。",
   "accuracyRate": 65,
   "discrimination": 79,
   "contextSpan": "句內"
@@ -1313,7 +1313,7 @@
   ],
   "gloss": "隱藏的",
   "collocation": "the delicate treasures ___ under the rough surface；後位修飾 treasures",
-  "explanation": "前一句說切割讓埋在石頭裡的化石露出來，這一格後位修飾那些珍寶。易與 imported 混淆，但進口的是石材，不是裡面的化石。",
+  "explanation": "這一句前半說切割讓埋在石頭裡的化石露出來，這一格後位修飾那些珍寶。易與 imported 混淆，但 under the rough surface 講的是珍寶所在的位置，與進口無關。",
   "accuracyRate": 68,
   "discrimination": 65,
   "contextSpan": "句內"
@@ -1382,7 +1382,7 @@
   ],
   "gloss": "（名詞複數）探索之旅",
   "collocation": "These ___ are a must；an exploration of sth（對…的探索）",
-  "explanation": "`an exploration of sth` 是對某物的探索。這一格回指前一句的各種免費導覽，把它們收成一趟趟探索。易與 materials 混淆，但材料是第三段講建材時用的字。",
+  "explanation": "`an exploration of sth` 是對某物的探索。這一格回指前一句的各種免費導覽，把它們收成一趟趟探索。易與 materials 混淆，但前一句講的是導覽，不是任何材料。",
   "accuracyRate": 48,
   "discrimination": 58,
   "contextSpan": "跨句"
@@ -1655,7 +1655,7 @@
   ],
   "gloss": "傳播開來、普及",
   "collocation": "aquaculture ___ in Europe；spread 三態同形（spread-spread-spread）",
-  "explanation": "spread 三態同形，這裡是過去式，講養殖在歐洲流傳開來。易與 trapped 混淆，但受困要用被動，主詞也不會是一種產業。",
+  "explanation": "spread 三態同形，這裡是過去式，講養殖在歐洲流傳開來。易與 trapped 混淆，但這一格的主詞是一種產業，談不上受困。",
   "accuracyRate": 56,
   "discrimination": 70,
   "contextSpan": "句內"
@@ -1690,7 +1690,7 @@
   ],
   "gloss": "獨占、壟斷",
   "collocation": "they had a ___ over the land；have a monopoly over／on sth（獨占）",
-  "explanation": "they had a ___29___ over the land, forests, and water courses，a 後面要可數單數名詞。over 你大概只讀成「在……上面、超過」，have + 名詞 + over sth 是「對某事物握有……」，have control／power／a monopoly over sth 都走這個結構——這一句說修道院與貴族獨占了土地、森林與水道，平民連自己的池塘都難得建。易與 evidence 混淆——evidence 也是名詞，但它不可數，a 後面擺不進去。",
+  "explanation": "they had a ___29___ over the land, forests, and water courses，a 後面要可數單數名詞。over 你大概只讀成「在……上面、超過」，have + 名詞 + over sth 是「對某事物握有……」，have control／power／a monopoly over sth 都走這個結構——這一句說修道院與貴族獨占了土地、森林與水道，平民連自己的池塘都難得建。易與 evidence 混淆——evidence 也是名詞，但「對土地、森林與水道握有證據」說不通，這一句講的是誰把持這些資源。",
   "accuracyRate": 34,
   "discrimination": 64,
   "contextSpan": "句內"
@@ -1759,7 +1759,7 @@
   ],
   "gloss": "佳餚、珍饈",
   "collocation": "resulting in a ___ that would endure；a local delicacy（在地美食）",
-  "explanation": "這一格說農夫複製出來的成果，是流傳數百年的一道佳餚。易與 mixture 混淆，但混合物是後面泡蛋那缸液體。",
+  "explanation": "這一格說農夫複製出來的成果，是流傳數百年的一道佳餚。易與 mixture 混淆，但 a mixture 當不了流傳數百年的 comfort food。",
   "accuracyRate": 46,
   "discrimination": 61,
   "contextSpan": "句內"
@@ -1794,7 +1794,7 @@
   ],
   "gloss": "追溯至、起源於",
   "collocation": "it ___ more than 500 years to…；date back to + 年代（追溯到）",
-  "explanation": "date back to 是追溯到某年代，後面的 to the Ming Dynasty 正是落點。易與 goes by 混淆，但那接的是名字，不是年代。",
+  "explanation": "date back to 是追溯到某年代，後面的 to the Ming Dynasty 正是落點。易與 goes by 混淆，但 it goes by more than 500 years to the Ming Dynasty 說不通。",
   "accuracyRate": 68,
   "discrimination": 67,
   "contextSpan": "句內"
@@ -1829,7 +1829,7 @@
   ],
   "gloss": "未改變的",
   "collocation": "has remained relatively ___；remain unchanged（維持不變）",
-  "explanation": "remain unchanged 是維持不變，這一句說做法幾百年來沒怎麼改。易與 exotic 混淆，但異國風味形容的是味道，不是製程。",
+  "explanation": "remain unchanged 是維持不變，這一句說做法幾百年來沒怎麼改。易與 exotic 混淆，但 remain exotic 說不出「做法幾百年來沒怎麼改」這一層。",
   "accuracyRate": 47,
   "discrimination": 77,
   "contextSpan": "句內"
@@ -1863,7 +1863,7 @@
   ],
   "gloss": "混合物",
   "collocation": "eggs are added to the ___；a mixture of A and B（A 與 B 的混合物）",
-  "explanation": "`a mixture of A and B` 是 A 與 B 的混合物。前一段列了濃茶、石灰、鹽與草木灰，這一格就是那缸東西。易與 delicacy 混淆，但佳餚是成品，不是拿來泡蛋的液體。",
+  "explanation": "`a mixture of A and B` 是 A 與 B 的混合物。前一句列了濃茶、石灰、鹽與草木灰，這一格就是那缸東西。易與 delicacy 混淆，但拿來泡蛋的是那缸液體，談不上佳餚。",
   "accuracyRate": 61,
   "discrimination": 62,
   "contextSpan": "跨句"
@@ -1897,7 +1897,7 @@
   ],
   "gloss": "暗示、意味著",
   "collocation": "not for a century as the name ___；as the name implies（顧名思義）",
-  "explanation": "as the name implies 是顧名思義，這裡反過來說名字並不準。易與 goes by 混淆，但那後面要接名字，這裡沒有受詞。",
+  "explanation": "as the name implies 是顧名思義，這裡反過來說名字並不準。易與 goes by 混淆，但 as the name goes by 說不成話。",
   "accuracyRate": 42,
   "discrimination": 69,
   "contextSpan": "句內"
@@ -2000,7 +2000,7 @@
   ],
   "gloss": "難關、挑戰",
   "collocation": "is the first ___；face／meet a challenge（面對、應付挑戰）",
-  "explanation": "先過外觀這一關，這一格指的就是那道關卡。易與 favor 混淆，但青睞是最後一段講年輕人不買單時才用的字。",
+  "explanation": "先過外觀這一關，這一格指的就是那道關卡。易與 favor 混淆，但 the first favor 說不出「第一道難關」這一層。",
   "accuracyRate": 61,
   "discrimination": 63,
   "contextSpan": "句內"
@@ -2034,7 +2034,7 @@
   ],
   "gloss": "引人食慾的",
   "collocation": "a less ___ dark brown hue；an appetizing smell／color（誘人氣味、色澤）",
-  "explanation": "答對率 22%，鑑別度 38。【作答線索】a less ___ hue，這一格夾在 less 與名詞之間，要填形容詞。選項裡的形容詞不只一個，得看句子在比什麼。前半句說皮蛋不是蛋白配橘黃蛋黃，而是深褐帶墨綠。比的是顏色好不好看。【語意內涵】appetizing 指引人食慾的。less appetizing 就是看起來比較沒食慾。易與 exotic 混淆，但那講的是整道食物帶異國色彩，形容不了顏色本身。",
+  "explanation": "答對率二成二，鑑別度 38。【作答線索】a less ___ hue，這一格夾在 less 與名詞之間，要填形容詞。選項裡的形容詞不只一個，得看句子在比什麼。前半句說皮蛋不是蛋白配橘黃蛋黃，而是深褐帶墨綠。比的是顏色好不好看。【語意內涵】appetizing 指引人食慾的。less appetizing 就是看起來比較沒食慾。易與 exotic 混淆，但 less exotic 說不出「看起來沒食慾」這一層。",
   "accuracyRate": 22,
   "discrimination": 38,
   "contextSpan": "句內",
@@ -2110,7 +2110,7 @@
   ],
   "gloss": "（名詞複數）人形、形體",
   "collocation": "the ___ appear as complete forms；figure 取「形體」義，非「數字」",
-  "explanation": "figure 你腦中先跳出來的是數字，這裡取的是形體、人形，指戲偶像完整的人。易與 director 混淆，但那是人，不是台上的偶。另外一提：這一篇選文取自 101 年指考，後來被 107 學年度起適用的參考試卷沿用，同一格在那份卷子上也是第 21 題，兩邊是同一題，不是網站重複。",
+  "explanation": "figure 常見的意思是數字，這裡取的是形體、人形，指戲偶像完整的人。易與 director 混淆，但那是人，不是台上的偶。另外一提：這一篇選文取自 101 年指考，後來被 107 學年度起適用的參考試卷沿用，同一格在那份卷子上也是第 21 題，兩邊是同一題，不是本題庫重複收錄。",
   "accuracyRate": null,
   "discrimination": null,
   "contextSpan": "句內"
@@ -2144,7 +2144,7 @@
   ],
   "gloss": "被伴奏",
   "collocation": "is typically ___ by a small orchestra；be accompanied by（由…伴奏）",
-  "explanation": "be accompanied by 指由某樣東西伴隨或伴奏，後面接的正是樂隊。易與 supporting 混淆，但那是形容詞，接不上 by。",
+  "explanation": "be accompanied by 指由某樣東西伴隨或伴奏，後面接的正是樂隊。易與 supporting 混淆，但 is typically supporting by a small orchestra 說不成話。",
   "accuracyRate": null,
   "discrimination": null,
   "contextSpan": "句內"
@@ -2179,7 +2179,7 @@
   ],
   "gloss": "（動詞）指揮",
   "collocation": "uses the drum to ___ the musicians；conduct an orchestra（指揮樂團）",
-  "explanation": "conduct 你大概只記得進行、舉行，它也當指揮解，conduct an orchestra 就是指揮樂團。易與 accompanied 混淆，但那是被動形式，接在 to 後面不成立。",
+  "explanation": "conduct 你大概只記得進行、舉行，它也當指揮解，conduct an orchestra 就是指揮樂團。易與 accompanied 混淆，但 to 後面要原形動詞，accompanied 的詞形放不進來。",
   "accuracyRate": null,
   "discrimination": null,
   "contextSpan": "句內"
@@ -2248,7 +2248,7 @@
   ],
   "gloss": "（名詞）吸引力",
   "collocation": "appear on stage for extra ___；have wide appeal（有廣泛吸引力）",
-  "explanation": "【作答線索】你大概只學過 appeal to 這個動詞用法，記的意思是「吸引」。標詞性時就會把 appeal 記成動詞，從名詞候選裡劃掉。這一格因此無解。appeal 當名詞是「吸引力」，跟你熟的那個動詞同一個意思，只是換了詞性；appeal to 另外也有「向…呼籲、訴諸」的用法，本題用不到。【語意內涵】for extra ___ 前面是介系詞、後面沒有受詞，中間又有 extra 修飾，這裡只能是名詞。原文說偶爾也會有動物造型的戲偶上場，為的是多添一分吸引力，尤其對台下的小朋友。常見組合：have wide appeal（有廣泛吸引力）、lose its appeal（失去吸引力）。",
+  "explanation": "【作答線索】appeal 常見的是 appeal to 這個動詞用法，意思是「吸引」；如果只把它當動詞，標詞性時就會從名詞候選裡劃掉它，這一格就找不到答案。appeal 當名詞是「吸引力」，跟動詞 appeal to 的「吸引」同一個意思，只是換了詞性；appeal to 另外也有「向…呼籲、訴諸」的用法，本題用不到。【語意內涵】for extra ___ 前面是介系詞、後面沒有受詞，中間又有 extra 修飾，這裡只能是名詞。原文說偶爾也會有動物造型的戲偶上場，為的是多添一分吸引力，尤其對台下的小朋友。常見組合：have wide appeal（有廣泛吸引力）、lose its appeal（失去吸引力）。",
   "accuracyRate": null,
   "discrimination": null,
   "contextSpan": "句內"
@@ -2282,7 +2282,7 @@
   ],
   "gloss": "負責人、主事者",
   "collocation": "the chief or ___ of the troupe；the director of a troupe（劇團負責人）",
-  "explanation": "與前面的 chief 並列，這一格指劇團的主事者。易與 figures 混淆，但形體講的是台上的戲偶，不是團裡的人。",
+  "explanation": "與前面的 chief 並列，這一格指劇團的主事者。易與 figures 混淆，但主演只是一個人，figures 指不了他在團裡的身分。",
   "accuracyRate": null,
   "discrimination": null,
   "contextSpan": "句內"
@@ -2317,7 +2317,7 @@
   ],
   "gloss": "輔助的、配合的",
   "collocation": "The ___ performer；a supporting actor／role（配角）；易與 supportive 混淆",
-  "explanation": "這一格的答案是 supporting，指的是兩位演師裡不是主要的那一位。【文內驗證】線索不在這一句，在段落開頭那一句：In general, a show needs two performers——先宣告一場戲需要兩位演師。下一句介紹第一位，說他是劇團的團主，負責整場戲，操作主要戲偶、演唱與口白。輪到這一格，講的必然是第二位，也就是不是 main 的那一位。再往下一句還會確認一次：the relationship between the main performer and his partner，partner（搭檔）回頭指的就是這一格的人。看到一段開頭宣告「有兩個」，就要準備好後面會一個一個介紹，空格多半落在其中一個的位置上。【supporting 和 supportive 差在哪】兩個都是形容詞，都從 support 來，意思卻不同層：supporting 說的是排第幾，指「次要的、不是最主要的那一個」，a supporting actor（配角）、a supporting role（配角戲份）；supportive 說的是對人好不好，指「會給予鼓勵和協助的」，a supportive friend（很支持你的朋友）、supportive parents（會鼓勵孩子的父母）。把 supportive 填進來，句子會變成「那位很支持別人的演師」，講的是他的性格，跟他在戲裡排第幾無關。【易與 accompanied 混淆】accompanied 是 accompany 的過去分詞，常用在 be accompanied by（由……陪同、伴隨）；填進來會讀成「被陪同的那位演師」，方向剛好相反——這一格要的是配合主要那位演師的人，不是被人陪同的那一位。【跨年對照】98 年指考文意選填考的是名詞那一條，emotional support（情感支持），答對率只有 25%。109 年指考文意選填把 supportive 放進選項組，十格沒有一格填它，整份卷子只當誘答——它在考場上出現過，只是從來不是答案。",
+  "explanation": "這一格的答案是 supporting，指的是兩位演師裡不是主要的那一位。【文內驗證】線索不在這一句，在段落開頭那一句：In general, a show needs two performers——先宣告一場戲需要兩位演師。接下來兩句介紹第一位，說他是劇團的團主，負責整場戲，操作主要戲偶、演唱與口白。輪到這一格，講的必然是第二位，也就是不是 main 的那一位。再隔一句還會確認一次：the relationship between the main performer and his partner，partner（搭檔）回頭指的就是這一格的人。看到一段開頭宣告「有兩個」，就要準備好後面會一個一個介紹，空格多半落在其中一個的位置上。【supporting 和 supportive 差在哪】兩個都是形容詞，都從 support 來，意思卻不同層：supporting 說的是排第幾，指「次要的、不是最主要的那一個」，a supporting actor（配角）、a supporting role（配角戲份）；supportive 說的是對人好不好，指「會給予鼓勵和協助的」，a supportive friend（很支持你的朋友）、supportive parents（會鼓勵孩子的父母）。把 supportive 填進來，句子會變成「那位很支持別人的演師」，講的是他的性格，跟他在戲裡排第幾無關。【易與 accompanied 混淆】accompanied 填進來會讀成「被陪同的那位演師」，方向剛好相反——這一格要的是配合主要那位演師的人，不是被人陪同的那一位。【跨年對照】98 年指考文意選填考的是名詞那一條，emotional support（情感支持），答對率只有二成五。109 年指考文意選填把 supportive 放進選項組，十格沒有一格填它，整份卷子只當誘答——它在考場上出現過，只是從來不是答案。",
   "accuracyRate": null,
   "discrimination": null,
   "contextSpan": "跨句"
@@ -2352,7 +2352,7 @@
   ],
   "gloss": "（動詞）繼任、接替",
   "collocation": "to eventually ___ him as puppet masters；succeed sb as sth（接替某人）",
-  "explanation": "to eventually ___ him as puppet masters，to 後面要原形動詞，而且動詞後面直接跟受詞 him，這一格要的是及物動詞。succeed 你大概只讀成不及物的「成功」，記的是 succeed in doing sth；但這一題考的是它當及物動詞：接替、繼任，succeed sb as sth。這一句說師父訓練兒子日後接下他的位子，as puppet masters 帶出的正是接替之後的職稱。易與 worship 混淆——worship 也是及物動詞，也接得上 him，但它講的是敬拜、崇拜；徒弟接的是師父的位子，不是把師父當神明拜，而且敬拜也接不上 as + 職稱這個結構。",
+  "explanation": "to eventually ___ him as puppet masters，to 後面要原形動詞，而且動詞後面直接跟受詞 him，這一格要的是及物動詞。succeed 你大概只讀成不及物的「成功」，記的是 succeed in doing sth；但這一題考的是它當及物動詞：接替、繼任，succeed sb as sth。這一句說師父訓練兒子日後接下他的位子，as puppet masters 帶出的正是接替之後的職稱。易與 worship 混淆——徒弟接的是師父的位子，不是把師父當神明拜，而且敬拜也接不上 as + 職稱這個結構。",
   "accuracyRate": null,
   "discrimination": null,
   "contextSpan": "句內"
@@ -2421,7 +2421,7 @@
   ],
   "gloss": "敬拜、崇拜",
   "collocation": "is to ___ and offer thanks；worship a deity（敬拜神明），為及物動詞",
-  "explanation": "is to ___ and offer thanks to the deities，to 後面要原形動詞，而且這一格與 offer 並列，要一個和「答謝神明」並得起來的動作。worship 你大概只讀成名詞「崇拜、禮拜」，記的是 a place of worship；但這一題考的是它當及物動詞：敬拜，受詞就是後面的神明。整段講布袋戲多在酬神場合演出，這一句正是說明它的主要目的。易與 conduct 混淆——conduct 也是及物動詞，也擺得進 to 後面，但它的受詞是活動或事務（conduct a survey、conduct a ceremony），神明是敬拜的對象，不是被執行的事情。",
+  "explanation": "is to ___ and offer thanks to the deities，to 後面要原形動詞，而且這一格與 offer 並列，要一個和「答謝神明」並得起來的動作。worship 你大概只讀成名詞「崇拜、禮拜」，記的是 a place of worship；但這一題考的是它當及物動詞：敬拜，受詞就是後面的神明。整段講布袋戲多在酬神場合演出，這一句正是說明它的主要目的。易與 conduct 混淆——conduct the deities 說不通：神明是敬拜的對象，不是要主持、辦理的事情。",
   "accuracyRate": null,
   "discrimination": null,
   "contextSpan": "句內"
@@ -2455,7 +2455,7 @@
   ],
   "gloss": "雕像",
   "collocation": "This monumental ___；a statue of sb（某人的雕像）；易與 status 混淆",
-  "explanation": "這一格回指前一句的獅身人面像，指的是那座雕像。易與 problem 混淆，但難題是最後一段才出現的；拼字上另要小心別寫成 status。",
+  "explanation": "這一格回指前一句的獅身人面像，指的是那座雕像。易與 problem 混淆，但 monumental problem 指不了獅身人面像；拼字上另要小心別寫成 status。",
   "accuracyRate": 70,
   "discrimination": 69,
   "contextSpan": "句內"
@@ -2490,7 +2490,7 @@
   ],
   "gloss": "（動詞）使風化、使老化",
   "collocation": "have slowly ___ the rock；age 此處為及物動詞，非名詞「年齡」",
-  "explanation": "have slowly ___ the rock，have 後面要過去分詞，而且分詞後面直接接受詞 the rock，這一格要的是及物動詞。age 你大概只讀成名詞「年齡」，或形容詞 aged「年老的」，但這一題考的是它當及物動詞：使…老化、使…風化。主詞是風、水、汙染與人為接觸，受詞是那塊岩石——四千年來把石頭磨老的正是這些。易與 deteriorating 混淆——deteriorate 也講劣化、變壞，但它是不及物動詞，後面接不了 the rock 這個受詞。",
+  "explanation": "have slowly ___ the rock，have 後面要過去分詞，而且分詞後面直接接受詞 the rock，這一格要的是及物動詞。age 你大概只讀成名詞「年齡」，或形容詞 aged「年老的」，但這一題考的是它當及物動詞：使…老化、使…風化。主詞是風、水、汙染與人為接觸，受詞是那塊岩石——四千年來把石頭磨老的正是這些。易與 deteriorating 混淆——have 後面要過去分詞，deteriorating 的詞形放不進來。",
   "accuracyRate": 27,
   "discrimination": 49,
   "contextSpan": "句內"
@@ -2593,7 +2593,7 @@
   ],
   "gloss": "被測量",
   "collocation": "Each stone is carefully ___；measure the size／shape of sth",
-  "explanation": "下一句說科學家用電腦算出每塊石頭的尺寸與形狀，這一格就是量。易與 installed 混淆，但安裝是新石頭做好以後的事。",
+  "explanation": "下一句說科學家用電腦算出每塊石頭的尺寸與形狀，這一格就是量。易與 installed 混淆，但每一塊石頭本來就在像上，談不上安裝。",
   "accuracyRate": 51,
   "discrimination": 76,
   "contextSpan": "跨句"
@@ -2662,7 +2662,7 @@
   ],
   "gloss": "被裝設、被安裝",
   "collocation": "they are ___ and the worn ones removed；install 與 remove 對舉",
-  "explanation": "與後半的 removed 對舉，新石頭裝上去、舊的拆下來。易與 measured 混淆，但測量在前一段已經做完了。",
+  "explanation": "與後半的 removed 對舉，新石頭裝上去、舊的拆下來。易與 measured 混淆，但新石頭做好之後要做的是換上去，不是測量。",
   "accuracyRate": 53,
   "discrimination": 70,
   "contextSpan": "句內"
@@ -2697,7 +2697,7 @@
   ],
   "gloss": "建造",
   "collocation": "talked about ___ a wall；talk about + V-ing；construct a wall／bridge",
-  "explanation": "talk about + V-ing，介系詞後面要動名詞，這一格講的是築一道牆。易與 installed 混淆，但安裝的受詞是零件或設備，不是圍牆。",
+  "explanation": "talk about + V-ing，介系詞後面要動名詞，這一格講的是築一道牆。易與 installed 混淆，但 installed 不是動名詞，放不進來。",
   "accuracyRate": 65,
   "discrimination": 72,
   "contextSpan": "句內"
@@ -2731,7 +2731,7 @@
   ],
   "gloss": "可移動的",
   "collocation": "a ___ shelter；由 move + -able 構成（可移動的）",
-  "explanation": "後面說牆白天可以縮進地下，這一格正是可移動。易與 exact 混淆，但完全相同形容的是尺寸，不是遮蔽物能不能動。",
+  "explanation": "後面說牆白天可以縮進地下，這一格正是可移動。易與 exact 混淆，但 exact 說不出牆面能收進地下這一層。",
   "accuracyRate": 58,
   "discrimination": 75,
   "contextSpan": "跨句"
@@ -2765,7 +2765,7 @@
   ],
   "gloss": "問題、難題",
   "collocation": "no easy solutions to the ___；a solution to the problem（介系詞用 to）",
-  "explanation": "a solution to the problem 的介系詞固定用 to，這一格指前面那些難處。易與 statue 混淆，但雕像本身不是要被解決的東西。",
+  "explanation": "a solution to the problem 的介系詞常用 to，這一格指前面那些難處。易與 statue 混淆，但雕像本身不是要被解決的東西。",
   "accuracyRate": 77,
   "discrimination": 55,
   "contextSpan": "句內"
@@ -2868,7 +2868,7 @@
   ],
   "gloss": "席捲、迅速蔓延過",
   "collocation": "enabled the disease to ___ the country；sweep through a region（席捲一地）",
-  "explanation": "sweep through + N 是席捲一地，後面直接接國家。易與 accelerated 混淆，但那是過去式，接在 to 後面不成立。",
+  "explanation": "sweep through + N 是席捲一地，後面直接接國家。易與 accelerated 混淆，但 enable sb to 後面要接原形動詞，accelerated 這個字形放不進去。",
   "accuracyRate": 45,
   "discrimination": 66,
   "contextSpan": "句內"
@@ -3073,7 +3073,7 @@
   ],
   "gloss": "警告",
   "collocation": "Medical scientists ___ that…；warn sb of／about sth；warn sb to V",
-  "explanation": "warn + that 子句 是提出警告，這一格的主詞是醫學界。易與 accelerated 混淆，但加速要接被加速的東西，接不了子句。",
+  "explanation": "warn + that 子句 是提出警告，這一格的主詞是醫學界。易與 accelerated 混淆，但醫學家在這裡是對未來發出預警，講的不是讓什麼加快。",
   "accuracyRate": 60,
   "discrimination": 74,
   "contextSpan": "句內"
@@ -3142,7 +3142,7 @@
   ],
   "gloss": "靈魂、魂魄",
   "collocation": "the ___ continues to live in the next world；body and spirit 對舉（肉體與靈魂）",
-  "explanation": "同一句前面是 the body，這一格要與肉體對舉的靈魂。易與 mortal 混淆，但那是形容詞，接在 the 後面又要當主詞不成立。",
+  "explanation": "同一句前面是 the body，這一格要與肉體對舉的靈魂。易與 mortal 混淆，但 mortal 當名詞是終將一死的凡人，說它在另一個世界繼續活著前後矛盾。",
   "accuracyRate": 79,
   "discrimination": 55,
   "contextSpan": "句內"
@@ -3176,7 +3176,7 @@
   ],
   "gloss": "活著的",
   "collocation": "just like when they were ___；be／stay alive；alive 不置於名詞前",
-  "explanation": "be／stay + alive，alive 這類 a- 開頭的形容詞只作主詞補語，不置於名詞前。易與 available 混淆，但買得到是用來講商品的。",
+  "explanation": "be／stay + alive，alive 這類 a- 開頭的形容詞通常當補語，不置於名詞前。易與 available 混淆，但這裡要與死後對照的是生前，「有空、買得到」講不出在世這一層。",
   "accuracyRate": 75,
   "discrimination": 60,
   "contextSpan": "句內"
@@ -3313,7 +3313,7 @@
   ],
   "gloss": "有限的、不多的",
   "collocation": "The style and variety were ___；limited in number／variety（數量、種類有限）",
-  "explanation": "下一句說房子長得都一樣、沒有款式可挑，這一格要收成有限。易與 collected 混淆，但被收走講的是供品的去向，不是款式多寡。",
+  "explanation": "後面說房子長得都一樣，也沒有時髦、現代的用品可挑，這一格要收成有限。易與 collected 混淆，但「收取」說不出款式多寡。",
   "accuracyRate": 63,
   "discrimination": 74,
   "contextSpan": "跨句"
@@ -3382,7 +3382,7 @@
   ],
   "gloss": "（名詞）購買",
   "collocation": "the ___ can be made on the Internet；make a purchase（進行購買）",
-  "explanation": "make a purchase 是進行購買，這一格是名詞不是動詞。易與 collected 混淆，但那是過去分詞，前面已經有 be made。",
+  "explanation": "make a purchase 是進行購買，這一格是名詞不是動詞。易與 collected 混淆，但這一格在 the 後面當主詞，collected 放不進去。",
   "accuracyRate": 47,
   "discrimination": 66,
   "contextSpan": "句內"
@@ -3416,7 +3416,7 @@
   ],
   "gloss": "被取代",
   "collocation": "have been ___ by buildings；replace A with B／be replaced by（取代）",
-  "explanation": "be replaced by 指被某物取代，後面接的正是新式紙屋。易與 collected 混淆，但被收走的是供品，與新舊替換無關。",
+  "explanation": "be replaced by 指被某物取代，後面接的正是新式紙屋。易與 collected 混淆，但「收取」說不出新舊替換的關係。",
   "accuracyRate": 73,
   "discrimination": 63,
   "contextSpan": "句內"
@@ -3450,7 +3450,7 @@
   ],
   "gloss": "可取得的、買得到的",
   "collocation": "products are also ___；readily／widely available（隨手可得）",
-  "explanation": "這一句在說連數位相機、保養品現在都買得到了。易與 limited 混淆，但有限是上一段舊時代的說法，整段正在講選擇變多。",
+  "explanation": "這一句在說連數位相機、保養品現在都買得到了。易與 limited 混淆，但 Now 之後講的是選擇變多，說這些用品有限就與文意相反。",
   "accuracyRate": 62,
   "discrimination": 69,
   "contextSpan": "跨句"
@@ -3484,7 +3484,7 @@
   ],
   "gloss": "登記入住",
   "collocation": "about 4,000 people ___ to an ice hotel；check in to a hotel（入住旅館）",
-  "explanation": "check in to a hotel 是登記入住，這一句在講每年有多少人來住。易與 offer 混淆，但提供要接受詞，後面接的卻是 to。",
+  "explanation": "check in to a hotel 是登記入住，這一句在講每年有多少人來住。易與 offer 混淆，但「提供」講不出每年有人前來住宿的意思。",
   "accuracyRate": 79,
   "discrimination": 40,
   "contextSpan": "句內"
@@ -3519,7 +3519,7 @@
   ],
   "gloss": "呼出的氣息",
   "collocation": "so cold that you can see your ___；see one's breath（看見白氣）",
-  "explanation": "see one's breath 指冷到看得見自己呼出的白氣。易與 moisture 混淆，但濕氣是後面流汗那一段的字，也不會說成你的。",
+  "explanation": "see one's breath 指冷到看得見自己呼出的白氣。易與 moisture 混淆，但說看得見你的濕氣講不通。",
   "accuracyRate": 80,
   "discrimination": 42,
   "contextSpan": "句內"
@@ -3553,7 +3553,7 @@
   ],
   "gloss": "凍住的",
   "collocation": "almost as though it were ___；as though + 假設語氣（彷彿…）",
-  "explanation": "as though 後面用假設語氣，這一格講鼻尖麻到像結凍。易與 careful 混淆，但小心是講人的態度，鼻尖不會小心。",
+  "explanation": "as though 在這裡接假設語氣的 it were，這一格講鼻尖麻到像結凍。易與 careful 混淆，但說鼻尖彷彿很小心講不通。",
   "accuracyRate": 73,
   "discrimination": 57,
   "contextSpan": "句內"
@@ -3588,7 +3588,7 @@
   ],
   "gloss": "不可能的",
   "collocation": "Getting up for a while seems ___；seem impossible（似乎不可能）",
-  "explanation": "後面說不冒著送命的風險就辦不到，這一格要收成幾乎不可能。易與 frozen 混淆，但凍住形容的是物體，不是一件事情。",
+  "explanation": "後面說不冒著送命的風險就辦不到，這一格要收成幾乎不可能。易與 frozen 混淆，但起身喝水、上廁所這件事談不上凍住。",
   "accuracyRate": 49,
   "discrimination": 67,
   "contextSpan": "句內"
@@ -3622,7 +3622,7 @@
   ],
   "gloss": "承受、耐得住",
   "collocation": "not enough to ___ more than two hours；withstand cold／pressure（耐寒、耐壓）",
-  "explanation": "withstand + N 是耐住某事物，這裡是兩個多小時的酷寒。易與 warm up 混淆，但那是不及物，帶不了時間當受詞。",
+  "explanation": "withstand + N 是耐住某事物，這裡是兩個多小時的酷寒。易與 warm up 混淆，但「暖和起來」講不出熬過兩個多小時的意思。",
   "accuracyRate": 51,
   "discrimination": 74,
   "contextSpan": "句內"
@@ -3656,7 +3656,7 @@
   ],
   "gloss": "提供",
   "collocation": "boots and outfits ___ little protection；offer protection（提供保護）",
-  "explanation": "offer protection 是提供保護，這一句說一般冬靴根本不夠。易與 check in 混淆，但入住要接 to，也帶不了保護當受詞。",
+  "explanation": "offer protection 是提供保護，這一句說一般冬靴根本不夠。易與 check in 混淆，但靴子與衣物不會辦理入住。",
   "accuracyRate": 58,
   "discrimination": 75,
   "contextSpan": "句內"
@@ -3690,7 +3690,7 @@
   ],
   "gloss": "暖和起來",
   "collocation": "learn how to ___ quickly；warm up（暖和起來、暖身）",
-  "explanation": "how to + V 後面接原形，這一格講在睡袋裡怎麼快點暖起來。易與 withstand 混淆，但那是及物動詞，後面必須有受詞。",
+  "explanation": "how to + V 後面接原形，這一格講在睡袋裡怎麼快點暖起來。易與 withstand 混淆，但「承受」講不出在睡袋裡讓身體回暖的意思。",
   "accuracyRate": 73,
   "discrimination": 56,
   "contextSpan": "句內"
@@ -3723,8 +3723,8 @@
    "同義呼應"
   ],
   "gloss": "濕氣、水分",
-  "collocation": "because any ___ freezes immediately；呼應前句 stopped sweating（停止流汗）",
-  "explanation": "前一句叫你上床前先停止流汗，這一格就是那類水分。易與 breath 混淆，但白氣是第二段的事，這裡講身上的濕。",
+  "collocation": "because any ___ freezes immediately；呼應同句前半的 stopped sweating（停止流汗）",
+  "explanation": "同一句前半叫你上床前先停止流汗，這一格就是那類水分。易與 breath 混淆，但前面講的是停止流汗，這裡指身上的濕，不是呼出的氣。",
   "accuracyRate": 55,
   "discrimination": 70,
   "contextSpan": "句內"
@@ -3758,7 +3758,7 @@
   ],
   "gloss": "小心謹慎的",
   "collocation": "Guests who are not ___；be careful about sth（對…小心）",
-  "explanation": "前一段整段都在教注意事項，這一格指沒照著做的人。易與 frozen 混淆，但凍住的是鼻尖那種身體部位，不是客人本身。",
+  "explanation": "前一段整段都在教注意事項，這一格指沒照著做的人。易與 frozen 混淆，但說「沒結凍的客人很快就會腳冷、鼻塞」前後講不通。",
   "accuracyRate": 61,
   "discrimination": 69,
   "contextSpan": "跨句"
@@ -3792,7 +3792,7 @@
   ],
   "gloss": "目的",
   "collocation": "Comfort is not the ___ to stay；the purpose of V-ing（做…的目的）",
-  "explanation": "下一句說客人想體驗當極地探險家，這一格要的是住進來的目的。易與 offer 混淆，但那是動詞，前面已有 is。",
+  "explanation": "下一句說客人想體驗當極地探險家，這一格要的是住進來的目的。易與 offer 混淆，但 offer 當名詞是提議，「舒適不是住進來的提議」講不通。",
   "accuracyRate": 58,
   "discrimination": 73,
   "contextSpan": "跨句"
@@ -3827,7 +3827,7 @@
   ],
   "gloss": "（名詞）中間",
   "collocation": "Sandwiched in the ___；in the middle（在中間），此處為名詞非形容詞",
-  "explanation": "in the middle 指夾在中間，這一格是名詞不是形容詞。易與 label 混淆，但標籤是貼在外側的東西，不會被夾在三層之間。",
+  "explanation": "in the middle 指夾在中間，這一格是名詞不是形容詞。易與 label 混淆，但說鋁層夾在標籤裡講不通。",
   "accuracyRate": null,
   "discrimination": null,
   "contextSpan": "句內"
@@ -3862,7 +3862,7 @@
   ],
   "gloss": "保護性的",
   "collocation": "is a ___ layer of polish；a protective layer（保護層）",
-  "explanation": "a protective layer 是保護層，後面的 prevent 正好說明作用。易與 primitive 混淆，但原始粗糙是形容技術，不形容這層漆。",
+  "explanation": "a protective layer 是保護層，後面的 prevent 正好說明作用。易與 primitive 混淆，但這層拋光的作用是防刮，「原始粗糙」說不出這個作用。",
   "accuracyRate": null,
   "discrimination": null,
   "contextSpan": "句內"
@@ -3897,7 +3897,7 @@
   ],
   "gloss": "標籤",
   "collocation": "The dull side usually has a ___ on it；a label on sth（貼在…上的標籤）",
-  "explanation": "a label on sth 指貼在某物上的標籤，後面說它告訴你片裡是什麼。易與 middle 混淆，但中間是位置，不是可以印字的東西。",
+  "explanation": "a label on sth 指貼在某物上的標籤，後面說它告訴你片裡是什麼。易與 middle 混淆，但「中間」不會告訴你片裡是什麼。",
   "accuracyRate": null,
   "discrimination": null,
   "contextSpan": "句內"
@@ -3931,7 +3931,7 @@
   ],
   "gloss": "被發明",
   "collocation": "Before CDs were ___；invent a device（發明裝置）",
-  "explanation": "這一格是被動，講 CD 問世之前。易與 converted 混淆，但轉換要接 into 帶出結果，這裡什麼都沒接。",
+  "explanation": "這一格是被動，講 CD 問世之前。易與 converted 混淆，但「轉換」講不出問世的意思。",
   "accuracyRate": null,
   "discrimination": null,
   "contextSpan": "句內"
@@ -3965,7 +3965,7 @@
   ],
   "gloss": "可靠的",
   "collocation": "They were not ___ ways of storing music；a reliable way（可靠的方法）",
-  "explanation": "前一句說黑膠易刮、卡帶會變形，這一格要收成不可靠。易與 primitive 混淆，但原始是下一句才登場的評語。",
+  "explanation": "前一句說黑膠易刮、卡帶會變形，這一格要收成不可靠。易與 primitive 混淆，但說它們不是原始的儲存方式，與前一句列的毛病正好相反。",
   "accuracyRate": null,
   "discrimination": null,
   "contextSpan": "跨句"
@@ -4000,7 +4000,7 @@
   ],
   "gloss": "原始粗糙的",
   "collocation": "the technology was rather ___；primitive technology（原始技術）",
-  "explanation": "與 CD 相比，舊技術顯得原始粗糙。易與 reliable 混淆，但可靠已用在前一句，也接不上後面的 compared 對比。",
+  "explanation": "與 CD 相比，舊技術顯得原始粗糙。易與 reliable 混淆，但這裡要說舊技術比 CD 差，「相當可靠」方向相反。",
   "accuracyRate": null,
   "discrimination": null,
   "contextSpan": "句內"
@@ -4034,7 +4034,7 @@
   ],
   "gloss": "以數位方式",
   "collocation": "music is stored ___；store data digitally（以數位方式儲存）",
-  "explanation": "破折號後面說音樂是一長串數字，這一格要講儲存方式是數位。易與 technically 混淆，但嚴格說來是評註語氣，不是儲存方式。",
+  "explanation": "破折號後面說音樂是一長串數字，這一格要講儲存方式是數位。易與 technically 混淆，但 technically 說不出音樂是以什麼形式儲存。",
   "accuracyRate": null,
   "discrimination": null,
   "contextSpan": "句內"
@@ -4101,8 +4101,8 @@
    "同義呼應"
   ],
   "gloss": "測量值",
-  "collocation": "the device turns the ___ into a number；呼應前句 measures the sound",
-  "explanation": "前一句說裝置測量錄下的聲音，這一格就是那個測量值。易與 label 混淆，但標籤是印在光碟外側的，與取樣無關。",
+  "collocation": "the device turns the ___ into a number；呼應同句前半的 measures the sound",
+  "explanation": "同一句前半說裝置測量錄下的聲音，這一格就是那個測量值。易與 label 混淆，但這裡講的是取樣過程，轉成數字的不會是標籤。",
   "accuracyRate": null,
   "discrimination": null,
   "contextSpan": "句內"
@@ -4136,7 +4136,7 @@
   ],
   "gloss": "（副詞）嚴格說來",
   "collocation": "there is ___ no music on a CD；technically 此處非「技術上」",
-  "explanation": "technically 不是技術上，這裡是嚴格說來，替後面沒有音樂那句話留退路。易與 digitally 混淆，但數位方式與 no music 併在一起自相矛盾。",
+  "explanation": "technically 在這裡不是技術上，而是嚴格說來，替後面沒有音樂那句話留退路。易與 digitally 混淆，但數位方式與 no music 併在一起自相矛盾。",
   "accuracyRate": null,
   "discrimination": null,
   "contextSpan": "句內"
@@ -4171,7 +4171,7 @@
   ],
   "gloss": "（名詞複數）人形、形體",
   "collocation": "the ___ appear as complete forms；figure 取「形體」義，非「數字」",
-  "explanation": "figure 你腦中先跳出來的是數字，這裡取的是形體、人形，指戲偶像完整的人。易與 director 混淆，但那是人，不是台上的偶。另外一提：這一篇選文後來被 107 學年度起適用的指考參考試卷沿用，同一格在那份卷子上也是第 21 題，兩邊是同一題，不是網站重複。",
+  "explanation": "figure 常見的意思是數字，這裡取的是形體、人形，指戲偶像完整的人。易與 director 混淆，但那是人，不是台上的偶。另外一提：這一篇選文後來被 107 學年度起適用的指考參考試卷沿用，同一格在那份卷子上也是第 21 題，兩邊是同一題，不是本題庫重複收錄。",
   "accuracyRate": 40,
   "discrimination": 58,
   "contextSpan": "句內"
@@ -4205,7 +4205,7 @@
   ],
   "gloss": "被伴奏",
   "collocation": "is typically ___ by a small orchestra；be accompanied by（由…伴奏）",
-  "explanation": "be accompanied by 指由某樣東西伴隨或伴奏，後面接的正是樂隊。易與 supporting 混淆，但那是形容詞，接不上 by。",
+  "explanation": "be accompanied by 指由某樣東西伴隨或伴奏，後面接的正是樂隊。易與 supporting 混淆，但 is typically supporting by a small orchestra 說不成話。",
   "accuracyRate": 47,
   "discrimination": 58,
   "contextSpan": "句內"
@@ -4240,7 +4240,7 @@
   ],
   "gloss": "（動詞）指揮",
   "collocation": "uses the drum to ___ the musicians；conduct an orchestra（指揮樂團）",
-  "explanation": "conduct 你大概只記得進行、舉行，它也當指揮解，conduct an orchestra 就是指揮樂團。易與 accompanied 混淆，但那是被動形式，接在 to 後面不成立。",
+  "explanation": "conduct 你大概只記得進行、舉行，它也當指揮解，conduct an orchestra 就是指揮樂團。易與 accompanied 混淆，但 to 後面要原形動詞，accompanied 的詞形放不進來。",
   "accuracyRate": 41,
   "discrimination": 52,
   "contextSpan": "句內"
@@ -4309,7 +4309,7 @@
   ],
   "gloss": "（名詞）吸引力",
   "collocation": "appear on stage for extra ___；have wide appeal（有廣泛吸引力）",
-  "explanation": "答對率 19%，鑑別度 29。【作答線索】你大概只學過 appeal to 這個動詞用法，記的意思是「吸引」。標詞性時就會把 appeal 記成動詞，從名詞候選裡劃掉。這一格因此無解。appeal 當名詞是「吸引力」，跟你熟的那個動詞同一個意思，只是換了詞性；appeal to 另外也有「向…呼籲、訴諸」的用法，本題用不到。【語意內涵】for extra ___ 前面是介系詞、後面沒有受詞，中間又有 extra 修飾，這裡只能是名詞。原文說偶爾也會有動物造型的戲偶上場，為的是多添一分吸引力，尤其對台下的小朋友。常見組合：have wide appeal（有廣泛吸引力）、lose its appeal（失去吸引力）。",
+  "explanation": "答對率一成九，鑑別度 29。【作答線索】appeal 常見的是 appeal to 這個動詞用法，意思是「吸引」；如果只把它當動詞，標詞性時就會從名詞候選裡劃掉它，這一格就找不到答案。appeal 當名詞是「吸引力」，跟動詞 appeal to 的「吸引」同一個意思，只是換了詞性；appeal to 另外也有「向…呼籲、訴諸」的用法，本題用不到。【語意內涵】for extra ___ 前面是介系詞、後面沒有受詞，中間又有 extra 修飾，這裡只能是名詞。原文說偶爾也會有動物造型的戲偶上場，為的是多添一分吸引力，尤其對台下的小朋友。常見組合：have wide appeal（有廣泛吸引力）、lose its appeal（失去吸引力）。",
   "accuracyRate": 19,
   "discrimination": 29,
   "contextSpan": "句內",
@@ -4348,7 +4348,7 @@
   ],
   "gloss": "負責人、主事者",
   "collocation": "the chief or ___ of the troupe；the director of a troupe（劇團負責人）",
-  "explanation": "與前面的 chief 並列，這一格指劇團的主事者。易與 figures 混淆，但形體講的是台上的戲偶，不是團裡的人。",
+  "explanation": "與前面的 chief 並列，這一格指劇團的主事者。易與 figures 混淆，但主演只是一個人，figures 指不了他在團裡的身分。",
   "accuracyRate": 66,
   "discrimination": 67,
   "contextSpan": "句內"
@@ -4383,7 +4383,7 @@
   ],
   "gloss": "輔助的、配合的",
   "collocation": "The ___ performer；a supporting actor／role（配角）；易與 supportive 混淆",
-  "explanation": "這一格的答案是 supporting，指的是兩位演師裡不是主要的那一位。答對率 33%、鑑別度 59，鑑別度偏高表示這一格把程度分得開。【文內驗證】線索不在這一句，在段落開頭那一句：In general, a show needs two performers——先宣告一場戲需要兩位演師。下一句介紹第一位，說他是劇團的團主，負責整場戲，操作主要戲偶、演唱與口白。輪到這一格，講的必然是第二位，也就是不是 main 的那一位。再往下一句還會確認一次：the relationship between the main performer and his partner，partner（搭檔）回頭指的就是這一格的人。看到一段開頭宣告「有兩個」，就要準備好後面會一個一個介紹，空格多半落在其中一個的位置上。【supporting 和 supportive 差在哪】兩個都是形容詞，都從 support 來，意思卻不同層：supporting 說的是排第幾，指「次要的、不是最主要的那一個」，a supporting actor（配角）、a supporting role（配角戲份）；supportive 說的是對人好不好，指「會給予鼓勵和協助的」，a supportive friend（很支持你的朋友）、supportive parents（會鼓勵孩子的父母）。把 supportive 填進來，句子會變成「那位很支持別人的演師」，講的是他的性格，跟他在戲裡排第幾無關。【易與 accompanied 混淆】accompanied 是 accompany 的過去分詞，常用在 be accompanied by（由……陪同、伴隨）；填進來會讀成「被陪同的那位演師」，方向剛好相反——這一格要的是配合主要那位演師的人，不是被人陪同的那一位。【跨年對照】98 年指考文意選填考的是名詞那一條，emotional support（情感支持），答對率只有 25%。109 年指考文意選填把 supportive 放進選項組，十格沒有一格填它，整份卷子只當誘答——它在考場上出現過，只是從來不是答案。",
+  "explanation": "這一格的答案是 supporting，指的是兩位演師裡不是主要的那一位。答對率三成三、鑑別度 59，鑑別度偏高表示這一格把程度分得開。【文內驗證】線索不在這一句，在段落開頭那一句：In general, a show needs two performers——先宣告一場戲需要兩位演師。接下來兩句介紹第一位，說他是劇團的團主，負責整場戲，操作主要戲偶、演唱與口白。輪到這一格，講的必然是第二位，也就是不是 main 的那一位。再隔一句還會確認一次：the relationship between the main performer and his partner，partner（搭檔）回頭指的就是這一格的人。看到一段開頭宣告「有兩個」，就要準備好後面會一個一個介紹，空格多半落在其中一個的位置上。【supporting 和 supportive 差在哪】兩個都是形容詞，都從 support 來，意思卻不同層：supporting 說的是排第幾，指「次要的、不是最主要的那一個」，a supporting actor（配角）、a supporting role（配角戲份）；supportive 說的是對人好不好，指「會給予鼓勵和協助的」，a supportive friend（很支持你的朋友）、supportive parents（會鼓勵孩子的父母）。把 supportive 填進來，句子會變成「那位很支持別人的演師」，講的是他的性格，跟他在戲裡排第幾無關。【易與 accompanied 混淆】accompanied 填進來會讀成「被陪同的那位演師」，方向剛好相反——這一格要的是配合主要那位演師的人，不是被人陪同的那一位。【跨年對照】98 年指考文意選填考的是名詞那一條，emotional support（情感支持），答對率只有二成五。109 年指考文意選填把 supportive 放進選項組，十格沒有一格填它，整份卷子只當誘答——它在考場上出現過，只是從來不是答案。",
   "accuracyRate": 33,
   "discrimination": 59,
   "contextSpan": "跨句"
@@ -4418,7 +4418,7 @@
   ],
   "gloss": "（動詞）繼任、接替",
   "collocation": "to eventually ___ him as puppet masters；succeed sb as sth（接替某人）",
-  "explanation": "to eventually ___ him as puppet masters，to 後面要原形動詞，而且動詞後面直接跟受詞 him，這一格要的是及物動詞。succeed 你大概只讀成不及物的「成功」，記的是 succeed in doing sth；但這一題考的是它當及物動詞：接替、繼任，succeed sb as sth。這一句說師父訓練兒子日後接下他的位子，as puppet masters 帶出的正是接替之後的職稱。易與 worship 混淆——worship 也是及物動詞，也接得上 him，但它講的是敬拜、崇拜；徒弟接的是師父的位子，不是把師父當神明拜，而且敬拜也接不上 as + 職稱這個結構。",
+  "explanation": "to eventually ___ him as puppet masters，to 後面要原形動詞，而且動詞後面直接跟受詞 him，這一格要的是及物動詞。succeed 你大概只讀成不及物的「成功」，記的是 succeed in doing sth；但這一題考的是它當及物動詞：接替、繼任，succeed sb as sth。這一句說師父訓練兒子日後接下他的位子，as puppet masters 帶出的正是接替之後的職稱。易與 worship 混淆——徒弟接的是師父的位子，不是把師父當神明拜，而且敬拜也接不上 as + 職稱這個結構。",
   "accuracyRate": 29,
   "discrimination": 50,
   "contextSpan": "句內"
@@ -4487,7 +4487,7 @@
   ],
   "gloss": "敬拜、崇拜",
   "collocation": "is to ___ and offer thanks；worship a deity（敬拜神明），為及物動詞",
-  "explanation": "is to ___ and offer thanks to the deities，to 後面要原形動詞，而且這一格與 offer 並列，要一個和「答謝神明」並得起來的動作。worship 你大概只讀成名詞「崇拜、禮拜」，記的是 a place of worship；但這一題考的是它當及物動詞：敬拜，受詞就是後面的神明。整段講布袋戲多在酬神場合演出，這一句正是說明它的主要目的。易與 conduct 混淆——conduct 也是及物動詞，也擺得進 to 後面，但它的受詞是活動或事務（conduct a survey、conduct a ceremony），神明是敬拜的對象，不是被執行的事情。",
+  "explanation": "is to ___ and offer thanks to the deities，to 後面要原形動詞，而且這一格與 offer 並列，要一個和「答謝神明」並得起來的動作。worship 你大概只讀成名詞「崇拜、禮拜」，記的是 a place of worship；但這一題考的是它當及物動詞：敬拜，受詞就是後面的神明。整段講布袋戲多在酬神場合演出，這一句正是說明它的主要目的。易與 conduct 混淆——conduct the deities 說不通：神明是敬拜的對象，不是要主持、辦理的事情。",
   "accuracyRate": 30,
   "discrimination": 53,
   "contextSpan": "句內"
@@ -4522,7 +4522,7 @@
   ],
   "gloss": "（名詞）未知的事物",
   "collocation": "open doors into the ___；the + 形容詞作名詞，the unknown（未知領域）",
-  "explanation": "open doors into the ___，into 是介系詞、後面又有 the，這一格要的是名詞性的東西。unknown 你大概只讀成形容詞「未知的」，但這一題考的是「the + 形容詞」當名詞用：the unknown 就是未知的領域，和 the rich、the poor 同一個結構。這一句四個並列的動作（表達情感、開門、造出沒見過的世界、帶你去沒人敢去的地方）講的都是文字把人帶到未曾抵達之處，這一格正是那個「處」。易與 users 混淆——users 也是名詞，也擺得進 the 後面，但它指的是人；門打開後通向的是一片領域，不是一群人。",
+  "explanation": "open doors into the ___，into 是介系詞、後面又有 the，這一格要的是名詞性的東西。unknown 你大概只讀成形容詞「未知的」，但這一題考的是「the + 形容詞」當名詞用：the unknown 就是未知的領域，和 the rich、the poor 同一個結構。這一句四個並列的動作（表達情感、開門、造出沒見過的世界、讓人展開從不敢想的冒險）講的都是文字把人帶到未曾抵達之處，這一格正是那個「處」。易與 users 混淆，但 users 指的是人；門打開後通向的是一片領域，不是一群人。",
   "accuracyRate": 39,
   "discrimination": 58,
   "contextSpan": "句內"
@@ -4624,7 +4624,7 @@
   ],
   "gloss": "取代",
   "collocation": "movies, TV, videos are ___ storytellers；replace sb／sth（取代）",
-  "explanation": "主詞是影音媒體、受詞是說書人與書，動詞要講前者頂替後者。易與 fading 混淆，但消退是不及物的狀態，帶不了受詞。",
+  "explanation": "主詞是影音媒體、受詞是說書人與書，動詞要講前者頂替後者。易與 fading 混淆，但 are fading storytellers and books 說不通。",
   "accuracyRate": 68,
   "discrimination": 62,
   "contextSpan": "句內"
@@ -4659,7 +4659,7 @@
   ],
   "gloss": "（名詞）代價",
   "collocation": "taking over the world at the ___ of…；at the expense of sth（以…為代價）",
-  "explanation": "答對率 24%，鑑別度 33。【作答線索】at the ___ of 是介系詞片語，中間要填名詞。選項裡的名詞不只一個。難的不是認字，是要認出整個片語。【語意及字詞搭配】at the expense of sth 指以某事物為代價。前一句說視覺文化正在接管世界。這一句接著要講被犧牲的是誰——就是文字。把 expense 只記成「費用」的人到這裡會卡住。在這個片語裡它是「代價」。",
+  "explanation": "答對率二成四，鑑別度 33。【作答線索】at the ___ of 是介系詞片語，中間要填名詞。選項裡的名詞不只一個。難的不是認字，是要認出整個片語。【語意及字詞搭配】at the expense of sth 指以某事物為代價。同一句破折號前說視覺文化正在接管世界，破折號後接著要講被犧牲的是誰——就是文字。把 expense 只記成「費用」的人到這裡會卡住。在這個片語裡它是「代價」。",
   "accuracyRate": 24,
   "discrimination": 33,
   "contextSpan": "句內",
@@ -4699,7 +4699,7 @@
   ],
   "gloss": "快速的",
   "collocation": "our skills are in ___ decline；be in rapid decline（急遽衰退）",
-  "explanation": "be in rapid decline 是急遽衰退的說法，這一格要形容詞。易與 fading 混淆，但那是現在分詞，夾在 in 與 decline 之間詞性不合。",
+  "explanation": "be in rapid decline 是急遽衰退的說法，這一格要形容詞。易與 fading 混淆，但 in fading decline 說不通，這一格要講衰退得多快。",
   "accuracyRate": 52,
   "discrimination": 79,
   "contextSpan": "句內"
@@ -4732,8 +4732,8 @@
    "字詞搭配"
   ],
   "gloss": "取得",
-  "collocation": "the only category that is ___ ground；gain ground（漸占上風）",
-  "explanation": "ground 你大概只記得地面，但它也指立場、地盤，gain ground 就是漸漸站穩、占上風。易與 fading 混淆，但整段在講圖像小說逆勢成長。",
+  "collocation": "the only category that is ___ ground；gain ground（越來越受歡迎）",
+  "explanation": "ground 你大概只記得地面，但它也指立場、地盤，gain ground 就是越來越受歡迎、越來越普及。易與 fading 混淆，但整段在講圖像小說逆勢成長。",
   "accuracyRate": 45,
   "discrimination": 62,
   "contextSpan": "句內"
@@ -4768,7 +4768,7 @@
   ],
   "gloss": "（名詞）媒介、表現形式",
   "collocation": "the power of this ___；a medium of communication（傳播媒介），複數為 media",
-  "explanation": "the power of this ___，this 後面要一個單數可數名詞，回指同一句前半剛講的東西。medium 你大概只讀成形容詞「中等的」（medium size、medium rare），但這一題考的是它當名詞：媒介、表現形式。同一句前半說愈來愈多大人與年輕人在讀圖像小說，教育界看見的就是這個表現形式的力量；順帶記它的複數不規則，是 media。易與 expense 混淆——expense 也是名詞，也接得上 this，但它講的是代價、花費；圖像小說是一種表現形式，不是一筆代價，this 回指不到那個意思上。",
+  "explanation": "the power of this ___，this 後面要一個單數名詞，回指同一句前半剛講的東西。medium 你大概只讀成形容詞「中等的」（medium size、medium rare），但這一題考的是它當名詞：媒介、表現形式。同一句前半說愈來愈多大人與年輕人在讀圖像小說，教育界看見的就是這個表現形式的力量；順帶記它的複數不規則，是 media。易與 expense 混淆，但它講的是代價、花費；圖像小說是一種表現形式，不是一筆代價，this 回指不到那個意思上。",
   "accuracyRate": 26,
   "discrimination": 37,
   "contextSpan": "句內"
@@ -4837,8 +4837,8 @@
    "句型結構"
   ],
   "gloss": "提供",
-  "collocation": "Graphic novels ___ the opportunity；offer sb sth（提供某人某物）",
-  "explanation": "offer 是授與動詞，offer sb sth——空格後面先接「人」再接「物」，the opportunity 就是那個「物」。to examine 是接在 opportunity 後面的不定詞，不是接在空格後面。易與 gaining 混淆，但取得與提供方向相反，主詞是書本時說不通。",
+  "collocation": "Graphic novels ___ the opportunity；offer the opportunity to + 原形動詞（提供……的機會）",
+  "explanation": "offer 可以 offer sb sth，也可以只接「物」；這一句沒有「人」，空格後面直接接 the opportunity。to examine 是接在 opportunity 後面的不定詞，不是接在空格後面。易與 gaining 混淆，但取得與提供方向相反，主詞是書本時說不通。",
   "accuracyRate": 69,
   "discrimination": 64,
   "contextSpan": "句內"
@@ -4870,7 +4870,7 @@
   ],
   "gloss": "流行、普及",
   "collocation": "The ___ of textese is largely due to…；the popularity of sth（…的流行）",
-  "explanation": "the popularity of sth 指某事物的流行，這一句在解釋火星文為什麼盛行。易與 ignorance 混淆，但無知是最後一句擔心的後果，不是原因。",
+  "explanation": "the popularity of sth 指某事物的流行，這一句在解釋火星文為什麼盛行。易與 ignorance 混淆，但無知解釋不了火星文為什麼盛行。",
   "accuracyRate": 59,
   "discrimination": 77,
   "contextSpan": "句內"
@@ -4902,7 +4902,7 @@
   ],
   "gloss": "標準的",
   "collocation": "There are no ___ rules for textese；standard rules（標準規則）",
-  "explanation": "standard rules 是標準規則的固定組合，這一句說火星文沒有這種規則。易與 abbreviated 混淆，但縮寫形容的是字，不是規則。",
+  "explanation": "standard rules 是標準規則的固定組合，這一句說火星文沒有這種規則。易與 abbreviated 混淆，但 no abbreviated rules（沒有縮寫的規則）說不通。",
   "accuracyRate": 59,
   "discrimination": 70,
   "contextSpan": "句內"
@@ -4934,7 +4934,7 @@
   ],
   "gloss": "符號",
   "collocation": "uses the picture ___ of a heart；a symbol of sth（…的符號）",
-  "explanation": "a symbol of sth 指某物的符號，這裡講愛心圖案代表 love。易與 replace 混淆，但那是動詞，前面已有 uses，一句不會有兩個主要動詞。",
+  "explanation": "a symbol of sth 指某物的符號，這裡講愛心圖案代表 love。易與 replace 混淆，但 the picture ___ of a heart 這個位置要名詞，replace 填進來不成句。",
   "accuracyRate": 60,
   "discrimination": 59,
   "contextSpan": "句內"
@@ -4965,8 +4965,8 @@
    "語意連貫"
   ],
   "gloss": "取代",
-  "collocation": "and the letter u to ___ you；replace A with B（以 B 取代 A）",
-  "explanation": "這一格是不定詞，講字母 u 拿來代替整個字。易與 remove 混淆，但去除是下一句處理母音的手法，這裡是替換。",
+  "collocation": "and the letter u to ___ you；replace sth（取代某物）",
+  "explanation": "這一格是不定詞，講字母 u 拿來代替整個字。易與 remove 混淆，但字母 u 不是拿來去除 you，這裡講的是替換。",
   "accuracyRate": 61,
   "discrimination": 61,
   "contextSpan": "句內"
@@ -5000,7 +5000,7 @@
   ],
   "gloss": "去除",
   "collocation": "textese users often ___ the vowels；remove sth from sth（從…去除）",
-  "explanation": "remove sth from sth 是從某處去除，後面的 from a word 正是那個出處。易與 replace 混淆，但取代要接被取代的對象，不接 from。",
+  "explanation": "remove sth from sth 是從某處去除，後面的 from a word 正是那個出處。易與 replace 混淆，但後面的 from a word 交代的是從哪裡拿掉，replace 接不上這個 from。",
   "accuracyRate": 61,
   "discrimination": 68,
   "contextSpan": "句內"
@@ -5131,7 +5131,7 @@
   ],
   "gloss": "被批評",
   "collocation": "it has been severely ___；severely criticize sth（嚴厲批評）",
-  "explanation": "severely criticize 是嚴厲批評的常見組合，這裡用被動。易與 replace 混淆，但那要接被取代的對象，也接不上 severely。",
+  "explanation": "severely criticize 是嚴厲批評的常見組合，這裡用被動。易與 replace 混淆，但 has been severely replaced 說不通，後面的 as \"wrecking our language\" 講的是它遭到怎樣的評價。",
   "accuracyRate": 61,
   "discrimination": 80,
   "contextSpan": "句內"
@@ -5196,7 +5196,7 @@
   ],
   "gloss": "滿足、知足",
   "collocation": "often experience feelings of ___；a feeling of contentment（滿足感）",
-  "explanation": "Victims often experience feelings of ___21___ when they are in the process of purchasing。contentment 你大概只讀成「知足」那種性格上的不多求，這裡要的是買下去那一刻被填滿的感覺——後半句說這感覺讓他們覺得生活有了意義、還能暫時忘掉煩惱，正是在描述那一刻。易與 affection 混淆——affection 也是名詞，接在 feelings of 後面沒問題，但用法是 affection for sb，這一句沒有那個對象。",
+  "explanation": "Victims often experience feelings of ___21___ when they are in the process of purchasing。contentment 你大概只讀成「知足」那種性格上的不多求，這裡要的是買下去那一刻被填滿的感覺——後半句說這感覺讓他們覺得生活有了意義、還能暫時忘掉煩惱，正是在描述那一刻。易與 affection 混淆，但 affection 是對人的喜愛、關愛，這一句講的是購買當下的那份滿足。",
   "accuracyRate": 30,
   "discrimination": 52,
   "contextSpan": "句內"
@@ -5294,7 +5294,7 @@
   ],
   "gloss": "轉而訴諸",
   "collocation": "is prompted to ___ another purchase；turn to sth（轉而訴諸…）",
-  "explanation": "the addicted person is prompted to ___24___ another purchase，空格是原形動詞，後面直接接名詞受詞。turn to 你大概只讀成「翻到第幾頁」或「轉向某人求助」，它還有 turn to sth 的用法，指轉而訴諸某個做法——這裡就是應付不了那些情緒，於是又去買一次。易與 make up for 混淆——make up for 也接名詞受詞，但用法是 make up for + 缺憾（make up for the loss），這一句的受詞是新的購買本身。",
+  "explanation": "the addicted person is prompted to ___24___ another purchase，空格是原形動詞，後面直接接名詞受詞。turn to 你大概只讀成「翻到第幾頁」或「轉向某人求助」，它還有 turn to sth 的用法，指轉而訴諸某個做法——這裡就是應付不了那些情緒，於是又去買一次。易與 make up for 混淆，但 make up for another purchase 成了「彌補另一次購買」，說不通。",
   "accuracyRate": 34,
   "discrimination": 55,
   "contextSpan": "句內"
@@ -5359,7 +5359,7 @@
   ],
   "gloss": "彌補",
   "collocation": "used toys to ___ their loneliness；make up for sth（彌補…）",
-  "explanation": "`make up for sth` 是彌補某物。這一格說孩子用玩具來補上孤單的缺口。易與 turn to 混淆，但轉而訴諸的受詞應該是玩具本身，而不是孤單這種感受。",
+  "explanation": "make up for sth 是彌補某物。這一格說孩子用玩具來補上孤單的缺口。易與 turn to 混淆，但轉而訴諸的受詞應該是玩具本身，而不是孤單這種感受。",
   "accuracyRate": 45,
   "discrimination": 50,
   "contextSpan": "句內"
@@ -5391,7 +5391,7 @@
   ],
   "gloss": "（名詞）支持",
   "collocation": "depended on materials for emotional ___；emotional support（情感支持）",
-  "explanation": "emotional support 是常見組合，指他們從物質上換來的情感支撐。易與 affection 混淆，但關愛是下一句被購買取代的那樣東西。【這一格考名詞用法】support 當名詞是「支持」，不可數，前面常加一個形容詞說明是哪一種：emotional support（情感支持）、financial support（經濟支援）、moral support（精神上的支持）。你比較熟的多半是動詞用法（支持、支撐、供養、證實）；這一題前面是介系詞 for，後面沒有受詞，就能看出這裡要填名詞。【跨年對照】101 年指考文意選填考的是形容詞 supporting，那是另一種詞性、另一個意思——「次要的、不是最主要的那一個」，a supporting actor 就是配角，答對率 33%。85 年學測字彙把 supported 放進誘答選項，那一題考的是 hold up 的同義替換，答案是 delayed，並沒有考 support 的意思。同一個字根，名詞是「支持」這件事本身，形容詞是「排第幾」，詞性不同，出現的位置也不同；只記一個中文「支持」，到考場上不夠用。",
+  "explanation": "emotional support 是常見組合，指他們從物質上換來的情感支撐。易與 affection 混淆，但這一句說的是依賴物品度過情緒難關，要的是支持，不是關愛。【這一格考名詞用法】support 當名詞是「支持」，不可數，前面常加一個形容詞說明是哪一種：emotional support（情感支持）、financial support（經濟支援）、moral support（精神上的支持）。你比較熟的多半是動詞用法（支持、支撐、供養、證實）；這一題前面是介系詞 for，後面沒有受詞，就能看出這裡要填名詞。【跨年對照】101 年指考文意選填考的是形容詞 supporting，那是另一種詞性、另一個意思——「次要的、不是最主要的那一個」，a supporting actor 就是配角，答對率三成三。85 年推薦甄選字彙題把 supported 放進誘答選項，那一題考的是 hold up 的同義替換，答案是 delayed，並沒有考 support 的意思。同一個字根，名詞是「支持」這件事本身，形容詞是「排第幾」，詞性不同，出現的位置也不同；只記一個中文「支持」，到考場上不夠用。",
   "accuracyRate": 25,
   "discrimination": 48,
   "contextSpan": "句內",
@@ -5428,7 +5428,7 @@
   ],
   "gloss": "關愛",
   "collocation": "the purchase is substituted for ___；substitute A for B（以 A 取代 B）",
-  "explanation": "答對率 17%，鑑別度 27，高分群考生也一起錯。【作答線索】substituted for 後面要接名詞。選項裡的抽象名詞不只一個，詞性幫不上忙，得順著整段讀。這一段從童年寫到成年。小時候被忽視、覺得自己不重要，於是用玩具填補孤單。長大以後換成購物。被填補的那樣東西從頭到尾沒有換過。【語意內涵】affection 指親人的關愛。那正是童年缺的、成年後仍在拿東西替代的一樣。substitute A for B 是以 A 取代 B，所以這一格填的是被取代掉的舊的那一個。",
+  "explanation": "答對率一成七，鑑別度 27，高分群考生也一起錯。【作答線索】substituted for 後面要接名詞。選項裡的抽象名詞不只一個，詞性幫不上忙，得順著整段讀。這一段從童年寫到成年。小時候被忽視、覺得自己不重要，於是靠玩具排遣孤單。長大以後換成購物。被填補的那樣東西從頭到尾沒有換過。【語意內涵】affection 指親人的關愛。那正是童年缺的、成年後仍在拿東西替代的一樣。substitute A for B 是以 A 取代 B，所以這一格填的是被取代掉的舊的那一個。",
   "accuracyRate": 17,
   "discrimination": 27,
   "contextSpan": "篇章",
@@ -5465,7 +5465,7 @@
   ],
   "gloss": "購買",
   "collocation": "are repressed by ___ something；by + V-ing（藉由做…）",
-  "explanation": "by + V-ing 是藉由做某事，這一格說他們靠著買東西把問題壓下去。易與 leaving 混淆，但離開已用在第一段，也壓不住問題。",
+  "explanation": "by + V-ing 是藉由做某事，這一格說他們靠著買東西把問題壓下去。易與 leaving 混淆，但靠離開某樣東西壓不住生活裡的問題。",
   "accuracyRate": 51,
   "discrimination": 57,
   "contextSpan": "句內"
@@ -5498,7 +5498,7 @@
   ],
   "gloss": "符合資格、算得上",
   "collocation": "8.9 percent of the population ___；qualify as sth（夠格稱為…）",
-  "explanation": "as many as 8.9 percent of the American population ___30___ as compulsive buyers，主詞是「百分之 8.9 的美國人」，空格是這一句的主要動詞。qualify 你大概只想到 qualify for 的「取得資格」，它接 as 時是「算得上、稱得上」，整句說多達 8.9% 的美國人算得上是強迫性購物者。空格後面那個 as 就是線索：易與 turn to 混淆——turn to 也可當動詞，但用法是 turn to + 名詞受詞，無法與 as 連用。",
+  "explanation": "as many as 8.9 percent of the American population ___30___ as compulsive buyers，主詞是「百分之 8.9 的美國人」，空格是這一句的主要動詞。qualify 你大概只想到 qualify for 的「取得資格」，它接 as 時是「算得上、稱得上」，整句說多達 8.9% 的美國人算得上是強迫性購物者。空格後面那個 as 就是線索。易與 turn to 混淆，但 turn to as compulsive buyers 不成句。",
   "accuracyRate": 28,
   "discrimination": 51,
   "contextSpan": "句內"
@@ -5530,7 +5530,7 @@
   ],
   "gloss": "職業",
   "collocation": "He was a musician by ___；by profession（就職業而言），介系詞用 by",
-  "explanation": "by profession 是就職業而言的固定片語，說明他的本業是音樂家。易與 day 混淆，但白天是下一句才登場的對比。",
+  "explanation": "by profession 是就職業而言的固定片語，說明他的本業是音樂家。易與 day 混淆，但 by day 只講一天裡的時段，帶不出後面 first…then 交代的職業經歷。",
   "accuracyRate": null,
   "discrimination": null,
   "contextSpan": "句內"
@@ -5563,7 +5563,7 @@
   ],
   "gloss": "白天",
   "collocation": "By ___, that is；by day（白天），與下句 By night 對舉",
-  "explanation": "by day 與下一句的 by night 是成對的固定片語，一白天一夜晚。易與 profession 混淆，但那個字前一句已經用掉。",
+  "explanation": "by day 與下一句的 by night 是成對的固定片語，一白天一夜晚。易與 profession 混淆，但 by profession 講的是職業，和下一句的 by night 對不起來。",
   "accuracyRate": null,
   "discrimination": null,
   "contextSpan": "跨句"
@@ -5595,7 +5595,7 @@
   ],
   "gloss": "多雲的、陰的",
   "collocation": "a mirror maker when they were ___；skies are cloudy（天空陰霾），對比 clear",
-  "explanation": "同一句前半是天空晴朗，這一格必須是相反的天況。易與 strange 混淆，但奇特是後文那顆星的形容，與天氣無關。",
+  "explanation": "同一句前半是天空晴朗，這一格必須是相反的天況。易與 strange 混淆，但奇特不是天氣狀況，和前半的 clear 對不起來。",
   "accuracyRate": null,
   "discrimination": null,
   "contextSpan": "句內"
@@ -5628,7 +5628,7 @@
   ],
   "gloss": "磨亮、拋光",
   "collocation": "personally ground and ___ the mirrors；polish a mirror／lens（磨亮鏡面、鏡片）",
-  "explanation": "與前面的 ground 並列，講他親手把鏡面磨過再拋光。易與 identified 混淆，但辨識是後文天文學家對星雲做的事，不是製鏡工序。",
+  "explanation": "與前面的 ground 並列，講他親手把鏡面磨過再拋光。易與 identified 混淆，但辨識不是製鏡工序，接在 ground 後面說不通。",
   "accuracyRate": null,
   "discrimination": null,
   "contextSpan": "句內"
@@ -5693,7 +5693,7 @@
   ],
   "gloss": "尚未被發現的",
   "collocation": "Scanning for as yet ___ objects；as yet undetected（迄今尚未偵測到的）",
-  "explanation": "as yet + p.p. 指迄今尚未如何，他掃視的正是還沒被發現的天體。易與 strange 混淆，但奇特形容的是樣子，說不出還沒被發現。",
+  "explanation": "as yet 是到目前為止，多用在否定的說法；as yet undetected 指迄今尚未偵測到，他掃視的正是還沒被發現的天體。易與 strange 混淆，但奇特形容的是樣子，說不出還沒被發現。",
   "accuracyRate": null,
   "discrimination": null,
   "contextSpan": "句內"
@@ -5725,7 +5725,7 @@
   ],
   "gloss": "辨識、認定",
   "collocation": "astrophysicists have since ___；identify A as B（將 A 認定為 B）",
-  "explanation": "identify A as B 是把 A 認定為 B，這裡講現代天文學家的認定。易與 polished 混淆，但拋光是他磨鏡子的動作，接不上 as。",
+  "explanation": "identify A as B 是把 A 認定為 B，這裡講現代天文學家的認定。易與 polished 混淆，但星雲不是能拋光的東西，拋光也接不上 as。",
   "accuracyRate": null,
   "discrimination": null,
   "contextSpan": "句內"
@@ -5757,7 +5757,7 @@
   ],
   "gloss": "觀測",
   "collocation": "his systematic ___ of star fields；the observation of sth（對…的觀測）",
-  "explanation": "the observation of sth 指對某事物的觀測，前面再由 systematic 修飾。易與 assistance 混淆，但協助是妹妹提供的。",
+  "explanation": "the observation of sth 指對某事物的觀測，前面再由 systematic 修飾。易與 assistance 混淆，但 his systematic assistance of star fields 說不通，星野不是協助的對象。",
   "accuracyRate": null,
   "discrimination": null,
   "contextSpan": "句內"
@@ -5789,7 +5789,7 @@
   ],
   "gloss": "奇特的",
   "collocation": "a note about a ___ nebulous star；呼應前句 a peculiar object（奇特的天體）",
-  "explanation": "前一句說他發現一個奇特的天體，這一格是同一件事換個字再說一次。易與 cloudy 混淆，但那是形容天空，不是形容星星。",
+  "explanation": "前一句說他發現一個奇特的天體，這一格是同一件事換個字再說一次。易與 cloudy 混淆，但 cloudy 講不出這份奇特。",
   "accuracyRate": null,
   "discrimination": null,
   "contextSpan": "跨句"
@@ -5821,7 +5821,7 @@
   ],
   "gloss": "堅持不變",
   "collocation": "Herschel ___ in this belief；persist in a belief（堅持某項看法）",
-  "explanation": "persist in 要用介系詞帶出所堅持的看法。易與 identified 混淆，但辨識不接 in，他當時也還沒確認那是什麼。",
+  "explanation": "persist in 要用介系詞帶出所堅持的看法。易與 identified 混淆，但 identified in this belief 說不通，他當時也還沒確認那是什麼。",
   "accuracyRate": null,
   "discrimination": null,
   "contextSpan": "句內"
@@ -5853,7 +5853,7 @@
   ],
   "gloss": "遵守",
   "collocation": "___ the rules and regulations；obey the rules／the law（遵守規則、法律）",
-  "explanation": "這一格與前面的 understand 並列，後面直接帶受詞。易與 conform 混淆，但那必須接 to 才能帶出遵守的對象。",
+  "explanation": "這一格與前面的 understand 並列，後面直接帶受詞。易與 conform 混淆，但 conform the rules 這個說法不成立。",
   "accuracyRate": 61,
   "discrimination": 71,
   "contextSpan": "句內"
@@ -5886,7 +5886,7 @@
   ],
   "gloss": "團體的",
   "collocation": "both ___ sports and individual sports；team sports（團體運動），對比 individual",
-  "explanation": "舉的棒球、籃球、足球都要靠一群人一起打，與後面的個人運動對舉。易與 professional 混淆，但「是不是職業」講的是層級，不是人數。",
+  "explanation": "舉的棒球、籃球、足球都要靠一群人一起打，與後面的個人運動對舉。易與 professional 混淆，但「是不是職業」和人數多寡無關，對不上後面的 individual。",
   "accuracyRate": 62,
   "discrimination": 69,
   "contextSpan": "句內"
@@ -5984,7 +5984,7 @@
   ],
   "gloss": "技巧",
   "collocation": "critique their performances and ___；and 連接的並列受詞，須為名詞",
-  "explanation": "and 前面是 performances，後面必須接同一層級的名詞。易與 excellent 混淆，但那是形容詞，並列在名詞後面詞性不合。",
+  "explanation": "and 前面是 performances，後面必須接同一層級的名詞。易與 excellent 混淆，但放進來變成 performances and excellent，後面少了名詞，並列不成立。",
   "accuracyRate": 64,
   "discrimination": 70,
   "contextSpan": "句內"
@@ -6016,7 +6016,7 @@
   ],
   "gloss": "預防",
   "collocation": "work with trainers to ___ injury；prevent injury（預防受傷）",
-  "explanation": "與增肌並列，這一格是不定詞帶受傷這個受詞，講的是把傷擋在前面。易與 conform 混淆，但那要接 to，也不能拿受傷當受詞。",
+  "explanation": "與增肌並列，這一格是不定詞帶受傷這個受詞，講的是事先避免受傷。易與 conform 混淆，但 conform injury 說不通。",
   "accuracyRate": 65,
   "discrimination": 75,
   "contextSpan": "句內"
@@ -6049,7 +6049,7 @@
   ],
   "gloss": "到極限",
   "collocation": "athletes push their bodies ___；push sth to the limit（推到極限）",
-  "explanation": "`push sth to the limit` 是把某物推到極限。這一格說選手把身體逼到極限，才會有下一句的生涯終結風險。易與 at risk 混淆，但那要接 of 帶出風險的內容，語序也不合。",
+  "explanation": "`push sth to the limit` 是把某物推到極限。這一格說選手把身體逼到極限，才會有同一句後半 so 帶出的生涯終結風險。易與 at risk 混淆，但 push their bodies at risk 說不通。",
   "accuracyRate": 56,
   "discrimination": 65,
   "contextSpan": "句內"
@@ -6082,7 +6082,7 @@
   ],
   "gloss": "面臨…的風險",
   "collocation": "may put a player ___ of replacement；put sb at risk of sth（使某人有…之虞）",
-  "explanation": "put sb at risk of sth 是使某人有之虞的固定用法。易與 to the limit 混淆，但極限後面不接 of，也講不出被替換。",
+  "explanation": "put sb at risk of sth 是使某人面臨…的風險。易與 to the limit 混淆，但 put a player to the limit of replacement 說不通，講不出面臨被替換的風險。",
   "accuracyRate": 51,
   "discrimination": 74,
   "contextSpan": "句內"
@@ -6147,7 +6147,7 @@
   ],
   "gloss": "遵守、順從",
   "collocation": "must ___ to strictly controlled diets；conform to a rule／standard（遵守規定）",
-  "explanation": "conform to 要靠介系詞帶出遵守的對象。易與 obey 混淆，但那是及物動詞，直接接受詞，中間不放介系詞。",
+  "explanation": "conform to 要靠介系詞帶出遵守的對象。易與 obey 混淆，但 obey to strictly controlled diets 多了 to，說法不成立。",
   "accuracyRate": 46,
   "discrimination": 77,
   "contextSpan": "句內"
@@ -6180,7 +6180,7 @@
   ],
   "gloss": "說服",
   "collocation": "___ them to buy more food；persuade sb to V（說服某人做…）",
-  "explanation": "persuade + sb + to V 是說服某人做某事，主詞是麵包香氣。易與 influence 混淆，但那是 influence + sb 直接接受詞，不接 to。",
+  "explanation": "persuade + sb + to V 是說服某人做某事，主詞是麵包香氣。易與 influence 混淆，但這一格和前面的 makes 並列，動詞要加 s，influence 少了這個 s。",
   "accuracyRate": 45,
   "discrimination": 71,
   "contextSpan": "句內"
@@ -6213,7 +6213,7 @@
   ],
   "gloss": "昂貴的",
   "collocation": "Stocking the most ___ products；對比後句 cheaper competitors（較便宜的對手）",
-  "explanation": "同一句後半用了較便宜的對手，這一格必須站在相反的一端。易與 powerful 混淆，但強而有力形容的是效果，不是商品的價位。",
+  "explanation": "同一句後半用了較便宜的對手，這一格必須站在相反的一端。易與 powerful 混淆，但 the most powerful products 對不上後半的 cheaper，這一格要講的是價位。",
   "accuracyRate": 66,
   "discrimination": 59,
   "contextSpan": "句內"
@@ -6245,7 +6245,7 @@
   ],
   "gloss": "（動詞）影響",
   "collocation": "can be used to ___ what people buy；influence + wh- 子句（影響…）",
-  "explanation": "can be used to ___ what people buy，to 後面要原形動詞，而且這一格還得帶著 what people buy 這個 wh- 子句當受詞，要的是及物動詞。be used to 有三種讀法：used to + 原形（前面沒有 be）＝以前…，現在不了；be used to + V-ing 或名詞＝習慣於；be used to + 原形＝use sth to do sth 的被動，被用來…。分辨要看主詞：這一句的主詞是 swarm intelligence，是被拿來用的工具，不是會養成習慣的人，所以是第三種，to 後面接原形。influence 你大概只讀成名詞「影響力」，記的是 have an influence on 這個字詞搭配；但這一題考的是它當及物動詞，直接接受詞、中間不加介系詞——influence what people buy。這正是它和中文「對…有影響」最不一樣的地方。易與 persuades 混淆——persuade 也是及物動詞，也講說服、影響，但它的字詞搭配是 persuade + 人 + to V，受詞必須是人，接不了一個 wh- 子句。",
+  "explanation": "can be used to ___ what people buy，to 後面要原形動詞，而且這一格還得帶著 what people buy 這個 wh- 子句當受詞，要的是及物動詞。be used to 有三種讀法：used to + 原形（前面沒有 be）＝以前…，現在不了；be used to + V-ing 或名詞＝習慣於；be used to + 原形＝use sth to do sth 的被動，被用來…。分辨要看主詞：這一句的主詞是 swarm intelligence，是被拿來用的工具，不是會養成習慣的人，所以是第三種，to 後面接原形。influence 你大概只讀成名詞「影響力」，記的是 have an influence on 這個字詞搭配；但這一題考的是它當及物動詞，直接接受詞、中間不加介系詞——influence what people buy。這正是它和中文「對…有影響」最不一樣的地方。易與 persuades 混淆——說服也是一種影響，但 persuades 帶著第三人稱單數的 s，放不進 to 後面，這一格要的是原形。",
   "accuracyRate": 35,
   "discrimination": 62,
   "contextSpan": "句內"
@@ -6278,7 +6278,7 @@
   ],
   "gloss": "有可能的",
   "collocation": "shoppers are ___ to choose it too；be likely to V（有可能做…）",
-  "explanation": "`be likely to V` 是有可能做某事。商品看起來熱門，顧客就有可能跟進。易與 informed 混淆，但知悉要接 about，而且那是下一句才登場的機制。",
+  "explanation": "`be likely to V` 是有可能做某事。商品看起來熱門，顧客就有可能跟進。易與 informed 混淆，但 are informed to choose it 說不通，講不出顧客有可能跟進。",
   "accuracyRate": 54,
   "discrimination": 70,
   "contextSpan": "句內"
@@ -6311,7 +6311,7 @@
   ],
   "gloss": "知悉的",
   "collocation": "keep customers ___ about what others buy；keep sb informed（讓某人知悉）",
-  "explanation": "some supermarkets are now able to keep customers ___35___ about what others are buying，空格是 keep 的受詞補語。informed 你大概只讀成「見多識廣的」，keep sb informed about sth 是讓某人隨時知道某件事的最新狀況——貨架上的螢幕告訴你店裡有多少人選了這項商品，做的正是這件事。易與 likely 混淆——likely 也可當形容詞，但用法是 be likely to V，無法與 about 連用。",
+  "explanation": "some supermarkets are now able to keep customers ___35___ about what others are buying，空格是 keep 的受詞補語。informed 你大概只讀成「見多識廣的」，keep sb informed about sth 是讓某人隨時知道某件事的最新狀況——貨架上的螢幕告訴你店裡有多少人選了這一樣東西，做的正是這件事。易與 likely 混淆，但 keep customers likely about what others are buying 說不通。",
   "accuracyRate": 31,
   "discrimination": 60,
   "contextSpan": "句內"
@@ -6343,7 +6343,7 @@
   ],
   "gloss": "產品",
   "collocation": "have chosen that particular ___；that particular + 單數可數名詞；前文 goods 恆為複數形，此格取其中一項",
-  "explanation": "螢幕顯示的是有多少人選了那一樣東西，前面要接單數名詞。易與 privacy 混淆，但隱私不是架上被挑走的東西。",
+  "explanation": "螢幕顯示的是有多少人選了那一樣東西，that particular 後面要接單數名詞。易與 privacy 混淆，但隱私不是架上被挑走的東西。",
   "accuracyRate": 54,
   "discrimination": 76,
   "contextSpan": "句內"
@@ -6375,7 +6375,7 @@
   ],
   "gloss": "（動詞）提高",
   "collocation": "such a model ___ sales；increase sales／profits（提高銷售、獲利）",
-  "explanation": "作答前標一遍選項的詞性與字尾，這一格就好辦了：主詞 such a「swarm moves」model 是單數，動詞要加 s，而十個選項裡字尾帶 s 的只有 persuades 與 increases——十選一當場變二選一。不選 persuades 的理由是它的受詞必須是人，這裡的受詞是 sales。這個字在 95 年指考文意選填是名詞用法。",
+  "explanation": "作答前標一遍選項的詞性與字尾，這一格就好辦了：主詞 such a「swarm moves」model 是單數，動詞要加 s，而十個選項裡字尾帶 s 的只有 persuades 與 increases——十選一當場變二選一。不選 persuades，是因為 persuades sales 說不通，這一句講的是銷售量提高。這個字在 95 年指考文意選填是名詞用法。",
   "accuracyRate": 32,
   "discrimination": 62,
   "contextSpan": "句內"
@@ -6407,7 +6407,7 @@
   ],
   "gloss": "滿足感",
   "collocation": "gives shoppers the ___ of knowing…；the satisfaction of V-ing（做…的滿足感）",
-  "explanation": "it gives shoppers the ___38___ of knowing that they bought the “right” product，空格是名詞。satisfaction 你大概只想到 customer satisfaction 的「滿意度」，the satisfaction of V-ing 是做某件事帶來的那份滿足——這裡是知道自己買對了的踏實。易與 privacy 混淆——privacy 也是名詞，擺在 the … of 中間沒問題，但隱私是不讓別人知道，與這一句的 knowing 方向相反。",
+  "explanation": "it gives shoppers the ___38___ of knowing that they bought the “right” product，空格是名詞。satisfaction 你大概只想到 customer satisfaction 的「滿意度」，the satisfaction of V-ing 是做某件事帶來的那份滿足——這裡是知道自己買對了的踏實。易與 privacy 混淆——privacy 也是名詞，但隱私是不讓別人知道，與這一句的 knowing 方向相反。",
   "accuracyRate": 37,
   "discrimination": 63,
   "contextSpan": "句內"
@@ -6473,7 +6473,7 @@
   ],
   "gloss": "隱私",
   "collocation": "Even in the ___ of your home；in the privacy of one's home（在自家隱密處）",
-  "explanation": "`in the privacy of one's home` 是在自家隱密處。這一格說的是連在自家這種最私密的地方也逃不掉。易與 satisfaction 混淆，但滿足感是上一段購物當下的感受，不是一個空間。",
+  "explanation": "`in the privacy of one's home` 是在自家隱密處。這一格說的是連在自家這種最私密的地方也逃不掉。易與 satisfaction 混淆，但滿足感是一種感受，不是一個空間。",
   "accuracyRate": 45,
   "discrimination": 74,
   "contextSpan": "句內"
@@ -6506,7 +6506,7 @@
   ],
   "gloss": "（動詞）判給、授予",
   "collocation": "automatically ___ custody to the mother；award custody to sb（判給監護權）",
-  "explanation": "it had been common practice … to automatically ___31___ custody to the mother，空格是原形動詞，後面是 sth to sb 的結構。award 你大概只想到名詞「獎項、頒獎」，它當授與動詞是「判給」，可寫成 award sb sth，也可拆成 award sth to sb，這一句走的是後者。易與 fight 混淆——fight 也可當動詞，但它直接接受詞，沒有 fight sth to sb 這種授與結構。",
+  "explanation": "it had been common practice … to automatically ___31___ custody to the mother，空格是原形動詞，後面是 sth to sb 的結構。award 你大概只想到名詞「獎項、頒獎」，它當授與動詞是「判給」，可寫成 award sb sth，也可拆成 award sth to sb，這一句走的是後者。易與 fight 混淆——fight 也可當動詞，但沒有 fight sth to sb 這種授與結構。",
   "accuracyRate": 32,
   "discrimination": 62,
   "contextSpan": "句內"
@@ -6538,7 +6538,7 @@
   ],
   "gloss": "受到挑戰",
   "collocation": "this practice has been ___；challenge a practice／view（挑戰做法、觀點）",
-  "explanation": "這一句說那個慣例後來開始被質疑，故填被動的受到挑戰。易與 concerned 混淆，但那要接 about，講的是人的在意。",
+  "explanation": "這一句說那個慣例後來開始被質疑，故填被動的受到挑戰。易與 concerned 混淆，但 this practice has been concerned 說不通，講不出慣例遭到質疑。",
   "accuracyRate": 42,
   "discrimination": 52,
   "contextSpan": "句內"
@@ -6603,7 +6603,7 @@
   ],
   "gloss": "發生",
   "collocation": "the social changes that ___；take place（發生），主詞為事件，不用被動",
-  "explanation": "關係子句的主詞是社會變遷，動詞要講它發生了。易與 challenged 混淆，但那是及物動詞，後面必須帶受詞，這裡直接接地方副詞。",
+  "explanation": "關係子句的主詞是社會變遷，動詞要講它發生了。易與 challenged 混淆，但 the social changes that challenged in the United States 少了挑戰的對象，句子不完整。",
   "accuracyRate": 46,
   "discrimination": 67,
   "contextSpan": "句內"
@@ -6635,7 +6635,7 @@
   ],
   "gloss": "傳統的",
   "collocation": "challenged many of the ___ roles；a traditional role（傳統角色）",
-  "explanation": "這一格形容男女被期待扮演的既有角色，正是被那些變遷推翻的對象。易與 unusual 混淆，但不尋常的角色沒有理由需要被挑戰。",
+  "explanation": "這一格形容男女被期待扮演的既有角色，正是那些變遷挑戰的對象。易與 unusual 混淆，但不尋常的角色沒有理由需要被挑戰。",
   "accuracyRate": 53,
   "discrimination": 71,
   "contextSpan": "句內"
@@ -6667,7 +6667,7 @@
   ],
   "gloss": "結果",
   "collocation": "As a ___, it is not uncommon…；as a consequence（因此），同義 as a result",
-  "explanation": "這一格接在 As a 後面，把上一段的變化導向後面的現象。易與 increase 混淆，但增加是最後一段講離婚率時才用得上的字。",
+  "explanation": "這一格接在 As a 後面，把前一句的變化導向後面的現象。易與 increase 混淆，但 As a increase 連冠詞都對不上，也講不出因此。",
   "accuracyRate": 45,
   "discrimination": 65,
   "contextSpan": "句內"
@@ -6700,7 +6700,7 @@
   ],
   "gloss": "在意的、關切的",
   "collocation": "being very ___ about their careers；be concerned about sth（在意、關切）",
-  "explanation": "being very ___37___ about their careers and personal lives，空格是形容詞。concerned 你大概只讀成「擔心的」，be concerned about sth 也可以是「在意、重視」——這一句講女性看重自己的事業與生活，不是為它們發愁。易與 challenged 混淆——challenged 也可當形容詞，但用法是 be challenged by sb／sth，無法與 about 連用。",
+  "explanation": "being very ___37___ about their careers and personal lives，空格是形容詞。concerned 你大概只讀成「擔心的」，be concerned about sth 也可以是「在意、重視」——這一句講女性看重自己的事業與生活，不是為它們發愁。易與 challenged 混淆，但 being very challenged about their careers 說不通，講不出女性看重自己的事業。",
   "accuracyRate": 38,
   "discrimination": 64,
   "contextSpan": "句內"
@@ -6765,7 +6765,7 @@
   ],
   "gloss": "（名詞）增加",
   "collocation": "Because of the ___ in the divorce rate；an increase in sth（…的增加）",
-  "explanation": "前面有 the、後面接 in the divorce rate，這一格只能放名詞。an increase in sth 接的是量得出來的東西，介系詞用 in 不用 of，學測克漏字 94 年第 23 題考的正是這個搭配。易與 consequence 混淆，但 consequence 不與 in 連用（a consequence of sth），而且會把原因說成結果——整句三個名詞片語並列，講的都是原因。這個字在 96 年指考文意選填另有動詞用法。",
+  "explanation": "前面有 the、後面接 in the divorce rate，這一格只能放名詞。an increase in sth 接的是量得出來的東西，介系詞用 in（an increase of 12% 的 of 帶出的是增加的幅度），學測克漏字 94 年第 23 題考的正是這個搭配。易與 consequence 混淆，但 the consequence in the divorce rate 說不通，而且會把原因說成結果——整句三個名詞片語並列，講的都是原因。這個字在 96 年指考文意選填另有動詞用法。",
   "accuracyRate": 48,
   "discrimination": 82,
   "contextSpan": "句內"
@@ -6830,7 +6830,7 @@
   ],
   "gloss": "將近、幾乎",
   "collocation": "consists of ___ one hundred islands；nearly + 數字（將近…）",
-  "explanation": "nearly + 數字 表示逼近但未達，後面接的是一百這個整數。易與 even 混淆，但那要用在比較級前面，直接接數字不通。",
+  "explanation": "nearly + 數字 表示逼近但未達，後面接的是一百這個整數。易與 even 混淆，但 consists of even one hundred islands 是「甚至有一百座」的強調語氣，說不出數量接近一百；下一段的 the one hundred or so islands 也說明這裡是約數。",
   "accuracyRate": 56,
   "discrimination": 77,
   "contextSpan": "句內"
@@ -6894,7 +6894,7 @@
   ],
   "gloss": "無人居住的",
   "collocation": "The ___ islands of Penghu；an uninhabited island（無人島），對比前句 inhabited",
-  "explanation": "前一句說只有二十座有人住，這一格要接著講其餘無人居住的那些。易與 preserved 混淆，但保存下來是後文才出現的結果，不是這裡的對比點。",
+  "explanation": "前一句說只有二十座有人住，這一格要接著講其餘無人居住的那些。易與 preserved 混淆，但這一格要和前一句的 inhabited 形成對比，preserved 說不出有沒有人住。",
   "accuracyRate": 52,
   "discrimination": 80,
   "contextSpan": "跨句"
@@ -6926,7 +6926,7 @@
   ],
   "gloss": "（副詞）更加、甚至",
   "collocation": "bring ___ more surprises；even + 比較級（更加…）",
-  "explanation": "bring ___ more surprises，空格後面是比較級 more，這一格要一個修飾比較級的副詞。even 你大概只讀成「甚至」，但這一題考的是它修飾比較級：更加。上一句剛講完原始環境、玄武岩地景與豐富生態，這一格是在既有的驚喜上再加一級。易與 nearly 混淆——nearly 也是副詞，但它的字詞搭配是接數字表示逼近而未達，無法與比較級連用。【一字多義】even + 比較級是「更加」，和 even if 的「即使」同一條路：把語氣再往上推一階；劍橋文法（Cambridge English Grammar Today）把這個用法歸類為聚焦副詞（focusing adverb），它不改句子在講什麼，只指出你要強調哪一塊。另一條路留在本義「平的、齊的」——an even number（偶數）、evenly（平均地）、even things out（把情況扯平）。92 年學測補考文意選填考過 evenly，112 年學測文意選填考過那個動詞用法，答對率只有 14%。兩條路同源，可是看到 even 別急著套「甚至」，先看它站在句子的哪個位置。",
+  "explanation": "bring ___ more surprises，空格後面是比較級 more，這一格要一個修飾比較級的副詞。even 你大概只讀成「甚至」，但這一題考的是它修飾比較級：更加。這一句的主詞列出原始環境、玄武岩地景與豐富生態，這一格是在既有的驚喜上再加一級。易與 nearly 混淆——nearly 也是副詞，但 bring nearly more surprises 講不通，表達不出再加一級的意思。【一字多義】even + 比較級是「更加」，和 even if 的「即使」同一條路：把語氣再往上推一階；劍橋文法（Cambridge English Grammar Today）說明 even 常和比較級連用，用來加強語氣。另一條路留在本義「平的、齊的」——an even number（偶數）、evenly（平均地）、even things out（把情況扯平）。92 年學測補考文意選填考過 evenly，112 年學測文意選填考過那個動詞用法，答對率只有一成四。兩條路同源，可是看到 even 別急著套「甚至」，先看它站在句子的哪個位置。",
   "accuracyRate": 38,
   "discrimination": 55,
   "contextSpan": "句內"
@@ -6959,7 +6959,7 @@
   ],
   "gloss": "（連接詞）因為",
   "collocation": "___ they are endowed with…；for 引導原因子句，非介系詞「為了」",
-  "explanation": "These islands are designated as natural reservations, ___ they are endowed with...，逗號前面已經是完整句子，後面又是一個完整子句（主詞 they + 動詞 are），這一格只能是連接詞。for 你大概只讀成介系詞「為了、給」，但這一題考的是它當連接詞表原因，等於 because；劍橋 English Grammar Today 註明這個用法很正式、偏文學，所以你多半是在讀物上遇到它，不是在會話裡。這一句正是如此：被劃為自然保留區是結果，擁有珍稀資源是理由。易與 between 混淆——between 也常跟在逗號後面，但它是介系詞，後面只接名詞或動名詞，接不了 they are endowed 這樣的完整子句。",
+  "explanation": "These islands are designated as natural reservations, ___ they are endowed with...，逗號前面已經是完整句子，後面又是一個完整子句（主詞 they + 動詞 are），這一格只能是連接詞。for 你大概只讀成介系詞「為了、給」，但這一題考的是它當連接詞表原因，等於 because；劍橋 English Grammar Today 註明這個用法很正式、偏文學，所以多半出現在書面文字裡，很少用在會話中。這一句正是如此：被劃為自然保留區是結果，擁有珍稀資源是理由。易與 between 混淆，但放進來成了 between they are endowed with...，接不上後面這個完整子句。",
   "accuracyRate": 29,
   "discrimination": 56,
   "contextSpan": "句內"
@@ -6991,7 +6991,7 @@
   ],
   "gloss": "產地、所在地",
   "collocation": "the main ___ of seaweed production；the location of sth（…的所在地）",
-  "explanation": "`the location of sth` 是某物的所在地，這一格說的是海菜主要的產地。易與 attractions 混淆，但那指吸引遊客之處，這裡談的是生產，且 the main 後面要接單數。",
+  "explanation": "`the location of sth` 是某物的所在地，這一格說的是海菜主要的產地。易與 attractions 混淆，但那指吸引遊客之處，這裡談的是生產，且主詞是姑婆嶼這一座島，這一格要單數名詞。",
   "accuracyRate": 42,
   "discrimination": 72,
   "contextSpan": "句內"
@@ -7022,7 +7022,7 @@
    "字詞搭配"
   ],
   "gloss": "保存",
-  "collocation": "has also ___ the primitive character；preserve a character（保存特色）",
+  "collocation": "has ___ the primitive, unspoiled character；preserve a character（保存特色）",
   "explanation": "have + p.p. 的現在完成式，白沙嶼把原始未受破壞的樣貌保存下來。易與 uninhabited 混淆，但無人居住同句前半已寫過。",
   "accuracyRate": 52,
   "discrimination": 71,
@@ -7055,7 +7055,7 @@
   ],
   "gloss": "格外、特別",
   "collocation": "which are ___ spectacular；particularly + 形容詞（格外…）",
-  "explanation": "which ... are ___ spectacular，空格前面是 be 動詞、後面是形容詞 spectacular，這一格要一個修飾形容詞的程度副詞。particularly 你大概只讀成「特別」，當「與眾不同」在用；但這一題考的是程度：同一批柱狀玄武岩，南邊海岸線那一段格外壯觀——比的是同類之中哪一段更突出。易與 even 混淆——even 也是副詞，但它的字詞搭配是接比較級，無法與原級的 spectacular 連用。",
+  "explanation": "which ... are ___ spectacular，空格前面是 be 動詞、後面是形容詞 spectacular，這一格要一個修飾形容詞的程度副詞。particularly 你大概只讀成「特別」，當「與眾不同」在用；但這一題考的是程度：同一批柱狀玄武岩，南邊海岸線那一段格外壯觀——比的是同類之中哪一段更突出。易與 even 混淆——even 也是副詞，但 are even spectacular 成了「甚至壯觀」，說不出南岸那一段比其他段更突出。",
   "accuracyRate": 37,
   "discrimination": 64,
   "contextSpan": "句內"
@@ -7120,7 +7120,7 @@
   ],
   "gloss": "在…之間",
   "collocation": "bloom ___ the basalt rock cracks；between + 複數名詞（在…之間）",
-  "explanation": "黃花開在玄武岩的縫隙之中，這一格要一個表示位置的介系詞。易與 for 混淆，但那在本篇作連接詞表原因，接名詞時也講不出夾在縫隙間。",
+  "explanation": "黃花開在玄武岩的縫隙之中，這一格要一個表示位置的介系詞。易與 for 混淆，但 bloom for the basalt rock cracks 講不出花開在縫隙之間的位置。",
   "accuracyRate": 63,
   "discrimination": 61,
   "contextSpan": "句內"
@@ -7152,7 +7152,7 @@
   ],
   "gloss": "（形容詞）頂尖的、居領導地位的",
   "collocation": "one of the ___ industrialists；a leading figure／company（頂尖人物、公司）",
-  "explanation": "one of the ___ industrialists，one of the 後面接複數名詞，而這一格夾在 the 與 industrialists 之間，要形容詞。leading 你大概只讀成 lead 的現在分詞「正在帶領」，但這一題考的是它已經固化成形容詞：頂尖的、居領導地位的，a leading company、a leading figure 都是這個用法。前面說他出身貧農、一路做上來，這一格說的正是他最後爬到的位置。易與 elaborate 混淆——elaborate 也是形容詞，也擺得進同一個位置，但它形容的是東西做得精緻繁複（an elaborate design），講的是物件的做工，說不了一個人在業界的地位。",
+  "explanation": "one of the ___ industrialists，one of the 後面接複數名詞，而這一格夾在 the 與 industrialists 之間，要形容詞。leading 你大概只讀成 lead 的現在分詞「正在帶領」，但這一題考的是它已經固化成形容詞：頂尖的、居領導地位的，a leading company、a leading figure 都是這個用法。前面說他出身貧農、一路做上來，這一格說的正是他最後爬到的位置。易與 elaborate 混淆——elaborate 也是形容詞，也擺得進同一個位置，但 one of the elaborate industrialists 說不出一個人在業界的地位。",
   "accuracyRate": 31,
   "discrimination": 60,
   "contextSpan": "句內"
@@ -7185,7 +7185,7 @@
   ],
   "gloss": "應徵、申請",
   "collocation": "young people ___ for positions；apply for a position／job（應徵職位）",
-  "explanation": "so many of the young people ___32___ for positions with his firm knew absolutely nothing about…，這一句的主要動詞是後面的 knew，空格是修飾前面那群年輕人的分詞。applying 你大概只想到 apply 的「申請」，apply for a position 就是應徵職位——這些年輕人是來應徵他公司職缺的。易與 offered 混淆——offered 也可當過去分詞修飾名詞，但用法是 offer sb sth 或 offer sth to sb，無法與 for 連用。",
+  "explanation": "so many of the young people ___32___ for positions with his firm knew absolutely nothing about…，這一句的主要動詞是後面的 knew，空格是修飾前面那群年輕人的分詞。applying 你大概只想到 apply 的「申請」，apply for a position 就是應徵職位——這些年輕人是來應徵他公司職缺的。易與 offered 混淆——offered 也可當過去分詞修飾名詞，但 young people offered for positions 成了這些年輕人是別人提供的人選，不是自己來應徵職位的人。",
   "accuracyRate": 38,
   "discrimination": 42,
   "contextSpan": "句內"
@@ -7218,7 +7218,7 @@
   ],
   "gloss": "（過去式）創立",
   "collocation": "he ___ Junior Achievement, Inc.；found a company（創立公司）；易與 find 的過去式混淆",
-  "explanation": "found 是創立，過去式 founded；find 的過去式剛好也是 found，兩個字撞在一起。易與 offered 混淆，但提供要有給出去的對象。",
+  "explanation": "found 是創立，過去式 founded；find 的過去式剛好也是 found，兩個字撞在一起。易與 offered 混淆，但 he offered Junior Achievement, Inc. 說不出這家公司是他創辦的。",
   "accuracyRate": 48,
   "discrimination": 65,
   "contextSpan": "句內"
@@ -7250,7 +7250,7 @@
   ],
   "gloss": "小型的、微縮的",
   "collocation": "the operation of a ___ corporation；a miniature version（微型版本）",
-  "explanation": "答對率 24%，鑑別度 20。【作答線索】corporation 這個字第一段就出現過。第一段說 Moses 擔心來應徵的年輕人不懂 a corporation 是怎麼運作的。同一個字在這裡再出現一次，指的卻不是同一種公司。這一格的形容詞就是用來標出差別的。關鍵在 while still in school：還在念書的高中生所經營的，不會是第一段講的那種真正的企業。【語意內涵】miniature 指縮小版的，正是「照真實企業縮小做一遍」那層意思。往下一段看，學生做的東西從耳環到家具，也是這個規模。易與 leading 混淆，但頂尖大企業與學生自製耳環、家具對不上。",
+  "explanation": "答對率二成四，鑑別度 20。【作答線索】corporation 這個字第一段就出現過。第一段說 Moses 擔心來應徵的年輕人不懂 a corporation 是怎麼運作的。同一個字在這裡再出現一次，指的卻不是同一種公司。這一格的形容詞就是用來標出差別的。關鍵在 while still in school：還在念書的高中生所經營的，不會是第一段講的那種真正的企業。【語意內涵】miniature 指縮小版的，正是「照真實企業縮小做一遍」那層意思。再往下讀，學生做的東西從耳環到家具，也是這個規模。易與 leading 混淆，但頂尖大企業與學生自製耳環、家具對不上。",
   "accuracyRate": 24,
   "discrimination": 20,
   "contextSpan": "句內",
@@ -7287,7 +7287,7 @@
   ],
   "gloss": "被提供",
   "collocation": "students are ___ the opportunity；offer sb sth（提供某人某物），此為被動",
-  "explanation": "students are ___ the opportunity，are 後面要過去分詞，可是分詞後面還接著一個名詞 the opportunity——一般的被動句後面不會再留一個受詞。offer 你大概只讀成 offer sth to sb，但這一題考的是授與動詞的雙受詞被動：offer sb sth 有兩個受詞，把「人」提到主詞位置變成被動之後，另一個受詞就留在動詞後面，成為 students are offered the opportunity。這和國中學過的 I was given a book. 是同一個結構。易與 applying 混淆——applying 是現在分詞，are applying 會變成進行式、主詞成了主動去做的人；但 apply 當「申請」是不及物動詞，後面接不了 the opportunity 這個受詞。",
+  "explanation": "students are ___ the opportunity，are 後面要過去分詞，可是分詞後面還接著一個名詞 the opportunity——一般的被動句後面不會再留一個受詞。offer 你大概只讀成 offer sth to sb，但這一題考的是授與動詞的雙受詞被動：offer sb sth 有兩個受詞，把「人」提到主詞位置變成被動之後，另一個受詞就留在動詞後面，成為 students are offered the opportunity。這和 I was given a book. 是同一個結構。易與 applying 混淆——applying 是現在分詞，are applying 會變成進行式、主詞成了主動去做的人；但 students are applying the opportunity 講不通，這一句要說的是學生每年九月得到加入的機會。",
   "accuracyRate": 30,
   "discrimination": 51,
   "contextSpan": "句內"
@@ -7320,7 +7320,7 @@
   ],
   "gloss": "（形容詞）精緻繁複的",
   "collocation": "to quite ___ furniture；elaborate design／furniture（精緻設計、家具）",
-  "explanation": "答對率 17%。【作答線索】quite 後面要接形容詞。再看 range in size from A to B，這是由小到大的對比。A 端是耳環，這一格就得填大的那一端。【語意內涵】elaborate 本義是精緻繁複。做工繁複的家具，體積與工程都大，對比才立得起來。這一格難在要從對比反推語意，不是從字義直接判斷。易與 miniature 混淆，但填它會讓句子兩端都變小，from…to 的對比就沒了。",
+  "explanation": "答對率一成七。【作答線索】quite 和名詞 furniture 中間這一格要一個形容詞。再看 range in size from A to B，這是由小到大的對比。A 端是耳環，這一格就得填大的那一端。【語意內涵】elaborate 本義是精緻繁複。做工繁複的家具，體積與工程都大，對比才立得起來。這一格難在要從對比反推語意，不是從字義直接判斷。易與 miniature 混淆，但填它會讓句子兩端都變小，from…to 的對比就沒了。",
   "accuracyRate": 17,
   "discrimination": 24,
   "contextSpan": "句內",
@@ -7358,7 +7358,7 @@
   ],
   "gloss": "（名詞複數）公司、事務所",
   "collocation": "operate banks, accounting ___；an accounting／law firm（會計、法律事務所）",
-  "explanation": "答對率 15%，鑑別度只有 11，高分群考生也一起錯。【作答線索】這是並列結構：operate banks, accounting ___, and advertising agencies。三項並列，第一項是銀行、第三項是廣告公司，都是機構，中間這一格也就定了——也得是機構的名稱。【語意及字詞搭配】accounting firm 就是會計事務所，構詞方式與 law firm 相同。易與 programs 混淆，但 accounting programs 指會計課程或會計軟體，不是能跟銀行、廣告公司並列去經營的東西。",
+  "explanation": "答對率一成五，鑑別度只有 11，高分群考生也一起錯。【作答線索】這是並列結構：operate banks, accounting ___, and advertising agencies。三項並列，第一項是銀行、第三項是廣告公司，都是機構，中間這一格也就定了——也得是機構的名稱。【語意及字詞搭配】accounting firm 就是會計事務所，構詞方式與 law firm 相同。易與 programs 混淆，但 accounting programs 指會計課程或會計軟體，不是能跟銀行、廣告公司並列去經營的東西。",
   "accuracyRate": 15,
   "discrimination": 11,
   "contextSpan": "句內",
@@ -7395,7 +7395,7 @@
   ],
   "gloss": "（名詞複數）計畫、方案",
   "collocation": "Junior Achievement ___ range in size；range in size from A to B（大小不等）",
-  "explanation": "答對率 12%，全篇最難。【作答線索】Junior Achievement 後面接的是複數動詞 range，中間這一格填的字才是真正的主詞，Junior Achievement 是用來修飾它的，所以要填複數名詞。句子後半 from those in the big cities... to those in small towns，those 回指的正是這一格：這個東西大城市有、幾千人的小鎮也有。再往後讀一句就確定了——原文寫 Each program {40} with the size of the area，文章自己把這個字印在下一句。【語意內涵】易與 firms 混淆，但學生經營的公司行號是這個計畫做出來的產物，不是各地都有的推行單位。",
+  "explanation": "答對率一成二，全篇最難。【作答線索】Junior Achievement 後面接的是複數動詞 range，中間這一格填的字才是真正的主詞，Junior Achievement 是用來修飾它的，所以要填複數名詞。句子後半 from those in the big cities... to those in small towns，those 回指的正是這一格：這個東西大城市有、幾千人的小鎮也有。再往後讀一句就確定了——原文寫 Each program {40} with the size of the area，文章自己把這個字印在下一句。【語意內涵】易與 firms 混淆，但學生經營的公司行號是這個計畫做出來的產物，不是各地都有的推行單位。",
   "accuracyRate": 12,
   "discrimination": 13,
   "contextSpan": "句內",
@@ -7465,7 +7465,7 @@
   ],
   "gloss": "因…而異",
   "collocation": "Each program ___ with the size…；vary with sth（隨…而不同），主詞為單數",
-  "explanation": "答對率 16%，鑑別度 24。【作答線索】主詞 Each program 是單數，動詞就要加 s。【語意及字詞搭配】vary 常接的句型有兩個：vary with sth（隨某事物而不同）、vary from A to B（由 A 到 B 各有不同）。本句用的是前者——每個方案隨地區大小、以及當地產業與商業活動的多寡而有差異。易與 offered 混淆，但 offer 沒有接 with 的用法，句子接不下去。",
+  "explanation": "答對率一成六，鑑別度 24。【作答線索】主詞 Each program 是單數，動詞就要加 s。【語意及字詞搭配】vary 常接的句型有兩個：vary with sth（隨某事物而不同）、vary from A to B（由 A 到 B 各有不同）。本句用的是前者——每個方案隨地區大小、以及當地產業與商業活動的多寡而有差異。易與 offered 混淆，但 offer 沒有接 with 的用法，句子接不下去。",
   "accuracyRate": 16,
   "discrimination": 24,
   "contextSpan": "句內",
@@ -7568,7 +7568,7 @@
   ],
   "gloss": "（動詞）面積為",
   "collocation": "Bhutan ___ about 18,000 square miles；measure + 面積（面積為…），此處非名詞",
-  "explanation": "measure 不是有人拿尺去量它，而是它本身量起來有多大，後面直接接面積。易與 reserves 混淆，但那是保護區，放在主詞後面當動詞用不成立。",
+  "explanation": "measure 不是有人拿尺去量它，而是它本身量起來有多大，後面直接接面積。易與 reserves 混淆，但 Bhutan reserves about 18,000 square miles 成了不丹保留約一萬八千平方英里，說不出國土面積。",
   "accuracyRate": null,
   "discrimination": null,
   "contextSpan": "句內"
@@ -7600,7 +7600,7 @@
   ],
   "gloss": "哺乳動物",
   "collocation": "is home to several rare ___；be home to sth（為…的棲地）",
-  "explanation": "後面舉的小貓熊、岩羊、麝鹿都是哺乳動物，答案由這三個例子直接框定。易與 festivals 混淆，但節慶是下一段的內容，這裡列的是動物。",
+  "explanation": "後面舉的小貓熊、岩羊、麝鹿都是哺乳動物，答案由這三個例子直接框定。易與 festivals 混淆，但後面舉的例子都是動物，不是節慶。",
   "accuracyRate": null,
   "discrimination": null,
   "contextSpan": "句內"
@@ -7633,7 +7633,7 @@
   ],
   "gloss": "多樣的、豐富多變的",
   "collocation": "Its ___ landscape includes…；a diverse landscape（多樣的地景）",
-  "explanation": "雪峰、竹林、草原一路列下來，這一格要能概括地貌的多樣。易與 direct 混淆，但直通講的是路線或管道，不能拿來形容地景。",
+  "explanation": "雪峰、竹林、草原一路列下來，這一格要能概括地貌的多樣。易與 direct 混淆，但 direct landscape 概括不了雪峰、竹林、草原各不相同的樣貌。",
   "accuracyRate": null,
   "discrimination": null,
   "contextSpan": "句內"
@@ -7665,7 +7665,7 @@
   ],
   "gloss": "完全地",
   "collocation": "rely almost ___ on agriculture；rely entirely on sth（完全仰賴）",
-  "explanation": "rely + entirely + on sth，almost 後面要接副詞才說得出程度。易與 sparingly 混淆，但節制少量會把幾乎完全整個反過來說。",
+  "explanation": "rely + entirely + on sth，almost 和 on 中間這一格要一個副詞，說出仰賴的程度。易與 sparingly 混淆，但 almost 搭的是「完全」這類接近極端的程度，rely almost sparingly 講不通。",
   "accuracyRate": null,
   "discrimination": null,
   "contextSpan": "句內"
@@ -7730,7 +7730,7 @@
   ],
   "gloss": "（形容詞）直通的",
   "collocation": "offer a ___ line to the gods；a direct line／flight（直通專線、直飛班機）",
-  "explanation": "經幡被信徒視為通往神明的專線，這一格取直通這一義。易與 diverse 混淆，但多樣會讓這條線變成很多條，與唯一直達的想像相反。",
+  "explanation": "信徒把經幡視為通往神明的專線，這一格取直通這一義。易與 diverse 混淆，但 a diverse line to the gods 說不出經幡直接通往神明的意思。",
   "accuracyRate": null,
   "discrimination": null,
   "contextSpan": "句內"
@@ -7762,7 +7762,7 @@
   ],
   "gloss": "事先、提前",
   "collocation": "should plan their trips far ___；far in advance（老早事先），far 表程度",
-  "explanation": "前面的 far 是程度副詞，這一格要能被 far 修飾。易與 in existence 混淆，但現存講的是有沒有這東西，不能被 far 修飾。",
+  "explanation": "前面的 far 是程度副詞，這一格要能被 far 修飾。易與 in existence 混淆，但 plan their trips far in existence 講不通，說不出規劃行程的時間點。",
   "accuracyRate": null,
   "discrimination": null,
   "contextSpan": "句內"
@@ -7794,10 +7794,10 @@
   ],
   "gloss": "節制地、省著點",
   "collocation": "they should pack ___；pack／use sth sparingly（節制地打包、使用）",
-  "explanation": "冒號後面說航空公司只有兩架飛機、置物空間有限，所以行李要少帶。易與 entirely 混淆，但完全地無法單獨修飾打包，也講不出少帶這一層。",
+  "explanation": "冒號後面說航空公司只有兩架飛機、置物空間有限，所以行李要少帶。易與 entirely 混淆，但 pack entirely 講不出少帶行李這一層。",
   "accuracyRate": null,
   "discrimination": null,
-  "contextSpan": "跨句"
+  "contextSpan": "句內"
  },
  {
   "id": "Vz92_31",
@@ -7826,7 +7826,7 @@
   ],
   "gloss": "（副詞）只、就只是",
   "collocation": "They ___ jump；just + 動詞（只做…），承前句 cannot walk or run",
-  "explanation": "前一句說袋鼠不會走也不會跑，這一格要把動作限縮成只有跳這一種。易與 for good 混淆，但那是指永久、不再回頭，與只做一件事無關。",
+  "explanation": "前一句說袋鼠不會走也不會跑，這一格要把動作限縮成只有跳這一種。易與 for good 混淆，但 They for good jump 講不通，也表達不出只有跳這一種動作。",
   "accuracyRate": 79,
   "discrimination": 50,
   "contextSpan": "跨句"
@@ -7859,7 +7859,7 @@
   ],
   "gloss": "活動時的樣子",
   "collocation": "The best time to see kangaroos ___；see sb／sth in action（看…實際活動）",
-  "explanation": "`see sth in action` 是看某物實際活動。清晨與傍晚正是袋鼠動起來的時候。易與 snoozing 混淆，但打盹是下一句白天的事，剛好相反。",
+  "explanation": "`see sth in action` 是看某物實際活動。清晨與傍晚正是袋鼠動起來的時候。易與 snoozing 混淆，但傍晚與清晨是袋鼠動起來的時段，see kangaroos snoozing 對不上。",
   "accuracyRate": 49,
   "discrimination": 65,
   "contextSpan": "句內"
@@ -7891,7 +7891,7 @@
   ],
   "gloss": "打盹、小睡",
   "collocation": "spend the daytime ___ in the shade；spend + 時間 + V-ing（花時間做…）",
-  "explanation": "白天躲在陰涼處做的事是睡覺，這一格要一個動名詞。易與 following 混淆，但那是下一段幼袋鼠找路的動作，與在陰影下休息搭不起來。",
+  "explanation": "白天躲在陰涼處做的事是睡覺，這一格要一個動名詞。易與 following 混淆，但 spend the daytime following in the shade 說不出在陰涼處休息這層意思。",
   "accuracyRate": 54,
   "discrimination": 72,
   "contextSpan": "句內"
@@ -7923,7 +7923,7 @@
   ],
   "gloss": "育兒袋",
   "collocation": "drag themselves to their mother's ___；a kangaroo's pouch（袋鼠育兒袋）",
-  "explanation": "下一句直接說牠們待在育兒袋裡，答案已由後文點明。易與 in action 混淆，但那是描述活動狀態的片語，接在所有格後面當名詞用並不成立。",
+  "explanation": "再下一句 They stay in the pouch 直接說牠們待在育兒袋裡，答案已由後文點明。易與 in action 混淆，但所有格 mother's 後面要接名詞，in action 放不進去。",
   "accuracyRate": 68,
   "discrimination": 65,
   "contextSpan": "跨句"
@@ -7955,7 +7955,7 @@
   ],
   "gloss": "循著、跟隨",
   "collocation": "find their way there by ___ the pattern；by + V-ing（藉由做…）",
-  "explanation": "by + V-ing 是藉由做某事，幼袋鼠靠著母袋鼠毛的走向一路循過去。易與 snoozing 混淆，但打盹已用在白天那一句，也找不到路。",
+  "explanation": "by + V-ing 是藉由做某事，幼袋鼠靠著母袋鼠毛的走向一路循過去。易與 snoozing 混淆，但 by snoozing the pattern 講不通，循著毛髮紋路找路要的是跟隨的動作。",
   "accuracyRate": 62,
   "discrimination": 66,
   "contextSpan": "句內"
@@ -7987,7 +7987,7 @@
   ],
   "gloss": "直到…為止",
   "collocation": "stay in the pouch ___ they are eight…；stay until + 子句（待到…為止）",
-  "explanation": "stay until + 子句，這一格要能接子句的連接詞，把時間收在八個月大。易與 for good 混淆，但那指永久不回頭，與八個月後就離開衝突。",
+  "explanation": "stay until + 子句，這一格要能接子句的連接詞，把時間收在八個月大。易與 for good 混淆，但它後面接不上 they are eight months old 這個子句。",
   "accuracyRate": 81,
   "discrimination": 50,
   "contextSpan": "句內"
@@ -8019,7 +8019,7 @@
   ],
   "gloss": "永久地、從此不再回頭",
   "collocation": "they leave home ___；for good（永久地）；非「為了好處」",
-  "explanation": "for good 不是為了好處，是永久地、從此不再回頭，兩個字都認得反而更容易讀錯。易與 in action 混淆，但活動中的樣子說不出永不回頭。",
+  "explanation": "for good 不是為了好處，是永久地、從此不再回頭，兩個字都認得反而更容易讀錯。易與 in action 混淆，但 leave home in action 說不出離家之後不再回來。",
   "accuracyRate": 50,
   "discrimination": 68,
   "contextSpan": "句內"
@@ -8118,7 +8118,7 @@
   ],
   "gloss": "令人驚奇的",
   "collocation": "calling these ___ animals；amazing 指令人驚奇的事物，非人的感受",
-  "explanation": "這一格是形容詞修飾動物，庫克船長眼中的袋鼠罕見而令人驚奇。易與 keen 混淆，但熱衷積極講的是人的態度，用來形容動物並不通。",
+  "explanation": "這一格是形容詞修飾動物，庫克船長眼中的袋鼠罕見而令人驚奇。易與 keen 混淆，但 these keen animals 說不出這種動物本身令人驚奇。",
   "accuracyRate": 46,
   "discrimination": 72,
   "contextSpan": "句內"
@@ -8151,7 +8151,7 @@
   ],
   "gloss": "無論是哪一種情況",
   "collocation": "___, if you want to master…；in either case（兩種情況都一樣，回指前文兩種人）",
-  "explanation": "___31___, if you want to master the English language… 空格是句首的轉折詞。前面問你是喜歡新科技的人、還是害怕新科技的人，列了兩種相反的人；in either case 是「無論是哪一種情況」，把兩種人一起包括進來——不管你屬於哪一種，那些電腦新詞都得學。易與 For one thing 混淆——For one thing 也可放句首，但用法是開啟列舉理由、後面常接 For another，這裡接的是把兩種人包括進來的結論。",
+  "explanation": "___31___, if you want to master the English language… 空格是句首的轉折詞。前面問你是幾乎整天坐在電腦前的人、還是害怕新科技的人，列了兩種相反的人；in either case 是「無論是哪一種情況」，把兩種人一起包括進來——不管你屬於哪一種，那些電腦新詞都得學。易與 For one thing 混淆——For one thing 也可放句首，但用法是開啟列舉理由、後面常接 For another，這裡接的是把兩種人包括進來的結論。",
   "accuracyRate": 39,
   "discrimination": 50,
   "contextSpan": "跨句"
@@ -8250,7 +8250,7 @@
   ],
   "gloss": "舉例來說",
   "collocation": "___, the German word for…；for example（舉例來說），後接具體例子",
-  "explanation": "【怎麼判斷】把第 33 格與第 34 格這兩句一起讀。第 33 格那一句是 ______, many of these words probably already have similar forms in your own language.（這些詞當中有許多，在你自己的語言裡多半已經有形式相近的說法。）這是概括的說法。第 34 格後面接的是 the German word for computer is Computer, in South American Spanish it is computador, and in Japanese we ______ konpyuta，德文、南美西班牙文、日文三個實例。從概括走到具體例子，填 For example。【這一篇要分層讀，不要看成三個並列的轉折詞】選項裡有三個轉折詞：In either case（兩種情況都一樣）、For one thing（第一點是）、For example（舉例來說）。它們不是並列的三個同類，而是分屬三層——總結、給理由、舉例。本格落在「舉例」這一層，後面接的正是上面那三個實例，所以三個選項裡只有 For example 接得上。另外兩層各自落在這一篇的其他位置，做到那幾格時用同一套分層去對就可以了。讀到 For one thing 就要準備在後面找到第二個理由，讀到 For example 就只會接例子——判斷看的不是這個詞本身，是它後面那一段在做什麼。【誘答選項】In either case 之所以誘人，是因為它確實在這一篇的選項裡。但語意接不上：In either case 要求前面剛好擺著兩種情況，然後說不論哪一種結果都相同，而本格前一句只提出一個理由，沒有兩種情況可收。For one thing 同理，它開出的是理由，不是例子，而本格後面接的是三個實例。【For example 與 such as 的分工，本篇自己就有對照】For example 後面接的是一句完整的話（the German word for computer is Computer），前後用逗號隔開；such as 後面直接接名詞，中間不斷句——第三段的 They are words that often make us smile when we first hear them such as ______ or wysiwyg 就是這種用法：such as 後面直接接名詞成員，中間不斷句。同一篇裡兩種舉例方式各出現一次，擺在一起看最省事。For instance 與 For example 同義，可以互換，指考克漏字 95 年第 14 題考的就是它；學測克漏字 89 年第 27 題則是同一個判斷方式的另一種問法，空格就落在 For example 的位置上。People use emojis for many reasons. For example, a smiling face can soften a message that would otherwise sound cold.（人們使用表情符號的理由很多。舉例來說，一個微笑的圖案可以讓一句原本聽起來冷淡的話變柔和。）For instance, a smiling face can soften a message that would otherwise sound cold.（同一句話換成 For instance，意思完全一樣。）Emojis such as hearts, tears, and thumbs-up show up in almost every chat.（愛心、眼淚、比讚這類表情符號，幾乎每一段對話都看得到。）〔情境取材自 112 學測作文題：表情符號〕【延伸的字詞搭配】For example（舉例來說，後面接一句話）、For instance（同上，可互換）、such as + 名詞（例如，後面直接接成員）、For one thing（第一點是，後面要有第二個理由）、In either case（兩種情況都一樣）、be easy to learn（容易學）、the German word for ...（德文裡表示……的那個字）。",
+  "explanation": "【怎麼判斷】把第 33 格與第 34 格這兩句一起讀。第 33 格那一句是 {33}, many of these words probably already have similar forms in your own language.（這些詞當中有許多，在你自己的語言裡多半已經有形式相近的說法。）這是概括的說法。第 34 格後面接的是 the German word for computer is Computer, in South American Spanish it is computador, and in Japanese we {35} konpyuta，德文、南美西班牙文、日文三個實例。從概括走到具體例子，填 For example。【這一篇要分層讀，不要看成三個並列的轉折詞】選項裡有三個轉折詞：For one thing（第一點是）、In either case（兩種情況都一樣）、For example（舉例來說）。它們不是並列的三個同類，功能各不相同：一個開出理由，一個說兩種情況結果都一樣，一個帶出例子。本格後面接的正是上面那三個實例，所以三個選項裡只有 For example 接得上。讀到 For one thing 就要準備在後面找到第二個理由，讀到 For example 就只會接例子——判斷看的不是這個詞本身，是它後面那一段在做什麼。【誘答選項】In either case 之所以誘人，是因為它確實在這一篇的選項裡。但語意接不上：In either case 要求前面剛好擺著兩種情況，然後說不論哪一種結果都相同，而本格前一句只提出一個理由，沒有兩種情況可收。For one thing 同理，它開出的是理由，不是例子，而本格後面接的是三個實例。【For example 與 such as 的分工，本篇自己就有對照】這裡的 For example 後面接的是一句完整的話（the German word for computer is Computer），前後用逗號隔開；such as 後面直接接名詞，中間不斷句——第三段的 They are words that often make us smile when we first hear them such as {37} or wysiwyg 就是這種用法。同一篇裡兩種舉例方式各出現一次，擺在一起看最省事。For instance 與 For example 同義，可以互換，指考克漏字 95 年第 14 題考的就是它；學測克漏字 89 年第 27 題則是同一個判斷方式的另一種問法，空格就落在 For example 的位置上。People use emojis for many reasons. For example, a smiling face can soften a message that would otherwise sound cold.（人們使用表情符號的理由很多。舉例來說，一個微笑的圖案可以讓一句原本聽起來冷淡的話變柔和。）For instance, a smiling face can soften a message that would otherwise sound cold.（同一句話換成 For instance，意思完全一樣。）Emojis such as hearts, tears, and thumbs-up show up in almost every chat.（愛心、眼淚、比讚這類表情符號，幾乎每一段對話都看得到。）〔情境取材自 112 學測作文題：表情符號〕【延伸的字詞搭配】For example（舉例來說，後面可接一句話，也可接名詞）、For instance（同上，可互換）、such as + 名詞（例如，後面直接接成員）、For one thing（第一點是，後面要有第二個理由）、In either case（兩種情況都一樣）、be easy to learn（容易學）、the German word for ...（德文裡表示……的那個字）。",
   "accuracyRate": 57,
   "discrimination": 50,
   "contextSpan": "跨句"
@@ -8315,7 +8315,7 @@
   ],
   "gloss": "生動有趣的",
   "collocation": "many of them are so ___；so + 形容詞（如此…）；colorful 非指「色彩繽紛」",
-  "explanation": "後一句說這些字常讓人第一次聽到就發笑，故形容詞要取生動有趣這個意思。易與 traditional 混淆，但傳統剛好相反，這一段講的是新奇好玩。",
+  "explanation": "後一句說這些字常讓人第一次聽到就會心一笑，故形容詞要取生動有趣這個意思。易與 traditional 混淆，但傳統剛好相反，這一段講的是新奇好玩。",
   "accuracyRate": 64,
   "discrimination": 49,
   "contextSpan": "跨句"
@@ -8347,7 +8347,7 @@
   ],
   "gloss": "傳統郵件",
   "collocation": "such as ___ or wysiwyg；snail mail 與 e-mail 對舉（蝸牛郵件）",
-  "explanation": "括號已解釋成傳統郵件而非網路郵件，空格要那個逗趣的名稱。易與 traditional 混淆，但那是形容詞，這裡要能與 wysiwyg 並列的名詞。",
+  "explanation": "括號已解釋成傳統郵件而非網路郵件，空格要那個逗趣的名稱。易與 traditional 混淆，但填進 traditional，such as 後面就少了能和 wysiwyg 並列的那個名稱。",
   "accuracyRate": 77,
   "discrimination": 50,
   "contextSpan": "句內"
@@ -8379,7 +8379,7 @@
   ],
   "gloss": "理解、體會",
   "collocation": "it helps to ___ the world…；it helps to V（有助於做…）",
-  "explanation": "這一句說想抓到電腦用語的感覺，就得先懂產生這些字的那個世界。易與 find 混淆，但那個世界一直都在，要的不是找到它，是讀懂它。",
+  "explanation": "這一句說想抓到電腦用語的感覺，先懂產生這些字的那個世界會有幫助。易與 find 混淆，但那個世界一直都在，要的不是找到它，是讀懂它。",
   "accuracyRate": 46,
   "discrimination": 52,
   "contextSpan": "句內"
@@ -8412,7 +8412,7 @@
   ],
   "gloss": "充滿…的",
   "collocation": "The computer industry is ___ young people；be full of sth（充滿）",
-  "explanation": "`be full of sth` 是充滿某物。這一格的主詞是產業，裡面都是年輕人。易與 familiar with 混淆，但那是人熟悉事物，主詞換成產業就說不通。",
+  "explanation": "`be full of sth` 是充滿某物。這一格的主詞是產業，裡面都是年輕人。易與 familiar with 混淆，但說產業熟悉年輕人，意思不通。",
   "accuracyRate": 65,
   "discrimination": 53,
   "contextSpan": "句內"
@@ -8444,7 +8444,7 @@
   ],
   "gloss": "傳統的",
   "collocation": "very different from ___ business people；be different from（與…不同）",
-  "explanation": "這一格與前面的年輕人形成對比，指穿西裝的舊派商界人士。易與 colorful 混淆，但生動有趣是形容電腦用語，不是形容人。",
+  "explanation": "這一格與前面的年輕人形成對比，指穿西裝的舊派商界人士。易與 colorful 混淆，但 colorful 形容人時指個性鮮明有趣，放在穿西裝的商界人士前面，就和年輕人對比不起來。",
   "accuracyRate": 61,
   "discrimination": 65,
   "contextSpan": "句內"
