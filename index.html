@@ -234,6 +234,7 @@ details.skill[open] > summary::after{content:'－ 收合';}
 @media print{body::after{content:"文意選填\A staresto-create.github.io/passage-completion\A 免費資源，請勿販售";white-space:pre;position:fixed;top:42%;left:0;right:0;text-align:center;transform:rotate(-25deg);font-family:"Noto Sans TC",sans-serif;font-size:26pt;line-height:1.7;color:#c8c8c8;z-index:2147483000;pointer-events:none;}}
 .cc-note{font-size:12px;line-height:1.8;color:#8a8278;margin:12px auto;max-width:60em;padding:0 1em;}.cc-note a{color:inherit;}
 </style>
+<script src="https://staresto-create.github.io/JCEE-vocab-questions/speaker.js"></script>
 </head>
 <body>
 <div class="wrap">
@@ -1007,7 +1008,7 @@ function renderSingle(){
   document.getElementById('progBar').style.width = ((singleIdx+1)/singleQueue.length*100)+'%';
   const p = PASSAGES[it.passageId];
   const letters = Object.keys(it.options).sort();
-  let choicesHtml = letters.map(l => `<div class="choice" data-l="${l}" onclick="answerSingle('${l}')">(${l}) ${it.options[l]}</div>`).join('');
+  let choicesHtml = letters.map(l => `<div class="choice" data-l="${l}" onclick="if(event.target.closest('.spk'))return;answerSingle('${l}')">(${l}) ${it.options[l]}${window.SPK?SPK.html(it.options[l],true):''}</div>`).join('');
   const context = paraTextForBlank(p, it.blankNum);
   document.getElementById('practiceBody').innerHTML = `
     <div class="single-card">
@@ -1219,7 +1220,7 @@ function renderPassageText(p, items){
   if(ot){
     const used = usedLetterMap();
     ot.innerHTML = letters.map(l =>
-      `<div class="opt-cell ${used[l]?'used':''}"><b>(${l})</b> ${p.options[l]}</div>`
+      `<div class="opt-cell ${used[l]?'used':''}"><b>(${l})</b> ${p.options[l]}${window.SPK?SPK.html(p.options[l],true):''}</div>`
     ).join('');
   }
 }
@@ -1239,8 +1240,8 @@ function openSheet(num){
   document.getElementById('sheetTitle').textContent = `第 ${num} 題`;
   document.getElementById('sheetBody').innerHTML = letters.map(l => {
     const u = used[l];
-    return `<div class="sheet-opt ${u?'used':''}" onclick="pickOption('${num}','${l}')">
-      <span class="so-l">(${l})</span><span class="so-w">${p.options[l]}</span>
+    return `<div class="sheet-opt ${u?'used':''}" onclick="if(event.target.closest('.spk'))return;pickOption('${num}','${l}')">
+      <span class="so-l">(${l})</span><span class="so-w">${p.options[l]}${window.SPK?SPK.html(p.options[l],true):''}</span>
       ${u?`<span class="so-used">已用於第${u}題</span>`:''}</div>`;
   }).join('');
   document.getElementById('sheetMask').classList.add('on');
