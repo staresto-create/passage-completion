@@ -1382,7 +1382,7 @@ function applyAdaptHash(){
     window.__selectedPassage = null;
     buildExamGrid(); buildSingleYearGrid(); buildYearList();
   }
-  const box = document.getElementById('examGrid'); if(box) (box.closest('.card') || box).scrollIntoView({block:'start'});
+  const g0 = document.getElementById('examGrid'); const box = g0 ? (g0.previousElementSibling || g0) : null; if(box) box.scrollIntoView({block:'start'});
 }
 init().then(applyAdaptHash);
 </script>
