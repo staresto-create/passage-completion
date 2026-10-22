@@ -25,8 +25,8 @@
   body{
     background:var(--paper);
     background-image:
-      radial-gradient(circle at 100% 0%, rgba(174,54,38,.05), transparent 40%),
-      repeating-linear-gradient(0deg, rgba(34,31,26,0.025) 0px, rgba(34,31,26,0.025) 1px, transparent 1px, transparent 34px);
+      radial-gradient(circle at 100% 0%, var(--glow), transparent 40%),
+      repeating-linear-gradient(0deg, var(--grid-line) 0px, var(--grid-line) 1px, transparent 1px, transparent 34px);
     color:var(--ink); font-family:'Noto Sans TC',sans-serif;
     -webkit-font-smoothing:antialiased; min-height:100vh; padding:28px 16px 56px; line-height:1.75;
   }
@@ -55,12 +55,12 @@
   .hardlist li{border-bottom:1px solid var(--rule);}
   .hardlist li:last-child{border-bottom:none;}
   .hardlist a{display:block; padding:15px 4px; text-decoration:none; color:var(--ink);}
-  .hardlist a:hover{background:#FBF8EE;}
+  .hardlist a:hover{background:var(--tint-warm);}
   .hardlist .rank{display:inline-block; min-width:34px; font-family:'IBM Plex Mono','Noto Sans TC',monospace;
     font-size:13px; color:var(--crimson); font-weight:600;}
   .hardlist .ttl{font-family:'Noto Serif TC',serif; font-weight:700; font-size:15px;}
   .hardlist .pct{float:right; font-family:'IBM Plex Mono','Noto Sans TC',monospace; font-size:13px; font-weight:600;
-    color:var(--crimson); background:#FBF1EE; border:1px solid var(--crimson);
+    color:var(--crimson); background:var(--tint-crimson); border:1px solid var(--crimson);
     border-radius:999px; padding:2px 10px;}
   .hardlist .tie{font-family:'Noto Sans TC',sans-serif; font-size:11px; color:var(--ink-soft);
     border:1px solid var(--rule); border-radius:999px; padding:1px 7px; margin-left:8px;
@@ -69,18 +69,26 @@
   .hardlist .teaser{display:block; margin:6px 0 0 34px; font-size:13px; color:var(--ink-soft);
     line-height:1.75;}
   .srcbox{margin-top:16px; padding:12px 14px; border:1px dashed var(--rule); border-radius:4px;
-    background:#FBF8EE; font-size:12px; color:var(--ink-soft); line-height:1.85;}
+    background:var(--tint-warm); font-size:12px; color:var(--ink-soft); line-height:1.85;}
   .srcbox b{color:var(--ink);}
   .srcbox a{color:var(--crimson);}
   .cta{display:block; text-align:center; padding:14px; border:2px solid var(--sage); border-radius:4px;
-    background:#F2F7F1; color:var(--sage); text-decoration:none; font-weight:700; font-size:15px;}
+    background:var(--tint-sage); color:var(--sage); text-decoration:none; font-weight:700; font-size:15px;}
   .cta:hover{background:var(--sage); color:#fff;}
+
+/* 深色模式（2026-10-22）：淺色數值與原本寫死的顏色相同；只在螢幕、手機或電腦設成深色外觀時生效，列印不受影響。 */
+:root{--foot-note:#8a8278;--tint-crimson:#FBF1EE;--tint-sage:#F2F7F1;--tint-warm:#FBF8EE;--glow:rgba(174,54,38,.05);--grid-line:rgba(34,31,26,0.025);color-scheme:light}
+@media screen and (prefers-color-scheme: dark){
+ :root{--paper:#1B1916;--paper-card:#26231F;--ink:#EDE7D8;--ink-soft:#B8B0A0;--rule:#4C463B;--crimson:#E57B68;--sage:#82C09C;--gold:#DDA94F;--foot-note:#A29A8B;--tint-crimson:#3A2420;--tint-sage:#1F2D25;--tint-warm:#2B2721;--glow:rgba(229,123,104,.07);--grid-line:rgba(255,255,255,0.02);--shadow:0 1px 0 rgba(0,0,0,.4),0 8px 24px rgba(0,0,0,.35);color-scheme:dark}
+ footer a{color:var(--crimson) !important}
+}
+
 </style>
 <style id="anti-copy">
 /* 防盜用措施（2026-10-14）：畫面浮水印、列印浮水印、頁尾授權聲明 */
 @media screen{body::before{content:"";position:fixed;top:0;left:0;right:0;bottom:0;z-index:2147483000;pointer-events:none;background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22460%22%20height%3D%22240%22%3E%3Cg%20transform%3D%22rotate%28-20%20230%20120%29%22%20font-family%3D%22Noto%20Sans%20TC%2Csans-serif%22%20fill%3D%22%23D9A400%22%20fill-opacity%3D%22.2%22%20text-anchor%3D%22middle%22%3E%3Ctext%20x%3D%22230%22%20y%3D%22112%22%20font-size%3D%2220%22%3E%E6%96%87%E6%84%8F%E9%81%B8%E5%A1%AB%3C%2Ftext%3E%3Ctext%20x%3D%22230%22%20y%3D%22140%22%20font-size%3D%2214%22%3Estaresto-create.github.io%2Fpassage-completion%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fsvg%3E");background-repeat:repeat;}}
 @media print{body::after{content:"文意選填\A staresto-create.github.io/passage-completion\A 免費資源，請勿販售";white-space:pre;position:fixed;top:42%;left:0;right:0;text-align:center;transform:rotate(-25deg);font-family:"Noto Sans TC",sans-serif;font-size:26pt;line-height:1.7;color:#c8c8c8;z-index:2147483000;pointer-events:none;}}
-.cc-note{font-size:12px;line-height:1.8;color:#8a8278;margin:12px auto;max-width:60em;padding:0 1em;}.cc-note a{color:inherit;}
+.cc-note{font-size:12px;line-height:1.8;color:var(--foot-note);margin:12px auto;max-width:60em;padding:0 1em;}.cc-note a{color:inherit;}
 </style>
 </head>
 <body>
