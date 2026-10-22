@@ -236,6 +236,17 @@ details.skill[open] > summary::after{content:'－ 收合';}
  :root{--yellow:#463C14;--blue:#233F5B;--grad:#2E4A2A}
 }
 
+.unitbar{margin:12px 0 18px; font-size:14px; line-height:1.5;}
+.unitbar .ubrow{display:flex; flex-wrap:wrap; align-items:center; gap:6px;}
+.unitbar .ubrow + .ubrow{margin-top:8px;}
+.unitbar .ublab{font-size:12px; font-weight:700; letter-spacing:.06em; border:1px solid currentColor; border-radius:12px; padding:2px 10px; opacity:.75; white-space:nowrap;}
+.unitbar a, .unitbar .cur{display:inline-block; border:1px solid rgba(128,128,128,.45); border-radius:14px; padding:3px 11px; white-space:nowrap; font-weight:700; text-decoration:none;}
+.unitbar a{color:var(--crimson);}
+.unitbar a:hover{text-decoration:underline; text-underline-offset:3px;}
+.unitbar .cur{background:rgba(128,128,128,.2);}
+@media print{.unitbar, .toBar{display:none!important;}}
+.toBar{position:fixed; right:12px; bottom:14px; z-index:20; font-size:12.5px; font-weight:700; line-height:1.3; color:var(--crimson); border:1px solid currentColor; border-radius:999px; padding:5px 11px; text-decoration:none; box-shadow:0 2px 8px rgba(0,0,0,.18);}
+.toBar[hidden]{display:none;}
 </style>
 <style id="anti-copy">
 /* 防盜用措施（2026-10-14）：畫面浮水印、列印浮水印、頁尾授權聲明 */
@@ -253,6 +264,7 @@ details.skill[open] > summary::after{content:'－ 收合';}
   </header>
 
   <div id="homeView">
+    <nav class="unitbar" id="unitbar" aria-label="本頁單元"><div class="ubrow"><span class="ublab">同一題庫</span><a href="hard/">歷屆最難的 19 題</a><a href="map/">題目地圖</a></div><div class="ubrow"><span class="ublab">本頁單元</span><a href="#u-start">開始練習</a><a href="#u-hist">我的學習歷程</a><a href="#u-strat">作答前必看的戰術</a><a href="#u-range">選擇練習範圍</a><a href="#adapt">仿真練習</a></div></nav>
     <div class="card">
       <div class="home-lead">開始練習前</div>
       <p class="home-desc">本題庫收錄學測 90–115 年、指考 91–110 年的文意選填歷屆試題，含補考與參考試卷，共 560 題、56 篇。學測、指考兩部分都附逐格解析、七類分類與線索範圍標註，並收錄部分年度大考中心公布的官方逐題答對率；兩部分也都有段落主旨句標記與巨觀結構分析。另有本題庫自己改編的<b>改編練習</b> 20 篇、200 題：文章改編自歷屆學測、指考閱讀測驗，照現行學測文意選填的版面出題（10 選 10），參考答案與解析由本題庫撰寫，沒有官方答對率。</p>
@@ -267,7 +279,7 @@ details.skill[open] > summary::after{content:'－ 收合';}
         </div>
       </details>
 
-      <div class="sec-title">我的學習歷程</div>
+      <div class="sec-title" id="u-hist">我的學習歷程</div>
       <div class="stats-box" id="statsBox"></div>
       <div class="stats-actions">
         <button class="link-btn" onclick="startWrongBook()">📕 只練錯題本(<span id="wrongCount">0</span>題)</button>
@@ -275,7 +287,7 @@ details.skill[open] > summary::after{content:'－ 收合';}
         <button class="link-btn" onclick="clearHistory()">清除學習歷程統計</button>
         <button class="link-btn" onclick="clearWrongBook()">清除錯題本</button>
       </div>
-      <button class="big-btn" style="margin-bottom:16px;" onclick="quickStart()">立即開始 · 隨機一篇</button>
+      <button class="big-btn" id="u-start" style="margin-bottom:16px;" onclick="quickStart()">立即開始 · 隨機一篇</button>
       <label style="display:flex; align-items:center; gap:8px; margin:4px 0 16px; font-size:12.5px; color:var(--ink-soft); cursor:pointer; font-family:'IBM Plex Mono','Noto Sans TC',monospace;">
         <input type="checkbox" id="testModeToggle" style="width:15px; height:15px; cursor:pointer;">
         測試模式（本次作答不計入學習歷程與錯題本）
@@ -291,7 +303,7 @@ details.skill[open] > summary::after{content:'－ 收合';}
         <span class="he-sub">學測、指考每題一格，顏色越紅答對率越低，可以依難易、題型篩選。點任何一格，會直接開啟該題。</span>
       </a>
 
-      <span class="strategy-toggle" onclick="toggleStrategy()">📖 展開／收合：作答前必看的五大戰術與隱形連結</span>
+      <span class="strategy-toggle" id="u-strat" onclick="toggleStrategy()">📖 展開／收合：作答前必看的五大戰術與隱形連結</span>
       <div class="strategy-box" id="strategyBox" style="display:none;">
         <h3>⚠️ 黃金鐵則：找不到「前後連結」，這個選項就該重新考慮！</h3>
         <p>填入空格的詞，多半與前後文有詞性、介系詞或脈絡上的隱形連結。如果只是憑感覺「順順的」卻找不到具體線索，先回頭做兩件事：確認這一格需要什麼詞性，再看空格前後那個字有沒有固定的搭檔。兩邊都對不上，就換一個選項再試。</p>
@@ -455,7 +467,7 @@ details.skill[open] > summary::after{content:'－ 收合';}
         <span class="strategy-toggle" style="margin-top:12px;" onclick="var m=document.getElementById('ceecGoalBody'); m.style.display = m.style.display==='none' ? 'block' : 'none';">📋 展開／收合：看官方測驗目標</span>
       </div>
 
-      <div class="mode-grid">
+      <div class="mode-grid" id="u-range">
         <div class="mode-card active" id="modeSingleCard" onclick="setMode('single')">
           <div class="m-name">單題模式</div>
           <div class="m-desc">一次專注一格空格，依「單題模式七類分類」篩選練習，作答後立即看答案與解析。</div>
@@ -1381,5 +1393,43 @@ init().then(applyAdaptHash);
   <div class="sheet-tip">📌 每個選項最多用一次，標示「已用於第 N 題」的選項通常可先排除；但仍可點選，方便你自行判斷。<b>選項數多於空格數的年度，最後會有選項用不到</b>，別把「只剩一個」當成答案。</div>
   <div class="sheet-body" id="sheetBody"></div>
 </div>
-</body>
+<a class="toBar" id="toBar" href="#unitbar" hidden>↑ 單元列</a>
+<script>
+/* 單元列：連到收合區塊的錨點會先展開；「↑ 單元列」在單元列捲出畫面後才出現 */
+(function(){
+  var bar=document.getElementById('unitbar'), to=document.getElementById('toBar');
+  if(bar) bar.addEventListener('click',function(e){
+    var a=e.target.closest&&e.target.closest('a[href^="#"]'); if(!a) return;
+    var t=document.getElementById(a.getAttribute('href').slice(1)); if(!t) return;
+    var d=t.tagName==='DETAILS'?t:t.closest('details'); if(d) d.open=true;
+  });
+  if(to){
+    to.addEventListener('click',function(e){e.preventDefault(); if(bar) bar.scrollIntoView({block:'center'});});
+    function bg(){
+      var c=getComputedStyle(document.body).backgroundColor;
+      if(!c||c==='rgba(0, 0, 0, 0)'||c==='transparent') c=getComputedStyle(document.documentElement).backgroundColor;
+      if(!c||c==='rgba(0, 0, 0, 0)'||c==='transparent') c='#fff';
+      to.style.background=c;
+    }
+    if('IntersectionObserver' in window && bar){
+      new IntersectionObserver(function(es){
+        var r=es[0], hide=r.isIntersecting||r.boundingClientRect.top>=0;
+        if(!hide) bg();
+        to.hidden=hide;
+      }).observe(bar);
+    }
+  }
+})();
+</script>
+<script>
+(function(){var bar=document.getElementById('unitbar'); if(!bar) return;
+  var a=bar.querySelector('a[href="#adapt"]'); if(a) a.addEventListener('click',function(e){
+    e.preventDefault(); history.replaceState(null,'','#adapt');
+    try{applyAdaptHash();}catch(err){location.reload();}
+  });
+  var s=bar.querySelector('a[href="#u-strat"]'); if(s) s.addEventListener('click',function(){
+    var b=document.getElementById('strategyBox'); if(b && b.style.display==='none') toggleStrategy();
+  });
+})();
+</script></body>
 </html>
