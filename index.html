@@ -261,7 +261,7 @@ details.skill[open] > summary::after{content:'－ 收合';}
 @media print{
   body{background:#fff !important;}
   .wrap{max-width:none !important; padding:0 !important;}
-  .noPrint, .sheet-tip, .sc-back, .scr-strip, .scr-card, .backLink, .prog, .bar, .hint-toggle, .hint-note, .legend, .spk, .grade-btn, .next-row, #gradeResult, .toBar, #historyView, .report-btn, footer > div:first-child{display:none !important;}
+  .noPrint, .catTagBar, .sec-title span, #fbBox, .infoLine, .flagBox, .metaLine, .sheet-tip, .sc-back, .scr-strip, .scr-card, .backLink, .prog, .bar, .hint-toggle, .hint-note, .legend, .spk, .grade-btn, .next-row, #gradeResult, .toBar, #historyView, .report-btn, footer > div:first-child{display:none !important;}
   #practiceBody > div[style*="text-align:center"]{display:none !important;}
   header.top{padding-bottom:6px !important; margin-bottom:10px !important;}
   .card{border:0 !important; box-shadow:none !important; padding:0 !important; margin:0 !important; background:none !important;}
@@ -278,6 +278,10 @@ details.skill[open] > summary::after{content:'－ 收合';}
   .single-sentence{font-size:12pt !important; line-height:1.9 !important;}
   .choice-grid{display:grid !important; grid-template-columns:repeat(2,1fr) !important; gap:2px 14px !important; margin:10px 0 !important;}
   .choice{border:0 !important; background:none !important; padding:2px 0 !important; font-size:11.5pt !important; opacity:1 !important; color:#000; text-align:left !important;}
+  .choice.correct, .choice.wrong{color:#000 !important; font-weight:400 !important; text-decoration:none !important;}
+  /* 試考用：任何會透露答案的東西都不印（題型標籤、選項是否剛好用完、篇名、答題回饋）。已批改的全文畫面含答案與解析，整頁不印，改印一行說明 */
+  #practiceBody.isGraded > *{display:none !important;}
+  #practiceBody.isGraded::before{content:"這一頁是批改後的畫面，含答案與解析，所以不列印。要印空白試卷，請按「下一篇」或重新整理頁面後再印。"; display:block; font-size:12pt; line-height:1.8; padding:20mm 0;}
   @page{margin:12mm 14mm 14mm;}
 }
 </style>
@@ -1110,9 +1114,10 @@ function renderSingle(){
   const letters = Object.keys(it.options).sort();
   let choicesHtml = letters.map(l => `<div class="choice" data-l="${l}" onclick="if(event.target.closest('.spk'))return;answerSingle('${l}')">(${l}) ${it.options[l]}${window.SPK?SPK.html(it.options[l],true):''}</div>`).join('');
   const context = paraTextForBlank(p, it.blankNum);
+  document.getElementById('practiceBody').classList.remove('isGraded');
   document.getElementById('practiceBody').innerHTML = `
     <div class="single-card">
-      <div class="p-label">${examYear(p)} · ${dispTitle(p)}${p.titleStatus ? '（暫定標題）' : ''} · 第${it.blankNum}題　
+      <div class="p-label">${examYear(p)}<span> · ${dispTitle(p)}${p.titleStatus ? '（暫定標題）' : ''}</span> · 第${it.blankNum}題　
         <span style="color:var(--crimson); text-decoration:underline; cursor:pointer;" onclick="viewFullFromSingle('${it.passageId}')">📖 查看全文</span>
         <a class="report-btn" style="margin-left:10px;" target="_blank" rel="noopener"
            href="https://docs.google.com/forms/d/e/1FAIpQLSd6P1s7HqjvOmGqOzNDWcBQQ3F539SifSNiAfXvi6NqD2YP-Q/viewform?usp=pp_url&entry.1257494378=${encodeURIComponent(it.id)}">🐛 回報這題</a>
@@ -1235,6 +1240,7 @@ function renderFull(pid){
     <button class="ghost-btn" id="fullNextBtn" style="display:none;" onclick="nextFullPassage()">下一篇 →</button>
   </div>`;
 
+  document.getElementById('practiceBody').classList.remove('isGraded');
   document.getElementById('practiceBody').innerHTML = html;
   renderPassageText(p, items);
 }
@@ -1421,6 +1427,7 @@ function gradeFullPassage(){
   </div>`;
   }
   fullGraded = true;
+  document.getElementById('practiceBody').classList.add('isGraded');
   document.getElementById('gradeBtn').style.display = 'none';
   document.getElementById('gradeResult').innerHTML = box;
   renderPassageText(PASSAGES[window.__lastPid], window.__lastItems);
