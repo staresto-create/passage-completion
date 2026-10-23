@@ -287,6 +287,16 @@ details.skill[open] > summary::after{content:'－ 收合';}
 }
 </style>
 <script src="https://staresto-create.github.io/JCEE-vocab-questions/resume.js" defer></script>
+<style id="print-entry">
+/* 「列印成考卷」按鈕（2026-10-23）：只在螢幕上出現，列印時隱藏；已批改的畫面含答案，不列印，按鈕也不顯示 */
+.printBar{display:flex;flex-wrap:wrap;align-items:center;gap:6px 12px;margin:10px 0 14px;font-family:'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif;}
+.printBtn{font:inherit;font-weight:700;font-size:15px;line-height:1.4;padding:9px 18px;border:2px solid currentColor;border-radius:6px;background:transparent;color:var(--ad-vcrimson-fg,var(--link-crimson,#9C2C1E));cursor:pointer;}
+.printBtn:hover{background:rgba(174,54,38,.1);}
+.printSub{font-size:13px;line-height:1.6;opacity:.85;}
+.printMobile{flex:0 0 100%;font-size:12.5px;line-height:1.7;opacity:.8;}
+#practiceView:has(#practiceBody.isGraded) .printBar{display:none;}
+@media print{.printBar{display:none !important;}}
+</style>
 </head>
 <body>
 <div class="wrap">
@@ -298,7 +308,7 @@ details.skill[open] > summary::after{content:'－ 收合';}
 
   <div id="homeView">
     <nav class="unitbar" id="unitbar" aria-label="本頁單元"><div class="ubrow"><span class="ublab">同一題庫</span><a href="hard/">歷屆最難的 19 題</a><a href="map/">題目地圖</a></div><div class="ubrow"><span class="ublab">本頁單元</span><a href="#u-start">開始練習</a><a href="#u-hist">我的學習歷程</a><a href="#u-strat">作答前必看的戰術</a><a href="#u-range">選擇練習範圍</a><a href="#adapt">仿真練習</a></div><div class="ubnote">支援深色模式（夜間模式），會自動配合手機或電腦的外觀設定。</div></nav>
-    <p class="home-desc print-note" style="margin:0 0 14px"><b>想用紙本練習？</b>進到題目畫面後，直接用瀏覽器的「列印」（或存成 PDF），印出來就是考卷：空格留白，不含答案、解析和提示。</p>
+    <p class="home-desc print-note" style="margin:0 0 14px"><b>想用紙本練習？</b>進到題目畫面後，按最上方的「🖨️ 列印成考卷」，印出來就是考卷：空格留白，不含答案、解析和提示。手機和電腦都能印（也可以存成 PDF）。</p>
     <div class="card">
       <div class="home-lead">開始練習前</div>
       <p class="home-desc">本題庫收錄學測 90–115 年、指考 91–110 年的文意選填歷屆試題，含補考與參考試卷，共 560 題、56 篇。學測、指考兩部分都附逐格解析、七類分類與線索範圍標註，並收錄部分年度大考中心公布的官方逐題答對率；兩部分也都有段落主旨句標記與巨觀結構分析。另有本題庫自己改編的<b>改編練習</b> 20 篇、200 題：文章改編自歷屆學測、指考閱讀測驗，照現行學測文意選填的版面出題（10 選 10），參考答案與解析由本題庫撰寫，沒有官方答對率。</p>
@@ -552,6 +562,7 @@ details.skill[open] > summary::after{content:'－ 收合';}
 
   <div id="practiceView">
     <span class="backLink" onclick="goHome()">← 回選單</span>
+    <div class="printBar noPrint"><button type="button" class="printBtn" onclick="window.print()">🖨️ 列印成考卷</button><span class="printSub">空白試卷，不含答案、解析和提示</span><div class="printMobile">手機上按鈕沒有反應時，也可以：iPhone 點「分享」（沒看到就先點「⋯」）→往下滑點「列印」；<span style="white-space:nowrap">Android（Chrome）</span>點「⋮」→「分享」→「列印」。</div></div>
     <div class="prog" id="progText"></div>
     <div class="bar"><div class="bar-fill" id="progBar" style="width:0%;"></div></div>
     <div id="practiceBody"></div>
