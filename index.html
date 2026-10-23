@@ -256,6 +256,7 @@ details.skill[open] > summary::after{content:'－ 收合';}
 .cc-note{font-size:12px;line-height:1.8;color:var(--foot-note);margin:12px auto;max-width:60em;padding:0 1em;}.cc-note a{color:inherit;}
 </style>
 <script src="https://staresto-create.github.io/JCEE-vocab-questions/speaker.js"></script>
+<script src="https://staresto-create.github.io/JCEE-vocab-questions/resume.js" defer></script>
 </head>
 <body>
 <div class="wrap">
@@ -569,8 +570,8 @@ function shuffle(arr){ const a=[...arr]; for(let i=a.length-1;i>0;i--){const j=M
    將使用者瀏覽器裡既有的作答紀錄與錯題清單一併改寫，避免舊紀錄對不上題目。 */
 const MIGRATION_KEY = 'gsat_pc_migrated_y109';
 function migrateY109(){
-  if(localStorage.getItem(MIGRATION_KEY)) return;
   try{
+  if(localStorage.getItem(MIGRATION_KEY)) return;
     const hist = loadHistory();
     let changed = false;
     hist.forEach(r => {
@@ -650,6 +651,49 @@ function startWrongBook(){
   renderSingle();
 }
 
+/* 接續上次（2026-10-23）：記下這一題或這一篇，供各站首頁與總站的「接續上次」使用。
+   只存在這台裝置的這個瀏覽器；共用模組讀不到時，下面每一處都安靜略過，不影響作答。 */
+function scr(f){
+  try{
+    if(window.SCResume) f(window.SCResume);
+    else window.addEventListener('load', function(){ try{ if(window.SCResume) f(window.SCResume); }catch(e){} });
+  }catch(e){}
+}
+function scrMountStrip(){ scr(function(R){ R.mountStrip(document.getElementById('homeView'), 'passage'); }); }
+function scrSaveSingle(it){
+  scr(function(R){ const p = PASSAGES[it.passageId]; if(p) R.save('passage', examYear(p) + ' 第 ' + it.blankNum + ' 題', '#q-' + it.id); });
+}
+function scrSaveFull(pid){
+  scr(function(R){ const p = PASSAGES[pid]; if(p) R.save('passage', examYear(p) + ' 整篇', '#full-' + pid); });
+}
+/* #q- 單題連結（與字彙站同形）：落在這一題所屬那一篇之中，依題號排序，按「下一題」順著同一篇往下。只讀 hash、不寫 hash。 */
+function startFromQHash(){
+  const m = decodeURIComponent(location.hash || '').match(/^#q-(.+)$/);
+  if(!m) return false;
+  const target = ITEMS.find(it => it.id === m[1]);
+  if(!target) return false;
+  singleQueue = ITEMS.filter(it => it.passageId === target.passageId)
+                     .sort((a,b) => Number(a.blankNum) - Number(b.blankNum));
+  singleIdx = Math.max(0, singleQueue.findIndex(it => it.id === target.id));
+  setMode('single');
+  document.getElementById('homeView').style.display='none';
+  document.getElementById('practiceView').style.display='block';
+  renderSingle();
+  return true;
+}
+/* #full- 整篇連結：落在這一篇的全文模式。只讀 hash、不寫 hash。 */
+function startFromFullHash(){
+  const m = decodeURIComponent(location.hash || '').match(/^#full-(.+)$/);
+  if(!m || !PASSAGES[m[1]]) return false;
+  setMode('full');
+  window.__selectedPassage = m[1];
+  revealedBlanks = new Set(); window.__blankChoices = {}; fullGraded = false;
+  document.getElementById('homeView').style.display='none';
+  document.getElementById('practiceView').style.display='block';
+  renderFull(m[1]);
+  return true;
+}
+
 // 難題總表（hard/）的深連結入口：只讀 hash、不寫 hash，站內操作不受影響。
 // 隊列取同站答對率 25% 以下者，由低到高排序，並定位到被點的那一題，
 // 讀者按「下一題」即順著難題往下走。形狀比照 quickStart() 與 startWrongBook()。
@@ -715,7 +759,8 @@ async function init(){
   buildSpanGrid();
   buildYearList();
   renderStatsBox();
-  startHard();
+  scrMountStrip();
+  startHard() || startFromQHash() || startFromFullHash();
 }
 function toggleStrategy(){
   const el = document.getElementById('strategyBox');
@@ -949,6 +994,7 @@ function goHome(){
   document.getElementById('homeView').style.display='block';
   document.getElementById('practiceView').style.display='none';
   document.getElementById('historyView').style.display='none';
+  scrMountStrip();
 }
 function showHistoryDetail(){
   const hist = loadHistory();
@@ -1031,6 +1077,7 @@ function paraTextForBlank(p, blankNum){
 }
 function renderSingle(){
   const it = singleQueue[singleIdx];
+  scrSaveSingle(it);
   document.getElementById('progText').innerHTML = `<span>單題模式</span><span>${singleIdx+1} / ${singleQueue.length}</span>`;
   document.getElementById('progBar').style.width = ((singleIdx+1)/singleQueue.length*100)+'%';
   const p = PASSAGES[it.passageId];
@@ -1132,6 +1179,7 @@ function nextSingle(){
 }
 function renderFull(pid){
   const p = PASSAGES[pid];
+  scrSaveFull(pid);
   const items = ITEMS.filter(it=>it.passageId===pid).sort((a,b)=>a.blankNum-b.blankNum);
   if(window.__lastPid !== pid){ fullGraded = false; window.__blankChoices = {}; }
   document.getElementById('progText').innerHTML = `<span>全文模式</span><span>${examYear(p)} · ${dispTitle(p)}</span>`;
