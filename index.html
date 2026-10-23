@@ -256,6 +256,31 @@ details.skill[open] > summary::after{content:'－ 收合';}
 .cc-note{font-size:12px;line-height:1.8;color:var(--foot-note);margin:12px auto;max-width:60em;padding:0 1em;}.cc-note a{color:inherit;}
 </style>
 <script src="https://staresto-create.github.io/JCEE-vocab-questions/speaker.js"></script>
+<style id="print-paper">
+/* 紙本列印版面（2026-10-23）：只影響列印，畫面不變。印出來像考卷：隱藏按鈕與提示開關，不印主旨句與轉折詞標記（維持考場樣子），選項排整齊，浮水印改成頁尾一行小字，保留授權聲明 */
+@media print{
+  body{background:#fff !important;}
+  .wrap{max-width:none !important; padding:0 !important;}
+  .noPrint, .sheet-tip, .sc-back, .scr-strip, .scr-card, .backLink, .prog, .bar, .hint-toggle, .hint-note, .legend, .spk, .grade-btn, .next-row, #gradeResult, .toBar, #historyView, .report-btn, footer > div:first-child{display:none !important;}
+  #practiceBody > div[style*="text-align:center"]{display:none !important;}
+  header.top{padding-bottom:6px !important; margin-bottom:10px !important;}
+  .card{border:0 !important; box-shadow:none !important; padding:0 !important; margin:0 !important; background:none !important;}
+  .passage-text{font-size:11pt !important; line-height:1.75 !important;}
+  .passage-text .topic, .passage-text .thesis, .passage-text .gradient, .passage-text .trans{background:none !important; font-weight:inherit !important; color:inherit !important;}
+  .opts-table{display:grid !important; grid-template-columns:repeat(5,1fr) !important; gap:2px 10px !important; margin:8px 0 12px !important; break-inside:avoid;}
+  .opt-cell{border:0 !important; background:none !important; text-align:left !important; padding:1px 0 !important; font-size:11pt !important; opacity:1 !important; text-decoration:none !important; color:#000;}
+  .opt-cell b{color:#000 !important;}
+  footer{font-size:8.5pt !important; line-height:1.5 !important; margin-top:8px !important; padding-top:6px !important; text-align:left !important;}
+  .cc-note{font-size:8.5pt !important; line-height:1.5 !important; margin:4px 0 0 !important; padding:0 !important; max-width:none !important;}
+  body::after{content:"文意選填・staresto-create.github.io/passage-completion・免費資源，請勿販售" !important; position:fixed !important; top:auto !important; bottom:0 !important; left:0 !important; right:0 !important; transform:none !important; font-size:8pt !important; line-height:1.4 !important; color:#777 !important; text-align:center !important;}
+  .navRow, .p-label span, .p-label a{display:none !important;}
+  .single-card{border:0 !important; box-shadow:none !important; padding:0 !important; margin:0 !important; background:none !important;}
+  .single-sentence{font-size:12pt !important; line-height:1.9 !important;}
+  .choice-grid{display:grid !important; grid-template-columns:repeat(2,1fr) !important; gap:2px 14px !important; margin:10px 0 !important;}
+  .choice{border:0 !important; background:none !important; padding:2px 0 !important; font-size:11.5pt !important; opacity:1 !important; color:#000; text-align:left !important;}
+  @page{margin:12mm 14mm 14mm;}
+}
+</style>
 <script src="https://staresto-create.github.io/JCEE-vocab-questions/resume.js" defer></script>
 </head>
 <body>
@@ -542,7 +567,7 @@ details.skill[open] > summary::after{content:'－ 收合';}
   </div>
 
   
-  <div style="background:var(--paper-card); border:1px solid var(--rule); border-radius:4px; padding:13px 15px; margin:22px 0 6px; font-size:12.5px; line-height:1.8; color:var(--ink-soft);">
+  <div class="noPrint" style="background:var(--paper-card); border:1px solid var(--rule); border-radius:4px; padding:13px 15px; margin:22px 0 6px; font-size:12.5px; line-height:1.8; color:var(--ink-soft);">
     <b style="font-family:'Noto Serif TC',serif; font-size:13.5px; color:var(--ink);">關於本題庫的資料</b><br>
     答對率（P 值）與鑑別度（D 值）取自大考中心公布的官方統計，部分年度未公布，這些題目不會顯示數據。參考試卷與試辦考試屬非正式施測，篇名旁會標明。七類分類與線索範圍是老師的教學判斷、不是官方分類，見仁見智之處在所難免。解析由老師與 AI 共同撰寫、老師逐則看過。<br><b>改編練習</b>是本題庫自己改編的題目：文章改編自歷屆學測、指考閱讀測驗，照現行學測文意選填的版面出題，參考答案與解析都由本題庫撰寫。它們不是大考中心的試題，沒有官方答對率，也不算進 560 題、56 篇。<br>數字出處：大考中心統計資料索引頁<a href="https://www.ceec.edu.tw/xmdoc?xsmsid=0J018604485538810196" target="_blank" rel="noopener">學測各年度統計圖表↗</a>、<a href="https://www.ceec.edu.tw/xmdoc?xsmsid=0J018611000723433352" target="_blank" rel="noopener">指考／分科測驗各年度統計圖表↗</a>，逐題的「答對率及鑑別度表」就在各年度的統計圖表裡。名詞說明見大考中心<a href="https://www.ceec.edu.tw/xcepaper/cont?xsmsid=0J066588036013658199&amp;qunit=0J066614378153514816&amp;sid=0K042343829406896328" target="_blank" rel="noopener">《一起來認識學測與指考的試題答對率》↗</a>、<a href="https://www.ceec.edu.tw/xcepaper/cont?xsmsid=0J066588036013658199&amp;qunit=0J066614378153514816&amp;sid=0K073687789378174143" target="_blank" rel="noopener">《一起來認識學測與指考的試題鑑別度》↗</a>，收錄於「選才電子報 → 數字真相」專欄。<br>
     <b>錯誤仍然可能存在</b>，發現任何問題歡迎回報，我會逐筆核對更正。本題庫完全免費、不用註冊、沒有廣告，歡迎自由分享。
@@ -1194,7 +1219,7 @@ function renderFull(pid){
   <div class="hint-note">開著的時候，文章裡會用顏色標出<b>段落主旨句</b>與<b>轉折詞</b>。讀長文章抓不到重點時，建議開著；想模擬真正考場的樣子，就關掉。隨時可以切換，不影響你已經選好的答案。</div>
   <div class="legend"><span class="lg-both">兩者都是</span><span class="lg-thesis">全文中心思想</span><span class="lg-topic">段落主旨句</span><span class="lg-trans">轉折詞</span></div>` : ''}
   ${pendingNote(p)}
-  <div style="font-size:12px; color:var(--ink-soft); margin:-6px 0 14px; line-height:1.7; ${claimsThesis(p) ? '' : 'display:none;'}">📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線；整篇文章的核心思想，也不一定剛好對應某一句話。本題庫標示的是「最能呼應」的代表句，只供參考，不代表唯一答案。</div>
+  <div class="noPrint" style="font-size:12px; color:var(--ink-soft); margin:-6px 0 14px; line-height:1.7; ${claimsThesis(p) ? '' : 'display:none;'}">📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線；整篇文章的核心思想，也不一定剛好對應某一句話。本題庫標示的是「最能呼應」的代表句，只供參考，不代表唯一答案。</div>
   <div class="sec-title">選項<span style="font-weight:400; text-transform:none; letter-spacing:0; font-size:11px; margin-left:6px;">（本篇 ${p.optionCount} 個選項填 ${p.blankCount} 格，每個最多用一次；${p.eliminationValid ? '<b>選項剛好用完</b>' : '會有 ' + (p.optionCount - p.blankCount) + ' 個<b>選項用不到</b>'}；點文章中的空格就能作答）</span></div>
   <div class="opts-table" id="optsTable"></div>
   <div class="passage-text ${hintsOn?'':'hints-off'}" id="passageText"></div>
