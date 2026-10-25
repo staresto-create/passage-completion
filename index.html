@@ -243,6 +243,17 @@ details.skill[open] > summary::after{content:'－ 收合';}
  :root{--yellow:#463C14;--blue:#233F5B;--grad:#2E4A2A}
 }
 
+/* 線索標色（2026-10-25）：作答後在題目那一段標出判斷依據。句內＝橘紅底加實線，跨句＝紫底加虛線；配色與克漏字兩站相同，不靠顏色也分得出來。 */
+:root{--cl-a-bg:#FAD9CC; --cl-a-line:#AE3626; --cl-b-bg:#E2D8F3; --cl-b-line:#6A4FA3;}
+mark.cl-a{background:var(--cl-a-bg); color:inherit; border-bottom:2px solid var(--cl-a-line); padding:0 1px; border-radius:2px;}
+mark.cl-b{background:var(--cl-b-bg); color:inherit; border-bottom:2px dashed var(--cl-b-line); padding:0 1px; border-radius:2px;}
+.clueKey{font-family:'Noto Sans TC',sans-serif; font-size:13px; line-height:1.9; color:var(--ink-soft); margin:-6px 0 14px;}
+.clueKey mark{font-weight:700; margin-right:4px;}
+.clueX{font-family:'Times New Roman',Times,'Liberation Serif','Noto Serif','Noto Sans TC',serif; font-size:15.5px; line-height:1.85; margin:0 0 14px; padding:6px 10px; border-left:3px solid var(--cl-b-line); background:var(--tint-warm);}
+.clueXlab{font-family:'Noto Sans TC',sans-serif; font-size:12px; font-weight:700; color:var(--ink-soft); margin-right:8px;}
+@media screen and (prefers-color-scheme: dark){:root{--cl-a-bg:#5A2D25; --cl-a-line:#E57B68; --cl-b-bg:#3F3560; --cl-b-line:#B7A1EA;}}
+@media print{.clueKey,.clueX{display:none!important;}}
+
 .unitbar{margin:12px 0 18px; font-size:14px; line-height:1.5;}
 .unitbar .ubrow{display:flex; flex-wrap:wrap; align-items:center; gap:6px;}
 .unitbar .ubrow + .ubrow{margin-top:8px;}
@@ -253,8 +264,21 @@ details.skill[open] > summary::after{content:'－ 收合';}
 .unitbar .cur{background:rgba(128,128,128,.2);}
 .unitbar .ubnote{margin-top:8px; font-size:12px; line-height:1.6; opacity:.8; text-wrap:balance;}
 @media print{.unitbar, .toBar{display:none!important;}}
+/* 開始練習按鈕固定在畫面下緣（2026-10-25）：選年度、選場次時不必滑到最底；下方留空間給右下角「↑ 單元列」。 */
+#startBtn,.startRow{position:sticky; bottom:60px; z-index:25;}
+.startRow #startBtn{position:static;}
+#startBtn{box-shadow:0 6px 18px rgba(0,0,0,.28);}
+@media print{#startBtn,.startRow{position:static;}}
 .toBar{position:fixed; right:12px; bottom:14px; z-index:20; font-size:12.5px; font-weight:700; line-height:1.3; color:var(--crimson); border:1px solid currentColor; border-radius:999px; padding:5px 11px; text-decoration:none; box-shadow:0 2px 8px rgba(0,0,0,.18);}
 .toBar[hidden]{display:none;}
+/* fold-cue 2026-10-25：全站可展開的區塊統一提示。標題右側一律是「＋ 展開」，展開後變「－ 收合」；舊的箭頭與各式提示字樣一併取代。 */
+details:not(.sh) > summary{list-style:none; cursor:pointer; position:relative; padding-right:92px !important;}
+details:not(.sh) > summary::-webkit-details-marker{display:none;}
+details:not(.sh) > summary::marker{content:"";}
+details:not(.sh) > summary *::before, details:not(.sh) > summary *::after, details:not(.sh) > summary::before{content:none !important;}
+details:not(.sh) > summary::after{content:"＋ 展開" !important; display:block !important; position:absolute !important; right:10px !important; top:50% !important; transform:translateY(-50%) !important; margin:0 !important; padding:2px 10px !important; border:1px solid currentColor !important; border-radius:999px !important; background:transparent !important; color:inherit !important; opacity:.85; font:400 12.5px/1.5 "Noto Sans TC",system-ui,sans-serif !important; letter-spacing:0 !important; text-transform:none !important; white-space:nowrap !important; text-decoration:none !important; width:auto !important; height:auto !important;}
+details[open]:not(.sh) > summary::after{content:"－ 收合" !important;}
+@media print{details:not(.sh) > summary::after{display:none !important;}}
 </style>
 <style id="anti-copy">
 /* 防盜用措施（2026-10-14）：畫面浮水印、列印浮水印、頁尾授權聲明 */
@@ -352,7 +376,7 @@ function kkOpt(w){ w = String(w == null ? '' : w).trim(); return (window.KK && w
       <p class="home-desc">本題庫收錄學測 90–115 年、指考 91–110 年的文意選填歷屆試題，含補考與參考試卷，共 560 題、56 篇。學測、指考兩部分都附逐格解析、七類分類與線索範圍標註，並收錄部分年度大考中心公布的官方逐題答對率；兩部分也都有段落主旨句標記與巨觀結構分析。另有本題庫自己改編的<b>改編練習</b> 20 篇、200 題：文章改編自歷屆學測、指考閱讀測驗，照現行學測文意選填的版面出題（10 選 10），參考答案與解析由本題庫撰寫，沒有官方答對率。</p>
 
       <details class="skill sk-box">
-        <summary><div class="sk-title">選項會不會剛好用完，看年度<span style="font-weight:400; font-size:11.5px; color:var(--ink-soft); margin-left:6px;">（點此展開／收合）</span></div></summary>
+        <summary><div class="sk-title">選項會不會剛好用完，看年度</div></summary>
         <div style="margin-top:2px;">
           選項數與空格數的關係逐年不同。有些年度選項數剛好等於空格數，填完一個不剩；有些年度多給了誘答選項，會有幾個從頭到尾用不到。<br><br>
           學測文意選填一律 10 選 10。指考 99 年以前 10 選 10，<b>100 年起改成 12 選 10</b>。<br><br>
@@ -411,7 +435,7 @@ function kkOpt(w){ w = String(w == null ? '' : w).trim(); return (window.KK && w
       </div>
 
       <details class="skill sk-box">
-        <summary><div class="sk-title">🔍 讀句子的第一步：先找「什麼」和「怎麼了」<span style="font-weight:400; font-size:11.5px; color:var(--ink-soft); margin-left:6px;">（點此展開／收合）</span></div></summary>
+        <summary><div class="sk-title">🔍 讀句子的第一步：先找「什麼」和「怎麼了」</div></summary>
         <p>主詞不一定是人，可以是一個動作、一種物質、一個現象。找到主詞和動詞就抓到<b>骨幹</b>了，其餘的介系詞片語、分詞片語、關係子句、同位語，都是掛在骨幹上的修飾。文意選填的文章句子特別長，先把骨幹抓出來，空格該填什麼詞性往往就清楚了。</p>
         <div id="skelMore" style="display:none;">
         <div class="sk-ex">
@@ -594,7 +618,7 @@ function kkOpt(w){ w = String(w == null ? '' : w).trim(); return (window.KK && w
           <b>關於標註依據。</b>學測、指考 56 篇都已完成標註。其中學測 110 年試辦考試的逐題試題解析由大考中心免費公布於試辦考試專區；107 年與 108 年則見於大考中心出版的《107學年度學科能力測驗試題與解析-英文考科》與《108學年度學科能力測驗試題與解析-英文考科》。這三篇的官方逐題說明可供對照，其餘各篇是依同一套認定標準判定：只要空格所在句以外的句子對「選出答案」有貢獻，就算跨句；線索需跨段落或依賴全文，才算篇章；句中雖出現指涉詞、但答案實際由本句字詞搭配決定的，仍算句內。
         </div>
 
-      <div class="row" style="margin-top:16px;">
+      <div class="row startRow" style="margin-top:16px;">
         <button class="big-btn" style="margin-top:0;" id="startBtn" onclick="startPractice()">開始練習</button>
       </div>
     </div>
@@ -1223,6 +1247,62 @@ function paraTextForBlank(p, blankNum){
   }
   return '';
 }
+// 線索標色：s 是該段文字（空格寫成 [編號]）；marks 是 [起, 迄, class]。標色字串都是原文逐字子字串，不跨空格。
+function clueRender(s, marks, blankNum){
+  const plain = t => escapeHtml(t).replace(/\[(\d+)\]/g, (m, n) => String(n) === String(blankNum)
+    ? ` <span style="color:var(--crimson); font-weight:700; text-decoration:underline;">___(${n})___</span> `
+    : ` ___(${n})___ `);
+  marks.sort((x, y) => x[0] - y[0]);
+  let html = '', pos = 0;
+  marks.forEach(([a, b, cls]) => {
+    if(a < pos) return;
+    html += plain(s.slice(pos, a)) + `<mark class="${cls}">${escapeHtml(s.slice(a, b))}</mark>`;
+    pos = b;
+  });
+  return html + plain(s.slice(pos));
+}
+function clueSentences(s){
+  // 切句規則與資料檔產生時相同：句末標點後接空白，下一個字是大寫字母、引號、左括號或空格編號
+  const out = []; let start = 0, m; const re = /([.!?\u201d"])\s+(?=[A-Z\u201c"(\[])/g;
+  while((m = re.exec(s))){ out.push([start, m.index + 1]); start = m.index + m[0].length; }
+  out.push([start, s.length]);
+  return out;
+}
+function clueAddWords(s, range, words, cls, marks){
+  const seg = s.slice(range[0], range[1]);
+  (words || []).forEach(w => { const i = seg.indexOf(w); if(i >= 0) marks.push([range[0] + i, range[0] + i + w.length, cls]); });
+}
+function showClues(it){
+  const c = it.clue; if(!c) return;
+  const box = document.querySelector('.single-sentence'); if(!box) return;
+  const p = PASSAGES[it.passageId]; let s = '';
+  for(const para of p.paras){
+    if(!para.segs.some(seg => seg[1]==='blank' && String(seg[0])===String(it.blankNum))) continue;
+    para.segs.forEach(seg => { s += seg[1]==='blank' ? '['+seg[0]+']' : seg[0]; });
+    break;
+  }
+  if(!s) return;
+  const sents = clueSentences(s), marks = [], missing = [];
+  const tag = '['+it.blankNum+']';
+  const target = sents.find(r => s.slice(r[0], r[1]).indexOf(tag) >= 0);
+  if(target) clueAddWords(s, target, c.inner, 'cl-a', marks);
+  (c.cross || []).forEach(x => {
+    const r = sents.find(q => s.slice(q[0], q[1]).trim() === x.sentence.trim());
+    if(r) clueAddWords(s, r, x.words, 'cl-b', marks); else missing.push(x);
+  });
+  box.innerHTML = clueRender(s, marks, it.blankNum);
+  const hasIn = (c.inner || []).length > 0, hasX = (c.cross || []).length > 0;
+  let legend = '';
+  if(hasIn) legend += '<mark class="cl-a">句內線索</mark>空格所在那一句裡的字詞';
+  if(hasIn && hasX) legend += '　';
+  if(hasX) legend += '<mark class="cl-b">跨句線索</mark>前後句裡的字詞' + (missing.length ? '，已把那一句列在下面' : '');
+  let extra = '';
+  missing.forEach(x => {
+    const mk = []; clueAddWords(x.sentence, [0, x.sentence.length], x.words, 'cl-b', mk);
+    extra += `<p class="clueX"><span class="clueXlab">前後句</span>${clueRender(x.sentence, mk, -1)}</p>`;
+  });
+  box.insertAdjacentHTML('afterend', (legend ? `<div class="clueKey">${legend}</div>` : '') + extra);
+}
 function renderSingle(){
   const it = singleQueue[singleIdx];
   scrSaveSingle(it);
@@ -1320,6 +1400,7 @@ function answerSingle(letter){
       ${pd}
       ${grpBoxHtml(it, true)}
     </div>`;
+  showClues(it);
 }
 function nextSingle(){
   singleIdx++;

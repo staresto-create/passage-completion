@@ -144,7 +144,8 @@
   "accuracyRate": 42,
   "discrimination": 65,
   "contextSpan": "跨句",
-  "contextNote": "線索在前一句 `the {34} of dimples from parents to children takes only one gene`（酒窩從父母到孩子只需要一個基因）——前一句講的是從父母到孩子，所以本句主詞換成 children（孩子）時，再填 transfer（傳遞）就說不通了。父母沒有酒窩基因，孩子就是「表現不出」這個特徵，填 exhibit（展現、表現出）。"
+  "contextNote": "線索在前一句 `the {34} of dimples from parents to children takes only one gene`（酒窩從父母到孩子只需要一個基因）——前一句講的是從父母到孩子，所以本句主詞換成 children（孩子）時，再填 transfer（傳遞）就說不通了。父母沒有酒窩基因，孩子就是「表現不出」這個特徵，填 exhibit（展現、表現出）。",
+  "clue": {"inner": ["will not", "their children"], "cross": [{"sentence": "In fact, some researchers believe that the [34]of dimples from parents to children takes only one gene.", "words": ["from parents to children"]}]}
  },
  {
   "id": "Vy109_36",
@@ -378,7 +379,8 @@
   "explanation": "此句型為「have + 受詞 + 形容詞」表示「使某物處於某狀態」，很容易誤判詞性、選成動詞。",
   "accuracyRate": 45,
   "discrimination": 79,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["had the list"], "cross": []}
  },
  {
   "id": "Vy108_34",
@@ -436,7 +438,8 @@
   "accuracyRate": 62,
   "discrimination": 79,
   "contextSpan": "跨句",
-  "contextNote": "線索在本段開頭 `Mom seldom asked Dad to go shopping...she made sure that he brought a shopping list`（媽媽很少叫爸爸去買菜⋯⋯她會確認他帶了購物清單）——整段從頭都在講媽媽交代、爸爸去買，所以 Mom's 後面接的是媽媽「交代的事項」requests，不是 purchases——採買的人是爸爸。"
+  "contextNote": "線索在本段開頭 `Mom seldom asked Dad to go shopping...she made sure that he brought a shopping list`（媽媽很少叫爸爸去買菜⋯⋯她會確認他帶了購物清單）——整段從頭都在講媽媽交代、爸爸去買，所以 Mom's 後面接的是媽媽「交代的事項」requests，不是 purchases——採買的人是爸爸。",
+  "clue": {"inner": ["different from Mom's"], "cross": [{"sentence": "Of course, the [34] that he made were based mainly on his memory of the list.", "words": ["memory of the list"]}]}
  },
  {
   "id": "Vy108_36",
@@ -720,7 +723,8 @@
   "explanation": "此格用 treats 同義替代前面反覆出現的 fortune cookie，是典型的同義改寫，同一句後面的 fortune cookies 就是線索，你要理解代換邏輯而非死記字義。",
   "accuracyRate": 44,
   "discrimination": 75,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["as fortune cookies"], "cross": []}
  },
  {
   "id": "Vy107_36",
@@ -890,7 +894,8 @@
   "accuracyRate": 43,
   "discrimination": 60,
   "contextSpan": "跨句",
-  "contextNote": "線索在前一句 `There is evidence of onions being used for culinary and medicinal purposes all over the ancient world.`（有證據顯示古代世界各地都把洋蔥用於烹飪和醫療）——前面說「到處都在用」，本句用 Nonetheless（儘管如此）轉折，要接的是「但沒有哪個文化像古埃及人這樣」，所以填 admired（崇敬、欣賞）。"
+  "contextNote": "線索在前一句 `There is evidence of onions being used for culinary and medicinal purposes all over the ancient world.`（有證據顯示古代世界各地都把洋蔥用於烹飪和醫療）——前面說「到處都在用」，本句用 Nonetheless（儘管如此）轉折，要接的是「但沒有哪個文化像古埃及人這樣」，所以填 admired（崇敬、欣賞）。",
+  "clue": {"inner": ["Nonetheless", "no culture", "quite as much as"], "cross": [{"sentence": "There is evidence of onions being used for culinary and medicinal purposes all over the ancient world.", "words": ["all over the ancient world"]}]}
  },
  {
   "id": "Vy106_32",
@@ -1037,7 +1042,8 @@
   "explanation": "空格前是名詞、後面接介系詞片語，你可能直覺想填動詞——但這一句已經有主要動詞 are depicted 了。【怎麼判斷】這裡要的是減化關係子句：paintings (which were) discovered inside pyramids…，把 which were 省略，只留過去分詞。(F) decorating 代進去讀不通：後面緊接的是 inside pyramids and tombs，看不出壁畫裝飾的是什麼。【文內驗證】同段的 Mummies have also been found with onions 用的 found 與 discovered 是同義字，方向一致。",
   "accuracyRate": 38,
   "discrimination": 66,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["are depicted", "many paintings", "inside pyramids and tombs"], "cross": []}
  },
  {
   "id": "Vy106_37",
@@ -1352,7 +1358,8 @@
   "accuracyRate": 61,
   "discrimination": 81,
   "contextSpan": "跨句",
-  "contextNote": "線索在前一句 `several young trees started growing`（有幾棵小樹開始長了）——本句的 `the result`（那個結果）指的就是這件事，樹終於長出來是好消息，所以填 encouraged（受到鼓舞的）。"
+  "contextNote": "線索在前一句 `several young trees started growing`（有幾棵小樹開始長了）——本句的 `the result`（那個結果）指的就是這件事，樹終於長出來是好消息，所以填 encouraged（受到鼓舞的）。",
+  "clue": {"inner": ["by the result"], "cross": [{"sentence": "However, in the third year, several young trees started growing.", "words": ["several young trees started growing"]}]}
  },
  {
   "id": "Vy105_38",
@@ -1639,7 +1646,8 @@
   "accuracyRate": 53,
   "discrimination": 73,
   "contextSpan": "跨句",
-  "contextNote": "線索在本段後面整段二戰的敘述——後面在講二戰期間挪威人拿迴紋針表達團結，這是歷史事件，所以填 historical（歷史上的）。"
+  "contextNote": "線索在本段後面整段二戰的敘述——後面在講二戰期間挪威人拿迴紋針表達團結，這是歷史事件，所以填 historical（歷史上的）。",
+  "clue": {"inner": ["role"], "cross": [{"sentence": "During World War II, Norway was occupied by the Nazis.", "words": ["World War II", "occupied by the Nazis"]}]}
  },
  {
   "id": "Vy104_38",
@@ -1984,7 +1992,8 @@
   "explanation": "unique 與後面的 distinctive 是近義並列，你要理解兩者語意接近、共同修飾 children。",
   "accuracyRate": 67,
   "discrimination": 77,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["and distinctive"], "cross": []}
  },
  {
   "id": "Vy103_40",
@@ -2180,7 +2189,8 @@
   "explanation": "此格為關係子句的動詞，which 指前面的 rivers and streams，「把毒素帶進海洋」，要先認出關係代名詞的先行詞；動詞用 carry 不加 s，也和這個複數先行詞一致。",
   "accuracyRate": 65,
   "discrimination": 80,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["rivers and streams", "which", "the poisons into the ocean"], "cross": []}
  },
  {
   "id": "Vy102_37",
@@ -2602,7 +2612,8 @@
   "accuracyRate": 79,
   "discrimination": 55,
   "contextSpan": "跨句",
-  "contextNote": "線索在前一句 `Popcorn is one of the snacks that rarely fail to make watching a movie more fun.`（爆米花是那種幾乎總能讓看電影更有趣的零食）——前一句說它幾乎總能讓看電影更有趣，可見它很受歡迎，所以填 popular（受歡迎的）。"
+  "contextNote": "線索在前一句 `Popcorn is one of the snacks that rarely fail to make watching a movie more fun.`（爆米花是那種幾乎總能讓看電影更有趣的零食）——前一句說它幾乎總能讓看電影更有趣，可見它很受歡迎，所以填 popular（受歡迎的）。",
+  "clue": {"inner": ["snack"], "cross": [{"sentence": "Popcorn is one of the snacks that rarely fail to make watching a movie more fun.", "words": ["rarely fail to make", "more fun"]}]}
  },
  {
   "id": "Vy100_32",
@@ -2828,7 +2839,8 @@
   "explanation": "remove...from 是常考字詞搭配，「把…從…移開」，此處為步驟指示的祈使句。",
   "accuracyRate": 67,
   "discrimination": 74,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["the pot from the stove"], "cross": []}
  },
  {
   "id": "Vy100_40",
@@ -3180,7 +3192,8 @@
   "explanation": "same 在此用來同指「這個大家熟悉的版本」，是回指同一句前半 this popular version 的改寫手法，而非單純字面「相同」。",
   "accuracyRate": 48,
   "discrimination": 74,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["this popular version"], "cross": []}
  },
  {
   "id": "Vy98_32",
@@ -3321,7 +3334,8 @@
   "explanation": "competitors 在此同指「烏龜與兔子」這兩位參賽者，是跨句改寫的手法，你要理解代換邏輯。",
   "accuracyRate": 59,
   "discrimination": 70,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["Both"], "cross": []}
  },
  {
   "id": "Vy98_37",
@@ -3749,7 +3763,8 @@
   "accuracyRate": 58,
   "discrimination": 78,
   "contextSpan": "跨句",
-  "contextNote": "線索在前一句 `boys playing cricket and making a lot of noise outside his house, at night`（男孩們晚上在他家外面打板球、製造很大的噪音）——前一句已經點出吵鬧，本句說「有一晚他們特別……」，所以填 noisy（吵鬧的）。"
+  "contextNote": "線索在前一句 `boys playing cricket and making a lot of noise outside his house, at night`（男孩們晚上在他家外面打板球、製造很大的噪音）——前一句已經點出吵鬧，本句說「有一晚他們特別……」，所以填 noisy（吵鬧的）。",
+  "clue": {"inner": ["particularly"], "cross": [{"sentence": "An old man who lived in a small side street of Mumbai had to put up with the nuisance of boys playing cricket and making a lot of noise outside his house, at night.", "words": ["making a lot of noise"]}]}
  },
  {
   "id": "Vy96_32",
@@ -4002,7 +4017,8 @@
   "explanation": "此格需邏輯推論：男孩用 merely 強調金額少得可憐，語氣中帶著憤怒與諷刺，是全文情緒轉折的高點。",
   "accuracyRate": 50,
   "discrimination": 81,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["five rupees"], "cross": []}
  },
  {
   "id": "Vy95_31",
@@ -4259,7 +4275,8 @@
   "explanation": "ruin good health 是常見字詞搭配，「破壞健康」。",
   "accuracyRate": 41,
   "discrimination": 68,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["good health"], "cross": []}
  },
  {
   "id": "Vy95_40",
@@ -4664,7 +4681,8 @@
   "explanation": "keep an eye on 是常考固定片語，「密切注意、監視」。",
   "accuracyRate": 47,
   "discrimination": 77,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["what happens on Earth"], "cross": []}
  },
  {
   "id": "Vy93_34",
@@ -4927,7 +4945,8 @@
   "explanation": "have difficulty (in) V-ing 是常考固定句型，「在…方面有困難」。括號表示 in 可省，本句選擇保留；in 沒省時後面接動名詞，不能接原形或 to V。",
   "accuracyRate": 40,
   "discrimination": 53,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["difficulty they have in"], "cross": []}
  },
  {
   "id": "Vy92_33",
@@ -5169,7 +5188,8 @@
   "explanation": "as much… as 的比較句型，前一個 as 是副詞（修飾 much），後一個 as 是連接詞。【真正的難點在後半】as does tragedy or disaster——這裡的 does 是動詞替代（verbal substitution），代替前面的 generates much stress，並且倒裝。Halliday & Hasan (1976) 舉的典型例子就是 I have coffee every morning and he does too.，其中 does 替代 have coffee every morning；跟簡答 Do you like it?—Yes, I do. 是完全同一個機制，只是搬到書面語裡。還原本句就是：Exciting events generate as much stress as tragedy or disaster generates (much stress)。沒有把簡答的 do 和這裡的 does 連起來，就會覺得 as does tragedy 多了一個字。【同類一起教】So did I.／As did many others.／Neither do I.／Do in Rome as the Romans do.【常考】as much/many… as、not so much A as B（與其說 A 不如說 B）。",
   "accuracyRate": 46,
   "discrimination": 48,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["much", "as does tragedy"], "cross": []}
  },
  {
   "id": "Vy92b_31",
@@ -5714,7 +5734,8 @@
   "explanation": "dutifully 是 duty（責任、值班）加上 -ful 與 -ly 變來的副詞，duty 本身眼熟，整個字卻不常見，掃過選項時容易漏掉。【位置就告訴你詞性】and 之後、動詞 carried 之前，這個位置放的通常是副詞。選項裡的副詞有 finally 與 dutifully 兩個。finally 是「最後、終於」，講的是時間先後；本句句首的 From then on 已經把時間交代完了，這裡要的是說明「怎麼搬」的方式副詞。「看到動詞前面空一格，先想副詞」，是這類題目最快的切入點。【文內驗證】本句是全篇最後一句：前半 From then on, the donkey learned the lesson（從此以後驢子學到教訓），後半 without ruining it（不再毀掉鹽）——前後都指向行為徹底轉變，中間需要一個正面、表示盡責的副詞。",
   "accuracyRate": 31,
   "discrimination": 61,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["learned the lesson", "carried", "without ruining it"], "cross": []}
  },
  {
   "id": "Vy91b_31",
@@ -6601,7 +6622,8 @@
   "gloss": "甦醒",
   "collocation": "they cannot ___ until 8:00 a.m.；awaken 不及物動詞（甦醒）",
   "explanation": "awaken 是多義字，此處作不及物動詞「甦醒」，你要與 wake sb up(喚醒某人)的及物用法區辨。awaken 語氣比 wake up 更正式，cannot awaken until 8:00 a.m. 相當於 cannot wake up until 8:00 a.m.，同時複習 not...until(直到…才…)的經典句型。",
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["cannot", "until 8:00 a.m."], "cross": []}
  },
  {
   "id": "Vy99r_34",
@@ -7220,7 +7242,8 @@
   "explanation": "pass on 是常考字詞搭配，「傳遞」，此處為被動語態，你要辨認 be passed on 的結構。",
   "accuracyRate": 44,
   "discrimination": 55,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["couldn't be", "through a regular phone line"], "cross": []}
  },
  {
   "id": "Vy113_27",
@@ -7879,7 +7902,8 @@
   "explanation": "此格需邏輯推論：呼應前一句「A dark space」的語意，需要「光線極少」的形容詞。",
   "accuracyRate": 58,
   "discrimination": 79,
-  "contextSpan": "跨句"
+  "contextSpan": "跨句",
+  "clue": {"inner": ["light"], "cross": [{"sentence": "A dark space with little distraction is ideal for napping.", "words": ["dark space"]}]}
  },
  {
   "id": "Vy115_30",
