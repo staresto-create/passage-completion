@@ -319,6 +319,7 @@ function kkOpt(w){ w = String(w == null ? '' : w).trim(); return (window.KK && w
   .choice{border:0 !important; background:none !important; padding:2px 0 !important; font-size:11.5pt !important; opacity:1 !important; color:#000; text-align:left !important;}
   .choice.correct, .choice.wrong{color:#000 !important; font-weight:400 !important; text-decoration:none !important;}
   /* 試考用：任何會透露答案的東西都不印（題型標籤、選項是否剛好用完、篇名、答題回饋）。已批改的全文畫面含答案與解析，整頁不印，改印一行說明 */
+  mark.cl-a, mark.cl-b{background:none !important; border-bottom:0 !important; padding:0 !important;}
   #practiceBody.isGraded > *{display:none !important;}
   #practiceBody.isGraded::before{content:"這一頁是批改後的畫面，含答案與解析，所以不列印。要印空白試卷，請按「下一篇」或重新整理頁面後再印。"; display:block; font-size:12pt; line-height:1.8; padding:20mm 0;}
 }
@@ -1267,7 +1268,7 @@ function clueSentences(s){
   const out = []; let start = 0, m; const re = /([.!?\u201d"])\s+(?=[A-Z\u201c"(\[])/g;
   while((m = re.exec(s))){
     // 縮寫（U.S.、Mr.、Dr. 等）後面的句點不算句末
-    if(m[1] === '.' && /(\b[A-Za-z]\.[A-Za-z]\.|\b(?:Mr|Mrs|Ms|Dr|St|Jr|Sr)\.)$/.test(s.slice(0, m.index + 1))) continue;
+    if(m[1] === '.' && /(\b(?!(?:B\.C|A\.D|a\.m|p\.m)\.$)[A-Za-z]\.[A-Za-z]\.|\b(?:Mr|Mrs|Ms|Dr|St|Jr|Sr|Mt|Prof|Gov|Gen|Capt|Lt|Col|Sen|Rev|Ft|Fig|vs)\.|(?:^|[\s(“\"‘—])[A-HJ-Z]\.)$/.test(s.slice(0, m.index + 1))) continue;
     out.push([start, m.index + 1]); start = m.index + m[0].length;
   }
   out.push([start, s.length]);
