@@ -25,7 +25,8 @@
   "explanation": "易與 (I) natural 混淆——natural 形容「天生的」而非「罕見程度」，句意需要的是「稀有度」，而不是「天生還是人工」。",
   "accuracyRate": 46,
   "discrimination": 79,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["a single dimple", "relatively"], "cross": []}
  },
  {
   "id": "Vy109_32",
@@ -53,7 +54,8 @@
   "explanation": "易誤選 (J) presence，但 presence(存在)無法呼應「文化偏好、視為美的象徵」的語意；此處需具體指「吸引力」這個抽象特質。",
   "accuracyRate": 53,
   "discrimination": 78,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["a sign of", "preference for dimples"], "cross": []}
  },
  {
   "id": "Vy109_33",
@@ -84,7 +86,8 @@
   "explanation": "前文從「有些文化偏好酒窩」一路講到酒窩好看，順著這個印象往下讀，attractiveness 很容易被順手選走。但句首的 Though（雖然常與美貌連在一起）加上主要子句的 actually（事實上），已經把語氣翻轉了，答案必須是負面的字。【順帶看一個省略】Though often associated with beauty 的完整寫法是 Though they are often associated with beauty，從屬子句的主詞與 be 動詞一起省略，跟 While (he was) walking home 同一條規則。【文內驗證】第二段第一句 Not all dimples are formed by a genetic defect——defect 正是 flaw 的同義改寫。",
   "accuracyRate": 36,
   "discrimination": 59,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["Though", "actually", "a genetic"], "cross": []}
  },
  {
   "id": "Vy109_34",
@@ -114,7 +117,8 @@
   "explanation": "答對率三成。transfer 常見的是動詞「轉乘、轉學、轉帳」，這一格要的卻是它的名詞用法「轉移、傳遞」。【句構線索】the ___ of A from B to C，夾在 the 與 of 中間的一定是名詞。transfer 是名詞動詞同形字，名詞重音在前（TRANS-fer），動詞多半在後（trans-FER），不過美式英文的動詞也常把重音放在前面；這種字很適合拿來提醒你「同形不同詞性」。【常見誤選】exhibit——它也是名動同形，但語意是「展品、展示」，接不上「從父母傳給小孩」。【延伸的字詞搭配】the transfer of power／knowledge／data（權力／知識／資料的轉移）、transfer from A to B（從 A 轉移到 B）、a bank transfer（銀行轉帳）。",
   "accuracyRate": 30,
   "discrimination": 59,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["the", "of dimples from parents to children"], "cross": []}
  },
  {
   "id": "Vy109_35",
@@ -179,7 +183,8 @@
    "label": "延伸閱讀：presence 除了在場，也是「存在」",
    "url": "https://dictionary.cambridge.org/us/dictionary/english-chinese-traditional/presence",
    "hint": "重點：presence 是 present 的名詞形，可以指人在場，也可以指東西存在、出現，如 The presence of pollen in the atmosphere causes hay fever in some people.（空氣中有花粉，會讓一些人得花粉熱）。本題 due to the presence of excessive fat 就是「因為臉上有多餘的脂肪」，下一句也說脂肪一消失，這種酒窩也就不見，可見要的是脂肪「存在」；至於 flaw（缺陷），同一句前半剛說這類酒窩不是基因缺陷造成的，放進來就前後矛盾。"
-  }
+  },
+  "clue": {"inner": ["due to the", "of excessive fat"], "cross": []}
  },
  {
   "id": "Vy109_37",
@@ -207,7 +212,8 @@
   "explanation": "此為典型「先埋線索、後面才解釋」寫法——後句 lose their baby fat 才點出這格在講嬰兒肥，需前後文互相對照才能鎖定答案。",
   "accuracyRate": 66,
   "discrimination": 71,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["dimples on their", "cheeks"], "cross": []}
  },
  {
   "id": "Vy109_38",
@@ -236,7 +242,8 @@
   "explanation": "很容易忽略 with time(隨時間)這個副詞片語，其實正是「fade 淡化」的關鍵搭配詞提示。",
   "accuracyRate": 58,
   "discrimination": 81,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["may", "with time"], "cross": []}
  },
  {
   "id": "Vy109_39",
@@ -264,7 +271,8 @@
   "explanation": "易與 rare 搞混——born without ___ dimples 談的是「天生有沒有」，不是「稀不稀有」；填 rare 會變成「天生沒有罕見的酒窩」，和後面要用化妝或手術做出酒窩的語意對不上。",
   "accuracyRate": 52,
   "discrimination": 72,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["born without", "create them"], "cross": []}
  },
  {
   "id": "Vy109_40",
@@ -294,7 +302,8 @@
   "explanation": "range 常見的用法是名詞——a wide range of products、the price range；這裡它是動詞，而且要與後面的 from…to… 合起來看。【介系詞把答案框住】空格後緊接 from…to…，前面必須是能與之搭配的動詞；主詞是複數、全文現在式，所以填現在式的 range（複數主詞不加 -s，寫出來和原形一樣）。【順帶看一個替代】句中 a simple step 與 a drastic one 的 one 是用來代替 step，避免重複，跟國中的 I don't like this one; I want that one. 同理。",
   "accuracyRate": 39,
   "discrimination": 69,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["These methods", "from a simple step", "to a drastic one"], "cross": []}
  },
  {
   "id": "Vy108_31",
@@ -322,7 +331,8 @@
   "explanation": "很容易誤選其他選項，需注意 ruin 為及物動詞，直接接受詞 celebration，且與後面 for 子句(玫瑰花總是遲到一個月)構成因果解釋。",
   "accuracyRate": 59,
   "discrimination": 86,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["their anniversary celebration", "always came one month late"], "cross": []}
  },
  {
   "id": "Vy108_32",
@@ -351,7 +361,8 @@
   "explanation": "insist 後面接 on，是常考字詞搭配，很容易漏接介系詞或誤用其他動詞。",
   "accuracyRate": 46,
   "discrimination": 78,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["whenever Dad", "on going"], "cross": []}
  },
  {
   "id": "Vy108_33",
@@ -409,7 +420,8 @@
   "accuracyRate": 55,
   "discrimination": 80,
   "contextSpan": "跨句",
-  "contextNote": "線索在下一句 `the items were usually different from Mom's {35}`（那些東西通常和媽媽清單上的不一樣）——下一句把 items（他買回來的東西）拿來和媽媽的清單對比，可見本句空格指的是「他採買的物品」purchases，不是 requests（要求）。"
+  "contextNote": "線索在下一句 `the items were usually different from Mom's {35}`（那些東西通常和媽媽清單上的不一樣）——下一句把 items（他買回來的東西）拿來和媽媽的清單對比，可見本句空格指的是「他採買的物品」purchases，不是 requests（要求）。",
+  "clue": {"inner": ["the", "that he made"], "cross": []}
  },
  {
   "id": "Vy108_35",
@@ -468,7 +480,8 @@
   "explanation": "be trusted with 是 trust sb with sth（把某事物託付給某人）的被動用法，意思是「被託付某事」，很容易忽略 with 這個介系詞。",
   "accuracyRate": 51,
   "discrimination": 76,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["he was", "with many secrets"], "cross": []}
  },
  {
   "id": "Vy108_37",
@@ -496,7 +509,8 @@
   "explanation": "privilege 常考字詞搭配 the privilege of doing（有幸能做…）；這一格承接前一句的 advantages，把健忘帶來的「好處」具體說成能聽到大家的私事。",
   "accuracyRate": 53,
   "discrimination": 85,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["had the", "of hearing"], "cross": []}
  },
  {
   "id": "Vy108_38",
@@ -524,7 +538,8 @@
   "explanation": "此格靠邏輯推論：冒號後方直接說明「爸爸不會記得」，呼應「原因很明顯」的語意，沒有明顯搭配詞可循。",
   "accuracyRate": 60,
   "discrimination": 84,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["The reason was", "Dad would not remember"], "cross": []}
  },
  {
   "id": "Vy108_39",
@@ -552,7 +567,8 @@
   "explanation": "revealed 為被動語態動詞，很容易與形容詞選項混淆；此格也呼應前文「secrets」，屬於秘密有沒有「被揭露」的邏輯延續。",
   "accuracyRate": 58,
   "discrimination": 82,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["the secrets", "would never be"], "cross": []}
  },
  {
   "id": "Vy108_40",
@@ -580,7 +596,8 @@
   "explanation": "care little about 是常見說法，意思是「不太在乎」，little 在這裡是副詞修飾 care（不是形容詞「小的」），很容易誤解它的詞性或誤選其他選項。",
   "accuracyRate": 67,
   "discrimination": 72,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["cared", "about who"], "cross": []}
  },
  {
   "id": "Vy107_31",
@@ -609,7 +626,8 @@
   "accuracyRate": 40,
   "discrimination": 63,
   "contextSpan": "跨句",
-  "contextNote": "線索在下一句 `None of them, however, has been proven to be entirely true.`（然而沒有一個說法被證實為完全屬實）——既然沒有一個被證實，這些說法就是彼此矛盾、互相競爭的，所以填 competing（互相競爭的）。只看本句，several secret stories（幾個祕密的故事）文法語意都通，你選不出來。"
+  "contextNote": "線索在下一句 `None of them, however, has been proven to be entirely true.`（然而沒有一個說法被證實為完全屬實）——既然沒有一個被證實，這些說法就是彼此矛盾、互相競爭的，所以填 competing（互相競爭的）。只看本句，several secret stories（幾個祕密的故事）文法語意都通，你選不出來。",
+  "clue": {"inner": ["several", "stories"], "cross": [{"sentence": "None of them, however, has been proven to be entirely true.", "words": ["None of them, however"]}]}
  },
  {
   "id": "Vy107_32",
@@ -639,7 +657,8 @@
   "explanation": "traces 此處是動詞第三人稱單數，「追溯至」，容易與名詞 traces(痕跡)混淆，是常見詞性陷阱。",
   "accuracyRate": 59,
   "discrimination": 85,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["the cookie's origin back to"], "cross": []}
  },
  {
   "id": "Vy107_33",
@@ -667,7 +686,8 @@
   "explanation": "secret 在此為形容詞修飾 plans(計畫)，語意直接對應「藏在月餅裡的起義計畫」。",
   "accuracyRate": 56,
   "discrimination": 71,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["plans for a revolution"], "cross": []}
  },
  {
   "id": "Vy107_34",
@@ -695,7 +715,8 @@
   "explanation": "turn out to be 是常考句型，表示「結果證明是…」，後面接形容詞或名詞當補語；這一格講的是起義的結果，填形容詞 successful。",
   "accuracyRate": 61,
   "discrimination": 75,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["turned out to be", "eventually led to"], "cross": []}
  },
  {
   "id": "Vy107_35",
@@ -752,7 +773,8 @@
   "explanation": "account 在此指「一種說法／版本」，與第一段的 stories 同義替代，屬於全文詞彙變化避免重複的手法。",
   "accuracyRate": 45,
   "discrimination": 67,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["Another", "claims that"], "cross": []}
  },
  {
   "id": "Vy107_37",
@@ -781,7 +803,8 @@
   "explanation": "contained 是及物動詞過去式，直接接受詞 a strip of paper，很容易與其他選項的詞性混淆。",
   "accuracyRate": 61,
   "discrimination": 83,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["Each cookie", "a strip of paper"], "cross": []}
  },
  {
   "id": "Vy107_38",
@@ -809,7 +832,8 @@
   "explanation": "appeared 後面直接接表時間、地點的介系詞片語(in either 1907 or 1914 in San Francisco)，不需受詞，是常考不及物動詞搭配。",
   "accuracyRate": 65,
   "discrimination": 77,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["first", "in either 1907 or 1914"], "cross": []}
  },
  {
   "id": "Vy107_39",
@@ -837,7 +861,8 @@
   "explanation": "taste 是多義字，此處指「喜好、口味」（美國人喜歡吃什麼）而不是具體的「味覺感受」，你可能只知道常見義而誤解句意。",
   "accuracyRate": 59,
   "discrimination": 75,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["to appeal to American"], "cross": []}
  },
  {
   "id": "Vy107_40",
@@ -865,7 +890,8 @@
   "explanation": "replace A with B 是經典字詞搭配，你要認出「用 B 取代 A」的邏輯方向，避免顛倒 A、B。",
   "accuracyRate": 62,
   "discrimination": 81,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["the thank-you notes with"], "cross": []}
  },
  {
   "id": "Vy106_31",
@@ -923,7 +949,8 @@
   "explanation": "spiritual meaning 是常見字詞搭配，你要掌握「精神／宗教意涵」這個抽象概念。",
   "accuracyRate": 47,
   "discrimination": 75,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["significant", "meaning"], "cross": []}
  },
  {
   "id": "Vy106_33",
@@ -954,7 +981,8 @@
   "accuracyRate": 33,
   "discrimination": 58,
   "contextSpan": "句內",
-  "contextNote": "線索在前一句 `it held significant {32} meaning`（洋蔥帶有重要的意義）——前一句剛說洋蔥不只是食物或藥材，還帶有重要的意義，本句順著說洋蔥被視為永生的象徵，所以填 symbols（象徵物）。"
+  "contextNote": "線索在前一句 `it held significant {32} meaning`（洋蔥帶有重要的意義）——前一句剛說洋蔥不只是食物或藥材，還帶有重要的意義，本句順著說洋蔥被視為永生的象徵，所以填 symbols（象徵物）。",
+  "clue": {"inner": ["were considered to be", "of eternal life"], "cross": []}
  },
  {
   "id": "Vy106_34",
@@ -985,7 +1013,8 @@
   "accuracyRate": 34,
   "discrimination": 55,
   "contextSpan": "句內",
-  "contextNote": "線索在前一句的 `eternal life`（永生）——前一句講永生，本句的 `the eternity of existence`（存在的永恆）是同一個概念換個說法；洋蔥一圈包一圈的結構正是把這個概念體現出來，所以填 reflected（體現、反映）。"
+  "contextNote": "線索在前一句的 `eternal life`（永生）——前一句講永生，本句的 `the eternity of existence`（存在的永恆）是同一個概念換個說法；洋蔥一圈包一圈的結構正是把這個概念體現出來，所以填 reflected（體現、反映）。",
+  "clue": {"inner": ["structure of an onion", "the eternity of existence"], "cross": []}
  },
  {
   "id": "Vy106_35",
@@ -1013,7 +1042,8 @@
   "explanation": "healing power 是字詞搭配，「治癒力、療效」，你要分辨 healing 當形容詞用的用法。",
   "accuracyRate": 44,
   "discrimination": 76,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["power of the vegetable"], "cross": []}
  },
  {
   "id": "Vy106_36",
@@ -1073,7 +1103,8 @@
   "explanation": "function 你大概只當它是名詞「功能」。這一格答對率三成一，是全篇十格最低的——難的是沒想到它也能當動詞。【語意內涵】function 當動詞是「運作、起作用」；`function as` 加名詞就是充當、當作，等於 `serve as`、`act as`。同一個字，別的年份考的是另一個詞性：115 年學測第 22 題的 `brain size and function` 考名詞「功能」，87 年學測字彙第 1 題也拿名詞複數 `functions` 當誘答。【作答線索】主詞 They 之後、as 之前，這個位置只能放動詞，先用位置把名詞與形容詞刷掉，剩下的再比語意。【文內驗證】把 functioned 代回去，同句後半 shown upon the altars of the gods（陳列於神明的祭壇上）已經把用途講明白：洋蔥是拿來當祭品的。時態也對得上——前一句 Onions are depicted 用現在式講現存的壁畫，本句改用過去式講當時的用途。",
   "accuracyRate": 31,
   "discrimination": 55,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["They", "as a funeral offering", "the altars of the gods"], "cross": []}
  },
  {
   "id": "Vy106_38",
@@ -1101,7 +1132,8 @@
   "explanation": "parts of the body 是常見字詞搭配，很容易誤選其他抽象名詞。",
   "accuracyRate": 57,
   "discrimination": 68,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["various", "of their bodies"], "cross": []}
  },
  {
   "id": "Vy106_39",
@@ -1129,7 +1161,8 @@
   "explanation": "decorating 是現在分詞，表示「洋蔥花裝飾著身體部位」的主動關係，句型是 with + 受詞 + 受詞補語（表附帶狀態），很容易與過去分詞選項混淆。",
   "accuracyRate": 42,
   "discrimination": 67,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["with onions and onion flowers", "their pelvis"], "cross": []}
  },
  {
   "id": "Vy106_40",
@@ -1158,7 +1191,8 @@
   "explanation": "prompt sb to do sth 是常考字詞搭配，「促使某人做某事」，你要認出此結構。",
   "accuracyRate": 53,
   "discrimination": 75,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["would", "the dead to breathe"], "cross": []}
  },
  {
   "id": "Vy105_31",
@@ -1187,7 +1221,8 @@
   "accuracyRate": 66,
   "discrimination": 76,
   "contextSpan": "跨句",
-  "contextNote": "線索在前一句的問句 `Are forests always created by nature?`（森林一定都是大自然造出來的嗎？）——本句的 this 指的就是問句裡說的那件事（森林都是大自然造出來的），所以填 true（真實的）：這件事不一定成立。"
+  "contextNote": "線索在前一句的問句 `Are forests always created by nature?`（森林一定都是大自然造出來的嗎？）——本句的 this 指的就是問句裡說的那件事（森林都是大自然造出來的），所以填 true（真實的）：這件事不一定成立。",
+  "clue": {"inner": ["not necessarily"], "cross": [{"sentence": "Are forests always created by nature?", "words": ["always created by nature"]}]}
  },
  {
   "id": "Vy105_32",
@@ -1215,7 +1250,8 @@
   "explanation": "with the vision of doing sth 是常考字詞搭配，表示「懷著…的願景／構想」。",
   "accuracyRate": 45,
   "discrimination": 67,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["with the", "of growing trees"], "cross": []}
  },
  {
   "id": "Vy105_33",
@@ -1243,7 +1279,8 @@
   "explanation": "此為「認為某人做某事很瘋狂」的句型結構，crazy to waste，你要掌握此句構才能判斷詞性與語意。",
   "accuracyRate": 77,
   "discrimination": 59,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["thought he was", "to waste his time"], "cross": []}
  },
  {
   "id": "Vy105_34",
@@ -1272,7 +1309,8 @@
   "accuracyRate": 65,
   "discrimination": 77,
   "contextSpan": "跨句",
-  "contextNote": "線索在前一句 `people thought he was {33} to waste his time and money on the land`（大家覺得他把時間和金錢浪費在那塊地上）——本句的 them 指這些人，But（但是）表示他沒理會，所以填 ignored（忽視）。"
+  "contextNote": "線索在前一句 `people thought he was {33} to waste his time and money on the land`（大家覺得他把時間和金錢浪費在那塊地上）——本句的 them 指這些人，But（但是）表示他沒理會，所以填 ignored（忽視）。",
+  "clue": {"inner": ["them", "kept working"], "cross": [{"sentence": "In the beginning, people thought he was [33] to waste his time and money on the land.", "words": ["people thought he was"]}]}
  },
  {
   "id": "Vy105_35",
@@ -1300,7 +1338,8 @@
   "explanation": "so...that 是常考因果句型(如此…以致於)，你要辨認 dry 才能呼應後面「需要每天澆水多次」的結果。",
   "accuracyRate": 78,
   "discrimination": 51,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["so", "that it had to be watered"], "cross": []}
  },
  {
   "id": "Vy105_36",
@@ -1329,7 +1368,8 @@
   "accuracyRate": 67,
   "discrimination": 79,
   "contextSpan": "跨句",
-  "contextNote": "線索在下一句 `However, in the third year, several young trees started growing.`（然而到了第三年，有幾棵小樹開始長了）——下一句用 However 轉折，說第三年才有樹長起來，回推前兩年是一棵都沒活，所以填 survived（存活）。"
+  "contextNote": "線索在下一句 `However, in the third year, several young trees started growing.`（然而到了第三年，有幾棵小樹開始長了）——下一句用 However 轉折，說第三年才有樹長起來，回推前兩年是一棵都沒活，所以填 survived（存活）。",
+  "clue": {"inner": ["none of the trees he planted"], "cross": [{"sentence": "However, in the third year, several young trees started growing.", "words": ["However", "started growing"]}]}
  },
  {
   "id": "Vy105_37",
@@ -1387,7 +1427,8 @@
   "explanation": "without the interference of 是常見字詞搭配，「沒有…的干預」。",
   "accuracyRate": 53,
   "discrimination": 78,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["without the", "of humans"], "cross": []}
  },
  {
   "id": "Vy105_39",
@@ -1416,7 +1457,8 @@
   "accuracyRate": 47,
   "discrimination": 74,
   "contextSpan": "篇章",
-  "contextNote": "線索要回到第二段開頭 `he bought a piece of rocky wasteland`（他買下一塊多石的荒地）——本句說他把一塊「什麼樣的」土地變成美麗的森林，要跟前面那塊荒地對上，所以填 deserted（荒廢的）。"
+  "contextNote": "線索要回到第二段開頭 `he bought a piece of rocky wasteland`（他買下一塊多石的荒地）——本句說他把一塊「什麼樣的」土地變成美麗的森林，要跟前面那塊荒地對上，所以填 deserted（荒廢的）。",
+  "clue": {"inner": ["transformed", "into a beautiful forest"], "cross": [{"sentence": "In 1977, he bought a piece of rocky wasteland with the [32] of growing trees on it.", "words": ["rocky wasteland"]}]}
  },
  {
   "id": "Vy105_40",
@@ -1445,7 +1487,8 @@
   "accuracyRate": 62,
   "discrimination": 66,
   "contextSpan": "篇章",
-  "contextNote": "線索是全篇——整篇都在講 Kareem 一手種出這片人造林，所以科學家遠道來參觀的是「他的創造物」，填 creation（創造物）。"
+  "contextNote": "線索是全篇——整篇都在講 Kareem 一手種出這片人造林，所以科學家遠道來參觀的是「他的創造物」，填 creation（創造物）。",
+  "clue": {"inner": ["visit his"], "cross": [{"sentence": "Today, his forest is home to 1,500 medicinal plants, 2,000 varieties of trees, rare birds, animals, and insects.", "words": ["his forest"]}]}
  },
  {
   "id": "Vy104_31",
@@ -1474,7 +1517,8 @@
   "accuracyRate": 62,
   "discrimination": 77,
   "contextSpan": "跨句",
-  "contextNote": "線索在前一句 `an instrument used to hold sheets of paper together`（一種用來把紙張夾在一起的器具）——本句的 This 指的就是它，instrument 換個說法就是 device（裝置、器具）。"
+  "contextNote": "線索在前一句 `an instrument used to hold sheets of paper together`（一種用來把紙張夾在一起的器具）——本句的 This 指的就是它，instrument 換個說法就是 device（裝置、器具）。",
+  "clue": {"inner": ["This common"], "cross": [{"sentence": "A paperclip, made of steel wire bent into a hooped shape, is an instrument used to hold sheets of paper together.", "words": ["A paperclip", "an instrument"]}]}
  },
  {
   "id": "Vy104_32",
@@ -1502,7 +1546,8 @@
   "explanation": "removable 是 -able 結尾形容詞，表「可移除的」。",
   "accuracyRate": 55,
   "discrimination": 65,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["easily"], "cross": []}
  },
  {
   "id": "Vy104_33",
@@ -1530,7 +1575,8 @@
   "explanation": "twist into 是字詞搭配，「扭轉成…形狀」，與前面的 stretched 並列，你要注意兩個動詞平行結構。",
   "accuracyRate": 56,
   "discrimination": 74,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["stretched and", "various clip-like objects"], "cross": []}
  },
  {
   "id": "Vy104_34",
@@ -1560,7 +1606,8 @@
   "explanation": "associated with 多半連著 be 動詞一起記（be associated with），而本句前後都沒有 be，這一格就容易因此跳過不填。【怎麼判斷】這是減化關係子句：The name (which is) most frequently associated with the paperclip invention is Johan Vaaler，關係代名詞連同 be 動詞一起省略，句子真正的主要動詞是後面那個 is。【文內驗證】同段最後一句 This clip is therefore sometimes {36} the Gem clip. 用的是完整被動（有 is），本句是減化後的分詞片語（沒有 be）——同一段裡兩種形式並排，回頭一比就清楚了。",
   "accuracyRate": 38,
   "discrimination": 61,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["The name most frequently", "is Johan Vaaler"], "cross": []}
  },
  {
   "id": "Vy104_35",
@@ -1589,7 +1636,8 @@
   "accuracyRate": 44,
   "discrimination": 62,
   "contextSpan": "跨句",
-  "contextNote": "線索在前一句 `they did not have the interior loop we see today`（它們沒有我們今天看到的內圈）——前一句說舊款沒有今天常見的內圈，本句接著介紹的就是「我們熟悉的」那一款，所以填 familiar（常見的、為人熟知的）。"
+  "contextNote": "線索在前一句 `they did not have the interior loop we see today`（它們沒有我們今天看到的內圈）——前一句說舊款沒有今天常見的內圈，本句接著介紹的就是「我們熟悉的」那一款，所以填 familiar（常見的、為人熟知的）。",
+  "clue": {"inner": ["looped design"], "cross": [{"sentence": "Specifically, they did not have the interior loop we see today.", "words": ["we see today"]}]}
  },
  {
   "id": "Vy104_36",
@@ -1617,7 +1665,8 @@
   "explanation": "be known as 是常考字詞搭配，「被稱為…」，很容易與 known for(以…聞名)搞混。",
   "accuracyRate": 42,
   "discrimination": 64,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["clip is", "the Gem clip"], "cross": []}
  },
  {
   "id": "Vy104_37",
@@ -1675,7 +1724,8 @@
   "explanation": "symbol of 是字詞搭配，「…的象徵」，呼應後文「配戴迴紋針表達團結」的語意。",
   "accuracyRate": 50,
   "discrimination": 76,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["any", "of their national unity"], "cross": []}
  },
  {
   "id": "Vy104_39",
@@ -1706,7 +1756,8 @@
   "accuracyRate": 33,
   "discrimination": 65,
   "contextSpan": "跨句",
-  "contextNote": "線索在前一句 `Norwegians were prohibited from wearing any {38} of their national unity`（挪威人被禁止配戴任何與國家團結有關的配件）——前一句是「被禁止」，本句 Thus（因此）接的反應就是抗議，`in protest` 是「以示抗議」，所以填 protest。"
+  "contextNote": "線索在前一句 `Norwegians were prohibited from wearing any {38} of their national unity`（挪威人被禁止配戴任何與國家團結有關的配件）——前一句是「被禁止」，本句 Thus（因此）接的反應就是抗議，`in protest` 是「以示抗議」，所以填 protest。",
+  "clue": {"inner": ["Thus, in", "to show their solidarity"], "cross": [{"sentence": "Norwegians were prohibited from wearing any [38] of their national unity, such as buttons with the initials of their king.", "words": ["were prohibited from wearing"]}]}
  },
  {
   "id": "Vy104_40",
@@ -1734,7 +1785,8 @@
   "explanation": "honor 常見是名詞(榮譽)，但此處當動詞「向…致敬」，是典型詞性陷阱，你可能只知道名詞用法。",
   "accuracyRate": 44,
   "discrimination": 74,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["erected in Oslo to"], "cross": []}
  },
  {
   "id": "Vy103_31",
@@ -1762,7 +1814,8 @@
   "explanation": "show respect for 是常考字詞搭配，「表達對…的尊敬」。",
   "accuracyRate": 59,
   "discrimination": 81,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["show", "for"], "cross": []}
  },
  {
   "id": "Vy103_32",
@@ -1790,7 +1843,8 @@
   "explanation": "介系詞 of 後面需接動名詞，passing down 表「傳承」，很容易誤用原形動詞。",
   "accuracyRate": 52,
   "discrimination": 78,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["a tradition of", "the father's first name"], "cross": []}
  },
  {
   "id": "Vy103_33",
@@ -1819,7 +1873,8 @@
   "explanation": "keep...going 是 keep 的常見用法，「讓…持續下去」，to 後面要填原形動詞。",
   "accuracyRate": 61,
   "discrimination": 71,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["to", "a family surname going"], "cross": []}
  },
  {
   "id": "Vy103_34",
@@ -1848,7 +1903,8 @@
   "accuracyRate": 68,
   "discrimination": 78,
   "contextSpan": "跨句",
-  "contextNote": "線索在下面兩句 `Boys' names such as John, Peter, and Thomas are chosen from the Bible.`（男生的名字像 John、Peter、Thomas 取自聖經）——下兩句舉的全是聖經和基督教特質的例子，所以本句主詞填 religion（宗教）。"
+  "contextNote": "線索在下面兩句 `Boys' names such as John, Peter, and Thomas are chosen from the Bible.`（男生的名字像 John、Peter、Thomas 取自聖經）——下兩句舉的全是聖經和基督教特質的例子，所以本句主詞填 religion（宗教）。",
+  "clue": {"inner": ["has also played"], "cross": [{"sentence": "Boys' names such as John, Peter, and Thomas are chosen from the Bible.", "words": ["the Bible"]}]}
  },
  {
   "id": "Vy103_35",
@@ -1878,7 +1934,8 @@
   "explanation": "involve 常見的是 be involved in an accident（捲入事故）這類負面語境，不容易想到它也可以中性地表示「含有、與…有關」；而且常見的形態是被動的 be involved in，看到主動的 involving 就容易把它排除。【主動還是被動】names involving things of beauty ＝ names which involve things of beauty——名字「含有」美好事物，是主動，所以用 -ing。若是被動就要用過去分詞，例如 106 年學測文意選填第 36 格的 paintings (which were) ___ inside pyramids，畫是動作的承受者，那一格填的就是過去分詞。【文內驗證】下一句 Flower and plant names like Heather, Rosemary, and Iris {36} this category.——花草正是句中所說的 things of beauty，用實例回頭印證。",
   "accuracyRate": 35,
   "discrimination": 61,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["names", "things of beauty"], "cross": []}
  },
  {
   "id": "Vy103_36",
@@ -1907,7 +1964,8 @@
   "explanation": "fall into a category 是常考字詞搭配，「歸屬於某類別」。",
   "accuracyRate": 42,
   "discrimination": 49,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["Flower and plant names", "this category"], "cross": []}
  },
  {
   "id": "Vy103_37",
@@ -1936,7 +1994,8 @@
   "explanation": "have an impact on 是常考字詞搭配，「對…造成影響」。",
   "accuracyRate": 62,
   "discrimination": 79,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["has had a great", "on the choice"], "cross": []}
  },
  {
   "id": "Vy103_38",
@@ -1964,7 +2023,8 @@
   "explanation": "be drawn to 是常考字詞搭配，「被…吸引」。",
   "accuracyRate": 40,
   "discrimination": 53,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["strongly", "a character"], "cross": []}
  },
  {
   "id": "Vy103_39",
@@ -2022,7 +2082,8 @@
   "explanation": "regardless of 是常考字詞搭配，「不論、不管」。",
   "accuracyRate": 52,
   "discrimination": 82,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["of its meaning"], "cross": []}
  },
  {
   "id": "Vy102_31",
@@ -2050,7 +2111,8 @@
   "explanation": "escape from 是常考字詞搭配，「從…逃脫」，空格後面的 from 正是線索。",
   "accuracyRate": 62,
   "discrimination": 78,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["from predators"], "cross": []}
  },
  {
   "id": "Vy102_32",
@@ -2078,7 +2140,8 @@
   "explanation": "endangered 是過去分詞轉形容詞用法，「瀕危的」，你要辨認 become 後接形容詞的結構。",
   "accuracyRate": 60,
   "discrimination": 83,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["become"], "cross": []}
  },
  {
   "id": "Vy102_33",
@@ -2104,7 +2167,8 @@
   "explanation": "sadly 是語氣副詞，放在分號後面那個子句的開頭，表達作者遺憾的態度（遺憾的是），與 however 並用，一個表態、一個轉折。",
   "accuracyRate": 63,
   "discrimination": 80,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["however", "in serious danger"], "cross": []}
  },
  {
   "id": "Vy102_34",
@@ -2133,7 +2197,8 @@
   "accuracyRate": 51,
   "discrimination": 82,
   "contextSpan": "跨句",
-  "contextNote": "線索在前一句 `More than one-third are in such bad shape that they could die within ten years.`（超過三分之一狀況差到十年內就可能死亡）——本句的 `that long`（那麼久）指的就是前一句的十年，所以填 last（持續）：很多珊瑚礁連那麼久都活不到。這裡的 last 是動詞「持續」，不是你熟悉的「最後的」。"
+  "contextNote": "線索在前一句 `More than one-third are in such bad shape that they could die within ten years.`（超過三分之一狀況差到十年內就可能死亡）——本句的 `that long`（那麼久）指的就是前一句的十年，所以填 last（持續）：很多珊瑚礁連那麼久都活不到。這裡的 last 是動詞「持續」，不是你熟悉的「最後的」。",
+  "clue": {"inner": ["might not even", "that long"], "cross": [{"sentence": "More than one-third are in such bad shape that they could die within ten years.", "words": ["within ten years"]}]}
  },
  {
   "id": "Vy102_35",
@@ -2161,7 +2226,8 @@
   "explanation": "identified 是過去分詞，和前面的 have been 合起來是現在完成式的被動語態，「已經找出」，你要辨認 have been + p.p. 這個結構。",
   "accuracyRate": 66,
   "discrimination": 78,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["have been"], "cross": []}
  },
  {
   "id": "Vy102_36",
@@ -2218,7 +2284,8 @@
   "explanation": "resistance to 是常考字詞搭配，「對…的抵抗力」。",
   "accuracyRate": 54,
   "discrimination": 81,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["less", "to diseases"], "cross": []}
  },
  {
   "id": "Vy102_38",
@@ -2244,7 +2311,8 @@
   "explanation": "eventually 是表示結果的時間副詞，「最終、到頭來」：藻類死了，珊瑚先褪色，最後也隨之死亡，中間經過一段時間，所以用 eventually。",
   "accuracyRate": 60,
   "discrimination": 82,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["also dies"], "cross": []}
  },
  {
   "id": "Vy102_39",
@@ -2272,7 +2340,8 @@
   "explanation": "contribute to 是常考字詞搭配，「是造成…的原因之一」；空格要填名詞，前文說珊瑚礁可能在十年內死亡，所以是「消失」。",
   "accuracyRate": 53,
   "discrimination": 86,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["contributing to the", "of coral reefs"], "cross": []}
  },
  {
   "id": "Vy102_40",
@@ -2300,7 +2369,8 @@
   "explanation": "此格需邏輯推論：因為珊瑚「色彩鮮豔漂亮」，人們才會採集來做紀念品，沒有明顯字詞搭配可直接對應。",
   "accuracyRate": 54,
   "discrimination": 83,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["collect for", "so colorful and pretty"], "cross": []}
  },
  {
   "id": "Vy101_31",
@@ -2329,7 +2399,8 @@
   "explanation": "various types of 是常見字詞搭配，「各種類型的」。",
   "accuracyRate": 62,
   "discrimination": 78,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["types of numbers"], "cross": []}
  },
  {
   "id": "Vy101_32",
@@ -2357,7 +2428,8 @@
   "explanation": "the disadvantage of 是常考字詞搭配，「…的缺點」。",
   "accuracyRate": 55,
   "discrimination": 73,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["of this convention"], "cross": []}
  },
  {
   "id": "Vy101_33",
@@ -2385,7 +2457,8 @@
   "explanation": "此格需邏輯推論：後文解釋「因為颱風以委員的女友或妻子命名」，故此處應為 female(女性)名字。",
   "accuracyRate": 75,
   "discrimination": 65,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["only", "girlfriends or wives"], "cross": []}
  },
  {
   "id": "Vy101_34",
@@ -2414,7 +2487,8 @@
   "explanation": "答對率三成。practice 這個字，你的印象大概只有「練習」，而它還有另一個意思「慣例、做法、常規」。【句構線索】the original naming ___ 前有冠詞與修飾語，空格要名詞。【文章線索】前文說當時颱風以委員的女友或妻子命名，1979 年才加入男性名字——女性抗議的正是這個「命名的慣例」，不是「命名的練習」。【延伸的字詞搭配】common practice（常見做法）、standard practice（標準做法、慣例）、business practices（商業慣例、經營手法）、put sth into practice（付諸實行）、in practice（實際上，對比 in theory）。",
   "accuracyRate": 30,
   "discrimination": 57,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["the original naming", "women protested"], "cross": []}
  },
  {
   "id": "Vy101_35",
@@ -2442,7 +2516,8 @@
   "explanation": "raise awareness 是常考字詞搭配，「提升意識／認知」。",
   "accuracyRate": 48,
   "discrimination": 79,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["awareness"], "cross": []}
  },
  {
   "id": "Vy101_36",
@@ -2470,7 +2545,8 @@
   "explanation": "be composed of 是常考字詞搭配，「由…組成」。",
   "accuracyRate": 47,
   "discrimination": 81,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["name pool", "of 140 names"], "cross": []}
  },
  {
   "id": "Vy101_37",
@@ -2498,7 +2574,8 @@
   "explanation": "favor 是多義字，此處當動詞「偏好」，而不是常見的名詞「恩惠、幫忙」；favor 這個字，你的印象大概只有名詞義。",
   "accuracyRate": 53,
   "discrimination": 70,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["Korea and Japan", "animal names"], "cross": []}
  },
  {
   "id": "Vy101_38",
@@ -2527,7 +2604,8 @@
   "accuracyRate": 68,
   "discrimination": 72,
   "contextSpan": "跨句",
-  "contextNote": "線索在下一句 `But the names can be changed.`（但這些名字是可以更動的）——下一句用 But 轉折說「可以更動」，回推本句講的是「不更動、照原順序再用一輪」，所以填 recycled（循環使用）。如果本句填 replaced（被取代），下一句的 But 就沒有東西可以轉折了。"
+  "contextNote": "線索在下一句 `But the names can be changed.`（但這些名字是可以更動的）——下一句用 But 轉折說「可以更動」，回推本句講的是「不更動、照原順序再用一輪」，所以填 recycled（循環使用）。如果本句填 replaced（被取代），下一句的 But 就沒有東西可以轉折了。",
+  "clue": {"inner": ["all used in order"], "cross": [{"sentence": "But the names can be changed.", "words": ["But", "can be changed"]}]}
  },
  {
   "id": "Vy101_39",
@@ -2555,7 +2633,8 @@
   "explanation": "線索是空格後面的 be deleted：that 子句裡出現原形動詞，就是在指認前面要放一個表示「要求、建議、命令」的字，這類字帶出的 that 子句用 (should) + 原形動詞，should 通常省略，request 正是其中之一。同一個考法在指考克漏字 100 年第 11 題是反過來考的：前面的 requests 已經給了，要你填 that 子句裡的原形。",
   "accuracyRate": 49,
   "discrimination": 72,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["that the name", "be deleted"], "cross": []}
  },
  {
   "id": "Vy101_40",
@@ -2583,7 +2662,8 @@
   "explanation": "replace...with... 是字詞搭配，「用…取代…」。",
   "accuracyRate": 58,
   "discrimination": 80,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["were", "with other names"], "cross": []}
  },
  {
   "id": "Vy100_31",
@@ -2641,7 +2721,8 @@
   "explanation": "health problems 是常見字詞搭配，「健康問題」。",
   "accuracyRate": 83,
   "discrimination": 47,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["cause health"], "cross": []}
  },
  {
   "id": "Vy100_33",
@@ -2669,7 +2750,8 @@
   "explanation": "a chemical called X 是常見字詞搭配，「一種叫做 X 的化學物質」。",
   "accuracyRate": 73,
   "discrimination": 67,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["coat", "with a", "called"], "cross": []}
  },
  {
   "id": "Vy100_34",
@@ -2698,7 +2780,8 @@
   "explanation": "come with 是常考字詞搭配，「附帶有…」，很容易漏接介系詞 with。",
   "accuracyRate": 60,
   "discrimination": 75,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["generally", "with microwavable popcorn"], "cross": []}
  },
  {
   "id": "Vy100_35",
@@ -2726,7 +2809,8 @@
   "explanation": "be responsible for 是常考字詞搭配，「導致／應為…負責」。",
   "accuracyRate": 56,
   "discrimination": 80,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["is", "for some serious lung diseases"], "cross": []}
  },
  {
   "id": "Vy100_36",
@@ -2755,7 +2839,8 @@
   "accuracyRate": 66,
   "discrimination": 70,
   "contextSpan": "篇章",
-  "contextNote": "線索要回到前面兩段——前兩段整段都在講微波爆米花的健康疑慮（致癌物質、肺部疾病），所以這裡提出的「替代做法」是相對於那些危害而言的，填 healthy（健康的）。只看本句，`an easy and popular alternative`（又簡單又受歡迎的替代做法）文法語意都通，你選不出來。"
+  "contextNote": "線索要回到前面兩段——前兩段整段都在講微波爆米花的健康疑慮（致癌物質、肺部疾病），所以這裡提出的「替代做法」是相對於那些危害而言的，填 healthy（健康的）。只看本句，`an easy and popular alternative`（又簡單又受歡迎的替代做法）文法語意都通，你選不出來。",
+  "clue": {"inner": ["alternative"], "cross": [{"sentence": "Researchers found that commercial popcorn companies often coat their microwave popcorn bags with a [33] called perfluorooctanoic acid (PFOA) which has been found to cause both cancer and lung disease in laboratory animals.", "words": ["cancer and lung disease"]}]}
  },
  {
   "id": "Vy100_37",
@@ -2783,7 +2868,8 @@
   "explanation": "all that is needed is... 是常考句型，「所需要的只是…」，你要看出 is needed 是被動語態（be + 過去分詞）。",
   "accuracyRate": 57,
   "discrimination": 78,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["All that is"], "cross": []}
  },
  {
   "id": "Vy100_38",
@@ -2811,7 +2897,8 @@
   "explanation": "start popping 表「開始爆開」，你要辨認 start 後接動名詞的用法。",
   "accuracyRate": 70,
   "discrimination": 71,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["the kernels start"], "cross": []}
  },
  {
   "id": "Vy100_39",
@@ -2868,7 +2955,8 @@
   "explanation": "a small amount of 是常見字詞搭配，「少量的…」。",
   "accuracyRate": 65,
   "discrimination": 75,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["a small", "of real butter"], "cross": []}
  },
  {
   "id": "Vy99_31",
@@ -2897,7 +2985,8 @@
   "accuracyRate": 51,
   "discrimination": 65,
   "contextSpan": "跨句",
-  "contextNote": "線索在下一句 `the game shows them the necessity of teamwork in society`（這項運動讓他們看見團隊合作在社會上的必要性）——下一句用 teaching 和 shows them 說明足球在「教」東西，所以本句填 teacher（老師）：足球不只是一項運動，也是一位珍貴的老師。"
+  "contextNote": "線索在下一句 `the game shows them the necessity of teamwork in society`（這項運動讓他們看見團隊合作在社會上的必要性）——下一句用 teaching 和 shows them 說明足球在「教」東西，所以本句填 teacher（老師）：足球不只是一項運動，也是一位珍貴的老師。",
+  "clue": {"inner": ["an invaluable"], "cross": [{"sentence": "In teaching young players to cooperate with their fellows on the practice [32], the game shows them the necessity of teamwork in society.", "words": ["In teaching young players", "shows them"]}]}
  },
  {
   "id": "Vy99_32",
@@ -2925,7 +3014,8 @@
   "explanation": "practice field 是常見字詞搭配，「練習場」。",
   "accuracyRate": 49,
   "discrimination": 78,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["on the practice"], "cross": []}
  },
  {
   "id": "Vy99_33",
@@ -2955,7 +3045,8 @@
   "explanation": "你對比較級的印象是「一定要有 than」，看到後面沒有 than 就認定不是 better。其實比較對象在上下文清楚時，than 可以不寫，日常英文非常普遍：a better life、the younger generation、higher education。本句隱含的比較對象就是「沒受過這種訓練的自己」。【文內驗證】第一段說足球是 an invaluable {31}，教會球員 the necessity of teamwork in society，本句 It prepares them to be…的 It 指的正是前一句的 the game，也就是足球這項運動，結果自然是正面的。",
   "accuracyRate": 33,
   "discrimination": 49,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["prepares them to be", "citizens and persons"], "cross": []}
  },
  {
   "id": "Vy99_34",
@@ -2983,7 +3074,8 @@
   "explanation": "through the cooperation of 是常考字詞搭配，「透過…的合作」。",
   "accuracyRate": 48,
   "discrimination": 74,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["only through the", "of each member"], "cross": []}
  },
  {
   "id": "Vy99_35",
@@ -3011,7 +3103,8 @@
   "explanation": "a lesson they must always remember 是省略了關係代名詞的關係子句，省掉的關係代名詞是 remember 的受詞，指的就是前面的 lesson，所以 remember 後面才看起來空著；看出這層關係，就知道要填「記住」。",
   "accuracyRate": 56,
   "discrimination": 73,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["a lesson they must always", "on the field"], "cross": []}
  },
  {
   "id": "Vy99_36",
@@ -3039,7 +3132,8 @@
   "explanation": "remain isolated from 是常考字詞搭配，「保持與…隔絕」。",
   "accuracyRate": 40,
   "discrimination": 72,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["remain", "from the society"], "cross": []}
  },
  {
   "id": "Vy99_37",
@@ -3070,7 +3164,8 @@
   "explanation": "behave 常見的用法是不及物（behave well），後面不接受詞；本句卻是 must ___ himself，多出一個 himself，容易因此判定用不上。behave oneself 是反身用法，意思是「以合宜的方式行事」，跟 enjoy yourself、help yourself、make yourself at home 同一組。【as such 指的是什麼】such 回頭指代同句前半的 he is a member of society，所以 as such ＝ 以社會一員的身分。看到 such，先問它代表前面哪一句——這跟 Yes, I do. 用 do 代替動詞是同一種避免重複的手段。",
   "accuracyRate": 35,
   "discrimination": 53,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["must", "himself as such"], "cross": []}
  },
  {
   "id": "Vy99_38",
@@ -3106,7 +3201,8 @@
    "label": "延伸閱讀：share 當名詞，是自己該分擔的那一份",
    "url": "https://dictionary.cambridge.org/dictionary/english-chinese-traditional/share",
    "hint": "重點：share 當名詞是「一份、份額」，do one's share 就是做好自己該做的那一份，也就是盡本分，劍橋的例句 She's not doing her share of the work 正是這個用法。下一段的 every citizen must do his part 換了一個字說同一件事。"
-  }
+  },
+  "clue": {"inner": ["do his", "only by cooperating"], "cross": []}
  },
  {
   "id": "Vy99_39",
@@ -3134,7 +3230,8 @@
   "explanation": "teamwork is essential in modern living「團隊合作在現代生活中不可或缺」；in modern living 說明的是範圍，essential 本身常見的介系詞搭配是 to／for（對…不可或缺）。",
   "accuracyRate": 56,
   "discrimination": 79,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["teamwork is", "in modern living"], "cross": []}
  },
  {
   "id": "Vy99_40",
@@ -3164,7 +3261,8 @@
   "explanation": "答對率二成九。真正的門檻在 be to V 這個句型：is to ___ 不是「是要去…」的字面翻譯，而是表示「將要、預定、若要達成」，所以 if the nation is to prosper＝「若國家要興盛」。沒見過這個用法的話，看到 is to 後面接原形動詞會覺得句子怪。【句構線索】to 後面必須是原形動詞，選項中能當原形動詞的有 prosper、behave、remember、share，語意上只有「繁榮」接得上前面的 every citizen must do his part。【同類例句】If you are to succeed, you must work hard.／The meeting is to be held tomorrow.【延伸的字詞搭配】prosper／thrive／flourish（繁榮、興盛）三個同義字常互換，名詞 prosperity。",
   "accuracyRate": 29,
   "discrimination": 43,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["must do his part", "if the nation is to"], "cross": []}
  },
  {
   "id": "Vy98_31",
@@ -3221,7 +3319,8 @@
   "explanation": "arranged 是被動語態動詞，「被安排」，你要辨認 be + p.p. 的被動結構。",
   "accuracyRate": 41,
   "discrimination": 67,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["a second race is"], "cross": []}
  },
  {
   "id": "Vy98_33",
@@ -3249,7 +3348,8 @@
   "explanation": "fast 在此與後面的 consistent 並列，構成與經典版本「slow and steady」相對的新寓意，你要理解對照關係。",
   "accuracyRate": 45,
   "discrimination": 78,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["consistent", "slow and steady"], "cross": []}
  },
  {
   "id": "Vy98_34",
@@ -3278,7 +3378,8 @@
   "explanation": "challenge sb to sth 是常考字詞搭配，「向某人提出挑戰、邀對方比某項比賽」。",
   "accuracyRate": 42,
   "discrimination": 74,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["the hare", "to a third race"], "cross": []}
  },
  {
   "id": "Vy98_35",
@@ -3306,7 +3407,8 @@
   "explanation": "identify your strengths 是常見字詞搭配，「找出自己的優勢」，此處為祈使句需用原形動詞。",
   "accuracyRate": 44,
   "discrimination": 80,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["First", "your strengths"], "cross": []}
  },
  {
   "id": "Vy98_36",
@@ -3363,7 +3465,8 @@
   "explanation": "cooperate as a team 是常考字詞搭配，「以團隊方式合作」。",
   "accuracyRate": 40,
   "discrimination": 76,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["The two", "as a team"], "cross": []}
  },
  {
   "id": "Vy98_38",
@@ -3393,7 +3496,8 @@
   "explanation": "這一格有兩個字同時卡住你：opposite 你記的是「相反的」或介系詞「在…對面」，沒想到它能直接修飾名詞表示「對面的」；而 bank 你一看到就想到「銀行」，這樣讀整句就講不通了——這裡的 bank 是「河岸」。（bank 還有 a blood bank 血庫、a data bank 資料庫，動詞 bank on 是「指望」。讀到認得的字卻覺得語意不通時，先想它有沒有第二個意思。）【文內驗證】這一段把最後一場比賽拆成三步：兔子背烏龜到河邊 → 烏龜載兔子游到河的某一岸 → 兔子再背烏龜跑。既然是渡河，游過去的當然是「對岸」；末句 they reach the {39} line together 也確認兩者一起抵達。",
   "accuracyRate": 39,
   "discrimination": 69,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["swims to the", "bank of the river"], "cross": []}
  },
  {
   "id": "Vy98_39",
@@ -3421,7 +3525,8 @@
   "explanation": "finishing line 是常考字詞搭配，「終點線」。",
   "accuracyRate": 50,
   "discrimination": 79,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["reach the", "line together"], "cross": []}
  },
  {
   "id": "Vy98_40",
@@ -3451,7 +3556,8 @@
   "accuracyRate": 60,
   "discrimination": 72,
   "contextSpan": "篇章",
-  "contextNote": "線索要回到前一段——前一段整段在講兔子背烏龜跑到河邊、烏龜載兔子游過河、兔子再背烏龜跑最後一段，兩個一起抵達終點。本句說「最明顯的一課」，指的就是這種互助，所以填 teamwork（團隊合作）。只看本句，`the importance of challenges`（挑戰的重要性）文法上也講得通。"
+  "contextNote": "線索要回到前一段——前一段整段在講兔子背烏龜跑到河邊、烏龜載兔子游過河、兔子再背烏龜跑最後一段，兩個一起抵達終點。本句說「最明顯的一課」，指的就是這種互助，所以填 teamwork（團隊合作）。只看本句，`the importance of challenges`（挑戰的重要性）文法上也講得通。",
+  "clue": {"inner": ["importance of"], "cross": [{"sentence": "The two [37] as a team.", "words": ["as a team"]}, {"sentence": "Thus they reach the [39] line together.", "words": ["together"]}]}
  },
  {
   "id": "Vy97_31",
@@ -3480,7 +3586,8 @@
   "accuracyRate": 63,
   "discrimination": 76,
   "contextSpan": "跨句",
-  "contextNote": "線索在前一句 `The disciple said he would do whatever his guru asked him to do.`（弟子說他願意做上師要他做的任何事）——弟子剛剛給出的就是一個承諾，所以填 promise（承諾）。`Having received this promise` 是「得到這個承諾之後」。"
+  "contextNote": "線索在前一句 `The disciple said he would do whatever his guru asked him to do.`（弟子說他願意做上師要他做的任何事）——弟子剛剛給出的就是一個承諾，所以填 promise（承諾）。`Having received this promise` 是「得到這個承諾之後」。",
+  "clue": {"inner": ["Having received this"], "cross": [{"sentence": "The disciple said he would do whatever his guru asked him to do.", "words": ["do whatever his guru asked"]}]}
  },
  {
   "id": "Vy97_32",
@@ -3508,7 +3615,8 @@
   "explanation": "learn that 子句是常考字詞搭配，「得知…」，注意現在完成式 have just + p.p. 的結構。",
   "accuracyRate": 43,
   "discrimination": 84,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["I've just", "that I'll die very soon"], "cross": []}
  },
  {
   "id": "Vy97_33",
@@ -3537,7 +3645,8 @@
   "explanation": "recognize sb by 是常考字詞搭配，「藉由…認出某人」。",
   "accuracyRate": 55,
   "discrimination": 86,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["You'll", "me by a mark"], "cross": []}
  },
  {
   "id": "Vy97_34",
@@ -3567,7 +3676,8 @@
   "explanation": "stroke 多半先讓人想到「中風」（have a stroke），其次是「撫摸」（stroke a cat）；本句用的是它最核心的一義——「揮動一次的動作」。【把幾個意思串起來】筆揮一次是一筆（With a stroke of his pen, he signed the bill.），刀揮一次就是一刀，游泳划水一次也是一個 stroke。中文的「筆畫」剛好也是 stroke，抓住這個核心概念，各種用法就通了。【文內驗證】本句後半 slaughter it（把牠宰了）已點明是宰殺；第三段 {37} his knife、cut its throat 描寫的就是這一次宰殺的經過。",
   "accuracyRate": 38,
   "discrimination": 57,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["with one", "of your knife", "slaughter it"], "cross": []}
  },
  {
   "id": "Vy97_35",
@@ -3595,7 +3705,8 @@
   "explanation": "be released from 是常考字詞搭配，「從…中解脫」。",
   "accuracyRate": 53,
   "discrimination": 80,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["I'll then be", "from a pig's life"], "cross": []}
  },
  {
   "id": "Vy97_36",
@@ -3622,7 +3733,8 @@
   "accuracyRate": 63,
   "discrimination": 78,
   "contextSpan": "跨句",
-  "contextNote": "線索在本段第一句 `The disciple felt sad to hear this, but he agreed to do as he was told.`（弟子聽了很難過，但還是答應照做）——前面師徒一問一答講了一大段，`hear this`、`agreed` 表示對話剛結束，所以填 conversation（對話）。"
+  "contextNote": "線索在本段第一句 `The disciple felt sad to hear this, but he agreed to do as he was told.`（弟子聽了很難過，但還是答應照做）——前面師徒一問一答講了一大段，`hear this`、`agreed` 表示對話剛結束，所以填 conversation（對話）。",
+  "clue": {"inner": ["Soon after their", "the guru died"], "cross": [{"sentence": "The disciple felt sad to hear this, but he agreed to do as he was told.", "words": ["hear this", "he agreed"]}]}
  },
  {
   "id": "Vy97_37",
@@ -3650,7 +3762,8 @@
   "explanation": "sharpen a knife 是常見字詞搭配，「磨刀」，你要辨認及物動詞直接接受詞 knife 的結構。",
   "accuracyRate": 43,
   "discrimination": 66,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["the disciple", "his knife"], "cross": []}
  },
  {
   "id": "Vy97_38",
@@ -3678,7 +3791,8 @@
   "explanation": "scream 後面直接接引號內容，是常見的「動詞 + 直接引語」寫作手法。",
   "accuracyRate": 62,
   "discrimination": 79,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["suddenly", "“Stop!”"], "cross": []}
  },
  {
   "id": "Vy97_39",
@@ -3706,7 +3820,8 @@
   "explanation": "the shock of V-ing 是常考字詞搭配，「…帶來的震驚」。",
   "accuracyRate": 52,
   "discrimination": 84,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["recover from the", "of hearing"], "cross": []}
  },
  {
   "id": "Vy97_40",
@@ -3734,7 +3849,8 @@
   "explanation": "like 在此是介系詞，what...be like 詢問「…是什麼樣子」，很容易誤把 like 當動詞「喜歡」解釋，是常見多義字陷阱。",
   "accuracyRate": 51,
   "discrimination": 78,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["what a pig's life", "would be"], "cross": []}
  },
  {
   "id": "Vy96_31",
@@ -3792,7 +3908,8 @@
   "explanation": "favorite game 是常見字詞搭配，「最喜愛的遊戲」。",
   "accuracyRate": 77,
   "discrimination": 52,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["playing his", "game"], "cross": []}
  },
  {
   "id": "Vy96_33",
@@ -3820,7 +3937,8 @@
   "explanation": "此格為關係子句動詞，指男孩「本來就喜歡做的事」，你要理解省略關代的子句結構。",
   "accuracyRate": 59,
   "discrimination": 75,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["something they"], "cross": []}
  },
  {
   "id": "Vy96_34",
@@ -3848,7 +3966,8 @@
   "explanation": "happily 是副詞，修飾 went away，你要辨認詞性(易與形容詞選項混淆)。",
   "accuracyRate": 52,
   "discrimination": 87,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["went away", "their 25 rupees"], "cross": []}
  },
  {
   "id": "Vy96_35",
@@ -3876,7 +3995,8 @@
   "explanation": "run out of money 是常考字詞搭配，「錢用完了」。",
   "accuracyRate": 55,
   "discrimination": 74,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["he had", "money"], "cross": []}
  },
  {
   "id": "Vy96_36",
@@ -3904,7 +4024,8 @@
   "explanation": "此格需邏輯推論：老人以自己還沒收到政府發的薪水為理由，解釋為什麼要減少給男孩的錢。",
   "accuracyRate": 44,
   "discrimination": 65,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["had not yet received his", "from the government"], "cross": []}
  },
  {
   "id": "Vy96_37",
@@ -3932,7 +4053,8 @@
   "explanation": "be disappointed 是常見字詞搭配，「感到失望」。",
   "accuracyRate": 59,
   "discrimination": 86,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["The boys were very"], "cross": []}
  },
  {
   "id": "Vy96_38",
@@ -3961,7 +4083,8 @@
   "accuracyRate": 42,
   "discrimination": 65,
   "contextSpan": "篇章",
-  "contextNote": "線索要回到前面幾段——老人一開始答應每週給男孩 25 盧比，之後一週比一週少。男孩每週回來等的就是這筆錢，所以填 reward（獎賞、報酬）。這裡不適合填 paycheck（薪水支票）：paycheck 指受雇者從雇主那裡定期領的薪資，男孩和老人之間沒有雇傭關係，這筆錢是老人為了讓他們繼續打球而給的，所以用 reward（做了某件事換來的酬勞）才貼切。"
+  "contextNote": "線索要回到前面幾段——老人一開始答應每週給男孩 25 盧比，之後一週比一週少。男孩每週回來等的就是這筆錢，所以填 reward（獎賞、報酬）。這裡不適合填 paycheck（薪水支票）：paycheck 指受雇者從雇主那裡定期領的薪資，男孩和老人之間沒有雇傭關係，這筆錢是老人為了讓他們繼續打球而給的，所以用 reward（做了某件事換來的酬勞）才貼切。",
+  "clue": {"inner": ["waiting for their"], "cross": [{"sentence": "He would therefore give them 25 rupees each week to play in the street at night.", "words": ["25 rupees each week"]}, {"sentence": "At the end of the first two weeks, the boys came to the old man's house, and went away [34] their 25 rupees.", "words": ["25 rupees"]}]}
  },
  {
   "id": "Vy96_39",
@@ -3989,7 +4112,8 @@
   "explanation": "as he had promised 是常考字詞搭配，「如同他先前承諾的」，注意過去完成式表示「比過去更早」的時間點。",
   "accuracyRate": 57,
   "discrimination": 79,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["as he had"], "cross": []}
  },
  {
   "id": "Vy96_40",
@@ -4046,7 +4170,8 @@
   "explanation": "visit to a doctor 是常見字詞搭配，「看醫生一趟」。",
   "accuracyRate": 60,
   "discrimination": 47,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["a quick", "to a doctor"], "cross": []}
  },
  {
   "id": "Vy95_32",
@@ -4074,7 +4199,8 @@
   "explanation": "one's own responsibility 是常見字詞搭配，「自己的責任」。",
   "accuracyRate": 58,
   "discrimination": 79,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["has to be your own"], "cross": []}
  },
  {
   "id": "Vy95_33",
@@ -4102,7 +4228,8 @@
   "explanation": "此格為三個並列動名詞之一(keeping bad habits, neglecting symptoms, ignoring rules)，你要辨認平行結構詞性。",
   "accuracyRate": 52,
   "discrimination": 67,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["keeping bad habits", "symptoms of illness", "ignoring common health rules"], "cross": []}
  },
  {
   "id": "Vy95_34",
@@ -4131,7 +4258,8 @@
   "explanation": "promote 你大概只記得「升遷」（be promoted to manager）或「促銷」，沒把它另一個常用的意思記住：提倡、推廣，受詞常是 idea、health、awareness 這類抽象概念。【文內驗證】下一句緊接著就定義 Wellness means…（健康是指…）——先推廣一個概念，再解釋它是什麼，這是說明文常見的順序，也正是「提倡」的動作。【同一批選項裡還有哪些是動詞原形】這一篇的十個選項中，能填進空格的動詞原形只有 ruin（毀掉）、visit（拜訪）、lower（降低）、promote 四個。ruin the idea 語意相反——專家不會去毀掉健康的概念；visit 與 lower 都無法與 the idea 搭配。「遇到文意選填，先把十個選項按詞性分類，再從同詞性的那幾個裡挑」，比一個一個試快得多。",
   "accuracyRate": 36,
   "discrimination": 61,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["health specialists", "the idea of wellness"], "cross": []}
  },
  {
   "id": "Vy95_35",
@@ -4161,7 +4289,8 @@
   "explanation": "選項裡能接在 mean 後面的動名詞不只一個，neglecting 代進去變成「健康意味著忽視最好的狀態」，說不通，所以還是要靠語意分。另外要記住的是，mean 接兩種形式時語意完全不同：mean + to V ＝ 打算（Sorry, I didn't mean to upset you.）；mean + V-ing ＝ 意味著、必然牽涉到（Living alone means doing all the housework yourself.）。本句要說的是「健康意味著達到身體限度內最好的狀態」，所以用動名詞。【文內驗證】後文 One person may need fewer calories than another 正是在解釋 within the limits of your body。",
   "accuracyRate": 33,
   "discrimination": 57,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["Wellness means", "the best possible health"], "cross": []}
  },
  {
   "id": "Vy95_36",
@@ -4189,7 +4318,8 @@
   "explanation": "easier 與後文的 more challenging 形成語意對照，你要理解前後對比關係才能判斷正確形容詞。",
   "accuracyRate": 46,
   "discrimination": 71,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["a lot of", "to more challenging exercise"], "cross": []}
  },
  {
   "id": "Vy95_37",
@@ -4217,7 +4347,8 @@
   "explanation": "key 是多義字，此處取抽象義「關鍵」，而非具體物品「鑰匙」，你可能只知道常見義。",
   "accuracyRate": 58,
   "discrimination": 72,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["Understanding the needs", "is the"], "cross": []}
  },
  {
   "id": "Vy95_38",
@@ -4247,7 +4378,8 @@
   "explanation": "chronic 常被讀成「嚴重的」，但它真正的對照組是 acute（急性的），兩者比的是「時間長短」不是「嚴重程度」——chronic 指長期持續、不易痊癒。字根 chron- 就是「時間」（chronology 年表、chronicle 編年史）。【文內驗證】同一句的前半 Everyone runs the risk of accidents（人人都有出意外的風險）講的是突發事件，後半接的是長期累積的疾病，一急一慢成對出現——這個對比就是判斷的依據。",
   "accuracyRate": 31,
   "discrimination": 51,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["risk of accidents", "disease"], "cross": []}
  },
  {
   "id": "Vy95_39",
@@ -4306,7 +4438,8 @@
   "explanation": "lower 你大概只當它是 low 的比較級形容詞「較低的」，沒想到它本身就是動詞「降低」。【文內驗證：對等結構是最強線索】句中的 or 連接兩個動詞片語——lower the risk 與 reduce the damage，後面那個已經印在題目上了，前面自然也要是同類的動詞。看到 and 或 or，先看它連接的另一邊長什麼樣子，這是文意選填最快的一種判斷法。【同一批選項裡還有哪些是動詞原形】能填的動詞原形是 ruin（毀掉）、visit（拜訪）、promote（推廣）、lower 四個。ruin the risk 不成搭配；promote the risk 語意剛好相反——沒有人會去「推廣風險」。",
   "accuracyRate": 32,
   "discrimination": 61,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["you can", "the risk", "or reduce the damage"], "cross": []}
  },
  {
   "id": "Vy94_31",
@@ -4334,7 +4467,8 @@
   "explanation": "last forever 是常見字詞搭配，「永遠持續」。",
   "accuracyRate": 43,
   "discrimination": 66,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["will last"], "cross": []}
  },
  {
   "id": "Vy94_32",
@@ -4363,7 +4497,8 @@
   "explanation": "答對率三成。free 這個字，你的印象大概只有「自由的」和「免費的」兩個意思，沒把 be free from（免於、不受…之苦）當成一組搭配記起來。【句構線索】we are ___ from…，be 動詞後面接形容詞，而且要能與 from 搭配。【辨析】be free from 多接負面事物（free from worry／danger／pain）；be free of 意思相近，兩者常可互換（free of pain、free of the disease），另有 free of charge（免費）這個常見說法。【語意鏈】這句在說熱戀時天真地以為自己不會重蹈父母的問題，正好呼應下一段 But as the magic fades 的轉折。",
   "accuracyRate": 30,
   "discrimination": 57,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["we are", "from the problems"], "cross": []}
  },
  {
   "id": "Vy94_33",
@@ -4393,7 +4528,8 @@
   "explanation": "take over 這個片語，你的印象大概只有商業新聞裡的「接管、併購」，因此很難想像主詞是 daily life。這個片語的核心其實是「接手、接替前一者的位置」，主詞不必是人或公司。【句構要看清楚】as 引導的子句裡，and 連接的是兩組主詞加動詞：the magic fades（魔力褪去）、daily life ___（日常生活…）。第二個主詞是單數，動詞要加 s。【語意是一退一進】fade（褪去）與 take over（頂上）成對出現：戀愛的魔力退場，柴米油鹽隨即上場。第三段末 The magic of love is then lost. 收束同一條線索。",
   "accuracyRate": 36,
   "discrimination": 55,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["as the magic fades", "daily life"], "cross": []}
  },
  {
   "id": "Vy94_34",
@@ -4419,7 +4555,8 @@
   "explanation": "similarly 是插入語副詞，用來連接與分號前半平行對照的句子結構(男生如何、女生同樣地如何)，你要理解對稱句型。",
   "accuracyRate": 42,
   "discrimination": 63,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["expect women to think", "women,", "expect men to feel"], "cross": []}
  },
  {
   "id": "Vy94_35",
@@ -4447,7 +4584,8 @@
   "explanation": "【怎麼判斷】空格在句首，後面緊接著 taking time to understand and respect each other（動名詞片語），逗號之後才是主要子句 we become demanding, resentful, judgmental, and intolerant。要填的東西必須帶得起一個動名詞片語，而且要能表達「沒有做前面這件事，反而變成後面這樣」。Instead of 正好是這個意思：不花時間去理解、尊重對方，我們反而變得苛求、怨懟、愛下判斷、不夠包容。【為什麼題目寫 taking 不寫 take】instead of 是幾個字合起來當一個介系詞用，中間拆不開，後面只能接名詞或動名詞，不能接原形動詞，也不能接一個完整的句子。空格後面是 -ing，正好呼應這一點。【同一批選項裡的 As long as 拿來對照最快】選項裡另有一個 As long as（只要），它是連接詞，後面接的是完整子句（主詞 + 動詞）。兩個擺在一起，分工一眼就看得出來：Instead of 後面接動名詞片語，As long as 後面接主詞加動詞。先看空格後面第一個字是 -ing 還是主詞，兩個就分開了。【這個片語在題庫裡的落點】instead of 在本題庫當答案的有五題，本格是文意選填唯一的一題；另外四題在克漏字：學測克漏字 98 年第 27 題，指考克漏字 105 年第 19 題、109 年補考第 13 題，以及 107 學年度起適用的參考試卷第 19 題（與 105 年第 19 題是同一題重印）。其中指考 105 年那一題把它擺在句首，後面接被動的動名詞 being hailed。Instead of taking off his mask, he asked her to dance one more song.（他沒有把面具拿下來，反而請她再跳一支舞。）He asked her to dance one more song rather than take off his mask.（同一件事換成 rather than，後面接的就是原形動詞 take。）She spent the whole evening guessing who he was instead of simply asking him.（她整晚都在猜他是誰，而不是直接開口問。）〔情境取材自 100 學測作文題：化妝舞會的浪漫誤會〕【延伸的字詞搭配】instead of + 動名詞或名詞（不做 A，而是 B）、rather than + 原形動詞或名詞（而不是）、as long as + 子句（只要）、take time to V（花時間去做某事）、be filled with（充滿）、creep in（悄悄滋生）。",
   "accuracyRate": 58,
   "discrimination": 60,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["taking time to understand", "we become demanding"], "cross": []}
  },
  {
   "id": "Vy94_36",
@@ -4474,7 +4612,8 @@
   "accuracyRate": 68,
   "discrimination": 54,
   "contextSpan": "跨句",
-  "contextNote": "線索在前一句 `{35} taking time to understand and respect each other, we become demanding, resentful, judgmental, and intolerant.`（我們變得苛求、怨恨、愛評斷、不寬容）——前一句是原因，本句是結果，所以句首填 Consequently（因此）。只看本句，Similarly（同樣地）和 Indeed（的確）擺在句首文法上一樣通順，你分不出來。"
+  "contextNote": "線索在前一句 `{35} taking time to understand and respect each other, we become demanding, resentful, judgmental, and intolerant.`（我們變得苛求、怨恨、愛評斷、不寬容）——前一句是原因，本句是結果，所以句首填 Consequently（因此）。只看本句，Similarly（同樣地）和 Indeed（的確）擺在句首文法上一樣通順，你分不出來。",
+  "clue": {"inner": ["filled with unnecessary disagreements"], "cross": [{"sentence": "[35] taking time to understand and respect each other, we become demanding, resentful, judgmental, and intolerant.", "words": ["we become demanding, resentful"]}]}
  },
  {
   "id": "Vy94_37",
@@ -4504,7 +4643,8 @@
   "explanation": "break down 你的印象停在兩個畫面：車子拋錨、人崩潰大哭，所以看到主詞是 communication 就卡住。用在討論、關係、制度這類抽象事物上時，它的意思是「因問題或分歧而失敗、破裂」——a breakdown in communication between management and staff（管理層與員工之間的溝通破裂）是典型的搭配。【文內驗證】三個子句並列：problems creep in、resentments build、communication ___，語意方向一致，都在描寫情況惡化；下一句 Mistrust increases… 與再下一句 The magic of love is then lost. 一路往下滑。",
   "accuracyRate": 38,
   "discrimination": 55,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["problems creep in", "resentments build"], "cross": []}
  },
  {
   "id": "Vy94_38",
@@ -4533,7 +4673,8 @@
   "explanation": "very few 是常見字詞搭配，「非常少的」，修飾複數名詞 people。",
   "accuracyRate": 69,
   "discrimination": 63,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["Very", "people"], "cross": []}
  },
  {
   "id": "Vy94_39",
@@ -4561,7 +4702,8 @@
   "explanation": "as long as 是常考連接詞，「只要」，引導條件子句，你要辨認此連接詞的邏輯用法。",
   "accuracyRate": 57,
   "discrimination": 64,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["men and women are able", "love has a chance"], "cross": []}
  },
  {
   "id": "Vy94_40",
@@ -4596,7 +4738,8 @@
    "label": "延伸閱讀：indeed 加強語氣，「的確、確實」",
    "url": "https://dictionary.cambridge.org/dictionary/english-chinese-traditional/indeed",
    "hint": "重點：indeed 用來加強語氣、確認一件事是真的，常夾在句子中間，前後加逗號，如 I am happy, indeed proud, to be associated with this project.。本題 Love is, indeed, magical 是回頭確認文章開頭 Falling in love is always magical 那句話，不是在做類比、講時間長短，也不是推出一個結果。"
-  }
+  },
+  "clue": {"inner": ["Love is,", "magical"], "cross": []}
  },
  {
   "id": "Vy93_31",
@@ -4624,7 +4767,8 @@
   "explanation": "beings 是抽象泛稱詞，指「(外星)生物、存在體」，你要理解此字可泛指任何生命形式。",
   "accuracyRate": 41,
   "discrimination": 59,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["from outer space", "have visited"], "cross": []}
  },
  {
   "id": "Vy93_32",
@@ -4653,7 +4797,8 @@
   "explanation": "答對率二成七。originate 在這裡是不及物動詞「起源、發源」，後面接 in／from 或直接接地方副詞（本題的 out there），容易誤加受詞或寫成被動 was originated。【文章內線索】同一個主詞 life on Earth 帶兩個並列動詞：___ “out there” and was seeded here——空格後面直接接地方副詞 out there、沒有受詞，所以這一格要的是不及物動詞的過去式，和後面的 was seeded 同樣是過去時態；後者寫成被動，是因為生命是「被播種」到地球的，前者講生命自己「起源於」某處，本來就用主動。【字族一起記】origin (n.) 起源／original (adj.) 最初的、原創的／originally (adv.) 原本／originate (vi.) 起源。【延伸的字詞搭配】originate in／from（起源於）、trace its origins to（可追溯至）。",
   "accuracyRate": 27,
   "discrimination": 47,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["life on Earth", "“out there”", "was seeded"], "cross": []}
  },
  {
   "id": "Vy93_33",
@@ -4711,7 +4856,8 @@
   "explanation": "空格夾在兩個逗號中間，是插入語位置，as well as 在此連接兩組對等的名詞（希臘羅馬諸神／童話裡的精靈與矮人），兩者地位相同。容易誤選 like：like 代入後文法也通，但 like 是「像……一樣」的比較，拿精靈矮人來比諸神；這一句要說的是諸神「以及」精靈矮人這兩組都是外星人，as well as 才是把兩組並列的寫法。【文法依據】as well as 後面出現省略（ellipsis）：the fairies and dwarfs (were in fact “space people”) 沒有寫出來，因為主要子句已經交代過，上下文可以還原。【常考陷阱】用 as well as 連接主詞時，動詞要跟前面那個主詞一致：The teacher, as well as the students, is here.（不是 are）。",
   "accuracyRate": 32,
   "discrimination": 37,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["the ancient Greek and Roman gods", "the fairies and dwarfs"], "cross": []}
  },
  {
   "id": "Vy93_35",
@@ -4740,7 +4886,8 @@
   "explanation": "Some say… Others say… Still others say… 是三層平行列舉，Still others 表示「還有一些人」。【文法依據】others 是名詞性替代（nominal substitution）：它替代的是 other people，名詞已含在字裡，所以後面直接接動詞 say，不再接名詞。Halliday & Hasan (1976) 把 one／ones 這類字歸為名詞性替代詞，功能是避免重複前文已出現的名詞。寫成 Still other say 或 Still others people say，都是沒認出這一層。【一次辨清】other + 複數名詞（other people）／others 單獨使用（＝other people、other things）／the others 剩下的全部／another 另一個（單數）。",
   "accuracyRate": 59,
   "discrimination": 69,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["Still", "say that"], "cross": []}
  },
  {
   "id": "Vy93_36",
@@ -4775,7 +4922,8 @@
    "label": "延伸閱讀：since 單獨當副詞，等於 since then",
    "url": "https://dictionary.cambridge.org/us/grammar/british-grammar/since",
    "hint": "重點：上下文已經交代過時間點的時候，since 可以單獨當時間副詞，意思是 since then（從那時起），如 They had an argument a couple of years ago and they haven't spoken since.；語氣更強的說法是 ever since。本題 have since perished（從那以後就滅亡了）的 since 就是這個用法，夾在 have 和過去分詞中間；如果換成 in any way（以任何方式），句子就讀不通。"
-  }
+  },
+  "clue": {"inner": ["which have", "perished"], "cross": []}
  },
  {
   "id": "Vy93_37",
@@ -4803,7 +4951,8 @@
   "explanation": "like 在此當介系詞，「例如」，很容易與動詞「喜歡」混淆，是常見多義字陷阱。",
   "accuracyRate": 56,
   "discrimination": 62,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["ancient civilizations", "the Egyptians, Hindus"], "cross": []}
  },
  {
   "id": "Vy93_38",
@@ -4831,7 +4980,8 @@
   "explanation": "writings and drawings 是常見並列搭配，「文字與圖畫」。",
   "accuracyRate": 63,
   "discrimination": 60,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["left writings and"], "cross": []}
  },
  {
   "id": "Vy93_39",
@@ -4861,7 +5011,8 @@
   "explanation": "harm 你認得，難的是句型：intend us ___ 這種「動詞 + 人 + harm」的用法比 intend to V 少見，看到 intend 後面直接接 us，容易一時看不出句子的結構。【接上你已經學過的東西】這其實就是授與動詞的語序：give me a book、send him a letter——動詞後先接「人」，再接「物」，harm 站的正是「物」的位置。同類的還有 do sb harm、wish sb well。【文內驗證】while 在此表對比：前半是 the aliens are here to help us（來幫助我們），後半自然要相反。help 與 harm 這組反義字並排出現，是最直接的線索。",
   "accuracyRate": 36,
   "discrimination": 55,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["intend us", "to help us"], "cross": []}
  },
  {
   "id": "Vy93_40",
@@ -4889,7 +5040,8 @@
   "explanation": "in any way 是常見固定片語，「以任何方式」，常用於否定句加強語氣。",
   "accuracyRate": 53,
   "discrimination": 53,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["no interest in helping us"], "cross": []}
  },
  {
   "id": "Vy92_31",
@@ -4917,7 +5069,8 @@
   "explanation": "not unusual 是雙重否定的委婉說法，意思其實是「很常見」，你要理解此邏輯而非直譯「不尋常」。",
   "accuracyRate": 48,
   "discrimination": 66,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["It is not", "to hear"], "cross": []}
  },
  {
   "id": "Vy92_32",
@@ -4975,7 +5128,8 @@
   "explanation": "空格後面是動詞 cause、前面是名詞 the events，中間缺的是主格關係代名詞，引導形容詞子句修飾 events（會造成壓力的那些事件）。容易誤選介系詞 to、from、about，但介系詞後面接不了動詞 cause；to cause 雖然讀得成不定詞，意思卻變成「為了造成壓力」，和前面「努力控制」正好相反。【文法依據】關係代名詞屬於銜接手段中的指涉（reference）：用一個代名詞回指前面出現過的名詞，把兩句併為一句而不重複。還原就是 They try to control the events. + The events cause stress. → the efforts they make to control the events that cause stress。【注意】主格關代不可省略（只有受格才能省），所以這一格一定要填。",
   "accuracyRate": 29,
   "discrimination": 56,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["the events", "cause stress"], "cross": []}
  },
  {
   "id": "Vy92_34",
@@ -5004,7 +5158,8 @@
   "explanation": "答對率二成八。受中文「對壓力的反應」影響，容易填 for 或 about，但英文的 reaction 固定接 to。這類題不能靠語意猜，要把「名詞 + 固定介系詞」當成一組背：reaction to、response to、solution to、the key to、an approach to、attitude toward(s)。【容易搞混的一點】這裡的 to 是介系詞，後面接名詞 stress，不是不定詞的 to（不接原形動詞）——跟 look forward to、be used to、object to 後面接名詞或動名詞是同一個道理。【文章內對照】下一句 suffer terrible health effects {35} stress 同樣是填介系詞的位置，兩句放在一起正好練習介系詞的分辨。",
   "accuracyRate": 28,
   "discrimination": 34,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["our reactions"], "cross": []}
  },
  {
   "id": "Vy92_35",
@@ -5032,7 +5187,8 @@
   "explanation": "這裡的 from 表示來源，說明這些健康問題是從壓力來的：suffer … from（因…而受苦）是常見字詞搭配，effects 本身則常接 of（the effects of stress）。",
   "accuracyRate": 51,
   "discrimination": 67,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["suffer terrible health effects"], "cross": []}
  },
  {
   "id": "Vy92_36",
@@ -5067,7 +5223,8 @@
    "label": "延伸閱讀：leading 當形容詞，「主要的、頂尖的」",
    "url": "https://dictionary.cambridge.org/dictionary/english-chinese-traditional/leading",
    "hint": "重點：leading 放在名詞前面是形容詞，意思是「最重要的、主要的」，不是「領導的」，如 a leading expert（頂尖專家）。the six leading causes of death 就是六大死因；至於 unusual（不尋常的），心臟病、癌症這些死因一點也不罕見，所以放不進來。"
-  }
+  },
+  "clue": {"inner": ["the six", "causes of death"], "cross": []}
  },
  {
   "id": "Vy92_37",
@@ -5098,7 +5255,8 @@
   "explanation": "about 你大概只想到介系詞「關於」，看到 account for 後面已經有 for，就覺得再擺一個 about 是重複。其實這裡的 about 是副詞「大約」，專門用在數量詞前面。【怎麼判斷】account for 的 for 是這個片語自帶的，空格夾在 for 與 twelve percent 之間，只能放修飾數量的副詞，其他介系詞文法上進不來。整段都是統計數據，出現約數本來就是常態。【為什麼其他選項進不來】這一篇的十個選項中，位置上有可能塞進 for 與數字之間的是 from、even、to。from 與 to 都是介系詞，填進 for 和 twelve percent 之間會變成兩個介系詞連在一起，這一句接不起來；even（甚至）雖然文法上放得進去，但它是強調用的副詞，會變成「甚至占了百分之十二」——而原句只是在陳述統計數字，沒有要強調多寡的意思。",
   "accuracyRate": 32,
   "discrimination": 48,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["account for", "twelve percent"], "cross": []}
  },
  {
   "id": "Vy92_38",
@@ -5128,7 +5286,8 @@
   "explanation": "連程度好的人也常錯。你熟悉的 even 多半站在動詞前面（He can't even swim.）或用在 even if／even though，很少看到它獨自站在逗號後面、後面直接接形容詞，於是改去找連接詞，卻找不到合用的。【怎麼判斷】necessary（必要）到 desirable（值得擁有）是程度再上一階，中間需要標示遞進的字。【文內驗證】本段開頭 Yet, while stress may damage our health, it is sometimes necessary 已經把語氣從「有害」翻轉為「有用」，段末 And without stress, life would be dull. 再次確認作者是在替壓力說話。【一字多義】這一題的 even 走的是強調那條路，劍橋文法（Cambridge English Grammar Today）的 even 條目說它用來指出令人意外、出乎預期或極端的事，even if、even though、even + 比較級（even better）也都在同一個條目裡一起講。但 even 的本義其實是「平的、齊的」：an even number（偶數）、evenly（平均地）、even things out（把情況扯平）。112 年學測文意選填就考了那個動詞用法，答對率只有一成四，是該篇最難的一格。兩條路同源，詞性卻差很遠——這一題用得順的語感，到那一題不一定接得上。",
   "accuracyRate": 31,
   "discrimination": 34,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["Yet, while stress may damage", "sometimes necessary,", "desirable"], "cross": []}
  },
  {
   "id": "Vy92_39",
@@ -5159,7 +5318,8 @@
   "explanation": "看到 like 容易先想到動詞「喜歡」，主詞和動詞也就找錯了。這裡它是介系詞，用來舉例，等於 such as。【怎麼判斷】把 like 到 city 這一整串舉例遮起來，句子剩下 Exciting or challenging events generate {40} much stress as does tragedy or disaster.，主詞 events、動詞 generate 一目瞭然。遇到長主詞，先把插入的舉例劃掉。【順帶看句尾】as does tragedy or disaster 的 does 代替的是 generate stress，這跟 Do you like it?—Yes, I do. 的 do 代替 like it 是同一回事。",
   "accuracyRate": 31,
   "discrimination": 41,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["events", "the birth of a child"], "cross": []}
  },
  {
   "id": "Vy92_40",
@@ -5215,7 +5375,8 @@
   "gloss": "不只",
   "collocation": "includes ___ necessities but also...；not only...but also 固定句型",
   "explanation": "not only...but also 是常考固定句型，「不只…而且…」。",
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["but also"], "cross": []}
  },
  {
   "id": "Vy92b_32",
@@ -5243,7 +5404,8 @@
   "gloss": "其他的",
   "collocation": "food, clean water, housing, and ___ necessities；and other + 複數名詞",
   "explanation": "and 連接的是同類並列，前面已列出三項具體必需品，空格要的是「其他的」來收尾清單：other + 複數名詞。【你最常混淆的一組，一次辨清】other + 複數名詞（other necessities）／others 單獨使用，後面不接名詞（＝other people/things）／the other 兩者中的另一個／the others 剩下的全部／another 三者以上中的另一個（單數）。本題空格後面已經有名詞 necessities，所以只能用 other，不能用 others。",
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["housing, and", "necessities"], "cross": []}
  },
  {
   "id": "Vy92b_33",
@@ -5269,7 +5431,8 @@
   "gloss": "方法",
   "collocation": "Different ___ have been employed；method 當主詞",
   "explanation": "methods 在此作主詞，「不同的方法」，你要辨認複數名詞當主詞的句構。",
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["Different", "have been employed"], "cross": []}
  },
  {
   "id": "Vy92b_34",
@@ -5295,7 +5458,8 @@
   "gloss": "這些",
   "collocation": "One of ___ measures；these 呼應前句的 methods",
   "explanation": "these 在此同指前一句提到的 different methods，是跨句同指的改寫手法。",
-  "contextSpan": "跨句"
+  "contextSpan": "跨句",
+  "clue": {"inner": ["One of", "measures"], "cross": [{"sentence": "Different [33] have been employed by economists to measure standard of living.", "words": ["Different"]}]}
  },
  {
   "id": "Vy92b_35",
@@ -5321,7 +5485,8 @@
   "gloss": "較低的",
   "collocation": "the higher this percentage is, the ___ is the standard of living；the + 比較級, the + 比較級 句型",
   "explanation": "the higher..., the lower... 是常考「越…越…」比較句型，你要理解此處為反向關係(支出比例越高，生活水準反而越低)。",
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["The higher this percentage is"], "cross": []}
  },
  {
   "id": "Vy92b_36",
@@ -5347,7 +5512,8 @@
   "gloss": "平均地",
   "collocation": "income is not distributed ___；distribute evenly 字詞搭配",
   "explanation": "distribute evenly 是常見字詞搭配，「平均分配」。【一字多義】evenly 來自 even 的本義「平的、齊的」，distribute evenly 就是分得一樣多。同一條路還有動詞用法 even things out（把情況扯平），112 年學測文意選填考過，答對率只有一成四。另一條路是你比較熟的強調用法（even if、even better），92 年學測與 94 年指考文意選填各考過一次。同一個字，兩條路，詞性完全不同。",
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["distributed"], "cross": []}
  },
  {
   "id": "Vy92b_37",
@@ -5373,7 +5539,8 @@
   "gloss": "然而、但是",
   "collocation": "Some enjoy wealth, ___ others suffer in poverty；while 表對比連接詞",
   "explanation": "while 在此為對比連接詞，「然而」，連接兩個相對的情況。",
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["enjoy great wealth", "others suffer"], "cross": []}
  },
  {
   "id": "Vy92b_38",
@@ -5399,7 +5566,8 @@
   "gloss": "具有、帶有",
   "collocation": "Americans ___ different racial and educational backgrounds；with + N 修飾主詞",
   "explanation": "with 引導的介系詞片語修飾 Americans，「具有不同種族與教育背景的美國人」。",
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["Americans", "different racial and educational backgrounds"], "cross": []}
  },
  {
   "id": "Vy92b_39",
@@ -5425,7 +5593,8 @@
   "gloss": "也",
   "collocation": "People living in different parts...___ show different standards；also 副詞",
   "explanation": "also 是常見副詞，「也」，你要辨認其在句中的位置(動詞前)。",
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["show different standards"], "cross": []}
  },
  {
   "id": "Vy92b_40",
@@ -5451,7 +5620,8 @@
   "gloss": "例如",
   "collocation": "factors ___ household composition and family size；such as 舉例用法",
   "explanation": "【怎麼判斷】空格前面是 factors（因素），後面接的是 household composition and family size（家庭組成與家庭人數）——兩個並列的名詞，正是「因素」這個上位說法底下的兩個具體成員。從一個籠統的類別走到幾個具體的例子，而且後面直接接名詞、中間不斷句，用的就是 such as（例如）。掛鉤是 I like fruits such as apples and bananas. 那種舉例的句子，只是這裡舉的是抽象的因素而不是水果。【為什麼別的接不上】空格要接的是後面那兩個並列名詞，所以先看形狀就刷掉一半：名詞、限定詞或形容詞擺進來會變成兩個名詞硬碰硬，副詞接不起兩個名詞，連接詞後面要接一個完整的子句，成對使用的轉折詞則缺了另一半。剩下唯一形狀接得上又能表達「例如」的，只有 such as。要特別留意 with——它後面確實接得上名詞，但它表示的是「帶有、具有」，factors with household composition 會變成「帶有家庭組成的因素」，語意不通。形狀對不代表語意對，這是本格歸在字詞搭配類的原因：形狀先定案，語意再驗算。【such as 與 for example 差在哪裡】這兩個中文都翻成「例如」，但形狀不一樣。such as 後面只能接名詞，前後不斷句，整串仍然在同一個句子裡；for example 與 for instance 多半引出一整句話，有時也直接接名詞，但前後都用標點隔開。這幾個舉例說法裡只有 such as 後面不能接完整句子，這是最好用的一條分界。整族的分法（再加上 that is 與 in other words 那種換句話說）寫在學測克漏字 89 年第 27 題的解析裡。such as 在克漏字另外考過兩次：84 年第 22 題與 93 年第 30 題。In my family, daily chores such as cooking, dishwashing, and taking out the trash are shared by everyone.（在我家，煮飯、洗碗、倒垃圾這類日常家事是大家一起分擔的。）Some chores, for example, take far more time than they appear to.（有些家事，舉例來說，花掉的時間遠比看起來多。）〔情境取材自 105 學測作文題：家事分工〕【延伸的字詞搭配】such as + 名詞（例如）、for example／for instance（舉例來說，多半引出一整句話）、take sth into consideration（把某事納入考量）、household composition（家庭組成）、family size（家庭人數）、vary in（在……方面有差異）。",
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["factors", "household composition and family size"], "cross": []}
  },
  {
   "id": "Vy91_31",
@@ -5479,7 +5649,8 @@
   "explanation": "on the way 是常考固定片語，「在路上」。",
   "accuracyRate": 85,
   "discrimination": 33,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["On", "passed a stream"], "cross": []}
  },
  {
   "id": "Vy91_32",
@@ -5507,7 +5678,8 @@
   "explanation": "cool oneself 是固定用法，「讓自己涼快」，你要辨認反身代名詞的使用時機。",
   "accuracyRate": 57,
   "discrimination": 75,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["The donkey", "to cool"], "cross": []}
  },
  {
   "id": "Vy91_33",
@@ -5535,7 +5707,8 @@
   "explanation": "lightening 與 lightning(閃電)拼字相近但意義完全不同，很容易看錯字混淆；此處是動詞 lighten(使變輕)的現在分詞，與前面的 ruining 並列，說明鹽溶解之後帶來的結果。",
   "accuracyRate": 46,
   "discrimination": 63,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["ruining the salt", "but", "the load for the donkey"], "cross": []}
  },
  {
   "id": "Vy91_34",
@@ -5563,7 +5736,8 @@
   "explanation": "play a trick 是常考字詞搭配，「耍花招」。",
   "accuracyRate": 70,
   "discrimination": 66,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["the donkey", "the same trick"], "cross": []}
  },
  {
   "id": "Vy91_35",
@@ -5591,7 +5765,8 @@
   "explanation": "be troubled by 是常見字詞搭配，「被…困擾」，troubled 為過去分詞當形容詞用。",
   "accuracyRate": 65,
   "discrimination": 65,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["very much", "by the donkey's trick"], "cross": []}
  },
  {
   "id": "Vy91_36",
@@ -5620,7 +5795,8 @@
   "explanation": "teach sb a lesson 是常考字詞搭配，「給某人一個教訓」。",
   "accuracyRate": 81,
   "discrimination": 52,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["a way to", "the donkey a lesson"], "cross": []}
  },
  {
   "id": "Vy91_37",
@@ -5648,7 +5824,8 @@
   "explanation": "finally 是常見副詞，「終於」，你要辨認其修飾動詞片語 came up with 的位置。",
   "accuracyRate": 57,
   "discrimination": 55,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["On the third day", "came up with"], "cross": []}
  },
  {
   "id": "Vy91_38",
@@ -5676,7 +5853,8 @@
   "explanation": "not A but B 是常考固定句型，「不是 A 而是 B」。",
   "accuracyRate": 46,
   "discrimination": 71,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["with salt", "but with sand"], "cross": []}
  },
  {
   "id": "Vy91_39",
@@ -5704,7 +5882,8 @@
   "explanation": "此格需邏輯推論：沙子泡水後吸水變重，與鹽泡水溶解變輕正好相反，是全文情節反轉的關鍵。",
   "accuracyRate": 53,
   "discrimination": 71,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["they became much", "got the sacks wet"], "cross": []}
  },
  {
   "id": "Vy91_40",
@@ -5761,7 +5940,8 @@
   "gloss": "你自己",
   "collocation": "decide for ___；decide for oneself 字詞搭配",
   "explanation": "decide for yourself 是常見字詞搭配，「自己判斷決定」。",
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["decide for"], "cross": []}
  },
  {
   "id": "Vy91b_32",
@@ -5787,7 +5967,8 @@
   "gloss": "競爭",
   "collocation": "dolphins and fishermen are in ___ for tuna；in competition for 字詞搭配",
   "explanation": "in competition for 是常考字詞搭配，「為了…而競爭」。",
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["are in", "for tuna"], "cross": []}
  },
  {
   "id": "Vy91b_33",
@@ -5813,7 +5994,8 @@
   "gloss": "在…之間",
   "collocation": "conflict ___ dolphins and fishermen；conflict between A and B 字詞搭配",
   "explanation": "conflict between A and B 是常見字詞搭配，「A 與 B 之間的衝突」。",
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["much conflict", "dolphins and fishermen"], "cross": []}
  },
  {
   "id": "Vy91b_34",
@@ -5839,7 +6021,8 @@
   "gloss": "延伸",
   "collocation": "“walls” that ___ for miles；stretch for + 距離 字詞搭配",
   "explanation": "stretch for miles 是常見字詞搭配，「綿延數英里」，很容易誤解為「伸展身體」的常見義。",
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["“walls” that", "for miles"], "cross": []}
  },
  {
   "id": "Vy91b_35",
@@ -5865,7 +6048,8 @@
   "gloss": "也",
   "collocation": "they ___ catch many dolphins；also 放在一般動詞前、助動詞或 be 動詞後",
   "explanation": "also 是常見副詞，需辨認其在句中修飾動詞的位置。",
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["they", "catch many dolphins"], "cross": []}
  },
  {
   "id": "Vy91b_36",
@@ -5891,7 +6075,8 @@
   "gloss": "受困的",
   "collocation": "When they are ___ in the nets too long；be trapped in 字詞搭配",
   "explanation": "be trapped in 是常考字詞搭配，「受困於…」，trapped 為過去分詞當形容詞用。",
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["When they are", "in the nets"], "cross": []}
  },
  {
   "id": "Vy91b_37",
@@ -5917,7 +6102,8 @@
   "gloss": "在船上",
   "collocation": "brought ___ the ship；bring sb aboard 字詞搭配",
   "explanation": "bring aboard 是常見字詞搭配，「帶上船」。",
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["are brought", "the ship"], "cross": []}
  },
  {
   "id": "Vy91b_38",
@@ -5943,7 +6129,8 @@
   "gloss": "無意義的、毫無道理的",
   "collocation": "the ___ death of these wonderful sea creatures；senseless death 字詞搭配",
   "explanation": "senseless death 是常見字詞搭配，「毫無意義的死亡」，帶有惋惜語氣。",
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["about the", "death of"], "cross": []}
  },
  {
   "id": "Vy91b_39",
@@ -5970,7 +6157,8 @@
   "gloss": "拯救",
   "collocation": "decided to help ___ them；help + 原形動詞 固定句型",
   "explanation": "help + 原形動詞(省略 to)是常考固定句型，「幫忙做某事」。",
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["decided to help"], "cross": []}
  },
  {
   "id": "Vy91b_40",
@@ -5996,7 +6184,8 @@
   "gloss": "（片語 pay off）有回報、奏效",
   "collocation": "their hard work paid ___；pay off 固定片語（有回報）",
   "explanation": "pay off 是常考固定片語，「有回報、奏效」，你要整體記憶此片語動詞。",
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["their hard work paid"], "cross": []}
  },
  {
   "id": "Vy90_31",
@@ -6022,7 +6211,8 @@
   "gloss": "留下",
   "collocation": "insisted on my ___ my legs behind；insist on + 所有格 + V-ing",
   "explanation": "此格為介系詞 on 後接動名詞的結構，且前面用所有格 my 修飾動名詞(意義上的主詞)，很容易忽略此文法細節。有些人會誤以為 my 後面只能接名詞而聯想選 (J) way，卻忽略動名詞後面還帶著受詞 my legs 及副詞 behind（leave ... behind），需要一個能接受詞的動名詞。",
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["insisted on my", "my legs behind"], "cross": []}
  },
  {
   "id": "Vy90_32",
@@ -6048,7 +6238,8 @@
   "gloss": "相當",
   "collocation": "I was ___ annoyed；quite + adj 程度副詞",
   "explanation": "quite 是常見程度副詞，修飾形容詞 annoyed。",
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["I was", "annoyed"], "cross": []}
  },
  {
   "id": "Vy90_33",
@@ -6074,7 +6265,8 @@
   "gloss": "抱歉的",
   "collocation": "he was very ___ about it；sorry about 字詞搭配",
   "explanation": "sorry about 是常見字詞搭配，「對…感到抱歉」。",
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["he was very", "about it"], "cross": []}
  },
  {
   "id": "Vy90_34",
@@ -6100,7 +6292,8 @@
   "gloss": "路、通道",
   "collocation": "always in the ___；in the way 固定片語（擋路）",
   "explanation": "in the way 是常考固定片語，「擋路、造成妨礙」，很容易誤解為字面「在路上」。",
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["legs were always in the"], "cross": []}
  },
  {
   "id": "Vy90_35",
@@ -6126,7 +6319,8 @@
   "gloss": "在外面",
   "collocation": "leave their legs ___；邏輯呼應前文「寄放」的規定",
   "explanation": "此格需邏輯推論：呼應開頭「insisted on {31} my legs behind」的規定精神，此處是政策的正式說法。",
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["should leave their legs"], "cross": []}
  },
  {
   "id": "Vy90_36",
@@ -6152,7 +6346,8 @@
   "gloss": "正常的",
   "collocation": "Under ___ circumstances；under normal circumstances 字詞搭配",
   "explanation": "under normal circumstances 是常考字詞搭配，「在正常情況下」。",
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["Under", "circumstances"], "cross": []}
  },
  {
   "id": "Vy90_37",
@@ -6178,7 +6373,8 @@
   "gloss": "引起、造成",
   "collocation": "didn't want to ___ a disturbance；make a disturbance 字詞搭配",
   "explanation": "make a disturbance 是常見字詞搭配，「引起騷動」。",
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["didn't want to", "a disturbance"], "cross": []}
  },
  {
   "id": "Vy90_38",
@@ -6204,7 +6400,8 @@
   "gloss": "牢固地",
   "collocation": "more ___ fixed；副詞修飾過去分詞 fixed",
   "explanation": "securely 是副詞，修飾過去分詞 fixed，你要辨認此詞性搭配(副詞 + 形容詞化的過去分詞)。",
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["more", "fixed"], "cross": []}
  },
  {
   "id": "Vy90_39",
@@ -6230,7 +6427,8 @@
   "gloss": "脫落",
   "collocation": "they ___ off quite easily；come off 字詞搭配（脫落、鬆開）",
   "explanation": "come off 是常考字詞搭配，「脫落」，很容易與 came from 等其他片語混淆。",
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["they", "off quite easily"], "cross": []}
  },
  {
   "id": "Vy90_40",
@@ -6256,7 +6454,8 @@
   "gloss": "（加強否定語氣）",
   "collocation": "did not surprise me ___ more than...；not...any more than 固定句型",
   "explanation": "not...any more than 是常考固定句型，「並不比…更加」，用來加強比較的否定語氣。",
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["did not surprise me", "more than"], "cross": []}
  },
  {
   "id": "Vy111r_21",
@@ -6284,7 +6483,8 @@
   "explanation": "此格需邏輯推論：呼應後文列舉的高空跳躍、撞車等危險動作，判斷需要「風險過高」的形容詞。",
   "accuracyRate": 64,
   "discrimination": 71,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["too", "for the regular actor", "jumping from heights, crashing cars"], "cross": []}
  },
  {
   "id": "Vy111r_22",
@@ -6314,7 +6514,8 @@
   "accuracyRate": 29,
   "discrimination": 50,
   "contextSpan": "跨句",
-  "contextNote": "線索在本段後面幾句 `actors themselves shot acrobatic acts and dangerous scenes, until they began to get injured`（演員自己拍特技和危險場面，直到他們開始受傷）以及 `the producers would hire anyone crazy or desperate enough to do it`（製片會找任何夠瘋狂、夠走投無路的人來做）——本句是這一段的主題句，後面整段都在說明「為什麼非得有人來做不可」，所以填 necessity（必要性、需求）。`out of necessity` 是「出於需要」。"
+  "contextNote": "線索在本段後面幾句 `actors themselves shot acrobatic acts and dangerous scenes, until they began to get injured`（演員自己拍特技和危險場面，直到他們開始受傷）以及 `the producers would hire anyone crazy or desperate enough to do it`（製片會找任何夠瘋狂、夠走投無路的人來做）——本句是這一段的主題句，後面整段都在說明「為什麼非得有人來做不可」，所以填 necessity（必要性、需求）。`out of necessity` 是「出於需要」。",
+  "clue": {"inner": ["emerged out of"], "cross": [{"sentence": "In the early days of the film industry, actors themselves shot acrobatic acts and dangerous scenes, until they began to get injured.", "words": ["until they began to get injured"]}]}
  },
  {
   "id": "Vy111r_23",
@@ -6342,7 +6543,8 @@
   "explanation": "professional crew members 是常見字詞搭配，「專業工作人員」。",
   "accuracyRate": 53,
   "discrimination": 79,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["crew members"], "cross": []}
  },
  {
   "id": "Vy111r_24",
@@ -6370,7 +6572,8 @@
   "explanation": "try out 是常考字詞搭配，「嘗試、試做」。",
   "accuracyRate": 56,
   "discrimination": 65,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["they often", "for the first time"], "cross": []}
  },
  {
   "id": "Vy111r_25",
@@ -6399,7 +6602,8 @@
   "explanation": "cost sb sth 是常考字詞搭配，「使某人付出…(代價)」，此處為 cost sb their lives(使某人喪命)。cost 三態同形(cost-cost-cost)，此處主詞 which 指代前面「自己犯的錯」，動作發生在過去(與前後文 had to learn、suffered 呼應)，很容易誤判為現在式。",
   "accuracyRate": 53,
   "discrimination": 75,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["which", "some their lives"], "cross": []}
  },
  {
   "id": "Vy111r_26",
@@ -6427,7 +6631,8 @@
   "explanation": "call for 是常考字詞搭配，「需要、要求」。",
   "accuracyRate": 44,
   "discrimination": 63,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["which", "the use of dedicated stunt people"], "cross": []}
  },
  {
   "id": "Vy111r_27",
@@ -6455,7 +6660,8 @@
   "explanation": "find a new career 是常見字詞搭配，「找到新的職業」。",
   "accuracyRate": 58,
   "discrimination": 72,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["found a new", "as a stunt person"], "cross": []}
  },
  {
   "id": "Vy111r_28",
@@ -6485,7 +6691,8 @@
   "explanation": "witness 在你腦中綁死在「人目擊」——目擊證人、witness a car accident；本句主詞卻是兩個年代。這不是修辭上的比喻，而是詞典明列的用法：當地點或時期 witness 某事件時，意思是該事件在那個時間或地點發生，例如 Those years witnessed momentous changes throughout Europe. see 也有同樣用法：The 20th century saw great progress in medicine.【文內驗證】下一句 That technology has continued to evolve into the present. 把 1960 和 70 年代設定為技術發展的起點，時間軸很清楚。",
   "accuracyRate": 35,
   "discrimination": 63,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["The 1960s", "the development of"], "cross": []}
  },
  {
   "id": "Vy111r_29",
@@ -6513,7 +6720,8 @@
   "explanation": "it is possible to V 是常考句型，「…是可能的」。",
   "accuracyRate": 55,
   "discrimination": 75,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["it is now", "to create"], "cross": []}
  },
  {
   "id": "Vy111r_30",
@@ -6543,7 +6751,8 @@
   "explanation": "sensation 你多半停在「轟動」（The film caused a sensation.）；本句取的是它最基本的一義——身體或心理上的「感受」，這裡指真人特技帶來的刺激感。【怎麼判斷】and 連接的必須是同詞性、同功能的成分：前面是名詞 the realism（真實感），空格也要是名詞，且被 thrilling 修飾。【文內驗證】前一句說 CGI 已能做出逼真畫面，本句用 However 轉折——作者要說的是電腦特效取代不了真人特技的「真實感」與「刺激感」，兩者同向。",
   "accuracyRate": 36,
   "discrimination": 50,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["the realism and thrilling", "of an actual stunt"], "cross": []}
  },
  {
   "id": "Vy99r_31",
@@ -6570,7 +6779,8 @@
   "gloss": "不情願的",
   "collocation": "they are ___ to get up early；reluctant to V 字詞搭配",
   "explanation": "reluctant to V 是常考字詞搭配，「不情願做某事」。",
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["they are", "to get up early"], "cross": []}
  },
  {
   "id": "Vy99r_32",
@@ -6596,7 +6806,8 @@
   "gloss": "原因",
   "collocation": "this teen behavior actually has a physical ___；physical cause 字詞搭配",
   "explanation": "physical cause 是常見字詞搭配，「生理上的原因」。",
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["has a physical"], "cross": []}
  },
  {
   "id": "Vy99r_33",
@@ -6649,7 +6860,8 @@
   "gloss": "與…相衝突",
   "collocation": "their biological rhythm is ___ an early school start time；be in conflict with 字詞搭配",
   "explanation": "be in conflict with 是常考字詞搭配，「與…相衝突」。",
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["their biological rhythm is", "an early school start time"], "cross": []}
  },
  {
   "id": "Vy99r_35",
@@ -6676,7 +6888,8 @@
   "collocation": "They are, ___, not getting the sleep；插入語，表結果",
   "explanation": "therefore 在此為插入語，置於 be 動詞與現在分詞之間，你要辨認此插入位置。",
   "contextSpan": "跨句",
-  "contextNote": "線索在前一句 `With most high schools starting before 7:30 a.m., teenagers have to get up as early as 6:30 a.m. or so.`（大多數高中七點半前就上課，青少年得早上六點半左右就起床）——前一句是原因，本句是結果，所以插入語填 therefore（因此）。只看本句，`They are, for example, not getting the sleep they need`（舉例來說，他們沒睡到自己需要的量）文法上一樣通順，你分不出來。"
+  "contextNote": "線索在前一句 `With most high schools starting before 7:30 a.m., teenagers have to get up as early as 6:30 a.m. or so.`（大多數高中七點半前就上課，青少年得早上六點半左右就起床）——前一句是原因，本句是結果，所以插入語填 therefore（因此）。只看本句，`They are, for example, not getting the sleep they need`（舉例來說，他們沒睡到自己需要的量）文法上一樣通順，你分不出來。",
+  "clue": {"inner": ["They are,", "not getting the sleep"], "cross": [{"sentence": "With most high schools starting before 7:30 a.m., teenagers have to get up as early as 6:30 a.m. or so.", "words": ["starting before 7:30 a.m.", "have to get up"]}]}
  },
  {
   "id": "Vy99r_36",
@@ -6702,7 +6915,8 @@
   "gloss": "缺乏",
   "collocation": "The ___ of sleep has negative effects；the lack of 字詞搭配",
   "explanation": "the lack of 是常考字詞搭配，「…的缺乏」。",
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["The", "of sleep"], "cross": []}
  },
  {
   "id": "Vy99r_37",
@@ -6729,7 +6943,8 @@
   "gloss": "由於",
   "collocation": "performances may drop ___ insufficient sleep；due to + N 字詞搭配",
   "explanation": "【題意】performances may drop ______ insufficient sleep（表現可能因睡眠不足而下滑）。空格後面是 insufficient sleep，名詞，要填後面接名詞的片語。【due to】由於，後面接原因。睡眠不足是表現下滑的原因。【同義】because of、owing to、on account of、as a result of 後面也都接名詞。because 後面則要接完整句子：because they do not sleep enough。【例句】Due to too much homework, many teenagers cannot concentrate in class.（由於作業太多，許多青少年上課無法專心。）〔情境取材自 113 學測作文題：青少年的困擾〕【三個 result 怎麼分】as a result of 是由於，result from 是起因於，後面都接原因；result in 是導致，後面接結果。【跨屆】89 年學測克漏字第 30 題也考 Due to。【延伸的字詞搭配】due to + N（由於）、because of + N（因為）、owing to + N（由於）、result in（導致）、result from（起因於）、insufficient sleep（睡眠不足）。",
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["performances may drop", "insufficient sleep"], "cross": []}
  },
  {
   "id": "Vy99r_38",
@@ -6756,7 +6971,8 @@
   "gloss": "允許",
   "collocation": "changed the school start time, ___ children to start later；分詞構句表結果",
   "explanation": "allowing 是現在分詞構句，表示前面動作(改變上學時間)所帶來的結果，相當於 which allowed children to start later，是「V-ing 表結果的分詞構句」經典句型，你要辨認此文法結構。",
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["changed the school start time", "children to start later"], "cross": []}
  },
  {
   "id": "Vy99r_39",
@@ -6782,7 +6998,8 @@
   "gloss": "例如",
   "collocation": "many positive results, ___, a decrease in...；插入語舉例",
   "explanation": "【怎麼判斷】線索全在同一句話裡。This change has brought many positive results, ______, a decrease in visits to health centers and rest requests.（這項改變帶來許多正面成效，例如就診次數與請假休息的次數都下降了。）前半的 many positive results 是概括的說法，後半的 a decrease in visits to health centers and rest requests 是一項具體的成效。從概括走到具體，中間要的就是一個舉例的說法，填 for example。【這個位置要留意】for example 夾在兩個逗號之間當插入語，不在句首。判斷時先把兩個逗號中間蓋起來，看剩下的部分接不接得上：many positive results 與 a decrease in visits to health centers and rest requests 講的是同一件事，接得上，再回頭決定填哪一個。轉折詞插在句子中間很常見，指考克漏字 100 年第 16 題就是把 for example 插在主詞與動詞之間（A group of researchers in Japan, for example, studied...），同一種擺法。【舉例的三個說法怎麼分】for example 與 for instance 同義，可以互換，後面可以接一句話，也可以像本句一樣接名詞片語，前後用逗號隔開。such as 不一樣，它後面直接接名詞，從一類東西裡點出幾個成員，中間不斷句。that is 與 in other words 又是另一回事：那是把同一件事換句話說，後面講的還是前面那件事，不是新的例子。學測克漏字 89 年第 27 題考的是同一個判斷方式，可以對照著看。Many teenagers deal with more than one problem at the same time. Sleeping too little, for example, can make schoolwork harder and moods worse.（許多青少年同時面對不只一個問題。舉例來說，睡太少會讓功課變吃力、心情變差。）Sleeping too little, for instance, can make schoolwork harder and moods worse.（同一句話換成 for instance，意思不變。）Many teenagers worry about problems such as sleep, grades, and friendships.（許多青少年煩惱的是睡眠、成績、交友這類問題。）〔情境取材自 113 學測作文題：青少年的困擾〕【延伸的字詞搭配】for example（舉例來說，後接句子或名詞片語）、for instance（同上，可互換）、such as + 名詞（例如，後面直接接成員）、that is（也就是說）、in other words（換句話說）、a decrease in + 名詞（……的減少）、bring results（帶來成效）。",
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["many positive results", "a decrease in visits"], "cross": []}
  },
  {
   "id": "Vy99r_40",
@@ -6808,7 +7025,8 @@
   "gloss": "警覺的、精神好的",
   "collocation": "were more ___ during the day；與 less sleepy 相對的形容詞",
   "explanation": "此格需邏輯推論：與前面「felt less sleepy」語意平行對照，需要表示「精神更好」的形容詞。",
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["felt less sleepy", "were more"], "cross": []}
  },
  {
   "id": "Vy95r_31",
@@ -6834,7 +7052,8 @@
   "gloss": "免費的",
   "collocation": "is, therefore, ___；邏輯推論（不屬於任何人→免費）",
   "explanation": "此格需邏輯推論：因為太陽能「不屬於任何人」，所以推導出「免費」的結論，沒有明顯字詞搭配可直接對應。",
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["does not belong to anybody", "therefore"], "cross": []}
  },
  {
   "id": "Vy95r_32",
@@ -6860,7 +7079,8 @@
   "gloss": "重要的",
   "collocation": "it is the most ___；the most + adj 最高級",
   "explanation": "此格需邏輯推論：因為不會造成污染、能減少溫室效應，所以是「最重要的」能源選項。",
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["the most", "non-polluting"], "cross": []}
  },
  {
   "id": "Vy95r_33",
@@ -6886,7 +7106,8 @@
   "gloss": "減少",
   "collocation": "helps to ___ the greenhouse effect；lessen + N 字詞搭配",
   "explanation": "lessen the greenhouse effect 是常見字詞搭配，「減緩溫室效應」。",
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["helps to", "the greenhouse effect"], "cross": []}
  },
  {
   "id": "Vy95r_34",
@@ -6912,7 +7133,8 @@
   "gloss": "方式",
   "collocation": "in a most primitive ___；in a...manner 字詞搭配",
   "explanation": "in a...manner 是常考字詞搭配，「以…的方式」。",
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["in a most primitive"], "cross": []}
  },
  {
   "id": "Vy95r_35",
@@ -6938,7 +7160,8 @@
   "gloss": "研究工作",
   "collocation": "most of this ___ remained mainly academic；work 呼應前句 research and development",
   "explanation": "work 在此同指前句提到的「研究與開發」工作，是跨句同指的改寫手法。work 作「工作／研究」解時是不可數名詞；不過 this 後面也能接單數可數名詞，所以光看 this 排除不了選項裡的可數名詞，真正排除它們的是意思——放進這一格都接不上前句講的研究與開發。",
-  "contextSpan": "跨句"
+  "contextSpan": "跨句",
+  "clue": {"inner": ["most of this", "research and development"], "cross": []}
  },
  {
   "id": "Vy95r_36",
@@ -6964,7 +7187,8 @@
   "gloss": "上漲",
   "collocation": "the dramatic ___ in oil prices；rise in 字詞搭配",
   "explanation": "rise in 是常考字詞搭配，「…的上漲」。",
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["the dramatic", "in oil prices"], "cross": []}
  },
  {
   "id": "Vy95r_37",
@@ -6990,7 +7214,8 @@
   "gloss": "設計、規劃",
   "collocation": "several countries began to ___ extensive research programs；design a program 字詞搭配",
   "explanation": "design a research program 是常見字詞搭配，「規劃研究計畫」。",
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["began to", "extensive research programs"], "cross": []}
  },
  {
   "id": "Vy95r_38",
@@ -7016,7 +7241,8 @@
   "gloss": "曬乾",
   "collocation": "hang out our clothes to ___ in the sun；hang...to dry 字詞搭配",
   "explanation": "此格需邏輯推論：曬衣服的目的是要「曬乾」，呼應後文「使用太陽的能量」的語意。",
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["hang out our clothes to", "in the sun"], "cross": []}
  },
  {
   "id": "Vy95r_39",
@@ -7042,7 +7268,8 @@
   "gloss": "吸收",
   "collocation": "solar panels ___ the energy of the sun；absorb energy 字詞搭配",
   "explanation": "absorb energy 是常見字詞搭配，「吸收能量」。",
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["solar panels", "the energy of the sun"], "cross": []}
  },
  {
   "id": "Vy95r_40",
@@ -7068,7 +7295,8 @@
   "gloss": "可取得的",
   "collocation": "Such systems are ___ on the market；available on the market 字詞搭配",
   "explanation": "available on the market 是常見字詞搭配，「在市面上可買到」，呼應第一段開頭 available 的用法。",
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["Such systems are", "on the market"], "cross": []}
  },
  {
   "id": "Vy113_21",
@@ -7098,7 +7326,8 @@
   "explanation": "depart 是你在機場會看到的字——departure gate、班機起飛，意思就是「離開」。這裡的 departed 用的還是同一個離開：英文拿 depart this life 委婉指過世，departed 當形容詞「已故的」由此而來，在本句直接放在 loved ones 前面修飾名詞；機場的那個「離開」和這裡的「過世」隔了一層，才卡住人。【文內驗證】答案就寫在同一句裡——loved ones who died in the tsunami，關係子句等於把 departed 翻譯了一遍；全篇還有一條同義詞鏈：those they have lost → the dead relative → between the living and the dead → reach the deceased。【易混淆】選項裡的 passed on 也是「過世」的委婉語，意思和 departed 很接近，但它是動詞片語，放不進 their ___ loved ones 這個形容詞的位置，別代錯。",
   "accuracyRate": 35,
   "discrimination": 65,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["their", "loved ones", "who died in the tsunami"], "cross": []}
  },
  {
   "id": "Vy113_22",
@@ -7126,7 +7355,8 @@
   "explanation": "fateful day 是常見字詞搭配，「命運攸關的一天」，指海嘯發生的那天。",
   "accuracyRate": 40,
   "discrimination": 48,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["on that", "day"], "cross": []}
  },
  {
   "id": "Vy113_23",
@@ -7156,7 +7386,8 @@
   "explanation": "bring up（提出話題）常見，bring forth 少見得多；加上 forth 長得像 fourth，容易看錯。bring forth = 提出、催生，語氣比 bring up 正式。forth 本身是「向前」，與 forward 同源：set forth、henceforth、back and forth。【怎麼判斷】was first ___ by… 是標準的被動語態，空格只能放過去分詞。【文內驗證】同句後半交代 Sasaki 在 2010 年因表親過世而萌生此念，第三段才說他 2011 年對外開放——先有構想、後有開放，印證 first。",
   "accuracyRate": 37,
   "discrimination": 65,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["was first", "by a Japanese garden designer", "in 2010"], "cross": []}
  },
  {
   "id": "Vy113_24",
@@ -7184,7 +7415,8 @@
   "explanation": "navigate through sorrow 是常見字詞搭配，「走過悲傷」，需理解 navigate 引申為「度過(困難情緒)」的比喻用法。",
   "accuracyRate": 41,
   "discrimination": 64,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["navigate through the"], "cross": []}
  },
  {
   "id": "Vy113_25",
@@ -7214,7 +7446,8 @@
   "explanation": "house 當名詞是「房子」，字尾的 s 唸清音；它當及物動詞時意思是「容納、裡面裝有」，字尾要唸成濁音的 z，和 use 當名詞、當動詞時字尾的差別一樣。【怎麼判斷】真正卡住人的是句子開頭：The booth he built ___，其中 he built 是省略了受格關係代名詞的形容詞子句（＝The booth (that) he built），跟 The book (that) I bought yesterday is interesting. 是同一種結構。把子句遮掉，剩下 The booth ___ only an old dial phone，空格顯然是主要動詞。【文內驗證】下一句 he could pick up the phone 直接印證亭子裡裝著一支電話。",
   "accuracyRate": 37,
   "discrimination": 57,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["The booth he built", "only an old dial phone"], "cross": []}
  },
  {
   "id": "Vy113_26",
@@ -7271,7 +7504,8 @@
   "explanation": "render + 受詞 + 形容詞 是常考固定句型，「使…變得…」，manageable 表「可控制、可應付的」。",
   "accuracyRate": 44,
   "discrimination": 66,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["renders the grieving process more"], "cross": []}
  },
  {
   "id": "Vy113_28",
@@ -7299,7 +7533,8 @@
   "explanation": "bridge between A and B 是常見字詞搭配(比喻用法)，「A 與 B 之間的橋樑」。",
   "accuracyRate": 68,
   "discrimination": 72,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["has become a", "between the living and the dead"], "cross": []}
  },
  {
   "id": "Vy113_29",
@@ -7327,7 +7562,8 @@
   "explanation": "natural mechanism 是常見字詞搭配，「天生的機制」，此格也是全文核心思想句的關鍵詞。",
   "accuracyRate": 44,
   "discrimination": 65,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["a natural", "for coping with loss"], "cross": []}
  },
  {
   "id": "Vy113_30",
@@ -7355,7 +7591,8 @@
   "explanation": "此格需邏輯推論：作為句子主詞，呼應後文「他們相信訊息終將傳達給逝者」的信念，答案應為抽象名詞「希望」。",
   "accuracyRate": 56,
   "discrimination": 74,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["is always there", "They believe", "reach the deceased"], "cross": []}
  },
  {
   "id": "Vy114_21",
@@ -7386,7 +7623,8 @@
   "explanation": "答對率二成九。note 這個字，你的印象大概只有名詞「筆記」（take notes）與動詞「記下」（note it down），所以看到 noted 直覺讀成「被記下來的」，跟後面的 for 接不起來，就把正解跳過了。本題的 noted 是形容詞「著名的」，來自 note 的另一個意思「注意、注目」——值得被注意的，就是有名的。【文章內線索】第一句已經說 one of the most famous cathedrals in Europe，第二句換句話說改用 be noted for。前面用 famous、後面改用 noted／known／renowned，正是文意選填典型的同義改寫考法。【常見誤選】familiar——它的搭配是 be familiar with（人熟悉某事）或 be familiar to（某事為人所熟悉），沒有 be familiar for 這種用法。【延伸的字詞搭配】be noted for／be known for／be famous for／be renowned for／be celebrated for（以…著稱）；另外 noteworthy（值得注意的）、of note（重要的）、take note of（留意）也一起記。",
   "accuracyRate": 29,
   "discrimination": 53,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["cathedral is", "for its intricate architecture"], "cross": []}
  },
  {
   "id": "Vy114_22",
@@ -7417,7 +7655,8 @@
   "explanation": "reference 這個字，你的印象大概只有「參考書」與「推薦信」，本句用的卻是它另一個常見義——「提及、記載」，等於 mention，固定接介系詞 to。【詞性與搭配一起看】there is 之後需要名詞當主詞，documented（有文獻可考的）是修飾它的形容詞，空格後又接 to，正符合 reference to 的搭配；此處作不可數用法，所以前面沒有冠詞。【文內驗證】同句後半 dating as far back as the 12th century（可上溯至十二世紀）——能被追溯到某個世紀的，正是文字記載。【同一批選項一起注意】這一篇的選項有好幾個字不只一種詞性，判斷時先看位置要的是哪一種詞性，再看那個字有沒有符合的用法，不要只憑最熟的那個意思就把它排除。",
   "accuracyRate": 37,
   "discrimination": 53,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["there is documented", "to the ringing", "dating as far back"], "cross": []}
  },
  {
   "id": "Vy114_23",
@@ -7452,7 +7691,8 @@
    "label": "延伸閱讀：限定動詞與非限定動詞——逗號後面為什麼只能用分詞",
    "url": "https://dictionary.cambridge.org/grammar/british-grammar/finite-and-non-finite-verbs",
    "hint": "重點：The 10 bells vary in size 已經是完整的句子，逗號後面又沒有連接詞，就不能再接一個看得出時態的限定動詞，只能用非限定形式。如果用 -ed 形，意思會變成鐘是承受動作的一方，後面就接不了受詞 a name；bearing 是主動，bear a name 是「帶有某個名字」，each bearing a name 就是每一口鐘各有一個名字。"
-  }
+  },
+  "clue": {"inner": ["vary in size, each", "a name"], "cross": []}
  },
  {
   "id": "Vy114_24",
@@ -7480,7 +7720,8 @@
   "explanation": "survive + N(事件) 是常考字詞搭配，「從某事件中倖存下來、熬過某事件」，後面直接接受詞，不需加介系詞。",
   "accuracyRate": 55,
   "discrimination": 77,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["the only one", "the French Revolution"], "cross": []}
  },
  {
   "id": "Vy114_25",
@@ -7508,7 +7749,8 @@
   "explanation": "retain 是常見及物動詞，「保留」，與前文「唯一躲過法國大革命的那一口鐘」呼應：它躲過了那一劫，也保住了音質。",
   "accuracyRate": 40,
   "discrimination": 63,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["except for Emmanuel, which", "its renowned, excellent sound"], "cross": []}
  },
  {
   "id": "Vy114_26",
@@ -7536,7 +7778,8 @@
   "explanation": "familiar part of 是常見字詞搭配，「熟悉的一部分」。",
   "accuracyRate": 42,
   "discrimination": 45,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["have become a", "part of life"], "cross": []}
  },
  {
   "id": "Vy114_27",
@@ -7566,7 +7809,8 @@
   "explanation": "答對率二成六。你大概只認得形容詞的 faithful（忠實的，be faithful to），看到 call the ___ to prayer 需要一個受詞，就先把 faithful 排除了。這一格用到的是「the + 形容詞＝某一群人」這條文法規則：the faithful 就是「信眾、信徒」。【句構線索】call 是及物動詞，the 後面、to prayer 前面必須是名詞性成分；選項中能與 the 結合成「一群人」的只有 faithful。【文法要點】the + 形容詞指一群人時是複數概念，動詞用複數：The faithful are gathering in the square.（同段列的 the accused 也可以指一個人，動詞照實際指的人數。）【常考同類】the rich／the poor／the young／the elderly／the homeless／the injured／the accused／the unemployed；宗教與正式語境還有 the departed（逝者，113 年也考過 departed 這個字）。",
   "accuracyRate": 26,
   "discrimination": 40,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["call the", "to prayer"], "cross": []}
  },
  {
   "id": "Vy114_28",
@@ -7594,7 +7838,8 @@
   "explanation": "celebration 與後文的 mourning(哀悼)形成語意對照，你要理解此對比關係。",
   "accuracyRate": 46,
   "discrimination": 72,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["rung in times of", "and of mourning"], "cross": []}
  },
  {
   "id": "Vy114_29",
@@ -7622,7 +7867,8 @@
   "explanation": "fall silent 是常考字詞搭配，「陷入沉默」。",
   "accuracyRate": 48,
   "discrimination": 73,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["the bells fell"], "cross": []}
  },
  {
   "id": "Vy114_30",
@@ -7650,7 +7896,8 @@
   "explanation": "process of restoration 是常見字詞搭配，「修復的過程」。",
   "accuracyRate": 58,
   "discrimination": 77,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["time-consuming process of"], "cross": []}
  },
  {
   "id": "Vy115_21",
@@ -7678,7 +7925,8 @@
   "explanation": "by no means 是常考的片語，「絕不、決不」，用來加強否定語氣；它本身是副詞片語，不限定後面接什麼，這一格要補語是前面的 is 決定的，選項裡能直接放在這個位置的是形容詞。",
   "accuracyRate": 49,
   "discrimination": 75,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["is by no means"], "cross": []}
  },
  {
   "id": "Vy115_22",
@@ -7706,7 +7954,8 @@
   "explanation": "function 在此與 brain size 並列，作 linked with 的受詞，你要辨認此並列結構。",
   "accuracyRate": 61,
   "discrimination": 81,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["linked with brain size and"], "cross": []}
  },
  {
   "id": "Vy115_23",
@@ -7734,7 +7983,8 @@
   "explanation": "dementia risk 是常見字詞搭配，「失智風險」。",
   "accuracyRate": 54,
   "discrimination": 77,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["increases dementia"], "cross": []}
  },
  {
   "id": "Vy115_24",
@@ -7762,7 +8012,8 @@
   "explanation": "delay 是常見及物動詞，「延緩」，你要辨認此處為動詞用法(非名詞)。",
   "accuracyRate": 47,
   "discrimination": 75,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["may significantly", "age-related brain shrinkage"], "cross": []}
  },
  {
   "id": "Vy115_25",
@@ -7790,7 +8041,8 @@
   "explanation": "retain knowledge 是常見字詞搭配，「保留／記住知識」。",
   "accuracyRate": 57,
   "discrimination": 75,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["will help", "acquired knowledge"], "cross": []}
  },
  {
   "id": "Vy115_26",
@@ -7818,7 +8070,8 @@
   "explanation": "point to 是多義片語，此處取「指出、傾向支持（某個做法）」的引申義，而非字面「用手指」，你可能只知道常見義。",
   "accuracyRate": 48,
   "discrimination": 77,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["while others", "shorter naps"], "cross": []}
  },
  {
   "id": "Vy115_27",
@@ -7846,7 +8099,8 @@
   "explanation": "depend on 是常考字詞搭配，「取決於」。",
   "accuracyRate": 56,
   "discrimination": 77,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["may", "a person's physical condition"], "cross": []}
  },
  {
   "id": "Vy115_28",
@@ -7874,7 +8128,8 @@
   "explanation": "此格需邏輯推論：呼應 surprisingly(令人驚訝地)的語氣，需要一個表示「效果顯著」的強烈形容詞。",
   "accuracyRate": 59,
   "discrimination": 81,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["surprisingly", "benefits"], "cross": []}
  },
  {
   "id": "Vy115_29",
@@ -7931,7 +8186,8 @@
   "explanation": "relaxing atmosphere 是常見字詞搭配，「放鬆的氛圍」。",
   "accuracyRate": 69,
   "discrimination": 77,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["create a relaxing"], "cross": []}
  },
  {
   "id": "Vy110_31",
@@ -7961,7 +8217,8 @@
   "explanation": "答對率三成。你大概只記 modest 的「謙虛的」（be modest about one's success），不知道它更常用來形容數量「不多的、適度的」。【句構線索】___ amounts of exercise，空格要形容詞。【文章線索】破折號後面的 even just 15 minutes a day 就是 modest 的具體註解——文意選填很愛用同位補充、破折號、括號來直接解釋空格的意思，看到破折號要習慣往後看一眼。【延伸的字詞搭配】a modest amount／increase／income／improvement／success（不多的數量／小幅成長／收入不高／些微改善／小有成就）。",
   "accuracyRate": 30,
   "discrimination": 61,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["amounts of exercise", "even just 15 minutes a day"], "cross": []}
  },
  {
   "id": "Vy110_32",
@@ -7991,7 +8248,8 @@
   "explanation": "答對率二成七。fanatic 對你來說比較陌生，多數人只認得縮寫後的 fan（粉絲），不知道 fan 就是從 fanatic 來的。fanatic 是名詞「狂熱者」，也可當形容詞。【句構線索】a fitness ___ 前面有冠詞 a、又有名詞 fitness 當修飾語，空格必須是單數名詞。【語意線索】前一段才說一天 15 分鐘就有效果，這句順著說「你不必是健身狂也能做」，語氣是安撫讀者。【延伸的字詞搭配】a fitness／sports／music fanatic（健身／運動／音樂狂熱者）；同義字 enthusiast、buff，口語的 freak（a fitness freak）。",
   "accuracyRate": 27,
   "discrimination": 47,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["don't have to be", "a fitness"], "cross": []}
  },
  {
   "id": "Vy110_33",
@@ -8021,7 +8279,8 @@
   "explanation": "abide by 這個片語不算眼熟，加上句尾那個孤零零的 by 讓人覺得句子沒寫完，於是不敢選。【句尾的 by 不是印錯】a motto to abide by ＝「一句拿來奉行的座右銘」。因為 abide by 的受詞本來就是 motto，當這個動詞片語倒過來修飾 motto 時，by 後面沒有受詞可接，只能留在句尾。這和 a friend to talk to、a pen to write with、a chair to sit on 是同一種結構。【文內驗證】下一句 Then you'll be well on your way to using physical activity as a tool…（照著做，你就走在這條路上了）——「照著做」正是奉行座右銘的意思。",
   "accuracyRate": 35,
   "discrimination": 71,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["a motto to"], "cross": []}
  },
  {
   "id": "Vy110_34",
@@ -8049,7 +8308,8 @@
   "explanation": "current studies 是常見字詞搭配，「當前的研究」，呼應與舊觀念(old-fashioned)的對比。",
   "accuracyRate": 48,
   "discrimination": 83,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["health studies"], "cross": []}
  },
  {
   "id": "Vy110_35",
@@ -8077,7 +8337,8 @@
   "explanation": "此為常考句型 might + 原形動詞，argue that 表「主張」，你要辨認此處為原形動詞(非現在式)。",
   "accuracyRate": 61,
   "discrimination": 77,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["You might", "that if"], "cross": []}
  },
  {
   "id": "Vy110_36",
@@ -8107,7 +8368,8 @@
   "explanation": "答對率二成六。你把 demanding 只讀成動詞 demand 加 -ing（要求），沒有把它當成一個獨立的形容詞「費力的、要求高的」來記，所以掃過選項時不會停下來。【句構線索】physically 是副詞，放在名詞 exercises 前面的 physically ___ 要的是形容詞——這跟 112 年學測第 22 題 a physically ___ person 是同一個考法，可以兩題一起看。【語意線索】後半句 make you breathe heavily and your muscles may ache temporarily 正好說明「費力」的程度。【延伸的字詞搭配】physically demanding（體力上很吃重的）、a demanding job／boss／schedule（要求嚴苛的工作／上司／行程）。【同類分詞形容詞】challenging（有挑戰性的）、rewarding（有收穫的）、exhausting（累人的）、time-consuming（很花時間的），都要當成獨立的形容詞來記。",
   "accuracyRate": 26,
   "discrimination": 52,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["physically", "make you breathe heavily", "muscles may ache"], "cross": []}
  },
  {
   "id": "Vy110_37",
@@ -8135,7 +8397,8 @@
   "explanation": "point to 是多義片語，此處取「顯示、暗示」的引申義，而非字面「用手指向」，你可能只知道常見義。",
   "accuracyRate": 40,
   "discrimination": 62,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["it may", "an injury"], "cross": []}
  },
  {
   "id": "Vy110_38",
@@ -8163,7 +8426,8 @@
   "explanation": "soreness 與後面的 discomfort 並列，兩者都是常與運動相關的負面感受名詞。",
   "accuracyRate": 55,
   "discrimination": 71,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["or discomfort", "without the"], "cross": []}
  },
  {
   "id": "Vy110_39",
@@ -8193,7 +8457,8 @@
   "explanation": "看到字尾的 s，你第一反應是動詞 mean 的第三人稱單數，第二反應是複數名詞，兩種判斷都會讓你放棄這一格。means 是單複數同形的名詞，意思是「方法、手段」，單數就寫 a means，動詞也用單數。【最直接的證據是那個 a】空格前是 a powerful——冠詞 a 加形容詞之後必須接單數可數名詞；若 means 是動詞或純複數名詞，前面不可能有 a。【文內驗證】第二段已經用另一種說法講過同一件事：using physical activity as a tool to make you feel better every day，本句只是把 tool 換成 means、feel better 換成 improve your health。",
   "accuracyRate": 37,
   "discrimination": 58,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["serve as a powerful", "to improve your health"], "cross": []}
  },
  {
   "id": "Vy110_40",
@@ -8221,7 +8486,8 @@
   "explanation": "make time for 是常考固定片語，「為…騰出時間」。",
   "accuracyRate": 74,
   "discrimination": 59,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["try to", "for exercise"], "cross": []}
  },
  {
   "id": "Vy112_21",
@@ -8251,7 +8517,8 @@
   "explanation": "the healthiest drink (that) we can reach for，drink 就是 for 的受詞、被關係代名詞提前，句子停在 for 是正常的——很容易因為「for 後面沒受詞」就把它排除。can 後面須接原形動詞，容易誤選 pass through、combat。reach for＝伸手去拿，引申為「選用」：reach for a bottle of water、reach for the phone。",
   "accuracyRate": 36,
   "discrimination": 61,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["the healthiest drink we can"], "cross": []}
  },
  {
   "id": "Vy112_22",
@@ -8280,7 +8547,8 @@
   "explanation": "physically 是副詞，a physically ___ person 這個位置要的是形容詞（選項裡放得進這個位置的是 active、alert、effective）；解題線索在對比 than a desk-bound person（坐辦公室、待在冷氣房的人）。容易誤選 alert——physically alert 不是自然的字詞搭配，也構不成對比。常考搭配：stay physically active、a physically demanding（體力上很吃重的） job。",
   "accuracyRate": 59,
   "discrimination": 72,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["physically", "desk-bound person"], "cross": []}
  },
  {
   "id": "Vy112_23",
@@ -8315,7 +8583,8 @@
    "label": "延伸閱讀：even sth out，把不平均的拉平",
    "url": "https://dictionary.cambridge.org/dictionary/english-chinese-traditional/even-out",
    "hint": "重點：even 當動詞，常用 even sth out，意思是「使均等、拉平」，受詞 things 可以夾在 even 和 out 中間；劍橋的例句 let's even things out a bit 和本題的說法一模一樣。本題要拉平的，是前一句的水太多、鹽不夠。"
-  }
+  },
+  "clue": {"inner": ["things out", "get rid of water"], "cross": []}
  },
  {
   "id": "Vy112_24",
@@ -8345,7 +8614,8 @@
   "explanation": "more ___ than 比較級中間要放形容詞。關鍵線索在後文的同義改寫：Coconut water ... is also more functional than water，also 表示椰子水與牛奶屬同一組論點，functional 正好呼應 effective。提醒你填完一格要往下多看一兩句，找 also、similarly 帶出的平行句回頭印證。",
   "accuracyRate": 66,
   "discrimination": 76,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["more", "than drinking water"], "cross": []}
  },
  {
   "id": "Vy112_25",
@@ -8374,7 +8644,8 @@
   "explanation": "stimulate 是及物動詞須接名詞，water 在此是名詞當形容詞用。名詞選項只有 absorption、option、status，而 water absorption（水分吸收）是科普文常見的字詞搭配。容易誤選 status——status 是「狀態」，stimulate water status（刺激水的狀態）接不起來。absorb→absorption 的拼法本身也很常考。",
   "accuracyRate": 49,
   "discrimination": 66,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["stimulate water"], "cross": []}
  },
  {
   "id": "Vy112_26",
@@ -8403,7 +8674,8 @@
   "explanation": "答對率只有二成六。你的 status 只記得「地位、身分」（social status、marital status），碰到科普語境的「狀態」就轉不過來。a normal fluid ___ 前有冠詞與形容詞，須填單數名詞，且 restore and maintain 共用這個受詞。fluid status（體液狀態）是醫學與科普語境常見的字詞搭配；absorption（吸收）放進去會變成「運動後恢復並維持正常的吸收」，但運動後要恢復的是體液的狀態，不是吸收，option（選項）也不是 restore and maintain 的合理受詞。常考搭配：fluid status、health status、nutritional status。",
   "accuracyRate": 26,
   "discrimination": 41,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["restoring and maintaining", "a normal fluid"], "cross": []}
  },
  {
   "id": "Vy112_27",
@@ -8432,7 +8704,8 @@
   "explanation": "a very good ___ 前有冠詞與形容詞，需要單數名詞。語意呼應第一段的 plain water is considered our best choice——option 就是 choice 的同義替換，前後兩段在這裡互相呼應。容易誤選 status。常考搭配：a good option for + V-ing、have no option but to V、keep your options open。",
   "accuracyRate": 50,
   "discrimination": 63,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["a very good", "for keeping hydrated"], "cross": []}
  },
  {
   "id": "Vy112_28",
@@ -8463,7 +8736,8 @@
   "explanation": "考第二詞性：你熟悉的是形容詞 alert（stay alert、be alert to danger），此處是動詞「使警覺、驚動」。for it to eventually ___ your consciousness 是 for + 受詞 + to V 的結構（it 指 your body），to 後接原形及物動詞。容易誤選 pass through、combat。常考搭配：alert the police、alert sb. to sth.（提醒某人注意某事）。",
   "accuracyRate": 49,
   "discrimination": 73,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["for it to eventually", "your consciousness"], "cross": []}
  },
  {
   "id": "Vy112_29",
@@ -8493,7 +8767,8 @@
   "explanation": "cause + O + to V 結構，to 後接原形動詞；空格後直接接 the body，需要及物片語動詞。pass through 後可直接接受詞，不必再加 of／into。語意線索在 and come out as urine——水快速通過身體後直接排掉。常考搭配：pass through customs、pass through a difficult time。",
   "accuracyRate": 50,
   "discrimination": 64,
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["cause more water to", "come out as urine"], "cross": []}
  },
  {
   "id": "Vy112_30",
@@ -8528,7 +8803,8 @@
    "label": "延伸閱讀：combat 當動詞，設法阻止壞事",
    "url": "https://dictionary.cambridge.org/dictionary/english-chinese-traditional/combat",
    "hint": "重點：combat 當動詞，是設法阻止不好或有害的事情發生或擴大，受詞常是問題本身，如 combat crime／inflation／disease。本題 To combat this 的 this，指的就是前一句「一口氣喝太多，水很快就排出去」這個問題。"
-  }
+  },
+  "clue": {"inner": ["To", "this", "you need to"], "cross": []}
  },
  {
   "id": "Vy110t_21",
@@ -8556,7 +8832,8 @@
   "gloss": "繼續存在、延續下去",
   "collocation": "continue to ___ as spirits；live on（延續下去、流傳下去）",
   "explanation": "【句構線索】continue to 後面要接原形動詞，空格是動詞。【文章線索】空格前一句 life does not end with death 就是全文主旨句，這一格等於把主旨換句話說——live on 是 does not end 的正面說法，前後互為同義改寫。【延伸的字詞搭配】live on（延續下去）／live up to（不辜負期待）／live through（撐過某段時期），三者只差 live 後面接的字，語意完全不同。",
-  "contextSpan": "跨句"
+  "contextSpan": "跨句",
+  "clue": {"inner": ["continue to"], "cross": [{"sentence": "In the traditional religions of Africa, life does not end with death.", "words": ["life does not end with death"]}]}
  },
  {
   "id": "Vy110t_22",
@@ -8584,7 +8861,8 @@
   "gloss": "安息的",
   "collocation": "the permanent ___ place；（final／last） resting place（長眠之地）；rest in peace（安息，即 RIP）",
   "explanation": "【句構線索】the permanent ___ place，前有冠詞與形容詞、後有名詞，空格要能修飾 place。【文章線索】前一句說有些族群認為亡靈住在地底，這一句用 Other groups 轉到另一種說法：天空才是死者的歸處；空格後一句 go up to the sky and become stars 進一步坐實。【你可能會這樣想】rest 是熟字，RIP（rest in peace）「安息吧」也常見；這裡的 rest 取的正是 rest in peace 裡「長眠」這個意思，不是「休息」。形式上 resting place 屬於「-ing + 名詞」的複合名詞，跟 waiting room（等候室）、swimming pool（游泳池）同一類——前面那個 -ing 說明這個地方是用來做什麼的。熟字換一個意思、又換一種組合方式，這一格難就難在這裡。【延伸的字詞搭配】resting place（安息之所）／final resting place（長眠之地）／rest in peace（安息，RIP）／lay sb to rest（安葬）。",
-  "contextSpan": "跨句"
+  "contextSpan": "跨句",
+  "clue": {"inner": ["Other groups", "the permanent", "place of the dead"], "cross": [{"sentence": "Some African groups believe these spirits dwell underground in a world much like that of the living—but upside down.", "words": ["dwell underground"]}, {"sentence": "For instance, the Bushmen of southern Africa believe that the spirits of the dead go up to the sky and become stars.", "words": ["go up to the sky and become stars"]}]}
  },
  {
   "id": "Vy110t_23",
@@ -8612,7 +8890,8 @@
   "gloss": "構成、組成",
   "collocation": "the ancestors ___ a special category；comprise + 受詞（構成……）；comprise ＝ consist of ＝ be composed of",
   "explanation": "【句構線索】主詞 the ancestors 是複數、空格後直接接受詞，所以要及物動詞原形；十個選項裡，動詞原形不只它一個，但 hope for 放進去變成「祖靈盼望一個自成一類的類別」，講不通；所以就算不認得 comprise，靠句構加上語意也推得出來。【文章線索】線索在空格後 a special category of their own——祖靈在眾靈之中「自成一類」。【辨析】本題是「部分」當主詞：Oil and coal comprise 70% of the nation's exports.（石油與煤占全國出口的七成）；也可以「整體」當主詞：The book comprises 12 chapters.（這本書分為十二章）。【延伸的字詞搭配】四個說法意思接近，但句型各有限制：comprise 一般用主動、後面直接接受詞（The USA comprises 50 states.）；consist 只用主動、一定加 of（Their flat consists of two bedrooms.）；compose 只用被動（Muscle is composed of protein.）。comprise 也可以用被動 be comprised of——這個用法劍橋詞典已經收錄，但部分寫作規範仍主張避免；自己作答時用 comprise 或 be composed of 最安全，閱讀時看到 be comprised of 不必當成錯誤。至於 comprise of，那是另一回事：詞典直接說它不正確，屬於錯誤，不是用法在變。",
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["the ancestors", "a special category", "of their own"], "cross": []}
  },
  {
   "id": "Vy110t_24",
@@ -8639,7 +8918,8 @@
   "gloss": "指望、盼望",
   "collocation": "the best that one can ___；hope for（盼望）；hope for the best（往好處想）",
   "explanation": "【句構線索】the best that one can ___ after death 裡，that 帶出的是修飾 the best 的關係子句，空格是 can 後面的原形動詞。這裡要看清楚的是：hope for 的受詞就是先行詞 the best，關係代名詞 that 代替它放在子句最前面，所以 for 後面看起來空著，其實不缺。還原成兩句就清楚：This is the best. One can hope for it after death.【文章線索】前一句才說祖靈多了一些能力，這一句順著說「成為祖靈是死後最好的指望」。【延伸的字詞搭配】hope for + 名詞（盼望某事）／hope to + 原形（希望做某事）／hope that 子句；hope 不能寫成 hope sb to do，這一點與 want 不同。",
-  "contextSpan": "跨句"
+  "contextSpan": "跨句",
+  "clue": {"inner": ["the best that one can", "after death"], "cross": [{"sentence": "As ancestors, they have some extra powers.", "words": ["extra powers"]}]}
  },
  {
   "id": "Vy110t_25",
@@ -8666,7 +8946,8 @@
   "gloss": "條件",
   "collocation": "there are ___ to be fulfilled；meet／fulfill the conditions（滿足條件）；meet sb.'s needs／expectations／the standard（滿足需求／符合期待／達到標準）",
   "explanation": "【句構線索】there are 後面要接複數名詞，空格填單數會塞不進去。【文章線索】前一句說「不是每個死去的人都會變成祖靈」，破折號後面的 living an upright life and fulfilling all social and religious duties 就是條件的具體內容——看到這種破折號，要往後看一眼。【延伸的字詞搭配】meet 後面接的東西是一組的：meet the conditions（滿足條件）／meet sb.'s needs（滿足需求）／meet sb.'s expectations（符合期待）／meet the standard（達到標準），中文都不是「遇見」。另有 fulfill／satisfy the conditions、on condition that（條件是）。",
-  "contextSpan": "跨句"
+  "contextSpan": "跨句",
+  "clue": {"inner": ["there are", "to be fulfilled", "living an upright life"], "cross": [{"sentence": "However, not everyone who dies will turn into an ancestor.", "words": ["not everyone who dies"]}]}
  },
  {
   "id": "Vy110t_26",
@@ -8693,7 +8974,8 @@
   "gloss": "守護者",
   "collocation": "remain near ... as ___ of the family；guardian of（……的守護者）",
   "explanation": "【句構線索】as 後面要名詞，主詞是複數的 the spirits of ancestors，空格也要用複數。【文章線索】空格後一句 They help in times of trouble 直接說明了祖靈的角色是「有難時伸援手」，那正是 guardian 這個字的內容。【延伸的字詞搭配】guardian angel（守護天使）／legal guardian（法定監護人）／guardian of tradition（傳統的守護者）。",
-  "contextSpan": "跨句"
+  "contextSpan": "跨句",
+  "clue": {"inner": ["the spirits of ancestors", "as", "of the family"], "cross": [{"sentence": "They help in times of trouble as long as their descendants perform proper rituals and pay them [27] respect.", "words": ["They help in times of trouble"]}]}
  },
  {
   "id": "Vy110t_27",
@@ -8721,7 +9003,8 @@
   "gloss": "應有的、恰當的",
   "collocation": "pay them ___ respect；due respect（應有的敬意）；with all due respect（恕我直言）；be due（預定、該到了）；due to（由於）",
   "explanation": "【句構線索】空格夾在 them 與名詞 respect 中間，要形容詞。【文章線索】同一句裡 perform proper rituals 與 pay them ___ respect 是並列的兩件事，proper 與空格語意相近，等於句內就給了同義線索，不必往外找。【你可能會這樣想】你對 due 的印象大概只有 due to（由於），而且多半當成 because of 的同義詞背下來。但 due 有三個常考的用法：due to（由於）、be due（預定、該到了，如 The bus is due at six.）、以及本題的「應有的、恰當的」。這三個差在意思；後兩個都是形容詞，只是位置不同——be due 放在 be 動詞後面當補語，本題放在名詞前面修飾 respect。113 年學測第 3 題就考過第二個——問公車幾點該到，全體答對率只有二成三，比四選一亂猜的二成五還低，鑑別度只有 6，代表高分群也一起錯。同一個熟字換一個用法就認不出來，這是 due 最麻煩的地方。【延伸的字詞搭配】pay due respect to（對……致上應有的敬意）／with all due respect（恕我直言，用於禮貌地反駁）／in due course（在適當的時候）。",
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["perform proper rituals", "pay them", "respect"], "cross": []}
  },
  {
   "id": "Vy110t_28",
@@ -8748,7 +9031,8 @@
   "gloss": "違反、觸犯",
   "collocation": "some ___ of community laws；a violation of（違反……）；in violation of（違反）",
   "explanation": "【句構線索】some 後面接複數名詞或不可數名詞，這裡前面是 there are，空格要名詞複數。【文章線索】本句 or 前後是並列的兩種情況——「儀式沒有按規矩舉行」與「觸犯律法」，語意方向一致，都是做錯事。【延伸的字詞搭配】a violation of the law／the rules（違法／違規）；in violation of（違反）；動詞 violate 直接接受詞，不加 of。",
-  "contextSpan": "句內"
+  "contextSpan": "句內",
+  "clue": {"inner": ["have not been performed properly", "there are some"], "cross": []}
  },
  {
   "id": "Vy110t_29",
@@ -8776,7 +9060,8 @@
   "gloss": "重要的、顯著的",
   "collocation": "plays a very ___ role；play a significant／important／key role in（在……扮演重要角色）；play a part in（參與其中）",
   "explanation": "【句構線索】very 修飾的是形容詞或副詞，這裡後面是名詞 role，空格必須是形容詞。【文章線索】判斷「重要」的依據在空格後的整段——後面連舉布干達的金圖與蘇丹丁卡族的加朗、阿布克兩個例子，都是祖先直接成為神話源頭，整段都在支撐這個形容詞。【延伸的字詞搭配】play a significant／important／key／crucial role in（在……扮演重要／關鍵角色）；play a part in（參與、有份）；a significant increase／difference／improvement（顯著的成長／差異／改善）。",
-  "contextSpan": "篇章"
+  "contextSpan": "篇章",
+  "clue": {"inner": ["very", "role"], "cross": [{"sentence": "Another example is the Dinkas of Sudan, who believe they are descended from Garang and Abuk, the first man and woman created by God as tiny clay figures in a pot.", "words": ["descended from Garang and Abuk"]}, {"sentence": "For example, the people of Buganda in present-day Uganda say that their first ancestor was Kintu, who came from the land of the gods and married Nambe, daughter of the king of heaven.", "words": ["first ancestor was Kintu"]}]}
  },
  {
   "id": "Vy110t_30",
@@ -8804,6 +9089,7 @@
   "gloss": "題材、主題",
   "collocation": "not only objects of worship but also ___ of tales and legends；the subject of（……的題材）",
   "explanation": "【句構線索】not only A but also B 要求 A、B 對稱，A 是 objects of worship（複數名詞 + of 片語），B 也得是複數名詞 + of 片語。【文章線索】前面兩個例子都是祖先變成神話故事的主角，這一句收尾把祖先的兩種身分並列：既是崇拜的對象，也是傳說的題材。【延伸的字詞搭配】the subject of a book／a painting／a study（書／畫／研究的主題）。【一字多義】subject 另有「科目」與「主詞」的意思，這裡取「題材」，是典型的第二義考法。",
-  "contextSpan": "跨句"
+  "contextSpan": "跨句",
+  "clue": {"inner": ["not only objects of worship", "but also"], "cross": [{"sentence": "Another example is the Dinkas of Sudan, who believe they are descended from Garang and Abuk, the first man and woman created by God as tiny clay figures in a pot.", "words": ["descended from Garang and Abuk"]}]}
  }
 ]

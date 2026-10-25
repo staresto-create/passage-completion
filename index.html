@@ -1265,7 +1265,11 @@ function clueRender(s, marks, blankNum){
 function clueSentences(s){
   // 切句規則與資料檔產生時相同：句末標點後接空白，下一個字是大寫字母、引號、左括號或空格編號
   const out = []; let start = 0, m; const re = /([.!?\u201d"])\s+(?=[A-Z\u201c"(\[])/g;
-  while((m = re.exec(s))){ out.push([start, m.index + 1]); start = m.index + m[0].length; }
+  while((m = re.exec(s))){
+    // 縮寫（U.S.、Mr.、Dr. 等）後面的句點不算句末
+    if(m[1] === '.' && /(\b[A-Za-z]\.[A-Za-z]\.|\b(?:Mr|Mrs|Ms|Dr|St|Jr|Sr)\.)$/.test(s.slice(0, m.index + 1))) continue;
+    out.push([start, m.index + 1]); start = m.index + m[0].length;
+  }
   out.push([start, s.length]);
   return out;
 }
@@ -1294,11 +1298,11 @@ function clueBuild(it){
   let legend = '';
   if(hasIn) legend += '<mark class="cl-a">句內線索</mark>空格所在那一句裡的字詞';
   if(hasIn && hasX) legend += '\u3000';
-  if(hasX) legend += '<mark class="cl-b">跨句線索</mark>前後句裡的字詞' + (missing.length ? '，已把那一句列在下面' : '');
+  if(hasX) legend += '<mark class="cl-b">跨句線索</mark>' + (missing.length ? '前後句或文中其他句子裡的字詞，已把那一句列在下面' : '前後句裡的字詞');
   let extra = '';
   missing.forEach(x => {
     const mk = []; clueAddWords(x.sentence, [0, x.sentence.length], x.words, 'cl-b', mk);
-    extra += `<p class="clueX"><span class="clueXlab">前後句</span>${clueRender(x.sentence, mk, -1)}</p>`;
+    extra += `<p class="clueX"><span class="clueXlab">線索句</span>${clueRender(x.sentence, mk, -1)}</p>`;
   });
   return {sent: clueRender(s, marks, it.blankNum), key: (legend ? `<div class="clueKey">${legend}</div>` : '') + extra};
 }
