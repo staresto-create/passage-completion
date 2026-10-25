@@ -156,6 +156,13 @@
   .feedback .exp.exp-sec{margin-top:14px;}
   .feedback .exp.exp-sec b.exp-h{display:block; font-family:'Noto Serif TC',serif;
     font-weight:700; font-size:14.5px; color:var(--sage); margin:0 0 5px; line-height:1.55;}
+  .feedback details.exFold{margin-top:12px; border-top:1px solid var(--rule); padding-top:8px;}
+  .feedback details.exFold > summary{cursor:pointer; list-style:none; font-weight:700; color:var(--sage); font-size:14px; line-height:1.6;}
+  .feedback details.exFold > summary::-webkit-details-marker{display:none;}
+  .feedback details.exFold > summary .exFoldMain::after{content:' ＋ 展開'; color:var(--crimson); font-size:13px; white-space:nowrap;}
+  .feedback details.exFold[open] > summary .exFoldMain::after{content:' － 收合';}
+  .feedback details.exFold > summary .exFoldSub{display:block; font-weight:400; font-size:12px; color:var(--ink-soft); margin-top:2px;}
+  .feedback details.exFold .exp.exp-sec:first-of-type{margin-top:8px;}
   .pdTag{font-family:'IBM Plex Mono','Noto Sans TC',monospace; font-size:11px; color:var(--ink-soft); margin-top:8px;}
   .grpBox{margin-top:8px; padding:9px 11px; border-radius:4px; background:var(--paper); font-size:12.5px; line-height:1.75;}
   .grpBox .grpHd{font-weight:700;}
@@ -1002,6 +1009,14 @@ function expHtml(str, lead){
     `<div class="exp exp-sec"><b class="exp-h">${renderNote(s.h || lead)}</b>${renderNote(s.body)}</div>`
   ).join('');
 }
+function expBlock(str, lead){
+  // 單題回饋：正解、中譯、字詞搭配線索留在上方當結論；解析較長時收進「完整解析」，
+  // 要看的人再展開（短解析維持直接顯示）。
+  if(!str) return '';
+  if(String(str).length <= 150) return expHtml(str, lead);
+  const names = expSplit(str).map(s => s.h || lead).join('、');
+  return `<details class="exFold"><summary><span class="exFoldMain">完整解析</span><span class="exFoldSub">${escapeHtml(names)}</span></summary>${expHtml(str, lead)}</details>`;
+}
 function expInline(str){
   // 交卷複習列表：不另開區塊，只把小標粗體化並換行
   if(!str) return '';
@@ -1297,7 +1312,7 @@ function answerSingle(letter){
       ${correct?'✓ 正確！':'✕ 正解是 ('+it.answer+') '+it.options[it.answer]}${spanTag}
       ${it.gloss ? `<div class="exp"><b>中譯：</b>${it.gloss}</div>` : ''}
       ${it.collocation ? `<div class="exp"><b>字詞搭配線索：</b>${it.collocation}</div>` : ''}
-      ${expHtml(it.explanation, '答題陷阱')}
+      ${expBlock(it.explanation, '答題陷阱')}
       ${readMoreHtml(it)}
       ${(!it.gloss && !it.collocation && !it.explanation) ? `<div class="exp">本題的逐格解析尚在建置中，目前只提供正解。</div>` : ''}
       ${ctxHtml}
