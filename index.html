@@ -171,6 +171,7 @@
 
   .spanTag{display:inline-block; font-size:11px; padding:3px 8px; border-radius:10px; border:1px solid var(--sage); color:var(--sage); background:var(--tint-sage3); margin-left:6px; vertical-align:middle;}
   .spanTag.cross{border-color:var(--gold); color:var(--gold); background:var(--tint-warm6);}
+    .clueRv{margin:8px 0 10px;} .clueRv .single-sentence{font-size:14.5px; line-height:2; margin:0;} .clueRv .clueKey{margin-top:10px;}
   .ctx-box{margin-top:10px; padding:12px 14px; background:var(--paper-card); border-radius:3px; border:1px solid var(--gold); border-left:5px solid var(--gold); font-size:13px; line-height:1.85; color:var(--ink-soft);}
   .ctx-box::before{content:"作答線索在哪裡\3000"; color:var(--gold); font-family:'Noto Serif TC',serif; font-weight:700;}
   .ctx-box.inner::before{content:"線索範圍\3000";}
@@ -1250,7 +1251,7 @@ function paraTextForBlank(p, blankNum){
 // 線索標色：s 是該段文字（空格寫成 [編號]）；marks 是 [起, 迄, class]。標色字串都是原文逐字子字串，不跨空格。
 function clueRender(s, marks, blankNum){
   const plain = t => escapeHtml(t).replace(/\[(\d+)\]/g, (m, n) => String(n) === String(blankNum)
-    ? ` <span style="color:var(--crimson); font-weight:700; text-decoration:underline;">___(${n})___</span> `
+    ? ` <span style="color:var(--ink); font-weight:700; text-decoration:underline; text-decoration-thickness:2px;">___(${n})___</span> `
     : ` ___(${n})___ `);
   marks.sort((x, y) => x[0] - y[0]);
   let html = '', pos = 0;
@@ -1272,16 +1273,15 @@ function clueAddWords(s, range, words, cls, marks){
   const seg = s.slice(range[0], range[1]);
   (words || []).forEach(w => { const i = seg.indexOf(w); if(i >= 0) marks.push([range[0] + i, range[0] + i + w.length, cls]); });
 }
-function showClues(it){
-  const c = it.clue; if(!c) return;
-  const box = document.querySelector('.single-sentence'); if(!box) return;
+function clueBuild(it){
+  const c = it.clue; if(!c) return null;
   const p = PASSAGES[it.passageId]; let s = '';
   for(const para of p.paras){
     if(!para.segs.some(seg => seg[1]==='blank' && String(seg[0])===String(it.blankNum))) continue;
     para.segs.forEach(seg => { s += seg[1]==='blank' ? '['+seg[0]+']' : seg[0]; });
     break;
   }
-  if(!s) return;
+  if(!s) return null;
   const sents = clueSentences(s), marks = [], missing = [];
   const tag = '['+it.blankNum+']';
   const target = sents.find(r => s.slice(r[0], r[1]).indexOf(tag) >= 0);
@@ -1290,18 +1290,28 @@ function showClues(it){
     const r = sents.find(q => s.slice(q[0], q[1]).trim() === x.sentence.trim());
     if(r) clueAddWords(s, r, x.words, 'cl-b', marks); else missing.push(x);
   });
-  box.innerHTML = clueRender(s, marks, it.blankNum);
   const hasIn = (c.inner || []).length > 0, hasX = (c.cross || []).length > 0;
   let legend = '';
   if(hasIn) legend += '<mark class="cl-a">句內線索</mark>空格所在那一句裡的字詞';
-  if(hasIn && hasX) legend += '　';
+  if(hasIn && hasX) legend += '\u3000';
   if(hasX) legend += '<mark class="cl-b">跨句線索</mark>前後句裡的字詞' + (missing.length ? '，已把那一句列在下面' : '');
   let extra = '';
   missing.forEach(x => {
     const mk = []; clueAddWords(x.sentence, [0, x.sentence.length], x.words, 'cl-b', mk);
     extra += `<p class="clueX"><span class="clueXlab">前後句</span>${clueRender(x.sentence, mk, -1)}</p>`;
   });
-  box.insertAdjacentHTML('afterend', (legend ? `<div class="clueKey">${legend}</div>` : '') + extra);
+  return {sent: clueRender(s, marks, it.blankNum), key: (legend ? `<div class="clueKey">${legend}</div>` : '') + extra};
+}
+function showClues(it){
+  const box = document.querySelector('.single-sentence'); if(!box) return;
+  const r = clueBuild(it); if(!r) return;
+  box.innerHTML = r.sent;
+  box.insertAdjacentHTML('afterend', r.key);
+}
+// 全文模式批改後：在每題解析卡裡附上標色的那一句
+function clueReviewHtml(it){
+  const r = clueBuild(it); if(!r) return '';
+  return `<div class="clueRv"><div class="single-sentence">${r.sent}</div>${r.key}</div>`;
 }
 function renderSingle(){
   const it = singleQueue[singleIdx];
@@ -1591,6 +1601,7 @@ function gradeFullPassage(){
       <div class="rv-bd"><b>${it.options[it.answer]}</b>　${it.gloss||''}<br>
         <span class="rv-col">字詞搭配：${it.collocation||'—'}</span><br>${expInline(it.explanation)}</div>
       ${readMoreHtml(it)}
+      ${clueReviewHtml(it)}
       ${ctxBoxHtml(it)}
       ${pd}
       ${grpBoxHtml(it, grpFull)}
