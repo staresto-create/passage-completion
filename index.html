@@ -45,6 +45,12 @@
   .cat-grid{display:flex; flex-wrap:wrap; gap:8px; margin-bottom:6px;}
   .chip{border:1.5px solid var(--rule); border-radius:20px; padding:6px 14px; font-size:13px; cursor:pointer; background:var(--surface); user-select:none;}
   .chip.active{border-color:var(--crimson); background:var(--crimson); color:#fff;}
+  .chip.disabled{opacity:.38; cursor:not-allowed;}
+  .chip .chip-count{font-size:10px; opacity:.7;}
+  .topic-note{font-size:12.5px; color:var(--ink-soft); line-height:1.7; margin:0 0 10px;}
+  .topic-sub-label{font-size:12px; color:var(--ink-soft); margin:10px 0 6px;}
+  .topic-clear{font-size:12px; margin:8px 0 0;}
+  .topic-clear a{color:var(--ink-soft); cursor:pointer; text-decoration:underline;}
   .diff-note{font-size:12px; color:var(--ink-soft); line-height:1.7; margin:8px 0 4px;}
   .diff-note a{color:var(--crimson);}
 
@@ -370,7 +376,7 @@ function kkOpt(w){ w = String(w == null ? '' : w).trim(); return (window.KK && w
   </header>
 
   <div id="homeView">
-    <nav class="unitbar" id="unitbar" aria-label="本頁單元"><div class="ubrow"><span class="ublab">第一次使用？</span><a href="../JCEE-vocab-questions/howto.html">怎麼使用這個題庫</a></div><div class="ubrow"><span class="ublab">同一題庫</span><a href="hard/">歷屆最難的 19 題</a><a href="map/">題目地圖</a></div><div class="ubrow"><span class="ublab">本頁單元</span><a href="#u-start">開始練習</a><a href="#u-hist">我的學習歷程</a><a href="#u-strat">作答前必看的戰術</a><a href="#u-range">選擇練習範圍</a><a href="#adapt">仿真練習</a></div><div class="ubnote">支援深色模式（夜間模式），會自動配合手機或電腦的外觀設定。</div></nav>
+    <nav class="unitbar" id="unitbar" aria-label="本頁單元"><div class="ubrow"><span class="ublab">第一次使用？</span><a href="../JCEE-vocab-questions/howto.html">怎麼使用這個題庫</a></div><div class="ubrow"><span class="ublab">同一題庫</span><a href="hard/">歷屆最難的 19 題</a><a href="map/">題目地圖</a></div><div class="ubrow"><span class="ublab">本頁單元</span><a href="#u-start">開始練習</a><a href="#u-hist">我的學習歷程</a><a href="#u-strat">作答前必看的戰術</a><a href="#u-range">選擇練習範圍</a><a href="#u-topic">篩選文章主題</a><a href="#adapt">仿真練習</a></div><div class="ubnote">支援深色模式（夜間模式），會自動配合手機或電腦的外觀設定。</div></nav>
     <div data-start-here></div>
     <p class="home-desc print-note" style="margin:0 0 14px"><b>想用紙本練習？</b>進到題目畫面後，按最上方的「🖨️ 列印成考卷」，印出來就是考卷：空格留白，不含答案、解析和提示。手機和電腦都能印（也可以存成 PDF）。</p>
     <div class="card">
@@ -586,6 +592,20 @@ function kkOpt(w){ w = String(w == null ? '' : w).trim(); return (window.KK && w
           <div class="m-name">全文模式</div>
           <div class="m-desc">顯示整篇文章，含段落主旨句、全文中心思想、轉折詞標記與巨觀結構分析。</div>
         </div>
+      </div>
+
+      <div id="topicFilterSection">
+        <div class="sec-title" id="u-topic">篩選文章主題<span style="font-weight:400; text-transform:none; letter-spacing:0; font-size:11px; margin-left:6px;">（選填，可複選；單題與全文模式都適用）</span></div>
+        <div class="topic-note">依文章談的內容找文章，例如想先讀科學或飲食旅遊類的文章。一篇文章可能同時屬於兩個主題，選其中任一個都找得到。</div>
+        <div class="cat-grid" id="topicGrid"></div>
+        <div id="subWrap" hidden>
+          <div class="topic-sub-label">社會議題可再細分（選填）</div>
+          <div class="cat-grid" id="subGrid"></div>
+        </div>
+        <div class="topic-sub-label">只看台灣相關的文章（選填）</div>
+        <div class="cat-grid" id="twGrid"></div>
+        <div class="topic-clear"><a onclick="clearTopics()">全不選</a></div>
+        <div class="topic-note" id="availNote" role="status" aria-live="polite" hidden></div>
       </div>
 
       <div id="singleControls">
@@ -875,6 +895,8 @@ async function init(){
   buildDiffGrid();
   buildSpanGrid();
   buildYearList();
+  buildTopicChips();
+  refreshAvail();
   renderStatsBox();
   scrMountStrip();
   renderProgress();
@@ -890,16 +912,17 @@ function setMode(m){
   document.getElementById('modeFullCard').classList.toggle('active', m==='full');
   document.getElementById('singleControls').style.display = m==='single' ? 'block' : 'none';
   document.getElementById('fullControls').style.display = m==='full' ? 'block' : 'none';
+  refreshAvail();
 }
 function buildSingleYearGrid(){
   const grid = document.getElementById('singleYearGrid');
   grid.innerHTML = '';
-  Object.values(PASSAGES).filter(examOk).sort(cmpYear).forEach(p => {
+  Object.values(PASSAGES).filter(examOk).filter(p => topicOkP(p)).sort(cmpYear).forEach(p => {
     const chip = document.createElement('div');
     chip.className = 'chip' + (selectedSingleYears.has(p.id) ? ' active' : '');
-    chip.textContent = examYear(p);
+    chip.textContent = examYear(p); chip.dataset.pid = p.id;
     chip.title = dispTitle(p) + '（' + elimLabel(p) + '）';
-    chip.onclick = () => { chip.classList.toggle('active'); selectedSingleYears.has(p.id) ? selectedSingleYears.delete(p.id) : selectedSingleYears.add(p.id); };
+    chip.onclick = () => { if(chip.classList.contains('disabled')) return; chip.classList.toggle('active'); selectedSingleYears.has(p.id) ? selectedSingleYears.delete(p.id) : selectedSingleYears.add(p.id); refreshAvail(); };
     grid.appendChild(chip);
   });
 }
@@ -908,6 +931,177 @@ function examYear(p){ return p.exam === '改編練習' ? p.exam + p.year : p.exa
 function dispTitle(p){
   return (p.title && p.year && p.title.indexOf(p.year) === 0) ? p.title.slice(p.year.length).trim() : p.title;
 }
+/* 文章主題（2026-11-01）：主題是整篇文章的屬性，存在各 passages.json 的 topic（主要）、topic2（次要）、
+   topicSub（社會議題子標籤）、tw（台灣相關）；每一題用 passageId 去查。
+   同一個主題內是「或」（主要或次要符合就算），與考別、年度、單題分類、難易度、線索範圍之間是「且」。 */
+const TOPIC_ORDER = ['家庭與日常生活','校園與學習','人際關係','自我成長與心理','健康、醫療與運動','社會議題','商業、經濟與職場','科技與媒體','科學與自然','環境與災害','歷史與文化','文學與藝術','飲食與旅遊'];
+const SUB_ORDER = ['人權與法治','性別平等','動物權益','全球議題'];
+let selectedTopics = new Set(), selectedSubs = new Set(), twOnly = false;
+function passageTopics(p){ return [p.topic, p.topic2].filter(Boolean); }
+function topicOkP(p, skipTw){
+  if(!p) return false;
+  if(twOnly && !skipTw && !p.tw) return false;
+  if(selectedTopics.size === 0) return true;
+  return passageTopics(p).some(t => {
+    if(!selectedTopics.has(t)) return false;
+    if(t === '社會議題' && selectedSubs.size > 0) return selectedSubs.has(p.topicSub);
+    return true;
+  });
+}
+function topicOk(it, skipTw){ return topicOkP(PASSAGES[it.passageId], skipTw); }
+function buildTopicChips(){
+  const cnt = {}, sub = {}; let tw = 0;
+  const pids = new Set(ITEMS.map(it => it.passageId));
+  pids.forEach(id => {
+    const p = PASSAGES[id]; if(!p) return;
+    passageTopics(p).forEach(t => { cnt[t] = (cnt[t]||0) + 1; });
+    if(p.topicSub) sub[p.topicSub] = (sub[p.topicSub]||0) + 1;
+    if(p.tw) tw++;
+  });
+  const mk = (cls, attr, label, n, fn) => `<div class="chip" ${attr} onclick="${fn}(this)">${escapeHtml(label)} <span class="chip-count">(${n} 篇)</span></div>`;
+  document.getElementById('topicGrid').innerHTML = TOPIC_ORDER.map(t => mk('', `data-topic="${escapeAttr(t)}"`, t, cnt[t]||0, 'toggleTopic')).join('');
+  document.getElementById('subGrid').innerHTML = SUB_ORDER.filter(t => sub[t]).map(t => mk('', `data-sub="${escapeAttr(t)}"`, t, sub[t], 'toggleSub')).join('');
+  document.getElementById('twGrid').innerHTML = mk('', 'id="twChip"', '台灣相關', tw, 'toggleTw');
+}
+/* 重建依考別與主題而定的清單：考別晶片題數、年度晶片、全文清單 */
+function rebuildLists(){ buildExamGrid(); buildSingleYearGrid(); buildYearList(); }
+/* 主題變動後：已選但不符合新條件的年度／文章要取消，清單重建，再重新計算反灰 */
+function onTopicChange(){
+  [...selectedSingleYears].forEach(id => { if(!topicOkP(PASSAGES[id])) selectedSingleYears.delete(id); });
+  if(window.__selectedPassage && !topicOkP(PASSAGES[window.__selectedPassage])) window.__selectedPassage = null;
+  rebuildLists();
+  refreshAvail();
+}
+function toggleTopic(el){
+  if(el.classList.contains('disabled')) return;
+  const t = el.dataset.topic;
+  if(selectedTopics.has(t)){ selectedTopics.delete(t); el.classList.remove('active'); }
+  else{ selectedTopics.add(t); el.classList.add('active'); }
+  onTopicChange();
+}
+function toggleSub(el){
+  if(el.classList.contains('disabled')) return;
+  const t = el.dataset.sub;
+  if(selectedSubs.has(t)){ selectedSubs.delete(t); el.classList.remove('active'); }
+  else{ selectedSubs.add(t); el.classList.add('active'); }
+  onTopicChange();
+}
+function toggleTw(el){
+  if(el.classList.contains('disabled')) return;
+  twOnly = !twOnly; el.classList.toggle('active', twOnly);
+  onTopicChange();
+}
+function clearTopics(){
+  selectedTopics = new Set(); selectedSubs = new Set(); twOnly = false;
+  document.querySelectorAll('#topicGrid .chip, #subGrid .chip, #twGrid .chip').forEach(el => el.classList.remove('active'));
+  onTopicChange();
+}
+/* 各篩選互相反灰：某個選項在其他條件下一題都沒有，就灰掉、不能選；已選的會自動取消，並在主題區下方說明。
+   單題模式看考別、年度、單題分類、難易度、線索範圍與主題；全文模式只看考別與主題。
+   規則與 startPractice 一致：選了難易度時，單題分類不生效。主題晶片的篇數也依其他條件重新計算。
+   取消後條件變了，所以一直算到沒有變動為止（最多 6 輪）。 */
+function refreshAvail(){
+  const full = currentMode === 'full';
+  const yearOkI = it => selectedSingleYears.size === 0 || selectedSingleYears.has(it.passageId);
+  const spanOkI = it => selectedSpans.size === 0 || selectedSpans.has(it.contextSpan);
+  const tierI = it => tierOf(it.accuracyRate, it.discrimination);
+  const catOkI = it => selectedCats.size === 0 || (it.categories||[]).some(c => selectedCats.has(c));
+  const diffOkI = it => selectedDiffs.size === 0 || (tierI(it) && selectedDiffs.has(tierI(it)));
+  const mainOkI = it => selectedDiffs.size > 0 ? diffOkI(it) : catOkI(it);
+  const base = it => examOk(it) && (full || (yearOkI(it) && spanOkI(it) && mainOkI(it)));
+  const cancelled = [];
+  const setState = (el, av, set, key, label) => {
+    el.classList.toggle('disabled', !av);
+    if(!av && set.has(key)){ set.delete(key); el.classList.remove('active'); cancelled.push(label || el.textContent.replace(/\s*\(\d+ 篇\)\s*$/, '').trim()); return true; }
+    return false;
+  };
+  const setCount = (el, n) => { const c = el.querySelector('.chip-count'); if(c) c.textContent = '(' + n + ' 篇)'; };
+  const countPassages = pred => { const ids = new Set(); ITEMS.forEach(it => { if(pred(it)) ids.add(it.passageId); }); return ids.size; };
+  for(let round = 0; round < 6; round++){
+    let changed = false, topicSide = false;
+    if(!full){
+      document.querySelectorAll('#catGrid .chip').forEach(el => {
+        const c = el.dataset.v;
+        const av = selectedDiffs.size > 0 || ITEMS.some(it => examOk(it) && yearOkI(it) && spanOkI(it) && topicOk(it) && (it.categories||[]).includes(c));
+        changed = setState(el, av, selectedCats, c) || changed;
+      });
+      document.querySelectorAll('#diffGrid .chip').forEach(el => {
+        const d = el.dataset.v;
+        const av = ITEMS.some(it => examOk(it) && yearOkI(it) && spanOkI(it) && topicOk(it) && tierI(it) === d);
+        changed = setState(el, av, selectedDiffs, d) || changed;
+      });
+      document.querySelectorAll('#spanGrid .chip').forEach(el => {
+        const sp = el.dataset.v;
+        const av = ITEMS.some(it => examOk(it) && yearOkI(it) && mainOkI(it) && topicOk(it) && it.contextSpan === sp);
+        changed = setState(el, av, selectedSpans, sp) || changed;
+      });
+      document.querySelectorAll('#singleYearGrid .chip').forEach(el => {
+        const pid = el.dataset.pid;
+        const av = ITEMS.some(it => it.passageId === pid && examOk(it) && spanOkI(it) && mainOkI(it) && topicOk(it));
+        changed = setState(el, av, selectedSingleYears, pid, el.textContent.trim()) || changed;
+      });
+    }
+    document.querySelectorAll('#topicGrid .chip').forEach(el => {
+      const t = el.dataset.topic;
+      const has = it => base(it) && (!twOnly || PASSAGES[it.passageId].tw) && passageTopics(PASSAGES[it.passageId]).includes(t);
+      setCount(el, countPassages(has));
+      if(setState(el, ITEMS.some(has), selectedTopics, t)){ changed = true; topicSide = true; }
+    });
+    const wrap = document.getElementById('subWrap');
+    if(!selectedTopics.has('社會議題')){
+      if(selectedSubs.size){ selectedSubs = new Set(); changed = true; topicSide = true; }
+      document.querySelectorAll('#subGrid .chip').forEach(el => el.classList.remove('active'));
+      wrap.hidden = true;
+    } else {
+      wrap.hidden = false;
+      document.querySelectorAll('#subGrid .chip').forEach(el => {
+        const t = el.dataset.sub;
+        const has = it => { const p = PASSAGES[it.passageId]; return base(it) && (!twOnly || p.tw) && p.topicSub === t && passageTopics(p).includes('社會議題'); };
+        setCount(el, countPassages(has));
+        if(setState(el, ITEMS.some(has), selectedSubs, t)){ changed = true; topicSide = true; }
+      });
+    }
+    const tw = document.getElementById('twChip');
+    if(tw){
+      const has = it => base(it) && PASSAGES[it.passageId].tw && topicOk(it, true);
+      setCount(tw, countPassages(has));
+      tw.classList.toggle('disabled', !ITEMS.some(has));
+      if(!ITEMS.some(has) && twOnly){ twOnly = false; tw.classList.remove('active'); cancelled.push('台灣相關'); changed = true; topicSide = true; }
+    }
+    if(!changed) break;
+    /* 取消的若影響年度與清單，就重建（重建後下一輪會重新算反灰） */
+    if(topicSide){
+      [...selectedSingleYears].forEach(id => { if(!topicOkP(PASSAGES[id])) selectedSingleYears.delete(id); });
+      if(window.__selectedPassage && !topicOkP(PASSAGES[window.__selectedPassage])) window.__selectedPassage = null;
+    }
+    rebuildLists();
+  }
+  const note = document.getElementById('availNote');
+  if(note){
+    if(cancelled.length){ note.textContent = '系統已取消：' + [...new Set(cancelled)].join('、') + '（和目前選的其他條件合起來，找不到符合的題目）'; note.hidden = false; }
+    else { note.textContent = ''; note.hidden = true; }
+  }
+}
+/* 網址帶 #topic=代碼（1 到 13，與英聽 6ME 的 cat 代碼相同；可加 tw 表示台灣相關）就先選好，不自動開始。 */
+function applyTopicHash(){
+  const m = decodeURIComponent(location.hash || '').match(/^#topic=([\w,]+)$/);
+  if(!m) return false;
+  const home = document.getElementById('homeView');
+  if(home && home.style.display === 'none') return false;
+  selectedTopics = new Set(); selectedSubs = new Set(); twOnly = false;
+  m[1].split(',').forEach(c => {
+    if(c === 'tw'){ twOnly = true; return; }
+    const n = parseInt(c, 10);
+    if(n >= 1 && n <= 13) selectedTopics.add(TOPIC_ORDER[n-1]);
+  });
+  document.querySelectorAll('#topicGrid .chip').forEach(el => el.classList.toggle('active', selectedTopics.has(el.dataset.topic)));
+  const tw = document.getElementById('twChip'); if(tw) tw.classList.toggle('active', twOnly);
+  onTopicChange();
+  const sec = document.getElementById('u-topic'); if(sec) sec.scrollIntoView({block:'start'});
+  try{ history.replaceState(null, '', location.pathname + location.search); }catch(e){}
+  return true;
+}
+window.addEventListener('hashchange', applyTopicHash);
 function examOf(x){ return x.exam || (PASSAGES[x.passageId] ? PASSAGES[x.passageId].exam : ''); }
 function examOk(x){ return selectedExams.size === 0 || selectedExams.has(examOf(x)); }
 function elimLabel(p){
@@ -928,16 +1122,18 @@ function buildExamGrid(){
     if(!grid) return;
     grid.innerHTML = '';
     ['學測','指考','改編練習'].forEach(e => {
-      const cnt = ITEMS.filter(it => examOf(it) === e).length;
-      if(cnt === 0) return;
+      const all = ITEMS.filter(it => examOf(it) === e).length;
+      if(all === 0) return;
+      const cnt = ITEMS.filter(it => examOf(it) === e && topicOk(it)).length;
       const chip = document.createElement('div');
-      chip.className = 'chip' + (selectedExams.has(e) ? ' active' : '');
+      chip.className = 'chip' + (selectedExams.has(e) ? ' active' : '') + (cnt === 0 ? ' disabled' : '');
       chip.textContent = e + ' ' + cnt + '題';
       chip.onclick = () => {
+        if(chip.classList.contains('disabled')) return;
         selectedExams.has(e) ? selectedExams.delete(e) : selectedExams.add(e);
         selectedSingleYears.clear();
         window.__selectedPassage = null;
-        buildExamGrid(); buildSingleYearGrid(); buildYearList();
+        buildExamGrid(); buildSingleYearGrid(); buildYearList(); refreshAvail();
       };
       grid.appendChild(chip);
     });
@@ -948,8 +1144,8 @@ function buildCatGrid(){
   grid.innerHTML = '';
   CATS.forEach(c => {
     const chip = document.createElement('div');
-    chip.className = 'chip'; chip.textContent = c;
-    chip.onclick = () => { chip.classList.toggle('active'); selectedCats.has(c) ? selectedCats.delete(c) : selectedCats.add(c); };
+    chip.className = 'chip'; chip.textContent = c; chip.dataset.v = c;
+    chip.onclick = () => { if(chip.classList.contains('disabled')) return; chip.classList.toggle('active'); selectedCats.has(c) ? selectedCats.delete(c) : selectedCats.add(c); refreshAvail(); };
     grid.appendChild(chip);
   });
 }
@@ -958,8 +1154,8 @@ function buildDiffGrid(){
   grid.innerHTML = '';
   ['難','中','易','特殊'].forEach(d => {
     const chip = document.createElement('div');
-    chip.className = 'chip'; chip.textContent = d;
-    chip.onclick = () => { chip.classList.toggle('active'); selectedDiffs.has(d) ? selectedDiffs.delete(d) : selectedDiffs.add(d); };
+    chip.className = 'chip'; chip.textContent = d; chip.dataset.v = d;
+    chip.onclick = () => { if(chip.classList.contains('disabled')) return; chip.classList.toggle('active'); selectedDiffs.has(d) ? selectedDiffs.delete(d) : selectedDiffs.add(d); refreshAvail(); };
     grid.appendChild(chip);
   });
 }
@@ -969,8 +1165,8 @@ function buildSpanGrid(){
   SPANS.forEach(sp => {
     const cnt = ITEMS.filter(it => it.contextSpan === sp).length;
     const chip = document.createElement('div');
-    chip.className = 'chip'; chip.textContent = sp + ' ' + cnt;
-    chip.onclick = () => { chip.classList.toggle('active'); selectedSpans.has(sp) ? selectedSpans.delete(sp) : selectedSpans.add(sp); };
+    chip.className = 'chip'; chip.textContent = sp + ' ' + cnt; chip.dataset.v = sp;
+    chip.onclick = () => { if(chip.classList.contains('disabled')) return; chip.classList.toggle('active'); selectedSpans.has(sp) ? selectedSpans.delete(sp) : selectedSpans.add(sp); refreshAvail(); };
     grid.appendChild(chip);
   });
 }
@@ -1079,12 +1275,13 @@ function cmpYear(a,b){
 function buildYearList(){
   const list = document.getElementById('yearList');
   list.innerHTML = '';
-  Object.values(PASSAGES).filter(examOk).sort(cmpYear).forEach(p => {
+  Object.values(PASSAGES).filter(examOk).filter(p => topicOkP(p)).sort(cmpYear).forEach(p => {
     const cnt = ITEMS.filter(it=>it.passageId===p.id).length;
     const row = document.createElement('div');
     row.className = 'year-item'; row.style.cursor='pointer';
     const tstat = p.titleStatus ? ' <span class="cnt">暫定標題</span>' : '';
     row.innerHTML = `<span>${examYear(p)} · ${dispTitle(p)}${tstat}</span><span class="cnt">${cnt}題・${elimLabel(p)}</span>`;
+    if(p.id === window.__selectedPassage){ row.style.background = 'var(--tint-crimson)'; row.dataset.selected = '1'; }
     row.onclick = () => { document.querySelectorAll('.year-item').forEach(r=>r.style.background=''); row.style.background='var(--tint-crimson)'; row.dataset.selected='1'; window.__selectedPassage = p.id; };
     list.appendChild(row);
   });
@@ -1092,7 +1289,7 @@ function buildYearList(){
 function startPractice(){
   if(currentMode === 'single'){
     let pool = ITEMS.filter(it => {
-      if(!examOk(it)) return false;
+      if(!examOk(it) || !topicOk(it)) return false;
       const catOk = selectedCats.size===0 || (it.categories||[]).some(c=>selectedCats.has(c));
       const yearOk = selectedSingleYears.size===0 || selectedSingleYears.has(it.passageId);
       const tier = tierOf(it.accuracyRate, it.discrimination);
@@ -1657,13 +1854,13 @@ function updateFullProgress(){
   if(bar) bar.style.width = (total ? (done/total*100) : 0) + '%';
 }
 function fullPassageOrder(){
-  return Object.values(PASSAGES).filter(examOk).sort(cmpYear).map(x=>x.id);
+  return Object.values(PASSAGES).filter(examOk).filter(p => topicOkP(p)).sort(cmpYear).map(x=>x.id);
 }
 function nextFullPassage(){
   const order = fullPassageOrder();
   const i = order.indexOf(window.__lastPid);
-  if(i < 0 || i >= order.length - 1){ alert('已經是最後一篇了。'); return; }
-  const nid = order[i+1];
+  if(order.length === 0 || (i >= 0 && i >= order.length - 1)){ alert('已經是最後一篇了。'); return; }
+  const nid = order[i+1];  // 目前這篇不在篩選範圍內（i = -1）時，從範圍內第一篇開始
   window.__blankChoices = {}; fullGraded = false; window.__lastPid = null;
   renderFull(nid);
   window.scrollTo({top:0, behavior:'smooth'});
@@ -1677,11 +1874,11 @@ function applyAdaptHash(){
     selectedExams.add(k);
     selectedSingleYears.clear();
     window.__selectedPassage = null;
-    buildExamGrid(); buildSingleYearGrid(); buildYearList();
+    buildExamGrid(); buildSingleYearGrid(); buildYearList(); refreshAvail();
   }
   const g0 = document.getElementById('examGrid'); const box = g0 ? (g0.previousElementSibling || g0) : null; if(box) box.scrollIntoView({block:'start'});
 }
-init().then(applyAdaptHash);
+init().then(function(){ applyAdaptHash(); applyTopicHash(); });
 </script>
 
 <div class="sheet-mask" id="sheetMask" onclick="closeSheet()"></div>
