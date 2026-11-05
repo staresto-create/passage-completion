@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>文意選填：用上下文拼圖</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500;700;900&family=Noto+Sans+TC:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{--pill-edge:#8F8670;
+    --paper:#F6F1E4; --paper-card:#FFFDF7; --ink:#221F1A; --ink-soft:#5B5648;
+    --rule:#DCD3BB; --crimson:#AE3626; --sage:#3E6E52; --gold:#A9812E;
+    --surface:#fff; --tint-crimson:#FBF1EE; --tint-sage:#E7F3EA; --tint-warm:#FBF6E8; --tint-sand:#F1EADA;
+    --link:#9C2C1E; --foot:#6f685d; --on-ink:#fff;
+    --glow:rgba(174,54,38,.05); --grid-line:rgba(34,31,26,0.025);
+    --shadow:0 1px 0 rgba(34,31,26,.06), 0 8px 24px rgba(34,31,26,.08);
+    --cl-a-bg:#FAD9CC; --cl-a-line:#AE3626; --cl-b-bg:#E2D8F3; --cl-b-line:#6A4FA3;
+    --cl-c-bg:#CFEAE0; --cl-c-line:#23705A; --cl-t-bg:#FBD9B5; --cl-t-line:#A24E0E;
+    --cl-l-bg:#D6E6F6; --cl-l-line:#2B63A8; --cl-k-bg:#F3E3AE; --cl-k-line:#A9812E;
+    color-scheme:light;
+  }
+  @media screen and (prefers-color-scheme: dark){
+    :root{--pill-edge:#8A8272;
+      --paper:#1B1916; --paper-card:#26231F; --ink:#EDE7D8; --ink-soft:#B8B0A0; --rule:#4C463B;
+      --crimson:#E57B68; --sage:#82C09C; --gold:#DDA94F;
+      --surface:#2D2A25; --tint-crimson:#3A2420; --tint-sage:#22302A; --tint-warm:#2B2721; --tint-sand:#332E25;
+      --link:#E57B68; --foot:#A29A8B; --on-ink:#1B1916;
+      --glow:rgba(229,123,104,.07); --grid-line:rgba(255,255,255,0.02);
+      --shadow:0 1px 0 rgba(0,0,0,.4),0 8px 24px rgba(0,0,0,.35);
+      --cl-a-bg:#5A2D25; --cl-a-line:#E57B68; --cl-b-bg:#3F3560; --cl-b-line:#B7A1EA;
+      --cl-c-bg:#1F4A3E; --cl-c-line:#6FD1B0; --cl-t-bg:#5C3A1E; --cl-t-line:#F0A25C;
+      --cl-l-bg:#203A55; --cl-l-line:#86B8F2; --cl-k-bg:#4B3E17; --cl-k-line:#DDA94F;
+      color-scheme:dark;
+    }
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:var(--paper);
+    background-image:radial-gradient(circle at 100% 0%, var(--glow), transparent 40%),
+      repeating-linear-gradient(0deg, var(--grid-line) 0px, var(--grid-line) 1px, transparent 1px, transparent 34px);
+    color:var(--ink); font-family:'Noto Sans TC',sans-serif; -webkit-font-smoothing:antialiased;
+    min-height:100vh; padding:24px 14px 60px; line-height:1.7;
+  }
+  .wrap{max-width:820px; margin:0 auto;}
+  header.top{text-align:center; border-bottom:3px double var(--ink); padding-bottom:14px; margin-bottom:20px;}
+  header.top .title{font-family:'Noto Serif TC',serif; font-weight:900; font-size:25px; letter-spacing:.02em;}
+  header.top .sub{font-family:'IBM Plex Mono','Noto Sans TC',monospace; font-size:12px; color:var(--ink-soft); margin-top:6px;}
+  .card{background:var(--paper-card); border:1px solid var(--rule); border-radius:4px; box-shadow:var(--shadow); padding:20px; margin-bottom:16px;}
+  .lead{font-size:15px; margin:0 0 10px;}
+  .lead b{color:var(--crimson);}
+  .steps{font-size:14.5px; margin:8px 0 0; padding-left:1.4em;}
+  .steps li{margin-bottom:4px;}
+  .legend{font-size:13px; color:var(--ink-soft); margin:14px 0 0; line-height:2;}
+  mark.cl-a{background:var(--cl-a-bg); color:inherit; border-bottom:2px solid var(--cl-a-line); padding:0 1px; border-radius:2px;}
+  mark.cl-b{background:var(--cl-b-bg); color:inherit; border-bottom:2px dashed var(--cl-b-line); padding:0 1px; border-radius:2px;}
+  mark.cl-c{background:var(--cl-c-bg); color:inherit; border-bottom:2px dotted var(--cl-c-line); padding:0 1px; border-radius:2px;}
+  mark.cl-t{background:var(--cl-t-bg); color:inherit; text-decoration:underline wavy var(--cl-t-line); text-decoration-thickness:2px; text-underline-offset:3px; padding:0 1px; border-radius:2px;}
+  mark.cl-l{background:var(--cl-l-bg); color:inherit; border-bottom:3px double var(--cl-l-line); padding:0 1px; border-radius:2px;}
+  mark.cl-k{background:var(--cl-k-bg); color:inherit; font-weight:700; border-bottom:2px solid var(--cl-k-line); padding:0 1px; border-radius:2px;}
+  .pcur{border-left:4px solid var(--gold); padding-left:8px; margin-left:-12px;}
+  button.blank:disabled{cursor:default; opacity:.8;}
+  .topicopt{display:block; width:100%; text-align:left; font-weight:500; line-height:1.6; padding:10px 14px; margin:8px 0;}
+  .topicopt.x{opacity:1; color:var(--ink-soft); text-decoration:line-through; text-decoration-color:var(--crimson);}
+  .legend mark{font-weight:700; margin-right:4px;}
+  .legend span.it{display:inline-block; margin-right:12px;}
+  .clueX{font-family:'Times New Roman',Times,'Liberation Serif','Noto Serif','Noto Sans TC',serif; font-size:15.5px; line-height:1.85; margin:8px 0; padding:6px 10px; border-left:3px solid var(--cl-b-line); background:var(--tint-warm);}
+  .clueX.cl-l{border-left-color:var(--cl-l-line);}
+  .clueX.cl-c{border-left-color:var(--cl-c-line);}
+  .clueX.cl-t{border-left-color:var(--cl-t-line);}
+  .clueX.cl-k{border-left-color:var(--cl-k-line); background:var(--surface);}
+  .clueXlab{font-family:'Noto Sans TC',sans-serif; font-size:12px; font-weight:700; color:var(--ink-soft); margin-right:8px;}
+
+  .passage{font-family:'Times New Roman',Times,'Liberation Serif','Noto Serif','Noto Sans TC',serif; font-size:17px; line-height:2.15;}
+  .passage p{margin:0 0 14px; text-indent:1.6em;}
+  .plabel{font-family:'Noto Sans TC',sans-serif; font-size:12px; color:var(--ink-soft); margin:0 0 2px; text-indent:0 !important; letter-spacing:.03em;}
+  button.blank{font:inherit; font-family:'IBM Plex Mono','Noto Sans TC',monospace; font-size:14px; font-weight:600; min-width:48px; min-height:44px; padding:1px 8px; margin:0 2px;
+    border:1.5px dashed var(--ink-soft); border-radius:6px; background:var(--surface); color:var(--ink); cursor:pointer; vertical-align:baseline;}
+  @media (hover:hover){ button.blank:hover{border-color:var(--crimson);} }
+  button.blank.labeled{border-style:solid; border-color:var(--sage);}
+  @keyframes blankflash{0%,100%{background:var(--surface);} 50%{background:var(--tint-crimson); border-color:var(--crimson);}}
+  button.blank.flash{animation:blankflash .9s ease-in-out 3;}
+  @media (prefers-reduced-motion:reduce){ button.blank.flash{animation:none; border-color:var(--crimson); border-style:solid;} }
+  .progress{font-size:14px; margin:6px 0 8px; display:flex; flex-wrap:wrap; gap:6px 14px;}
+  .progress .pg{font-weight:700;} .progress .pg.ok{color:var(--sage);}
+  .steps2{margin:4px 0 8px; padding-left:20px; font-size:14px; line-height:1.7;}
+  .ambnote{font-family:'Noto Sans TC',sans-serif; font-size:12px; color:var(--ink-soft); display:block; margin:1px 0 0 0;}
+  button.blank .cls{font-family:'Noto Sans TC',sans-serif; font-size:12px; font-weight:500; color:var(--ink-soft); margin-left:4px;}
+  button.blank.sel{border:2px solid var(--crimson); background:var(--tint-crimson); color:var(--crimson);}
+  button.blank.filled{font-family:'Times New Roman',Times,'Liberation Serif','Noto Serif',serif; font-size:17px; font-weight:700; border:2px solid var(--sage); background:var(--tint-sage); color:var(--ink); padding:0 8px;}
+  button.blank.filled.sel{border-color:var(--crimson);}
+  button.blank:focus-visible, .chip:focus-visible, .btn:focus-visible, .pill:focus-visible{outline:3px solid var(--gold); outline-offset:2px;}
+
+  .h{font-family:'Noto Serif TC',serif; font-weight:700; font-size:16px; margin:0 0 8px;}
+  .pile{margin-bottom:12px;}
+  .pile .pname{font-size:12.5px; font-weight:700; color:var(--ink-soft); margin-bottom:5px;}
+  .pile .pname.on{color:var(--crimson);}
+  .chips{display:flex; flex-wrap:wrap; gap:8px;}
+  .chip{font-family:'Times New Roman',Times,'Liberation Serif','Noto Serif',serif; font-size:17px; font-weight:700; min-height:44px; padding:4px 14px; border:1.5px solid var(--ink-soft); border-radius:8px; background:var(--surface); color:var(--ink); cursor:pointer;}
+  .chip .tag{display:block; font-family:'Noto Sans TC',sans-serif; font-size:12px; font-weight:500; color:var(--ink-soft); line-height:1.2;}
+  .chip.used{border-style:dashed; opacity:.5; cursor:default;}
+  .chip.dim{opacity:.5; cursor:default;}
+  .chip.dimf{border-style:dashed; border-color:var(--ink-soft); background:transparent; color:var(--ink-soft); cursor:default;}
+  .chip.dimf .tag{color:var(--ink-soft);}
+  .prog .btn{flex:none; white-space:nowrap;}
+  .sent{font-size:15px; line-height:1.7; margin:6px 0 8px; padding:6px 10px; border-left:3px solid var(--ink-soft); background:var(--surface);}
+  .sent b.gap{border-bottom:2px solid var(--crimson); padding:0 .6em;}
+  .chip.on{border-color:var(--crimson); background:var(--tint-crimson);}
+  .chip.x{text-decoration:line-through; opacity:.45; cursor:default;}
+  .letter{font-family:'IBM Plex Mono',monospace; font-size:12px; font-weight:600; color:var(--ink-soft); margin-right:5px;}
+
+  .sortrow{display:flex; flex-wrap:wrap; align-items:center; gap:8px 10px; padding:6px 0; border-bottom:1px solid var(--rule);}
+  .sortrow .w{font-family:'Times New Roman',Times,'Liberation Serif','Noto Serif',serif; font-size:18px; font-weight:700; min-width:8.5em;}
+  .pill{white-space:nowrap; font-family:'Noto Sans TC',sans-serif; font-size:13.5px; font-weight:500; min-height:44px; padding:2px 14px; border:1.5px solid var(--pill-edge); border-radius:22px; background:var(--surface); color:var(--ink); cursor:pointer;}
+  .sortrow.many{display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:8px;}
+  .sortrow.many .w{grid-column:1/-1;}
+  .sortrow.many .pill{padding:2px 4px;}
+  .skipbox{margin-top:14px; padding-top:12px; border-top:1px dashed var(--rule);}
+  .skipbox .next{margin:6px 0 0;}
+  .totray{font-size:13.5px; margin-left:0; display:block; margin-top:6px; min-height:44px; padding:2px 12px;}
+  #passage #panel{margin:2px -8px 18px; padding:16px; border-left:4px solid var(--crimson); font-family:'Noto Sans TC',sans-serif; font-size:15px; line-height:1.75; text-indent:0;}
+  #panel .chips{margin:8px 0;}
+  #passage #panel p{text-indent:0; margin:8px 0;}
+  .pill.on{border-color:var(--crimson); background:var(--tint-crimson); color:var(--crimson); font-weight:700;}
+  .flag{font-family:'Noto Sans TC',sans-serif; font-size:12px; font-weight:700; color:var(--cl-b-line); border:1.5px solid var(--cl-b-line); border-radius:9px; padding:0 6px; margin-left:4px; white-space:nowrap;}
+  .counts{display:flex; flex-wrap:wrap; gap:8px; margin:10px 0; position:sticky; top:0; z-index:2; background:var(--paper-card); padding:6px 0;}
+  .count{font-family:'Noto Sans TC',sans-serif; font-size:13px; padding:3px 10px; border:1.5px solid var(--rule); border-radius:6px; background:var(--surface);}
+  .count.ok{border-color:var(--sage); color:var(--sage); font-weight:600;}
+
+  .btn{font-family:'Noto Sans TC',sans-serif; font-size:14px; font-weight:700; min-height:44px; padding:6px 14px; border:1.5px solid var(--ink); border-radius:6px; background:var(--surface); color:var(--ink); cursor:pointer;}
+  @media (hover:hover){ .btn:hover{border-color:var(--crimson);} }
+  .btn:disabled{opacity:.4; cursor:default;}
+  .btn.ghost{border-color:var(--rule); font-weight:500; color:var(--ink-soft);}
+  .btnrow{display:flex; flex-wrap:wrap; gap:8px; margin:8px 0;}
+  .q{font-size:15px; margin:0 0 6px; font-weight:700;}
+  .msg{font-size:14px; margin:8px 0; padding:8px 12px; border-left:3px solid var(--gold); background:var(--tint-warm);}
+  .msg.ok{border-color:var(--sage); background:var(--tint-sage);}
+  .badge{display:inline-block; font-size:12px; font-weight:700; padding:1px 8px; border-radius:10px; border:1.5px solid var(--sage); color:var(--sage); margin-right:6px;}
+  .badge.m{border-color:var(--cl-b-line); color:var(--cl-b-line);}
+  .ans{font-family:'Times New Roman',Times,'Liberation Serif','Noto Serif',serif; font-size:20px; font-weight:700;}
+  .prog{font-family:'IBM Plex Mono','Noto Sans TC',monospace; font-size:12.5px; color:var(--ink-soft); display:flex; justify-content:space-between; align-items:center; gap:8px; margin-bottom:10px;}
+  .next{font-size:13.5px; color:var(--ink-soft); margin:0 0 10px;}
+  .done h3{font-family:'Noto Serif TC',serif; margin:0 0 8px; font-size:17px;}
+  .done ul{margin:6px 0 10px; padding-left:1.2em; font-size:14.5px;}
+  .done li{margin-bottom:6px;}
+  .links{font-size:13.5px; line-height:1.6;}
+  .links a{display:inline-block; padding:8px 0;}
+  a{color:var(--link); font-weight:700; text-underline-offset:2px;}
+  footer{text-align:center; font-size:12.5px; color:var(--foot); line-height:1.9; margin-top:26px;}
+  footer .cc{font-size:11.5px; margin-top:6px;}
+  footer a{display:inline-block; padding:10px 0;}
+  .hidden{display:none !important;}
+  @media (max-width:560px){ .sortrow .w{flex:0 0 100%;} .sortrow .pill{flex:1 1 0; padding:2px 6px;} .passage{font-size:16.5px;} header.top .title{font-size:21px;} .sortrow .w{min-width:7em;} }
+  @media print{ body{padding:0;} .card{box-shadow:none;} }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div class="title">文意選填：用上下文拼圖</div>
+    <div class="sub" id="sub"></div>
+  </header>
+
+  <div class="card">
+    <p class="lead">文意選填像一整篇的拼圖，<b>重點是上下文：每一格都要扣住它所在那一段的主旨</b>。分三步：</p>
+    <ol class="steps">
+      <li><b>讀段落、找出主旨</b>：選出每一段在講什麼。答錯時會標出這一段的關鍵詞。</li>
+      <li><b>認識空格與選項（標詞性、分堆）</b>：標出每一格的詞性，再把十個選項分堆。</li>
+      <li><b>用線索拼答案</b>：先想主旨、找內容線索，卡住時按「提示」。</li>
+    </ol>
+    <details style="margin-top:8px"><summary style="font-size:13.5px; font-weight:700; cursor:pointer; min-height:44px; display:flex; align-items:center;">第 2 步怎麼做（點開來看）</summary>
+    <p class="legend">把十個空格各是哪一種詞性標出來，有些空格還要標「形式」（例如動詞的第三人稱單數、名詞的複數）；同時把十個選項分成動詞、名詞、形容詞等幾堆，每一堆的數量，要剛好等於那一種詞性的空格數。詞性只能縮小範圍，同一堆通常還有好幾個選項放得進去，最後要靠上下文的意思。標「兩類皆可」的字可以當兩種詞性，放進哪一堆都算對，只要每一堆的數量對得上。已經很熟詞性的人，也可以直接略過這一步。</p></details>
+    <details style="margin-top:12px"><summary style="font-size:13.5px; font-weight:700; cursor:pointer; min-height:44px; display:flex; align-items:center;">標色說明（點開來看）</summary>
+    <p class="legend">
+      <span class="it"><mark class="cl-k">主旨關鍵詞</mark>第 1 步答錯時標出</span>
+      <span class="it"><mark class="cl-a">句內線索</mark>空格所在那一句</span>
+      <span class="it"><mark class="cl-b">跨句線索</mark>前後句或文中其他句子</span>
+      <span class="it"><mark class="cl-l">詞彙線索</mark>同義、換字重述、同一個語意範圍的字</span>
+      <span class="it"><mark class="cl-c">並列線索</mark>和空格並列的成分</span>
+      <span class="it"><mark class="cl-t">並列陷阱</mark>看起來並列，其實不是</span><br>
+      標詞性時，只會標出「句內線索」；跨句線索與詞彙線索（也就是內容線索），要在第 3 步按「提示 1」才出現；並列線索與並列陷阱，要按「提示 2」。
+    </p></details>
+  </div>
+
+  <div class="card">
+    <div class="prog"><span id="progText"></span><button class="btn ghost" id="resetBtn" type="button">重新開始</button></div>
+    <div class="passage" id="passage"></div>
+  </div>
+
+  <div class="card" id="panel" aria-live="polite"></div>
+
+  <div class="card" id="trayCard">
+    <div class="h" id="trayTitle"></div>
+    <div id="tray"></div>
+  </div>
+
+  <div class="card done hidden" id="done"></div>
+
+  <div class="card links">
+    <a id="lnkFull" href="#">→ 這一回的完整題目與解析</a><br>
+    <a href="https://staresto-create.github.io/JCEE-vocab-questions/#rules">→ 拼圖的五種線索：字詞搭配、用法、換句話說、銜接、連貫</a><br>
+    <a href="https://staresto-create.github.io/passage-completion/">← 回文意選填</a>
+  </div>
+
+  <footer>
+    資料來源：大考中心公布之歷屆文意選填試題與答案<br>
+    © 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫
+    <div class="cc">本題庫撰寫的解析與標註，採用 <a href="https://creativecommons.org/licenses/by-nc/4.0/deed.zh-hant" target="_blank" rel="license noopener">CC BY-NC 4.0</a> 授權。</div>
+  </footer>
+</div>
+
+<script>
+const DATA = {"id": "y97", "sub": "97年 學測 · 第 31–40 題 · 師徒與轉世小豬（The Guru, the Disciple, and the Pig）", "paras": [{"label": "【第一段】引言：師父預見來世並託付弟子", "segs": [["One day, a guru foresaw in a vision what he would be in his next life.", "topic"], [" Then he called his favorite disciple and asked him, “What would you do to thank me for all you have received from me?” The disciple said he would do whatever his guru asked him to do.", null]]}, {"label": "【第二段】師父交代任務：認出並了結小豬", "segs": [["Having received this", "gradient"], [" ", "gradient"], ["31", "blank"], [", the guru said, “Then this is what I'd like you to do for me.", "gradient"], [" I've just ", null], ["32", "blank"], [" that I'll die very soon and I'm going to be reborn as a pig. Do you see that sow eating garbage there in the yard? I'm going to be the fourth piglet of its next litter. You'll ", null], ["33", "blank"], [" me by a mark on my brow. After that sow gives birth, find the fourth piglet with a mark on its brow and, with one ", null], ["34", "blank"], [" of your knife, slaughter it. I'll then be ", null], ["35", "blank"], [" from a pig's life. Will you do this for me?”", null]]}, {"label": "【第三段】弟子照做，小豬卻開口求饒", "segs": [["The disciple felt sad to hear this, ", null], ["but", "trans"], [" he agreed to do as he was told. Soon after their ", null], ["36", "blank"], [", the guru died and the sow did have a litter of four little pigs. Then the disciple ", null], ["37", "blank"], [" his knife and picked out the little pig with a mark on its brow. When he was about to cut its throat, the little pig suddenly ", null], ["38", "blank"], [", “Stop!”", null]]}, {"label": "【第四段】轉折：小豬其實過得很快樂，不想被解脫", "segs": [["Before the disciple could recover from the", "topic"], [" ", "topic"], ["39", "blank"], [" of hearing the little pig speak in a human voice, it continued, “Don't kill me. I want to live on as a pig.", "topic"], [" When I asked you to kill me, I didn't know what a pig's life would be ", null], ["40", "blank"], [". It's great! Just let me go.”", null]]}], "options": {"A": "shock", "B": "conversation", "C": "like", "D": "promise", "E": "released", "F": "screamed", "G": "learned", "H": "recognize", "I": "stroke", "J": "sharpened"}, "groupOf": {"A": "n", "B": "n", "C": "other", "D": "n", "E": "v", "F": "v", "G": "v", "H": "v", "I": "n", "J": "v"}, "ambig": ["A", "C", "D", "I"], "blanks": [{"cats": "同義呼應、語意連貫", "slot": "n", "layer": "meaning", "decide": "lex", "form": "單數", "formWhy": "this 是單數指示詞，後面要接單數名詞。", "why": "空格在 Having received this 之後，this 後面接名詞，這個名詞是分詞片語 Having received this ___ 的受詞。", "l1": "Having received this ___ 說的是「得到這個什麼之後」。這裡的 this 回頭指向前一句，弟子剛剛說出口的那件事：他說無論上師要他做什麼，他都願意去做。", "l2": "this 後面要接單數名詞，名詞堆的四個字形式上都放得進去，要看意思。哪一個名詞，可以把前一句 do whatever his guru asked him to do 這整句話濃縮成一個詞，而且是上師能夠「收到」的東西？", "final": "Having received this promise（得到這個承諾之後）：this 回頭指向前一句弟子說的 he would do whatever his guru asked him to do，用一個名詞來概括，就是 promise。Longman 把 promise 列為可數名詞，例句有 She made a promise to visit them once a month.。其他三個名詞都接不上前一句：this shock 是驚嚇，但弟子說的話並不讓人驚嚇；conversation 概括的是師徒整段的交談，要到第 36 題才用得上；stroke 的意思是「一擊、中風」，也和弟子說的話無關。", "gloss": "承諾", "inner": ["Having received this"], "cross": [{"find": "The disciple said he would do whatever his guru asked him to do", "words": ["whatever his guru asked"]}], "coord": [], "lex": [{"find": "The disciple said he would do whatever his guru asked him to do", "words": ["whatever his guru asked"], "kind": "換字重述", "note": "弟子說的這句話，到了下一段被 this 加上空格的字，用一個詞重新說了一次。"}], "n": 31}, {"cats": "字詞搭配、句型結構", "slot": "v", "layer": "meaning", "decide": "lex", "form": "過去分詞", "formWhy": "I've just 是 I have just，後面接過去分詞，組成現在完成式。", "why": "空格在 I've just 之後，I've 是 I have，後面要接過去分詞，組成現在完成式；後面的 that 子句是它的受詞。", "l1": "that 後面是一則關於上師自己的消息：他很快就要死，而且會投胎成一頭豬。這則消息從哪裡來？第一段第一句說上師 foresaw in a vision，可以當作背景。", "l2": "I've just ___ that…：現在完成式，空格是過去分詞，後面接 that 子句當受詞。-ed 結尾的選項不只一個，形式分不開，要看哪一個動詞後面能直接接 that 子句，而且和 just、第一段的 vision 說得通。", "final": "I've just learned that I'll die very soon（我剛得知我很快就要死了）：learn 在這裡是「得知」的意思，後面接 that 子句說明得知的內容。Longman 的例句有 Last week I learned that I was pregnant.，Merriam-Webster 也有 we just learned that he was ill。screamed、released、sharpened 也是 -ed 的形式，但 released that…、sharpened that… 都接不上；screamed that 表示用喊叫的方式說出內容，而上師是在向弟子交代後事，文中看不出他在喊叫，所以也不合。", "gloss": "得知", "inner": ["I've just", "that I'll die very soon"], "cross": [{"find": "a guru foresaw in a vision what he would be in his next life", "words": ["foresaw in a vision"]}], "coord": [], "lex": [], "n": 32}, {"cats": "字詞搭配、句型結構", "slot": "v", "layer": "form", "decide": "form", "form": "原形", "formWhy": "You'll 是 You will，will 後面要接原形動詞；動詞堆裡只有這一個字沒有 -ed。", "why": "空格在 You'll（You will）之後，要接原形動詞，後面的 me 是受詞。", "l1": "上一句說上師會變成院子裡那頭母豬下一胎的第四隻小豬。這一句交代弟子要怎麼在一窩小豬裡找到他：靠 by a mark on my brow。", "l2": "You'll 就是 You will，will 後面要接原形動詞。動詞堆的五個字裡，其他四個都是 -ed 結尾，只有一個字是原形，所以不需要比較意思，用形式就能決定。", "final": "You'll recognize me by a mark on my brow（你可以憑我額頭上的記號認出我）：will 後面接原形動詞，動詞堆裡只有 recognize 是原形，其他四個字都是 -ed 的形式。recognize 是及物動詞，表示看到某人或某樣東西，知道他是誰、是什麼；Merriam-Webster 的例句有 I can always recognize him from far away by the way he walks.，也是 recognize … by 的用法。shock、promise、stroke、like 雖然也有原形動詞的用法，但放進這一格都不通，例如 shock me by a mark（用記號驚嚇我）。", "gloss": "認出", "inner": ["You'll", "me by a mark"], "cross": [{"find": "find the fourth piglet with a mark on its brow", "words": ["a mark on its brow"]}], "coord": [], "lex": [], "n": 33}, {"cats": "字詞搭配、字彙選義（第二義）", "slot": "n", "layer": "meaning", "decide": "lex", "form": "單數", "formWhy": "one 表示「一個」，後面要接單數名詞。", "why": "空格在 one 之後、of your knife 之前，one 後面接單數名詞，of 片語說明這個名詞和 knife 的關係。", "l1": "with one ___ of your knife, slaughter it：上師要弟子用刀子把小豬殺掉，而且只要一次。想一想，拿刀子做一次動作，這個動作可以用哪個名詞來稱呼？", "l2": "one 後面接單數名詞，of your knife 說明這個名詞是刀子的什麼。用筆也可以說 with one ___ of a pen。名詞堆裡，哪一個字放進這個框架，和 of your knife、of a pen 都搭得起來？", "final": "with one stroke of your knife（用你的刀一刀下去）：stroke 在這裡是名詞，表示用工具（刀、筆）做出的一次動作。Merriam-Webster 的名詞第 1 義是 the act of striking，特別指用武器或工具打擊的一下；Longman 名詞第 4a 義指筆或畫筆的一次動作，例句是 A few strokes of her pen brought out his features clearly.；第 5 義指用鞭子、細棍等打人的一下，例句是 He cried out at each stroke of the whip.，stroke of the whip 和 stroke of your knife 是同樣的結構。很多學生看到 stroke 先想到「中風」（have a stroke）或動詞的「撫摸」，但那兩個意思都放不進 with one ___ of your knife。", "gloss": "一刀、一擊", "inner": ["with one", "of your knife", "slaughter it"], "cross": [], "coord": [], "lex": [{"find": "slaughter it", "words": ["slaughter it"], "kind": "語意範圍", "note": "slaughter it 說明上師要弟子拿刀子做什麼，空格的名詞說的就是動手的那一下。"}], "n": 34}, {"cats": "字詞搭配、句型結構", "slot": "v", "layer": "meaning", "decide": "lex", "form": "過去分詞", "formWhy": "I'll then be 是 I will then be，be 後面接過去分詞，組成被動語態。", "why": "空格在 I'll then be 之後，be 加過去分詞組成被動語態，主詞 I 是承受動作的一方。", "l1": "上一句要弟子把小豬殺掉。這一句說殺掉以後，上師和 a pig's life 之間的關係就會改變，from 後面是他原本所處的那個處境。", "l2": "be 後面接過去分詞，from 說明動作的出發點。剩下的 -ed 結尾的字裡，哪一個動詞常用在 be ___ from prison、be ___ from the hospital 這種被動搭配？", "final": "I'll then be released from a pig's life（我就會從豬的一生中獲得解脫）：release somebody from something 是常見的搭配，Longman 的例句有 He was released from the hospital yesterday.；Merriam-Webster 的例句 was released from her promise，則是把人從負擔或束縛中放出來。上師把豬的一生看成必須擺脫的處境，所以用 be released from。learned 與 sharpened 也是 -ed 的形式，但 I'll be learned from a pig's life、I'll be sharpened from a pig's life 都沒有合理的意思。", "gloss": "獲得解脫、被釋放", "inner": ["I'll then be", "from a pig's life"], "cross": [{"find": "slaughter it", "words": ["slaughter it"]}], "coord": [], "lex": [], "n": 35}, {"cats": "語意連貫、同義重述", "slot": "n", "layer": "meaning", "decide": "lex", "form": "單數", "formWhy": "their 後面接名詞，指師徒剛結束的那一次，用單數。", "why": "空格在 Soon after their 之後，所有格後面接名詞，Soon after their ___ 是一個介系詞片語。", "l1": "Soon after their ___, the guru died：their 指上師和弟子兩個人，這一格是兩個人一起經歷、剛剛結束的事。回頭看他們在前兩段做了什麼。", "l2": "their 後面接名詞。名詞堆裡，有些字只描述一個人的狀態或動作，只有一個字描述的是兩個人共同參與的事，而且 Soon after … 可以接在這件事結束以後。", "final": "Soon after their conversation, the guru died（他們談完後不久，上師就過世了）：their 指師徒兩人，conversation 回頭概括第一、二段上師與弟子之間的整段交談。Merriam-Webster 的例句有 Do you remember our conversation about that new movie?，也是所有格加 conversation，指某一次具體的交談。their promise 形式上也說得通，但 promise 只是弟子單方面說的那一句，並沒有概括上師交代任務的整段內容；shock 與 stroke 放進 Soon after their 之後意思不通。", "gloss": "對話、談話", "inner": ["Soon after their", "the guru died"], "cross": [{"find": "Then he called his favorite disciple", "words": ["called his favorite disciple"]}, {"find": "The disciple felt sad to hear this, but he agreed to do as he was told", "words": ["hear this"]}], "coord": [], "lex": [], "n": 36}, {"cats": "字詞搭配、語意連貫", "slot": "v", "layer": "meaning", "decide": "coord", "form": "過去式", "formWhy": "and 後面的 picked out 是過去式，兩個動詞並列，空格也是過去式。", "why": "空格在主詞 the disciple 之後，後面的 his knife 是受詞；and picked out 是過去式，所以空格也是過去式。", "l1": "Then the disciple ___ his knife and picked out…：上師過世了，母豬也生下小豬。弟子要動手之前，先對自己的刀子做了什麼準備？", "l2": "the disciple ___ his knife and picked out…：and 連接兩個過去式動詞，共用主詞 the disciple。空格後面有受詞 his knife，所以要及物動詞。-ed 結尾的選項裡，哪一個能接 knife，而且是在 picked out 之前為割喉做的準備？", "final": "the disciple sharpened his knife and picked out the little pig（弟子磨利了刀，挑出了小豬）：and 連接兩個過去式動詞，共用主詞 the disciple，順序是先做好準備，再動手挑豬。Longman sharpen 第 1 義的例句 Anne sharpened her pencil and got out her homework. 也是 sharpen … and 接下一個動作。released his knife 形式上也行：Longman release 第 4 義有放開手中東西的用法，例句是 The sudden noise made him release his hold on her arm.；但後面才是 When he was about to cut its throat，弟子這時候還要拿刀，不可能先把刀放開。", "gloss": "磨利", "inner": ["the disciple", "his knife"], "cross": [{"find": "When he was about to cut its throat", "words": ["cut its throat"]}], "coord": [{"find": "his knife and picked out the little pig with a mark on its brow", "words": ["and picked out"], "kind": "real", "note": "and 連接兩個過去式動詞，共用主詞 the disciple：空格的動詞和 picked out 並列，兩件事有先後，前一件是為後一件做的準備。"}], "lex": [], "n": 37}, {"cats": "字詞搭配、句型結構", "slot": "v", "layer": "meaning", "decide": "lex", "form": "過去式", "formWhy": "這是過去發生的事，主詞 the little pig 和副詞 suddenly 後面接動詞，用過去式。", "why": "空格在主詞 the little pig 與 suddenly 之後，故事用過去式；後面的 “Stop!” 是它引出的直接引語。", "l1": "the little pig suddenly ___, “Stop!”：弟子正要割喉，小豬突然開口。引號裡的 Stop! 是小豬說出來的話，這一格是動詞，說明他是用什麼方式說出這句話。", "l2": "剩下的 -ed 字，哪一個動詞可以直接引出引號裡的話？想一想，刀子已經要碰到喉嚨，小豬會用什麼方式說出 Stop!，放進 the little pig suddenly ___, “Stop!” 才通順。", "final": "the little pig suddenly screamed, “Stop!”（小豬突然尖叫：「住手！」）：scream 可以直接引出引號裡的話。Longman 動詞第 2 義（因為生氣或害怕而高聲喊出）的例句有 ‘Get out!’ she screamed.，Merriam-Webster 的及物動詞第 1 義也有 “Use your mirror!” screamed her petrified bodyguard 這樣的例子。其他 -ed 的字都不是表示說話方式的動詞，放進 suddenly ___, “Stop!” 的位置都接不上。", "gloss": "尖叫、大喊", "inner": ["suddenly", "Stop!"], "cross": [], "coord": [], "lex": [], "n": 38}, {"cats": "字詞搭配、語意連貫", "slot": "n", "layer": "meaning", "decide": "lex", "form": "單數", "formWhy": "the 後面接名詞，of hearing 說明這個名詞的內容，這裡用單數。", "why": "空格在 the 之後、of hearing 之前，要填名詞；recover from the ___ of hearing… 是 from 的受詞。", "l1": "Before the disciple could recover from the ___ of hearing…：小豬開口說人話，弟子聽到以後會有什麼樣的反應？他需要一段時間，才能從這個反應中回過神來。", "l2": "the 後面接名詞，of hearing 說明它的內容。recover from 後面通常接令人難受的事件或狀態。名詞堆裡，哪一個字能放進 recover from the ___ of (doing) 的框架，指聽到小豬開口所引發的感受？", "final": "recover from the shock of hearing（從聽到…的震驚中回過神來）：shock 在這裡是名詞，指遇到意外的壞事或怪事時的驚訝與難以置信。Longman 第 2 義列出 the shock of (doing) something 的用法，例句有 Mom's never really gotten over the shock of Dad's death.；詞條的搭配欄也列了 get over/recover from a shock。stroke 雖然有「中風」的意思，但 the stroke of hearing 接不上；recover from the conversation of hearing、recover from the promise of hearing 也都說不通。", "gloss": "震驚", "inner": ["recover from the", "of hearing"], "cross": [], "coord": [], "lex": [{"find": "hearing the little pig speak in a human voice", "words": ["speak in a human voice"], "kind": "語意範圍", "note": "小豬開口說人話，是讓弟子需要一段時間才能回過神的原因。"}], "n": 39}, {"cats": "字彙選義、句型結構", "slot": "other", "layer": "form", "decide": "form", "why": "空格在 what a pig's life would be 之後，what … be ___ 是詢問事物樣貌的句型，空格要填介系詞，不是動詞，也不是名詞。", "l1": "When I asked you to kill me, I didn't know what a pig's life would be ___：小豬說，當初請弟子殺掉自己的時候，他不知道當豬的生活是怎麼一回事。what 問的是狀態，不是動作。", "l2": "what a pig's life would be ___ 是固定句型：what + 主詞 + be + ___，用來問事物的樣貌，空格後面不接受詞。這一堆只有一個選項，動詞堆與名詞堆的字放進來，句型都不對。", "final": "what a pig's life would be like（當豬的生活會是什麼樣子）：what … be like 是詢問事物樣貌的句型，like 在這裡是介系詞。like 有動詞用法（Longman 動詞第 1 義，例句 I like your jacket.），也可以當名詞（Merriam-Webster 的例句 Her post got thousands of likes.），所以有人會把它放進動詞堆或名詞堆；但動詞或名詞的 like 放在 would be 後面都不成句，這一格要的是介系詞 like。", "gloss": "像（介系詞）", "inner": ["what a pig's life", "would be"], "cross": [], "coord": [], "lex": [{"find": "It's great", "words": ["great"], "kind": "語意範圍", "note": "後面的 It's great! 在評價當豬的生活，可見這一句談的是豬的生活怎麼樣。"}], "n": 40}], "answers": {"31": "D", "32": "G", "33": "H", "34": "I", "35": "E", "36": "B", "37": "J", "38": "F", "39": "A", "40": "C"}, "topics": [{"say": "上師預見自己的來世，便問最鍾愛的弟子打算怎麼報答他。", "find": "a guru foresaw in a vision what he would be in his next life", "words": ["foresaw in a vision"], "opts": [{"t": "最鍾愛的弟子預見了自己的來世，便問上師該怎麼報答師恩。", "ok": false, "why": "文中預見來世的是 a guru（a guru foresaw in a vision），開口發問的也是上師，他問的是 What would you do to thank me…，並不是弟子問上師。"}, {"t": "上師預見自己的來世，便問最鍾愛的弟子打算怎麼報答他。", "ok": true, "why": ""}, {"t": "上師預見自己的來世，便要弟子立刻動手去處理一頭小豬。", "ok": false, "why": "前半句是對的，上師確實預見了來世；但第一段只有問弟子要怎麼報答，要弟子做什麼，到第二段才交代。"}]}, {"say": "上師交代弟子：他將投胎成豬，憑額頭記號找到他並殺掉。", "find": "I'm going to be the fourth piglet of its next litter", "words": ["the fourth piglet"], "opts": [{"t": "上師說所有人死後一定都會投胎成豬，所以要弟子見豬就殺。", "ok": false, "why": "文中上師說的是 I'm going to be reborn as a pig，只講他自己；他要弟子殺的，也只是額頭有記號的第四隻小豬（the fourth piglet with a mark on its brow），不是見豬就殺。"}, {"t": "上師很在意母豬在院子裡吃廚餘，要弟子先把院子打掃乾淨。", "ok": false, "why": "Do you see that sow eating garbage there in the yard? 只是用來讓弟子知道是哪一頭母豬，並不是上師交代的事，也不是這一段的重點。"}, {"t": "上師交代弟子：他將投胎成豬，憑額頭記號找到他並殺掉。", "ok": true, "why": ""}]}, {"say": "弟子雖然難過，仍照交代準備動手，小豬卻突然開口阻止。", "find": "The disciple felt sad to hear this, but he agreed to do as he was told", "words": ["felt sad", "as he was told"], "opts": [{"t": "弟子雖然難過，仍照交代準備動手，小豬卻突然開口阻止。", "ok": true, "why": ""}, {"t": "弟子馬上就答應，可見他毫不猶豫，一心只想把這隻小豬殺掉。", "ok": false, "why": "felt sad to hear this, but he agreed 的 but 表示他心裡難過，卻仍然照做，不能只看他答應了，就說他毫不猶豫。"}, {"t": "小豬突然說 Stop，其實是在催弟子趕快動手殺掉他。", "ok": false, "why": "Stop! 是要對方停下來，而且小豬是在弟子 was about to cut its throat 的時候開口，是阻止他，不是催促他。"}]}, {"say": "小豬要弟子別殺他，因為當豬的日子其實很快樂，想繼續活下去。", "find": "I want to live on as a pig", "words": ["live on as a pig"], "opts": [{"t": "小豬要弟子別殺他，因為他還沒準備好，想等到下一胎再被殺。", "ok": false, "why": "前半句對，小豬確實說了 Don't kill me；但原因不是還沒準備好，而是 It's great!，他覺得當豬的生活很好。"}, {"t": "小豬說 live on，是要弟子拿食物給他，讓他靠著過日子。", "ok": false, "why": "live on 在這裡是繼續活下去的意思（I want to live on as a pig），as a pig 說明他要以豬的身分繼續活著，不是靠什麼東西維生。"}, {"t": "小豬要弟子別殺他，因為當豬的日子其實很快樂，想繼續活下去。", "ok": true, "why": ""}]}], "structure": "全文共四段，是一則把原本的預期整個翻過來的小故事。第一段交代起因：上師預見自己的來世，問最鍾愛的弟子要怎麼報答他。第二段是上師的交代：他很快會死，並且投胎成院子裡那頭母豬下一胎的第四隻小豬，要弟子憑額頭上的記號找到他，一刀殺掉。第三段是弟子照做：他雖然難過還是答應，上師過世、母豬生產以後，他準備好刀，挑出小豬，正要割喉時小豬突然開口喊停。第四段是轉折：小豬說當豬的生活其實很棒，不想被殺，原本以為「必須擺脫」的處境，在當事人眼裡卻是享受。第二段的 I'm going to be … 與第四段的 I want to live on as a pig 形成對照，全文的重點就在這個反差。", "lessons": ["動詞堆五個字，形式不一樣。第 33 題的空格在 You'll（You will）後面，要接原形動詞，五個字裡只有 recognize 沒有 -ed，先放它。剩下四個字都是 -ed 結尾：第 32、35 題要過去分詞，第 37、38 題要過去式，但這四個字的過去式和過去分詞長得一模一樣，形式分不開，要靠意思。", "四個 -ed 的字，建議從線索最明確的開始：第 38 題的空格後面是引號 “Stop!”，只有表示說話方式的動詞放得進去；第 37 題的空格後面有 his knife 當受詞，而且和 picked out 用 and 並列，是挑豬之前的準備動作；剩下的第 32、35 題，一個後面接 that 子句，一個是 be ___ from 的被動語態，這時候選項只剩兩個，搭配一看就分得開。", "名詞堆四個字，形式上都放得進單數名詞的位置，只能靠搭配和上下文。第 31 題的 this 回頭指向前一句弟子說的那句話，第 36 題的 their 指向師徒兩人共同做的事，兩題都是用一個名詞把前面一整段話濃縮起來；第 34 題靠 with one ___ of your knife 的搭配，第 39 題靠 recover from the ___ of hearing 的搭配。這四題裡搭配最固定的是第 34、39 題，可以先做。第 31、36 題則要注意先後：promise 放進 their ___ 形式上也通，所以先用前一句弟子說的話決定第 31 題，第 36 題就只剩一個選項。", "shock、promise、stroke、like 都兼有動詞用法，所以分堆時標成「兩可」。不過動詞堆有五格，released、screamed、learned、sharpened、recognize 這五個字只能當動詞，剛好把動詞堆填滿；數量一算，這四個兩可字就只能放到名詞堆和其他堆。stroke 還有一個陷阱：很多人看到它先想到「中風」或動詞的「撫摸」，但第 34 題是名詞，意思是用工具（筆、刀、鞭子）動一次手。", "第 40 題的 what a pig's life would be ___ 是固定句型 what … be like，用來問事物的樣子，like 在這裡是介系詞。這一堆只有它一個選項。like 也有動詞「喜歡」的用法，也可以當名詞（例如社群網站上的按讚數 likes），但不論動詞或名詞，放進 would be 的後面都不成句，所以不會跟動詞堆、名詞堆搞混。"], "optForms": {"A": {"n": ["單數", "不可數"], "v": ["原形"]}, "B": {"n": ["單數", "不可數"]}, "C": {"v": ["原形"], "n": ["單數"]}, "D": {"n": ["單數", "不可數"], "v": ["原形"]}, "E": {"v": ["過去式", "過去分詞"]}, "F": {"v": ["過去式", "過去分詞"]}, "G": {"v": ["過去式", "過去分詞"]}, "H": {"v": ["原形"]}, "I": {"n": ["單數"], "v": ["原形"]}, "J": {"v": ["過去式", "過去分詞"]}}, "flags": ["A", "C", "D", "I"], "altOf": {"A": ["v"], "C": ["v", "n"], "D": ["v"], "I": ["v"]}};
+function clueSentences(s){
+  // 切句規則與資料檔產生時相同：句末標點後接空白，下一個字是大寫字母、引號、左括號或空格編號
+  const out = []; let start = 0, m; const re = /([.!?\u201d"])\s+(?=[A-Z\u201c"(\[])/g;
+  while((m = re.exec(s))){
+    // 縮寫（U.S.、Mr.、Dr. 等）後面的句點不算句末
+    if(m[1] === '.' && /(\b(?!(?:B\.C|A\.D|a\.m|p\.m)\.$)[A-Za-z]\.[A-Za-z]\.|\b(?:Mr|Mrs|Ms|Dr|St|Jr|Sr|Mt|Prof|Gov|Gen|Capt|Lt|Col|Sen|Rev|Ft|Fig|vs)\.|(?:^|[\s(“\"‘—])[A-HJ-Z]\.)$/.test(s.slice(0, m.index + 1))) continue;
+    out.push([start, m.index + 1]); start = m.index + m[0].length;
+  }
+  out.push([start, s.length]);
+  return out;
+}
+function clueAddWords(s, range, words, cls, marks){
+  const seg = s.slice(range[0], range[1]);
+  (words || []).forEach(w => { const i = seg.indexOf(w); if(i >= 0) marks.push([range[0] + i, range[0] + i + w.length, cls]); });
+}
+
+
+const GROUPS = {v:'動詞', n:'名詞', adj:'形容詞', adv:'副詞（含轉承副詞）', conj:'連接詞', other:'其他'};
+const GFULL = {v:'動詞（原形、第三人稱單數、過去式、V-ing、過去分詞）', n:'名詞（單數、複數、不可數）', adj:'形容詞', adv:'副詞（含轉承副詞）', conj:'連接詞', other:'其他（介系詞、代名詞等）'};
+const FORMS = {v:['原形','第三人稱單數','過去式','V-ing','過去分詞'], n:['單數','複數','不可數']};
+const GORDER = ['v','n','adj','adv','conj','other'].filter(g => Object.values(DATA.groupOf).indexOf(g) >= 0);
+function zero(){ const o = {}; GORDER.forEach(g => o[g] = 0); return o; }
+const ALT = DATA.altOf || {};
+function inPile(l, g){ return DATA.groupOf[l] === g || (ALT[l] || []).indexOf(g) >= 0; }
+function ambLabel(l){
+  const gs = GORDER.filter(g => inPile(l, g));
+  return gs.map(g => { const f = ((DATA.optForms[l] || {})[g] || []); return GROUPS[g] + (FORMS[g] && f.length ? '（'+f.join('、')+'）' : ''); }).join('或');
+}
+function formReq(n){ const b = BL[n]; return !!b.form && letters.some(l => inPile(l, b.slot) && !formOK(l, n)); }
+function slotLab(n){ return GROUPS[BL[n].slot] + (formReq(n) ? '・' + BL[n].form : ''); }
+function formOK(l, n){ const b = BL[n]; if(!b.form) return true; const f = (DATA.optForms[l] || {})[b.slot]; return !!f && f.indexOf(b.form) >= 0; }
+const letters = Object.keys(DATA.options);
+const blankNums = DATA.blanks.map(b => b.n);
+const BL = {}; DATA.blanks.forEach(b => BL[b.n] = b);
+const NEED = {}; GORDER.forEach(g => NEED[g] = DATA.blanks.filter(b => b.slot === g).length);
+
+let stage = 0;            // 0 抓主旨　1 標詞性、分堆　3 拼
+let topicDone = {}, topicSt = {}, topicRev = {};
+function curTopic(){ for(let i = 0; i < DATA.topics.length; i++) if(!topicDone[i]) return i; return null; }
+function paraName(i){ const m = DATA.paras[i].label.match(/^【([^】]*)】/); return m ? m[1] : '第 '+(i+1)+' 段'; }
+let labeled = {};         // 題號 -> true（詞性與形式都標對）
+let slotOK = {};          // 題號 -> 詞性標對了
+let assign = {};          // 選項字母 -> 'v'|'n'|'adj'（學生自己分的）
+let sortTries = 0, sortMsg = '', flashBlanks = false;
+let placed = {}, revealed = {};
+let sel = null;
+let st = {};              // 題號 -> {tried:[], hint:0, wrongs:[]}
+function S(n){ return st[n] || (st[n] = {tried:[], hint:0, wrongs:[]}); }
+function esc(str){ return String(str).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+
+const PS = DATA.paras.map(p => p.segs.map(seg => seg[1]==='blank' ? '['+seg[0]+']' : seg[0]).join(''));
+
+/* 依「含有這段文字」找出句子；回傳 [段落索引, 句範圍] */
+function findSentence(find){
+  for(let k = 0; k < PS.length; k++){
+    const r = clueSentences(PS[k]).find(q => PS[k].slice(q[0], q[1]).indexOf(find) >= 0);
+    if(r) return [k, r];
+  }
+  return null;
+}
+
+function computeMarks(n){
+  const marks = PS.map(() => []);
+  if(stage === 0){
+    const ci = curTopic();
+    if(ci != null && (topicSt[ci] || {tried:[]}).tried.length){ const tp = DATA.topics[ci]; const f = findSentence(tp.find); if(f) clueAddWords(PS[f[0]], f[1], tp.words, 'cl-k', marks[f[0]]); }
+    return marks;
+  }
+  if(n == null) return marks;
+  const b = BL[n], s = S(n);
+  const pi = PS.findIndex(t => t.indexOf('['+n+']') >= 0);
+  if(pi < 0) return marks;
+  const sents = clueSentences(PS[pi]);
+  const tag = '['+n+']';
+  const target = sents.find(r => PS[pi].slice(r[0], r[1]).indexOf(tag) >= 0);
+  const showIn = labeled[n] || s.tried.length > 0 || placed[n];
+  const showMore = (stage === 3 && s.hint >= 1) || placed[n];
+  const showCoord = (stage === 3 && s.hint >= 2) || placed[n];
+  if(target && showIn) clueAddWords(PS[pi], target, b.inner, 'cl-a', marks[pi]);
+  if(showMore){
+    (b.cross || []).forEach(x => { const f = findSentence(x.find); if(f) clueAddWords(PS[f[0]], f[1], x.words, 'cl-b', marks[f[0]]); });
+    (b.lex || []).forEach(x => { const f = findSentence(x.find); if(f) clueAddWords(PS[f[0]], f[1], x.words, 'cl-l', marks[f[0]]); });
+  }
+  if(showCoord){
+    (b.coord || []).forEach(x => { const f = findSentence(x.find); if(f) clueAddWords(PS[f[0]], f[1], x.words, x.kind === 'trap' ? 'cl-t' : 'cl-c', marks[f[0]]); });
+  }
+  return marks;
+}
+
+function renderPassage(){
+  const all = computeMarks(sel);
+  const doneAll = Object.keys(placed).length >= blankNums.length;
+  let html = '';
+  PS.forEach((s, pi) => {
+    const marks = all[pi].slice().sort((a, b) => a[0] - b[0]);
+    const re = /\[(\d+)\]/g; let m, last = 0, out = '';
+    const textPart = (a, b) => {
+      let p = a, h = '';
+      marks.forEach(([x, y, cls]) => {
+        const xx = Math.max(x, a), yy = Math.min(y, b);
+        if(yy <= xx || xx < p) return;
+        h += esc(s.slice(p, xx)) + '<mark class="'+cls+'">' + esc(s.slice(xx, yy)) + '</mark>';
+        p = yy;
+      });
+      return h + esc(s.slice(p, b));
+    };
+    while((m = re.exec(s))){
+      if(m.index > last) out += textPart(last, m.index);
+      const n = Number(m[1]);
+      const cls = 'blank' + (placed[n] ? ' filled' : (labeled[n] ? ' labeled' : '')) + (sel === n ? ' sel' : '') + (flashBlanks && !labeled[n] && !placed[n] ? ' flash' : '');
+      const label = placed[n] ? esc(DATA.options[placed[n]]) : String(n) + (labeled[n] ? '<span class="cls">'+slotLab(n)+'</span>' : '');
+      out += '<button type="button" class="'+cls+'" data-n="'+n+'"'+(stage === 0 ? ' disabled' : '')+' aria-label="第 '+n+' 題'+(labeled[n] ? '，'+slotLab(n) : '')+(placed[n] ? '，已放 '+esc(DATA.options[placed[n]]) : '')+'">'+label+'</button>';
+      last = m.index + m[0].length;
+    }
+    if(last < s.length) out += textPart(last, s.length);
+    const lab = doneAll ? DATA.paras[pi].label : (DATA.paras[pi].label.match(/^【[^】]*】/) || [''])[0];
+    html += '<p class="plabel">'+esc(lab)+'</p><p'+(stage === 0 && pi === curTopic() ? ' class="pcur"' : '')+'>'+out+'</p>';
+  });
+  document.getElementById('passage').innerHTML = html;
+  document.querySelectorAll('button.blank').forEach(btn => btn.addEventListener('click', () => select(Number(btn.dataset.n))));
+}
+
+/* 還沒放的選項裡，這個空格那一堆還剩幾個 */
+function remaining(n){
+  const g = BL[n].slot;
+  return letters.filter(l => inPile(l, g) && formOK(l, n) && !Object.values(placed).includes(l));
+}
+function leastCandidates(){
+  let best = 99, list = [];
+  blankNums.filter(n => !placed[n]).forEach(n => {
+    const k = remaining(n).length;
+    if(k < best){ best = k; list = [n]; } else if(k === best) list.push(n);
+  });
+  return {k: best, list};
+}
+
+function renderTray(){
+  const title = document.getElementById('trayTitle'), el = document.getElementById('tray');
+  document.getElementById('trayCard').classList.toggle('hidden', stage === 0);
+  if(stage === 0){ el.innerHTML = ''; return; }
+  if(stage === 1){
+    title.textContent = '分堆：把十個選項放進'+['','','','三','四','五','六'][GORDER.length]+'堆';
+    const cnt = zero(); Object.values(assign).forEach(g => cnt[g]++);
+    const allL = Object.keys(labeled).length >= blankNums.length;
+    const needNow = zero(); blankNums.forEach(n => { if(labeled[n]) needNow[BL[n].slot]++; });
+    let h = '<div class="counts">' + GORDER.map(g => '<span class="count'+(allL && cnt[g] === NEED[g] ? ' ok' : '')+'">'+GROUPS[g]+' 已放 '+cnt[g]+' 個'+(allL ? '（需要 '+needNow[g]+' 個'+(cnt[g] === NEED[g] ? ' ✓' : ' ≠')+'）' : '')+'</span>').join('') + '</div>';
+    const nL = Object.keys(labeled).length, nA = Object.keys(assign).length;
+    h += '<ol class="steps2"><li><b>點文章裡的空格</b>（'+blankNums[0]+'～'+blankNums[blankNums.length-1]+'），在面板選這一格的詞性。</li><li><b>把下面每個選項放進一堆</b>，每一堆的選項數，要剛好等於這種詞性的空格數。</li></ol>';
+    h += '<div class="progress"><span class="pg'+(nL >= blankNums.length ? ' ok' : '')+'">詞性已標 '+nL+'／'+blankNums.length+'</span><span class="pg'+(nA >= letters.length ? ' ok' : '')+'">選項已分堆 '+nA+'／'+letters.length+'</span></div>';
+    if(DATA.flags.length) h += '<p class="next">標「兩類皆可」的字，可以當兩種詞性：放進你覺得合適的那一堆就好，只要每一堆的數量對得上，兩種都算對。</p>';
+    letters.forEach(l => {
+      h += '<div class="sortrow'+(GORDER.length > 4 ? ' many' : '')+'"><span class="w"><span class="letter">('+l+')</span>'+esc(DATA.options[l])+(DATA.flags.indexOf(l) >= 0 ? ' <span class="flag">兩類皆可</span><span class="ambnote">'+esc(ambLabel(l))+'</span>' : '')+'</span>';
+      GORDER.forEach(g => { h += '<button type="button" class="pill'+(assign[l] === g ? ' on' : '')+'" data-l="'+l+'" data-g="'+g+'" aria-pressed="'+(assign[l] === g)+'">'+GROUPS[g]+'</button>'; });
+      h += '</div>';
+    });
+    h += '<div class="btnrow"><button type="button" class="btn" id="checkBtn">核對分堆</button>' + (sortTries >= 2 ? '<button type="button" class="btn ghost" id="autoSortBtn">直接分好</button>' : '') + '</div>';
+    h += '<div class="skipbox"><button type="button" class="btn ghost" id="skipBtn">略過這一步，直接拼</button><p class="next">已經很熟詞性的人可以略過：十個空格和選項會照正確的詞性幫你分好，直接進第 3 步用上下文拼答案。</p></div>';
+    if(sortMsg) h += '<div class="msg">'+sortMsg+'</div>';
+    el.innerHTML = h;
+    el.querySelectorAll('.pill').forEach(p => p.addEventListener('click', () => { assign[p.dataset.l] = p.dataset.g; sortMsg = ''; renderTray(); }));
+    document.getElementById('checkBtn').addEventListener('click', checkSort);
+    document.getElementById('skipBtn').addEventListener('click', skipStep2);
+    const ab = document.getElementById('autoSortBtn'); if(ab) ab.addEventListener('click', () => { assign = Object.assign({}, DATA.groupOf); autoSorted = true; toStage3('已幫你分好。'); });
+    return;
+  }
+  // stage 3
+  title.textContent = '拼圖盤';
+  const n = sel, s = n != null ? S(n) : null;
+  const activeGroup = (n != null && !placed[n]) ? BL[n].slot : null;
+  let html = '';
+  GORDER.forEach(g => {
+    const ls = letters.filter(l => inPile(l, g));
+    html += '<div class="pile"><div class="pname'+(activeGroup===g?' on':'')+'">'+GFULL[g]+(activeGroup===g?'<br>▼ 這一題從這一堆選':'')+'</div><div class="chips">';
+    ls.forEach(l => {
+      const usedAt = Object.keys(placed).find(k => placed[k] === l);
+      const dimForm = activeGroup === g && !formOK(l, n);
+      const dim = (activeGroup && activeGroup !== g);
+      const wrongHere = s && s.wrongs.indexOf(l) >= 0;
+      const cls = 'chip' + (usedAt ? ' used' : '') + (dim ? ' dim' : '') + (dimForm ? ' dimf' : '') + (wrongHere ? ' x' : '') + (activeGroup===g && !usedAt && !wrongHere && !dimForm ? ' on' : '');
+      const disabled = (usedAt || dim || dimForm || wrongHere) ? ' disabled' : '';
+      html += '<button type="button" class="'+cls+'" data-l="'+l+'"'+disabled+'><span class="letter">('+l+')</span>'+esc(DATA.options[l])+(usedAt ? '<span class="tag">已放在第 '+usedAt+' 題</span>' : (FORMS[g] && (DATA.optForms[l]||{})[g] && blankNums.some(k => formReq(k) && BL[k].slot === g) ? '<span class="tag">'+esc(DATA.optForms[l][g].join('／'))+(dimForm ? '（形式不合）' : '')+'</span>' : ''))+'</button>';
+    });
+    html += '</div></div>';
+  });
+  el.innerHTML = html;
+  el.querySelectorAll('.chip').forEach(c => c.addEventListener('click', () => pick(c.dataset.l)));
+}
+
+function sentHtml(n){
+  const pi = PS.findIndex(t => t.indexOf('['+n+']') >= 0); if(pi < 0) return '';
+  const ss = PS[pi].split(/(?<=[.!?])\s+/); const s = ss.find(x => x.indexOf('['+n+']') >= 0); if(!s) return '';
+  const h = esc(s).replace(/\[(\d+)\]/g, (m, k) => k === String(n) ? '<b class="gap">'+k+'</b>' : '（'+k+'）');
+  return '<div class="sent"><span class="letter">本句</span>'+h+'</div>';
+}
+/* 跨句、並列線索如果在別的段落，把那一句也列在面板裡，手機上不用往回捲 */
+function crossPanelHtml(n, hint){
+  if(hint == null) hint = 9;
+  const b = BL[n];
+  const pi = PS.findIndex(t => t.indexOf('['+n+']') >= 0);
+  let h = '';
+  const items = [].concat((b.cross || []).map(x => Object.assign({}, x, {cls:'cl-b', lab:'跨句線索'})),
+                          (b.lex || []).map(x => Object.assign({}, x, {cls:'cl-l', lab:'詞彙線索'})),
+                          (hint < 2 ? [] : (b.coord || [])).map(x => Object.assign({}, x, {cls: x.kind === 'trap' ? 'cl-t' : 'cl-c', lab: x.kind === 'trap' ? '並列陷阱' : '並列線索'})));
+  items.forEach(x => {
+    const f = findSentence(x.find); if(!f) return;
+    const text = PS[f[0]].slice(f[1][0], f[1][1]);
+    if(f[0] === pi && x.cls !== 'cl-b' && text.indexOf('['+n+']') >= 0 && stage !== 99) { /* 同一句，已經在文章裡標出 */ }
+    if(f[0] === pi) return;
+    const mk = []; clueAddWords(text, [0, text.length], x.words, x.cls, mk);
+    mk.sort((p, q) => p[0] - q[0]);
+    let out = '', pos = 0;
+    mk.forEach(([a, e, cls]) => { if(a < pos) return; out += esc(text.slice(pos, a)) + '<mark class="'+cls+'">' + esc(text.slice(a, e)) + '</mark>'; pos = e; });
+    out += esc(text.slice(pos));
+    out = out.replace(/\[(\d+)\]/g, (m, d) => placed[d] ? '<b>'+esc(DATA.options[placed[d]])+'</b>' : '（'+d+'）');
+    h += '<p class="clueX '+x.cls+'"><span class="clueXlab">'+x.lab+'</span>'+out+'</p>';
+  });
+  return h;
+}
+function coordNotesHtml(n, withAll){
+  const b = BL[n]; let h = '';
+  (b.coord || []).forEach(x => { h += '<p style="font-size:14px;margin:6px 0 0"><b>'+(x.kind === 'trap' ? '並列陷阱：' : '並列線索：')+'</b>'+esc(x.note)+'</p>'; });
+  return h;
+}
+
+function topicLineHtml(n){
+  const pi = PS.findIndex(t => t.indexOf('['+n+']') >= 0); if(pi < 0 || !DATA.topics[pi]) return '';
+  return '<div class="sent"><span class="letter">這一段</span>'+esc(DATA.topics[pi].say)+'</div>';
+}
+function paraBoxHtml(ci, showKey){
+  const text = PS[ci]; const tp = DATA.topics[ci];
+  const mk = []; if(showKey){ const f = findSentence(tp.find); if(f && f[0] === ci) clueAddWords(text, f[1], tp.words, 'cl-k', mk); }
+  mk.sort((a, b) => a[0] - b[0]);
+  let out = '', pos = 0;
+  mk.forEach(([a, e, cls]) => { if(a < pos) return; out += esc(text.slice(pos, a)) + '<mark class="'+cls+'">' + esc(text.slice(a, e)) + '</mark>'; pos = e; });
+  out += esc(text.slice(pos));
+  out = out.replace(/\[(\d+)\]/g, (m, d) => '（'+d+'）');
+  return '<p class="clueX cl-k">'+out+'</p>';
+}
+function topicPanel(){
+  const ci = curTopic(), k = Object.keys(topicDone).length, total = DATA.topics.length;
+  const tp = DATA.topics[ci], s = topicSt[ci] || {tried:[]};
+  let h = '<div class="h">第 1 步：'+esc(paraName(ci))+'在講什麼？</div>';
+  h += '<p class="next">先讀這一段，再選。已完成 '+k+' / '+total+' 段。</p>';
+  h += paraBoxHtml(ci, s.tried.length > 0);
+  tp.opts.forEach((o, j) => { const x = s.tried.indexOf(j) >= 0; h += '<button type="button" class="btn topicopt'+(x ? ' x' : '')+'" data-j="'+j+'"'+(x ? ' disabled' : '')+'>'+esc(o.t)+'</button>'; });
+  if(s.tried.length){ const lj = s.tried[s.tried.length - 1]; h += '<div class="msg">'+esc(tp.opts[lj].why)+'上面標出來的字，是這一段的關鍵詞。</div>'; }
+  const done = DATA.topics.map((x, i) => topicDone[i] ? '<div class="sent"><span class="letter">'+esc(paraName(i))+'</span>'+esc(x.say)+'</div>' : '').join('');
+  if(done) h += '<p class="next" style="margin-top:12px">已經確認的段落主旨：</p>'+done;
+  return h;
+}
+function chooseTopic(j){
+  const ci = curTopic(); const tp = DATA.topics[ci]; const s = topicSt[ci] || (topicSt[ci] = {tried:[]});
+  if(tp.opts[j].ok){ topicDone[ci] = true; if(curTopic() == null){ stage = 1; sel = null; } }
+  else if(s.tried.indexOf(j) < 0) s.tried.push(j);
+  render(); toPanel();
+}
+function revealTopic(){ const ci = curTopic(); topicRev[ci] = true; topicDone[ci] = true; if(curTopic() == null){ stage = 1; sel = null; } render(); }
+
+function renderPanel(){
+  const el = document.getElementById('panel');
+  if(stage === 0){
+    el.innerHTML = topicPanel();
+    el.querySelectorAll('.topicopt').forEach(b => b.addEventListener('click', () => chooseTopic(Number(b.dataset.j))));
+    return;
+  }
+  if(sel == null){
+    let h = '';
+    if(stage === 1){
+      h = '<div class="h">第 2 步：認識空格與選項（標詞性、分堆）</div><div class="msg ok">各段的主旨都確認了。</div><div style="font-size:14px;color:var(--ink-soft)"><b>詞性只能縮小範圍，不能決定答案</b>：同一堆通常還有好幾個選項放得進去，最後要靠上下文的意思。請做兩件事：（一）點文章裡的數字，標出這一格的詞性；（二）到下面把十個選項各放進一堆。有些字有兩種詞性（標「兩類皆可」），放哪一堆都算對，到下一步由上下文決定放進哪一格。兩件事都做完、分堆核對正確，才能開始放選項。</div>';
+    } else {
+      const lc = leastCandidates();
+      h = '<div class="h">第 3 步：用線索拼答案</div><div style="font-size:14px;color:var(--ink-soft)">點文章裡的數字開始拼。<b>先想這一段的主旨，再找內容線索</b>，最後才看詞性、形式和並列結構。像拼圖先拼邊框：先做剩下選項最少的空格。選項在下方的拼圖盤。</div>';
+      if(lc.list.length) h += '<p class="next" style="margin-top:8px">現在剩下選項最少的空格：第 '+lc.list.join('、')+' 題（那一堆只剩 '+lc.k+' 個選項）。一樣多時，先選線索最明確的。</p>';
+    }
+    el.innerHTML = h; return;
+  }
+  const n = sel, b = BL[n], s = S(n);
+  let h = '<div class="h">第 '+n+' 題</div>' + topicLineHtml(n);
+  if(placed[n]){
+    const l = placed[n];
+    h += '<div class="msg ok"><span class="badge'+(b.layer==='meaning'?' m':'')+'">'+esc(b.cats)+'</span><span class="ans">'+esc(DATA.options[l])+'</span>　'+esc(b.gloss)+(revealed[n]?'（看答案放上去的）':'')+'</div>';
+    h += '<p style="font-size:14.5px;margin:8px 0 0"><b>詞性：</b>'+slotLab(n)+'。'+esc(b.why)+(b.form ? '（形式：'+b.form+'）' : '')+'</p>';
+    h += '<p style="font-size:14.5px;margin:6px 0 0"><b>判斷依據：</b>'+esc(b.final)+'</p>';
+    h += coordNotesHtml(n) + crossPanelHtml(n);
+    el.innerHTML = h; return;
+  }
+  if(slotOK[n] && !labeled[n]){
+    h += sentHtml(n)+'<div class="msg ok"><b>'+GROUPS[b.slot]+'。</b>'+(b.form ? '' : esc(b.why))+'</div><p class="q">這一格的「形式」是？</p><div class="btnrow">';
+    FORMS[b.slot].forEach(f => { h += '<button type="button" class="btn" data-f="'+f+'"'+(s.triedF && s.triedF.indexOf(f)>=0?' disabled':'')+'>'+f+'</button>'; });
+    h += '</div>';
+    if(s.triedF && s.triedF.length) h += '<div class="msg">這一格不是'+s.triedF.join('、')+'。想想主詞、時態，和空格前後的字（'+esc(b.formWhy)+'）。</div>';
+    else h += '<div style="font-size:13.5px;color:var(--ink-soft)">同一種詞性還有不同的形式，例如動詞的過去式、過去分詞，名詞的單數、複數。看空格前後的字判斷。</div>';
+    el.innerHTML = h;
+    el.querySelectorAll('[data-f]').forEach(btn => btn.addEventListener('click', () => chooseForm(btn.dataset.f)));
+    return;
+  }
+  if(!labeled[n]){
+    h += sentHtml(n)+'<p class="q">這個空格的詞性是？</p><div class="btnrow">';
+    GORDER.forEach(g => { h += '<button type="button" class="btn" data-g="'+g+'"'+(s.tried.indexOf(g)>=0?' disabled':'')+'>'+GROUPS[g]+'</button>'; });
+    h += '</div>';
+    if(s.tried.length){
+      const sn = b.slotNote; let note = null;
+      if(typeof sn === 'string'){ if(s.tried.indexOf('n') >= 0) note = sn; }
+      else if(sn){ for(let i = s.tried.length - 1; i >= 0; i--){ if(sn[s.tried[i]]){ note = sn[s.tried[i]]; break; } } }
+      if(note) h += '<div class="msg">'+esc(note)+'</div>';
+      else h += '<div class="msg">這一格不是'+s.tried.map(g=>GROUPS[g]).join('、')+'。再看一次空格前後的字，這一句裡的線索已經標出來（有底色和底線的字）。</div>';
+    }
+    else h += '<div style="font-size:13.5px;color:var(--ink-soft)">詞性只是用來縮小範圍的，看空格前後的字判斷就好。選哪一個，最後還是要靠上下文的意思。</div>';
+    el.innerHTML = h;
+    el.querySelectorAll('[data-g]').forEach(btn => btn.addEventListener('click', () => chooseSlot(btn.dataset.g)));
+    return;
+  }
+  h += sentHtml(n)+'<div class="msg ok"><b>'+slotLab(n)+'。</b>'+esc(b.why)+'</div>';
+  if(stage < 3){ el.innerHTML = h; return; }
+  const rem = remaining(n);
+  h += '<p class="q">從下面選一個放進這一格。符合這個形式的，還有 '+rem.length+' 個選項。</p><div class="chips">';
+  rem.forEach(l => { if(s.wrongs.indexOf(l) >= 0) return; h += '<button type="button" class="chip" data-l="'+l+'"><span class="letter">('+l+')</span>'+esc(DATA.options[l])+'</button>'; });
+  h += '</div><button type="button" class="btn ghost totray" id="toTray">看完整拼圖盤 ↓</button>';
+  if(s.wrongs.length){
+    const lw = s.wrongs[s.wrongs.length - 1];
+    h += '<div class="msg">「'+esc(DATA.options[lw])+'」放不進這一格：詞性相符，但意思或搭配不合。先回頭想這一段在講什麼；想不出來時，可以按提示。</div>';
+  }
+  if(s.hint >= 1) h += '<p style="font-size:14.5px;margin:8px 0"><b>提示 1，內容線索：</b>'+esc(b.l1)+'</p>';
+  if(s.hint >= 2) h += '<p style="font-size:14.5px;margin:8px 0"><b>提示 2，結構與搭配：</b>'+esc(b.l2)+'</p>' + coordNotesHtml(n);
+  if(s.hint >= 1) h += crossPanelHtml(n, s.hint);
+  h += '<div class="btnrow">';
+  if(s.hint === 0) h += '<button type="button" class="btn ghost" id="hintBtn">提示 1：先看內容線索</button>';
+  else if(s.hint === 1) h += '<button type="button" class="btn ghost" id="hintBtn">提示 2：再看結構與搭配</button>';
+  if(s.wrongs.length >= 2 || s.hint >= 2) h += '<button type="button" class="btn ghost" id="ansBtn">直接看答案</button>';
+  h += '</div>';
+  el.innerHTML = h;
+  el.querySelectorAll('.chip').forEach(c => c.addEventListener('click', () => pick(c.dataset.l)));
+  const hb = document.getElementById('hintBtn'); if(hb) hb.addEventListener('click', () => { S(n).hint++; render(); });
+  const ab = document.getElementById('ansBtn'); if(ab) ab.addEventListener('click', () => { place(n, DATA.answers[n], true); });
+}
+
+function renderProg(){
+  const k = Object.keys(placed).length, t = blankNums.length;
+  const txt = stage === 0 ? '第 1 步　已確認主旨 '+Object.keys(topicDone).length+' / '+DATA.topics.length+' 段' : (stage === 1 ? '第 2 步　已標詞性 '+Object.keys(labeled).length+' / '+t+' 格；已分堆 '+Object.keys(assign).length+' / '+letters.length+' 個' : '第 3 步　已拼好 '+k+' / '+t+' 題');
+  document.getElementById('progText').textContent = txt;
+}
+
+let autoSorted = false, skipped2 = false;
+function renderDone(){
+  const el = document.getElementById('done');
+  if(Object.keys(placed).length < blankNums.length){ el.classList.add('hidden'); return; }
+  const firstShow = el.classList.contains('hidden');
+  el.classList.remove('hidden');
+  const DEC = [['lex','靠詞彙線索（同義、換字重述、同一個語意範圍）'],['coord','靠並列線索'],['meaning','靠這一句或這一段的意思'],['form','靠詞性、形式與搭配就能排除其他選項']];
+  const list = a => a.map(n => '第 '+n+' 題').join('、');
+  const nRev = Object.keys(revealed).length;
+  let h = '<h3>'+(nRev ? '全部放好了。' : '拼好了。')+'這十題是靠什麼判斷的</h3>';
+  h += '<p style="margin:0 0 8px;font-size:14.5px"><b>各段主旨：</b></p><ul>' + DATA.topics.map((x, i) => '<li><b>'+esc(paraName(i))+'：</b>'+esc(x.say)+'</li>').join('') + '</ul>';
+  h += '<p style="margin:0 0 8px;font-size:14.5px"><b>全文結構：</b>'+esc(DATA.structure)+'</p><ul>';
+  DEC.forEach(d => { const a = blankNums.filter(n => BL[n].decide === d[0]); if(a.length) h += '<li><b>'+d[1]+'：</b>'+list(a)+'（共 '+a.length+' 題）。</li>'; });
+  h += '</ul><p style="margin:12px 0 8px;font-size:14.5px"><b>這一回要注意：</b></p><ul>';
+  DATA.lessons.forEach(t => { h += '<li>'+esc(t)+'</li>'; });
+  h += '<li><b>每個選項只能用一次。</b>真正作答時，一題放錯會連帶影響其他題，所以全部放好後，要把整篇再讀一遍：每一格填進去，都要扣住它那一段的主旨，整段讀起來也要通順。</li></ul>';
+  h += '<p class="next">'+(nRev ? '你用了「直接看答案」'+nRev+' 次'+(skipped2 ? '，第 2 步選擇略過' : autoSorted ? '，分堆用了「直接分好」' : '')+'。' : (skipped2 ? '第 2 步選擇略過。' : autoSorted ? '分堆用了「直接分好」。' : ''));
+  h += '大考中心的命題研習資料提到，文意選填會避免只憑詞性、單複數或局部片語就能作答；所以真正考試時，常有同一堆好幾個選項都放得進去的情形，要靠上下文的意思判斷。</p>';
+  el.innerHTML = h;
+  if(firstShow) setTimeout(() => el.scrollIntoView({behavior:'smooth', block:'start'}), 50);
+}
+
+function dockPanel(){
+  const panel = document.getElementById('panel'), tray = document.getElementById('trayCard');
+  let host = null;
+  if(stage === 0) host = document.querySelector('#passage p.pcur');
+  else if(sel != null){ const b = document.querySelector('button.blank.sel'); host = b && b.closest('p'); }
+  if(host) host.after(panel); else tray.parentNode.insertBefore(panel, tray);
+}
+function render(){
+  const panel = document.getElementById('panel'), tray = document.getElementById('trayCard');
+  tray.parentNode.insertBefore(panel, tray);
+  renderPassage(); renderTray(); renderPanel(); renderProg(); renderDone(); dockPanel();
+}
+
+function select(n){ if(stage === 0) return; sel = n; render(); document.getElementById('panel').scrollIntoView({behavior:'smooth', block:'nearest'}); }
+function toPanel(){ const p = document.getElementById('panel'); if(p && p.scrollIntoView) p.scrollIntoView({behavior:'smooth', block:'nearest'}); }
+
+function chooseForm(f){
+  const s = S(sel); s.triedF = s.triedF || [];
+  if(BL[sel].form === f || (BL[sel].formAlt || []).indexOf(f) >= 0){ labeled[sel] = true; } else if(s.triedF.indexOf(f) < 0){ s.triedF.push(f); }
+  render();
+}
+function chooseSlot(g){
+  const s = S(sel);
+  if(BL[sel].slot === g){
+    slotOK[sel] = true;
+    if(!FORMS[g] || !formReq(sel)) labeled[sel] = true;
+  } else { if(s.tried.indexOf(g) < 0) s.tried.push(g); }
+  render();
+}
+
+function checkSort(){
+  flashBlanks = false;
+  const nUn = blankNums.length - Object.keys(labeled).length;
+  if(nUn > 0){
+    sortMsg = '還有 '+nUn+' 格沒標詞性。請點文章裡閃動的空格（'+blankNums.filter(n => !labeled[n]).join('、')+'），在面板選這一格的詞性。十格都標完，才能核對分堆。';
+    flashBlanks = true; setTimeout(() => { flashBlanks = false; }, 3500);
+    render(); const bl = document.querySelector('button.blank.flash'); if(bl && bl.scrollIntoView) bl.scrollIntoView({block:'center', behavior:'smooth'});
+    return;
+  }
+  const un = letters.filter(l => !assign[l]);
+  if(un.length){ sortMsg = '還有 '+un.length+' 個選項沒有分堆。'; renderTray(); return; }
+  sortTries++;
+  const cnt = zero(); Object.values(assign).forEach(g => cnt[g]++);
+  const off = GORDER.filter(g => cnt[g] !== NEED[g]);
+  const amb = DATA.flags.map(l => DATA.options[l]).join('、');
+  if(off.length){
+    sortMsg = '數量對不上：' + off.map(g => GROUPS[g]+'堆現在有 '+cnt[g]+' 個，但詞性是'+GROUPS[g]+'的空格有 '+NEED[g]+' 格').join('；') + '。' + (amb ? '標「兩類皆可」的字（'+esc(amb)+'）可以放進兩種詞性的任一堆，想想它們放進文章哪一格、在那裡當什麼詞。' : '回到文章，看每個字可能放進哪一格。');
+    renderTray(); return;
+  }
+  const wrong = letters.filter(l => !inPile(l, assign[l]));
+  if(wrong.length){
+    sortMsg = '每一堆的數量對了，但還有字放錯堆。標「兩類皆可」的字，只能放進它標出的那兩種詞性；其他的字，回到文章看它可能放進哪一格、在那裡當什麼詞。';
+    renderTray(); return;
+  }
+  toStage3('分對了。');
+}
+function skipStep2(){
+  blankNums.forEach(n => { labeled[n] = true; slotOK[n] = true; });
+  assign = Object.assign({}, DATA.groupOf); skipped2 = true; toStage3('');
+}
+function toStage3(msg){ stage = 3; sel = null; sortMsg = ''; render(); }
+
+function place(n, l, viaReveal){ placed[n] = l; if(viaReveal) revealed[n] = true; render(); }
+
+function pick(l){
+  if(sel == null || placed[sel] || stage !== 3) return;
+  const s = S(sel);
+  if(l === DATA.answers[sel]){ place(sel, l, false); }
+  else { if(s.wrongs.indexOf(l) < 0) s.wrongs.push(l); render(); }
+}
+
+document.getElementById('resetBtn').addEventListener('click', () => { stage = 0; topicDone = {}; topicSt = {}; topicRev = {}; labeled = {}; slotOK = {}; assign = {}; sortTries = 0; sortMsg = ''; autoSorted = false; skipped2 = false; placed = {}; revealed = {}; sel = null; st = {}; render(); });
+
+document.getElementById('sub').textContent = DATA.sub;
+document.getElementById('lnkFull').href = 'https://staresto-create.github.io/passage-completion/#full-' + DATA.id;
+render();
+document.addEventListener('click', e => { if(e.target && e.target.id === 'toTray'){ const t = document.getElementById('trayCard'); if(t) t.scrollIntoView({behavior:'smooth', block:'start'}); } });
+</script>
+</body>
+</html>

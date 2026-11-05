@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>文意選填：用上下文拼圖</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500;700;900&family=Noto+Sans+TC:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{--pill-edge:#8F8670;
+    --paper:#F6F1E4; --paper-card:#FFFDF7; --ink:#221F1A; --ink-soft:#5B5648;
+    --rule:#DCD3BB; --crimson:#AE3626; --sage:#3E6E52; --gold:#A9812E;
+    --surface:#fff; --tint-crimson:#FBF1EE; --tint-sage:#E7F3EA; --tint-warm:#FBF6E8; --tint-sand:#F1EADA;
+    --link:#9C2C1E; --foot:#6f685d; --on-ink:#fff;
+    --glow:rgba(174,54,38,.05); --grid-line:rgba(34,31,26,0.025);
+    --shadow:0 1px 0 rgba(34,31,26,.06), 0 8px 24px rgba(34,31,26,.08);
+    --cl-a-bg:#FAD9CC; --cl-a-line:#AE3626; --cl-b-bg:#E2D8F3; --cl-b-line:#6A4FA3;
+    --cl-c-bg:#CFEAE0; --cl-c-line:#23705A; --cl-t-bg:#FBD9B5; --cl-t-line:#A24E0E;
+    --cl-l-bg:#D6E6F6; --cl-l-line:#2B63A8; --cl-k-bg:#F3E3AE; --cl-k-line:#A9812E;
+    color-scheme:light;
+  }
+  @media screen and (prefers-color-scheme: dark){
+    :root{--pill-edge:#8A8272;
+      --paper:#1B1916; --paper-card:#26231F; --ink:#EDE7D8; --ink-soft:#B8B0A0; --rule:#4C463B;
+      --crimson:#E57B68; --sage:#82C09C; --gold:#DDA94F;
+      --surface:#2D2A25; --tint-crimson:#3A2420; --tint-sage:#22302A; --tint-warm:#2B2721; --tint-sand:#332E25;
+      --link:#E57B68; --foot:#A29A8B; --on-ink:#1B1916;
+      --glow:rgba(229,123,104,.07); --grid-line:rgba(255,255,255,0.02);
+      --shadow:0 1px 0 rgba(0,0,0,.4),0 8px 24px rgba(0,0,0,.35);
+      --cl-a-bg:#5A2D25; --cl-a-line:#E57B68; --cl-b-bg:#3F3560; --cl-b-line:#B7A1EA;
+      --cl-c-bg:#1F4A3E; --cl-c-line:#6FD1B0; --cl-t-bg:#5C3A1E; --cl-t-line:#F0A25C;
+      --cl-l-bg:#203A55; --cl-l-line:#86B8F2; --cl-k-bg:#4B3E17; --cl-k-line:#DDA94F;
+      color-scheme:dark;
+    }
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:var(--paper);
+    background-image:radial-gradient(circle at 100% 0%, var(--glow), transparent 40%),
+      repeating-linear-gradient(0deg, var(--grid-line) 0px, var(--grid-line) 1px, transparent 1px, transparent 34px);
+    color:var(--ink); font-family:'Noto Sans TC',sans-serif; -webkit-font-smoothing:antialiased;
+    min-height:100vh; padding:24px 14px 60px; line-height:1.7;
+  }
+  .wrap{max-width:820px; margin:0 auto;}
+  header.top{text-align:center; border-bottom:3px double var(--ink); padding-bottom:14px; margin-bottom:20px;}
+  header.top .title{font-family:'Noto Serif TC',serif; font-weight:900; font-size:25px; letter-spacing:.02em;}
+  header.top .sub{font-family:'IBM Plex Mono','Noto Sans TC',monospace; font-size:12px; color:var(--ink-soft); margin-top:6px;}
+  .card{background:var(--paper-card); border:1px solid var(--rule); border-radius:4px; box-shadow:var(--shadow); padding:20px; margin-bottom:16px;}
+  .lead{font-size:15px; margin:0 0 10px;}
+  .lead b{color:var(--crimson);}
+  .steps{font-size:14.5px; margin:8px 0 0; padding-left:1.4em;}
+  .steps li{margin-bottom:4px;}
+  .legend{font-size:13px; color:var(--ink-soft); margin:14px 0 0; line-height:2;}
+  mark.cl-a{background:var(--cl-a-bg); color:inherit; border-bottom:2px solid var(--cl-a-line); padding:0 1px; border-radius:2px;}
+  mark.cl-b{background:var(--cl-b-bg); color:inherit; border-bottom:2px dashed var(--cl-b-line); padding:0 1px; border-radius:2px;}
+  mark.cl-c{background:var(--cl-c-bg); color:inherit; border-bottom:2px dotted var(--cl-c-line); padding:0 1px; border-radius:2px;}
+  mark.cl-t{background:var(--cl-t-bg); color:inherit; text-decoration:underline wavy var(--cl-t-line); text-decoration-thickness:2px; text-underline-offset:3px; padding:0 1px; border-radius:2px;}
+  mark.cl-l{background:var(--cl-l-bg); color:inherit; border-bottom:3px double var(--cl-l-line); padding:0 1px; border-radius:2px;}
+  mark.cl-k{background:var(--cl-k-bg); color:inherit; font-weight:700; border-bottom:2px solid var(--cl-k-line); padding:0 1px; border-radius:2px;}
+  .pcur{border-left:4px solid var(--gold); padding-left:8px; margin-left:-12px;}
+  button.blank:disabled{cursor:default; opacity:.8;}
+  .topicopt{display:block; width:100%; text-align:left; font-weight:500; line-height:1.6; padding:10px 14px; margin:8px 0;}
+  .topicopt.x{opacity:1; color:var(--ink-soft); text-decoration:line-through; text-decoration-color:var(--crimson);}
+  .legend mark{font-weight:700; margin-right:4px;}
+  .legend span.it{display:inline-block; margin-right:12px;}
+  .clueX{font-family:'Times New Roman',Times,'Liberation Serif','Noto Serif','Noto Sans TC',serif; font-size:15.5px; line-height:1.85; margin:8px 0; padding:6px 10px; border-left:3px solid var(--cl-b-line); background:var(--tint-warm);}
+  .clueX.cl-l{border-left-color:var(--cl-l-line);}
+  .clueX.cl-c{border-left-color:var(--cl-c-line);}
+  .clueX.cl-t{border-left-color:var(--cl-t-line);}
+  .clueX.cl-k{border-left-color:var(--cl-k-line); background:var(--surface);}
+  .clueXlab{font-family:'Noto Sans TC',sans-serif; font-size:12px; font-weight:700; color:var(--ink-soft); margin-right:8px;}
+
+  .passage{font-family:'Times New Roman',Times,'Liberation Serif','Noto Serif','Noto Sans TC',serif; font-size:17px; line-height:2.15;}
+  .passage p{margin:0 0 14px; text-indent:1.6em;}
+  .plabel{font-family:'Noto Sans TC',sans-serif; font-size:12px; color:var(--ink-soft); margin:0 0 2px; text-indent:0 !important; letter-spacing:.03em;}
+  button.blank{font:inherit; font-family:'IBM Plex Mono','Noto Sans TC',monospace; font-size:14px; font-weight:600; min-width:48px; min-height:44px; padding:1px 8px; margin:0 2px;
+    border:1.5px dashed var(--ink-soft); border-radius:6px; background:var(--surface); color:var(--ink); cursor:pointer; vertical-align:baseline;}
+  @media (hover:hover){ button.blank:hover{border-color:var(--crimson);} }
+  button.blank.labeled{border-style:solid; border-color:var(--sage);}
+  @keyframes blankflash{0%,100%{background:var(--surface);} 50%{background:var(--tint-crimson); border-color:var(--crimson);}}
+  button.blank.flash{animation:blankflash .9s ease-in-out 3;}
+  @media (prefers-reduced-motion:reduce){ button.blank.flash{animation:none; border-color:var(--crimson); border-style:solid;} }
+  .progress{font-size:14px; margin:6px 0 8px; display:flex; flex-wrap:wrap; gap:6px 14px;}
+  .progress .pg{font-weight:700;} .progress .pg.ok{color:var(--sage);}
+  .steps2{margin:4px 0 8px; padding-left:20px; font-size:14px; line-height:1.7;}
+  .ambnote{font-family:'Noto Sans TC',sans-serif; font-size:12px; color:var(--ink-soft); display:block; margin:1px 0 0 0;}
+  button.blank .cls{font-family:'Noto Sans TC',sans-serif; font-size:12px; font-weight:500; color:var(--ink-soft); margin-left:4px;}
+  button.blank.sel{border:2px solid var(--crimson); background:var(--tint-crimson); color:var(--crimson);}
+  button.blank.filled{font-family:'Times New Roman',Times,'Liberation Serif','Noto Serif',serif; font-size:17px; font-weight:700; border:2px solid var(--sage); background:var(--tint-sage); color:var(--ink); padding:0 8px;}
+  button.blank.filled.sel{border-color:var(--crimson);}
+  button.blank:focus-visible, .chip:focus-visible, .btn:focus-visible, .pill:focus-visible{outline:3px solid var(--gold); outline-offset:2px;}
+
+  .h{font-family:'Noto Serif TC',serif; font-weight:700; font-size:16px; margin:0 0 8px;}
+  .pile{margin-bottom:12px;}
+  .pile .pname{font-size:12.5px; font-weight:700; color:var(--ink-soft); margin-bottom:5px;}
+  .pile .pname.on{color:var(--crimson);}
+  .chips{display:flex; flex-wrap:wrap; gap:8px;}
+  .chip{font-family:'Times New Roman',Times,'Liberation Serif','Noto Serif',serif; font-size:17px; font-weight:700; min-height:44px; padding:4px 14px; border:1.5px solid var(--ink-soft); border-radius:8px; background:var(--surface); color:var(--ink); cursor:pointer;}
+  .chip .tag{display:block; font-family:'Noto Sans TC',sans-serif; font-size:12px; font-weight:500; color:var(--ink-soft); line-height:1.2;}
+  .chip.used{border-style:dashed; opacity:.5; cursor:default;}
+  .chip.dim{opacity:.5; cursor:default;}
+  .chip.dimf{border-style:dashed; border-color:var(--ink-soft); background:transparent; color:var(--ink-soft); cursor:default;}
+  .chip.dimf .tag{color:var(--ink-soft);}
+  .prog .btn{flex:none; white-space:nowrap;}
+  .sent{font-size:15px; line-height:1.7; margin:6px 0 8px; padding:6px 10px; border-left:3px solid var(--ink-soft); background:var(--surface);}
+  .sent b.gap{border-bottom:2px solid var(--crimson); padding:0 .6em;}
+  .chip.on{border-color:var(--crimson); background:var(--tint-crimson);}
+  .chip.x{text-decoration:line-through; opacity:.45; cursor:default;}
+  .letter{font-family:'IBM Plex Mono',monospace; font-size:12px; font-weight:600; color:var(--ink-soft); margin-right:5px;}
+
+  .sortrow{display:flex; flex-wrap:wrap; align-items:center; gap:8px 10px; padding:6px 0; border-bottom:1px solid var(--rule);}
+  .sortrow .w{font-family:'Times New Roman',Times,'Liberation Serif','Noto Serif',serif; font-size:18px; font-weight:700; min-width:8.5em;}
+  .pill{white-space:nowrap; font-family:'Noto Sans TC',sans-serif; font-size:13.5px; font-weight:500; min-height:44px; padding:2px 14px; border:1.5px solid var(--pill-edge); border-radius:22px; background:var(--surface); color:var(--ink); cursor:pointer;}
+  .sortrow.many{display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:8px;}
+  .sortrow.many .w{grid-column:1/-1;}
+  .sortrow.many .pill{padding:2px 4px;}
+  .skipbox{margin-top:14px; padding-top:12px; border-top:1px dashed var(--rule);}
+  .skipbox .next{margin:6px 0 0;}
+  .totray{font-size:13.5px; margin-left:0; display:block; margin-top:6px; min-height:44px; padding:2px 12px;}
+  #passage #panel{margin:2px -8px 18px; padding:16px; border-left:4px solid var(--crimson); font-family:'Noto Sans TC',sans-serif; font-size:15px; line-height:1.75; text-indent:0;}
+  #panel .chips{margin:8px 0;}
+  #passage #panel p{text-indent:0; margin:8px 0;}
+  .pill.on{border-color:var(--crimson); background:var(--tint-crimson); color:var(--crimson); font-weight:700;}
+  .flag{font-family:'Noto Sans TC',sans-serif; font-size:12px; font-weight:700; color:var(--cl-b-line); border:1.5px solid var(--cl-b-line); border-radius:9px; padding:0 6px; margin-left:4px; white-space:nowrap;}
+  .counts{display:flex; flex-wrap:wrap; gap:8px; margin:10px 0; position:sticky; top:0; z-index:2; background:var(--paper-card); padding:6px 0;}
+  .count{font-family:'Noto Sans TC',sans-serif; font-size:13px; padding:3px 10px; border:1.5px solid var(--rule); border-radius:6px; background:var(--surface);}
+  .count.ok{border-color:var(--sage); color:var(--sage); font-weight:600;}
+
+  .btn{font-family:'Noto Sans TC',sans-serif; font-size:14px; font-weight:700; min-height:44px; padding:6px 14px; border:1.5px solid var(--ink); border-radius:6px; background:var(--surface); color:var(--ink); cursor:pointer;}
+  @media (hover:hover){ .btn:hover{border-color:var(--crimson);} }
+  .btn:disabled{opacity:.4; cursor:default;}
+  .btn.ghost{border-color:var(--rule); font-weight:500; color:var(--ink-soft);}
+  .btnrow{display:flex; flex-wrap:wrap; gap:8px; margin:8px 0;}
+  .q{font-size:15px; margin:0 0 6px; font-weight:700;}
+  .msg{font-size:14px; margin:8px 0; padding:8px 12px; border-left:3px solid var(--gold); background:var(--tint-warm);}
+  .msg.ok{border-color:var(--sage); background:var(--tint-sage);}
+  .badge{display:inline-block; font-size:12px; font-weight:700; padding:1px 8px; border-radius:10px; border:1.5px solid var(--sage); color:var(--sage); margin-right:6px;}
+  .badge.m{border-color:var(--cl-b-line); color:var(--cl-b-line);}
+  .ans{font-family:'Times New Roman',Times,'Liberation Serif','Noto Serif',serif; font-size:20px; font-weight:700;}
+  .prog{font-family:'IBM Plex Mono','Noto Sans TC',monospace; font-size:12.5px; color:var(--ink-soft); display:flex; justify-content:space-between; align-items:center; gap:8px; margin-bottom:10px;}
+  .next{font-size:13.5px; color:var(--ink-soft); margin:0 0 10px;}
+  .done h3{font-family:'Noto Serif TC',serif; margin:0 0 8px; font-size:17px;}
+  .done ul{margin:6px 0 10px; padding-left:1.2em; font-size:14.5px;}
+  .done li{margin-bottom:6px;}
+  .links{font-size:13.5px; line-height:1.6;}
+  .links a{display:inline-block; padding:8px 0;}
+  a{color:var(--link); font-weight:700; text-underline-offset:2px;}
+  footer{text-align:center; font-size:12.5px; color:var(--foot); line-height:1.9; margin-top:26px;}
+  footer .cc{font-size:11.5px; margin-top:6px;}
+  footer a{display:inline-block; padding:10px 0;}
+  .hidden{display:none !important;}
+  @media (max-width:560px){ .sortrow .w{flex:0 0 100%;} .sortrow .pill{flex:1 1 0; padding:2px 6px;} .passage{font-size:16.5px;} header.top .title{font-size:21px;} .sortrow .w{min-width:7em;} }
+  @media print{ body{padding:0;} .card{box-shadow:none;} }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div class="title">文意選填：用上下文拼圖</div>
+    <div class="sub" id="sub"></div>
+  </header>
+
+  <div class="card">
+    <p class="lead">文意選填像一整篇的拼圖，<b>重點是上下文：每一格都要扣住它所在那一段的主旨</b>。分三步：</p>
+    <ol class="steps">
+      <li><b>讀段落、找出主旨</b>：選出每一段在講什麼。答錯時會標出這一段的關鍵詞。</li>
+      <li><b>認識空格與選項（標詞性、分堆）</b>：標出每一格的詞性，再把十個選項分堆。</li>
+      <li><b>用線索拼答案</b>：先想主旨、找內容線索，卡住時按「提示」。</li>
+    </ol>
+    <details style="margin-top:8px"><summary style="font-size:13.5px; font-weight:700; cursor:pointer; min-height:44px; display:flex; align-items:center;">第 2 步怎麼做（點開來看）</summary>
+    <p class="legend">把十個空格各是哪一種詞性標出來，有些空格還要標「形式」（例如動詞的第三人稱單數、名詞的複數）；同時把十個選項分成動詞、名詞、形容詞等幾堆，每一堆的數量，要剛好等於那一種詞性的空格數。詞性只能縮小範圍，同一堆通常還有好幾個選項放得進去，最後要靠上下文的意思。標「兩類皆可」的字可以當兩種詞性，放進哪一堆都算對，只要每一堆的數量對得上。已經很熟詞性的人，也可以直接略過這一步。</p></details>
+    <details style="margin-top:12px"><summary style="font-size:13.5px; font-weight:700; cursor:pointer; min-height:44px; display:flex; align-items:center;">標色說明（點開來看）</summary>
+    <p class="legend">
+      <span class="it"><mark class="cl-k">主旨關鍵詞</mark>第 1 步答錯時標出</span>
+      <span class="it"><mark class="cl-a">句內線索</mark>空格所在那一句</span>
+      <span class="it"><mark class="cl-b">跨句線索</mark>前後句或文中其他句子</span>
+      <span class="it"><mark class="cl-l">詞彙線索</mark>同義、換字重述、同一個語意範圍的字</span>
+      <span class="it"><mark class="cl-c">並列線索</mark>和空格並列的成分</span>
+      <span class="it"><mark class="cl-t">並列陷阱</mark>看起來並列，其實不是</span><br>
+      標詞性時，只會標出「句內線索」；跨句線索與詞彙線索（也就是內容線索），要在第 3 步按「提示 1」才出現；並列線索與並列陷阱，要按「提示 2」。
+    </p></details>
+  </div>
+
+  <div class="card">
+    <div class="prog"><span id="progText"></span><button class="btn ghost" id="resetBtn" type="button">重新開始</button></div>
+    <div class="passage" id="passage"></div>
+  </div>
+
+  <div class="card" id="panel" aria-live="polite"></div>
+
+  <div class="card" id="trayCard">
+    <div class="h" id="trayTitle"></div>
+    <div id="tray"></div>
+  </div>
+
+  <div class="card done hidden" id="done"></div>
+
+  <div class="card links">
+    <a id="lnkFull" href="#">→ 這一回的完整題目與解析</a><br>
+    <a href="https://staresto-create.github.io/JCEE-vocab-questions/#rules">→ 拼圖的五種線索：字詞搭配、用法、換句話說、銜接、連貫</a><br>
+    <a href="https://staresto-create.github.io/passage-completion/">← 回文意選填</a>
+  </div>
+
+  <footer>
+    資料來源：大考中心公布之歷屆文意選填試題與答案<br>
+    © 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫
+    <div class="cc">本題庫撰寫的解析與標註，採用 <a href="https://creativecommons.org/licenses/by-nc/4.0/deed.zh-hant" target="_blank" rel="license noopener">CC BY-NC 4.0</a> 授權。</div>
+  </footer>
+</div>
+
+<script>
+const DATA = {"id": "y99", "sub": "99年 學測 · 第 31–40 題 · 足球與團隊精神（Football and Teamwork）", "paras": [{"label": "【第一段】引言：足球是社會化的老師", "segs": [["Football is more than a sport; it is also an invaluable", "gradient"], [" ", "gradient"], ["31", "blank"], [".", "gradient"], [" In teaching young players to cooperate with their fellows on the practice ", null], ["32", "blank"], [", the game shows them the necessity of teamwork in society. It prepares them to be ", null], ["33", "blank"], [" citizens and persons.", null]]}, {"label": "【第二段】球場上學到的合作課", "segs": [["Wherever football is played, the players learn the rough-and-tumble lesson that only through the", "topic"], [" ", "topic"], ["34", "blank"], [" of each member can the team win.", "topic"], [" It is a lesson they must always ", null], ["35", "blank"], [" on the field.", null]]}, {"label": "【第三段】延伸到社會：不再是獨行俠", "segs": [["Off the field, they continue to keep it in mind. In society, the former player does not look upon himself as a lone wolf who has the right to remain", "topic"], [" ", "topic"], ["36", "blank"], [" from the society and go his own way.", "topic"], [" He understands his place in the team; he knows he is a member of society and must ", null], ["37", "blank"], [" himself as such. He realizes that only by cooperating can he do his ", null], ["38", "blank"], [" in making society what it should be.", null]]}, {"label": "【第四段】結論：合作精神落實到公民生活", "segs": [["The man who has played football knows that teamwork is", "topic"], [" ", "topic"], ["39", "blank"], [" in modern living.", "topic"], [" He is also aware that every citizen must do his part if the nation is to ", null], ["40", "blank"], [". ", null], ["So", "trans"], [" he has little difficulty in adjusting himself to his role in family life and in the business world, and to his duties as a citizen.", null]]}], "options": {"A": "cooperation", "B": "prosper", "C": "teacher", "D": "behave", "E": "isolated", "F": "essential", "G": "better", "H": "share", "I": "field", "J": "remember"}, "groupOf": {"A": "n", "B": "v", "C": "n", "D": "v", "E": "adj", "F": "adj", "G": "adj", "H": "n", "I": "n", "J": "v"}, "ambig": ["F", "G", "H", "I"], "blanks": [{"cats": "字彙選義、語意連貫", "slot": "n", "layer": "meaning", "decide": "meaning", "why": "空格在 an invaluable 之後，是 also 補充說明的內容，要填單數可數名詞。", "l1": "分號前面說 Football is more than a sport，分號後面補一句 it is also an invaluable ___，意思是足球除了是運動，還是另一種東西。下一句 In teaching young players … the game shows them … 就是在說明這個「另一種東西」是怎麼回事。", "l2": "an invaluable 後面要接單數可數名詞（前面用了 an，不可數名詞放不進去）。這個名詞要和足球形成「不只是運動」的對比，也要能對應下一句 teaching 和 shows them 這兩個動作，也就是足球在這兩個動作裡扮演的角色。LDOCE 的 invaluable 例句多半搭配 help、advice、source 這類對人有幫助的東西，名詞堆裡哪一個符合？", "final": "an invaluable teacher（無價的老師）：這裡的 teacher 是比喻，不是真的在學校授課的人。分號前面的 more than a sport 要求空格超出運動本身，下一句 In teaching young players … the game shows them … 說的又是足球在「教」球員，所以把足球說成教導球員的角色最通順。Merriam-Webster 的 teacher 詞條有一句 Experience is a good teacher.，也是同一種把事物說成教人者的用法；LDOCE 的 teacher 只收字面詞義（someone whose job is to teach, especially in a school）。其他名詞放進來都不通：cooperation 是不可數名詞（LDOCE 標 uncountable），前面不能用 an；field 和 share 都接不上 more than a sport 的對比。", "gloss": "老師", "inner": ["more than a sport", "an invaluable"], "cross": [{"find": "In teaching young players to cooperate with their fellows", "words": ["In teaching young players"]}, {"find": "the game shows them the necessity of teamwork in society", "words": ["shows them"]}], "coord": [], "lex": [], "n": 31}, {"cats": "字詞搭配", "slot": "n", "layer": "meaning", "decide": "lex", "why": "空格在 the practice 之後，practice 在這裡修飾空格，空格是單數可數名詞，指一個地點。", "l1": "這一句說年輕球員在某個地方學著和同伴 cooperate；前面的 the practice 說明這個地方的用途。足球這項運動的練習，是在什麼樣的地方進行的？", "l2": "the practice 後面要接單數名詞，而且 practice 在這裡像形容詞，說明空格這個地點的用途。名詞堆裡有表示人的、表示抽象行為的、表示抽象分量的，也有一個表示地點的；哪一個能和 practice 一起，說成「練習用的某個地點」？", "final": "the practice field（練習用的球場）：cooperate with their fellows 是在練習時發生的事，所以空格要填一個表示地點的名詞。LDOCE 的 field 名詞詞義 3 是 an area of ground where sports are played，例句有 the local soccer field 和 both on and off the field；Merriam-Webster 的運動場詞義也有 a football field。the practice field 是 practice（練習）放在 field 前面，說明這塊場地的用途，也就是練習用的球場；後面兩句的 on the field 和 Off the field 用的也是同一個字。其他名詞放進來都不通：teacher 是人，cooperation 是抽象行為，兩者都不能表示 cooperate 的地點。", "gloss": "球場", "inner": ["cooperate with their fellows", "on the practice"], "lex": [{"find": "on the field", "words": ["on the field"], "kind": "重複出現", "note": "下一句的 on the field 和空格說的是同一個地方"}], "cross": [], "coord": [], "n": 32}, {"cats": "詞性判斷、語意連貫、句型結構", "slot": "adj", "layer": "meaning", "decide": "meaning", "why": "空格在 to be 和名詞 citizens and persons 之間，修飾這兩個名詞，要填形容詞。", "l1": "這一句的主詞 It 指前一句的 the game（足球）。前一句說足球讓球員看見 the necessity of teamwork in society，這一句接著說足球讓他們成為什麼樣的 citizens and persons。這個結果是正面還是負面？", "l2": "to be 和 citizens 之間要填形容詞。形容詞堆有三個字：其中一個後面習慣接 from，用來說與別人的關係；另一個常接 for 或 to（LDOCE 的 pattern 是 essential for/to），essential citizens 讀起來不成詞組。剩下的那個字是比較級形容詞，而比較級不一定要寫出 than，只要比較的對象從上下文看得出來，than 就可以省略。", "final": "to be better citizens and persons（成為更好的公民與更好的人）：It prepares them to be … 說的是足球帶來的結果，前一句說足球讓球員看見團隊合作在社會上的必要性，所以結果是正面的。better 是 good 的比較級，LDOCE 形容詞詞義 1 是 more useful, interesting, satisfactory, effective, suitable etc，例句 There must be a better way to do this. 沒有寫出 than；這裡也一樣，比較的對象是沒受過這種訓練的人，不必寫出來。Merriam-Webster 的 better 另有動詞（to make better）和名詞用法，所以分堆時可以放進動詞堆，但放進這一格要當形容詞。其他兩個形容詞放不進來：isolated 搭配 from，方向也和 teamwork 相反；essential citizens 不成詞組。", "gloss": "更好的", "inner": ["prepares them to be", "citizens and persons"], "cross": [{"find": "the game shows them the necessity of teamwork in society", "words": ["necessity of teamwork"]}], "lex": [{"find": "Football is more than a sport; it is also an invaluable", "words": ["invaluable"], "kind": "語意範圍", "note": "invaluable 是很高的正面評價，空格的字也要是正面的評價"}], "coord": [], "n": 33}, {"cats": "字詞搭配", "slot": "n", "layer": "meaning", "decide": "lex", "why": "空格在 the 和 of 之間，要填名詞。", "l1": "這一句是 only through the ___ of each member can the team win 的倒裝句，說球隊要贏，要靠每位成員的什麼。回頭看第一段第二句：球員在練習時要對同伴做的那件事，和這裡是同一件事。", "l2": "the ___ of each member 的句型是 the + 抽象名詞 + of + 人，字典裡很常見（LDOCE 就有 the ___ of parents 的例句，而且這個名詞是不可數的）。名詞堆裡表示人的和表示地點的字都放不進去，剩下的兩個抽象名詞，要看哪一個適合當球隊獲勝的條件。", "final": "only through the cooperation of each member（唯有靠每位成員的合作）：LDOCE 的 cooperation 是不可數名詞，例句 Schools need the cooperation of parents. 的 the cooperation of 和這裡的句型一樣。第一段的 cooperate with their fellows、第三段的 only by cooperating can he … 都在說同一件事，可以互相對照。整句 only through … can the team win 是倒裝句：only 開頭的副詞片語放在句首，主要子句就要倒裝。其他名詞：teacher 是人、field 是地點，不能說成球隊獲勝的條件；share 雖然文法上可以放在 the 和 of 之間，意思卻是分到的份額，不是獲勝的條件。", "gloss": "合作", "inner": ["only through the", "of each member"], "cross": [{"find": "to cooperate with their fellows", "words": ["cooperate with their fellows"]}], "lex": [{"find": "He realizes that only by cooperating can he do his", "words": ["only by cooperating"], "kind": "換字重述", "note": "only through the ___ of each member can the team win 和第三段這一句都是「only + 方法」放句首再倒裝，說的是同一個道理"}], "coord": [], "n": 34}, {"cats": "句型結構、語意連貫", "slot": "v", "layer": "meaning", "decide": "lex", "why": "must always 後面接原形動詞；lesson 後面省略了 that，lesson 就是這個動詞的受詞，所以空格後面不再接受詞。", "l1": "上一句的 the rough-and-tumble lesson 是一個道理，這一句的 It is a lesson 回頭指它。球員對這個道理，必須 always 怎麼樣？", "l2": "lesson 後面省略了關係代名詞 that，它是空格動詞的受詞，所以空格要填及物動詞。動詞堆裡另外兩個字，LDOCE 都標成 intransitive（不接受詞）：其中一個只有加反身代名詞時才帶受詞；另一個在 Merriam-Webster 雖然也有及物用法，意思卻是 to cause to succeed or thrive，也接不了 lesson。剩下的字，要看它是否適合接 lesson 這類內容。", "final": "a lesson they must always remember（一個他們必須永遠記住的道理）：lesson 後面省略了關係代名詞 that，這個 that 是空格動詞的受詞，所以空格要填及物動詞。LDOCE 的 remember 詞義 4 是 to keep a particular fact about a situation in your mind（[transitive]），Merriam-Webster 的及物詞義 3a 也是 to keep in mind for attention or consideration；下一句 they continue to keep it in mind，就是用另一個說法重述這個動作。behave 在 LDOCE 標 intransitive，後面不能接受詞；prosper 在 LDOCE 也標 intransitive，Merriam-Webster 的及物義是 to cause to succeed or thrive，接 lesson 說不通。", "gloss": "記住", "inner": ["a lesson", "must always"], "cross": [{"find": "the players learn the rough-and-tumble lesson", "words": ["lesson"]}], "lex": [{"find": "Off the field, they continue to keep it in mind", "words": ["keep it in mind"], "kind": "換字重述", "note": "keep it in mind 的 it 指同一個道理，這個說法和空格的動詞意思相同"}], "coord": [], "n": 35}, {"cats": "字詞搭配", "slot": "adj", "layer": "meaning", "decide": "lex", "why": "空格在 remain 之後，是主詞補語，要填形容詞。", "l1": "lone wolf 是指獨自行動、不與別人往來的人。這一句把「他沒有的權利」分成用 and 連起來的兩半：remain ___ from the society，以及 go his own way。兩半都在描述他和社會的關係。再看空格後面的 from。", "l2": "remain 後面接形容詞，而且空格後面有 from the society。形容詞堆裡，essential 常接 for 或 to（LDOCE 的 pattern 是 essential for/to），better 也沒有接 from 的習慣；要找的是能和 from 搭配，又能呼應 lone wolf 與 go his own way 的字。", "final": "remain isolated from the society（與社會隔絕）：lone wolf 與 go his own way 都是獨自行動、不與別人往來，所以空格要填一個和 from the society 搭配的形容詞。LDOCE 的 isolated 例句 Children of very rich parents can grow up isolated from the rest of society. 就有 isolated from，說的也是和社會隔絕；remain 在 LDOCE 詞義 1 是連綴動詞（to continue to be in the same state or condition），後面接形容詞，例如 The boy remained silent.。essential 與 better 都沒有接 from 的習慣，而且意思也不能呼應 lone wolf。", "gloss": "孤立的", "inner": ["lone wolf", "remain", "go his own way"], "coord": [{"find": "has the right to remain", "words": ["and go his own way"], "kind": "real", "note": "and 連接 remain ___ from the society 與 go his own way，兩個都是 the right to 後面的內容，意思方向一致"}], "lex": [{"find": "He realizes that only by cooperating can he do his", "words": ["only by cooperating"], "kind": "反義", "note": "lone wolf 與後面的 only by cooperating 意思相反；空格所在的這一半，描述的是 lone wolf 那一邊"}], "cross": [], "n": 36}, {"cats": "字詞搭配、句型結構", "slot": "v", "layer": "meaning", "decide": "lex", "why": "must 後面接原形動詞，himself 是空格動詞的反身受詞。", "l1": "這一句分號後半先說 he knows he is a member of society，再說他 must ___ himself as such。as such 的 such 指的是前面那個身分。他既然知道自己是社會的一份子，就必須讓自己的言行像個怎樣的人？", "l2": "must 後面接原形動詞，himself 是這個動詞的受詞（反身代名詞，指主詞 he 自己）。動詞堆的三個字，只有一個習慣在後面接 himself、themselves 這類反身代名詞，LDOCE 就特別列出它加 yourself 的用法。另外兩個字加上 himself，意思說不通。", "final": "must behave himself as such（必須以社會一員的身分舉止合宜）：behave 的主要用法是不及物（LDOCE 標 [intransitive]），但 behave yourself 是固定的反身用法，LDOCE 的例句是 I hope Nicholas behaved himself at the party.；Merriam-Webster 也把反身用法列為及物詞義 2（to conduct (oneself) in a proper manner），例句 I wish those children would behave themselves.。as such 的 such 回頭指同一句前半的 a member of society，意思是以社會一員的身分；LDOCE such 詞義 1 的例句 Birth is a natural process, and should be treated as such. 也是同樣的用法，such 指前面的 a natural process。另外兩個動詞加 himself 都說不通：prosper himself、remember himself 都沒有這種搭配。", "gloss": "舉止合宜", "inner": ["must", "himself", "as such"], "lex": [{"find": "he knows he is a member of society", "words": ["a member of society"], "kind": "語意範圍", "note": "as such 的 such 指的就是 a member of society，空格的動詞要說明他在這個身分上該怎麼做"}], "cross": [], "coord": [], "n": 37}, {"cats": "字彙選義（第二義）、字詞搭配、詞性判斷（第二詞性）", "slot": "n", "layer": "meaning", "decide": "lex", "why": "空格在 do his 之後，是 do 的受詞，要填名詞。", "l1": "這一句說他明白，只有靠 cooperating，他才能在 making society what it should be 這件事上 do his ___。往後讀到最後一段，every citizen must do his part 和這裡的 do his ___ 句型完全一樣。", "l2": "his 是所有格，後面要接名詞，和 his 一起當 do 的受詞。名詞堆裡，表示人的字和表示地點的字都不能當 do 的受詞；cooperation 是不可數的抽象名詞，英文也不說 do one's cooperation。剩下的那個字，大家最先想到的是動詞用法，但放在 his 後面就要當名詞；把 do his ___ 和最後一段的 do his part 擺在一起比較，兩個說法的結構完全相同。", "final": "do his share（盡自己的本分）：share 最常見的是動詞「分享」（LDOCE 動詞詞義 1、2）和名詞「股份」（LDOCE 名詞詞義 1），但 LDOCE 名詞詞義 2 是 [singular] 的另一個意思，例句 I do my share (=do my part) of the housework.，括號直接把 do my share 換成 do my part。Merriam-Webster 的 part 名詞詞義 3（one's share or allotted task (as in an action) : duty）例句是 one must do one's part，兩邊可以互相對照。本篇最後一段的 every citizen must do his part，就是換了一個字說同一件事。其他名詞放不進來：do his cooperation 不是搭配，cooperation 也是不可數名詞；teacher 和 field 都不是可以被「做」的東西。", "gloss": "本分", "inner": ["only by cooperating", "do his", "in making society what it should be"], "lex": [{"find": "every citizen must do his part", "words": ["part"], "kind": "同義", "note": "do his part 與 do his ___ 結構相同，part 和空格的字指的是同一件事"}], "cross": [], "coord": [], "n": 38}, {"cats": "字詞搭配、語意連貫", "slot": "adj", "layer": "meaning", "decide": "meaning", "why": "空格在 teamwork is 之後，是主詞補語，要填形容詞。", "l1": "這一句是最後一段的開頭，說 the man who has played football 知道 teamwork 在 modern living 裡是怎麼樣的。回想前三段：球隊要贏、社會要運作，都要靠 teamwork，所以這一句是把前面的道理下一個結論。", "l2": "teamwork is 之後要接形容詞，後面還有 in modern living。形容詞堆有三個字：一個後面接 from（留給 remain ___ from 那一格），一個是比較級，teamwork is better in modern living 讀起來沒有說完（better than what？）。剩下的字，能不能和 in 連用，指出適用的範圍？", "final": "teamwork is essential in modern living（團隊精神在現代生活中不可或缺）：essential 在 LDOCE 的詞義 1 是 extremely important and necessary，常見搭配是 essential for/to（A good diet is essential for everyone.）；LDOCE 的語料庫例句 This follow-up is essential in ward teaching. 和 Merriam-Webster 同義字辨析裡的 conflict is essential in drama，都是 be essential in 加上適用的範圍，和這裡的 in modern living 一樣。第一段的 the necessity of teamwork in society 也是同一個意思，只是 necessity 是名詞。isolated 要接 from，放在 teamwork is ___ 說不通；better 則少了比較的對象。essential 兼有名詞用法（essentials），這一格是形容詞。", "gloss": "不可或缺的", "inner": ["teamwork is", "in modern living"], "lex": [{"find": "the game shows them the necessity of teamwork in society", "words": ["necessity"], "kind": "同義", "note": "the necessity of teamwork in society 和 teamwork is ___ in modern living 說的是同一個看法，只是一個用名詞說，一個用形容詞說"}], "cross": [], "coord": [], "n": 39}, {"cats": "句型結構、語意連貫、詞性判斷", "slot": "v", "layer": "meaning", "decide": "meaning", "why": "is to 之後要接原形動詞，句子到空格就結束，空格後面沒有受詞，所以是不及物動詞。", "l1": "這一句的主要子句是 every citizen must do his part，if 子句說的是國家的目標：每位公民都盡了自己的力量，國家才會變成怎樣？再看第三段末句 making society what it should be，社會與國家都被期待朝好的方向走。", "l2": "if the nation is to ___ 是 if somebody/something is to do something 的句型，LDOCE 把它收在 be 的詞義 6b，用在條件句裡，先說目標，再說要達到目標必須做什麼。to 後面接原形動詞，而且空格後面沒有受詞。動詞堆先處理有 himself 的那一格，以及 lesson 缺受詞的那一格，剩下的字放進這裡，要看意思是否適合說一個國家。", "final": "if the nation is to prosper（若國家要興盛）：if … is to V 是「若要……」的句型，LDOCE 的 be 詞義 6b 說明它用在條件句裡，引出一個目標，再說要達成目標必須做什麼；主要子句 every citizen must do his part，就是達成這個目標的條件。prosper 在 LDOCE 是不及物動詞，Merriam-Webster 的例句有 He hopes his business will prosper. 和 No crop can prosper in this heat.，用在國家、事業這類主詞上很自然。behave 的重點是舉止，remember 的重點是記憶，兩者都接不上 do his part 的結果。", "gloss": "繁榮、興盛", "inner": ["every citizen must do his part", "the nation is to"], "lex": [{"find": "He realizes that only by cooperating can he do his", "words": ["what it should be"], "kind": "語意範圍", "note": "making society what it should be 說的是社會該有的樣子，if the nation is to ___ 說的是國家的目標，兩者方向相同"}], "cross": [], "coord": [], "n": 40}], "answers": {"31": "C", "32": "I", "33": "G", "34": "A", "35": "J", "36": "E", "37": "D", "38": "H", "39": "F", "40": "B"}, "topics": [{"say": "足球讓年輕球員在練習中學到團隊相處的道理，也為日後的社會生活做準備。", "find": "the game shows them the necessity of teamwork in society", "words": ["necessity of teamwork"], "opts": [{"t": "只有踢過足球的人，才懂得該怎麼在社會上與別人好好相處，其他人都做不到。", "ok": false, "why": "這是過度絕對的說法。文中只說這項運動 shows them the necessity of teamwork in society，並沒有說只有踢過足球的人學得會，更沒有說其他人都做不到。"}, {"t": "足球讓年輕球員學到，到了社會上凡事靠自己最可靠，不必依賴別人。", "ok": false, "why": "這是把文意讀反。文中說 the game shows them the necessity of teamwork in society，社會上需要的是團隊，不是單打獨鬥。"}, {"t": "足球讓年輕球員在練習中學到團隊相處的道理，也為日後的社會生活做準備。", "ok": true, "why": ""}]}, {"say": "球隊要贏球，靠的是全隊每一位成員，而不是單靠某一位球員。", "find": "the players learn the rough-and-tumble lesson", "words": ["rough-and-tumble lesson"], "opts": [{"t": "球員不管在哪裡踢球，每天都要練習，不能偷懶，也不能請假。", "ok": false, "why": "這是把細節說成主旨。Wherever football is played 只是說明這個道理在哪裡都適用；段落的重點是後面的 lesson：球隊要贏，需要每位成員。"}, {"t": "球隊想贏，每位成員都要出力，而且只要練習夠久，就一定會贏。", "ok": false, "why": "前半句是對的，但後半句是文中沒有的。文中說 only through the … of each member can the team win，是說要贏必須靠每位成員，沒有說只要練習夠久就一定會贏。"}, {"t": "球隊要贏球，靠的是全隊每一位成員，而不是單靠某一位球員。", "ok": true, "why": ""}]}, {"say": "退役的球員不把自己當成獨行俠，而是看成社會的一份子。", "find": "does not look upon himself as a lone wolf", "words": ["lone wolf"], "opts": [{"t": "退役的球員認為自己像孤狼一樣強悍，所以有權利走自己的路。", "ok": false, "why": "這是誤解字詞的用法。lone wolf 在這裡是比喻，指獨自行動、不與別人往來的人，不是強悍的意思；而且文中說 does not look upon himself as a lone wolf，他並不這樣看待自己。"}, {"t": "退役的球員很清楚自己在球隊裡的位置，所以常回到球隊幫忙。", "ok": false, "why": "這是只看字面、沒讀出言外之意。He understands his place in the team 的 team 是比喻，後面緊接 he knows he is a member of society，指的是社會，不是真的球隊。"}, {"t": "退役的球員不把自己當成獨行俠，而是看成社會的一份子。", "ok": true, "why": ""}]}, {"say": "打過足球的人把團隊精神帶進生活，也願意盡公民的責任。", "find": "every citizen must do his part", "words": ["do his part"], "opts": [{"t": "打過足球的人，不管做什麼事情，一定都能順利應付。", "ok": false, "why": "這是過度絕對的說法。文中只說他 has little difficulty in adjusting himself to his role in family life and in the business world，是比較不困難，沒有說不管做什麼事情都一定順利。"}, {"t": "打過足球的人明白國家要靠公民努力，但這與家庭和職場無關。", "ok": false, "why": "國家需要每位公民盡力，這一半是對的；但最後一句說他 adjusting himself to his role in family life and in the business world，所以家庭和職場也包括在內。"}, {"t": "打過足球的人把團隊精神帶進生活，也願意盡公民的責任。", "ok": true, "why": ""}]}], "structure": "全文共四段，由「足球是一位老師」這個比喻起頭，一路往外延伸。第一段先下定義：足球不只是運動，更是教導年輕人團隊精神的老師，讓球員準備成為更好的公民；第二段回到球場，說明球隊要贏，靠的是每位成員；第三段離開球場，說明打過足球的人在社會上不把自己看成獨行俠，而是社會的一份子；第四段收在現代生活與公民責任，並用 So 帶出結果：因為懂得這個道理，他不難適應家庭、職場和公民的各種角色。全文的 the players、he、the former player、the man who has played football 說的是同一個人。", "lessons": ["有些格子的搭配只有一個字放得進去，先從這些做起：第 36 題 remain ___ from the society，只有 isolated 習慣後面接 from（LDOCE 例句 isolated from the rest of society）；第 37 題 must ___ himself，後面有反身代名詞，要找能接 himself 的動詞；第 39 題 teamwork is ___ in modern living，in 後面接的是適用的範圍。這幾格先定下來，其他格子能選的字就變少了。", "三個動詞選項都是原形，不能靠詞形分開，要看有沒有受詞。第 35 題 a lesson they must always ___：lesson 後面省略了 that，這個 that 就是空格動詞的受詞，所以要選及物動詞；第 37 題後面有 himself；第 40 題 the nation is to ___ 後面沒有受詞，要靠意思判斷。LDOCE 把 behave 標成 [intransitive]，所以它只有在加反身代名詞（behave yourself）時才會有受詞。", "同一個概念在全文反覆出現，每次換一種說法：第一段的 cooperate with their fellows、第三段的 only by cooperating、第四段的 teamwork，都可以拿來對照第 34 題；第 35 題空格的動詞，第三段開頭用 keep it in mind 換個說法重述；第 38 題的 do his ___，最後一段換成 do his part。卡住的時候，往前或往後找同一件事的另一種說法。", "第 33 題 to be ___ citizens and persons 後面沒有 than，但比較級不一定要寫出 than：比較的對象如果從上下文看得出來（這裡是沒受過這種訓練的人），than 就可以省略。看到沒有 than，不要馬上排除比較級形容詞。", "名詞堆有四個字，其中 share 最容易放錯堆：大家最先想到的是動詞「分享」，但第 38 題 do his ___ 是名詞用法（LDOCE 名詞詞義 2：I do my share (=do my part) of the housework.）。better、essential、field 也各有第二個詞性。分堆時，每一堆的字數要和空格數相同（名詞 4 個、動詞 3 個、形容詞 3 個），可以用這個數量倒推哪個字放錯了。"], "optForms": {"A": {"n": ["不可數"]}, "B": {"v": ["原形"]}, "C": {"n": ["單數"]}, "D": {"v": ["原形"]}, "F": {"n": ["單數"]}, "G": {"v": ["原形"]}, "H": {"n": ["單數"], "v": ["原形"]}, "I": {"n": ["單數"], "v": ["原形"]}, "J": {"v": ["原形"]}}, "flags": ["F", "G", "H", "I"], "altOf": {"F": ["n"], "G": ["v"], "H": ["v"], "I": ["v"]}};
+function clueSentences(s){
+  // 切句規則與資料檔產生時相同：句末標點後接空白，下一個字是大寫字母、引號、左括號或空格編號
+  const out = []; let start = 0, m; const re = /([.!?\u201d"])\s+(?=[A-Z\u201c"(\[])/g;
+  while((m = re.exec(s))){
+    // 縮寫（U.S.、Mr.、Dr. 等）後面的句點不算句末
+    if(m[1] === '.' && /(\b(?!(?:B\.C|A\.D|a\.m|p\.m)\.$)[A-Za-z]\.[A-Za-z]\.|\b(?:Mr|Mrs|Ms|Dr|St|Jr|Sr|Mt|Prof|Gov|Gen|Capt|Lt|Col|Sen|Rev|Ft|Fig|vs)\.|(?:^|[\s(“\"‘—])[A-HJ-Z]\.)$/.test(s.slice(0, m.index + 1))) continue;
+    out.push([start, m.index + 1]); start = m.index + m[0].length;
+  }
+  out.push([start, s.length]);
+  return out;
+}
+function clueAddWords(s, range, words, cls, marks){
+  const seg = s.slice(range[0], range[1]);
+  (words || []).forEach(w => { const i = seg.indexOf(w); if(i >= 0) marks.push([range[0] + i, range[0] + i + w.length, cls]); });
+}
+
+
+const GROUPS = {v:'動詞', n:'名詞', adj:'形容詞', adv:'副詞（含轉承副詞）', conj:'連接詞', other:'其他'};
+const GFULL = {v:'動詞（原形、第三人稱單數、過去式、V-ing、過去分詞）', n:'名詞（單數、複數、不可數）', adj:'形容詞', adv:'副詞（含轉承副詞）', conj:'連接詞', other:'其他（介系詞、代名詞等）'};
+const FORMS = {v:['原形','第三人稱單數','過去式','V-ing','過去分詞'], n:['單數','複數','不可數']};
+const GORDER = ['v','n','adj','adv','conj','other'].filter(g => Object.values(DATA.groupOf).indexOf(g) >= 0);
+function zero(){ const o = {}; GORDER.forEach(g => o[g] = 0); return o; }
+const ALT = DATA.altOf || {};
+function inPile(l, g){ return DATA.groupOf[l] === g || (ALT[l] || []).indexOf(g) >= 0; }
+function ambLabel(l){
+  const gs = GORDER.filter(g => inPile(l, g));
+  return gs.map(g => { const f = ((DATA.optForms[l] || {})[g] || []); return GROUPS[g] + (FORMS[g] && f.length ? '（'+f.join('、')+'）' : ''); }).join('或');
+}
+function formReq(n){ const b = BL[n]; return !!b.form && letters.some(l => inPile(l, b.slot) && !formOK(l, n)); }
+function slotLab(n){ return GROUPS[BL[n].slot] + (formReq(n) ? '・' + BL[n].form : ''); }
+function formOK(l, n){ const b = BL[n]; if(!b.form) return true; const f = (DATA.optForms[l] || {})[b.slot]; return !!f && f.indexOf(b.form) >= 0; }
+const letters = Object.keys(DATA.options);
+const blankNums = DATA.blanks.map(b => b.n);
+const BL = {}; DATA.blanks.forEach(b => BL[b.n] = b);
+const NEED = {}; GORDER.forEach(g => NEED[g] = DATA.blanks.filter(b => b.slot === g).length);
+
+let stage = 0;            // 0 抓主旨　1 標詞性、分堆　3 拼
+let topicDone = {}, topicSt = {}, topicRev = {};
+function curTopic(){ for(let i = 0; i < DATA.topics.length; i++) if(!topicDone[i]) return i; return null; }
+function paraName(i){ const m = DATA.paras[i].label.match(/^【([^】]*)】/); return m ? m[1] : '第 '+(i+1)+' 段'; }
+let labeled = {};         // 題號 -> true（詞性與形式都標對）
+let slotOK = {};          // 題號 -> 詞性標對了
+let assign = {};          // 選項字母 -> 'v'|'n'|'adj'（學生自己分的）
+let sortTries = 0, sortMsg = '', flashBlanks = false;
+let placed = {}, revealed = {};
+let sel = null;
+let st = {};              // 題號 -> {tried:[], hint:0, wrongs:[]}
+function S(n){ return st[n] || (st[n] = {tried:[], hint:0, wrongs:[]}); }
+function esc(str){ return String(str).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+
+const PS = DATA.paras.map(p => p.segs.map(seg => seg[1]==='blank' ? '['+seg[0]+']' : seg[0]).join(''));
+
+/* 依「含有這段文字」找出句子；回傳 [段落索引, 句範圍] */
+function findSentence(find){
+  for(let k = 0; k < PS.length; k++){
+    const r = clueSentences(PS[k]).find(q => PS[k].slice(q[0], q[1]).indexOf(find) >= 0);
+    if(r) return [k, r];
+  }
+  return null;
+}
+
+function computeMarks(n){
+  const marks = PS.map(() => []);
+  if(stage === 0){
+    const ci = curTopic();
+    if(ci != null && (topicSt[ci] || {tried:[]}).tried.length){ const tp = DATA.topics[ci]; const f = findSentence(tp.find); if(f) clueAddWords(PS[f[0]], f[1], tp.words, 'cl-k', marks[f[0]]); }
+    return marks;
+  }
+  if(n == null) return marks;
+  const b = BL[n], s = S(n);
+  const pi = PS.findIndex(t => t.indexOf('['+n+']') >= 0);
+  if(pi < 0) return marks;
+  const sents = clueSentences(PS[pi]);
+  const tag = '['+n+']';
+  const target = sents.find(r => PS[pi].slice(r[0], r[1]).indexOf(tag) >= 0);
+  const showIn = labeled[n] || s.tried.length > 0 || placed[n];
+  const showMore = (stage === 3 && s.hint >= 1) || placed[n];
+  const showCoord = (stage === 3 && s.hint >= 2) || placed[n];
+  if(target && showIn) clueAddWords(PS[pi], target, b.inner, 'cl-a', marks[pi]);
+  if(showMore){
+    (b.cross || []).forEach(x => { const f = findSentence(x.find); if(f) clueAddWords(PS[f[0]], f[1], x.words, 'cl-b', marks[f[0]]); });
+    (b.lex || []).forEach(x => { const f = findSentence(x.find); if(f) clueAddWords(PS[f[0]], f[1], x.words, 'cl-l', marks[f[0]]); });
+  }
+  if(showCoord){
+    (b.coord || []).forEach(x => { const f = findSentence(x.find); if(f) clueAddWords(PS[f[0]], f[1], x.words, x.kind === 'trap' ? 'cl-t' : 'cl-c', marks[f[0]]); });
+  }
+  return marks;
+}
+
+function renderPassage(){
+  const all = computeMarks(sel);
+  const doneAll = Object.keys(placed).length >= blankNums.length;
+  let html = '';
+  PS.forEach((s, pi) => {
+    const marks = all[pi].slice().sort((a, b) => a[0] - b[0]);
+    const re = /\[(\d+)\]/g; let m, last = 0, out = '';
+    const textPart = (a, b) => {
+      let p = a, h = '';
+      marks.forEach(([x, y, cls]) => {
+        const xx = Math.max(x, a), yy = Math.min(y, b);
+        if(yy <= xx || xx < p) return;
+        h += esc(s.slice(p, xx)) + '<mark class="'+cls+'">' + esc(s.slice(xx, yy)) + '</mark>';
+        p = yy;
+      });
+      return h + esc(s.slice(p, b));
+    };
+    while((m = re.exec(s))){
+      if(m.index > last) out += textPart(last, m.index);
+      const n = Number(m[1]);
+      const cls = 'blank' + (placed[n] ? ' filled' : (labeled[n] ? ' labeled' : '')) + (sel === n ? ' sel' : '') + (flashBlanks && !labeled[n] && !placed[n] ? ' flash' : '');
+      const label = placed[n] ? esc(DATA.options[placed[n]]) : String(n) + (labeled[n] ? '<span class="cls">'+slotLab(n)+'</span>' : '');
+      out += '<button type="button" class="'+cls+'" data-n="'+n+'"'+(stage === 0 ? ' disabled' : '')+' aria-label="第 '+n+' 題'+(labeled[n] ? '，'+slotLab(n) : '')+(placed[n] ? '，已放 '+esc(DATA.options[placed[n]]) : '')+'">'+label+'</button>';
+      last = m.index + m[0].length;
+    }
+    if(last < s.length) out += textPart(last, s.length);
+    const lab = doneAll ? DATA.paras[pi].label : (DATA.paras[pi].label.match(/^【[^】]*】/) || [''])[0];
+    html += '<p class="plabel">'+esc(lab)+'</p><p'+(stage === 0 && pi === curTopic() ? ' class="pcur"' : '')+'>'+out+'</p>';
+  });
+  document.getElementById('passage').innerHTML = html;
+  document.querySelectorAll('button.blank').forEach(btn => btn.addEventListener('click', () => select(Number(btn.dataset.n))));
+}
+
+/* 還沒放的選項裡，這個空格那一堆還剩幾個 */
+function remaining(n){
+  const g = BL[n].slot;
+  return letters.filter(l => inPile(l, g) && formOK(l, n) && !Object.values(placed).includes(l));
+}
+function leastCandidates(){
+  let best = 99, list = [];
+  blankNums.filter(n => !placed[n]).forEach(n => {
+    const k = remaining(n).length;
+    if(k < best){ best = k; list = [n]; } else if(k === best) list.push(n);
+  });
+  return {k: best, list};
+}
+
+function renderTray(){
+  const title = document.getElementById('trayTitle'), el = document.getElementById('tray');
+  document.getElementById('trayCard').classList.toggle('hidden', stage === 0);
+  if(stage === 0){ el.innerHTML = ''; return; }
+  if(stage === 1){
+    title.textContent = '分堆：把十個選項放進'+['','','','三','四','五','六'][GORDER.length]+'堆';
+    const cnt = zero(); Object.values(assign).forEach(g => cnt[g]++);
+    const allL = Object.keys(labeled).length >= blankNums.length;
+    const needNow = zero(); blankNums.forEach(n => { if(labeled[n]) needNow[BL[n].slot]++; });
+    let h = '<div class="counts">' + GORDER.map(g => '<span class="count'+(allL && cnt[g] === NEED[g] ? ' ok' : '')+'">'+GROUPS[g]+' 已放 '+cnt[g]+' 個'+(allL ? '（需要 '+needNow[g]+' 個'+(cnt[g] === NEED[g] ? ' ✓' : ' ≠')+'）' : '')+'</span>').join('') + '</div>';
+    const nL = Object.keys(labeled).length, nA = Object.keys(assign).length;
+    h += '<ol class="steps2"><li><b>點文章裡的空格</b>（'+blankNums[0]+'～'+blankNums[blankNums.length-1]+'），在面板選這一格的詞性。</li><li><b>把下面每個選項放進一堆</b>，每一堆的選項數，要剛好等於這種詞性的空格數。</li></ol>';
+    h += '<div class="progress"><span class="pg'+(nL >= blankNums.length ? ' ok' : '')+'">詞性已標 '+nL+'／'+blankNums.length+'</span><span class="pg'+(nA >= letters.length ? ' ok' : '')+'">選項已分堆 '+nA+'／'+letters.length+'</span></div>';
+    if(DATA.flags.length) h += '<p class="next">標「兩類皆可」的字，可以當兩種詞性：放進你覺得合適的那一堆就好，只要每一堆的數量對得上，兩種都算對。</p>';
+    letters.forEach(l => {
+      h += '<div class="sortrow'+(GORDER.length > 4 ? ' many' : '')+'"><span class="w"><span class="letter">('+l+')</span>'+esc(DATA.options[l])+(DATA.flags.indexOf(l) >= 0 ? ' <span class="flag">兩類皆可</span><span class="ambnote">'+esc(ambLabel(l))+'</span>' : '')+'</span>';
+      GORDER.forEach(g => { h += '<button type="button" class="pill'+(assign[l] === g ? ' on' : '')+'" data-l="'+l+'" data-g="'+g+'" aria-pressed="'+(assign[l] === g)+'">'+GROUPS[g]+'</button>'; });
+      h += '</div>';
+    });
+    h += '<div class="btnrow"><button type="button" class="btn" id="checkBtn">核對分堆</button>' + (sortTries >= 2 ? '<button type="button" class="btn ghost" id="autoSortBtn">直接分好</button>' : '') + '</div>';
+    h += '<div class="skipbox"><button type="button" class="btn ghost" id="skipBtn">略過這一步，直接拼</button><p class="next">已經很熟詞性的人可以略過：十個空格和選項會照正確的詞性幫你分好，直接進第 3 步用上下文拼答案。</p></div>';
+    if(sortMsg) h += '<div class="msg">'+sortMsg+'</div>';
+    el.innerHTML = h;
+    el.querySelectorAll('.pill').forEach(p => p.addEventListener('click', () => { assign[p.dataset.l] = p.dataset.g; sortMsg = ''; renderTray(); }));
+    document.getElementById('checkBtn').addEventListener('click', checkSort);
+    document.getElementById('skipBtn').addEventListener('click', skipStep2);
+    const ab = document.getElementById('autoSortBtn'); if(ab) ab.addEventListener('click', () => { assign = Object.assign({}, DATA.groupOf); autoSorted = true; toStage3('已幫你分好。'); });
+    return;
+  }
+  // stage 3
+  title.textContent = '拼圖盤';
+  const n = sel, s = n != null ? S(n) : null;
+  const activeGroup = (n != null && !placed[n]) ? BL[n].slot : null;
+  let html = '';
+  GORDER.forEach(g => {
+    const ls = letters.filter(l => inPile(l, g));
+    html += '<div class="pile"><div class="pname'+(activeGroup===g?' on':'')+'">'+GFULL[g]+(activeGroup===g?'<br>▼ 這一題從這一堆選':'')+'</div><div class="chips">';
+    ls.forEach(l => {
+      const usedAt = Object.keys(placed).find(k => placed[k] === l);
+      const dimForm = activeGroup === g && !formOK(l, n);
+      const dim = (activeGroup && activeGroup !== g);
+      const wrongHere = s && s.wrongs.indexOf(l) >= 0;
+      const cls = 'chip' + (usedAt ? ' used' : '') + (dim ? ' dim' : '') + (dimForm ? ' dimf' : '') + (wrongHere ? ' x' : '') + (activeGroup===g && !usedAt && !wrongHere && !dimForm ? ' on' : '');
+      const disabled = (usedAt || dim || dimForm || wrongHere) ? ' disabled' : '';
+      html += '<button type="button" class="'+cls+'" data-l="'+l+'"'+disabled+'><span class="letter">('+l+')</span>'+esc(DATA.options[l])+(usedAt ? '<span class="tag">已放在第 '+usedAt+' 題</span>' : (FORMS[g] && (DATA.optForms[l]||{})[g] && blankNums.some(k => formReq(k) && BL[k].slot === g) ? '<span class="tag">'+esc(DATA.optForms[l][g].join('／'))+(dimForm ? '（形式不合）' : '')+'</span>' : ''))+'</button>';
+    });
+    html += '</div></div>';
+  });
+  el.innerHTML = html;
+  el.querySelectorAll('.chip').forEach(c => c.addEventListener('click', () => pick(c.dataset.l)));
+}
+
+function sentHtml(n){
+  const pi = PS.findIndex(t => t.indexOf('['+n+']') >= 0); if(pi < 0) return '';
+  const ss = PS[pi].split(/(?<=[.!?])\s+/); const s = ss.find(x => x.indexOf('['+n+']') >= 0); if(!s) return '';
+  const h = esc(s).replace(/\[(\d+)\]/g, (m, k) => k === String(n) ? '<b class="gap">'+k+'</b>' : '（'+k+'）');
+  return '<div class="sent"><span class="letter">本句</span>'+h+'</div>';
+}
+/* 跨句、並列線索如果在別的段落，把那一句也列在面板裡，手機上不用往回捲 */
+function crossPanelHtml(n, hint){
+  if(hint == null) hint = 9;
+  const b = BL[n];
+  const pi = PS.findIndex(t => t.indexOf('['+n+']') >= 0);
+  let h = '';
+  const items = [].concat((b.cross || []).map(x => Object.assign({}, x, {cls:'cl-b', lab:'跨句線索'})),
+                          (b.lex || []).map(x => Object.assign({}, x, {cls:'cl-l', lab:'詞彙線索'})),
+                          (hint < 2 ? [] : (b.coord || [])).map(x => Object.assign({}, x, {cls: x.kind === 'trap' ? 'cl-t' : 'cl-c', lab: x.kind === 'trap' ? '並列陷阱' : '並列線索'})));
+  items.forEach(x => {
+    const f = findSentence(x.find); if(!f) return;
+    const text = PS[f[0]].slice(f[1][0], f[1][1]);
+    if(f[0] === pi && x.cls !== 'cl-b' && text.indexOf('['+n+']') >= 0 && stage !== 99) { /* 同一句，已經在文章裡標出 */ }
+    if(f[0] === pi) return;
+    const mk = []; clueAddWords(text, [0, text.length], x.words, x.cls, mk);
+    mk.sort((p, q) => p[0] - q[0]);
+    let out = '', pos = 0;
+    mk.forEach(([a, e, cls]) => { if(a < pos) return; out += esc(text.slice(pos, a)) + '<mark class="'+cls+'">' + esc(text.slice(a, e)) + '</mark>'; pos = e; });
+    out += esc(text.slice(pos));
+    out = out.replace(/\[(\d+)\]/g, (m, d) => placed[d] ? '<b>'+esc(DATA.options[placed[d]])+'</b>' : '（'+d+'）');
+    h += '<p class="clueX '+x.cls+'"><span class="clueXlab">'+x.lab+'</span>'+out+'</p>';
+  });
+  return h;
+}
+function coordNotesHtml(n, withAll){
+  const b = BL[n]; let h = '';
+  (b.coord || []).forEach(x => { h += '<p style="font-size:14px;margin:6px 0 0"><b>'+(x.kind === 'trap' ? '並列陷阱：' : '並列線索：')+'</b>'+esc(x.note)+'</p>'; });
+  return h;
+}
+
+function topicLineHtml(n){
+  const pi = PS.findIndex(t => t.indexOf('['+n+']') >= 0); if(pi < 0 || !DATA.topics[pi]) return '';
+  return '<div class="sent"><span class="letter">這一段</span>'+esc(DATA.topics[pi].say)+'</div>';
+}
+function paraBoxHtml(ci, showKey){
+  const text = PS[ci]; const tp = DATA.topics[ci];
+  const mk = []; if(showKey){ const f = findSentence(tp.find); if(f && f[0] === ci) clueAddWords(text, f[1], tp.words, 'cl-k', mk); }
+  mk.sort((a, b) => a[0] - b[0]);
+  let out = '', pos = 0;
+  mk.forEach(([a, e, cls]) => { if(a < pos) return; out += esc(text.slice(pos, a)) + '<mark class="'+cls+'">' + esc(text.slice(a, e)) + '</mark>'; pos = e; });
+  out += esc(text.slice(pos));
+  out = out.replace(/\[(\d+)\]/g, (m, d) => '（'+d+'）');
+  return '<p class="clueX cl-k">'+out+'</p>';
+}
+function topicPanel(){
+  const ci = curTopic(), k = Object.keys(topicDone).length, total = DATA.topics.length;
+  const tp = DATA.topics[ci], s = topicSt[ci] || {tried:[]};
+  let h = '<div class="h">第 1 步：'+esc(paraName(ci))+'在講什麼？</div>';
+  h += '<p class="next">先讀這一段，再選。已完成 '+k+' / '+total+' 段。</p>';
+  h += paraBoxHtml(ci, s.tried.length > 0);
+  tp.opts.forEach((o, j) => { const x = s.tried.indexOf(j) >= 0; h += '<button type="button" class="btn topicopt'+(x ? ' x' : '')+'" data-j="'+j+'"'+(x ? ' disabled' : '')+'>'+esc(o.t)+'</button>'; });
+  if(s.tried.length){ const lj = s.tried[s.tried.length - 1]; h += '<div class="msg">'+esc(tp.opts[lj].why)+'上面標出來的字，是這一段的關鍵詞。</div>'; }
+  const done = DATA.topics.map((x, i) => topicDone[i] ? '<div class="sent"><span class="letter">'+esc(paraName(i))+'</span>'+esc(x.say)+'</div>' : '').join('');
+  if(done) h += '<p class="next" style="margin-top:12px">已經確認的段落主旨：</p>'+done;
+  return h;
+}
+function chooseTopic(j){
+  const ci = curTopic(); const tp = DATA.topics[ci]; const s = topicSt[ci] || (topicSt[ci] = {tried:[]});
+  if(tp.opts[j].ok){ topicDone[ci] = true; if(curTopic() == null){ stage = 1; sel = null; } }
+  else if(s.tried.indexOf(j) < 0) s.tried.push(j);
+  render(); toPanel();
+}
+function revealTopic(){ const ci = curTopic(); topicRev[ci] = true; topicDone[ci] = true; if(curTopic() == null){ stage = 1; sel = null; } render(); }
+
+function renderPanel(){
+  const el = document.getElementById('panel');
+  if(stage === 0){
+    el.innerHTML = topicPanel();
+    el.querySelectorAll('.topicopt').forEach(b => b.addEventListener('click', () => chooseTopic(Number(b.dataset.j))));
+    return;
+  }
+  if(sel == null){
+    let h = '';
+    if(stage === 1){
+      h = '<div class="h">第 2 步：認識空格與選項（標詞性、分堆）</div><div class="msg ok">各段的主旨都確認了。</div><div style="font-size:14px;color:var(--ink-soft)"><b>詞性只能縮小範圍，不能決定答案</b>：同一堆通常還有好幾個選項放得進去，最後要靠上下文的意思。請做兩件事：（一）點文章裡的數字，標出這一格的詞性；（二）到下面把十個選項各放進一堆。有些字有兩種詞性（標「兩類皆可」），放哪一堆都算對，到下一步由上下文決定放進哪一格。兩件事都做完、分堆核對正確，才能開始放選項。</div>';
+    } else {
+      const lc = leastCandidates();
+      h = '<div class="h">第 3 步：用線索拼答案</div><div style="font-size:14px;color:var(--ink-soft)">點文章裡的數字開始拼。<b>先想這一段的主旨，再找內容線索</b>，最後才看詞性、形式和並列結構。像拼圖先拼邊框：先做剩下選項最少的空格。選項在下方的拼圖盤。</div>';
+      if(lc.list.length) h += '<p class="next" style="margin-top:8px">現在剩下選項最少的空格：第 '+lc.list.join('、')+' 題（那一堆只剩 '+lc.k+' 個選項）。一樣多時，先選線索最明確的。</p>';
+    }
+    el.innerHTML = h; return;
+  }
+  const n = sel, b = BL[n], s = S(n);
+  let h = '<div class="h">第 '+n+' 題</div>' + topicLineHtml(n);
+  if(placed[n]){
+    const l = placed[n];
+    h += '<div class="msg ok"><span class="badge'+(b.layer==='meaning'?' m':'')+'">'+esc(b.cats)+'</span><span class="ans">'+esc(DATA.options[l])+'</span>　'+esc(b.gloss)+(revealed[n]?'（看答案放上去的）':'')+'</div>';
+    h += '<p style="font-size:14.5px;margin:8px 0 0"><b>詞性：</b>'+slotLab(n)+'。'+esc(b.why)+(b.form ? '（形式：'+b.form+'）' : '')+'</p>';
+    h += '<p style="font-size:14.5px;margin:6px 0 0"><b>判斷依據：</b>'+esc(b.final)+'</p>';
+    h += coordNotesHtml(n) + crossPanelHtml(n);
+    el.innerHTML = h; return;
+  }
+  if(slotOK[n] && !labeled[n]){
+    h += sentHtml(n)+'<div class="msg ok"><b>'+GROUPS[b.slot]+'。</b>'+(b.form ? '' : esc(b.why))+'</div><p class="q">這一格的「形式」是？</p><div class="btnrow">';
+    FORMS[b.slot].forEach(f => { h += '<button type="button" class="btn" data-f="'+f+'"'+(s.triedF && s.triedF.indexOf(f)>=0?' disabled':'')+'>'+f+'</button>'; });
+    h += '</div>';
+    if(s.triedF && s.triedF.length) h += '<div class="msg">這一格不是'+s.triedF.join('、')+'。想想主詞、時態，和空格前後的字（'+esc(b.formWhy)+'）。</div>';
+    else h += '<div style="font-size:13.5px;color:var(--ink-soft)">同一種詞性還有不同的形式，例如動詞的過去式、過去分詞，名詞的單數、複數。看空格前後的字判斷。</div>';
+    el.innerHTML = h;
+    el.querySelectorAll('[data-f]').forEach(btn => btn.addEventListener('click', () => chooseForm(btn.dataset.f)));
+    return;
+  }
+  if(!labeled[n]){
+    h += sentHtml(n)+'<p class="q">這個空格的詞性是？</p><div class="btnrow">';
+    GORDER.forEach(g => { h += '<button type="button" class="btn" data-g="'+g+'"'+(s.tried.indexOf(g)>=0?' disabled':'')+'>'+GROUPS[g]+'</button>'; });
+    h += '</div>';
+    if(s.tried.length){
+      const sn = b.slotNote; let note = null;
+      if(typeof sn === 'string'){ if(s.tried.indexOf('n') >= 0) note = sn; }
+      else if(sn){ for(let i = s.tried.length - 1; i >= 0; i--){ if(sn[s.tried[i]]){ note = sn[s.tried[i]]; break; } } }
+      if(note) h += '<div class="msg">'+esc(note)+'</div>';
+      else h += '<div class="msg">這一格不是'+s.tried.map(g=>GROUPS[g]).join('、')+'。再看一次空格前後的字，這一句裡的線索已經標出來（有底色和底線的字）。</div>';
+    }
+    else h += '<div style="font-size:13.5px;color:var(--ink-soft)">詞性只是用來縮小範圍的，看空格前後的字判斷就好。選哪一個，最後還是要靠上下文的意思。</div>';
+    el.innerHTML = h;
+    el.querySelectorAll('[data-g]').forEach(btn => btn.addEventListener('click', () => chooseSlot(btn.dataset.g)));
+    return;
+  }
+  h += sentHtml(n)+'<div class="msg ok"><b>'+slotLab(n)+'。</b>'+esc(b.why)+'</div>';
+  if(stage < 3){ el.innerHTML = h; return; }
+  const rem = remaining(n);
+  h += '<p class="q">從下面選一個放進這一格。符合這個形式的，還有 '+rem.length+' 個選項。</p><div class="chips">';
+  rem.forEach(l => { if(s.wrongs.indexOf(l) >= 0) return; h += '<button type="button" class="chip" data-l="'+l+'"><span class="letter">('+l+')</span>'+esc(DATA.options[l])+'</button>'; });
+  h += '</div><button type="button" class="btn ghost totray" id="toTray">看完整拼圖盤 ↓</button>';
+  if(s.wrongs.length){
+    const lw = s.wrongs[s.wrongs.length - 1];
+    h += '<div class="msg">「'+esc(DATA.options[lw])+'」放不進這一格：詞性相符，但意思或搭配不合。先回頭想這一段在講什麼；想不出來時，可以按提示。</div>';
+  }
+  if(s.hint >= 1) h += '<p style="font-size:14.5px;margin:8px 0"><b>提示 1，內容線索：</b>'+esc(b.l1)+'</p>';
+  if(s.hint >= 2) h += '<p style="font-size:14.5px;margin:8px 0"><b>提示 2，結構與搭配：</b>'+esc(b.l2)+'</p>' + coordNotesHtml(n);
+  if(s.hint >= 1) h += crossPanelHtml(n, s.hint);
+  h += '<div class="btnrow">';
+  if(s.hint === 0) h += '<button type="button" class="btn ghost" id="hintBtn">提示 1：先看內容線索</button>';
+  else if(s.hint === 1) h += '<button type="button" class="btn ghost" id="hintBtn">提示 2：再看結構與搭配</button>';
+  if(s.wrongs.length >= 2 || s.hint >= 2) h += '<button type="button" class="btn ghost" id="ansBtn">直接看答案</button>';
+  h += '</div>';
+  el.innerHTML = h;
+  el.querySelectorAll('.chip').forEach(c => c.addEventListener('click', () => pick(c.dataset.l)));
+  const hb = document.getElementById('hintBtn'); if(hb) hb.addEventListener('click', () => { S(n).hint++; render(); });
+  const ab = document.getElementById('ansBtn'); if(ab) ab.addEventListener('click', () => { place(n, DATA.answers[n], true); });
+}
+
+function renderProg(){
+  const k = Object.keys(placed).length, t = blankNums.length;
+  const txt = stage === 0 ? '第 1 步　已確認主旨 '+Object.keys(topicDone).length+' / '+DATA.topics.length+' 段' : (stage === 1 ? '第 2 步　已標詞性 '+Object.keys(labeled).length+' / '+t+' 格；已分堆 '+Object.keys(assign).length+' / '+letters.length+' 個' : '第 3 步　已拼好 '+k+' / '+t+' 題');
+  document.getElementById('progText').textContent = txt;
+}
+
+let autoSorted = false, skipped2 = false;
+function renderDone(){
+  const el = document.getElementById('done');
+  if(Object.keys(placed).length < blankNums.length){ el.classList.add('hidden'); return; }
+  const firstShow = el.classList.contains('hidden');
+  el.classList.remove('hidden');
+  const DEC = [['lex','靠詞彙線索（同義、換字重述、同一個語意範圍）'],['coord','靠並列線索'],['meaning','靠這一句或這一段的意思'],['form','靠詞性、形式與搭配就能排除其他選項']];
+  const list = a => a.map(n => '第 '+n+' 題').join('、');
+  const nRev = Object.keys(revealed).length;
+  let h = '<h3>'+(nRev ? '全部放好了。' : '拼好了。')+'這十題是靠什麼判斷的</h3>';
+  h += '<p style="margin:0 0 8px;font-size:14.5px"><b>各段主旨：</b></p><ul>' + DATA.topics.map((x, i) => '<li><b>'+esc(paraName(i))+'：</b>'+esc(x.say)+'</li>').join('') + '</ul>';
+  h += '<p style="margin:0 0 8px;font-size:14.5px"><b>全文結構：</b>'+esc(DATA.structure)+'</p><ul>';
+  DEC.forEach(d => { const a = blankNums.filter(n => BL[n].decide === d[0]); if(a.length) h += '<li><b>'+d[1]+'：</b>'+list(a)+'（共 '+a.length+' 題）。</li>'; });
+  h += '</ul><p style="margin:12px 0 8px;font-size:14.5px"><b>這一回要注意：</b></p><ul>';
+  DATA.lessons.forEach(t => { h += '<li>'+esc(t)+'</li>'; });
+  h += '<li><b>每個選項只能用一次。</b>真正作答時，一題放錯會連帶影響其他題，所以全部放好後，要把整篇再讀一遍：每一格填進去，都要扣住它那一段的主旨，整段讀起來也要通順。</li></ul>';
+  h += '<p class="next">'+(nRev ? '你用了「直接看答案」'+nRev+' 次'+(skipped2 ? '，第 2 步選擇略過' : autoSorted ? '，分堆用了「直接分好」' : '')+'。' : (skipped2 ? '第 2 步選擇略過。' : autoSorted ? '分堆用了「直接分好」。' : ''));
+  h += '大考中心的命題研習資料提到，文意選填會避免只憑詞性、單複數或局部片語就能作答；所以真正考試時，常有同一堆好幾個選項都放得進去的情形，要靠上下文的意思判斷。</p>';
+  el.innerHTML = h;
+  if(firstShow) setTimeout(() => el.scrollIntoView({behavior:'smooth', block:'start'}), 50);
+}
+
+function dockPanel(){
+  const panel = document.getElementById('panel'), tray = document.getElementById('trayCard');
+  let host = null;
+  if(stage === 0) host = document.querySelector('#passage p.pcur');
+  else if(sel != null){ const b = document.querySelector('button.blank.sel'); host = b && b.closest('p'); }
+  if(host) host.after(panel); else tray.parentNode.insertBefore(panel, tray);
+}
+function render(){
+  const panel = document.getElementById('panel'), tray = document.getElementById('trayCard');
+  tray.parentNode.insertBefore(panel, tray);
+  renderPassage(); renderTray(); renderPanel(); renderProg(); renderDone(); dockPanel();
+}
+
+function select(n){ if(stage === 0) return; sel = n; render(); document.getElementById('panel').scrollIntoView({behavior:'smooth', block:'nearest'}); }
+function toPanel(){ const p = document.getElementById('panel'); if(p && p.scrollIntoView) p.scrollIntoView({behavior:'smooth', block:'nearest'}); }
+
+function chooseForm(f){
+  const s = S(sel); s.triedF = s.triedF || [];
+  if(BL[sel].form === f || (BL[sel].formAlt || []).indexOf(f) >= 0){ labeled[sel] = true; } else if(s.triedF.indexOf(f) < 0){ s.triedF.push(f); }
+  render();
+}
+function chooseSlot(g){
+  const s = S(sel);
+  if(BL[sel].slot === g){
+    slotOK[sel] = true;
+    if(!FORMS[g] || !formReq(sel)) labeled[sel] = true;
+  } else { if(s.tried.indexOf(g) < 0) s.tried.push(g); }
+  render();
+}
+
+function checkSort(){
+  flashBlanks = false;
+  const nUn = blankNums.length - Object.keys(labeled).length;
+  if(nUn > 0){
+    sortMsg = '還有 '+nUn+' 格沒標詞性。請點文章裡閃動的空格（'+blankNums.filter(n => !labeled[n]).join('、')+'），在面板選這一格的詞性。十格都標完，才能核對分堆。';
+    flashBlanks = true; setTimeout(() => { flashBlanks = false; }, 3500);
+    render(); const bl = document.querySelector('button.blank.flash'); if(bl && bl.scrollIntoView) bl.scrollIntoView({block:'center', behavior:'smooth'});
+    return;
+  }
+  const un = letters.filter(l => !assign[l]);
+  if(un.length){ sortMsg = '還有 '+un.length+' 個選項沒有分堆。'; renderTray(); return; }
+  sortTries++;
+  const cnt = zero(); Object.values(assign).forEach(g => cnt[g]++);
+  const off = GORDER.filter(g => cnt[g] !== NEED[g]);
+  const amb = DATA.flags.map(l => DATA.options[l]).join('、');
+  if(off.length){
+    sortMsg = '數量對不上：' + off.map(g => GROUPS[g]+'堆現在有 '+cnt[g]+' 個，但詞性是'+GROUPS[g]+'的空格有 '+NEED[g]+' 格').join('；') + '。' + (amb ? '標「兩類皆可」的字（'+esc(amb)+'）可以放進兩種詞性的任一堆，想想它們放進文章哪一格、在那裡當什麼詞。' : '回到文章，看每個字可能放進哪一格。');
+    renderTray(); return;
+  }
+  const wrong = letters.filter(l => !inPile(l, assign[l]));
+  if(wrong.length){
+    sortMsg = '每一堆的數量對了，但還有字放錯堆。標「兩類皆可」的字，只能放進它標出的那兩種詞性；其他的字，回到文章看它可能放進哪一格、在那裡當什麼詞。';
+    renderTray(); return;
+  }
+  toStage3('分對了。');
+}
+function skipStep2(){
+  blankNums.forEach(n => { labeled[n] = true; slotOK[n] = true; });
+  assign = Object.assign({}, DATA.groupOf); skipped2 = true; toStage3('');
+}
+function toStage3(msg){ stage = 3; sel = null; sortMsg = ''; render(); }
+
+function place(n, l, viaReveal){ placed[n] = l; if(viaReveal) revealed[n] = true; render(); }
+
+function pick(l){
+  if(sel == null || placed[sel] || stage !== 3) return;
+  const s = S(sel);
+  if(l === DATA.answers[sel]){ place(sel, l, false); }
+  else { if(s.wrongs.indexOf(l) < 0) s.wrongs.push(l); render(); }
+}
+
+document.getElementById('resetBtn').addEventListener('click', () => { stage = 0; topicDone = {}; topicSt = {}; topicRev = {}; labeled = {}; slotOK = {}; assign = {}; sortTries = 0; sortMsg = ''; autoSorted = false; skipped2 = false; placed = {}; revealed = {}; sel = null; st = {}; render(); });
+
+document.getElementById('sub').textContent = DATA.sub;
+document.getElementById('lnkFull').href = 'https://staresto-create.github.io/passage-completion/#full-' + DATA.id;
+render();
+document.addEventListener('click', e => { if(e.target && e.target.id === 'toTray'){ const t = document.getElementById('trayCard'); if(t) t.scrollIntoView({behavior:'smooth', block:'start'}); } });
+</script>
+</body>
+</html>
