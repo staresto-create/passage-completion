@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>文意選填：用上下文拼圖</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500;700;900&family=Noto+Sans+TC:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{--pill-edge:#8F8670;
+    --paper:#F6F1E4; --paper-card:#FFFDF7; --ink:#221F1A; --ink-soft:#5B5648;
+    --rule:#DCD3BB; --crimson:#AE3626; --sage:#3E6E52; --gold:#A9812E;
+    --surface:#fff; --tint-crimson:#FBF1EE; --tint-sage:#E7F3EA; --tint-warm:#FBF6E8; --tint-sand:#F1EADA;
+    --link:#9C2C1E; --foot:#6f685d; --on-ink:#fff;
+    --glow:rgba(174,54,38,.05); --grid-line:rgba(34,31,26,0.025);
+    --shadow:0 1px 0 rgba(34,31,26,.06), 0 8px 24px rgba(34,31,26,.08);
+    --cl-a-bg:#FAD9CC; --cl-a-line:#AE3626; --cl-b-bg:#E2D8F3; --cl-b-line:#6A4FA3;
+    --cl-c-bg:#CFEAE0; --cl-c-line:#23705A; --cl-t-bg:#FBD9B5; --cl-t-line:#A24E0E;
+    --cl-l-bg:#D6E6F6; --cl-l-line:#2B63A8; --cl-k-bg:#F3E3AE; --cl-k-line:#A9812E;
+    color-scheme:light;
+  }
+  @media screen and (prefers-color-scheme: dark){
+    :root{--pill-edge:#8A8272;
+      --paper:#1B1916; --paper-card:#26231F; --ink:#EDE7D8; --ink-soft:#B8B0A0; --rule:#4C463B;
+      --crimson:#E57B68; --sage:#82C09C; --gold:#DDA94F;
+      --surface:#2D2A25; --tint-crimson:#3A2420; --tint-sage:#22302A; --tint-warm:#2B2721; --tint-sand:#332E25;
+      --link:#E57B68; --foot:#A29A8B; --on-ink:#1B1916;
+      --glow:rgba(229,123,104,.07); --grid-line:rgba(255,255,255,0.02);
+      --shadow:0 1px 0 rgba(0,0,0,.4),0 8px 24px rgba(0,0,0,.35);
+      --cl-a-bg:#5A2D25; --cl-a-line:#E57B68; --cl-b-bg:#3F3560; --cl-b-line:#B7A1EA;
+      --cl-c-bg:#1F4A3E; --cl-c-line:#6FD1B0; --cl-t-bg:#5C3A1E; --cl-t-line:#F0A25C;
+      --cl-l-bg:#203A55; --cl-l-line:#86B8F2; --cl-k-bg:#4B3E17; --cl-k-line:#DDA94F;
+      color-scheme:dark;
+    }
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:var(--paper);
+    background-image:radial-gradient(circle at 100% 0%, var(--glow), transparent 40%),
+      repeating-linear-gradient(0deg, var(--grid-line) 0px, var(--grid-line) 1px, transparent 1px, transparent 34px);
+    color:var(--ink); font-family:'Noto Sans TC',sans-serif; -webkit-font-smoothing:antialiased;
+    min-height:100vh; padding:24px 14px 60px; line-height:1.7;
+  }
+  .wrap{max-width:820px; margin:0 auto;}
+  header.top{text-align:center; border-bottom:3px double var(--ink); padding-bottom:14px; margin-bottom:20px;}
+  header.top .title{font-family:'Noto Serif TC',serif; font-weight:900; font-size:25px; letter-spacing:.02em;}
+  header.top .sub{font-family:'IBM Plex Mono','Noto Sans TC',monospace; font-size:12px; color:var(--ink-soft); margin-top:6px;}
+  .card{background:var(--paper-card); border:1px solid var(--rule); border-radius:4px; box-shadow:var(--shadow); padding:20px; margin-bottom:16px;}
+  .lead{font-size:15px; margin:0 0 10px;}
+  .lead b{color:var(--crimson);}
+  .steps{font-size:14.5px; margin:8px 0 0; padding-left:1.4em;}
+  .steps li{margin-bottom:4px;}
+  .legend{font-size:13px; color:var(--ink-soft); margin:14px 0 0; line-height:2;}
+  mark.cl-a{background:var(--cl-a-bg); color:inherit; border-bottom:2px solid var(--cl-a-line); padding:0 1px; border-radius:2px;}
+  mark.cl-b{background:var(--cl-b-bg); color:inherit; border-bottom:2px dashed var(--cl-b-line); padding:0 1px; border-radius:2px;}
+  mark.cl-c{background:var(--cl-c-bg); color:inherit; border-bottom:2px dotted var(--cl-c-line); padding:0 1px; border-radius:2px;}
+  mark.cl-t{background:var(--cl-t-bg); color:inherit; text-decoration:underline wavy var(--cl-t-line); text-decoration-thickness:2px; text-underline-offset:3px; padding:0 1px; border-radius:2px;}
+  mark.cl-l{background:var(--cl-l-bg); color:inherit; border-bottom:3px double var(--cl-l-line); padding:0 1px; border-radius:2px;}
+  mark.cl-k{background:var(--cl-k-bg); color:inherit; font-weight:700; border-bottom:2px solid var(--cl-k-line); padding:0 1px; border-radius:2px;}
+  .pcur{border-left:4px solid var(--gold); padding-left:8px; margin-left:-12px;}
+  button.blank:disabled{cursor:default; opacity:.8;}
+  .topicopt{display:block; width:100%; text-align:left; font-weight:500; line-height:1.6; padding:10px 14px; margin:8px 0;}
+  .topicopt.x{opacity:1; color:var(--ink-soft); text-decoration:line-through; text-decoration-color:var(--crimson);}
+  .legend mark{font-weight:700; margin-right:4px;}
+  .legend span.it{display:inline-block; margin-right:12px;}
+  .clueX{font-family:'Times New Roman',Times,'Liberation Serif','Noto Serif','Noto Sans TC',serif; font-size:15.5px; line-height:1.85; margin:8px 0; padding:6px 10px; border-left:3px solid var(--cl-b-line); background:var(--tint-warm);}
+  .clueX.cl-l{border-left-color:var(--cl-l-line);}
+  .clueX.cl-c{border-left-color:var(--cl-c-line);}
+  .clueX.cl-t{border-left-color:var(--cl-t-line);}
+  .clueX.cl-k{border-left-color:var(--cl-k-line); background:var(--surface);}
+  .clueXlab{font-family:'Noto Sans TC',sans-serif; font-size:12px; font-weight:700; color:var(--ink-soft); margin-right:8px;}
+
+  .passage{font-family:'Times New Roman',Times,'Liberation Serif','Noto Serif','Noto Sans TC',serif; font-size:17px; line-height:2.15;}
+  .passage p{margin:0 0 14px; text-indent:1.6em;}
+  .plabel{font-family:'Noto Sans TC',sans-serif; font-size:12px; color:var(--ink-soft); margin:0 0 2px; text-indent:0 !important; letter-spacing:.03em;}
+  button.blank{font:inherit; font-family:'IBM Plex Mono','Noto Sans TC',monospace; font-size:14px; font-weight:600; min-width:48px; min-height:44px; padding:1px 8px; margin:0 2px;
+    border:1.5px dashed var(--ink-soft); border-radius:6px; background:var(--surface); color:var(--ink); cursor:pointer; vertical-align:baseline;}
+  @media (hover:hover){ button.blank:hover{border-color:var(--crimson);} }
+  button.blank.labeled{border-style:solid; border-color:var(--sage);}
+  @keyframes blankflash{0%,100%{background:var(--surface);} 50%{background:var(--tint-crimson); border-color:var(--crimson);}}
+  button.blank.flash{animation:blankflash .9s ease-in-out 3;}
+  @media (prefers-reduced-motion:reduce){ button.blank.flash{animation:none; border-color:var(--crimson); border-style:solid;} }
+  .progress{font-size:14px; margin:6px 0 8px; display:flex; flex-wrap:wrap; gap:6px 14px;}
+  .progress .pg{font-weight:700;} .progress .pg.ok{color:var(--sage);}
+  .steps2{margin:4px 0 8px; padding-left:20px; font-size:14px; line-height:1.7;}
+  .ambnote{font-family:'Noto Sans TC',sans-serif; font-size:12px; color:var(--ink-soft); display:block; margin:1px 0 0 0;}
+  button.blank .cls{font-family:'Noto Sans TC',sans-serif; font-size:12px; font-weight:500; color:var(--ink-soft); margin-left:4px;}
+  button.blank.sel{border:2px solid var(--crimson); background:var(--tint-crimson); color:var(--crimson);}
+  button.blank.filled{font-family:'Times New Roman',Times,'Liberation Serif','Noto Serif',serif; font-size:17px; font-weight:700; border:2px solid var(--sage); background:var(--tint-sage); color:var(--ink); padding:0 8px;}
+  button.blank.filled.sel{border-color:var(--crimson);}
+  button.blank:focus-visible, .chip:focus-visible, .btn:focus-visible, .pill:focus-visible{outline:3px solid var(--gold); outline-offset:2px;}
+
+  .h{font-family:'Noto Serif TC',serif; font-weight:700; font-size:16px; margin:0 0 8px;}
+  .pile{margin-bottom:12px;}
+  .pile .pname{font-size:12.5px; font-weight:700; color:var(--ink-soft); margin-bottom:5px;}
+  .pile .pname.on{color:var(--crimson);}
+  .chips{display:flex; flex-wrap:wrap; gap:8px;}
+  .chip{font-family:'Times New Roman',Times,'Liberation Serif','Noto Serif',serif; font-size:17px; font-weight:700; min-height:44px; padding:4px 14px; border:1.5px solid var(--ink-soft); border-radius:8px; background:var(--surface); color:var(--ink); cursor:pointer;}
+  .chip .tag{display:block; font-family:'Noto Sans TC',sans-serif; font-size:12px; font-weight:500; color:var(--ink-soft); line-height:1.2;}
+  .chip.used{border-style:dashed; opacity:.5; cursor:default;}
+  .chip.dim{opacity:.5; cursor:default;}
+  .chip.dimf{border-style:dashed; border-color:var(--ink-soft); background:transparent; color:var(--ink-soft); cursor:default;}
+  .chip.dimf .tag{color:var(--ink-soft);}
+  .prog .btn{flex:none; white-space:nowrap;}
+  .sent{font-size:15px; line-height:1.7; margin:6px 0 8px; padding:6px 10px; border-left:3px solid var(--ink-soft); background:var(--surface);}
+  .sent b.gap{border-bottom:2px solid var(--crimson); padding:0 .6em;}
+  .chip.on{border-color:var(--crimson); background:var(--tint-crimson);}
+  .chip.x{text-decoration:line-through; opacity:.45; cursor:default;}
+  .letter{font-family:'IBM Plex Mono',monospace; font-size:12px; font-weight:600; color:var(--ink-soft); margin-right:5px;}
+
+  .sortrow{display:flex; flex-wrap:wrap; align-items:center; gap:8px 10px; padding:6px 0; border-bottom:1px solid var(--rule);}
+  .sortrow .w{font-family:'Times New Roman',Times,'Liberation Serif','Noto Serif',serif; font-size:18px; font-weight:700; min-width:8.5em;}
+  .pill{white-space:nowrap; font-family:'Noto Sans TC',sans-serif; font-size:13.5px; font-weight:500; min-height:44px; padding:2px 14px; border:1.5px solid var(--pill-edge); border-radius:22px; background:var(--surface); color:var(--ink); cursor:pointer;}
+  .sortrow.many{display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:8px;}
+  .sortrow.many .w{grid-column:1/-1;}
+  .sortrow.many .pill{padding:2px 4px;}
+  .skipbox{margin-top:14px; padding-top:12px; border-top:1px dashed var(--rule);}
+  .skipbox .next{margin:6px 0 0;}
+  .totray{font-size:13.5px; margin-left:0; display:block; margin-top:6px; min-height:44px; padding:2px 12px;}
+  #passage #panel{margin:2px -8px 18px; padding:16px; border-left:4px solid var(--crimson); font-family:'Noto Sans TC',sans-serif; font-size:15px; line-height:1.75; text-indent:0;}
+  #panel .chips{margin:8px 0;}
+  #passage #panel p{text-indent:0; margin:8px 0;}
+  .pill.on{border-color:var(--crimson); background:var(--tint-crimson); color:var(--crimson); font-weight:700;}
+  .flag{font-family:'Noto Sans TC',sans-serif; font-size:12px; font-weight:700; color:var(--cl-b-line); border:1.5px solid var(--cl-b-line); border-radius:9px; padding:0 6px; margin-left:4px; white-space:nowrap;}
+  .counts{display:flex; flex-wrap:wrap; gap:8px; margin:10px 0; position:sticky; top:0; z-index:2; background:var(--paper-card); padding:6px 0;}
+  .count{font-family:'Noto Sans TC',sans-serif; font-size:13px; padding:3px 10px; border:1.5px solid var(--rule); border-radius:6px; background:var(--surface);}
+  .count.ok{border-color:var(--sage); color:var(--sage); font-weight:600;}
+
+  .btn{font-family:'Noto Sans TC',sans-serif; font-size:14px; font-weight:700; min-height:44px; padding:6px 14px; border:1.5px solid var(--ink); border-radius:6px; background:var(--surface); color:var(--ink); cursor:pointer;}
+  @media (hover:hover){ .btn:hover{border-color:var(--crimson);} }
+  .btn:disabled{opacity:.4; cursor:default;}
+  .btn.ghost{border-color:var(--rule); font-weight:500; color:var(--ink-soft);}
+  .btnrow{display:flex; flex-wrap:wrap; gap:8px; margin:8px 0;}
+  .q{font-size:15px; margin:0 0 6px; font-weight:700;}
+  .msg{font-size:14px; margin:8px 0; padding:8px 12px; border-left:3px solid var(--gold); background:var(--tint-warm);}
+  .msg.ok{border-color:var(--sage); background:var(--tint-sage);}
+  .badge{display:inline-block; font-size:12px; font-weight:700; padding:1px 8px; border-radius:10px; border:1.5px solid var(--sage); color:var(--sage); margin-right:6px;}
+  .badge.m{border-color:var(--cl-b-line); color:var(--cl-b-line);}
+  .ans{font-family:'Times New Roman',Times,'Liberation Serif','Noto Serif',serif; font-size:20px; font-weight:700;}
+  .prog{font-family:'IBM Plex Mono','Noto Sans TC',monospace; font-size:12.5px; color:var(--ink-soft); display:flex; justify-content:space-between; align-items:center; gap:8px; margin-bottom:10px;}
+  .next{font-size:13.5px; color:var(--ink-soft); margin:0 0 10px;}
+  .done h3{font-family:'Noto Serif TC',serif; margin:0 0 8px; font-size:17px;}
+  .done ul{margin:6px 0 10px; padding-left:1.2em; font-size:14.5px;}
+  .done li{margin-bottom:6px;}
+  .links{font-size:13.5px; line-height:1.6;}
+  .links a{display:inline-block; padding:8px 0;}
+  a{color:var(--link); font-weight:700; text-underline-offset:2px;}
+  footer{text-align:center; font-size:12.5px; color:var(--foot); line-height:1.9; margin-top:26px;}
+  footer .cc{font-size:11.5px; margin-top:6px;}
+  footer a{display:inline-block; padding:10px 0;}
+  .hidden{display:none !important;}
+  @media (max-width:560px){ .sortrow .w{flex:0 0 100%;} .sortrow .pill{flex:1 1 0; padding:2px 6px;} .passage{font-size:16.5px;} header.top .title{font-size:21px;} .sortrow .w{min-width:7em;} }
+  @media print{ body{padding:0;} .card{box-shadow:none;} }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div class="title">文意選填：用上下文拼圖</div>
+    <div class="sub" id="sub"></div>
+  </header>
+
+  <div class="card">
+    <p class="lead">文意選填像一整篇的拼圖，<b>重點是上下文：每一格都要扣住它所在那一段的主旨</b>。分三步：</p>
+    <ol class="steps">
+      <li><b>讀段落、找出主旨</b>：選出每一段在講什麼。答錯時會標出這一段的關鍵詞。</li>
+      <li><b>認識空格與選項（標詞性、分堆）</b>：標出每一格的詞性，再把<span data-nopt>十個</span>選項分堆。</li>
+      <li><b>用線索拼答案</b>：先想主旨、找內容線索，卡住時按「提示」。</li>
+    </ol>
+    <details style="margin-top:8px"><summary style="font-size:13.5px; font-weight:700; cursor:pointer; min-height:44px; display:flex; align-items:center;">第 2 步怎麼做（點開來看）</summary>
+    <p class="legend">把十個空格各是哪一種詞性標出來，有些空格還要標「形式」（例如動詞的第三人稱單數、名詞的複數）；同時把<span data-nopt>十個</span>選項分成動詞、名詞、形容詞等幾堆。<span data-rule>每一堆的數量，要剛好等於那一種詞性的空格數。</span>詞性只能縮小範圍，同一堆通常還有好幾個選項放得進去，最後要靠上下文的意思。標「兩類皆可」的字可以當兩種詞性，放進哪一堆都算對，只要每一堆的數量對得上。已經很熟詞性的人，也可以直接略過這一步。</p></details>
+    <details style="margin-top:12px"><summary style="font-size:13.5px; font-weight:700; cursor:pointer; min-height:44px; display:flex; align-items:center;">標色說明（點開來看）</summary>
+    <p class="legend">
+      <span class="it"><mark class="cl-k">主旨關鍵詞</mark>第 1 步答錯時標出</span>
+      <span class="it"><mark class="cl-a">句內線索</mark>空格所在那一句</span>
+      <span class="it"><mark class="cl-b">跨句線索</mark>前後句或文中其他句子</span>
+      <span class="it"><mark class="cl-l">詞彙線索</mark>同義、換字重述、同一個語意範圍的字</span>
+      <span class="it"><mark class="cl-c">並列線索</mark>和空格並列的成分</span>
+      <span class="it"><mark class="cl-t">並列陷阱</mark>看起來並列，其實不是</span><br>
+      標詞性時，只會標出「句內線索」；跨句線索與詞彙線索（也就是內容線索），要在第 3 步按「提示 1」才出現；並列線索與並列陷阱，要按「提示 2」。
+    </p></details>
+  </div>
+
+  <div class="card">
+    <div class="prog"><span id="progText"></span><button class="btn ghost" id="resetBtn" type="button">重新開始</button></div>
+    <div class="passage" id="passage"></div>
+  </div>
+
+  <div class="card" id="panel" aria-live="polite"></div>
+
+  <div class="card" id="trayCard">
+    <div class="h" id="trayTitle"></div>
+    <div id="tray"></div>
+  </div>
+
+  <div class="card done hidden" id="done"></div>
+
+  <div class="card links">
+    <a id="lnkFull" href="#">→ 這一回的完整題目與解析</a><br>
+    <a href="https://staresto-create.github.io/JCEE-vocab-questions/#rules">→ 拼圖的五種線索：字詞搭配、用法、換句話說、銜接、連貫</a><br>
+    <a href="https://staresto-create.github.io/passage-completion/">← 回文意選填</a>
+  </div>
+
+  <footer>
+    資料來源：大考中心公布之歷屆文意選填試題與答案<br>
+    © 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫
+    <div class="cc">本題庫撰寫的解析與標註，採用 <a href="https://creativecommons.org/licenses/by-nc/4.0/deed.zh-hant" target="_blank" rel="license noopener">CC BY-NC 4.0</a> 授權。</div>
+  </footer>
+</div>
+
+<script>
+const DATA = {"id": "zref95", "sub": "95課綱參考試卷（98年施測） 指考 · 第 21–30 題 · 業餘天文學家的典範：赫歇爾（William Herschel）", "paras": [{"label": "【第一段】點出主旨：業餘天文學家的典範赫歇爾；白天教音樂，晚上觀星、磨鏡，發現天王星的經過", "segs": [["If amateur astronomers look to someone as their ideal, it is undoubtedly William Herschel.", "gradient"], [" He was a musician by ", null], ["21", "blank"], [" —", null], ["first", "trans"], [" in a German band, ", null], ["then", "trans"], [" in the English spa town of Bath, where he played the oboe in an orchestra, served as organist in a church and gave music lessons. By ", null], ["22", "blank"], [" , that is. By night he was an astronomer when skies were clear and a mirror maker when they were ", null], ["23", "blank"], [" . He personally ground and ", null], ["24", "blank"], [" the mirrors for his telescopes—more than two hundred of them! People wondered when Herschel ever found time to sleep. He spent most of his time at night observing stars, with the faithful ", null], ["25", "blank"], [" of his sister Caroline. Scanning the solar system for as yet ", null], ["26", "blank"], [" objects, he compiled lists of double stars, colored stars and nebulas (i.e., clouds of dust and gas that are to become stars). His first major discovery, in 1774, was the Great Nebula in Orion, which modern astrophysicists have since ", null], ["27", "blank"], [" as a “nursery” for new stars. In the course of his systematic ", null], ["28", "blank"], [" of star fields, he detected a peculiar object. The entry in his log for March 13, 1781 includes a note about a ", null], ["29", "blank"], [" nebulous star that he “suspected to be a comet.” ", null], ["Since", "trans"], [" the object moved during the next few nights, Herschel ", null], ["30", "blank"], [" in this belief. On April 26, he submitted his findings to the Royal Society in a paper entitled “Account of a Comet.”", null]]}], "options": {"A": "day", "B": "strange", "C": "cloudy", "D": "identified", "E": "assistance", "F": "undetected", "G": "profession", "H": "polished", "I": "persisted", "J": "observation"}, "groupOf": {"A": "n", "B": "adj", "C": "adj", "D": "v", "E": "n", "F": "adj", "G": "n", "H": "v", "I": "v", "J": "n"}, "ambig": ["H"], "blanks": [{"cats": "字詞搭配", "slot": "n", "layer": "meaning", "decide": "meaning", "why": "by 是介系詞，後面要接名詞，所以空格放在名詞堆。", "l1": "He was a musician by ___ 先介紹他的身分，破折號後面是一連串證據：先在德國樂團，後來到 Bath 的管弦樂團吹雙簧管、在教堂當管風琴師，還教音樂課。至於下一句的 By ___ , that is.，那是另一個 by 片語，兩格的名詞不一樣，要分開判斷。想一想：by 後面接哪一個名詞，能把破折號後面這一整串經歷都涵蓋進去？", "l2": "a musician by ___ 的 by 後面接名詞，用來說明在哪一方面他是 a musician。名詞堆有四個字，各放進來讀一遍，看哪一個能把破折號後面這一串經歷歸在一起。另外，下一句開頭也是 By ___，兩處要放在一起讀。", "final": "He was a musician by profession（就職業來說，他是音樂家）：Longman 的 profession 第 1 個意思是 a job that needs a high level of education and training，底下列出 by profession 的用法，例句 Johnson was a barrister by profession.；Merriam-Webster 的第 1a 義是 a principal calling, vocation, or employment。a musician by profession 和 a barrister by profession 結構相同，破折號後面 first in a German band, then in the English spa town of Bath 一路列出的音樂工作，正是他的職業經歷。day 放在這一格文法上也通（a musician by day），但下一句 By ___ , that is. 緊接著 By night，by day 和 by night 才是成對的說法；要是把 day 用在這裡，下一格就只能放 profession，變成 By profession, that is. By night …，對不起來，所以 day 要留給下一格。assistance 是幫忙、observation 是觀看，兩個字都沒辦法說明一位音樂家是哪一方面的音樂家。", "gloss": "職業", "inner": ["a musician by", "first in a German band"], "cross": [{"find": "By night he was an astronomer", "words": ["By night"]}], "coord": [{"find": "first in a German band, then in the English spa town of Bath", "words": ["first", "then"], "kind": "real", "note": "first … then … 把兩個階段依先後並列，一段接一段交代他在不同地方的音樂經歷。"}], "lex": [{"find": "played the oboe in an orchestra, served as organist in a church and gave music lessons", "words": ["played the oboe", "served as organist", "gave music lessons"], "kind": "語意範圍", "note": "這三件事都是他在音樂方面做的事，空格的詞要能把它們歸在同一類底下。"}], "n": 21}, {"cats": "字詞搭配、語意連貫", "slot": "n", "layer": "meaning", "decide": "lex", "why": "By 後面接名詞，而且 that is 之後接著 By night，空格要放一個和 night 成對的名詞。", "l1": "這一句只有短短的 By ___ , that is.，緊接著下一句就是 By night he was an astronomer …。作者先交代一個時段，再用 By night 說另一個時段。這兩句是不是一組對照？", "l2": "By ___ , that is 的 that is 是補充說明，把前一句 a musician by … 的說法再講清楚。By night 在後面提供了對照，空格要填一個能和 night 成對、前面不加 a 或 the 的名詞。", "final": "By day, that is（也就是說，在白天）：Longman 的 day 是名詞，第 2 個意思是 the period of time between when it gets light in the morning and when it gets dark，底下列出 by day（=during the day），例句 Owls usually sleep by day and hunt by night.，同一頁另有 He’s an office worker by day and a club DJ by night.，by day 和 by night 成對，和本篇 By day … By night 的用法一樣。that is 在補充前一句：他本業是音樂家，這裡再交代這些音樂工作是在白天做的，接著用 By night 轉到夜裡的天文工作。profession 放在這一格會變成 By profession, that is. By night …，by profession 和 by night 不是同一類的對照。", "gloss": "白天", "inner": ["By", "that is"], "cross": [{"find": "By night he was an astronomer", "words": ["By night"]}, {"find": "He was a musician by", "words": ["a musician by"]}], "coord": [], "lex": [{"find": "By night he was an astronomer", "words": ["By night"], "kind": "反義", "note": "By night 說的是夜裡的情形，空格要和它形成對照。"}], "n": 22}, {"cats": "語意對比、語意連貫", "slot": "adj", "layer": "meaning", "decide": "coord", "why": "they 指前面的 skies，were 後面要接形容詞當補語，所以空格放在形容詞堆。", "l1": "夜裡天空 clear 的時候，他是天文學家；變成 a mirror maker 的時候，天空的情形和 clear 剛好相反。想一想：什麼樣的天空讓他沒辦法看星星？", "l2": "when they were ___ 與前面的 when skies were clear 是平行的兩個 when 子句，they 指的就是前面的 skies，空格的字要描述天空的狀態，而且和 clear 形成對比。", "final": "a mirror maker when they were cloudy（天上有雲的時候，他就成了製鏡工匠）：Longman 的 cloudy 是形容詞，定義是 a cloudy sky, day etc is dark because there are a lot of clouds；Merriam-Webster 第 3a 義是 overcast with clouds，例句 cloudy weather。前半句 when skies were clear 是天空晴朗、看得到星星的時候，後半句 when they were cloudy 剛好相反，看不到星星，他就改去磨鏡子。strange、undetected 都不是和 clear 相反的天空狀態。polished 在 Longman 和 Merriam-Webster 都另列形容詞，放進來形式上通，意思卻說不出天空的樣子。", "gloss": "多雲的、陰的", "inner": ["when skies were clear", "a mirror maker when they were"], "cross": [], "coord": [{"find": "an astronomer when skies were clear and a mirror maker when they were", "words": ["when skies were clear", "when they were"], "kind": "real", "note": "兩個 when 子句平行，一個說天空 clear 的時候，一個說天空另一種狀態的時候，空格的字要和 clear 相反。"}], "lex": [{"find": "when skies were clear", "words": ["clear"], "kind": "反義", "note": "clear 說的是天空沒有遮蔽，空格的字和它相反。"}], "n": 23}, {"cats": "字詞搭配、句型結構", "slot": "v", "layer": "meaning", "decide": "coord", "form": "過去式", "formWhy": "ground 是 grind 的過去式，and 後面的動詞和它平行，所以空格也是過去式（這個字的過去式與過去分詞同形）", "why": "and 連接兩個動詞，共用主詞 He 和受詞 the mirrors，ground 是過去式，空格也要是動詞。", "l1": "He personally ground and ___ the mirrors：and 把兩個動作連在一起，主詞和受詞都相同。要做出能用的望遠鏡反射鏡，先磨，磨完之後還要再做哪一個步驟？", "l2": "ground 是 grind 的過去式，and 後面的動詞要和它平行，所以是過去式。動詞堆三個字的 -ed 形式看起來都一樣，要看哪一個接上 the mirrors 之後，意思符合製作鏡子的過程。", "final": "He personally ground and polished the mirrors（他親手研磨並拋光那些鏡子）：and 連接兩個過去式，polished 是 polish 的過去式。Longman 的 polish 第 1 個意思是 to make something smooth, bright, and shiny by rubbing it，例句 Polish the lenses with a piece of tissue.；Merriam-Webster 的 polish 第 1 義是 to make smooth and glossy usually by friction。鏡子先 ground 再 polished，是製作反射鏡的兩道步驟。identified 的意思和 the mirrors 搭不起來；persist 說的是不顧困難繼續做某件事，Longman 的例句是 persisted in his refusal 和 persisted with her studies，ground and persisted the mirrors 意思說不通。", "gloss": "磨亮、拋光", "inner": ["personally ground and", "the mirrors"], "cross": [{"find": "a mirror maker when they were", "words": ["a mirror maker"]}], "coord": [{"find": "He personally ground and", "words": ["ground and"], "kind": "real", "note": "and 連接兩個動詞，共用 He 這個主詞和 the mirrors 這個受詞，所以空格要和 ground 同一種形式。"}], "lex": [], "n": 24}, {"cats": "字詞搭配、句型結構", "slot": "n", "layer": "meaning", "decide": "meaning", "why": "the faithful 是 the 加形容詞，後面要接名詞，of his sister Caroline 說明這個名詞是誰給的。", "l1": "He spent most of his time at night … , with the faithful ___ of his sister Caroline.：前面說他大部分的夜晚都在忙同一件事，with 帶出旁邊還有一個情形：他的妹妹 Caroline 為他做了什麼？", "l2": "of his sister Caroline 說明這個名詞是 Caroline 給他的東西；faithful 是長期忠實不變的意思，所以空格的名詞要是一件別人可以持續給予的事。", "final": "with the faithful assistance of his sister Caroline（有妹妹 Caroline 始終不離的協助）：Longman 把 assistance 列為 noun [uncountable]，定義是 help or support，搭配欄也列出 with the assistance of somebody/something，正好是這一句的結構；Merriam-Webster 的定義是 the act of helping or assisting someone or the help supplied : aid。observation 放進來會變成「對他妹妹的觀看」，意思不合。", "gloss": "協助", "inner": ["with the faithful", "of his sister Caroline"], "cross": [], "coord": [], "lex": [{"find": "with the faithful", "words": ["faithful"], "kind": "搭配", "note": "faithful 是忠實、始終如一的意思，修飾的名詞要是一件可以長期持續給予的事。"}], "n": 25}, {"cats": "字詞搭配、語意連貫", "slot": "adj", "layer": "meaning", "decide": "meaning", "why": "空格在 as yet 和名詞 objects 之間，修飾 objects，所以要填形容詞。", "l1": "Scanning the solar system for as yet ___ objects：他在太陽系裡搜尋的是什麼樣的天體？再看後面，他整理出雙星、有色恆星和星雲的清單，這些是搜尋的成果。", "l2": "as yet 的意思是到目前為止還沒有，常放在帶否定語氣的形容詞前面，例如 Longman 的 The as yet unnamed car。形容詞堆有三個字，看哪一個字本身就帶 un- 這個否定字首，而且是過去分詞變成的形容詞。", "final": "for as yet undetected objects（搜尋目前還沒被發現的天體）：Longman 的 as yet 定義是 until and including the present time，用來說某件事到現在還沒發生，例句 The as yet unnamed car will have a four litre V10 engine and will cost £95,000.，as yet 後面接的正是 un- 開頭的形容詞。undetected 在 Longman 是形容詞，例句 Doctors can make mistakes and diseases can remain undetected.；Merriam-Webster 的定義是 not observed, noticed, or detected。strange 與 cloudy 都沒有這種還沒被找到的意思，放進 as yet ___ objects 也讀不通。", "gloss": "尚未被發現的", "inner": ["for as yet", "objects"], "cross": [], "coord": [], "lex": [{"find": "Scanning the solar system for as yet", "words": ["Scanning"], "kind": "語意範圍", "note": "scanning … for 是在找東西，空格的字要說明被找的是什麼樣的天體。"}], "n": 26}, {"cats": "字詞搭配", "slot": "v", "layer": "meaning", "decide": "lex", "form": "過去分詞", "formWhy": "have since 後面要接過去分詞，組成現在完成式（這個字的過去式與過去分詞同形，要看前面的 have 才能確定）", "why": "have since 之後要接過去分詞，所以空格是動詞；which 指前面的 Great Nebula，在子句裡當受詞。", "l1": "His first major discovery 是獵戶座大星雲，which 之後的子句說現代天文物理學家後來對它的看法。空格的動詞後面接 as，把大星雲說成新恆星的育嬰房。想一想：後來的天文學家怎麼看待這個大星雲？", "l2": "have since ___：have 加過去分詞組成現在完成式，空格是過去分詞。which 代表前面的 the Great Nebula in Orion，在子句裡當這個動詞的受詞，後面再接 as a “nursery”。動詞堆三個字的 -ed 形式相同，要看哪一個能接「A as B」的句型。", "final": "which modern astrophysicists have since identified as a “nursery” for new stars（現代天文物理學家後來確認它是新恆星的育嬰房）：Longman 的 identify 句型是 identify somebody/something as somebody/something，例句 Eyewitnesses identified the gunman as an army sergeant.；Merriam-Webster 例句 She identified the dog as her lost pet.。which 代表 the Great Nebula in Orion，是 identified 的受詞，have identified 是現在完成式。polished 雖然也能接受詞，polished the nebula as a nursery 卻說不通；persist 說的是不顧困難繼續做某件事，放進來也讀不通。", "gloss": "辨識、認定", "inner": ["have since", "as a “nursery” for new stars", "the Great Nebula in Orion"], "cross": [], "coord": [], "lex": [{"find": "as a “nursery” for new stars", "words": ["nursery"], "kind": "語意範圍", "note": "nursery 加了引號，是比喻：把大星雲說成孕育新恆星的地方。空格的動詞要連到這個比喻，說明天文學家怎麼看待大星雲。"}], "n": 27}, {"cats": "字詞搭配", "slot": "n", "layer": "meaning", "decide": "lex", "why": "his systematic 是所有格加形容詞，後面要接名詞，of star fields 說明這個名詞的對象。", "l1": "In the course of his systematic ___ of star fields, he detected a peculiar object.：in the course of 是在某件事的過程中。他有系統地對星野做什麼事，才會在過程中察覺到一個特別的天體？回頭看前面，他整晚都在做哪一件事。", "l2": "his systematic ___ of star fields：所有格、形容詞、名詞，再加 of 帶出動作的對象。這個名詞是從動詞變來的，of 後面的 star fields 是被它處理的東西。", "final": "In the course of his systematic observation of star fields（在他有系統地觀測星野的過程中）：Longman 的 observation 第 1 個意思是 the process of watching something or someone carefully for a period of time，搭配欄有 scientific observation、direct observation；Merriam-Webster 第 2a 義是 an act of recognizing and noting a fact or occurrence often involving measurement with instruments。前面 He spent most of his time at night observing stars 已經用動詞說過同一件事，這裡改用名詞再說一次。assistance 也能接 of，但 systematic assistance of star fields 的意思說不通。", "gloss": "觀測", "inner": ["his systematic", "of star fields"], "cross": [{"find": "He spent most of his time at night observing stars", "words": ["observing stars"]}], "coord": [], "lex": [{"find": "In the course of his systematic", "words": ["In the course of"], "kind": "搭配", "note": "in the course of 後面接的名詞，是一段過程或一項活動。"}], "n": 28}, {"cats": "同義呼應", "slot": "adj", "layer": "meaning", "decide": "lex", "why": "空格在 a 和 nebulous star 之間，a 後面疊了兩個形容詞一起修飾 star，所以要填形容詞。", "l1": "上一句說他察覺到 a peculiar object，這一句記錄的是同一個天體，而且說他懷疑它是彗星。空格的形容詞，和上一句形容這個天體的字，是不是在說同一種感覺？", "l2": "a ___ nebulous star：a 後面可以疊兩個形容詞一起修飾 star。空格要和上一句 a peculiar object 的 peculiar 意思相近，也就是用另一個字重講同一個特徵。", "final": "a strange nebulous star（一顆奇特的雲霧狀星體）：Longman 的 strange 第 1 個意思是 unusual or surprising, especially in a way that is difficult to explain or understand；Merriam-Webster 第 1a 義是 different from what is usual, ordinary, or expected。上一句 he detected a peculiar object，而 Longman 解釋 peculiar 的第 1 個意思，用的正是 strange, unfamiliar, or a little surprising；這一句用 strange 回應 peculiar，重講同一個天體不尋常的地方。undetected 放進來和上一句的 he detected 互相矛盾，因為他已經察覺到這個天體了；cloudy 雖然放得進文法位置，卻不是在呼應上一句的 peculiar。", "gloss": "奇特的", "inner": ["nebulous star", "a note about"], "cross": [{"find": "he detected a peculiar object", "words": ["a peculiar object"]}], "coord": [], "lex": [{"find": "that he “suspected to be a comet.”", "words": ["suspected"], "kind": "語意範圍", "note": "他當時只是懷疑它是彗星，表示這個天體看起來和他熟悉的星星不一樣。"}], "n": 29}, {"cats": "字詞搭配", "slot": "v", "layer": "meaning", "decide": "meaning", "form": "過去式", "formWhy": "主詞 Herschel 後面沒有 have 或 has，而且前面 Since the object moved 說的是過去的事，所以是過去式（這個字的過去式與過去分詞同形）", "why": "主詞 Herschel 後面要接動詞，後面的 in this belief 是介系詞片語，所以空格是動詞。", "l1": "Since the object moved during the next few nights, Herschel ___ in this belief.：前面他記下自己懷疑它是彗星，這個看法在接下來幾個晚上有沒有改變？Since 帶出理由：天體持續移動，Herschel 對 this belief 的態度是什麼？", "l2": "___ in this belief：動詞後面接 in 再接 this belief，是動詞和介系詞的搭配。主詞是 Herschel，說的是過去的事，所以是過去式。把動詞堆的三個字放進來，看哪一個能接 in this belief。", "final": "Herschel persisted in this belief（Herschel 仍然堅持這個看法）：Longman 的 persist 第 1 個意思是 to continue to do something, although this is difficult, or other people oppose it，例句 He persisted in his refusal to admit responsibility.；Merriam-Webster 第 1 義是 to go on resolutely or stubbornly in spite of opposition, importunity, or warning，並有例句 Must you persist in making that noise?。this belief 指前一句 suspected to be a comet 的看法，Since 子句說天體在接下來幾個晚上持續移動，所以他繼續相信自己的判斷。identified 和 polished 放進 Herschel ___ in this belief 意思都讀不通。", "gloss": "堅持不變", "inner": ["in this belief"], "cross": [{"find": "that he “suspected to be a comet.”", "words": ["suspected to be a comet"]}], "coord": [], "lex": [{"find": "Since the object moved during the next few nights", "words": ["Since"], "kind": "轉折", "note": "Since 引出理由：天體在接下來幾個晚上真的移動了，所以 Herschel 對先前的看法會有什麼反應。"}], "n": 30}], "answers": {"21": "G", "22": "A", "23": "C", "24": "H", "25": "E", "26": "F", "27": "D", "28": "J", "29": "B", "30": "I"}, "unused": {}, "note": "本篇出自大考中心公布的參考試卷，不是正式考試的試題，沒有考生作答資料。", "topics": [{"say": "赫歇爾靠音樂維生，卻是業餘天文學家心中的典範。", "find": "If amateur astronomers look to someone as their ideal", "words": ["their ideal"], "opts": [{"t": "赫歇爾靠音樂維生，卻是業餘天文學家心中的典範。", "ok": true, "why": ""}, {"t": "赫歇爾最大的成就，在於親手磨出兩百多面望遠鏡用的反射鏡。", "ok": false, "why": "磨出兩百多面鏡子只是文中交代他如何工作的細節（more than two hundred of them），並不是全文要說的重點；文章第一句 it is undoubtedly William Herschel 說的是他是業餘天文學家的典範，鏡子只是用來舉證的例子。"}, {"t": "赫歇爾放棄音樂工作之後，才轉而成為一位業餘天文學家。", "ok": false, "why": "文中用 By night he was an astronomer 說夜裡他是天文學家，而前面他還在教堂和樂團做音樂，兩種身分是同時並行的，並沒有說他放棄音樂之後才轉行。"}]}], "structure": "這是一篇人物側寫，先下判斷、再舉證。第一句直接說，業餘天文學家心中的典範非 William Herschel 莫屬，後面每一句都在替這個判斷找證據。接著用 By day / By night 的對照寫出他的雙重生活：白天是音樂家（先在德國樂團，後來在 Bath 的管弦樂團、教堂和音樂課），夜裡天氣晴朗是天文學家，天上有雲就改當製鏡工匠，親手磨出兩百多面鏡子。然後寫他整晚看星星，身旁有妹妹 Caroline 的協助，並搜尋尚未被發現的天體、整理星表，帶出 1774 年的獵戶座大星雲。最後收在 1781 年那則疑似彗星的紀錄：Since 引出理由，說明他為什麼堅持原來的看法，再接上他向皇家學會提交論文。", "lessons": ["第 21、22 題是一組：a musician by ___ 和 By ___ , that is. 要放在一起讀。先看下一句的 By night，by day 和 by night 是成對的說法，所以第 22 題放 day；第 21 題的 a musician by ___ 是在介紹他的身分，Longman 在 profession 底下列出 by profession 的用法（Johnson was a barrister by profession.），破折號後面 first … then … 再一路列出他的音樂工作，所以放 profession。如果兩格放反，第 21 題的 a musician by day 雖然也說得通，第 22 題卻會變成 By profession, that is.，和後面的 By night 對不起來。", "動詞堆的 polished、identified、persisted 都是 -ed 結尾，過去式與過去分詞同形，光看形式分不開，要靠前後文。第 24 題看 and：ground and ___ 是兩個平行的過去式，共用 the mirrors 當受詞。第 27 題看 have since：現在完成式，而且 which 代表 the Great Nebula，後面接 as a “nursery”，是 identify … as … 的句型。第 30 題看 in this belief：動詞加 in 的搭配，persist in 最合。", "形容詞堆的三格都要靠前後文的呼應或對比來分。第 23 題與 when skies were clear 平行，空格要和 clear 相反；第 26 題前面是 as yet，常搭配帶否定語氣的形容詞，undetected 本身帶 un-，說的是還沒被找到；第 29 題要回頭看上一句的 a peculiar object，用意思相近的字重講同一個天體。要注意 undetected 放進第 29 題會和 he detected 互相矛盾。", "名詞堆的第 25 題與第 28 題都是「名詞加 of …」，但 of 的意思不同：the faithful ___ of his sister Caroline 的 of 後面是給予的人，his systematic ___ of star fields 的 of 後面是被處理的對象。看到 of 時，先判斷後面接的是做的人還是被做的東西，再決定名詞。第 28 題還可以回頭看前面 He spent most of his time at night observing stars，動詞已經說過一次同一件事。", "polished 在 Longman 和 Merriam-Webster 都另列形容詞（例如 highly polished boots、a polished performance），所以學生可能把它放進形容詞堆的第 23、29 題。不過 when they were polished 說不出天空的狀態，a polished nebulous star 也和上一句的 peculiar 對不上，意思都不通；兩可字要先看形式，再用上下文排除。"], "optForms": {"A": {"n": ["單數", "不可數"]}, "D": {"v": ["過去式", "過去分詞"]}, "E": {"n": ["不可數"]}, "G": {"n": ["單數"]}, "H": {"v": ["過去式", "過去分詞"]}, "I": {"v": ["過去式", "過去分詞"]}, "J": {"n": ["單數", "不可數"]}}, "flags": ["H"], "altOf": {"H": ["adj"]}};
+function clueSentences(s){
+  // 切句規則與資料檔產生時相同：句末標點後接空白，下一個字是大寫字母、引號、左括號或空格編號
+  const out = []; let start = 0, m; const re = /([.!?\u201d"])\s+(?=[A-Z\u201c"(\[])/g;
+  while((m = re.exec(s))){
+    // 縮寫（U.S.、Mr.、Dr. 等）後面的句點不算句末
+    if(m[1] === '.' && /(\b(?!(?:B\.C|A\.D|a\.m|p\.m)\.$)[A-Za-z]\.[A-Za-z]\.|\b(?:Mr|Mrs|Ms|Dr|St|Jr|Sr|Mt|Prof|Gov|Gen|Capt|Lt|Col|Sen|Rev|Ft|Fig|vs)\.|(?:^|[\s(“\"‘—])[A-HJ-Z]\.)$/.test(s.slice(0, m.index + 1))) continue;
+    out.push([start, m.index + 1]); start = m.index + m[0].length;
+  }
+  out.push([start, s.length]);
+  return out;
+}
+function clueAddWords(s, range, words, cls, marks){
+  const seg = s.slice(range[0], range[1]);
+  (words || []).forEach(w => { const i = seg.indexOf(w); if(i >= 0) marks.push([range[0] + i, range[0] + i + w.length, cls]); });
+}
+
+
+const GROUPS = {v:'動詞', n:'名詞', adj:'形容詞', adv:'副詞（含轉承副詞）', conj:'連接詞', other:'其他'};
+const GFULL = {v:'動詞（原形、第三人稱單數、過去式、V-ing、過去分詞）', n:'名詞（單數、複數、不可數）', adj:'形容詞', adv:'副詞（含轉承副詞）', conj:'連接詞', other:'其他（介系詞、代名詞等）'};
+const FORMS = {v:['原形','第三人稱單數','過去式','V-ing','過去分詞'], n:['單數','複數','不可數']};
+const GORDER = ['v','n','adj','adv','conj','other'].filter(g => Object.values(DATA.groupOf).indexOf(g) >= 0);
+function zero(){ const o = {}; GORDER.forEach(g => o[g] = 0); return o; }
+const ALT = DATA.altOf || {};
+function inPile(l, g){ return DATA.groupOf[l] === g || (ALT[l] || []).indexOf(g) >= 0; }
+function ambLabel(l){
+  const gs = GORDER.filter(g => inPile(l, g));
+  return gs.map(g => { const f = ((DATA.optForms[l] || {})[g] || []); return GROUPS[g] + (FORMS[g] && f.length ? '（'+f.join('、')+'）' : ''); }).join('或');
+}
+function formReq(n){ const b = BL[n]; return !!b.form && letters.some(l => inPile(l, b.slot) && !formOK(l, n)); }
+function slotLab(n){ return GROUPS[BL[n].slot] + (formReq(n) ? '・' + BL[n].form : ''); }
+function formOK(l, n){ const b = BL[n]; if(!b.form) return true; const f = (DATA.optForms[l] || {})[b.slot]; return !!f && f.indexOf(b.form) >= 0; }
+const letters = Object.keys(DATA.options);
+const blankNums = DATA.blanks.map(b => b.n);
+const BL = {}; DATA.blanks.forEach(b => BL[b.n] = b);
+const NOPT = letters.length, EXTRA = letters.length - blankNums.length, NOPTZH = ({10:'十',12:'十二'})[NOPT] || String(NOPT);
+const NEED = {}; GORDER.forEach(g => NEED[g] = DATA.blanks.filter(b => b.slot === g).length);
+
+let stage = 0;            // 0 抓主旨　1 標詞性、分堆　3 拼
+let topicDone = {}, topicSt = {}, topicRev = {};
+function curTopic(){ for(let i = 0; i < DATA.topics.length; i++) if(!topicDone[i]) return i; return null; }
+function paraName(i){ const m = DATA.paras[i].label.match(/^【([^】]*)】/); return m ? m[1] : '第 '+(i+1)+' 段'; }
+let labeled = {};         // 題號 -> true（詞性與形式都標對）
+let slotOK = {};          // 題號 -> 詞性標對了
+let assign = {};          // 選項字母 -> 'v'|'n'|'adj'（學生自己分的）
+let sortTries = 0, sortMsg = '', flashBlanks = false;
+let placed = {}, revealed = {};
+let sel = null;
+let st = {};              // 題號 -> {tried:[], hint:0, wrongs:[]}
+function S(n){ return st[n] || (st[n] = {tried:[], hint:0, wrongs:[]}); }
+function esc(str){ return String(str).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+
+const PS = DATA.paras.map(p => p.segs.map(seg => seg[1]==='blank' ? '['+seg[0]+']' : seg[0]).join(''));
+
+/* 依「含有這段文字」找出句子；回傳 [段落索引, 句範圍] */
+function findSentence(find){
+  for(let k = 0; k < PS.length; k++){
+    const r = clueSentences(PS[k]).find(q => PS[k].slice(q[0], q[1]).indexOf(find) >= 0);
+    if(r) return [k, r];
+  }
+  return null;
+}
+
+function computeMarks(n){
+  const marks = PS.map(() => []);
+  if(stage === 0){
+    const ci = curTopic();
+    if(ci != null && (topicSt[ci] || {tried:[]}).tried.length){ const tp = DATA.topics[ci]; const f = findSentence(tp.find); if(f) clueAddWords(PS[f[0]], f[1], tp.words, 'cl-k', marks[f[0]]); }
+    return marks;
+  }
+  if(n == null) return marks;
+  const b = BL[n], s = S(n);
+  const pi = PS.findIndex(t => t.indexOf('['+n+']') >= 0);
+  if(pi < 0) return marks;
+  const sents = clueSentences(PS[pi]);
+  const tag = '['+n+']';
+  const target = sents.find(r => PS[pi].slice(r[0], r[1]).indexOf(tag) >= 0);
+  const showIn = labeled[n] || s.tried.length > 0 || placed[n];
+  const showMore = (stage === 3 && s.hint >= 1) || placed[n];
+  const showCoord = (stage === 3 && s.hint >= 2) || placed[n];
+  if(target && showIn) clueAddWords(PS[pi], target, b.inner, 'cl-a', marks[pi]);
+  if(showMore){
+    (b.cross || []).forEach(x => { const f = findSentence(x.find); if(f) clueAddWords(PS[f[0]], f[1], x.words, 'cl-b', marks[f[0]]); });
+    (b.lex || []).forEach(x => { const f = findSentence(x.find); if(f) clueAddWords(PS[f[0]], f[1], x.words, 'cl-l', marks[f[0]]); });
+  }
+  if(showCoord){
+    (b.coord || []).forEach(x => { const f = findSentence(x.find); if(f) clueAddWords(PS[f[0]], f[1], x.words, x.kind === 'trap' ? 'cl-t' : 'cl-c', marks[f[0]]); });
+  }
+  return marks;
+}
+
+function renderPassage(){
+  const all = computeMarks(sel);
+  const doneAll = Object.keys(placed).length >= blankNums.length;
+  let html = '';
+  PS.forEach((s, pi) => {
+    const marks = all[pi].slice().sort((a, b) => a[0] - b[0]);
+    const re = /\[(\d+)\]/g; let m, last = 0, out = '';
+    const textPart = (a, b) => {
+      let p = a, h = '';
+      marks.forEach(([x, y, cls]) => {
+        const xx = Math.max(x, a), yy = Math.min(y, b);
+        if(yy <= xx || xx < p) return;
+        h += esc(s.slice(p, xx)) + '<mark class="'+cls+'">' + esc(s.slice(xx, yy)) + '</mark>';
+        p = yy;
+      });
+      return h + esc(s.slice(p, b));
+    };
+    while((m = re.exec(s))){
+      if(m.index > last) out += textPart(last, m.index);
+      const n = Number(m[1]);
+      const cls = 'blank' + (placed[n] ? ' filled' : (labeled[n] ? ' labeled' : '')) + (sel === n ? ' sel' : '') + (flashBlanks && !labeled[n] && !placed[n] ? ' flash' : '');
+      const label = placed[n] ? esc(DATA.options[placed[n]]) : String(n) + (labeled[n] ? '<span class="cls">'+slotLab(n)+'</span>' : '');
+      out += '<button type="button" class="'+cls+'" data-n="'+n+'"'+(stage === 0 ? ' disabled' : '')+' aria-label="第 '+n+' 題'+(labeled[n] ? '，'+slotLab(n) : '')+(placed[n] ? '，已放 '+esc(DATA.options[placed[n]]) : '')+'">'+label+'</button>';
+      last = m.index + m[0].length;
+    }
+    if(last < s.length) out += textPart(last, s.length);
+    const lab = doneAll ? DATA.paras[pi].label : (DATA.paras[pi].label.match(/^【[^】]*】/) || [''])[0];
+    html += '<p class="plabel">'+esc(lab)+'</p><p'+(stage === 0 && pi === curTopic() ? ' class="pcur"' : '')+'>'+out+'</p>';
+  });
+  document.getElementById('passage').innerHTML = html;
+  document.querySelectorAll('button.blank').forEach(btn => btn.addEventListener('click', () => select(Number(btn.dataset.n))));
+}
+
+/* 還沒放的選項裡，這個空格那一堆還剩幾個 */
+function remaining(n){
+  const g = BL[n].slot;
+  return letters.filter(l => inPile(l, g) && formOK(l, n) && !Object.values(placed).includes(l));
+}
+function leastCandidates(){
+  let best = 99, list = [];
+  blankNums.filter(n => !placed[n]).forEach(n => {
+    const k = remaining(n).length;
+    if(k < best){ best = k; list = [n]; } else if(k === best) list.push(n);
+  });
+  return {k: best, list};
+}
+
+function renderTray(){
+  const title = document.getElementById('trayTitle'), el = document.getElementById('tray');
+  document.getElementById('trayCard').classList.toggle('hidden', stage === 0);
+  if(stage === 0){ el.innerHTML = ''; return; }
+  if(stage === 1){
+    title.textContent = '分堆：把'+NOPTZH+'個選項放進'+['','','','三','四','五','六'][GORDER.length]+'堆';
+    const cnt = zero(); Object.values(assign).forEach(g => cnt[g]++);
+    const allL = Object.keys(labeled).length >= blankNums.length;
+    const needNow = zero(); blankNums.forEach(n => { if(labeled[n]) needNow[BL[n].slot]++; });
+    let h = '<div class="counts">' + GORDER.map(g => { const okc = EXTRA ? cnt[g] >= NEED[g] : cnt[g] === NEED[g]; return '<span class="count'+(allL && okc ? ' ok' : '')+'">'+GROUPS[g]+' 已放 '+cnt[g]+' 個'+(allL ? (EXTRA ? '（這一類有 '+needNow[g]+' 格'+(okc ? ' ✓' : ' ＜') : '（需要 '+needNow[g]+' 個'+(okc ? ' ✓' : ' ≠'))+'）' : '')+'</span>'; }).join('') + '</div>';
+    const nL = Object.keys(labeled).length, nA = Object.keys(assign).length;
+    h += '<ol class="steps2"><li><b>點文章裡的空格</b>（'+blankNums[0]+'～'+blankNums[blankNums.length-1]+'），在面板選這一格的詞性。</li><li><b>把下面每個選項放進一堆</b>，'+(EXTRA ? '每一堆的選項數，不能少於這種詞性的空格數。選項比空格多 '+EXTRA+' 個，多出來的是用不到的誘答選項，會在某一堆多出來。' : '每一堆的選項數，要剛好等於這種詞性的空格數。')+'</li></ol>';
+    h += '<div class="progress"><span class="pg'+(nL >= blankNums.length ? ' ok' : '')+'">詞性已標 '+nL+'／'+blankNums.length+'</span><span class="pg'+(nA >= letters.length ? ' ok' : '')+'">選項已分堆 '+nA+'／'+letters.length+'</span></div>';
+    if(DATA.flags.length) h += '<p class="next">標「兩類皆可」的字，可以當兩種詞性：放進你覺得合適的那一堆就好，只要每一堆的數量對得上，兩種都算對。</p>';
+    letters.forEach(l => {
+      h += '<div class="sortrow'+(GORDER.length > 4 ? ' many' : '')+'"><span class="w"><span class="letter">('+l+')</span>'+esc(DATA.options[l])+(DATA.flags.indexOf(l) >= 0 ? ' <span class="flag">兩類皆可</span><span class="ambnote">'+esc(ambLabel(l))+'</span>' : '')+'</span>';
+      GORDER.forEach(g => { h += '<button type="button" class="pill'+(assign[l] === g ? ' on' : '')+'" data-l="'+l+'" data-g="'+g+'" aria-pressed="'+(assign[l] === g)+'">'+GROUPS[g]+'</button>'; });
+      h += '</div>';
+    });
+    h += '<div class="btnrow"><button type="button" class="btn" id="checkBtn">核對分堆</button>' + (sortTries >= 2 ? '<button type="button" class="btn ghost" id="autoSortBtn">直接分好</button>' : '') + '</div>';
+    h += '<div class="skipbox"><button type="button" class="btn ghost" id="skipBtn">略過這一步，直接拼</button><p class="next">已經很熟詞性的人可以略過：空格和選項會照正確的詞性幫你分好，直接進第 3 步用上下文拼答案。</p></div>';
+    if(sortMsg) h += '<div class="msg">'+sortMsg+'</div>';
+    el.innerHTML = h;
+    el.querySelectorAll('.pill').forEach(p => p.addEventListener('click', () => { assign[p.dataset.l] = p.dataset.g; sortMsg = ''; renderTray(); }));
+    document.getElementById('checkBtn').addEventListener('click', checkSort);
+    document.getElementById('skipBtn').addEventListener('click', skipStep2);
+    const ab = document.getElementById('autoSortBtn'); if(ab) ab.addEventListener('click', () => { assign = Object.assign({}, DATA.groupOf); autoSorted = true; toStage3('已幫你分好。'); });
+    return;
+  }
+  // stage 3
+  title.textContent = '拼圖盤';
+  const n = sel, s = n != null ? S(n) : null;
+  const activeGroup = (n != null && !placed[n]) ? BL[n].slot : null;
+  let html = '';
+  GORDER.forEach(g => {
+    const ls = letters.filter(l => inPile(l, g));
+    html += '<div class="pile"><div class="pname'+(activeGroup===g?' on':'')+'">'+GFULL[g]+(activeGroup===g?'<br>▼ 這一題從這一堆選':'')+'</div><div class="chips">';
+    ls.forEach(l => {
+      const usedAt = Object.keys(placed).find(k => placed[k] === l);
+      const dimForm = activeGroup === g && !formOK(l, n);
+      const dim = (activeGroup && activeGroup !== g);
+      const wrongHere = s && s.wrongs.indexOf(l) >= 0;
+      const cls = 'chip' + (usedAt ? ' used' : '') + (dim ? ' dim' : '') + (dimForm ? ' dimf' : '') + (wrongHere ? ' x' : '') + (activeGroup===g && !usedAt && !wrongHere && !dimForm ? ' on' : '');
+      const disabled = (usedAt || dim || dimForm || wrongHere) ? ' disabled' : '';
+      html += '<button type="button" class="'+cls+'" data-l="'+l+'"'+disabled+'><span class="letter">('+l+')</span>'+esc(DATA.options[l])+(usedAt ? '<span class="tag">已放在第 '+usedAt+' 題</span>' : (FORMS[g] && (DATA.optForms[l]||{})[g] && blankNums.some(k => formReq(k) && BL[k].slot === g) ? '<span class="tag">'+esc(DATA.optForms[l][g].join('／'))+(dimForm ? '（形式不合）' : '')+'</span>' : ''))+'</button>';
+    });
+    html += '</div></div>';
+  });
+  el.innerHTML = html;
+  el.querySelectorAll('.chip').forEach(c => c.addEventListener('click', () => pick(c.dataset.l)));
+}
+
+function sentHtml(n){
+  const pi = PS.findIndex(t => t.indexOf('['+n+']') >= 0); if(pi < 0) return '';
+  const ss = PS[pi].split(/(?<=[.!?])\s+/); const s = ss.find(x => x.indexOf('['+n+']') >= 0); if(!s) return '';
+  const h = esc(s).replace(/\[(\d+)\]/g, (m, k) => k === String(n) ? '<b class="gap">'+k+'</b>' : '（'+k+'）');
+  return '<div class="sent"><span class="letter">本句</span>'+h+'</div>';
+}
+/* 跨句、並列線索如果在別的段落，把那一句也列在面板裡，手機上不用往回捲 */
+function crossPanelHtml(n, hint){
+  if(hint == null) hint = 9;
+  const b = BL[n];
+  const pi = PS.findIndex(t => t.indexOf('['+n+']') >= 0);
+  let h = '';
+  const items = [].concat((b.cross || []).map(x => Object.assign({}, x, {cls:'cl-b', lab:'跨句線索'})),
+                          (b.lex || []).map(x => Object.assign({}, x, {cls:'cl-l', lab:'詞彙線索'})),
+                          (hint < 2 ? [] : (b.coord || [])).map(x => Object.assign({}, x, {cls: x.kind === 'trap' ? 'cl-t' : 'cl-c', lab: x.kind === 'trap' ? '並列陷阱' : '並列線索'})));
+  items.forEach(x => {
+    const f = findSentence(x.find); if(!f) return;
+    const text = PS[f[0]].slice(f[1][0], f[1][1]);
+    if(f[0] === pi && x.cls !== 'cl-b' && text.indexOf('['+n+']') >= 0 && stage !== 99) { /* 同一句，已經在文章裡標出 */ }
+    if(f[0] === pi) return;
+    const mk = []; clueAddWords(text, [0, text.length], x.words, x.cls, mk);
+    mk.sort((p, q) => p[0] - q[0]);
+    let out = '', pos = 0;
+    mk.forEach(([a, e, cls]) => { if(a < pos) return; out += esc(text.slice(pos, a)) + '<mark class="'+cls+'">' + esc(text.slice(a, e)) + '</mark>'; pos = e; });
+    out += esc(text.slice(pos));
+    out = out.replace(/\[(\d+)\]/g, (m, d) => placed[d] ? '<b>'+esc(DATA.options[placed[d]])+'</b>' : '（'+d+'）');
+    h += '<p class="clueX '+x.cls+'"><span class="clueXlab">'+x.lab+'</span>'+out+'</p>';
+  });
+  return h;
+}
+function coordNotesHtml(n, withAll){
+  const b = BL[n]; let h = '';
+  (b.coord || []).forEach(x => { h += '<p style="font-size:14px;margin:6px 0 0"><b>'+(x.kind === 'trap' ? '並列陷阱：' : '並列線索：')+'</b>'+esc(x.note)+'</p>'; });
+  return h;
+}
+
+function topicLineHtml(n){
+  const pi = PS.findIndex(t => t.indexOf('['+n+']') >= 0); if(pi < 0 || !DATA.topics[pi]) return '';
+  return '<div class="sent"><span class="letter">這一段</span>'+esc(DATA.topics[pi].say)+'</div>';
+}
+function paraBoxHtml(ci, showKey){
+  const text = PS[ci]; const tp = DATA.topics[ci];
+  const mk = []; if(showKey){ const f = findSentence(tp.find); if(f && f[0] === ci) clueAddWords(text, f[1], tp.words, 'cl-k', mk); }
+  mk.sort((a, b) => a[0] - b[0]);
+  let out = '', pos = 0;
+  mk.forEach(([a, e, cls]) => { if(a < pos) return; out += esc(text.slice(pos, a)) + '<mark class="'+cls+'">' + esc(text.slice(a, e)) + '</mark>'; pos = e; });
+  out += esc(text.slice(pos));
+  out = out.replace(/\[(\d+)\]/g, (m, d) => '（'+d+'）');
+  return '<p class="clueX cl-k">'+out+'</p>';
+}
+function topicPanel(){
+  const ci = curTopic(), k = Object.keys(topicDone).length, total = DATA.topics.length;
+  const tp = DATA.topics[ci], s = topicSt[ci] || {tried:[]};
+  let h = '<div class="h">第 1 步：'+esc(paraName(ci))+'在講什麼？</div>';
+  h += '<p class="next">先讀這一段，再選。已完成 '+k+' / '+total+' 段。</p>';
+  h += paraBoxHtml(ci, s.tried.length > 0);
+  tp.opts.forEach((o, j) => { const x = s.tried.indexOf(j) >= 0; h += '<button type="button" class="btn topicopt'+(x ? ' x' : '')+'" data-j="'+j+'"'+(x ? ' disabled' : '')+'>'+esc(o.t)+'</button>'; });
+  if(s.tried.length){ const lj = s.tried[s.tried.length - 1]; h += '<div class="msg">'+esc(tp.opts[lj].why)+'上面標出來的字，是這一段的關鍵詞。</div>'; }
+  const done = DATA.topics.map((x, i) => topicDone[i] ? '<div class="sent"><span class="letter">'+esc(paraName(i))+'</span>'+esc(x.say)+'</div>' : '').join('');
+  if(done) h += '<p class="next" style="margin-top:12px">已經確認的段落主旨：</p>'+done;
+  return h;
+}
+function chooseTopic(j){
+  const ci = curTopic(); const tp = DATA.topics[ci]; const s = topicSt[ci] || (topicSt[ci] = {tried:[]});
+  if(tp.opts[j].ok){ topicDone[ci] = true; if(curTopic() == null){ stage = 1; sel = null; } }
+  else if(s.tried.indexOf(j) < 0) s.tried.push(j);
+  render(); toPanel();
+}
+function revealTopic(){ const ci = curTopic(); topicRev[ci] = true; topicDone[ci] = true; if(curTopic() == null){ stage = 1; sel = null; } render(); }
+
+function renderPanel(){
+  const el = document.getElementById('panel');
+  if(stage === 0){
+    el.innerHTML = topicPanel();
+    el.querySelectorAll('.topicopt').forEach(b => b.addEventListener('click', () => chooseTopic(Number(b.dataset.j))));
+    return;
+  }
+  if(sel == null){
+    let h = '';
+    if(stage === 1){
+      h = '<div class="h">第 2 步：認識空格與選項（標詞性、分堆）</div><div class="msg ok">各段的主旨都確認了。</div><div style="font-size:14px;color:var(--ink-soft)"><b>詞性只能縮小範圍，不能決定答案</b>：同一堆通常還有好幾個選項放得進去，最後要靠上下文的意思。請做兩件事：（一）點文章裡的數字，標出這一格的詞性；（二）到下面把'+NOPTZH+'個選項各放進一堆。有些字有兩種詞性（標「兩類皆可」），放哪一堆都算對，到下一步由上下文決定放進哪一格。兩件事都做完、分堆核對正確，才能開始放選項。</div>';
+    } else {
+      const lc = leastCandidates();
+      h = '<div class="h">第 3 步：用線索拼答案</div><div style="font-size:14px;color:var(--ink-soft)">點文章裡的數字開始拼。<b>先想這一段的主旨，再找內容線索</b>，最後才看詞性、形式和並列結構。像拼圖先拼邊框：先做剩下選項最少的空格。選項在下方的拼圖盤。</div>';
+      if(lc.list.length) h += '<p class="next" style="margin-top:8px">現在剩下選項最少的空格：第 '+lc.list.join('、')+' 題（那一堆只剩 '+lc.k+' 個選項）。一樣多時，先選線索最明確的。</p>';
+    }
+    el.innerHTML = h; return;
+  }
+  const n = sel, b = BL[n], s = S(n);
+  let h = '<div class="h">第 '+n+' 題</div>' + topicLineHtml(n);
+  if(placed[n]){
+    const l = placed[n];
+    h += '<div class="msg ok"><span class="badge'+(b.layer==='meaning'?' m':'')+'">'+esc(b.cats)+'</span><span class="ans">'+esc(DATA.options[l])+'</span>　'+esc(b.gloss)+(revealed[n]?'（看答案放上去的）':'')+'</div>';
+    h += '<p style="font-size:14.5px;margin:8px 0 0"><b>詞性：</b>'+slotLab(n)+'。'+esc(b.why)+(b.form ? '（形式：'+b.form+'）' : '')+'</p>';
+    h += '<p style="font-size:14.5px;margin:6px 0 0"><b>判斷依據：</b>'+esc(b.final)+'</p>';
+    h += coordNotesHtml(n) + crossPanelHtml(n);
+    el.innerHTML = h; return;
+  }
+  if(slotOK[n] && !labeled[n]){
+    h += sentHtml(n)+'<div class="msg ok"><b>'+GROUPS[b.slot]+'。</b>'+(b.form ? '' : esc(b.why))+'</div><p class="q">這一格的「形式」是？</p><div class="btnrow">';
+    FORMS[b.slot].forEach(f => { h += '<button type="button" class="btn" data-f="'+f+'"'+(s.triedF && s.triedF.indexOf(f)>=0?' disabled':'')+'>'+f+'</button>'; });
+    h += '</div>';
+    if(s.triedF && s.triedF.length) h += '<div class="msg">這一格不是'+s.triedF.join('、')+'。想想主詞、時態，和空格前後的字（'+esc(b.formWhy)+'）。</div>';
+    else h += '<div style="font-size:13.5px;color:var(--ink-soft)">同一種詞性還有不同的形式，例如動詞的過去式、過去分詞，名詞的單數、複數。看空格前後的字判斷。</div>';
+    el.innerHTML = h;
+    el.querySelectorAll('[data-f]').forEach(btn => btn.addEventListener('click', () => chooseForm(btn.dataset.f)));
+    return;
+  }
+  if(!labeled[n]){
+    h += sentHtml(n)+'<p class="q">這個空格的詞性是？</p><div class="btnrow">';
+    GORDER.forEach(g => { h += '<button type="button" class="btn" data-g="'+g+'"'+(s.tried.indexOf(g)>=0?' disabled':'')+'>'+GROUPS[g]+'</button>'; });
+    h += '</div>';
+    if(s.tried.length){
+      const sn = b.slotNote; let note = null;
+      if(typeof sn === 'string'){ if(s.tried.indexOf('n') >= 0) note = sn; }
+      else if(sn){ for(let i = s.tried.length - 1; i >= 0; i--){ if(sn[s.tried[i]]){ note = sn[s.tried[i]]; break; } } }
+      if(note) h += '<div class="msg">'+esc(note)+'</div>';
+      else h += '<div class="msg">這一格不是'+s.tried.map(g=>GROUPS[g]).join('、')+'。再看一次空格前後的字，這一句裡的線索已經標出來（有底色和底線的字）。</div>';
+    }
+    else h += '<div style="font-size:13.5px;color:var(--ink-soft)">詞性只是用來縮小範圍的，看空格前後的字判斷就好。選哪一個，最後還是要靠上下文的意思。</div>';
+    el.innerHTML = h;
+    el.querySelectorAll('[data-g]').forEach(btn => btn.addEventListener('click', () => chooseSlot(btn.dataset.g)));
+    return;
+  }
+  h += sentHtml(n)+'<div class="msg ok"><b>'+slotLab(n)+'。</b>'+esc(b.why)+'</div>';
+  if(stage < 3){ el.innerHTML = h; return; }
+  const rem = remaining(n);
+  h += '<p class="q">從下面選一個放進這一格。符合這個形式的，還有 '+rem.length+' 個選項。</p><div class="chips">';
+  rem.forEach(l => { if(s.wrongs.indexOf(l) >= 0) return; h += '<button type="button" class="chip" data-l="'+l+'"><span class="letter">('+l+')</span>'+esc(DATA.options[l])+'</button>'; });
+  h += '</div><button type="button" class="btn ghost totray" id="toTray">看完整拼圖盤 ↓</button>';
+  if(s.wrongs.length){
+    const lw = s.wrongs[s.wrongs.length - 1];
+    h += '<div class="msg">「'+esc(DATA.options[lw])+'」放不進這一格：詞性相符，但意思或搭配不合。先回頭想這一段在講什麼；想不出來時，可以按提示。</div>';
+  }
+  if(s.hint >= 1) h += '<p style="font-size:14.5px;margin:8px 0"><b>提示 1，內容線索：</b>'+esc(b.l1)+'</p>';
+  if(s.hint >= 2) h += '<p style="font-size:14.5px;margin:8px 0"><b>提示 2，結構與搭配：</b>'+esc(b.l2)+'</p>' + coordNotesHtml(n);
+  if(s.hint >= 1) h += crossPanelHtml(n, s.hint);
+  h += '<div class="btnrow">';
+  if(s.hint === 0) h += '<button type="button" class="btn ghost" id="hintBtn">提示 1：先看內容線索</button>';
+  else if(s.hint === 1) h += '<button type="button" class="btn ghost" id="hintBtn">提示 2：再看結構與搭配</button>';
+  if(s.wrongs.length >= 2 || s.hint >= 2) h += '<button type="button" class="btn ghost" id="ansBtn">直接看答案</button>';
+  h += '</div>';
+  el.innerHTML = h;
+  el.querySelectorAll('.chip').forEach(c => c.addEventListener('click', () => pick(c.dataset.l)));
+  const hb = document.getElementById('hintBtn'); if(hb) hb.addEventListener('click', () => { S(n).hint++; render(); });
+  const ab = document.getElementById('ansBtn'); if(ab) ab.addEventListener('click', () => { place(n, DATA.answers[n], true); });
+}
+
+function renderProg(){
+  const k = Object.keys(placed).length, t = blankNums.length;
+  const txt = stage === 0 ? '第 1 步　已確認主旨 '+Object.keys(topicDone).length+' / '+DATA.topics.length+' 段' : (stage === 1 ? '第 2 步　已標詞性 '+Object.keys(labeled).length+' / '+t+' 格；已分堆 '+Object.keys(assign).length+' / '+letters.length+' 個' : '第 3 步　已拼好 '+k+' / '+t+' 題');
+  document.getElementById('progText').textContent = txt;
+}
+
+let autoSorted = false, skipped2 = false;
+function renderDone(){
+  const el = document.getElementById('done');
+  if(Object.keys(placed).length < blankNums.length){ el.classList.add('hidden'); return; }
+  const firstShow = el.classList.contains('hidden');
+  el.classList.remove('hidden');
+  const DEC = [['lex','靠詞彙線索（同義、換字重述、同一個語意範圍）'],['coord','靠並列線索'],['meaning','靠這一句或這一段的意思'],['form','靠詞性、形式與搭配就能排除其他選項']];
+  const list = a => a.map(n => '第 '+n+' 題').join('、');
+  const nRev = Object.keys(revealed).length;
+  let h = '<h3>'+(nRev ? '全部放好了。' : '拼好了。')+'這十題是靠什麼判斷的</h3>';
+  h += '<p style="margin:0 0 8px;font-size:14.5px"><b>各段主旨：</b></p><ul>' + DATA.topics.map((x, i) => '<li><b>'+esc(paraName(i))+'：</b>'+esc(x.say)+'</li>').join('') + '</ul>';
+  h += '<p style="margin:0 0 8px;font-size:14.5px"><b>全文結構：</b>'+esc(DATA.structure)+'</p><ul>';
+  DEC.forEach(d => { const a = blankNums.filter(n => BL[n].decide === d[0]); if(a.length) h += '<li><b>'+d[1]+'：</b>'+list(a)+'（共 '+a.length+' 題）。</li>'; });
+  h += '</ul><p style="margin:12px 0 8px;font-size:14.5px"><b>這一回要注意：</b></p><ul>';
+  DATA.lessons.forEach(t => { h += '<li>'+esc(t)+'</li>'; });
+  const LAST = '真正作答時，一題放錯會連帶影響其他題，所以全部放好後，要把整篇再讀一遍：每一格填進去，都要扣住它那一段的主旨，整段讀起來也要通順。';
+  if(EXTRA > 0){
+    const un = letters.filter(l => Object.values(placed).indexOf(l) < 0);
+    h += '<li><b>選項比空格多 '+EXTRA+' 個。</b>每個選項只能用一次，'+blankNums.length+' 格放完以後，剩下的 '+un.length+' 個是用不到的誘答選項。'+LAST+'</li></ul>';
+    h += '<p style="margin:12px 0 8px;font-size:14.5px"><b>這次沒用到的選項，為什麼不選：</b></p><ul>';
+    un.forEach(l => { const u = (DATA.unused || {})[l] || {}; h += '<li><b>('+l+') '+esc(DATA.options[l])+'</b>'+(u.gloss ? '（'+esc(u.gloss)+'）' : '')+'：'+esc(u.why || '')+'</li>'; });
+    h += '</ul>';
+  } else {
+    h += '<li><b>每個選項只能用一次。</b>'+LAST+'</li></ul>';
+  }
+  h += '<p class="next">'+(nRev ? '你用了「直接看答案」'+nRev+' 次'+(skipped2 ? '，第 2 步選擇略過' : autoSorted ? '，分堆用了「直接分好」' : '')+'。' : (skipped2 ? '第 2 步選擇略過。' : autoSorted ? '分堆用了「直接分好」。' : ''));
+  h += '大考中心的命題研習資料提到，文意選填會避免只憑詞性、單複數或局部片語就能作答；所以真正考試時，常有同一堆好幾個選項都放得進去的情形，要靠上下文的意思判斷。</p>';
+  el.innerHTML = h;
+  if(firstShow) setTimeout(() => el.scrollIntoView({behavior:'smooth', block:'start'}), 50);
+}
+
+function dockPanel(){
+  const panel = document.getElementById('panel'), tray = document.getElementById('trayCard');
+  let host = null;
+  if(stage === 0) host = document.querySelector('#passage p.pcur');
+  else if(sel != null){ const b = document.querySelector('button.blank.sel'); host = b && b.closest('p'); }
+  if(host) host.after(panel); else tray.parentNode.insertBefore(panel, tray);
+}
+function render(){
+  const panel = document.getElementById('panel'), tray = document.getElementById('trayCard');
+  tray.parentNode.insertBefore(panel, tray);
+  renderPassage(); renderTray(); renderPanel(); renderProg(); renderDone(); dockPanel();
+}
+
+function select(n){ if(stage === 0) return; sel = n; render(); document.getElementById('panel').scrollIntoView({behavior:'smooth', block:'nearest'}); }
+function toPanel(){ const p = document.getElementById('panel'); if(p && p.scrollIntoView) p.scrollIntoView({behavior:'smooth', block:'nearest'}); }
+
+function chooseForm(f){
+  const s = S(sel); s.triedF = s.triedF || [];
+  if(BL[sel].form === f || (BL[sel].formAlt || []).indexOf(f) >= 0){ labeled[sel] = true; } else if(s.triedF.indexOf(f) < 0){ s.triedF.push(f); }
+  render();
+}
+function chooseSlot(g){
+  const s = S(sel);
+  if(BL[sel].slot === g){
+    slotOK[sel] = true;
+    if(!FORMS[g] || !formReq(sel)) labeled[sel] = true;
+  } else { if(s.tried.indexOf(g) < 0) s.tried.push(g); }
+  render();
+}
+
+function checkSort(){
+  flashBlanks = false;
+  const nUn = blankNums.length - Object.keys(labeled).length;
+  if(nUn > 0){
+    sortMsg = '還有 '+nUn+' 格沒標詞性。請點文章裡閃動的空格（'+blankNums.filter(n => !labeled[n]).join('、')+'），在面板選這一格的詞性。十格都標完，才能核對分堆。';
+    flashBlanks = true; setTimeout(() => { flashBlanks = false; }, 3500);
+    render(); const bl = document.querySelector('button.blank.flash'); if(bl && bl.scrollIntoView) bl.scrollIntoView({block:'center', behavior:'smooth'});
+    return;
+  }
+  const un = letters.filter(l => !assign[l]);
+  if(un.length){ sortMsg = '還有 '+un.length+' 個選項沒有分堆。'; renderTray(); return; }
+  sortTries++;
+  const cnt = zero(); Object.values(assign).forEach(g => cnt[g]++);
+  const off = GORDER.filter(g => EXTRA ? cnt[g] < NEED[g] : cnt[g] !== NEED[g]);
+  const amb = DATA.flags.map(l => DATA.options[l]).join('、');
+  if(off.length){
+    sortMsg = '數量對不上：' + off.map(g => GROUPS[g]+'堆現在有 '+cnt[g]+' 個，但詞性是'+GROUPS[g]+'的空格有 '+NEED[g]+' 格').join('；') + (EXTRA ? '，選項不能比空格少。' : '。') + (amb ? '標「兩類皆可」的字（'+esc(amb)+'）可以放進兩種詞性的任一堆，想想它們放進文章哪一格、在那裡當什麼詞。' : '回到文章，看每個字可能放進哪一格。');
+    renderTray(); return;
+  }
+  const wrong = letters.filter(l => !inPile(l, assign[l]));
+  if(wrong.length){
+    sortMsg = (EXTRA ? '每一堆的數量夠了' : '每一堆的數量對了')+'，但還有字放錯堆。標「兩類皆可」的字，只能放進它標出的那兩種詞性；其他的字，回到文章看它可能放進哪一格、在那裡當什麼詞。';
+    renderTray(); return;
+  }
+  toStage3('分對了。');
+}
+function skipStep2(){
+  blankNums.forEach(n => { labeled[n] = true; slotOK[n] = true; });
+  assign = Object.assign({}, DATA.groupOf); skipped2 = true; toStage3('');
+}
+function toStage3(msg){ stage = 3; sel = null; sortMsg = ''; render(); }
+
+function place(n, l, viaReveal){ placed[n] = l; if(viaReveal) revealed[n] = true; render(); }
+
+function pick(l){
+  if(sel == null || placed[sel] || stage !== 3) return;
+  const s = S(sel);
+  if(l === DATA.answers[sel]){ place(sel, l, false); }
+  else { if(s.wrongs.indexOf(l) < 0) s.wrongs.push(l); render(); }
+}
+
+document.getElementById('resetBtn').addEventListener('click', () => { stage = 0; topicDone = {}; topicSt = {}; topicRev = {}; labeled = {}; slotOK = {}; assign = {}; sortTries = 0; sortMsg = ''; autoSorted = false; skipped2 = false; placed = {}; revealed = {}; sel = null; st = {}; render(); });
+
+document.getElementById('sub').textContent = DATA.sub;
+if(DATA.note){ const nd = document.createElement('div'); nd.className = 'sub'; nd.textContent = DATA.note; document.getElementById('sub').after(nd); }
+document.querySelectorAll('[data-nopt]').forEach(e => e.textContent = NOPTZH+'個');
+if(EXTRA > 0) document.querySelectorAll('[data-rule]').forEach(e => e.textContent = '選項比空格多 '+EXTRA+' 個，多出來的是用不到的誘答選項，所以每一堆的選項數，不能少於那一種詞性的空格數。');
+document.getElementById('lnkFull').href = 'https://staresto-create.github.io/passage-completion/#full-' + DATA.id;
+render();
+document.addEventListener('click', e => { if(e.target && e.target.id === 'toTray'){ const t = document.getElementById('trayCard'); if(t) t.scrollIntoView({behavior:'smooth', block:'start'}); } });
+</script>
+</body>
+</html>

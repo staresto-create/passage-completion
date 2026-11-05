@@ -817,7 +817,7 @@ function startFromQHash(){
   renderSingle();
   return true;
 }
-const PUZZLE_IDS = new Set(["y100", "y101", "y102", "y103", "y104", "y105", "y106", "y107", "y108", "y109", "y110", "y110t", "y111r", "y112", "y113", "y114", "y115", "y90", "y91", "y91b", "y92", "y92b", "y93", "y94", "y95", "y95r", "y96", "y97", "y98", "y99", "y99r"]);
+const PUZZLE_IDS = new Set(["y100", "y101", "y102", "y103", "y104", "y105", "y106", "y107", "y108", "y109", "y110", "y110t", "y111r", "y112", "y113", "y114", "y115", "y90", "y91", "y91b", "y92", "y92b", "y93", "y94", "y95", "y95r", "y96", "y97", "y98", "y99", "y99r", "z100", "z101", "z102", "z103", "z104", "z105", "z106", "z107", "z108", "z109", "z109b", "z110", "z91", "z92", "z93", "z93b", "z94", "z95", "z96", "z97", "z98", "z99", "zref107", "zref95", "zref99"]);
 /* #full- 整篇連結：落在這一篇的全文模式。只讀 hash、不寫 hash。 */
 function startFromFullHash(){
   const m = decodeURIComponent(location.hash || '').match(/^#full-(.+)$/);

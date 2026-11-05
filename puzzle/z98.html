@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>文意選填：用上下文拼圖</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500;700;900&family=Noto+Sans+TC:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{--pill-edge:#8F8670;
+    --paper:#F6F1E4; --paper-card:#FFFDF7; --ink:#221F1A; --ink-soft:#5B5648;
+    --rule:#DCD3BB; --crimson:#AE3626; --sage:#3E6E52; --gold:#A9812E;
+    --surface:#fff; --tint-crimson:#FBF1EE; --tint-sage:#E7F3EA; --tint-warm:#FBF6E8; --tint-sand:#F1EADA;
+    --link:#9C2C1E; --foot:#6f685d; --on-ink:#fff;
+    --glow:rgba(174,54,38,.05); --grid-line:rgba(34,31,26,0.025);
+    --shadow:0 1px 0 rgba(34,31,26,.06), 0 8px 24px rgba(34,31,26,.08);
+    --cl-a-bg:#FAD9CC; --cl-a-line:#AE3626; --cl-b-bg:#E2D8F3; --cl-b-line:#6A4FA3;
+    --cl-c-bg:#CFEAE0; --cl-c-line:#23705A; --cl-t-bg:#FBD9B5; --cl-t-line:#A24E0E;
+    --cl-l-bg:#D6E6F6; --cl-l-line:#2B63A8; --cl-k-bg:#F3E3AE; --cl-k-line:#A9812E;
+    color-scheme:light;
+  }
+  @media screen and (prefers-color-scheme: dark){
+    :root{--pill-edge:#8A8272;
+      --paper:#1B1916; --paper-card:#26231F; --ink:#EDE7D8; --ink-soft:#B8B0A0; --rule:#4C463B;
+      --crimson:#E57B68; --sage:#82C09C; --gold:#DDA94F;
+      --surface:#2D2A25; --tint-crimson:#3A2420; --tint-sage:#22302A; --tint-warm:#2B2721; --tint-sand:#332E25;
+      --link:#E57B68; --foot:#A29A8B; --on-ink:#1B1916;
+      --glow:rgba(229,123,104,.07); --grid-line:rgba(255,255,255,0.02);
+      --shadow:0 1px 0 rgba(0,0,0,.4),0 8px 24px rgba(0,0,0,.35);
+      --cl-a-bg:#5A2D25; --cl-a-line:#E57B68; --cl-b-bg:#3F3560; --cl-b-line:#B7A1EA;
+      --cl-c-bg:#1F4A3E; --cl-c-line:#6FD1B0; --cl-t-bg:#5C3A1E; --cl-t-line:#F0A25C;
+      --cl-l-bg:#203A55; --cl-l-line:#86B8F2; --cl-k-bg:#4B3E17; --cl-k-line:#DDA94F;
+      color-scheme:dark;
+    }
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:var(--paper);
+    background-image:radial-gradient(circle at 100% 0%, var(--glow), transparent 40%),
+      repeating-linear-gradient(0deg, var(--grid-line) 0px, var(--grid-line) 1px, transparent 1px, transparent 34px);
+    color:var(--ink); font-family:'Noto Sans TC',sans-serif; -webkit-font-smoothing:antialiased;
+    min-height:100vh; padding:24px 14px 60px; line-height:1.7;
+  }
+  .wrap{max-width:820px; margin:0 auto;}
+  header.top{text-align:center; border-bottom:3px double var(--ink); padding-bottom:14px; margin-bottom:20px;}
+  header.top .title{font-family:'Noto Serif TC',serif; font-weight:900; font-size:25px; letter-spacing:.02em;}
+  header.top .sub{font-family:'IBM Plex Mono','Noto Sans TC',monospace; font-size:12px; color:var(--ink-soft); margin-top:6px;}
+  .card{background:var(--paper-card); border:1px solid var(--rule); border-radius:4px; box-shadow:var(--shadow); padding:20px; margin-bottom:16px;}
+  .lead{font-size:15px; margin:0 0 10px;}
+  .lead b{color:var(--crimson);}
+  .steps{font-size:14.5px; margin:8px 0 0; padding-left:1.4em;}
+  .steps li{margin-bottom:4px;}
+  .legend{font-size:13px; color:var(--ink-soft); margin:14px 0 0; line-height:2;}
+  mark.cl-a{background:var(--cl-a-bg); color:inherit; border-bottom:2px solid var(--cl-a-line); padding:0 1px; border-radius:2px;}
+  mark.cl-b{background:var(--cl-b-bg); color:inherit; border-bottom:2px dashed var(--cl-b-line); padding:0 1px; border-radius:2px;}
+  mark.cl-c{background:var(--cl-c-bg); color:inherit; border-bottom:2px dotted var(--cl-c-line); padding:0 1px; border-radius:2px;}
+  mark.cl-t{background:var(--cl-t-bg); color:inherit; text-decoration:underline wavy var(--cl-t-line); text-decoration-thickness:2px; text-underline-offset:3px; padding:0 1px; border-radius:2px;}
+  mark.cl-l{background:var(--cl-l-bg); color:inherit; border-bottom:3px double var(--cl-l-line); padding:0 1px; border-radius:2px;}
+  mark.cl-k{background:var(--cl-k-bg); color:inherit; font-weight:700; border-bottom:2px solid var(--cl-k-line); padding:0 1px; border-radius:2px;}
+  .pcur{border-left:4px solid var(--gold); padding-left:8px; margin-left:-12px;}
+  button.blank:disabled{cursor:default; opacity:.8;}
+  .topicopt{display:block; width:100%; text-align:left; font-weight:500; line-height:1.6; padding:10px 14px; margin:8px 0;}
+  .topicopt.x{opacity:1; color:var(--ink-soft); text-decoration:line-through; text-decoration-color:var(--crimson);}
+  .legend mark{font-weight:700; margin-right:4px;}
+  .legend span.it{display:inline-block; margin-right:12px;}
+  .clueX{font-family:'Times New Roman',Times,'Liberation Serif','Noto Serif','Noto Sans TC',serif; font-size:15.5px; line-height:1.85; margin:8px 0; padding:6px 10px; border-left:3px solid var(--cl-b-line); background:var(--tint-warm);}
+  .clueX.cl-l{border-left-color:var(--cl-l-line);}
+  .clueX.cl-c{border-left-color:var(--cl-c-line);}
+  .clueX.cl-t{border-left-color:var(--cl-t-line);}
+  .clueX.cl-k{border-left-color:var(--cl-k-line); background:var(--surface);}
+  .clueXlab{font-family:'Noto Sans TC',sans-serif; font-size:12px; font-weight:700; color:var(--ink-soft); margin-right:8px;}
+
+  .passage{font-family:'Times New Roman',Times,'Liberation Serif','Noto Serif','Noto Sans TC',serif; font-size:17px; line-height:2.15;}
+  .passage p{margin:0 0 14px; text-indent:1.6em;}
+  .plabel{font-family:'Noto Sans TC',sans-serif; font-size:12px; color:var(--ink-soft); margin:0 0 2px; text-indent:0 !important; letter-spacing:.03em;}
+  button.blank{font:inherit; font-family:'IBM Plex Mono','Noto Sans TC',monospace; font-size:14px; font-weight:600; min-width:48px; min-height:44px; padding:1px 8px; margin:0 2px;
+    border:1.5px dashed var(--ink-soft); border-radius:6px; background:var(--surface); color:var(--ink); cursor:pointer; vertical-align:baseline;}
+  @media (hover:hover){ button.blank:hover{border-color:var(--crimson);} }
+  button.blank.labeled{border-style:solid; border-color:var(--sage);}
+  @keyframes blankflash{0%,100%{background:var(--surface);} 50%{background:var(--tint-crimson); border-color:var(--crimson);}}
+  button.blank.flash{animation:blankflash .9s ease-in-out 3;}
+  @media (prefers-reduced-motion:reduce){ button.blank.flash{animation:none; border-color:var(--crimson); border-style:solid;} }
+  .progress{font-size:14px; margin:6px 0 8px; display:flex; flex-wrap:wrap; gap:6px 14px;}
+  .progress .pg{font-weight:700;} .progress .pg.ok{color:var(--sage);}
+  .steps2{margin:4px 0 8px; padding-left:20px; font-size:14px; line-height:1.7;}
+  .ambnote{font-family:'Noto Sans TC',sans-serif; font-size:12px; color:var(--ink-soft); display:block; margin:1px 0 0 0;}
+  button.blank .cls{font-family:'Noto Sans TC',sans-serif; font-size:12px; font-weight:500; color:var(--ink-soft); margin-left:4px;}
+  button.blank.sel{border:2px solid var(--crimson); background:var(--tint-crimson); color:var(--crimson);}
+  button.blank.filled{font-family:'Times New Roman',Times,'Liberation Serif','Noto Serif',serif; font-size:17px; font-weight:700; border:2px solid var(--sage); background:var(--tint-sage); color:var(--ink); padding:0 8px;}
+  button.blank.filled.sel{border-color:var(--crimson);}
+  button.blank:focus-visible, .chip:focus-visible, .btn:focus-visible, .pill:focus-visible{outline:3px solid var(--gold); outline-offset:2px;}
+
+  .h{font-family:'Noto Serif TC',serif; font-weight:700; font-size:16px; margin:0 0 8px;}
+  .pile{margin-bottom:12px;}
+  .pile .pname{font-size:12.5px; font-weight:700; color:var(--ink-soft); margin-bottom:5px;}
+  .pile .pname.on{color:var(--crimson);}
+  .chips{display:flex; flex-wrap:wrap; gap:8px;}
+  .chip{font-family:'Times New Roman',Times,'Liberation Serif','Noto Serif',serif; font-size:17px; font-weight:700; min-height:44px; padding:4px 14px; border:1.5px solid var(--ink-soft); border-radius:8px; background:var(--surface); color:var(--ink); cursor:pointer;}
+  .chip .tag{display:block; font-family:'Noto Sans TC',sans-serif; font-size:12px; font-weight:500; color:var(--ink-soft); line-height:1.2;}
+  .chip.used{border-style:dashed; opacity:.5; cursor:default;}
+  .chip.dim{opacity:.5; cursor:default;}
+  .chip.dimf{border-style:dashed; border-color:var(--ink-soft); background:transparent; color:var(--ink-soft); cursor:default;}
+  .chip.dimf .tag{color:var(--ink-soft);}
+  .prog .btn{flex:none; white-space:nowrap;}
+  .sent{font-size:15px; line-height:1.7; margin:6px 0 8px; padding:6px 10px; border-left:3px solid var(--ink-soft); background:var(--surface);}
+  .sent b.gap{border-bottom:2px solid var(--crimson); padding:0 .6em;}
+  .chip.on{border-color:var(--crimson); background:var(--tint-crimson);}
+  .chip.x{text-decoration:line-through; opacity:.45; cursor:default;}
+  .letter{font-family:'IBM Plex Mono',monospace; font-size:12px; font-weight:600; color:var(--ink-soft); margin-right:5px;}
+
+  .sortrow{display:flex; flex-wrap:wrap; align-items:center; gap:8px 10px; padding:6px 0; border-bottom:1px solid var(--rule);}
+  .sortrow .w{font-family:'Times New Roman',Times,'Liberation Serif','Noto Serif',serif; font-size:18px; font-weight:700; min-width:8.5em;}
+  .pill{white-space:nowrap; font-family:'Noto Sans TC',sans-serif; font-size:13.5px; font-weight:500; min-height:44px; padding:2px 14px; border:1.5px solid var(--pill-edge); border-radius:22px; background:var(--surface); color:var(--ink); cursor:pointer;}
+  .sortrow.many{display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:8px;}
+  .sortrow.many .w{grid-column:1/-1;}
+  .sortrow.many .pill{padding:2px 4px;}
+  .skipbox{margin-top:14px; padding-top:12px; border-top:1px dashed var(--rule);}
+  .skipbox .next{margin:6px 0 0;}
+  .totray{font-size:13.5px; margin-left:0; display:block; margin-top:6px; min-height:44px; padding:2px 12px;}
+  #passage #panel{margin:2px -8px 18px; padding:16px; border-left:4px solid var(--crimson); font-family:'Noto Sans TC',sans-serif; font-size:15px; line-height:1.75; text-indent:0;}
+  #panel .chips{margin:8px 0;}
+  #passage #panel p{text-indent:0; margin:8px 0;}
+  .pill.on{border-color:var(--crimson); background:var(--tint-crimson); color:var(--crimson); font-weight:700;}
+  .flag{font-family:'Noto Sans TC',sans-serif; font-size:12px; font-weight:700; color:var(--cl-b-line); border:1.5px solid var(--cl-b-line); border-radius:9px; padding:0 6px; margin-left:4px; white-space:nowrap;}
+  .counts{display:flex; flex-wrap:wrap; gap:8px; margin:10px 0; position:sticky; top:0; z-index:2; background:var(--paper-card); padding:6px 0;}
+  .count{font-family:'Noto Sans TC',sans-serif; font-size:13px; padding:3px 10px; border:1.5px solid var(--rule); border-radius:6px; background:var(--surface);}
+  .count.ok{border-color:var(--sage); color:var(--sage); font-weight:600;}
+
+  .btn{font-family:'Noto Sans TC',sans-serif; font-size:14px; font-weight:700; min-height:44px; padding:6px 14px; border:1.5px solid var(--ink); border-radius:6px; background:var(--surface); color:var(--ink); cursor:pointer;}
+  @media (hover:hover){ .btn:hover{border-color:var(--crimson);} }
+  .btn:disabled{opacity:.4; cursor:default;}
+  .btn.ghost{border-color:var(--rule); font-weight:500; color:var(--ink-soft);}
+  .btnrow{display:flex; flex-wrap:wrap; gap:8px; margin:8px 0;}
+  .q{font-size:15px; margin:0 0 6px; font-weight:700;}
+  .msg{font-size:14px; margin:8px 0; padding:8px 12px; border-left:3px solid var(--gold); background:var(--tint-warm);}
+  .msg.ok{border-color:var(--sage); background:var(--tint-sage);}
+  .badge{display:inline-block; font-size:12px; font-weight:700; padding:1px 8px; border-radius:10px; border:1.5px solid var(--sage); color:var(--sage); margin-right:6px;}
+  .badge.m{border-color:var(--cl-b-line); color:var(--cl-b-line);}
+  .ans{font-family:'Times New Roman',Times,'Liberation Serif','Noto Serif',serif; font-size:20px; font-weight:700;}
+  .prog{font-family:'IBM Plex Mono','Noto Sans TC',monospace; font-size:12.5px; color:var(--ink-soft); display:flex; justify-content:space-between; align-items:center; gap:8px; margin-bottom:10px;}
+  .next{font-size:13.5px; color:var(--ink-soft); margin:0 0 10px;}
+  .done h3{font-family:'Noto Serif TC',serif; margin:0 0 8px; font-size:17px;}
+  .done ul{margin:6px 0 10px; padding-left:1.2em; font-size:14.5px;}
+  .done li{margin-bottom:6px;}
+  .links{font-size:13.5px; line-height:1.6;}
+  .links a{display:inline-block; padding:8px 0;}
+  a{color:var(--link); font-weight:700; text-underline-offset:2px;}
+  footer{text-align:center; font-size:12.5px; color:var(--foot); line-height:1.9; margin-top:26px;}
+  footer .cc{font-size:11.5px; margin-top:6px;}
+  footer a{display:inline-block; padding:10px 0;}
+  .hidden{display:none !important;}
+  @media (max-width:560px){ .sortrow .w{flex:0 0 100%;} .sortrow .pill{flex:1 1 0; padding:2px 6px;} .passage{font-size:16.5px;} header.top .title{font-size:21px;} .sortrow .w{min-width:7em;} }
+  @media print{ body{padding:0;} .card{box-shadow:none;} }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div class="title">文意選填：用上下文拼圖</div>
+    <div class="sub" id="sub"></div>
+  </header>
+
+  <div class="card">
+    <p class="lead">文意選填像一整篇的拼圖，<b>重點是上下文：每一格都要扣住它所在那一段的主旨</b>。分三步：</p>
+    <ol class="steps">
+      <li><b>讀段落、找出主旨</b>：選出每一段在講什麼。答錯時會標出這一段的關鍵詞。</li>
+      <li><b>認識空格與選項（標詞性、分堆）</b>：標出每一格的詞性，再把<span data-nopt>十個</span>選項分堆。</li>
+      <li><b>用線索拼答案</b>：先想主旨、找內容線索，卡住時按「提示」。</li>
+    </ol>
+    <details style="margin-top:8px"><summary style="font-size:13.5px; font-weight:700; cursor:pointer; min-height:44px; display:flex; align-items:center;">第 2 步怎麼做（點開來看）</summary>
+    <p class="legend">把十個空格各是哪一種詞性標出來，有些空格還要標「形式」（例如動詞的第三人稱單數、名詞的複數）；同時把<span data-nopt>十個</span>選項分成動詞、名詞、形容詞等幾堆。<span data-rule>每一堆的數量，要剛好等於那一種詞性的空格數。</span>詞性只能縮小範圍，同一堆通常還有好幾個選項放得進去，最後要靠上下文的意思。標「兩類皆可」的字可以當兩種詞性，放進哪一堆都算對，只要每一堆的數量對得上。已經很熟詞性的人，也可以直接略過這一步。</p></details>
+    <details style="margin-top:12px"><summary style="font-size:13.5px; font-weight:700; cursor:pointer; min-height:44px; display:flex; align-items:center;">標色說明（點開來看）</summary>
+    <p class="legend">
+      <span class="it"><mark class="cl-k">主旨關鍵詞</mark>第 1 步答錯時標出</span>
+      <span class="it"><mark class="cl-a">句內線索</mark>空格所在那一句</span>
+      <span class="it"><mark class="cl-b">跨句線索</mark>前後句或文中其他句子</span>
+      <span class="it"><mark class="cl-l">詞彙線索</mark>同義、換字重述、同一個語意範圍的字</span>
+      <span class="it"><mark class="cl-c">並列線索</mark>和空格並列的成分</span>
+      <span class="it"><mark class="cl-t">並列陷阱</mark>看起來並列，其實不是</span><br>
+      標詞性時，只會標出「句內線索」；跨句線索與詞彙線索（也就是內容線索），要在第 3 步按「提示 1」才出現；並列線索與並列陷阱，要按「提示 2」。
+    </p></details>
+  </div>
+
+  <div class="card">
+    <div class="prog"><span id="progText"></span><button class="btn ghost" id="resetBtn" type="button">重新開始</button></div>
+    <div class="passage" id="passage"></div>
+  </div>
+
+  <div class="card" id="panel" aria-live="polite"></div>
+
+  <div class="card" id="trayCard">
+    <div class="h" id="trayTitle"></div>
+    <div id="tray"></div>
+  </div>
+
+  <div class="card done hidden" id="done"></div>
+
+  <div class="card links">
+    <a id="lnkFull" href="#">→ 這一回的完整題目與解析</a><br>
+    <a href="https://staresto-create.github.io/JCEE-vocab-questions/#rules">→ 拼圖的五種線索：字詞搭配、用法、換句話說、銜接、連貫</a><br>
+    <a href="https://staresto-create.github.io/passage-completion/">← 回文意選填</a>
+  </div>
+
+  <footer>
+    資料來源：大考中心公布之歷屆文意選填試題與答案<br>
+    © 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫
+    <div class="cc">本題庫撰寫的解析與標註，採用 <a href="https://creativecommons.org/licenses/by-nc/4.0/deed.zh-hant" target="_blank" rel="license noopener">CC BY-NC 4.0</a> 授權。</div>
+  </footer>
+</div>
+
+<script>
+const DATA = {"id": "z98", "sub": "98年 指考 · 第 21–30 題 · 購物成癮的心理（Oniomania）", "paras": [{"label": "【第一段】點出主旨：購物成癮的定義與心理循環", "segs": [["Oniomania is the technical term for the compulsive desire to shop, more commonly referred to as compulsive shopping or shopping addiction.", "gradient"], [" Victims often experience feelings of ", null], ["21", "blank"], [" when they are in the process of purchasing, which seems to give their life meaning while letting them forget about their sorrows. Once ", null], ["22", "blank"], [" the environment where the purchasing occurred, the feeling of a personal reward would be gone. To compensate, the addicted person would go shopping again. ", null], ["Eventually", "trans"], [" a feeling of suppression will overcome the person. ", null], ["For example", "trans"], [", cases have shown that the bought goods will be hidden or destroyed, ", null], ["because", "trans"], [" the person concerned feels ", null], ["23", "blank"], [" of their addiction and tries to conceal it. He or she is either regretful or depressed. In order to cope with the feelings, the addicted person is prompted to ", null], ["24", "blank"], [" another purchase.", null]]}, {"label": "【第二段】成因：童年經驗；收尾：美國約 8.9% 的人口", "segs": [["Compulsive shopping often begins at an early age.", "topic"], [" Children who experienced parental neglect often grew up with low ", null], ["25", "blank"], [" ", null], ["because", "trans"], [" throughout much of their childhood they felt that they were not important as a person. ", null], ["As a result", "trans"], [", they used toys to ", null], ["26", "blank"], [" their feelings of loneliness. ", null], ["Because of", "trans"], [" the ongoing sentiment of deprivation they endured as children, adults that have depended on materials for emotional ", null], ["27", "blank"], [" when they were much younger are more likely to become addicted to shopping. During adulthood, the purchase, ", null], ["instead of", "trans"], [" the toy, is substituted for ", null], ["28", "blank"], [" . The victims are unable to deal with their everyday problems, especially those that alter their self-esteem. Important issues in their lives are repressed by ", null], ["29", "blank"], [" something. According to studies, as many as 8.9 percent of the American population ", null], ["30", "blank"], [" as compulsive buyers. Research has also found that men and women suffer from this problem at about the same rate.", null]]}], "options": {"A": "support", "B": "qualify", "C": "affection", "D": "ashamed", "E": "make up for", "F": "leaving", "G": "turn to", "H": "buying", "I": "self-esteem", "J": "contentment"}, "groupOf": {"A": "n", "B": "v", "C": "n", "D": "adj", "E": "v", "F": "v", "G": "v", "H": "v", "I": "n", "J": "n"}, "ambig": ["A"], "blanks": [{"cats": "字詞搭配、語意連貫", "slot": "n", "layer": "meaning", "decide": "meaning", "why": "空格在 feelings of 之後，of 後面要名詞，所以放在名詞堆。", "l1": "這一句說成癮者在 the process of purchasing 的時候，會有某種 feelings of ___；後半句再說明這種感受的作用：讓他們的生活顯得有意義，又讓他們暫時忘掉 sorrows。想想看，什麼樣的感受同時有這兩種作用？", "l2": "feelings of ___：of 後面是名詞，名詞堆有四個字，可以各放進去讀讀看。這一格描述的是購物當下的心理狀態，要和後半句 forget about their sorrows 的方向一致。名詞堆裡有兩格的搭配很明確（grew up with low ___ 與 for emotional ___），先把它們定下來，剩下的字再放回這一格比較。", "final": "Victims often experience feelings of contentment when they are in the process of purchasing（受害者在購物的過程中常會有滿足的感受）：Longman 的 contentment 是 noun [uncountable]，定義是 the state of being happy and satisfied，並列有 a feeling of deep contentment 這個搭配，例句有 He gave a sigh of contentment, and fell asleep.；Merriam-Webster 的 contentment 是 noun，第 1 個意思是 the quality or state of being contented，例句有 There was a look of perfect contentment on her face.。這一句後半說這種感受好像讓生活有意義，又讓人忘掉 sorrows，下一句再用 the feeling of a personal reward 回頭指它，可見它是購物當下得到的一種心情。affection 在 Longman 是 a feeling of liking or love and caring，搭配的是 affection for，指對某個人或事物的喜愛，這一句沒有喜愛的對象；self-esteem 在 Longman 是 the feeling of being satisfied with your own abilities, and that you deserve to be liked or respected，是對自己的看法，不是購物當下的心情，而且第二段 low ___ 那一格需要它；support 在 Longman 的名詞義是 sympathy and help that you give to someone who is in a difficult situation or who is very unhappy，是別人給的幫助，不是一種心情。", "gloss": "滿足感", "inner": ["feelings of", "give their life meaning", "forget about their sorrows"], "cross": [{"find": "the environment where the purchasing occurred, the feeling of a personal reward would be gone.", "words": ["the feeling of a personal reward"]}], "coord": [], "lex": [{"find": "which seems to give their life meaning while letting them forget about their sorrows.", "words": ["forget about their sorrows"], "kind": "語意範圍", "note": "後半句說這種感受讓人暫時忘掉 sorrows，所以空格是一種和 sorrows 方向相反的感受。"}, {"find": "the environment where the purchasing occurred, the feeling of a personal reward would be gone.", "words": ["the feeling of a personal reward"], "kind": "換字重述", "note": "下一句用 the feeling of a personal reward 回頭指這種感受，可見它是購物當下得到的一種心情，像是給自己的獎賞。"}], "n": 21}, {"cats": "句型結構、字詞搭配", "slot": "v", "layer": "meaning", "decide": "lex", "why": "空格在 Once 與 the environment 之間，沒有主詞也沒有 be 動詞，後面直接接受詞，所以是縮短子句的 V-ing，放在動詞堆。", "l1": "這一句說的是 the environment where the purchasing occurred，也就是購物發生的那個場所；成癮者和這個場所之間一旦有了某個動作，the feeling of a personal reward 就會消失。想想看，成癮者對這個場所做了什麼，獎賞感才會消失？", "l2": "Once ___ the environment：Once 後面沒有主詞，也沒有 be 動詞，空格後面直接接 the environment 當受詞，所以空格是 V-ing 形式的動詞。動詞堆裡 V-ing 形式的字有兩個，把它們各放進去讀，看哪一個能接 the environment 這種表示場所的受詞，又能讓後面的 would be gone 說得通。", "final": "Once leaving the environment where the purchasing occurred（一旦離開了購物發生的那個場所）：Longman 的 leave 第 1 個意思是 to go away from a place or a person，例句有 My baby gets upset when I leave the room.，也有 Before leaving the train, make sure you have all your belongings with you. 這種 leaving 後面直接接場所的句子；Merriam-Webster 的 leave 在及物動詞第 3a 個意思是 to go away from，例句是 leave the room。the environment where the purchasing occurred 是一個場所，所以 leave 可以直接接它當受詞，Once 後面省略主詞，留下 V-ing。Once 在 Longman 的連接詞義是 from the time when something happens，也有省略主詞的例句，像 Once in bed, the children usually stay there.。buy 的 V-ing 形式是 buying，Longman 的 buy 第 1a 個意思是 to get something by paying money for it，受詞通常是被買下的東西；放進這一格會變成買下整個場所，與後面獎賞感消失的因果對不上。", "gloss": "離開", "form": "V-ing", "formWhy": "Once 的後面沒有主詞，也沒有 be 動詞，空格後面直接接 the environment 當受詞，所以用 V-ing 把子句縮短。", "inner": ["Once", "the environment where the purchasing occurred", "would be gone"], "cross": [{"find": "when they are in the process of purchasing", "words": ["in the process of purchasing"]}], "coord": [], "lex": [{"find": "the environment where the purchasing occurred, the feeling of a personal reward would be gone.", "words": ["the environment"], "kind": "搭配", "note": "the environment 是一個場所，空格的動詞要能直接接場所當受詞。"}, {"find": "when they are in the process of purchasing", "words": ["in the process of purchasing"], "kind": "轉折", "note": "前一句說在 in the process of purchasing 的時候有獎賞感，這裡說獎賞感會消失，所以空格的情況應該和 in the process of purchasing 相反。"}], "n": 22}, {"cats": "詞性判斷、字詞搭配", "slot": "adj", "layer": "form", "decide": "form", "why": "feels 是連綴動詞，後面接形容詞，空格後面又接 of 片語，所以放在形容詞堆。", "l1": "這一句說買來的東西會被 hidden or destroyed，因為當事人對自己的成癮有某種感受，而且 tries to conceal it。想想看，一個人想把東西藏起來或毀掉，通常是對這件事有什麼樣的感覺？", "l2": "the person concerned feels ___ of their addiction：feels 是連綴動詞，後面接形容詞當補語，of their addiction 說明這種感受針對的是什麼。這一格要填形容詞，形容詞堆只有一個字，請確認它能不能和 of 連用，再用 hidden or destroyed 與 conceal 的語意檢查。", "final": "because the person concerned feels ashamed of their addiction（因為當事人對自己的成癮感到羞愧）：Longman 把 ashamed 標為 adjective [not before noun]，第 1 個意思是 feeling very sorry and embarrassed because of something you have done，例句有 I felt ashamed of the things I’d said to him.，也有 Everyone cries sometimes – it’s nothing to be ashamed of.；Merriam-Webster 的 ashamed 第 1a 個意思是 feeling shame, guilt, or disgrace，例句有 He was deeply ashamed of his behavior.。feel ashamed of 是 feel + 形容詞 + of 的結構，和 of their addiction 正好對上，也能解釋為什麼買來的東西要被 hidden or destroyed，而且當事人還 tries to conceal it。", "gloss": "羞愧的", "inner": ["feels", "of their addiction", "tries to conceal it"], "cross": [{"find": "He or she is either regretful or depressed.", "words": ["regretful or depressed"]}], "coord": [], "lex": [{"find": "the bought goods will be hidden or destroyed", "words": ["hidden or destroyed"], "kind": "語意範圍", "note": "把東西藏起來或毀掉，是想擺脫一種不願面對的感受。"}, {"find": "and tries to conceal it.", "words": ["tries to conceal it"], "kind": "同義重述", "note": "想遮掩的事，通常是不願被別人看見的事，所以空格的感受和 conceal 的方向一致。"}], "n": 23}, {"cats": "及物片語動詞、字彙選義（第二義）", "slot": "v", "layer": "meaning", "decide": "lex", "why": "空格在 is prompted to 之後，後面接 another purchase 當受詞，to 後面要原形動詞，所以放在動詞堆。", "l1": "這一句是第一段的收尾：In order to cope with the feelings 交代了成癮者的處境，is prompted to ___ another purchase 說的是他的反應。對照前面的 To compensate 那一句，成癮者後來又做了什麼事？這一格講的是同一類反應。", "l2": "is prompted to ___ another purchase：to 後面是原形動詞，another purchase 是受詞，所以要選能直接接受詞的動詞片語。動詞堆有好幾個原形動詞，各放進去讀一遍，看哪一個能表示成癮者為了應付情緒而採取另一個做法；有的放進去以後，another purchase 變成被處理的對象，與 cope with the feelings 對不上。", "final": "the addicted person is prompted to turn to another purchase（成癮者被驅使去採取再買一次的做法）：Longman 的 turn to 第 2 個意思是 to start to do or use something new, especially as a way of solving a problem，例句有 Many people here are turning to solar power.；後面還列了 turn to drink/crime/drugs etc，例句是 addicts who turn to crime to finance their habit。這一句的成癮者為了 cope with the feelings 而 turn to another purchase，正是這個用法。turn to 的第 1 個意思是向人求助，所以平常多半把它記成『向某人求助』，這一格用的是它的第二義。make up for 在 Longman 的第 1 個意思是 to make a bad situation better, or replace something that has been lost，後面接的是被彌補的缺憾；make up for another purchase 會變成彌補另一次購買，與句意不合；support 當動詞，Longman 的第 1 個意思是 to say that you agree with an idea, group, or person, and usually to help them because you want them to succeed，support another purchase 是贊成另一次購買，也接不上 cope with the feelings。", "gloss": "轉而採取", "form": "原形", "formWhy": "to 後面接原形動詞，another purchase 是受詞，所以空格用原形。", "inner": ["In order to cope with the feelings", "is prompted to", "another purchase"], "cross": [{"find": "To compensate, the addicted person would go shopping again.", "words": ["go shopping again"]}], "coord": [], "lex": [{"find": "To compensate, the addicted person would go shopping again.", "words": ["go shopping again"], "kind": "重複出現", "note": "前面已經出現成癮者 go shopping again 的反應，這一格的反應和它是同一類。"}, {"find": "In order to cope with the feelings", "words": ["cope with the feelings"], "kind": "搭配", "note": "cope with the feelings 交代了處境，空格的動詞片語要表達成癮者面對這些情緒時採取的做法。"}], "n": 24}, {"cats": "字詞搭配", "slot": "n", "layer": "meaning", "decide": "lex", "why": "空格前有 low 修飾，後面是 because 子句，空格是名詞，所以放在名詞堆。", "l1": "這一句說，曾被父母忽略的孩子長大後 grew up with low ___，because 後面解釋了原因：他們在童年的大半時間裡覺得自己 not important as a person。空格是被 low 修飾的名詞，請看 because 後面的理由，想想哪一種東西會因此變得很低。", "l2": "grew up with low ___：with 後面是名詞，low 修飾它。because 後面的子句是在解釋為什麼會 low ___，請看他們在童年的大半時間裡 felt 了什麼。名詞堆有四個字，先看哪些字可以被 low 修飾，再拿 not important as a person 來檢驗。", "final": "Children who experienced parental neglect often grew up with low self-esteem（曾被父母忽略的孩子，長大後常常自尊很低）：Longman 的 self-esteem 是 noun [uncountable]，定義是 the feeling of being satisfied with your own abilities, and that you deserve to be liked or respected，搭配欄列有 low/poor self-esteem (=not much self-esteem)；Merriam-Webster 的第 1 個意思是 a confidence and satisfaction in oneself。because 後面說他們 felt that they were not important as a person，正是覺得自己不值得被重視，與定義相符。同一段稍後的 especially those that alter their self-esteem 又出現了同一個詞。support 在 Longman 是別人給的 sympathy and help，affection 是 a feeling of liking or love and caring，contentment 是 the state of being happy and satisfied，它們描述的是別人的幫助、對人的感情或一時的心情，不是對自己價值的看法。", "gloss": "自尊", "inner": ["grew up with low", "not important as a person"], "cross": [], "coord": [], "lex": [{"find": "because throughout much of their childhood they felt that they were not important as a person.", "words": ["not important as a person"], "kind": "語意範圍", "note": "because 後面的理由說孩子覺得自己 not important，這是空格那個名詞變 low 的原因。"}], "n": 25}, {"cats": "及物片語動詞、字詞搭配", "slot": "v", "layer": "meaning", "decide": "lex", "why": "空格在 to 之後，their feelings of loneliness 之前，要原形動詞，所以放在動詞堆。", "l1": "這一句說，小時候覺得自己 not important 的孩子，會 use toys to ___ their feelings of loneliness。想想看，玩具對孤單的感受發揮了什麼作用？", "l2": "used toys to ___ their feelings of loneliness：to 後面是原形動詞，their feelings of loneliness 是受詞。動詞堆有好幾個原形動詞，各放進去讀，要讀得出玩具和孤單感之間的關係，並且與上一句 not important as a person 的處境相連；動詞片語的後面可以直接接受詞，不必再補別的字。", "final": "As a result, they used toys to make up for their feelings of loneliness（結果，他們用玩具來彌補自己的孤單感）：Longman 的 make up for something 第 1 個意思是 to make a bad situation better, or replace something that has been lost，例句有 I don’t eat breakfast but I make up for it at lunch.；Merriam-Webster 的 make up for 定義是 to do or have something as a way of correcting or improving (something else)，例句有 She tried to make up for lost time by working extra hard.。孤單是一種缺憾，玩具就是用來彌補這個缺憾的東西。turn to 的第 2 個意思是 to start to do or use something new，後面接 their feelings of loneliness 會變成『轉向孤單感』，與玩具的作用相反；support 當動詞是贊成或幫助某人某事，support their feelings of loneliness 等於去支持孤單感，也與用玩具的目的相反。", "gloss": "彌補", "form": "原形", "formWhy": "to 後面接原形動詞，their feelings of loneliness 是受詞，所以空格用原形。", "inner": ["used toys to", "their feelings of loneliness"], "cross": [{"find": "throughout much of their childhood they felt that they were not important as a person.", "words": ["not important as a person"]}], "coord": [], "lex": [{"find": "As a result, they used toys to", "words": ["As a result"], "kind": "轉折", "note": "As a result 表示因果：因為覺得自己不重要、感到孤單，所以才拿玩具來處理這種感受。"}], "n": 26}, {"cats": "字詞搭配、詞性判斷（第二詞性）", "slot": "n", "layer": "meaning", "decide": "lex", "why": "空格在 for emotional 之後，for 是介系詞，後面要名詞，所以放在名詞堆。", "l1": "這一句說，那些小時候 depended on materials for emotional ___ 的成年人，長大後更容易購物成癮。depend on A for B 的 B 是從 A 得到的東西。想想看，小孩從物品身上想得到的，是哪一種 emotional 的需求？", "l2": "depended on materials for emotional ___：for 是介系詞，後面要名詞，emotional 是形容詞，修飾空格。depend on A for B 的 B 是從 A 得到的東西，Merriam-Webster 的名詞例句 He depended on his wife for emotional ___. 和這一句的句型相同。名詞堆裡有兩個字都和情感有關，要選的是接在 emotional 後面、說明小孩從物品得到什麼的那一個；另一個字要留給 is substituted for ___ 那一格。", "final": "adults that have depended on materials for emotional support when they were much younger（小時候依靠物品換取情感上的支持的成年人）：Merriam-Webster 的 support 名詞第 2a 個意思的舉例有 financial/emotional support，名詞條目下的例句 He depended on his wife for emotional support. 的結構，幾乎就是這一句的 depended on ... for emotional ___。Longman 的 support 名詞第 2 個意思是 [uncountable] sympathy and help that you give to someone who is in a difficult situation or who is very unhappy，例句有 I couldn’t have made it through those times without the support of my boyfriend Rob.。support 同時也是動詞，Longman 的動詞第 2 個意思是 to help someone by being sympathetic and kind to them during a difficult time in their life，但 for 後面要名詞，所以這一格用的是名詞。至於 affection，Longman 的定義是 a feeling of liking or love and caring，本身就是一種感情；這一句的 emotional 是在說明小孩從物品得到的是哪一種 support，Merriam-Webster 把 financial/emotional support 並列，可見 support 有不同的種類，才需要 emotional 來限定。affection 則和這一段開頭的 parental neglect 呼應，放進 is substituted for ___ 那一格。", "gloss": "（名詞）支持", "inner": ["depended on materials for emotional", "when they were much younger"], "cross": [{"find": "Children who experienced parental neglect often grew up with low", "words": ["parental neglect"]}], "coord": [], "lex": [{"find": "adults that have depended on materials for emotional", "words": ["depended on materials for"], "kind": "搭配", "note": "depend on A for B 的 B 是從 A 得到的東西，空格前面又有 emotional 修飾。"}], "n": 27}, {"cats": "語意連貫、字詞搭配", "slot": "n", "layer": "meaning", "decide": "meaning", "why": "空格在 is substituted for 之後，for 是介系詞，後面要名詞，所以放在名詞堆。", "l1": "這一句說，到了成年期，the purchase 取代了 the toy，而 is substituted for ___ 說的是購物取代了什麼。substitute A for B 裡，B 是被取代掉的那一個。回頭看這一段開頭，孩子在童年一直缺少什麼，才會去找玩具？", "l2": "is substituted for ___：for 後面是名詞。Longman 的 substitute something for something 是用新的東西取代原來的東西，所以 for 後面要放原來被取代的那一個，也就是這一段從 parental neglect 開始就缺少的東西；Longman 有一句例句 Their father never showed them much ___.，說的正是父母沒有給孩子的東西。名詞堆裡有兩個字的意思看起來都和情感有關，先把 grew up with low ___ 與 for emotional ___ 那兩格定下來，再回來看這一格。", "final": "During adulthood, the purchase, instead of the toy, is substituted for affection（到了成年期，取代玩具的是購物，而購物取代的是關愛）：Longman 的 substitute 動詞第 1 個意思是 [transitive] to use something new or different instead of something else，句型是 substitute something for something，例句是 The recipe says you can substitute yoghurt for the sour cream.，也就是 for 後面是被取代的那一個。這一段從 parental neglect 寫起：孩子缺少父母的 affection（Longman 的定義是 a feeling of liking or love and caring，例句有 Their father never showed them much affection.），於是用玩具補這個缺口，成年以後再由購物來補，被取代的始終是同一樣東西。support 在 Longman 的名詞第 2 個意思是 sympathy and help that you give to someone who is in a difficult situation or who is very unhappy，是別人在困難時給的幫助；depended on materials for emotional ___ 那一格的句型和 Merriam-Webster 的 He depended on his wife for emotional support. 相同，所以 support 放在那一格，affection 放在這一格。", "gloss": "關愛", "inner": ["is substituted for", "instead of the toy"], "cross": [{"find": "Children who experienced parental neglect often grew up with low", "words": ["parental neglect"]}, {"find": "As a result, they used toys to", "words": ["used toys"]}], "coord": [], "lex": [{"find": "Children who experienced parental neglect often grew up with low", "words": ["parental neglect"], "kind": "語意範圍", "note": "parental neglect 說的是孩子在童年缺少了父母本來該給的某樣東西，成年後購物取代的就是這樣東西。"}, {"find": "the purchase, instead of the toy, is substituted for", "words": ["instead of the toy"], "kind": "搭配", "note": "instead of the toy 說明玩具原本就是用來取代某樣東西的替代品，購物接手的是同一個位置。"}], "n": 28}, {"cats": "句型結構、字詞搭配", "slot": "v", "layer": "meaning", "decide": "lex", "why": "空格在 by 之後、something 之前，by 後面要接 V-ing，而且後面有受詞，所以放在動詞堆。", "l1": "這一句說生活中的重要課題被 repressed，是靠某個動作壓下去的。整篇文章談的成癮者，遇到問題時一再做的是同一件事；這一格的動作，要和這個反覆出現的行為一致。", "l2": "repressed by ___ something：by 後面接 V-ing，something 是受詞，所以空格是 V-ing 形式的動詞。V-ing 形式的字有兩個，把它們各放進去讀，要選的是和全文反覆出現的行為（例如 go shopping again）一致的那個，而且真的能拿來壓住日常問題。", "final": "Important issues in their lives are repressed by buying something（生活中的重要課題，被買點什麼的動作壓了下去）：Longman 的 buy 第 1a 個意思是 [intransitive, transitive] to get something by paying money for it，例句有 Where did you buy that dress?；Merriam-Webster 的 buy 及物動詞第 1 個意思是 to acquire possession, ownership, or rights to the use or services of by payment especially of money，例子有 buying stock in the company。by 後面接 V-ing 表示方法，something 是 buy 的受詞。整段在說成癮者用購物逃避問題，所以被壓住的課題是靠 buying something 壓住的。leave 的 Longman 第 1 個意思是 to go away from a place or a person，something 不是場所或人；而且全文反覆出現的行為是購物，不是離開，放進這一格與主題連不起來。", "gloss": "購買", "form": "V-ing", "formWhy": "by 後面接 V-ing 表示方法，something 是受詞，所以空格用 V-ing。", "inner": ["are repressed by", "something"], "cross": [{"find": "To compensate, the addicted person would go shopping again.", "words": ["go shopping again"]}, {"find": "During adulthood, the purchase, instead of the toy, is substituted for", "words": ["the purchase"]}], "coord": [], "lex": [{"find": "Important issues in their lives are repressed by", "words": ["repressed by"], "kind": "搭配", "note": "repressed by 後面接的是壓住問題的方法，空格是 V-ing，放進去的動作要能壓住重要的課題，而且和全文反覆出現的行為一致。"}], "n": 29}, {"cats": "字詞搭配、句型結構", "slot": "v", "layer": "meaning", "decide": "lex", "why": "空格是這一句的主要動詞，主詞是 8.9 percent of the American population，後面接 as compulsive buyers，所以放在動詞堆。", "l1": "這一句引用 studies，說多達 8.9 percent 的美國人口，怎麼樣 as compulsive buyers。整篇文章在介紹 compulsive shopping，這個數字是在說有多少比例的人和這個問題有關。", "l2": "the American population ___ as compulsive buyers：空格是這一句的動詞，後面的 as 要和動詞連用，帶出這些人的身分。動詞堆裡有好幾個原形動詞，各放進去，看哪一個後面可以接 as + 名詞，並且讓整句變成在說有多少比例的人是這一類。", "final": "as many as 8.9 percent of the American population qualify as compulsive buyers（多達 8.9% 的美國人口算得上是強迫性購物者）：Longman 的 qualify 第 3 個意思是 [intransitive] to have all the necessary qualities to be considered to be a particular thing，例句有 It doesn’t qualify as a date if you bring your children with you.；語料例句還有 Does photography qualify as an art form? 與 Fifty hours of flight training is enough to qualify as a pilot.。Merriam-Webster 的 qualify 不及物動詞第 2 個意思是 to acquire legal or competent power or capacity，例句是 has just qualified as a lawyer。這一句用的是 Longman 的第 3 個意思：符合一個類別該有的條件，所以可以被當成這一類。qualify 平常最容易想到 qualify for（取得資格），這一格後面接的是 as。turn to 和 make up for 的後面接 as compulsive buyers 都不成句；support 當動詞是贊成或幫助某人某事，後面也接不上 as compulsive buyers。", "gloss": "算得上", "form": "原形", "formWhy": "空格是這一句的主要動詞，主詞是 as many as 8.9 percent of the American population，指許多人，選項裡沒有加 s 的形式，所以用原形。", "inner": ["8.9 percent of the American population", "as compulsive buyers"], "cross": [{"find": "Compulsive shopping often begins at an early age.", "words": ["Compulsive shopping"]}], "coord": [], "lex": [{"find": "as many as 8.9 percent of the American population", "words": ["8.9 percent"], "kind": "語意範圍", "note": "8.9 percent 是在描述一個比例，空格的動詞和後面的 as compulsive buyers 一起，說明這個比例的人是什麼身分。"}], "n": 30}], "answers": {"21": "J", "22": "F", "23": "D", "24": "G", "25": "I", "26": "E", "27": "A", "28": "C", "29": "H", "30": "B"}, "unused": {}, "note": "", "topics": [{"say": "購物帶來的獎賞感很短暫，事後的低落又讓成癮者再去購物。", "find": "the feeling of a personal reward would be gone.", "words": ["a personal reward"], "opts": [{"t": "成癮者購物時能忘掉煩惱，所以購物是解決煩惱的好辦法。", "ok": false, "why": "前半句有依據（letting them forget about their sorrows），但那只是購物當下的效果；文中說 the feeling of a personal reward would be gone，後來又出現 regretful or depressed，可見購物並沒有真的解決煩惱。"}, {"t": "購物帶來的獎賞感很短暫，事後的低落又讓成癮者再去購物。", "ok": true, "why": ""}, {"t": "過了一段時間，成癮者的獎賞感會越來越強，於是不再需要購物。", "ok": false, "why": "文中說的剛好相反：the feeling of a personal reward would be gone，而且接著說 To compensate, the addicted person would go shopping again。"}]}, {"say": "小時候被父母忽略的經驗，可能是日後購物成癮的起點。", "find": "Compulsive shopping often begins at an early age.", "words": ["begins at an early age"], "opts": [{"t": "在美國，有近一成的人有購物成癮的問題，男女比例也差不多。", "ok": false, "why": "這兩項數據出現在最後兩句，只是補充的資料；整段的重心是 Compulsive shopping often begins at an early age，以及後面對童年經驗的說明。"}, {"t": "只要小時候玩過玩具，長大以後就一定會變成購物成癮的人。", "ok": false, "why": "文中說的是 Children who experienced parental neglect，而且結果是 are more likely to become addicted to shopping，只是比較容易，並不是一定，也不是所有玩過玩具的人。"}, {"t": "小時候被父母忽略的經驗，可能是日後購物成癮的起點。", "ok": true, "why": ""}]}], "structure": "全文兩段，結構是「定義與現象 → 成因與數據」。第一段先為 Oniomania 下定義，也就是強迫性購物或購物成癮，接著依時間順序寫出成癮者的心理循環：購物的當下有一種感受，一旦不在那個場景，獎賞感就消失，於是再去購物；隨後壓抑感浮現，當事人把買來的東西藏起來或毀掉，最後又為了應付這些情緒而再買一次。第二段先用 Compulsive shopping often begins at an early age 點出主題，再追溯童年的成因：被父母忽略的孩子覺得自己不重要，只好拿玩具排解孤單，成年以後由購物取代玩具；最後用 According to studies 帶出 8.9% 的美國人口，並補充男女的比例大致相同。", "lessons": ["動詞堆有五個字，形式分成兩種：第 22 題 Once ___ the environment 和第 29 題 by ___ something，前面是 Once 與 by，後面都直接接受詞，所以要 V-ing；第 24 題和第 26 題的前面有 to，第 30 題是這一句的主要動詞，所以要原形。先用形式把 V-ing 的兩格和原形的三格分開，再用意思分字。形容詞堆只有一個字，第 23 題 feels ___ of their addiction 需要形容詞，可以先定下來。", "第 22 題和第 29 題的空格都是 V-ing，後面也都接受詞，光看形式分不開，要看受詞和全文的脈絡：第 22 題的受詞 the environment where the purchasing occurred 是一個場所，而且後面說 the feeling of a personal reward would be gone，與前一句 in the process of purchasing 的情況相反；第 29 題 by ___ something 表示壓住問題的方法，要和全文反覆出現的購物行為一致。", "名詞堆的四個字都是不可數名詞，形式幫不上忙，要靠搭配和上下文，而且彼此牽制。比較有把握的是第 25 題 low ___（because 後面說孩子覺得自己 not important）和第 27 題 for emotional ___（depend on A for B，B 是從 A 得到的東西，Merriam-Webster 的例句 He depended on his wife for emotional support. 句型相同）；接著看第 28 題 is substituted for ___：substitute A for B 的 B 是被取代的那一個，要回頭找 parental neglect 讓孩子缺少了什麼。第 27、28 題最容易互換，所以要先定第 27 題，再做第 28 題；最後把剩下的字放進第 21 題 feelings of ___ 比對。另外，第 25 題的答案字在同一段稍後的 especially those that alter their self-esteem 又出現一次，答案字在別的句子重複出現時，也可以拿來對照。", "support 同時是名詞和動詞，第 24、26、30 題的動詞格形式上也放得進去，所以不能只靠詞性排除。判斷詞性要看空格前後：第 27 題的 for emotional ___ 前面是介系詞和形容詞，後面要名詞；放進動詞格時，要用句意來檢查，像 prompted to ___ another purchase 是為了應付情緒而採取的做法，support another purchase 與這個語意連不起來。", "turn to、make up for 和 qualify as 都要整組判斷：turn to 平常多半記成翻到哪一頁或向人求助，第 24 題用的是 to start to do or use something new 的意思；make up for 後面可以直接接被彌補的缺憾；qualify 最常見的是 qualify for，這一題後面接的是 as compulsive buyers，是 qualify as 的用法。看到空格後面的 as、another purchase、their feelings of loneliness，就要拿整個片語去比對。"], "optForms": {"A": {"n": ["不可數"], "v": ["原形"]}, "B": {"v": ["原形"]}, "C": {"n": ["不可數"]}, "E": {"v": ["原形"]}, "F": {"v": ["V-ing"]}, "G": {"v": ["原形"]}, "H": {"v": ["V-ing"]}, "I": {"n": ["不可數"]}, "J": {"n": ["不可數"]}}, "flags": ["A"], "altOf": {"A": ["v"]}};
+function clueSentences(s){
+  // 切句規則與資料檔產生時相同：句末標點後接空白，下一個字是大寫字母、引號、左括號或空格編號
+  const out = []; let start = 0, m; const re = /([.!?\u201d"])\s+(?=[A-Z\u201c"(\[])/g;
+  while((m = re.exec(s))){
+    // 縮寫（U.S.、Mr.、Dr. 等）後面的句點不算句末
+    if(m[1] === '.' && /(\b(?!(?:B\.C|A\.D|a\.m|p\.m)\.$)[A-Za-z]\.[A-Za-z]\.|\b(?:Mr|Mrs|Ms|Dr|St|Jr|Sr|Mt|Prof|Gov|Gen|Capt|Lt|Col|Sen|Rev|Ft|Fig|vs)\.|(?:^|[\s(“\"‘—])[A-HJ-Z]\.)$/.test(s.slice(0, m.index + 1))) continue;
+    out.push([start, m.index + 1]); start = m.index + m[0].length;
+  }
+  out.push([start, s.length]);
+  return out;
+}
+function clueAddWords(s, range, words, cls, marks){
+  const seg = s.slice(range[0], range[1]);
+  (words || []).forEach(w => { const i = seg.indexOf(w); if(i >= 0) marks.push([range[0] + i, range[0] + i + w.length, cls]); });
+}
+
+
+const GROUPS = {v:'動詞', n:'名詞', adj:'形容詞', adv:'副詞（含轉承副詞）', conj:'連接詞', other:'其他'};
+const GFULL = {v:'動詞（原形、第三人稱單數、過去式、V-ing、過去分詞）', n:'名詞（單數、複數、不可數）', adj:'形容詞', adv:'副詞（含轉承副詞）', conj:'連接詞', other:'其他（介系詞、代名詞等）'};
+const FORMS = {v:['原形','第三人稱單數','過去式','V-ing','過去分詞'], n:['單數','複數','不可數']};
+const GORDER = ['v','n','adj','adv','conj','other'].filter(g => Object.values(DATA.groupOf).indexOf(g) >= 0);
+function zero(){ const o = {}; GORDER.forEach(g => o[g] = 0); return o; }
+const ALT = DATA.altOf || {};
+function inPile(l, g){ return DATA.groupOf[l] === g || (ALT[l] || []).indexOf(g) >= 0; }
+function ambLabel(l){
+  const gs = GORDER.filter(g => inPile(l, g));
+  return gs.map(g => { const f = ((DATA.optForms[l] || {})[g] || []); return GROUPS[g] + (FORMS[g] && f.length ? '（'+f.join('、')+'）' : ''); }).join('或');
+}
+function formReq(n){ const b = BL[n]; return !!b.form && letters.some(l => inPile(l, b.slot) && !formOK(l, n)); }
+function slotLab(n){ return GROUPS[BL[n].slot] + (formReq(n) ? '・' + BL[n].form : ''); }
+function formOK(l, n){ const b = BL[n]; if(!b.form) return true; const f = (DATA.optForms[l] || {})[b.slot]; return !!f && f.indexOf(b.form) >= 0; }
+const letters = Object.keys(DATA.options);
+const blankNums = DATA.blanks.map(b => b.n);
+const BL = {}; DATA.blanks.forEach(b => BL[b.n] = b);
+const NOPT = letters.length, EXTRA = letters.length - blankNums.length, NOPTZH = ({10:'十',12:'十二'})[NOPT] || String(NOPT);
+const NEED = {}; GORDER.forEach(g => NEED[g] = DATA.blanks.filter(b => b.slot === g).length);
+
+let stage = 0;            // 0 抓主旨　1 標詞性、分堆　3 拼
+let topicDone = {}, topicSt = {}, topicRev = {};
+function curTopic(){ for(let i = 0; i < DATA.topics.length; i++) if(!topicDone[i]) return i; return null; }
+function paraName(i){ const m = DATA.paras[i].label.match(/^【([^】]*)】/); return m ? m[1] : '第 '+(i+1)+' 段'; }
+let labeled = {};         // 題號 -> true（詞性與形式都標對）
+let slotOK = {};          // 題號 -> 詞性標對了
+let assign = {};          // 選項字母 -> 'v'|'n'|'adj'（學生自己分的）
+let sortTries = 0, sortMsg = '', flashBlanks = false;
+let placed = {}, revealed = {};
+let sel = null;
+let st = {};              // 題號 -> {tried:[], hint:0, wrongs:[]}
+function S(n){ return st[n] || (st[n] = {tried:[], hint:0, wrongs:[]}); }
+function esc(str){ return String(str).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+
+const PS = DATA.paras.map(p => p.segs.map(seg => seg[1]==='blank' ? '['+seg[0]+']' : seg[0]).join(''));
+
+/* 依「含有這段文字」找出句子；回傳 [段落索引, 句範圍] */
+function findSentence(find){
+  for(let k = 0; k < PS.length; k++){
+    const r = clueSentences(PS[k]).find(q => PS[k].slice(q[0], q[1]).indexOf(find) >= 0);
+    if(r) return [k, r];
+  }
+  return null;
+}
+
+function computeMarks(n){
+  const marks = PS.map(() => []);
+  if(stage === 0){
+    const ci = curTopic();
+    if(ci != null && (topicSt[ci] || {tried:[]}).tried.length){ const tp = DATA.topics[ci]; const f = findSentence(tp.find); if(f) clueAddWords(PS[f[0]], f[1], tp.words, 'cl-k', marks[f[0]]); }
+    return marks;
+  }
+  if(n == null) return marks;
+  const b = BL[n], s = S(n);
+  const pi = PS.findIndex(t => t.indexOf('['+n+']') >= 0);
+  if(pi < 0) return marks;
+  const sents = clueSentences(PS[pi]);
+  const tag = '['+n+']';
+  const target = sents.find(r => PS[pi].slice(r[0], r[1]).indexOf(tag) >= 0);
+  const showIn = labeled[n] || s.tried.length > 0 || placed[n];
+  const showMore = (stage === 3 && s.hint >= 1) || placed[n];
+  const showCoord = (stage === 3 && s.hint >= 2) || placed[n];
+  if(target && showIn) clueAddWords(PS[pi], target, b.inner, 'cl-a', marks[pi]);
+  if(showMore){
+    (b.cross || []).forEach(x => { const f = findSentence(x.find); if(f) clueAddWords(PS[f[0]], f[1], x.words, 'cl-b', marks[f[0]]); });
+    (b.lex || []).forEach(x => { const f = findSentence(x.find); if(f) clueAddWords(PS[f[0]], f[1], x.words, 'cl-l', marks[f[0]]); });
+  }
+  if(showCoord){
+    (b.coord || []).forEach(x => { const f = findSentence(x.find); if(f) clueAddWords(PS[f[0]], f[1], x.words, x.kind === 'trap' ? 'cl-t' : 'cl-c', marks[f[0]]); });
+  }
+  return marks;
+}
+
+function renderPassage(){
+  const all = computeMarks(sel);
+  const doneAll = Object.keys(placed).length >= blankNums.length;
+  let html = '';
+  PS.forEach((s, pi) => {
+    const marks = all[pi].slice().sort((a, b) => a[0] - b[0]);
+    const re = /\[(\d+)\]/g; let m, last = 0, out = '';
+    const textPart = (a, b) => {
+      let p = a, h = '';
+      marks.forEach(([x, y, cls]) => {
+        const xx = Math.max(x, a), yy = Math.min(y, b);
+        if(yy <= xx || xx < p) return;
+        h += esc(s.slice(p, xx)) + '<mark class="'+cls+'">' + esc(s.slice(xx, yy)) + '</mark>';
+        p = yy;
+      });
+      return h + esc(s.slice(p, b));
+    };
+    while((m = re.exec(s))){
+      if(m.index > last) out += textPart(last, m.index);
+      const n = Number(m[1]);
+      const cls = 'blank' + (placed[n] ? ' filled' : (labeled[n] ? ' labeled' : '')) + (sel === n ? ' sel' : '') + (flashBlanks && !labeled[n] && !placed[n] ? ' flash' : '');
+      const label = placed[n] ? esc(DATA.options[placed[n]]) : String(n) + (labeled[n] ? '<span class="cls">'+slotLab(n)+'</span>' : '');
+      out += '<button type="button" class="'+cls+'" data-n="'+n+'"'+(stage === 0 ? ' disabled' : '')+' aria-label="第 '+n+' 題'+(labeled[n] ? '，'+slotLab(n) : '')+(placed[n] ? '，已放 '+esc(DATA.options[placed[n]]) : '')+'">'+label+'</button>';
+      last = m.index + m[0].length;
+    }
+    if(last < s.length) out += textPart(last, s.length);
+    const lab = doneAll ? DATA.paras[pi].label : (DATA.paras[pi].label.match(/^【[^】]*】/) || [''])[0];
+    html += '<p class="plabel">'+esc(lab)+'</p><p'+(stage === 0 && pi === curTopic() ? ' class="pcur"' : '')+'>'+out+'</p>';
+  });
+  document.getElementById('passage').innerHTML = html;
+  document.querySelectorAll('button.blank').forEach(btn => btn.addEventListener('click', () => select(Number(btn.dataset.n))));
+}
+
+/* 還沒放的選項裡，這個空格那一堆還剩幾個 */
+function remaining(n){
+  const g = BL[n].slot;
+  return letters.filter(l => inPile(l, g) && formOK(l, n) && !Object.values(placed).includes(l));
+}
+function leastCandidates(){
+  let best = 99, list = [];
+  blankNums.filter(n => !placed[n]).forEach(n => {
+    const k = remaining(n).length;
+    if(k < best){ best = k; list = [n]; } else if(k === best) list.push(n);
+  });
+  return {k: best, list};
+}
+
+function renderTray(){
+  const title = document.getElementById('trayTitle'), el = document.getElementById('tray');
+  document.getElementById('trayCard').classList.toggle('hidden', stage === 0);
+  if(stage === 0){ el.innerHTML = ''; return; }
+  if(stage === 1){
+    title.textContent = '分堆：把'+NOPTZH+'個選項放進'+['','','','三','四','五','六'][GORDER.length]+'堆';
+    const cnt = zero(); Object.values(assign).forEach(g => cnt[g]++);
+    const allL = Object.keys(labeled).length >= blankNums.length;
+    const needNow = zero(); blankNums.forEach(n => { if(labeled[n]) needNow[BL[n].slot]++; });
+    let h = '<div class="counts">' + GORDER.map(g => { const okc = EXTRA ? cnt[g] >= NEED[g] : cnt[g] === NEED[g]; return '<span class="count'+(allL && okc ? ' ok' : '')+'">'+GROUPS[g]+' 已放 '+cnt[g]+' 個'+(allL ? (EXTRA ? '（這一類有 '+needNow[g]+' 格'+(okc ? ' ✓' : ' ＜') : '（需要 '+needNow[g]+' 個'+(okc ? ' ✓' : ' ≠'))+'）' : '')+'</span>'; }).join('') + '</div>';
+    const nL = Object.keys(labeled).length, nA = Object.keys(assign).length;
+    h += '<ol class="steps2"><li><b>點文章裡的空格</b>（'+blankNums[0]+'～'+blankNums[blankNums.length-1]+'），在面板選這一格的詞性。</li><li><b>把下面每個選項放進一堆</b>，'+(EXTRA ? '每一堆的選項數，不能少於這種詞性的空格數。選項比空格多 '+EXTRA+' 個，多出來的是用不到的誘答選項，會在某一堆多出來。' : '每一堆的選項數，要剛好等於這種詞性的空格數。')+'</li></ol>';
+    h += '<div class="progress"><span class="pg'+(nL >= blankNums.length ? ' ok' : '')+'">詞性已標 '+nL+'／'+blankNums.length+'</span><span class="pg'+(nA >= letters.length ? ' ok' : '')+'">選項已分堆 '+nA+'／'+letters.length+'</span></div>';
+    if(DATA.flags.length) h += '<p class="next">標「兩類皆可」的字，可以當兩種詞性：放進你覺得合適的那一堆就好，只要每一堆的數量對得上，兩種都算對。</p>';
+    letters.forEach(l => {
+      h += '<div class="sortrow'+(GORDER.length > 4 ? ' many' : '')+'"><span class="w"><span class="letter">('+l+')</span>'+esc(DATA.options[l])+(DATA.flags.indexOf(l) >= 0 ? ' <span class="flag">兩類皆可</span><span class="ambnote">'+esc(ambLabel(l))+'</span>' : '')+'</span>';
+      GORDER.forEach(g => { h += '<button type="button" class="pill'+(assign[l] === g ? ' on' : '')+'" data-l="'+l+'" data-g="'+g+'" aria-pressed="'+(assign[l] === g)+'">'+GROUPS[g]+'</button>'; });
+      h += '</div>';
+    });
+    h += '<div class="btnrow"><button type="button" class="btn" id="checkBtn">核對分堆</button>' + (sortTries >= 2 ? '<button type="button" class="btn ghost" id="autoSortBtn">直接分好</button>' : '') + '</div>';
+    h += '<div class="skipbox"><button type="button" class="btn ghost" id="skipBtn">略過這一步，直接拼</button><p class="next">已經很熟詞性的人可以略過：空格和選項會照正確的詞性幫你分好，直接進第 3 步用上下文拼答案。</p></div>';
+    if(sortMsg) h += '<div class="msg">'+sortMsg+'</div>';
+    el.innerHTML = h;
+    el.querySelectorAll('.pill').forEach(p => p.addEventListener('click', () => { assign[p.dataset.l] = p.dataset.g; sortMsg = ''; renderTray(); }));
+    document.getElementById('checkBtn').addEventListener('click', checkSort);
+    document.getElementById('skipBtn').addEventListener('click', skipStep2);
+    const ab = document.getElementById('autoSortBtn'); if(ab) ab.addEventListener('click', () => { assign = Object.assign({}, DATA.groupOf); autoSorted = true; toStage3('已幫你分好。'); });
+    return;
+  }
+  // stage 3
+  title.textContent = '拼圖盤';
+  const n = sel, s = n != null ? S(n) : null;
+  const activeGroup = (n != null && !placed[n]) ? BL[n].slot : null;
+  let html = '';
+  GORDER.forEach(g => {
+    const ls = letters.filter(l => inPile(l, g));
+    html += '<div class="pile"><div class="pname'+(activeGroup===g?' on':'')+'">'+GFULL[g]+(activeGroup===g?'<br>▼ 這一題從這一堆選':'')+'</div><div class="chips">';
+    ls.forEach(l => {
+      const usedAt = Object.keys(placed).find(k => placed[k] === l);
+      const dimForm = activeGroup === g && !formOK(l, n);
+      const dim = (activeGroup && activeGroup !== g);
+      const wrongHere = s && s.wrongs.indexOf(l) >= 0;
+      const cls = 'chip' + (usedAt ? ' used' : '') + (dim ? ' dim' : '') + (dimForm ? ' dimf' : '') + (wrongHere ? ' x' : '') + (activeGroup===g && !usedAt && !wrongHere && !dimForm ? ' on' : '');
+      const disabled = (usedAt || dim || dimForm || wrongHere) ? ' disabled' : '';
+      html += '<button type="button" class="'+cls+'" data-l="'+l+'"'+disabled+'><span class="letter">('+l+')</span>'+esc(DATA.options[l])+(usedAt ? '<span class="tag">已放在第 '+usedAt+' 題</span>' : (FORMS[g] && (DATA.optForms[l]||{})[g] && blankNums.some(k => formReq(k) && BL[k].slot === g) ? '<span class="tag">'+esc(DATA.optForms[l][g].join('／'))+(dimForm ? '（形式不合）' : '')+'</span>' : ''))+'</button>';
+    });
+    html += '</div></div>';
+  });
+  el.innerHTML = html;
+  el.querySelectorAll('.chip').forEach(c => c.addEventListener('click', () => pick(c.dataset.l)));
+}
+
+function sentHtml(n){
+  const pi = PS.findIndex(t => t.indexOf('['+n+']') >= 0); if(pi < 0) return '';
+  const ss = PS[pi].split(/(?<=[.!?])\s+/); const s = ss.find(x => x.indexOf('['+n+']') >= 0); if(!s) return '';
+  const h = esc(s).replace(/\[(\d+)\]/g, (m, k) => k === String(n) ? '<b class="gap">'+k+'</b>' : '（'+k+'）');
+  return '<div class="sent"><span class="letter">本句</span>'+h+'</div>';
+}
+/* 跨句、並列線索如果在別的段落，把那一句也列在面板裡，手機上不用往回捲 */
+function crossPanelHtml(n, hint){
+  if(hint == null) hint = 9;
+  const b = BL[n];
+  const pi = PS.findIndex(t => t.indexOf('['+n+']') >= 0);
+  let h = '';
+  const items = [].concat((b.cross || []).map(x => Object.assign({}, x, {cls:'cl-b', lab:'跨句線索'})),
+                          (b.lex || []).map(x => Object.assign({}, x, {cls:'cl-l', lab:'詞彙線索'})),
+                          (hint < 2 ? [] : (b.coord || [])).map(x => Object.assign({}, x, {cls: x.kind === 'trap' ? 'cl-t' : 'cl-c', lab: x.kind === 'trap' ? '並列陷阱' : '並列線索'})));
+  items.forEach(x => {
+    const f = findSentence(x.find); if(!f) return;
+    const text = PS[f[0]].slice(f[1][0], f[1][1]);
+    if(f[0] === pi && x.cls !== 'cl-b' && text.indexOf('['+n+']') >= 0 && stage !== 99) { /* 同一句，已經在文章裡標出 */ }
+    if(f[0] === pi) return;
+    const mk = []; clueAddWords(text, [0, text.length], x.words, x.cls, mk);
+    mk.sort((p, q) => p[0] - q[0]);
+    let out = '', pos = 0;
+    mk.forEach(([a, e, cls]) => { if(a < pos) return; out += esc(text.slice(pos, a)) + '<mark class="'+cls+'">' + esc(text.slice(a, e)) + '</mark>'; pos = e; });
+    out += esc(text.slice(pos));
+    out = out.replace(/\[(\d+)\]/g, (m, d) => placed[d] ? '<b>'+esc(DATA.options[placed[d]])+'</b>' : '（'+d+'）');
+    h += '<p class="clueX '+x.cls+'"><span class="clueXlab">'+x.lab+'</span>'+out+'</p>';
+  });
+  return h;
+}
+function coordNotesHtml(n, withAll){
+  const b = BL[n]; let h = '';
+  (b.coord || []).forEach(x => { h += '<p style="font-size:14px;margin:6px 0 0"><b>'+(x.kind === 'trap' ? '並列陷阱：' : '並列線索：')+'</b>'+esc(x.note)+'</p>'; });
+  return h;
+}
+
+function topicLineHtml(n){
+  const pi = PS.findIndex(t => t.indexOf('['+n+']') >= 0); if(pi < 0 || !DATA.topics[pi]) return '';
+  return '<div class="sent"><span class="letter">這一段</span>'+esc(DATA.topics[pi].say)+'</div>';
+}
+function paraBoxHtml(ci, showKey){
+  const text = PS[ci]; const tp = DATA.topics[ci];
+  const mk = []; if(showKey){ const f = findSentence(tp.find); if(f && f[0] === ci) clueAddWords(text, f[1], tp.words, 'cl-k', mk); }
+  mk.sort((a, b) => a[0] - b[0]);
+  let out = '', pos = 0;
+  mk.forEach(([a, e, cls]) => { if(a < pos) return; out += esc(text.slice(pos, a)) + '<mark class="'+cls+'">' + esc(text.slice(a, e)) + '</mark>'; pos = e; });
+  out += esc(text.slice(pos));
+  out = out.replace(/\[(\d+)\]/g, (m, d) => '（'+d+'）');
+  return '<p class="clueX cl-k">'+out+'</p>';
+}
+function topicPanel(){
+  const ci = curTopic(), k = Object.keys(topicDone).length, total = DATA.topics.length;
+  const tp = DATA.topics[ci], s = topicSt[ci] || {tried:[]};
+  let h = '<div class="h">第 1 步：'+esc(paraName(ci))+'在講什麼？</div>';
+  h += '<p class="next">先讀這一段，再選。已完成 '+k+' / '+total+' 段。</p>';
+  h += paraBoxHtml(ci, s.tried.length > 0);
+  tp.opts.forEach((o, j) => { const x = s.tried.indexOf(j) >= 0; h += '<button type="button" class="btn topicopt'+(x ? ' x' : '')+'" data-j="'+j+'"'+(x ? ' disabled' : '')+'>'+esc(o.t)+'</button>'; });
+  if(s.tried.length){ const lj = s.tried[s.tried.length - 1]; h += '<div class="msg">'+esc(tp.opts[lj].why)+'上面標出來的字，是這一段的關鍵詞。</div>'; }
+  const done = DATA.topics.map((x, i) => topicDone[i] ? '<div class="sent"><span class="letter">'+esc(paraName(i))+'</span>'+esc(x.say)+'</div>' : '').join('');
+  if(done) h += '<p class="next" style="margin-top:12px">已經確認的段落主旨：</p>'+done;
+  return h;
+}
+function chooseTopic(j){
+  const ci = curTopic(); const tp = DATA.topics[ci]; const s = topicSt[ci] || (topicSt[ci] = {tried:[]});
+  if(tp.opts[j].ok){ topicDone[ci] = true; if(curTopic() == null){ stage = 1; sel = null; } }
+  else if(s.tried.indexOf(j) < 0) s.tried.push(j);
+  render(); toPanel();
+}
+function revealTopic(){ const ci = curTopic(); topicRev[ci] = true; topicDone[ci] = true; if(curTopic() == null){ stage = 1; sel = null; } render(); }
+
+function renderPanel(){
+  const el = document.getElementById('panel');
+  if(stage === 0){
+    el.innerHTML = topicPanel();
+    el.querySelectorAll('.topicopt').forEach(b => b.addEventListener('click', () => chooseTopic(Number(b.dataset.j))));
+    return;
+  }
+  if(sel == null){
+    let h = '';
+    if(stage === 1){
+      h = '<div class="h">第 2 步：認識空格與選項（標詞性、分堆）</div><div class="msg ok">各段的主旨都確認了。</div><div style="font-size:14px;color:var(--ink-soft)"><b>詞性只能縮小範圍，不能決定答案</b>：同一堆通常還有好幾個選項放得進去，最後要靠上下文的意思。請做兩件事：（一）點文章裡的數字，標出這一格的詞性；（二）到下面把'+NOPTZH+'個選項各放進一堆。有些字有兩種詞性（標「兩類皆可」），放哪一堆都算對，到下一步由上下文決定放進哪一格。兩件事都做完、分堆核對正確，才能開始放選項。</div>';
+    } else {
+      const lc = leastCandidates();
+      h = '<div class="h">第 3 步：用線索拼答案</div><div style="font-size:14px;color:var(--ink-soft)">點文章裡的數字開始拼。<b>先想這一段的主旨，再找內容線索</b>，最後才看詞性、形式和並列結構。像拼圖先拼邊框：先做剩下選項最少的空格。選項在下方的拼圖盤。</div>';
+      if(lc.list.length) h += '<p class="next" style="margin-top:8px">現在剩下選項最少的空格：第 '+lc.list.join('、')+' 題（那一堆只剩 '+lc.k+' 個選項）。一樣多時，先選線索最明確的。</p>';
+    }
+    el.innerHTML = h; return;
+  }
+  const n = sel, b = BL[n], s = S(n);
+  let h = '<div class="h">第 '+n+' 題</div>' + topicLineHtml(n);
+  if(placed[n]){
+    const l = placed[n];
+    h += '<div class="msg ok"><span class="badge'+(b.layer==='meaning'?' m':'')+'">'+esc(b.cats)+'</span><span class="ans">'+esc(DATA.options[l])+'</span>　'+esc(b.gloss)+(revealed[n]?'（看答案放上去的）':'')+'</div>';
+    h += '<p style="font-size:14.5px;margin:8px 0 0"><b>詞性：</b>'+slotLab(n)+'。'+esc(b.why)+(b.form ? '（形式：'+b.form+'）' : '')+'</p>';
+    h += '<p style="font-size:14.5px;margin:6px 0 0"><b>判斷依據：</b>'+esc(b.final)+'</p>';
+    h += coordNotesHtml(n) + crossPanelHtml(n);
+    el.innerHTML = h; return;
+  }
+  if(slotOK[n] && !labeled[n]){
+    h += sentHtml(n)+'<div class="msg ok"><b>'+GROUPS[b.slot]+'。</b>'+(b.form ? '' : esc(b.why))+'</div><p class="q">這一格的「形式」是？</p><div class="btnrow">';
+    FORMS[b.slot].forEach(f => { h += '<button type="button" class="btn" data-f="'+f+'"'+(s.triedF && s.triedF.indexOf(f)>=0?' disabled':'')+'>'+f+'</button>'; });
+    h += '</div>';
+    if(s.triedF && s.triedF.length) h += '<div class="msg">這一格不是'+s.triedF.join('、')+'。想想主詞、時態，和空格前後的字（'+esc(b.formWhy)+'）。</div>';
+    else h += '<div style="font-size:13.5px;color:var(--ink-soft)">同一種詞性還有不同的形式，例如動詞的過去式、過去分詞，名詞的單數、複數。看空格前後的字判斷。</div>';
+    el.innerHTML = h;
+    el.querySelectorAll('[data-f]').forEach(btn => btn.addEventListener('click', () => chooseForm(btn.dataset.f)));
+    return;
+  }
+  if(!labeled[n]){
+    h += sentHtml(n)+'<p class="q">這個空格的詞性是？</p><div class="btnrow">';
+    GORDER.forEach(g => { h += '<button type="button" class="btn" data-g="'+g+'"'+(s.tried.indexOf(g)>=0?' disabled':'')+'>'+GROUPS[g]+'</button>'; });
+    h += '</div>';
+    if(s.tried.length){
+      const sn = b.slotNote; let note = null;
+      if(typeof sn === 'string'){ if(s.tried.indexOf('n') >= 0) note = sn; }
+      else if(sn){ for(let i = s.tried.length - 1; i >= 0; i--){ if(sn[s.tried[i]]){ note = sn[s.tried[i]]; break; } } }
+      if(note) h += '<div class="msg">'+esc(note)+'</div>';
+      else h += '<div class="msg">這一格不是'+s.tried.map(g=>GROUPS[g]).join('、')+'。再看一次空格前後的字，這一句裡的線索已經標出來（有底色和底線的字）。</div>';
+    }
+    else h += '<div style="font-size:13.5px;color:var(--ink-soft)">詞性只是用來縮小範圍的，看空格前後的字判斷就好。選哪一個，最後還是要靠上下文的意思。</div>';
+    el.innerHTML = h;
+    el.querySelectorAll('[data-g]').forEach(btn => btn.addEventListener('click', () => chooseSlot(btn.dataset.g)));
+    return;
+  }
+  h += sentHtml(n)+'<div class="msg ok"><b>'+slotLab(n)+'。</b>'+esc(b.why)+'</div>';
+  if(stage < 3){ el.innerHTML = h; return; }
+  const rem = remaining(n);
+  h += '<p class="q">從下面選一個放進這一格。符合這個形式的，還有 '+rem.length+' 個選項。</p><div class="chips">';
+  rem.forEach(l => { if(s.wrongs.indexOf(l) >= 0) return; h += '<button type="button" class="chip" data-l="'+l+'"><span class="letter">('+l+')</span>'+esc(DATA.options[l])+'</button>'; });
+  h += '</div><button type="button" class="btn ghost totray" id="toTray">看完整拼圖盤 ↓</button>';
+  if(s.wrongs.length){
+    const lw = s.wrongs[s.wrongs.length - 1];
+    h += '<div class="msg">「'+esc(DATA.options[lw])+'」放不進這一格：詞性相符，但意思或搭配不合。先回頭想這一段在講什麼；想不出來時，可以按提示。</div>';
+  }
+  if(s.hint >= 1) h += '<p style="font-size:14.5px;margin:8px 0"><b>提示 1，內容線索：</b>'+esc(b.l1)+'</p>';
+  if(s.hint >= 2) h += '<p style="font-size:14.5px;margin:8px 0"><b>提示 2，結構與搭配：</b>'+esc(b.l2)+'</p>' + coordNotesHtml(n);
+  if(s.hint >= 1) h += crossPanelHtml(n, s.hint);
+  h += '<div class="btnrow">';
+  if(s.hint === 0) h += '<button type="button" class="btn ghost" id="hintBtn">提示 1：先看內容線索</button>';
+  else if(s.hint === 1) h += '<button type="button" class="btn ghost" id="hintBtn">提示 2：再看結構與搭配</button>';
+  if(s.wrongs.length >= 2 || s.hint >= 2) h += '<button type="button" class="btn ghost" id="ansBtn">直接看答案</button>';
+  h += '</div>';
+  el.innerHTML = h;
+  el.querySelectorAll('.chip').forEach(c => c.addEventListener('click', () => pick(c.dataset.l)));
+  const hb = document.getElementById('hintBtn'); if(hb) hb.addEventListener('click', () => { S(n).hint++; render(); });
+  const ab = document.getElementById('ansBtn'); if(ab) ab.addEventListener('click', () => { place(n, DATA.answers[n], true); });
+}
+
+function renderProg(){
+  const k = Object.keys(placed).length, t = blankNums.length;
+  const txt = stage === 0 ? '第 1 步　已確認主旨 '+Object.keys(topicDone).length+' / '+DATA.topics.length+' 段' : (stage === 1 ? '第 2 步　已標詞性 '+Object.keys(labeled).length+' / '+t+' 格；已分堆 '+Object.keys(assign).length+' / '+letters.length+' 個' : '第 3 步　已拼好 '+k+' / '+t+' 題');
+  document.getElementById('progText').textContent = txt;
+}
+
+let autoSorted = false, skipped2 = false;
+function renderDone(){
+  const el = document.getElementById('done');
+  if(Object.keys(placed).length < blankNums.length){ el.classList.add('hidden'); return; }
+  const firstShow = el.classList.contains('hidden');
+  el.classList.remove('hidden');
+  const DEC = [['lex','靠詞彙線索（同義、換字重述、同一個語意範圍）'],['coord','靠並列線索'],['meaning','靠這一句或這一段的意思'],['form','靠詞性、形式與搭配就能排除其他選項']];
+  const list = a => a.map(n => '第 '+n+' 題').join('、');
+  const nRev = Object.keys(revealed).length;
+  let h = '<h3>'+(nRev ? '全部放好了。' : '拼好了。')+'這十題是靠什麼判斷的</h3>';
+  h += '<p style="margin:0 0 8px;font-size:14.5px"><b>各段主旨：</b></p><ul>' + DATA.topics.map((x, i) => '<li><b>'+esc(paraName(i))+'：</b>'+esc(x.say)+'</li>').join('') + '</ul>';
+  h += '<p style="margin:0 0 8px;font-size:14.5px"><b>全文結構：</b>'+esc(DATA.structure)+'</p><ul>';
+  DEC.forEach(d => { const a = blankNums.filter(n => BL[n].decide === d[0]); if(a.length) h += '<li><b>'+d[1]+'：</b>'+list(a)+'（共 '+a.length+' 題）。</li>'; });
+  h += '</ul><p style="margin:12px 0 8px;font-size:14.5px"><b>這一回要注意：</b></p><ul>';
+  DATA.lessons.forEach(t => { h += '<li>'+esc(t)+'</li>'; });
+  const LAST = '真正作答時，一題放錯會連帶影響其他題，所以全部放好後，要把整篇再讀一遍：每一格填進去，都要扣住它那一段的主旨，整段讀起來也要通順。';
+  if(EXTRA > 0){
+    const un = letters.filter(l => Object.values(placed).indexOf(l) < 0);
+    h += '<li><b>選項比空格多 '+EXTRA+' 個。</b>每個選項只能用一次，'+blankNums.length+' 格放完以後，剩下的 '+un.length+' 個是用不到的誘答選項。'+LAST+'</li></ul>';
+    h += '<p style="margin:12px 0 8px;font-size:14.5px"><b>這次沒用到的選項，為什麼不選：</b></p><ul>';
+    un.forEach(l => { const u = (DATA.unused || {})[l] || {}; h += '<li><b>('+l+') '+esc(DATA.options[l])+'</b>'+(u.gloss ? '（'+esc(u.gloss)+'）' : '')+'：'+esc(u.why || '')+'</li>'; });
+    h += '</ul>';
+  } else {
+    h += '<li><b>每個選項只能用一次。</b>'+LAST+'</li></ul>';
+  }
+  h += '<p class="next">'+(nRev ? '你用了「直接看答案」'+nRev+' 次'+(skipped2 ? '，第 2 步選擇略過' : autoSorted ? '，分堆用了「直接分好」' : '')+'。' : (skipped2 ? '第 2 步選擇略過。' : autoSorted ? '分堆用了「直接分好」。' : ''));
+  h += '大考中心的命題研習資料提到，文意選填會避免只憑詞性、單複數或局部片語就能作答；所以真正考試時，常有同一堆好幾個選項都放得進去的情形，要靠上下文的意思判斷。</p>';
+  el.innerHTML = h;
+  if(firstShow) setTimeout(() => el.scrollIntoView({behavior:'smooth', block:'start'}), 50);
+}
+
+function dockPanel(){
+  const panel = document.getElementById('panel'), tray = document.getElementById('trayCard');
+  let host = null;
+  if(stage === 0) host = document.querySelector('#passage p.pcur');
+  else if(sel != null){ const b = document.querySelector('button.blank.sel'); host = b && b.closest('p'); }
+  if(host) host.after(panel); else tray.parentNode.insertBefore(panel, tray);
+}
+function render(){
+  const panel = document.getElementById('panel'), tray = document.getElementById('trayCard');
+  tray.parentNode.insertBefore(panel, tray);
+  renderPassage(); renderTray(); renderPanel(); renderProg(); renderDone(); dockPanel();
+}
+
+function select(n){ if(stage === 0) return; sel = n; render(); document.getElementById('panel').scrollIntoView({behavior:'smooth', block:'nearest'}); }
+function toPanel(){ const p = document.getElementById('panel'); if(p && p.scrollIntoView) p.scrollIntoView({behavior:'smooth', block:'nearest'}); }
+
+function chooseForm(f){
+  const s = S(sel); s.triedF = s.triedF || [];
+  if(BL[sel].form === f || (BL[sel].formAlt || []).indexOf(f) >= 0){ labeled[sel] = true; } else if(s.triedF.indexOf(f) < 0){ s.triedF.push(f); }
+  render();
+}
+function chooseSlot(g){
+  const s = S(sel);
+  if(BL[sel].slot === g){
+    slotOK[sel] = true;
+    if(!FORMS[g] || !formReq(sel)) labeled[sel] = true;
+  } else { if(s.tried.indexOf(g) < 0) s.tried.push(g); }
+  render();
+}
+
+function checkSort(){
+  flashBlanks = false;
+  const nUn = blankNums.length - Object.keys(labeled).length;
+  if(nUn > 0){
+    sortMsg = '還有 '+nUn+' 格沒標詞性。請點文章裡閃動的空格（'+blankNums.filter(n => !labeled[n]).join('、')+'），在面板選這一格的詞性。十格都標完，才能核對分堆。';
+    flashBlanks = true; setTimeout(() => { flashBlanks = false; }, 3500);
+    render(); const bl = document.querySelector('button.blank.flash'); if(bl && bl.scrollIntoView) bl.scrollIntoView({block:'center', behavior:'smooth'});
+    return;
+  }
+  const un = letters.filter(l => !assign[l]);
+  if(un.length){ sortMsg = '還有 '+un.length+' 個選項沒有分堆。'; renderTray(); return; }
+  sortTries++;
+  const cnt = zero(); Object.values(assign).forEach(g => cnt[g]++);
+  const off = GORDER.filter(g => EXTRA ? cnt[g] < NEED[g] : cnt[g] !== NEED[g]);
+  const amb = DATA.flags.map(l => DATA.options[l]).join('、');
+  if(off.length){
+    sortMsg = '數量對不上：' + off.map(g => GROUPS[g]+'堆現在有 '+cnt[g]+' 個，但詞性是'+GROUPS[g]+'的空格有 '+NEED[g]+' 格').join('；') + (EXTRA ? '，選項不能比空格少。' : '。') + (amb ? '標「兩類皆可」的字（'+esc(amb)+'）可以放進兩種詞性的任一堆，想想它們放進文章哪一格、在那裡當什麼詞。' : '回到文章，看每個字可能放進哪一格。');
+    renderTray(); return;
+  }
+  const wrong = letters.filter(l => !inPile(l, assign[l]));
+  if(wrong.length){
+    sortMsg = (EXTRA ? '每一堆的數量夠了' : '每一堆的數量對了')+'，但還有字放錯堆。標「兩類皆可」的字，只能放進它標出的那兩種詞性；其他的字，回到文章看它可能放進哪一格、在那裡當什麼詞。';
+    renderTray(); return;
+  }
+  toStage3('分對了。');
+}
+function skipStep2(){
+  blankNums.forEach(n => { labeled[n] = true; slotOK[n] = true; });
+  assign = Object.assign({}, DATA.groupOf); skipped2 = true; toStage3('');
+}
+function toStage3(msg){ stage = 3; sel = null; sortMsg = ''; render(); }
+
+function place(n, l, viaReveal){ placed[n] = l; if(viaReveal) revealed[n] = true; render(); }
+
+function pick(l){
+  if(sel == null || placed[sel] || stage !== 3) return;
+  const s = S(sel);
+  if(l === DATA.answers[sel]){ place(sel, l, false); }
+  else { if(s.wrongs.indexOf(l) < 0) s.wrongs.push(l); render(); }
+}
+
+document.getElementById('resetBtn').addEventListener('click', () => { stage = 0; topicDone = {}; topicSt = {}; topicRev = {}; labeled = {}; slotOK = {}; assign = {}; sortTries = 0; sortMsg = ''; autoSorted = false; skipped2 = false; placed = {}; revealed = {}; sel = null; st = {}; render(); });
+
+document.getElementById('sub').textContent = DATA.sub;
+if(DATA.note){ const nd = document.createElement('div'); nd.className = 'sub'; nd.textContent = DATA.note; document.getElementById('sub').after(nd); }
+document.querySelectorAll('[data-nopt]').forEach(e => e.textContent = NOPTZH+'個');
+if(EXTRA > 0) document.querySelectorAll('[data-rule]').forEach(e => e.textContent = '選項比空格多 '+EXTRA+' 個，多出來的是用不到的誘答選項，所以每一堆的選項數，不能少於那一種詞性的空格數。');
+document.getElementById('lnkFull').href = 'https://staresto-create.github.io/passage-completion/#full-' + DATA.id;
+render();
+document.addEventListener('click', e => { if(e.target && e.target.id === 'toTray'){ const t = document.getElementById('trayCard'); if(t) t.scrollIntoView({behavior:'smooth', block:'start'}); } });
+</script>
+</body>
+</html>

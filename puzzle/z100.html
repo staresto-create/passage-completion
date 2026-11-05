@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>文意選填：用上下文拼圖</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500;700;900&family=Noto+Sans+TC:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{--pill-edge:#8F8670;
+    --paper:#F6F1E4; --paper-card:#FFFDF7; --ink:#221F1A; --ink-soft:#5B5648;
+    --rule:#DCD3BB; --crimson:#AE3626; --sage:#3E6E52; --gold:#A9812E;
+    --surface:#fff; --tint-crimson:#FBF1EE; --tint-sage:#E7F3EA; --tint-warm:#FBF6E8; --tint-sand:#F1EADA;
+    --link:#9C2C1E; --foot:#6f685d; --on-ink:#fff;
+    --glow:rgba(174,54,38,.05); --grid-line:rgba(34,31,26,0.025);
+    --shadow:0 1px 0 rgba(34,31,26,.06), 0 8px 24px rgba(34,31,26,.08);
+    --cl-a-bg:#FAD9CC; --cl-a-line:#AE3626; --cl-b-bg:#E2D8F3; --cl-b-line:#6A4FA3;
+    --cl-c-bg:#CFEAE0; --cl-c-line:#23705A; --cl-t-bg:#FBD9B5; --cl-t-line:#A24E0E;
+    --cl-l-bg:#D6E6F6; --cl-l-line:#2B63A8; --cl-k-bg:#F3E3AE; --cl-k-line:#A9812E;
+    color-scheme:light;
+  }
+  @media screen and (prefers-color-scheme: dark){
+    :root{--pill-edge:#8A8272;
+      --paper:#1B1916; --paper-card:#26231F; --ink:#EDE7D8; --ink-soft:#B8B0A0; --rule:#4C463B;
+      --crimson:#E57B68; --sage:#82C09C; --gold:#DDA94F;
+      --surface:#2D2A25; --tint-crimson:#3A2420; --tint-sage:#22302A; --tint-warm:#2B2721; --tint-sand:#332E25;
+      --link:#E57B68; --foot:#A29A8B; --on-ink:#1B1916;
+      --glow:rgba(229,123,104,.07); --grid-line:rgba(255,255,255,0.02);
+      --shadow:0 1px 0 rgba(0,0,0,.4),0 8px 24px rgba(0,0,0,.35);
+      --cl-a-bg:#5A2D25; --cl-a-line:#E57B68; --cl-b-bg:#3F3560; --cl-b-line:#B7A1EA;
+      --cl-c-bg:#1F4A3E; --cl-c-line:#6FD1B0; --cl-t-bg:#5C3A1E; --cl-t-line:#F0A25C;
+      --cl-l-bg:#203A55; --cl-l-line:#86B8F2; --cl-k-bg:#4B3E17; --cl-k-line:#DDA94F;
+      color-scheme:dark;
+    }
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:var(--paper);
+    background-image:radial-gradient(circle at 100% 0%, var(--glow), transparent 40%),
+      repeating-linear-gradient(0deg, var(--grid-line) 0px, var(--grid-line) 1px, transparent 1px, transparent 34px);
+    color:var(--ink); font-family:'Noto Sans TC',sans-serif; -webkit-font-smoothing:antialiased;
+    min-height:100vh; padding:24px 14px 60px; line-height:1.7;
+  }
+  .wrap{max-width:820px; margin:0 auto;}
+  header.top{text-align:center; border-bottom:3px double var(--ink); padding-bottom:14px; margin-bottom:20px;}
+  header.top .title{font-family:'Noto Serif TC',serif; font-weight:900; font-size:25px; letter-spacing:.02em;}
+  header.top .sub{font-family:'IBM Plex Mono','Noto Sans TC',monospace; font-size:12px; color:var(--ink-soft); margin-top:6px;}
+  .card{background:var(--paper-card); border:1px solid var(--rule); border-radius:4px; box-shadow:var(--shadow); padding:20px; margin-bottom:16px;}
+  .lead{font-size:15px; margin:0 0 10px;}
+  .lead b{color:var(--crimson);}
+  .steps{font-size:14.5px; margin:8px 0 0; padding-left:1.4em;}
+  .steps li{margin-bottom:4px;}
+  .legend{font-size:13px; color:var(--ink-soft); margin:14px 0 0; line-height:2;}
+  mark.cl-a{background:var(--cl-a-bg); color:inherit; border-bottom:2px solid var(--cl-a-line); padding:0 1px; border-radius:2px;}
+  mark.cl-b{background:var(--cl-b-bg); color:inherit; border-bottom:2px dashed var(--cl-b-line); padding:0 1px; border-radius:2px;}
+  mark.cl-c{background:var(--cl-c-bg); color:inherit; border-bottom:2px dotted var(--cl-c-line); padding:0 1px; border-radius:2px;}
+  mark.cl-t{background:var(--cl-t-bg); color:inherit; text-decoration:underline wavy var(--cl-t-line); text-decoration-thickness:2px; text-underline-offset:3px; padding:0 1px; border-radius:2px;}
+  mark.cl-l{background:var(--cl-l-bg); color:inherit; border-bottom:3px double var(--cl-l-line); padding:0 1px; border-radius:2px;}
+  mark.cl-k{background:var(--cl-k-bg); color:inherit; font-weight:700; border-bottom:2px solid var(--cl-k-line); padding:0 1px; border-radius:2px;}
+  .pcur{border-left:4px solid var(--gold); padding-left:8px; margin-left:-12px;}
+  button.blank:disabled{cursor:default; opacity:.8;}
+  .topicopt{display:block; width:100%; text-align:left; font-weight:500; line-height:1.6; padding:10px 14px; margin:8px 0;}
+  .topicopt.x{opacity:1; color:var(--ink-soft); text-decoration:line-through; text-decoration-color:var(--crimson);}
+  .legend mark{font-weight:700; margin-right:4px;}
+  .legend span.it{display:inline-block; margin-right:12px;}
+  .clueX{font-family:'Times New Roman',Times,'Liberation Serif','Noto Serif','Noto Sans TC',serif; font-size:15.5px; line-height:1.85; margin:8px 0; padding:6px 10px; border-left:3px solid var(--cl-b-line); background:var(--tint-warm);}
+  .clueX.cl-l{border-left-color:var(--cl-l-line);}
+  .clueX.cl-c{border-left-color:var(--cl-c-line);}
+  .clueX.cl-t{border-left-color:var(--cl-t-line);}
+  .clueX.cl-k{border-left-color:var(--cl-k-line); background:var(--surface);}
+  .clueXlab{font-family:'Noto Sans TC',sans-serif; font-size:12px; font-weight:700; color:var(--ink-soft); margin-right:8px;}
+
+  .passage{font-family:'Times New Roman',Times,'Liberation Serif','Noto Serif','Noto Sans TC',serif; font-size:17px; line-height:2.15;}
+  .passage p{margin:0 0 14px; text-indent:1.6em;}
+  .plabel{font-family:'Noto Sans TC',sans-serif; font-size:12px; color:var(--ink-soft); margin:0 0 2px; text-indent:0 !important; letter-spacing:.03em;}
+  button.blank{font:inherit; font-family:'IBM Plex Mono','Noto Sans TC',monospace; font-size:14px; font-weight:600; min-width:48px; min-height:44px; padding:1px 8px; margin:0 2px;
+    border:1.5px dashed var(--ink-soft); border-radius:6px; background:var(--surface); color:var(--ink); cursor:pointer; vertical-align:baseline;}
+  @media (hover:hover){ button.blank:hover{border-color:var(--crimson);} }
+  button.blank.labeled{border-style:solid; border-color:var(--sage);}
+  @keyframes blankflash{0%,100%{background:var(--surface);} 50%{background:var(--tint-crimson); border-color:var(--crimson);}}
+  button.blank.flash{animation:blankflash .9s ease-in-out 3;}
+  @media (prefers-reduced-motion:reduce){ button.blank.flash{animation:none; border-color:var(--crimson); border-style:solid;} }
+  .progress{font-size:14px; margin:6px 0 8px; display:flex; flex-wrap:wrap; gap:6px 14px;}
+  .progress .pg{font-weight:700;} .progress .pg.ok{color:var(--sage);}
+  .steps2{margin:4px 0 8px; padding-left:20px; font-size:14px; line-height:1.7;}
+  .ambnote{font-family:'Noto Sans TC',sans-serif; font-size:12px; color:var(--ink-soft); display:block; margin:1px 0 0 0;}
+  button.blank .cls{font-family:'Noto Sans TC',sans-serif; font-size:12px; font-weight:500; color:var(--ink-soft); margin-left:4px;}
+  button.blank.sel{border:2px solid var(--crimson); background:var(--tint-crimson); color:var(--crimson);}
+  button.blank.filled{font-family:'Times New Roman',Times,'Liberation Serif','Noto Serif',serif; font-size:17px; font-weight:700; border:2px solid var(--sage); background:var(--tint-sage); color:var(--ink); padding:0 8px;}
+  button.blank.filled.sel{border-color:var(--crimson);}
+  button.blank:focus-visible, .chip:focus-visible, .btn:focus-visible, .pill:focus-visible{outline:3px solid var(--gold); outline-offset:2px;}
+
+  .h{font-family:'Noto Serif TC',serif; font-weight:700; font-size:16px; margin:0 0 8px;}
+  .pile{margin-bottom:12px;}
+  .pile .pname{font-size:12.5px; font-weight:700; color:var(--ink-soft); margin-bottom:5px;}
+  .pile .pname.on{color:var(--crimson);}
+  .chips{display:flex; flex-wrap:wrap; gap:8px;}
+  .chip{font-family:'Times New Roman',Times,'Liberation Serif','Noto Serif',serif; font-size:17px; font-weight:700; min-height:44px; padding:4px 14px; border:1.5px solid var(--ink-soft); border-radius:8px; background:var(--surface); color:var(--ink); cursor:pointer;}
+  .chip .tag{display:block; font-family:'Noto Sans TC',sans-serif; font-size:12px; font-weight:500; color:var(--ink-soft); line-height:1.2;}
+  .chip.used{border-style:dashed; opacity:.5; cursor:default;}
+  .chip.dim{opacity:.5; cursor:default;}
+  .chip.dimf{border-style:dashed; border-color:var(--ink-soft); background:transparent; color:var(--ink-soft); cursor:default;}
+  .chip.dimf .tag{color:var(--ink-soft);}
+  .prog .btn{flex:none; white-space:nowrap;}
+  .sent{font-size:15px; line-height:1.7; margin:6px 0 8px; padding:6px 10px; border-left:3px solid var(--ink-soft); background:var(--surface);}
+  .sent b.gap{border-bottom:2px solid var(--crimson); padding:0 .6em;}
+  .chip.on{border-color:var(--crimson); background:var(--tint-crimson);}
+  .chip.x{text-decoration:line-through; opacity:.45; cursor:default;}
+  .letter{font-family:'IBM Plex Mono',monospace; font-size:12px; font-weight:600; color:var(--ink-soft); margin-right:5px;}
+
+  .sortrow{display:flex; flex-wrap:wrap; align-items:center; gap:8px 10px; padding:6px 0; border-bottom:1px solid var(--rule);}
+  .sortrow .w{font-family:'Times New Roman',Times,'Liberation Serif','Noto Serif',serif; font-size:18px; font-weight:700; min-width:8.5em;}
+  .pill{white-space:nowrap; font-family:'Noto Sans TC',sans-serif; font-size:13.5px; font-weight:500; min-height:44px; padding:2px 14px; border:1.5px solid var(--pill-edge); border-radius:22px; background:var(--surface); color:var(--ink); cursor:pointer;}
+  .sortrow.many{display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:8px;}
+  .sortrow.many .w{grid-column:1/-1;}
+  .sortrow.many .pill{padding:2px 4px;}
+  .skipbox{margin-top:14px; padding-top:12px; border-top:1px dashed var(--rule);}
+  .skipbox .next{margin:6px 0 0;}
+  .totray{font-size:13.5px; margin-left:0; display:block; margin-top:6px; min-height:44px; padding:2px 12px;}
+  #passage #panel{margin:2px -8px 18px; padding:16px; border-left:4px solid var(--crimson); font-family:'Noto Sans TC',sans-serif; font-size:15px; line-height:1.75; text-indent:0;}
+  #panel .chips{margin:8px 0;}
+  #passage #panel p{text-indent:0; margin:8px 0;}
+  .pill.on{border-color:var(--crimson); background:var(--tint-crimson); color:var(--crimson); font-weight:700;}
+  .flag{font-family:'Noto Sans TC',sans-serif; font-size:12px; font-weight:700; color:var(--cl-b-line); border:1.5px solid var(--cl-b-line); border-radius:9px; padding:0 6px; margin-left:4px; white-space:nowrap;}
+  .counts{display:flex; flex-wrap:wrap; gap:8px; margin:10px 0; position:sticky; top:0; z-index:2; background:var(--paper-card); padding:6px 0;}
+  .count{font-family:'Noto Sans TC',sans-serif; font-size:13px; padding:3px 10px; border:1.5px solid var(--rule); border-radius:6px; background:var(--surface);}
+  .count.ok{border-color:var(--sage); color:var(--sage); font-weight:600;}
+
+  .btn{font-family:'Noto Sans TC',sans-serif; font-size:14px; font-weight:700; min-height:44px; padding:6px 14px; border:1.5px solid var(--ink); border-radius:6px; background:var(--surface); color:var(--ink); cursor:pointer;}
+  @media (hover:hover){ .btn:hover{border-color:var(--crimson);} }
+  .btn:disabled{opacity:.4; cursor:default;}
+  .btn.ghost{border-color:var(--rule); font-weight:500; color:var(--ink-soft);}
+  .btnrow{display:flex; flex-wrap:wrap; gap:8px; margin:8px 0;}
+  .q{font-size:15px; margin:0 0 6px; font-weight:700;}
+  .msg{font-size:14px; margin:8px 0; padding:8px 12px; border-left:3px solid var(--gold); background:var(--tint-warm);}
+  .msg.ok{border-color:var(--sage); background:var(--tint-sage);}
+  .badge{display:inline-block; font-size:12px; font-weight:700; padding:1px 8px; border-radius:10px; border:1.5px solid var(--sage); color:var(--sage); margin-right:6px;}
+  .badge.m{border-color:var(--cl-b-line); color:var(--cl-b-line);}
+  .ans{font-family:'Times New Roman',Times,'Liberation Serif','Noto Serif',serif; font-size:20px; font-weight:700;}
+  .prog{font-family:'IBM Plex Mono','Noto Sans TC',monospace; font-size:12.5px; color:var(--ink-soft); display:flex; justify-content:space-between; align-items:center; gap:8px; margin-bottom:10px;}
+  .next{font-size:13.5px; color:var(--ink-soft); margin:0 0 10px;}
+  .done h3{font-family:'Noto Serif TC',serif; margin:0 0 8px; font-size:17px;}
+  .done ul{margin:6px 0 10px; padding-left:1.2em; font-size:14.5px;}
+  .done li{margin-bottom:6px;}
+  .links{font-size:13.5px; line-height:1.6;}
+  .links a{display:inline-block; padding:8px 0;}
+  a{color:var(--link); font-weight:700; text-underline-offset:2px;}
+  footer{text-align:center; font-size:12.5px; color:var(--foot); line-height:1.9; margin-top:26px;}
+  footer .cc{font-size:11.5px; margin-top:6px;}
+  footer a{display:inline-block; padding:10px 0;}
+  .hidden{display:none !important;}
+  @media (max-width:560px){ .sortrow .w{flex:0 0 100%;} .sortrow .pill{flex:1 1 0; padding:2px 6px;} .passage{font-size:16.5px;} header.top .title{font-size:21px;} .sortrow .w{min-width:7em;} }
+  @media print{ body{padding:0;} .card{box-shadow:none;} }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div class="title">文意選填：用上下文拼圖</div>
+    <div class="sub" id="sub"></div>
+  </header>
+
+  <div class="card">
+    <p class="lead">文意選填像一整篇的拼圖，<b>重點是上下文：每一格都要扣住它所在那一段的主旨</b>。分三步：</p>
+    <ol class="steps">
+      <li><b>讀段落、找出主旨</b>：選出每一段在講什麼。答錯時會標出這一段的關鍵詞。</li>
+      <li><b>認識空格與選項（標詞性、分堆）</b>：標出每一格的詞性，再把<span data-nopt>十個</span>選項分堆。</li>
+      <li><b>用線索拼答案</b>：先想主旨、找內容線索，卡住時按「提示」。</li>
+    </ol>
+    <details style="margin-top:8px"><summary style="font-size:13.5px; font-weight:700; cursor:pointer; min-height:44px; display:flex; align-items:center;">第 2 步怎麼做（點開來看）</summary>
+    <p class="legend">把十個空格各是哪一種詞性標出來，有些空格還要標「形式」（例如動詞的第三人稱單數、名詞的複數）；同時把<span data-nopt>十個</span>選項分成動詞、名詞、形容詞等幾堆。<span data-rule>每一堆的數量，要剛好等於那一種詞性的空格數。</span>詞性只能縮小範圍，同一堆通常還有好幾個選項放得進去，最後要靠上下文的意思。標「兩類皆可」的字可以當兩種詞性，放進哪一堆都算對，只要每一堆的數量對得上。已經很熟詞性的人，也可以直接略過這一步。</p></details>
+    <details style="margin-top:12px"><summary style="font-size:13.5px; font-weight:700; cursor:pointer; min-height:44px; display:flex; align-items:center;">標色說明（點開來看）</summary>
+    <p class="legend">
+      <span class="it"><mark class="cl-k">主旨關鍵詞</mark>第 1 步答錯時標出</span>
+      <span class="it"><mark class="cl-a">句內線索</mark>空格所在那一句</span>
+      <span class="it"><mark class="cl-b">跨句線索</mark>前後句或文中其他句子</span>
+      <span class="it"><mark class="cl-l">詞彙線索</mark>同義、換字重述、同一個語意範圍的字</span>
+      <span class="it"><mark class="cl-c">並列線索</mark>和空格並列的成分</span>
+      <span class="it"><mark class="cl-t">並列陷阱</mark>看起來並列，其實不是</span><br>
+      標詞性時，只會標出「句內線索」；跨句線索與詞彙線索（也就是內容線索），要在第 3 步按「提示 1」才出現；並列線索與並列陷阱，要按「提示 2」。
+    </p></details>
+  </div>
+
+  <div class="card">
+    <div class="prog"><span id="progText"></span><button class="btn ghost" id="resetBtn" type="button">重新開始</button></div>
+    <div class="passage" id="passage"></div>
+  </div>
+
+  <div class="card" id="panel" aria-live="polite"></div>
+
+  <div class="card" id="trayCard">
+    <div class="h" id="trayTitle"></div>
+    <div id="tray"></div>
+  </div>
+
+  <div class="card done hidden" id="done"></div>
+
+  <div class="card links">
+    <a id="lnkFull" href="#">→ 這一回的完整題目與解析</a><br>
+    <a href="https://staresto-create.github.io/JCEE-vocab-questions/#rules">→ 拼圖的五種線索：字詞搭配、用法、換句話說、銜接、連貫</a><br>
+    <a href="https://staresto-create.github.io/passage-completion/">← 回文意選填</a>
+  </div>
+
+  <footer>
+    資料來源：大考中心公布之歷屆文意選填試題與答案<br>
+    © 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫
+    <div class="cc">本題庫撰寫的解析與標註，採用 <a href="https://creativecommons.org/licenses/by-nc/4.0/deed.zh-hant" target="_blank" rel="license noopener">CC BY-NC 4.0</a> 授權。</div>
+  </footer>
+</div>
+
+<script>
+const DATA = {"id": "z100", "sub": "100年 指考 · 第 21–30 題 · 文字的六千年（The History of the Written Word）", "paras": [{"label": "【第一段】文字的力量，說故事的人受到敬重", "segs": [["The history of the written word goes back 6,000 years. ", null], ["Words express feelings, open doors into the ", "topic"], ["21", "blank"], [" , create pictures of worlds never seen, and allow adventures never dared.", "topic"], [" ", null], ["Therefore", "trans"], [", the original ", null], ["22", "blank"], [" of words, such as storytellers, poets, and singers, were respected in all cultures in the past.", null]]}, {"label": "【第二段】點出主旨：影像文化取代文字", "segs": [["But", "trans"], [" now the romance is ", "topic"], ["23", "blank"], [" .", "topic"], [" Imagination is being surpassed by the instant picture. In a triumphant march, movies, TV, videos, and DVDs are ", null], ["24", "blank"], [" storytellers and books. ", null], ["A visual culture is taking over the world—at the ", "thesis"], ["25", "blank"], [" of the written word.", "thesis"], [" Our literacy, and with it our verbal and communication skills, are in ", null], ["26", "blank"], [" decline.", null]]}, {"label": "【第三段】例外：圖像小說逆勢成長", "segs": [["The only category of novel that is ", "topic"], ["27", "blank"], [" ground in our increasingly visual world is the graphic novel.", "topic"], [" A growing number of adults and young people worldwide are reading graphic novels, and educators are beginning to realize the power of this ", null], ["28", "blank"], [" . The graphic novel looks like a comic book, ", null], ["but", "trans"], [" it is longer, more sophisticated, and may come in black and white or multiple ", null], ["29", "blank"], [" and appear in many sizes. ", null], ["In fact", "trans"], [", some of the most interesting, daring, and most heartbreaking art being created right now is being published in graphic novels. Graphic novels ", null], ["30", "blank"], [" the opportunity to examine the increasingly visual world of communications today while exploring serious social and literary topics. The graphic novel can be used to develop a sense of visual literacy, in much the same way that students are introduced to art appreciation.", null]]}], "options": {"A": "expense", "G": "users", "B": "fading", "H": "rapid", "C": "colors", "I": "gaining", "D": "research", "J": "medium", "E": "replacing", "K": "circular", "F": "offer", "L": "unknown"}, "groupOf": {"A": "n", "B": "v", "C": "n", "D": "n", "E": "v", "F": "v", "G": "n", "H": "adj", "I": "v", "J": "n", "K": "adj", "L": "n"}, "ambig": ["A", "D", "F", "J", "K", "L"], "blanks": [{"cats": "詞性判斷（第二詞性）、語意連貫", "slot": "n", "layer": "meaning", "decide": "lex", "why": "空格在 into the 之後，介系詞後面要接名詞片語，所以要填名詞。", "l1": "這一句有四個並列的動作：express feelings、open doors into the ___、create pictures of worlds never seen、allow adventures never dared。後面兩個動作的受詞都帶著 never，想想這一格要表達的內容，和它們是不是同一個範圍。", "l2": "into the 之後要接名詞。名詞堆裡有幾個字平常多半當形容詞用；形容詞前面加 the 之後，可以變成指一類人或事物的名詞，像 the rich、the poor。再看哪一個字放進來，意思能和 worlds never seen、adventures never dared 屬於同一個範圍。", "final": "open doors into the unknown（打開通往未知領域的門）：into the 後面要接名詞，而 unknown 平常多半當形容詞，前面加 the 之後就成了名詞，和 the rich、the poor 是同一個結構。LDOCE 的 the unknown 有兩個意思：a place that is not known about or that has not been visited by humans，以及 things that you do not know or understand，例句 The astronauts began their journey into the unknown. 也是 into the unknown 的說法；Merriam-Webster 也有例句 explorers venturing into the unknown。這一句裡 worlds never seen 和 adventures never dared 說的，都是文字能帶人去到的新範圍，這一格正是那個範圍。如果放 users，變成「通往使用者的門」，意思就不通了。", "gloss": "未知的領域、未知的事物", "inner": ["open doors into the", "worlds never seen"], "cross": [], "coord": [], "lex": [{"find": "Words express feelings, open doors into the", "words": ["worlds never seen", "adventures never dared"], "kind": "語意範圍", "note": "worlds never seen 和 adventures never dared 兩處都帶有 never，空格的字和它們屬於同一個語意範圍。"}], "n": 21}, {"cats": "語意連貫", "slot": "n", "layer": "meaning", "decide": "lex", "form": "複數", "formWhy": "空格是 were respected 的主詞，were 是複數動詞，所以主詞要用複數名詞", "why": "空格在 the original 之後、of words 之前，是 were respected 的主詞，要填名詞。", "l1": "看這一句 such as 後面舉的例子：storytellers、poets、singers。這一格要填的名詞，要能把這三種人歸成同一類，而且他們都是在文字的世界裡做事的人。", "l2": "the original ___ of words：空格是主詞，後面的 were respected 是複數動詞，所以要用複數名詞。複數形的名詞選項不只一個，要看哪一個能涵蓋 storytellers、poets、singers 這三種人。", "final": "the original users of words（最早使用文字的人）：such as 後面列的 storytellers、poets、singers 都是人，而且都是拿文字來說故事、寫詩、唱歌的人，所以空格要一個能涵蓋他們的複數名詞；were respected 也要求主詞是複數。Merriam-Webster 的 user 是名詞，定義是 someone who uses something，例句 users of the city's transit system 也是「users of ＋名詞」的結構，所以 the original users of words 就是最早使用文字的人。colors 同樣是複數名詞，但顏色不是人，放進 the original colors of words 意思不通。", "gloss": "使用者", "inner": ["the original", "such as storytellers, poets, and singers", "were respected"], "cross": [], "coord": [], "lex": [{"find": "Therefore, the original", "words": ["such as storytellers, poets, and singers"], "kind": "上下位", "note": "such as 後面列出的 storytellers、poets、singers，是空格這個詞所涵蓋的三種例子。"}], "n": 22}, {"cats": "語意連貫、語意對比", "slot": "v", "layer": "meaning", "decide": "meaning", "form": "V-ing", "formWhy": "is 後面的動詞只能是 V-ing 或過去分詞；選項裡沒有過去分詞，所以是 V-ing", "why": "空格在 is 之後，後面直接接句號，沒有受詞，所以要填 is + V-ing 的進行式，而且是不及物動詞。", "l1": "這一句的 But now 把現在和上一段做對比：第一段說這些人在過去受到敬重。再看下一句 Imagination is being surpassed by the instant picture，想想這份 romance 現在的處境。", "l2": "is 後面接動詞時，只能是 V-ing（進行式）或過去分詞（被動）；選項的動詞都是 V-ing 或原形，所以這一格要 V-ing。空格後面直接是句號，沒有受詞，所以一定要接受詞的動詞可以先排除。剩下的字，看哪一個放在 the romance is ___ 之後，方向和下一句的 being surpassed 一致。", "final": "the romance is fading（這份浪漫正在消退）：romance 在這裡不是愛情，LDOCE 的解釋是與某個地方或活動相關的興奮與冒險感（例 the romance of Hollywood），指的就是第一段說的，文字帶給人的想像與冒險。But now 和第一段的 in the past 對比，下一句 Imagination is being surpassed by the instant picture 又說想像力被影像超越，所以這一句要說這份魅力正在變弱。LDOCE 的 fade 第 1 義是 to gradually disappear，例句 Hopes of a peace settlement are beginning to fade. 和 Over the years her beauty had faded a little. 的主詞都是希望、美貌這類抽象的東西，和 the romance is fading 的用法相同；fade 這樣用是不及物動詞，後面不接受詞。replacing 一定要接受詞，放在句號前面句子不完整；gaining 雖然也有不接受詞的用法，但意思是增加，方向和下一句的 being surpassed 相反。", "gloss": "逐漸消退", "inner": ["But now", "the romance is"], "cross": [{"find": "were respected in all cultures in the past", "words": ["were respected", "in the past"]}], "coord": [], "lex": [{"find": "Imagination is being surpassed by the instant picture", "words": ["being surpassed"], "kind": "換字重述", "note": "下一句的 being surpassed，把空格這一句的意思換個說法再說一次。"}, {"find": "But now the romance is", "words": ["But now"], "kind": "轉折", "note": "But now 把現在的情形，和上一段的過去對比。"}], "n": 23}, {"cats": "語意連貫、同義呼應", "slot": "v", "layer": "meaning", "decide": "meaning", "form": "V-ing", "formWhy": "are 後面的動詞只能是 V-ing 或過去分詞；選項裡沒有過去分詞，所以是 V-ing", "why": "空格在 are 之後，後面接 storytellers and books 當受詞，所以要填 are + V-ing 的及物動詞。", "l1": "這一句的主詞是 movies、TV、videos、DVDs，受詞是 storytellers and books。上一句說 Imagination is being surpassed by the instant picture。想想主詞對受詞做了什麼。", "l2": "are 後面是 V-ing，空格後面直接接 storytellers and books 當受詞，所以要用能接受詞的及物動詞。再看 In a triumphant march：影像媒體一路前進，說書人和書本的處境會怎麼樣？主詞對受詞做的事，方向要和上一句的 being surpassed 一致。", "final": "are replacing storytellers and books（正在取代說書人與書本）：主詞是影音媒體，受詞是 storytellers and books，replace 是及物動詞，表示後來的事物頂替原本的位置，正好呼應上一句的 being surpassed 和下一句的 taking over the world。LDOCE 的例句 Lectures have replaced the old tutorial system. 與 Merriam-Webster 的 Will computers ever completely replace books? 都是同樣的結構。fade 當及物動詞時是讓東西褪色（LDOCE 例句 The sun had faded the curtains.），說成影音媒體讓說書人和書本褪色，意思不通；gain 接受詞時是取得，說成影音媒體取得說書人和書本，也和上一句的 being surpassed 對不上。", "gloss": "取代", "inner": ["movies, TV, videos, and DVDs are", "storytellers and books"], "cross": [], "coord": [], "lex": [{"find": "A visual culture is taking over the world", "words": ["taking over"], "kind": "同義", "note": "下一句的 taking over 和空格所在的句子，講的是同一件事：影像文化壓過文字。"}, {"find": "Imagination is being surpassed by the instant picture", "words": ["being surpassed"], "kind": "換字重述", "note": "上一句的 being surpassed，已經說出影像與想像力、文字之間的關係。"}], "n": 24}, {"cats": "字詞搭配、字彙選義（第二義）", "slot": "n", "layer": "meaning", "decide": "lex", "why": "空格夾在 at the 和 of 之間，要填名詞。", "l1": "這一句的前半是 A visual culture is taking over the world，破折號後面接著說這件事對 the written word 造成什麼後果。想想：視覺文化變強，文字得到的是好處，還是損失？", "l2": "at the ___ of 是固定的介系詞片語，中間要接名詞，後面再接受到影響的一方。名詞堆裡能和 at the … of 組成片語的只有一個，而且這個字平常多被記成和金錢有關的意思，在這個片語裡要換個角度理解。", "final": "at the expense of the written word（犧牲了文字，也就是以文字為代價）：expense 平常是「費用」，但 at the expense of 是固定片語，Merriam-Webster 的定義是 in a way that harms (something or someone)，例句 Malls flourished at the expense of small stores downtown. 的結構與這一句相同：一方興盛，另一方因此受損。破折號前說視覺文化接管了世界，破折號後 at the expense of the written word 指出受損的是文字。", "gloss": "代價", "inner": ["at the", "of the written word", "taking over the world"], "cross": [], "coord": [], "lex": [{"find": "A visual culture is taking over the world", "words": ["at the", "of the written word"], "kind": "搭配", "note": "at the ___ of 是固定片語，空格夾在 at the 和 of 之間。"}, {"find": "A visual culture is taking over the world", "words": ["taking over the world"], "kind": "語意範圍", "note": "前半說視覺文化占上風，空格所在的片語，說的是文字因此受到的影響。"}], "n": 25}, {"cats": "字詞搭配", "slot": "adj", "layer": "meaning", "decide": "lex", "why": "空格在 in 和名詞 decline 之間，修飾 decline，要填形容詞。", "l1": "這一句說識讀能力和溝通技巧 are in ___ decline。前面兩句已經說影像正在超越想像力、壓過說書人與書本，這一格是用來形容 decline 的情況。", "l2": "in ___ decline：空格是形容詞，描述 decline 是什麼樣的衰退。LDOCE 在 decline 這個字下面，列了一些常和它搭配的形容詞，找找看選項裡有沒有同一類的字。", "final": "in rapid decline（急遽衰退）：LDOCE 在 decline 的搭配中列有 rapid decline，rapid 的搭配裡也有 a rapid decline/deterioration；rapid 是形容詞，用來說明衰退得有多快。至於 in decline，LDOCE 的例句 the widely held belief that educational standards are in decline 說的也是程度、水準正在下滑，和這一句的 literacy 是同一類的主詞。前兩句說影像正在壓過想像力、文字與書本，這一句就接著說識讀與溝通能力的下滑情況。circular 也是形容詞，但描述的是形狀或繞圈的運動，不是衰退的程度。", "gloss": "快速的、急遽的", "inner": ["are in", "decline"], "cross": [], "coord": [], "lex": [{"find": "Our literacy, and with it our verbal and communication skills, are in", "words": ["decline"], "kind": "搭配", "note": "decline 前面常放描述程度或樣子的形容詞，LDOCE 的搭配裡有這一類。"}], "n": 26}, {"cats": "字詞搭配、字彙選義（第二義）", "slot": "v", "layer": "meaning", "decide": "lex", "form": "V-ing", "formWhy": "that is 後面的動詞只能是 V-ing 或過去分詞；選項裡沒有過去分詞，所以是 V-ing", "why": "空格在 that is 之後，後面接 ground 當受詞，所以要填 is + V-ing 的及物動詞。", "l1": "這一段開頭又轉了一次：上一段說文字與書本的處境愈來愈差，這一句卻說在 our increasingly visual world 之下，唯有 the graphic novel 是例外。想想這個例外在 ground 上的表現，和上一段是不是相反。", "l2": "that is ___ ground：空格是 V-ing 動詞，後面接 ground 當受詞。三個 V-ing 的字，要看哪一個能和 ground 搭配，而且整句說的是唯一的例外，方向和上一段的 decline 相反。", "final": "is gaining ground（愈來愈受歡迎）：gain ground 是固定搭配，ground 在這裡不是地面。LDOCE 的解釋是 to make steady progress and become more popular, more successful etc，例句 The anti-smoking lobby has steadily gained ground in the last decade.；另一個意思是 if an idea, belief etc gains ground, more people start to accept it。這一句說的正是圖像小說讀者愈來愈多：下一句接著說 A growing number of adults and young people worldwide are reading graphic novels。上一段最後說 decline，這一句說只有圖像小說在 gain ground，方向相反，所以是例外。fading 的方向與 decline 相同，replacing 又不能和 ground 搭配。", "gloss": "取得（gain ground：愈來愈受歡迎、愈來愈普及）", "inner": ["The only category of novel that is", "ground in our increasingly visual world"], "cross": [], "coord": [], "lex": [{"find": "Our literacy, and with it our verbal and communication skills, are in", "words": ["decline"], "kind": "反義", "note": "上一段最後說 decline，這一句說圖像小說是唯一的例外，所以空格的動詞和 decline 的方向相反。"}], "n": 27}, {"cats": "字彙選義（第二義）、語意連貫", "slot": "n", "layer": "meaning", "decide": "lex", "why": "this 是指示形容詞，後面要接單數（或不可數）名詞；the power of this ___ 的空格是 of 的受詞。", "l1": "this ___ 是回頭指前面剛說過的東西：前半句說 are reading graphic novels，後半句說教育工作者開始看到這個東西的 power。想想，圖像小說在這裡是被當作哪一類的東西來討論的。", "l2": "this 後面接單數（或不可數）名詞，所以複數形的字放不進來。名詞堆裡剩下的字，要看哪一個可以用來指「圖像小說這種形式」。這個字平常最常見的是當形容詞（表示「中等的」），但當名詞時有另一個意思。", "final": "the power of this medium（這種表現形式的力量）：this 回指前半句的 graphic novels，所以空格要一個能指「圖像小說這種形式」的單數名詞。medium 當形容詞是「中等的」，當名詞時 LDOCE 列有 a way of communicating information and news to people, such as newspapers, television etc（sense 1）和 a way of expressing your ideas, especially as a writer or an artist（sense 2）。複數是 media 或 mediums。expense 是「費用」，graphic novels 不是一筆費用，this expense 回指不到前半句的意思。", "gloss": "媒介、表現形式", "inner": ["the power of this", "are reading graphic novels"], "cross": [], "coord": [], "lex": [{"find": "A growing number of adults and young people worldwide are reading graphic novels", "words": ["graphic novels"], "kind": "換字重述", "note": "this 後面的名詞，是用另一個說法回指前半句的 graphic novels。"}], "n": 28}, {"cats": "語意對比、語意連貫", "slot": "n", "layer": "meaning", "decide": "lex", "form": "複數", "formWhy": "multiple 的意思是「多個的」，後面要接複數名詞，所以要用複數形", "why": "空格在 multiple 之後，是 in 的受詞之一（or 連接 black and white 和 multiple ___），要填名詞。", "l1": "這一句說圖像小說和漫畫書的差別之一，是它 may come in black and white or multiple ___。or 的兩邊在比較同一件事：書頁印出來的樣子。", "l2": "black and white or multiple ___：or 連接兩個 in 的受詞，所以空格是名詞，而且 multiple 後面要接複數名詞。想想 black and white 描述的是書的哪一方面，另一邊就是同一方面的另一種情況。", "final": "multiple colors（多種顏色）：or 連接 black and white 和 multiple colors，兩者都在說書頁印出來的樣子，一邊是黑白，另一邊是多種顏色。LDOCE 對 black and white 的解釋是 showing pictures or images only in black, white, and grey；Merriam-Webster 的 color 也有一個意思是 a color other than and as contrasted with black, white, or gray，正是和黑白對舉的顏色。multiple 後面接複數名詞，所以 colors 要用複數。LDOCE 的例句 The pens come in a wide range of colours. 和這一句的 come in 結構相同。", "gloss": "顏色、彩色", "inner": ["black and white or multiple", "appear in many sizes"], "cross": [], "coord": [{"find": "may come in black and white or multiple", "words": ["black and white or multiple"], "kind": "real", "note": "or 連接兩個 in 的受詞：black and white 和 multiple ___，所以空格是名詞，而且和 black and white 描述的是同一方面。"}, {"find": "may come in black and white or multiple", "words": ["and appear in many sizes"], "kind": "trap", "note": "空格後面的 and 連接的是 may come in … 和 appear in many sizes 兩個動詞片語，不是空格的並列對象，不能用它來判斷空格的詞性。"}], "lex": [], "n": 29}, {"cats": "字詞搭配、句型結構", "slot": "v", "layer": "meaning", "decide": "lex", "form": "原形", "formWhy": "主詞 Graphic novels 是複數，句子說的是現在的一般情況，所以動詞用原形", "why": "空格在主詞 Graphic novels 之後，後面直接接 the opportunity 當受詞，所以要填現在式的及物動詞，主詞是複數，用原形。", "l1": "這一句的主詞是 Graphic novels，後面直接是 the opportunity to examine …。上一句說有些最有意思、最大膽的藝術就發表在圖像小說裡，再想想圖像小說對讀者和學生能做什麼。", "l2": "空格前面是複數主詞，後面直接接 the opportunity，所以要現在式的及物動詞（原形）。V-ing 的字前面少了 be 動詞，放不進來；原形的字不只一個，expense、research 也能當動詞，要靠意思與搭配：哪一個動詞能由「書」當主詞，並且搭配 the opportunity？", "final": "Graphic novels offer the opportunity to examine …（圖像小說提供檢視……的機會）：offer 當及物動詞時有「提供」的意思，LDOCE 的例句 The course offers the opportunity to specialize in the final year. 與這一句的結構相同：事物當主詞，offer 後面直接接 the opportunity，再接 to + 原形動詞。the opportunity to examine 裡的 to examine 是接在 opportunity 後面的不定詞，不是接在空格後面。gaining 前面沒有 be 動詞，放不進來。", "gloss": "提供", "inner": ["Graphic novels", "the opportunity to examine"], "cross": [], "coord": [], "lex": [{"find": "Graphic novels", "words": ["the opportunity to examine"], "kind": "搭配", "note": "空格後面的受詞是 the opportunity to examine …，動詞要能搭配 opportunity，並且由 Graphic novels 當主詞。"}], "n": 30}], "answers": {"21": "L", "22": "G", "23": "B", "24": "E", "25": "A", "26": "H", "27": "I", "28": "J", "29": "C", "30": "F"}, "unused": {"D": {"gloss": "（名詞、動詞）研究", "why": "最容易被誤放進 the power of this ___ 那一格（第 28 題，答案是 medium）：this 要回指前半句的 graphic novels，而 LDOCE 的 research 名詞義是 serious study of a subject, in order to discover new facts or test new ideas，指的是研究工作；圖像小說是一種表達形式，不是研究，所以那一格要填 medium。另外，the original ___ of words（第 22 題）要的是指人的複數名詞，而 such as 後面列的是 storytellers、poets、singers 三種人，research 既不是人，也不是複數，所以放進第 22 題也不行。至於 research 當動詞（LDOCE：to study a subject in detail），主詞必須是做研究的人，Graphic novels 不會自己做研究，所以放進第 30 題同樣不通。"}, "K": {"gloss": "（形容詞）圓形的、環狀的；（名詞）傳單", "why": "最容易被誤放進 are in ___ decline 那一格（第 26 題，答案是 rapid）：circular 是形容詞，位置上放得進去，但意思不合。LDOCE 的 circular 是 shaped like a circle 或 moving around in a circle，Merriam-Webster 另有 marked by or moving in a cycle，描述的是形狀或繞圈、循環的運動，不是衰退的快慢；至於 decline 前面常搭配的形容詞，LDOCE 列的是 sharp、rapid、gradual 這類說明衰退幅度與快慢的字。circular 當名詞時是傳單（LDOCE：a printed advertisement, notice etc that is sent to lots of people at the same time），放進 this ___（第 28 題）也不行，因為 graphic novels 不是傳單。"}}, "note": "", "topics": [{"say": "文字很有力量，所以過去說故事的人備受敬重。", "find": "were respected in all cultures in the past", "words": ["were respected", "in the past"], "opts": [{"t": "文字可以表達情感，也能描繪出沒有人見過的世界。", "ok": false, "why": "這個選項只說了前半（文字能做什麼）。文中用 Therefore 接著說 the original … were respected in all cultures in the past：重點還包括說故事的人、詩人與歌者在過去受到敬重。"}, {"t": "文字很有力量，所以過去說故事的人備受敬重。", "ok": true, "why": ""}, {"t": "文字已有六千年的歷史，是人類最古老的一項發明。", "ok": false, "why": "The history of the written word goes back 6,000 years 只是開頭交代背景的一句，文中也沒有說文字是最古老的發明；這一段真正的重點是文字的力量，以及說故事的人因此受到敬重。"}]}, {"say": "影像愈來愈風行，人們的閱讀與表達能力卻跟著變差。", "find": "A visual culture is taking over the world", "words": ["visual culture", "taking over"], "opts": [{"t": "文字的魅力沒有減少，看電影和電視的人反而愈來愈少。", "ok": false, "why": "讀反了。文中說 Imagination is being surpassed by the instant picture，被超越的是想像力與文字；A visual culture is taking over the world，影像並沒有變少。"}, {"t": "電影和電視愈來愈風行，讓人有更多欣賞故事的方式，是好事。", "ok": false, "why": "這是只看字面的讀法：In a triumphant march 看起來像在稱讚，但這一段從 But now 轉折，後面說 Our literacy … are in … decline，語氣是在感嘆文字與讀寫能力下滑，不是在稱讚影像的風行。"}, {"t": "影像愈來愈風行，人們的閱讀與表達能力卻跟著變差。", "ok": true, "why": ""}]}, {"say": "圖像小說外型像漫畫，內容卻更深入，值得教育界重視。", "find": "The graphic novel can be used to develop a sense of visual literacy", "words": ["develop a sense of visual literacy"], "opts": [{"t": "只有圖像小說能培養學生的閱讀能力，其他小說都沒有幫助。", "ok": false, "why": "文中只說 The graphic novel can be used to develop a sense of visual literacy，培養的是視覺識讀能力；沒有說其他小說對學生沒有幫助。"}, {"t": "圖像小說外型像漫畫，內容卻更深入，值得教育界重視。", "ok": true, "why": ""}, {"t": "圖像小說的 graphic 是指內容血腥，只適合成人看。", "ok": false, "why": "文中說 A growing number of adults and young people worldwide are reading graphic novels，讀者不只是成人。graphic 雖然也能形容描寫得很露骨的內容，但 graphic novel 的 graphic 和圖畫有關：LDOCE 的解釋是用一連串畫在方格裡的圖畫來說故事的小說，文中也說它 looks like a comic book。"}]}], "structure": "全文共三段，結構是「頌、轉、例外」。第一段稱頌文字的力量，並說明過去說故事的人受到敬重；第二段用 But now 轉折，指出影像文化正在壓過文字，讀寫與溝通能力也跟著下滑，這是全文的主旨；第三段再轉一次，指出圖像小說是唯一還在成長的小說類型，並說明它可以用來培養視覺識讀能力。", "lessons": ["依各字最常見的詞性分堆，名詞選項有六個，但名詞空格只有五格；形容詞選項有兩個，空格只有一格。也就是說，這兩堆各有一個字不屬於任何一格。這份試題有十二個選項、十個空格，多出來的兩個字要靠這一段的主旨與搭配排除，不能靠「剩下最後一個」來猜。", "有些字平常多半當形容詞或動詞，放進空格時要看這一格需要哪一種詞性。第 21 題 into the ___ 和第 28 題 this ___ 的後面都要名詞，所以 unknown 和 medium 在這兩格都是名詞（the unknown 就像 the rich、the poor）。形式也能縮小範圍：第 22 題的動詞是 were respected，第 29 題前面有 multiple，所以這兩格都要複數名詞。", "動詞選項裡有三個 V-ing，形式相同，沒辦法靠形式分開，要靠意思的方向和搭配。第 23 題 the romance is ___ 後面直接是句號，下一句又說 being surpassed，要一個表示「變弱」的字；第 24 題 are ___ storytellers and books 後面有受詞，要看影像媒體對說書人與書本做了什麼；第 27 題 that is ___ ground 要能和 ground 搭配，方向又和上一段的 decline 相反。至於第 30 題，主詞 Graphic novels 是複數，空格前面沒有 be 動詞，所以要原形動詞。", "第 25、26、27 題都是被前後的字框住的固定搭配：at the ___ of、in ___ decline、___ ground。先看空格前後是介系詞、冠詞還是名詞，再回想整組搭配。像 expense 平常記成「費用」，放進 at the ___ of 之後，意思要換成「代價、損失」；這種「熟字的第二義」要靠整個片語判斷，不能只靠單字的字面意思。", "誘答字常和答案字同一詞性、同一個語意範圍，所以光看詞性分不出來。像第 22 題 such as 後面列了 storytellers、poets、singers 三種人，名詞堆裡只有能涵蓋這三種人的字放得進去；第 26 題要的是描述 decline 的形容詞，描述形狀或繞圈運動的字放不進去。"], "optForms": {"A": {"n": ["單數", "不可數"], "v": ["原形"]}, "B": {"v": ["V-ing"]}, "C": {"n": ["複數"]}, "D": {"n": ["不可數"], "v": ["原形"]}, "E": {"v": ["V-ing"]}, "F": {"v": ["原形"], "n": ["單數"]}, "G": {"n": ["複數"]}, "I": {"v": ["V-ing"]}, "J": {"n": ["單數"]}, "K": {"n": ["單數"]}, "L": {"n": ["單數"]}}, "flags": ["A", "D", "F", "J", "K", "L"], "altOf": {"A": ["v"], "D": ["v"], "F": ["n"], "J": ["adj"], "K": ["n"], "L": ["adj"]}};
+function clueSentences(s){
+  // 切句規則與資料檔產生時相同：句末標點後接空白，下一個字是大寫字母、引號、左括號或空格編號
+  const out = []; let start = 0, m; const re = /([.!?\u201d"])\s+(?=[A-Z\u201c"(\[])/g;
+  while((m = re.exec(s))){
+    // 縮寫（U.S.、Mr.、Dr. 等）後面的句點不算句末
+    if(m[1] === '.' && /(\b(?!(?:B\.C|A\.D|a\.m|p\.m)\.$)[A-Za-z]\.[A-Za-z]\.|\b(?:Mr|Mrs|Ms|Dr|St|Jr|Sr|Mt|Prof|Gov|Gen|Capt|Lt|Col|Sen|Rev|Ft|Fig|vs)\.|(?:^|[\s(“\"‘—])[A-HJ-Z]\.)$/.test(s.slice(0, m.index + 1))) continue;
+    out.push([start, m.index + 1]); start = m.index + m[0].length;
+  }
+  out.push([start, s.length]);
+  return out;
+}
+function clueAddWords(s, range, words, cls, marks){
+  const seg = s.slice(range[0], range[1]);
+  (words || []).forEach(w => { const i = seg.indexOf(w); if(i >= 0) marks.push([range[0] + i, range[0] + i + w.length, cls]); });
+}
+
+
+const GROUPS = {v:'動詞', n:'名詞', adj:'形容詞', adv:'副詞（含轉承副詞）', conj:'連接詞', other:'其他'};
+const GFULL = {v:'動詞（原形、第三人稱單數、過去式、V-ing、過去分詞）', n:'名詞（單數、複數、不可數）', adj:'形容詞', adv:'副詞（含轉承副詞）', conj:'連接詞', other:'其他（介系詞、代名詞等）'};
+const FORMS = {v:['原形','第三人稱單數','過去式','V-ing','過去分詞'], n:['單數','複數','不可數']};
+const GORDER = ['v','n','adj','adv','conj','other'].filter(g => Object.values(DATA.groupOf).indexOf(g) >= 0);
+function zero(){ const o = {}; GORDER.forEach(g => o[g] = 0); return o; }
+const ALT = DATA.altOf || {};
+function inPile(l, g){ return DATA.groupOf[l] === g || (ALT[l] || []).indexOf(g) >= 0; }
+function ambLabel(l){
+  const gs = GORDER.filter(g => inPile(l, g));
+  return gs.map(g => { const f = ((DATA.optForms[l] || {})[g] || []); return GROUPS[g] + (FORMS[g] && f.length ? '（'+f.join('、')+'）' : ''); }).join('或');
+}
+function formReq(n){ const b = BL[n]; return !!b.form && letters.some(l => inPile(l, b.slot) && !formOK(l, n)); }
+function slotLab(n){ return GROUPS[BL[n].slot] + (formReq(n) ? '・' + BL[n].form : ''); }
+function formOK(l, n){ const b = BL[n]; if(!b.form) return true; const f = (DATA.optForms[l] || {})[b.slot]; return !!f && f.indexOf(b.form) >= 0; }
+const letters = Object.keys(DATA.options);
+const blankNums = DATA.blanks.map(b => b.n);
+const BL = {}; DATA.blanks.forEach(b => BL[b.n] = b);
+const NOPT = letters.length, EXTRA = letters.length - blankNums.length, NOPTZH = ({10:'十',12:'十二'})[NOPT] || String(NOPT);
+const NEED = {}; GORDER.forEach(g => NEED[g] = DATA.blanks.filter(b => b.slot === g).length);
+
+let stage = 0;            // 0 抓主旨　1 標詞性、分堆　3 拼
+let topicDone = {}, topicSt = {}, topicRev = {};
+function curTopic(){ for(let i = 0; i < DATA.topics.length; i++) if(!topicDone[i]) return i; return null; }
+function paraName(i){ const m = DATA.paras[i].label.match(/^【([^】]*)】/); return m ? m[1] : '第 '+(i+1)+' 段'; }
+let labeled = {};         // 題號 -> true（詞性與形式都標對）
+let slotOK = {};          // 題號 -> 詞性標對了
+let assign = {};          // 選項字母 -> 'v'|'n'|'adj'（學生自己分的）
+let sortTries = 0, sortMsg = '', flashBlanks = false;
+let placed = {}, revealed = {};
+let sel = null;
+let st = {};              // 題號 -> {tried:[], hint:0, wrongs:[]}
+function S(n){ return st[n] || (st[n] = {tried:[], hint:0, wrongs:[]}); }
+function esc(str){ return String(str).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+
+const PS = DATA.paras.map(p => p.segs.map(seg => seg[1]==='blank' ? '['+seg[0]+']' : seg[0]).join(''));
+
+/* 依「含有這段文字」找出句子；回傳 [段落索引, 句範圍] */
+function findSentence(find){
+  for(let k = 0; k < PS.length; k++){
+    const r = clueSentences(PS[k]).find(q => PS[k].slice(q[0], q[1]).indexOf(find) >= 0);
+    if(r) return [k, r];
+  }
+  return null;
+}
+
+function computeMarks(n){
+  const marks = PS.map(() => []);
+  if(stage === 0){
+    const ci = curTopic();
+    if(ci != null && (topicSt[ci] || {tried:[]}).tried.length){ const tp = DATA.topics[ci]; const f = findSentence(tp.find); if(f) clueAddWords(PS[f[0]], f[1], tp.words, 'cl-k', marks[f[0]]); }
+    return marks;
+  }
+  if(n == null) return marks;
+  const b = BL[n], s = S(n);
+  const pi = PS.findIndex(t => t.indexOf('['+n+']') >= 0);
+  if(pi < 0) return marks;
+  const sents = clueSentences(PS[pi]);
+  const tag = '['+n+']';
+  const target = sents.find(r => PS[pi].slice(r[0], r[1]).indexOf(tag) >= 0);
+  const showIn = labeled[n] || s.tried.length > 0 || placed[n];
+  const showMore = (stage === 3 && s.hint >= 1) || placed[n];
+  const showCoord = (stage === 3 && s.hint >= 2) || placed[n];
+  if(target && showIn) clueAddWords(PS[pi], target, b.inner, 'cl-a', marks[pi]);
+  if(showMore){
+    (b.cross || []).forEach(x => { const f = findSentence(x.find); if(f) clueAddWords(PS[f[0]], f[1], x.words, 'cl-b', marks[f[0]]); });
+    (b.lex || []).forEach(x => { const f = findSentence(x.find); if(f) clueAddWords(PS[f[0]], f[1], x.words, 'cl-l', marks[f[0]]); });
+  }
+  if(showCoord){
+    (b.coord || []).forEach(x => { const f = findSentence(x.find); if(f) clueAddWords(PS[f[0]], f[1], x.words, x.kind === 'trap' ? 'cl-t' : 'cl-c', marks[f[0]]); });
+  }
+  return marks;
+}
+
+function renderPassage(){
+  const all = computeMarks(sel);
+  const doneAll = Object.keys(placed).length >= blankNums.length;
+  let html = '';
+  PS.forEach((s, pi) => {
+    const marks = all[pi].slice().sort((a, b) => a[0] - b[0]);
+    const re = /\[(\d+)\]/g; let m, last = 0, out = '';
+    const textPart = (a, b) => {
+      let p = a, h = '';
+      marks.forEach(([x, y, cls]) => {
+        const xx = Math.max(x, a), yy = Math.min(y, b);
+        if(yy <= xx || xx < p) return;
+        h += esc(s.slice(p, xx)) + '<mark class="'+cls+'">' + esc(s.slice(xx, yy)) + '</mark>';
+        p = yy;
+      });
+      return h + esc(s.slice(p, b));
+    };
+    while((m = re.exec(s))){
+      if(m.index > last) out += textPart(last, m.index);
+      const n = Number(m[1]);
+      const cls = 'blank' + (placed[n] ? ' filled' : (labeled[n] ? ' labeled' : '')) + (sel === n ? ' sel' : '') + (flashBlanks && !labeled[n] && !placed[n] ? ' flash' : '');
+      const label = placed[n] ? esc(DATA.options[placed[n]]) : String(n) + (labeled[n] ? '<span class="cls">'+slotLab(n)+'</span>' : '');
+      out += '<button type="button" class="'+cls+'" data-n="'+n+'"'+(stage === 0 ? ' disabled' : '')+' aria-label="第 '+n+' 題'+(labeled[n] ? '，'+slotLab(n) : '')+(placed[n] ? '，已放 '+esc(DATA.options[placed[n]]) : '')+'">'+label+'</button>';
+      last = m.index + m[0].length;
+    }
+    if(last < s.length) out += textPart(last, s.length);
+    const lab = doneAll ? DATA.paras[pi].label : (DATA.paras[pi].label.match(/^【[^】]*】/) || [''])[0];
+    html += '<p class="plabel">'+esc(lab)+'</p><p'+(stage === 0 && pi === curTopic() ? ' class="pcur"' : '')+'>'+out+'</p>';
+  });
+  document.getElementById('passage').innerHTML = html;
+  document.querySelectorAll('button.blank').forEach(btn => btn.addEventListener('click', () => select(Number(btn.dataset.n))));
+}
+
+/* 還沒放的選項裡，這個空格那一堆還剩幾個 */
+function remaining(n){
+  const g = BL[n].slot;
+  return letters.filter(l => inPile(l, g) && formOK(l, n) && !Object.values(placed).includes(l));
+}
+function leastCandidates(){
+  let best = 99, list = [];
+  blankNums.filter(n => !placed[n]).forEach(n => {
+    const k = remaining(n).length;
+    if(k < best){ best = k; list = [n]; } else if(k === best) list.push(n);
+  });
+  return {k: best, list};
+}
+
+function renderTray(){
+  const title = document.getElementById('trayTitle'), el = document.getElementById('tray');
+  document.getElementById('trayCard').classList.toggle('hidden', stage === 0);
+  if(stage === 0){ el.innerHTML = ''; return; }
+  if(stage === 1){
+    title.textContent = '分堆：把'+NOPTZH+'個選項放進'+['','','','三','四','五','六'][GORDER.length]+'堆';
+    const cnt = zero(); Object.values(assign).forEach(g => cnt[g]++);
+    const allL = Object.keys(labeled).length >= blankNums.length;
+    const needNow = zero(); blankNums.forEach(n => { if(labeled[n]) needNow[BL[n].slot]++; });
+    let h = '<div class="counts">' + GORDER.map(g => { const okc = EXTRA ? cnt[g] >= NEED[g] : cnt[g] === NEED[g]; return '<span class="count'+(allL && okc ? ' ok' : '')+'">'+GROUPS[g]+' 已放 '+cnt[g]+' 個'+(allL ? (EXTRA ? '（這一類有 '+needNow[g]+' 格'+(okc ? ' ✓' : ' ＜') : '（需要 '+needNow[g]+' 個'+(okc ? ' ✓' : ' ≠'))+'）' : '')+'</span>'; }).join('') + '</div>';
+    const nL = Object.keys(labeled).length, nA = Object.keys(assign).length;
+    h += '<ol class="steps2"><li><b>點文章裡的空格</b>（'+blankNums[0]+'～'+blankNums[blankNums.length-1]+'），在面板選這一格的詞性。</li><li><b>把下面每個選項放進一堆</b>，'+(EXTRA ? '每一堆的選項數，不能少於這種詞性的空格數。選項比空格多 '+EXTRA+' 個，多出來的是用不到的誘答選項，會在某一堆多出來。' : '每一堆的選項數，要剛好等於這種詞性的空格數。')+'</li></ol>';
+    h += '<div class="progress"><span class="pg'+(nL >= blankNums.length ? ' ok' : '')+'">詞性已標 '+nL+'／'+blankNums.length+'</span><span class="pg'+(nA >= letters.length ? ' ok' : '')+'">選項已分堆 '+nA+'／'+letters.length+'</span></div>';
+    if(DATA.flags.length) h += '<p class="next">標「兩類皆可」的字，可以當兩種詞性：放進你覺得合適的那一堆就好，只要每一堆的數量對得上，兩種都算對。</p>';
+    letters.forEach(l => {
+      h += '<div class="sortrow'+(GORDER.length > 4 ? ' many' : '')+'"><span class="w"><span class="letter">('+l+')</span>'+esc(DATA.options[l])+(DATA.flags.indexOf(l) >= 0 ? ' <span class="flag">兩類皆可</span><span class="ambnote">'+esc(ambLabel(l))+'</span>' : '')+'</span>';
+      GORDER.forEach(g => { h += '<button type="button" class="pill'+(assign[l] === g ? ' on' : '')+'" data-l="'+l+'" data-g="'+g+'" aria-pressed="'+(assign[l] === g)+'">'+GROUPS[g]+'</button>'; });
+      h += '</div>';
+    });
+    h += '<div class="btnrow"><button type="button" class="btn" id="checkBtn">核對分堆</button>' + (sortTries >= 2 ? '<button type="button" class="btn ghost" id="autoSortBtn">直接分好</button>' : '') + '</div>';
+    h += '<div class="skipbox"><button type="button" class="btn ghost" id="skipBtn">略過這一步，直接拼</button><p class="next">已經很熟詞性的人可以略過：空格和選項會照正確的詞性幫你分好，直接進第 3 步用上下文拼答案。</p></div>';
+    if(sortMsg) h += '<div class="msg">'+sortMsg+'</div>';
+    el.innerHTML = h;
+    el.querySelectorAll('.pill').forEach(p => p.addEventListener('click', () => { assign[p.dataset.l] = p.dataset.g; sortMsg = ''; renderTray(); }));
+    document.getElementById('checkBtn').addEventListener('click', checkSort);
+    document.getElementById('skipBtn').addEventListener('click', skipStep2);
+    const ab = document.getElementById('autoSortBtn'); if(ab) ab.addEventListener('click', () => { assign = Object.assign({}, DATA.groupOf); autoSorted = true; toStage3('已幫你分好。'); });
+    return;
+  }
+  // stage 3
+  title.textContent = '拼圖盤';
+  const n = sel, s = n != null ? S(n) : null;
+  const activeGroup = (n != null && !placed[n]) ? BL[n].slot : null;
+  let html = '';
+  GORDER.forEach(g => {
+    const ls = letters.filter(l => inPile(l, g));
+    html += '<div class="pile"><div class="pname'+(activeGroup===g?' on':'')+'">'+GFULL[g]+(activeGroup===g?'<br>▼ 這一題從這一堆選':'')+'</div><div class="chips">';
+    ls.forEach(l => {
+      const usedAt = Object.keys(placed).find(k => placed[k] === l);
+      const dimForm = activeGroup === g && !formOK(l, n);
+      const dim = (activeGroup && activeGroup !== g);
+      const wrongHere = s && s.wrongs.indexOf(l) >= 0;
+      const cls = 'chip' + (usedAt ? ' used' : '') + (dim ? ' dim' : '') + (dimForm ? ' dimf' : '') + (wrongHere ? ' x' : '') + (activeGroup===g && !usedAt && !wrongHere && !dimForm ? ' on' : '');
+      const disabled = (usedAt || dim || dimForm || wrongHere) ? ' disabled' : '';
+      html += '<button type="button" class="'+cls+'" data-l="'+l+'"'+disabled+'><span class="letter">('+l+')</span>'+esc(DATA.options[l])+(usedAt ? '<span class="tag">已放在第 '+usedAt+' 題</span>' : (FORMS[g] && (DATA.optForms[l]||{})[g] && blankNums.some(k => formReq(k) && BL[k].slot === g) ? '<span class="tag">'+esc(DATA.optForms[l][g].join('／'))+(dimForm ? '（形式不合）' : '')+'</span>' : ''))+'</button>';
+    });
+    html += '</div></div>';
+  });
+  el.innerHTML = html;
+  el.querySelectorAll('.chip').forEach(c => c.addEventListener('click', () => pick(c.dataset.l)));
+}
+
+function sentHtml(n){
+  const pi = PS.findIndex(t => t.indexOf('['+n+']') >= 0); if(pi < 0) return '';
+  const ss = PS[pi].split(/(?<=[.!?])\s+/); const s = ss.find(x => x.indexOf('['+n+']') >= 0); if(!s) return '';
+  const h = esc(s).replace(/\[(\d+)\]/g, (m, k) => k === String(n) ? '<b class="gap">'+k+'</b>' : '（'+k+'）');
+  return '<div class="sent"><span class="letter">本句</span>'+h+'</div>';
+}
+/* 跨句、並列線索如果在別的段落，把那一句也列在面板裡，手機上不用往回捲 */
+function crossPanelHtml(n, hint){
+  if(hint == null) hint = 9;
+  const b = BL[n];
+  const pi = PS.findIndex(t => t.indexOf('['+n+']') >= 0);
+  let h = '';
+  const items = [].concat((b.cross || []).map(x => Object.assign({}, x, {cls:'cl-b', lab:'跨句線索'})),
+                          (b.lex || []).map(x => Object.assign({}, x, {cls:'cl-l', lab:'詞彙線索'})),
+                          (hint < 2 ? [] : (b.coord || [])).map(x => Object.assign({}, x, {cls: x.kind === 'trap' ? 'cl-t' : 'cl-c', lab: x.kind === 'trap' ? '並列陷阱' : '並列線索'})));
+  items.forEach(x => {
+    const f = findSentence(x.find); if(!f) return;
+    const text = PS[f[0]].slice(f[1][0], f[1][1]);
+    if(f[0] === pi && x.cls !== 'cl-b' && text.indexOf('['+n+']') >= 0 && stage !== 99) { /* 同一句，已經在文章裡標出 */ }
+    if(f[0] === pi) return;
+    const mk = []; clueAddWords(text, [0, text.length], x.words, x.cls, mk);
+    mk.sort((p, q) => p[0] - q[0]);
+    let out = '', pos = 0;
+    mk.forEach(([a, e, cls]) => { if(a < pos) return; out += esc(text.slice(pos, a)) + '<mark class="'+cls+'">' + esc(text.slice(a, e)) + '</mark>'; pos = e; });
+    out += esc(text.slice(pos));
+    out = out.replace(/\[(\d+)\]/g, (m, d) => placed[d] ? '<b>'+esc(DATA.options[placed[d]])+'</b>' : '（'+d+'）');
+    h += '<p class="clueX '+x.cls+'"><span class="clueXlab">'+x.lab+'</span>'+out+'</p>';
+  });
+  return h;
+}
+function coordNotesHtml(n, withAll){
+  const b = BL[n]; let h = '';
+  (b.coord || []).forEach(x => { h += '<p style="font-size:14px;margin:6px 0 0"><b>'+(x.kind === 'trap' ? '並列陷阱：' : '並列線索：')+'</b>'+esc(x.note)+'</p>'; });
+  return h;
+}
+
+function topicLineHtml(n){
+  const pi = PS.findIndex(t => t.indexOf('['+n+']') >= 0); if(pi < 0 || !DATA.topics[pi]) return '';
+  return '<div class="sent"><span class="letter">這一段</span>'+esc(DATA.topics[pi].say)+'</div>';
+}
+function paraBoxHtml(ci, showKey){
+  const text = PS[ci]; const tp = DATA.topics[ci];
+  const mk = []; if(showKey){ const f = findSentence(tp.find); if(f && f[0] === ci) clueAddWords(text, f[1], tp.words, 'cl-k', mk); }
+  mk.sort((a, b) => a[0] - b[0]);
+  let out = '', pos = 0;
+  mk.forEach(([a, e, cls]) => { if(a < pos) return; out += esc(text.slice(pos, a)) + '<mark class="'+cls+'">' + esc(text.slice(a, e)) + '</mark>'; pos = e; });
+  out += esc(text.slice(pos));
+  out = out.replace(/\[(\d+)\]/g, (m, d) => '（'+d+'）');
+  return '<p class="clueX cl-k">'+out+'</p>';
+}
+function topicPanel(){
+  const ci = curTopic(), k = Object.keys(topicDone).length, total = DATA.topics.length;
+  const tp = DATA.topics[ci], s = topicSt[ci] || {tried:[]};
+  let h = '<div class="h">第 1 步：'+esc(paraName(ci))+'在講什麼？</div>';
+  h += '<p class="next">先讀這一段，再選。已完成 '+k+' / '+total+' 段。</p>';
+  h += paraBoxHtml(ci, s.tried.length > 0);
+  tp.opts.forEach((o, j) => { const x = s.tried.indexOf(j) >= 0; h += '<button type="button" class="btn topicopt'+(x ? ' x' : '')+'" data-j="'+j+'"'+(x ? ' disabled' : '')+'>'+esc(o.t)+'</button>'; });
+  if(s.tried.length){ const lj = s.tried[s.tried.length - 1]; h += '<div class="msg">'+esc(tp.opts[lj].why)+'上面標出來的字，是這一段的關鍵詞。</div>'; }
+  const done = DATA.topics.map((x, i) => topicDone[i] ? '<div class="sent"><span class="letter">'+esc(paraName(i))+'</span>'+esc(x.say)+'</div>' : '').join('');
+  if(done) h += '<p class="next" style="margin-top:12px">已經確認的段落主旨：</p>'+done;
+  return h;
+}
+function chooseTopic(j){
+  const ci = curTopic(); const tp = DATA.topics[ci]; const s = topicSt[ci] || (topicSt[ci] = {tried:[]});
+  if(tp.opts[j].ok){ topicDone[ci] = true; if(curTopic() == null){ stage = 1; sel = null; } }
+  else if(s.tried.indexOf(j) < 0) s.tried.push(j);
+  render(); toPanel();
+}
+function revealTopic(){ const ci = curTopic(); topicRev[ci] = true; topicDone[ci] = true; if(curTopic() == null){ stage = 1; sel = null; } render(); }
+
+function renderPanel(){
+  const el = document.getElementById('panel');
+  if(stage === 0){
+    el.innerHTML = topicPanel();
+    el.querySelectorAll('.topicopt').forEach(b => b.addEventListener('click', () => chooseTopic(Number(b.dataset.j))));
+    return;
+  }
+  if(sel == null){
+    let h = '';
+    if(stage === 1){
+      h = '<div class="h">第 2 步：認識空格與選項（標詞性、分堆）</div><div class="msg ok">各段的主旨都確認了。</div><div style="font-size:14px;color:var(--ink-soft)"><b>詞性只能縮小範圍，不能決定答案</b>：同一堆通常還有好幾個選項放得進去，最後要靠上下文的意思。請做兩件事：（一）點文章裡的數字，標出這一格的詞性；（二）到下面把'+NOPTZH+'個選項各放進一堆。有些字有兩種詞性（標「兩類皆可」），放哪一堆都算對，到下一步由上下文決定放進哪一格。兩件事都做完、分堆核對正確，才能開始放選項。</div>';
+    } else {
+      const lc = leastCandidates();
+      h = '<div class="h">第 3 步：用線索拼答案</div><div style="font-size:14px;color:var(--ink-soft)">點文章裡的數字開始拼。<b>先想這一段的主旨，再找內容線索</b>，最後才看詞性、形式和並列結構。像拼圖先拼邊框：先做剩下選項最少的空格。選項在下方的拼圖盤。</div>';
+      if(lc.list.length) h += '<p class="next" style="margin-top:8px">現在剩下選項最少的空格：第 '+lc.list.join('、')+' 題（那一堆只剩 '+lc.k+' 個選項）。一樣多時，先選線索最明確的。</p>';
+    }
+    el.innerHTML = h; return;
+  }
+  const n = sel, b = BL[n], s = S(n);
+  let h = '<div class="h">第 '+n+' 題</div>' + topicLineHtml(n);
+  if(placed[n]){
+    const l = placed[n];
+    h += '<div class="msg ok"><span class="badge'+(b.layer==='meaning'?' m':'')+'">'+esc(b.cats)+'</span><span class="ans">'+esc(DATA.options[l])+'</span>　'+esc(b.gloss)+(revealed[n]?'（看答案放上去的）':'')+'</div>';
+    h += '<p style="font-size:14.5px;margin:8px 0 0"><b>詞性：</b>'+slotLab(n)+'。'+esc(b.why)+(b.form ? '（形式：'+b.form+'）' : '')+'</p>';
+    h += '<p style="font-size:14.5px;margin:6px 0 0"><b>判斷依據：</b>'+esc(b.final)+'</p>';
+    h += coordNotesHtml(n) + crossPanelHtml(n);
+    el.innerHTML = h; return;
+  }
+  if(slotOK[n] && !labeled[n]){
+    h += sentHtml(n)+'<div class="msg ok"><b>'+GROUPS[b.slot]+'。</b>'+(b.form ? '' : esc(b.why))+'</div><p class="q">這一格的「形式」是？</p><div class="btnrow">';
+    FORMS[b.slot].forEach(f => { h += '<button type="button" class="btn" data-f="'+f+'"'+(s.triedF && s.triedF.indexOf(f)>=0?' disabled':'')+'>'+f+'</button>'; });
+    h += '</div>';
+    if(s.triedF && s.triedF.length) h += '<div class="msg">這一格不是'+s.triedF.join('、')+'。想想主詞、時態，和空格前後的字（'+esc(b.formWhy)+'）。</div>';
+    else h += '<div style="font-size:13.5px;color:var(--ink-soft)">同一種詞性還有不同的形式，例如動詞的過去式、過去分詞，名詞的單數、複數。看空格前後的字判斷。</div>';
+    el.innerHTML = h;
+    el.querySelectorAll('[data-f]').forEach(btn => btn.addEventListener('click', () => chooseForm(btn.dataset.f)));
+    return;
+  }
+  if(!labeled[n]){
+    h += sentHtml(n)+'<p class="q">這個空格的詞性是？</p><div class="btnrow">';
+    GORDER.forEach(g => { h += '<button type="button" class="btn" data-g="'+g+'"'+(s.tried.indexOf(g)>=0?' disabled':'')+'>'+GROUPS[g]+'</button>'; });
+    h += '</div>';
+    if(s.tried.length){
+      const sn = b.slotNote; let note = null;
+      if(typeof sn === 'string'){ if(s.tried.indexOf('n') >= 0) note = sn; }
+      else if(sn){ for(let i = s.tried.length - 1; i >= 0; i--){ if(sn[s.tried[i]]){ note = sn[s.tried[i]]; break; } } }
+      if(note) h += '<div class="msg">'+esc(note)+'</div>';
+      else h += '<div class="msg">這一格不是'+s.tried.map(g=>GROUPS[g]).join('、')+'。再看一次空格前後的字，這一句裡的線索已經標出來（有底色和底線的字）。</div>';
+    }
+    else h += '<div style="font-size:13.5px;color:var(--ink-soft)">詞性只是用來縮小範圍的，看空格前後的字判斷就好。選哪一個，最後還是要靠上下文的意思。</div>';
+    el.innerHTML = h;
+    el.querySelectorAll('[data-g]').forEach(btn => btn.addEventListener('click', () => chooseSlot(btn.dataset.g)));
+    return;
+  }
+  h += sentHtml(n)+'<div class="msg ok"><b>'+slotLab(n)+'。</b>'+esc(b.why)+'</div>';
+  if(stage < 3){ el.innerHTML = h; return; }
+  const rem = remaining(n);
+  h += '<p class="q">從下面選一個放進這一格。符合這個形式的，還有 '+rem.length+' 個選項。</p><div class="chips">';
+  rem.forEach(l => { if(s.wrongs.indexOf(l) >= 0) return; h += '<button type="button" class="chip" data-l="'+l+'"><span class="letter">('+l+')</span>'+esc(DATA.options[l])+'</button>'; });
+  h += '</div><button type="button" class="btn ghost totray" id="toTray">看完整拼圖盤 ↓</button>';
+  if(s.wrongs.length){
+    const lw = s.wrongs[s.wrongs.length - 1];
+    h += '<div class="msg">「'+esc(DATA.options[lw])+'」放不進這一格：詞性相符，但意思或搭配不合。先回頭想這一段在講什麼；想不出來時，可以按提示。</div>';
+  }
+  if(s.hint >= 1) h += '<p style="font-size:14.5px;margin:8px 0"><b>提示 1，內容線索：</b>'+esc(b.l1)+'</p>';
+  if(s.hint >= 2) h += '<p style="font-size:14.5px;margin:8px 0"><b>提示 2，結構與搭配：</b>'+esc(b.l2)+'</p>' + coordNotesHtml(n);
+  if(s.hint >= 1) h += crossPanelHtml(n, s.hint);
+  h += '<div class="btnrow">';
+  if(s.hint === 0) h += '<button type="button" class="btn ghost" id="hintBtn">提示 1：先看內容線索</button>';
+  else if(s.hint === 1) h += '<button type="button" class="btn ghost" id="hintBtn">提示 2：再看結構與搭配</button>';
+  if(s.wrongs.length >= 2 || s.hint >= 2) h += '<button type="button" class="btn ghost" id="ansBtn">直接看答案</button>';
+  h += '</div>';
+  el.innerHTML = h;
+  el.querySelectorAll('.chip').forEach(c => c.addEventListener('click', () => pick(c.dataset.l)));
+  const hb = document.getElementById('hintBtn'); if(hb) hb.addEventListener('click', () => { S(n).hint++; render(); });
+  const ab = document.getElementById('ansBtn'); if(ab) ab.addEventListener('click', () => { place(n, DATA.answers[n], true); });
+}
+
+function renderProg(){
+  const k = Object.keys(placed).length, t = blankNums.length;
+  const txt = stage === 0 ? '第 1 步　已確認主旨 '+Object.keys(topicDone).length+' / '+DATA.topics.length+' 段' : (stage === 1 ? '第 2 步　已標詞性 '+Object.keys(labeled).length+' / '+t+' 格；已分堆 '+Object.keys(assign).length+' / '+letters.length+' 個' : '第 3 步　已拼好 '+k+' / '+t+' 題');
+  document.getElementById('progText').textContent = txt;
+}
+
+let autoSorted = false, skipped2 = false;
+function renderDone(){
+  const el = document.getElementById('done');
+  if(Object.keys(placed).length < blankNums.length){ el.classList.add('hidden'); return; }
+  const firstShow = el.classList.contains('hidden');
+  el.classList.remove('hidden');
+  const DEC = [['lex','靠詞彙線索（同義、換字重述、同一個語意範圍）'],['coord','靠並列線索'],['meaning','靠這一句或這一段的意思'],['form','靠詞性、形式與搭配就能排除其他選項']];
+  const list = a => a.map(n => '第 '+n+' 題').join('、');
+  const nRev = Object.keys(revealed).length;
+  let h = '<h3>'+(nRev ? '全部放好了。' : '拼好了。')+'這十題是靠什麼判斷的</h3>';
+  h += '<p style="margin:0 0 8px;font-size:14.5px"><b>各段主旨：</b></p><ul>' + DATA.topics.map((x, i) => '<li><b>'+esc(paraName(i))+'：</b>'+esc(x.say)+'</li>').join('') + '</ul>';
+  h += '<p style="margin:0 0 8px;font-size:14.5px"><b>全文結構：</b>'+esc(DATA.structure)+'</p><ul>';
+  DEC.forEach(d => { const a = blankNums.filter(n => BL[n].decide === d[0]); if(a.length) h += '<li><b>'+d[1]+'：</b>'+list(a)+'（共 '+a.length+' 題）。</li>'; });
+  h += '</ul><p style="margin:12px 0 8px;font-size:14.5px"><b>這一回要注意：</b></p><ul>';
+  DATA.lessons.forEach(t => { h += '<li>'+esc(t)+'</li>'; });
+  const LAST = '真正作答時，一題放錯會連帶影響其他題，所以全部放好後，要把整篇再讀一遍：每一格填進去，都要扣住它那一段的主旨，整段讀起來也要通順。';
+  if(EXTRA > 0){
+    const un = letters.filter(l => Object.values(placed).indexOf(l) < 0);
+    h += '<li><b>選項比空格多 '+EXTRA+' 個。</b>每個選項只能用一次，'+blankNums.length+' 格放完以後，剩下的 '+un.length+' 個是用不到的誘答選項。'+LAST+'</li></ul>';
+    h += '<p style="margin:12px 0 8px;font-size:14.5px"><b>這次沒用到的選項，為什麼不選：</b></p><ul>';
+    un.forEach(l => { const u = (DATA.unused || {})[l] || {}; h += '<li><b>('+l+') '+esc(DATA.options[l])+'</b>'+(u.gloss ? '（'+esc(u.gloss)+'）' : '')+'：'+esc(u.why || '')+'</li>'; });
+    h += '</ul>';
+  } else {
+    h += '<li><b>每個選項只能用一次。</b>'+LAST+'</li></ul>';
+  }
+  h += '<p class="next">'+(nRev ? '你用了「直接看答案」'+nRev+' 次'+(skipped2 ? '，第 2 步選擇略過' : autoSorted ? '，分堆用了「直接分好」' : '')+'。' : (skipped2 ? '第 2 步選擇略過。' : autoSorted ? '分堆用了「直接分好」。' : ''));
+  h += '大考中心的命題研習資料提到，文意選填會避免只憑詞性、單複數或局部片語就能作答；所以真正考試時，常有同一堆好幾個選項都放得進去的情形，要靠上下文的意思判斷。</p>';
+  el.innerHTML = h;
+  if(firstShow) setTimeout(() => el.scrollIntoView({behavior:'smooth', block:'start'}), 50);
+}
+
+function dockPanel(){
+  const panel = document.getElementById('panel'), tray = document.getElementById('trayCard');
+  let host = null;
+  if(stage === 0) host = document.querySelector('#passage p.pcur');
+  else if(sel != null){ const b = document.querySelector('button.blank.sel'); host = b && b.closest('p'); }
+  if(host) host.after(panel); else tray.parentNode.insertBefore(panel, tray);
+}
+function render(){
+  const panel = document.getElementById('panel'), tray = document.getElementById('trayCard');
+  tray.parentNode.insertBefore(panel, tray);
+  renderPassage(); renderTray(); renderPanel(); renderProg(); renderDone(); dockPanel();
+}
+
+function select(n){ if(stage === 0) return; sel = n; render(); document.getElementById('panel').scrollIntoView({behavior:'smooth', block:'nearest'}); }
+function toPanel(){ const p = document.getElementById('panel'); if(p && p.scrollIntoView) p.scrollIntoView({behavior:'smooth', block:'nearest'}); }
+
+function chooseForm(f){
+  const s = S(sel); s.triedF = s.triedF || [];
+  if(BL[sel].form === f || (BL[sel].formAlt || []).indexOf(f) >= 0){ labeled[sel] = true; } else if(s.triedF.indexOf(f) < 0){ s.triedF.push(f); }
+  render();
+}
+function chooseSlot(g){
+  const s = S(sel);
+  if(BL[sel].slot === g){
+    slotOK[sel] = true;
+    if(!FORMS[g] || !formReq(sel)) labeled[sel] = true;
+  } else { if(s.tried.indexOf(g) < 0) s.tried.push(g); }
+  render();
+}
+
+function checkSort(){
+  flashBlanks = false;
+  const nUn = blankNums.length - Object.keys(labeled).length;
+  if(nUn > 0){
+    sortMsg = '還有 '+nUn+' 格沒標詞性。請點文章裡閃動的空格（'+blankNums.filter(n => !labeled[n]).join('、')+'），在面板選這一格的詞性。十格都標完，才能核對分堆。';
+    flashBlanks = true; setTimeout(() => { flashBlanks = false; }, 3500);
+    render(); const bl = document.querySelector('button.blank.flash'); if(bl && bl.scrollIntoView) bl.scrollIntoView({block:'center', behavior:'smooth'});
+    return;
+  }
+  const un = letters.filter(l => !assign[l]);
+  if(un.length){ sortMsg = '還有 '+un.length+' 個選項沒有分堆。'; renderTray(); return; }
+  sortTries++;
+  const cnt = zero(); Object.values(assign).forEach(g => cnt[g]++);
+  const off = GORDER.filter(g => EXTRA ? cnt[g] < NEED[g] : cnt[g] !== NEED[g]);
+  const amb = DATA.flags.map(l => DATA.options[l]).join('、');
+  if(off.length){
+    sortMsg = '數量對不上：' + off.map(g => GROUPS[g]+'堆現在有 '+cnt[g]+' 個，但詞性是'+GROUPS[g]+'的空格有 '+NEED[g]+' 格').join('；') + (EXTRA ? '，選項不能比空格少。' : '。') + (amb ? '標「兩類皆可」的字（'+esc(amb)+'）可以放進兩種詞性的任一堆，想想它們放進文章哪一格、在那裡當什麼詞。' : '回到文章，看每個字可能放進哪一格。');
+    renderTray(); return;
+  }
+  const wrong = letters.filter(l => !inPile(l, assign[l]));
+  if(wrong.length){
+    sortMsg = (EXTRA ? '每一堆的數量夠了' : '每一堆的數量對了')+'，但還有字放錯堆。標「兩類皆可」的字，只能放進它標出的那兩種詞性；其他的字，回到文章看它可能放進哪一格、在那裡當什麼詞。';
+    renderTray(); return;
+  }
+  toStage3('分對了。');
+}
+function skipStep2(){
+  blankNums.forEach(n => { labeled[n] = true; slotOK[n] = true; });
+  assign = Object.assign({}, DATA.groupOf); skipped2 = true; toStage3('');
+}
+function toStage3(msg){ stage = 3; sel = null; sortMsg = ''; render(); }
+
+function place(n, l, viaReveal){ placed[n] = l; if(viaReveal) revealed[n] = true; render(); }
+
+function pick(l){
+  if(sel == null || placed[sel] || stage !== 3) return;
+  const s = S(sel);
+  if(l === DATA.answers[sel]){ place(sel, l, false); }
+  else { if(s.wrongs.indexOf(l) < 0) s.wrongs.push(l); render(); }
+}
+
+document.getElementById('resetBtn').addEventListener('click', () => { stage = 0; topicDone = {}; topicSt = {}; topicRev = {}; labeled = {}; slotOK = {}; assign = {}; sortTries = 0; sortMsg = ''; autoSorted = false; skipped2 = false; placed = {}; revealed = {}; sel = null; st = {}; render(); });
+
+document.getElementById('sub').textContent = DATA.sub;
+if(DATA.note){ const nd = document.createElement('div'); nd.className = 'sub'; nd.textContent = DATA.note; document.getElementById('sub').after(nd); }
+document.querySelectorAll('[data-nopt]').forEach(e => e.textContent = NOPTZH+'個');
+if(EXTRA > 0) document.querySelectorAll('[data-rule]').forEach(e => e.textContent = '選項比空格多 '+EXTRA+' 個，多出來的是用不到的誘答選項，所以每一堆的選項數，不能少於那一種詞性的空格數。');
+document.getElementById('lnkFull').href = 'https://staresto-create.github.io/passage-completion/#full-' + DATA.id;
+render();
+document.addEventListener('click', e => { if(e.target && e.target.id === 'toTray'){ const t = document.getElementById('trayCard'); if(t) t.scrollIntoView({behavior:'smooth', block:'start'}); } });
+</script>
+</body>
+</html>
