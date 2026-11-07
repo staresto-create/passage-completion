@@ -5775,5 +5775,569 @@
   "contextSpan": "跨句",
   "contextNote": "線索在前一句 `That is harmless for tiny particles, but it would be a serious problem for anything as big as a spaceship.`（這對微小的粒子無害，但對像太空船那麼大的東西就是嚴重的問題）——本句的 such an object 指前一句像太空船那麼大的東西，拖動這種東西需要的能量很多，所以填 vast（大量的），不填表示極小的 microscopic。",
   "clue": {"inner": ["such an object", "would take a", "amount of energy"], "cross": [{"sentence": "That is harmless for tiny particles, but it would be a serious problem for anything as big as a spaceship.", "words": ["anything as big as a spaceship"]}, {"sentence": "The resulting heat could destroy it.", "words": ["resulting heat could destroy"]}]}
+ },
+ {
+  "id": "VPCA-lev2025_21",
+  "year": "（二十一）",
+  "passageId": "PCA-lev2025",
+  "blankNum": 21,
+  "categories": [
+   "字詞搭配",
+   "詞性判斷"
+  ],
+  "options": {
+   "A": "written",
+   "B": "reach",
+   "C": "unusual",
+   "D": "assumption",
+   "E": "judged",
+   "F": "sincere",
+   "G": "effort",
+   "H": "collected",
+   "I": "rank",
+   "J": "effect"
+  },
+  "answer": "B",
+  "gloss": "伸手去拿、設法取用",
+  "collocation": "many of us ___ for something longer；reach for + N（伸手去拿、設法取用）：reach for a pen／reach for the stars（追求遠大的目標）",
+  "explanation": "空格前是 many of us，後面接 for something longer，這裡要一個原形動詞。rank 也是原形動詞，字形合得上，但 rank 的意思是「排名次」，後面不接 for，讀不通。【作答線索】reach for 是「伸手去拿」，延伸為「設法取用」：嚴重的錯誤之後，很多人會去找比較長的說法來用。hoping to show that we really mean it 說明這麼做的用意。【文內驗證】下一句 set out to test whether longer words … 就在測這個習慣有沒有用。",
+  "contextSpan": "句內",
+  "clue": {"inner": ["many of us", "for something longer"], "cross": []}
+ },
+ {
+  "id": "VPCA-lev2025_22",
+  "year": "（二十一）",
+  "passageId": "PCA-lev2025",
+  "blankNum": 22,
+  "categories": [
+   "語意連貫",
+   "同義呼應"
+  ],
+  "options": {
+   "A": "written",
+   "B": "reach",
+   "C": "unusual",
+   "D": "assumption",
+   "E": "judged",
+   "F": "sincere",
+   "G": "effort",
+   "H": "collected",
+   "I": "rank",
+   "J": "effect"
+  },
+  "answer": "F",
+  "gloss": "真誠的、有誠意的",
+  "collocation": "make an apology sound more ___；sincere apology（誠懇的道歉）；sincere thanks（衷心的感謝）；sincerely（真誠地）",
+  "explanation": "sound more 後面要接形容詞。unusual 和 written 也是形容詞，字形都合得上；有人想到下文談的是字，就填 unusual，可是這一句問的是「道歉聽起來」怎麼樣，不是字罕不罕見。【作答線索】前一句 hoping to show that we really mean it 說明用長字是想讓對方覺得自己是認真的，Lev-Ari 要測的就是長字是不是真的讓道歉顯得「真心」。really mean it 與 sincere（真誠的）意思相同。【文內驗證】第四段說選長字等於告訴對方你很努力，呼應這裡的「真誠」。",
+  "contextSpan": "跨句",
+  "contextNote": "線索在前一句 `hoping to show that we really mean it`（希望表示我們真的是認真的）——really mean it 就是「真心」，與 sincere（真誠的）意思相同，所以空格填 sincere。",
+  "clue": {"inner": ["make an apology sound more"], "cross": [{"sentence": "A quick “Sorry!” is enough for bumping into a stranger, but after a serious mistake, many of us reach for something longer, hoping to show that we really mean it.", "words": ["really mean it"]}]}
+ },
+ {
+  "id": "VPCA-lev2025_23",
+  "year": "（二十一）",
+  "passageId": "PCA-lev2025",
+  "blankNum": 23,
+  "categories": [
+   "詞性判斷",
+   "字詞搭配"
+  ],
+  "options": {
+   "A": "written",
+   "B": "reach",
+   "C": "unusual",
+   "D": "assumption",
+   "E": "judged",
+   "F": "sincere",
+   "G": "effort",
+   "H": "collected",
+   "I": "rank",
+   "J": "effect"
+  },
+  "answer": "H",
+  "gloss": "蒐集（的）",
+  "collocation": "50 apology posts ___ from social media；collect A from B（從 B 蒐集 A）；collected data（蒐集來的資料）",
+  "explanation": "空格放在名詞 posts 後面，要一個過去分詞來修飾它。written 也是過去分詞，有人想到「貼文是寫出來的」就填了它；可是 written 後面要接 on 或 by，接 from 不通。judged 後面接 from 也講不通。【作答線索】from social media 交代貼文的來源，collect A from B 是「從 B 蒐集 A」，所以 posts collected from X 是「從 X 蒐集來的貼文」。【文內驗證】後面 compared them with the same users’ other posts 說明這些貼文是研究者蒐集來的資料，要拿去比較。",
+  "contextSpan": "句內",
+  "clue": {"inner": ["50 apology posts", "from social media"], "cross": []}
+ },
+ {
+  "id": "VPCA-lev2025_24",
+  "year": "（二十一）",
+  "passageId": "PCA-lev2025",
+  "blankNum": 24,
+  "categories": [
+   "同義呼應",
+   "語意連貫"
+  ],
+  "options": {
+   "A": "written",
+   "B": "reach",
+   "C": "unusual",
+   "D": "assumption",
+   "E": "judged",
+   "F": "sincere",
+   "G": "effort",
+   "H": "collected",
+   "I": "rank",
+   "J": "effect"
+  },
+  "answer": "C",
+  "gloss": "不尋常的、罕見的",
+  "collocation": "no more ___ than those in the other posts；no more A than B（A 的程度不比 B 高）；unusual words（不常見的字）；an unusual name（少見的名字）",
+  "explanation": "no more ___ than 中間要放形容詞，sincere、written 也是形容詞，字形合得上；但說「字不比其他貼文裡的字更誠懇」，與前後文都接不上。【作答線索】前一句 long words are often rare words，說長的字常常也是罕見的字，所以長度和罕見很容易混淆；Yet 一轉，說道歉裡的字 no more ___ than 其他貼文的字，句尾 so rarity could not explain the difference 說罕見解釋不了差別。空格要和 rare 同義，填 unusual（不尋常的、罕見的）。【文內驗證】第三段開頭說研究二把字長和 word commonness（常見程度）分開來測，也是因為這兩件事容易混在一起。",
+  "contextSpan": "跨句",
+  "contextNote": "線索在前一句 `long words are often rare words`（長的字常常也是罕見的字）——Yet 轉折後說道歉裡的字並沒有比較 unusual，與 rare 同義，句尾的 rarity 也呼應這個意思。",
+  "clue": {"inner": ["no more", "than those in the other posts", "rarity"], "cross": [{"sentence": "This mattered because long words are often rare words, so length and rarity are easy to mix up.", "words": ["long words are often rare words", "rarity"]}]}
+ },
+ {
+  "id": "VPCA-lev2025_25",
+  "year": "（二十一）",
+  "passageId": "PCA-lev2025",
+  "blankNum": 25,
+  "categories": [
+   "字彙選義",
+   "字詞搭配"
+  ],
+  "options": {
+   "A": "written",
+   "B": "reach",
+   "C": "unusual",
+   "D": "assumption",
+   "E": "judged",
+   "F": "sincere",
+   "G": "effort",
+   "H": "collected",
+   "I": "rank",
+   "J": "effect"
+  },
+  "answer": "I",
+  "gloss": "排名次、排序",
+  "collocation": "___ each group from most to least apologetic；rank A from highest to lowest（把 A 由高到低排序）；rank first／rank among（名列……）",
+  "explanation": "to 後面要原形動詞。reach 也是原形動詞，字形合得上，但 reach each group（抵達每一組）與後面的 from most to least apologetic 無法連在一起。【作答線索】from most to least apologetic（從最像道歉到最不像道歉）是排出高低順序，rank 就是「排名次、排序」。【文內驗證】前一句說每一組有三個句子，要把三個句子排出順序才有意義；後一句說字比較長的句子被認為更有道歉的意思，正是排序的結果。",
+  "contextSpan": "句內",
+  "clue": {"inner": ["each group", "from most to least apologetic"], "cross": []}
+ },
+ {
+  "id": "VPCA-lev2025_26",
+  "year": "（二十一）",
+  "passageId": "PCA-lev2025",
+  "blankNum": 26,
+  "categories": [
+   "詞性判斷",
+   "字詞搭配"
+  ],
+  "options": {
+   "A": "written",
+   "B": "reach",
+   "C": "unusual",
+   "D": "assumption",
+   "E": "judged",
+   "F": "sincere",
+   "G": "effort",
+   "H": "collected",
+   "I": "rank",
+   "J": "effect"
+  },
+  "answer": "E",
+  "gloss": "被認為、被判斷",
+  "collocation": "were ___ to be more apologetic；be judged to be + adj（被認為是……）；judge A to be B（判斷 A 是 B）",
+  "explanation": "were 後面要接過去分詞，再接 to be。written 也是過去分詞，有人就填「句子被寫得更像道歉」；可是第三段第一句說這幾個句子 meant the same thing（意思相同），句子是研究者寫的，評斷的人是受試者。【作答線索】前一句 They were asked to rank … 說受試者要評比，所以這一句講的是評比的結果：字比較長的句子「被認為」更有道歉的意思。be judged to be 是 judge A to be B（認為 A 是 B）的被動形，A 變成主詞 sentences，用過去分詞 judged。【文內驗證】下一句 In contrast 之後說的是常見程度對 their answers 沒有影響，answers 就是受試者的判斷。",
+  "contextSpan": "跨句",
+  "contextNote": "線索在前一句 `They were asked to rank each group …`（他們要把每一組排出順序）——評比的是受試者，所以這一句說的是受試者的判斷結果，填 judged（被認為）。",
+  "clue": {"inner": ["were", "to be more apologetic", "than those with shorter words"], "cross": [{"sentence": "They were asked to rank each group from most to least apologetic.", "words": ["They were asked to rank"]}]}
+ },
+ {
+  "id": "VPCA-lev2025_27",
+  "year": "（二十一）",
+  "passageId": "PCA-lev2025",
+  "blankNum": 27,
+  "categories": [
+   "字詞搭配",
+   "詞性判斷"
+  ],
+  "options": {
+   "A": "written",
+   "B": "reach",
+   "C": "unusual",
+   "D": "assumption",
+   "E": "judged",
+   "F": "sincere",
+   "G": "effort",
+   "H": "collected",
+   "I": "rank",
+   "J": "effect"
+  },
+  "answer": "J",
+  "gloss": "影響、效果",
+  "collocation": "had no separate ___ on their answers；have an effect on + N（對……有影響）；have no effect on（對……沒有影響）；the effect of A on B（A 對 B 的影響）",
+  "explanation": "separate 前面有 no，後面有 on，空格要一個名詞，而且能接 on。effort 與 effect 長得像，有人看錯就填了 effort；可是 effort 後面不接 on 來表示影響，have no effort on 不是說法。assumption 後面也不接 on。【作答線索】have an effect on 是「對……有影響」，has no separate effect on 就是「沒有另外的影響」。In contrast 的前一句說字比較長，影響了評比；對比之下，字有多常見，沒有另外的影響。【文內驗證】第四段開頭說 Lev-Ari 用人們願意多努力來解釋「長度」的作用，完全沒有提到常見程度。",
+  "contextSpan": "句內",
+  "clue": {"inner": ["had no separate", "on their answers"], "cross": []}
+ },
+ {
+  "id": "VPCA-lev2025_28",
+  "year": "（二十一）",
+  "passageId": "PCA-lev2025",
+  "blankNum": 28,
+  "categories": [
+   "語意連貫",
+   "字彙選義"
+  ],
+  "options": {
+   "A": "written",
+   "B": "reach",
+   "C": "unusual",
+   "D": "assumption",
+   "E": "judged",
+   "F": "sincere",
+   "G": "effort",
+   "H": "collected",
+   "I": "rank",
+   "J": "effect"
+  },
+  "answer": "G",
+  "gloss": "力氣、努力",
+  "collocation": "take more ___ to say or write；take effort（需要花力氣）；make an effort to V（努力去做）；put effort into（投入心力）",
+  "explanation": "more 後面要名詞。effect 與 effort 長得像，有人填了 effect；可是 take more effect to say 讀不通，effect 是「影響」，不是花多少。【作答線索】第一句 how hard people are willing to try（人們願意多努力）說的是出力的多寡，後面 so choosing them tells the other person that you are trying hard 說選長字等於告訴對方你有在努力。因此空格要放「要花多少力氣」，也就是 effort。【文內驗證】effort 與第一句的 how hard … try、本句的 trying hard 前後呼應。",
+  "contextSpan": "句內",
+  "clue": {"inner": ["Longer words take more", "to say or write"], "cross": []}
+ },
+ {
+  "id": "VPCA-lev2025_29",
+  "year": "（二十一）",
+  "passageId": "PCA-lev2025",
+  "blankNum": 29,
+  "categories": [
+   "語意連貫",
+   "詞性判斷"
+  ],
+  "options": {
+   "A": "written",
+   "B": "reach",
+   "C": "unusual",
+   "D": "assumption",
+   "E": "judged",
+   "F": "sincere",
+   "G": "effort",
+   "H": "collected",
+   "I": "rank",
+   "J": "effect"
+  },
+  "answer": "A",
+  "gloss": "書面的、寫出來的",
+  "collocation": "Only ___ apologies were tested, not spoken ones；written vs. spoken（書面的 vs. 口說的）；written English（書面英文）；a written test（筆試）",
+  "explanation": "apologies 前面要形容詞或分詞。sincere 和 unusual 也是形容詞，字形合得上；可是 Only sincere apologies were tested 與後面的 not spoken ones 接不起來。【作答線索】not spoken ones 的 ones 指 apologies，意思是「不是口說的道歉」，與它對比的是「書面的」，所以填 written。【文內驗證】上一句 the study has limits（這項研究有限制）說明這是限制：研究者只看了貼文和句子，沒有測口頭說出來的道歉。",
+  "contextSpan": "句內",
+  "clue": {"inner": ["Only", "apologies were tested", "not spoken ones"], "cross": []}
+ },
+ {
+  "id": "VPCA-lev2025_30",
+  "year": "（二十一）",
+  "passageId": "PCA-lev2025",
+  "blankNum": 30,
+  "categories": [
+   "字彙選義",
+   "句型結構"
+  ],
+  "options": {
+   "A": "written",
+   "B": "reach",
+   "C": "unusual",
+   "D": "assumption",
+   "E": "judged",
+   "F": "sincere",
+   "G": "effort",
+   "H": "collected",
+   "I": "rank",
+   "J": "effect"
+  },
+  "answer": "D",
+  "gloss": "假設、想法",
+  "collocation": "the ___ that formal words show that a speaker takes the matter seriously；the assumption that + S + V（認為……的假設）；make an assumption（做假設）；on the assumption that（假定……）",
+  "explanation": "the ___ that 後面接的是一個完整的子句 formal words show that a speaker takes the matter seriously，這是同位語子句，要接在 assumption、idea、belief 這類名詞後面。effect 和 effort 是名詞，字形合得上，但後面不接這種子句。【作答線索】or 連接兩個選項：讀者反應的是 length itself（長度本身），還是反應 the ___ that formal words show that a speaker takes the matter seriously（正式的字代表說話的人很慎重這個想法）。前半句說正式的字通常比較長，所以長度和正式程度分不開；第二個選項指的是正式程度帶來的印象，是讀者心裡的想法，assumption 就是「假設、想法」。【文內驗證】前半句 formal words tend to be longer，正是兩件事分不開的原因，才會 it is unclear。",
+  "contextSpan": "句內",
+  "clue": {"inner": ["the", "that formal words show that a speaker takes the matter seriously", "or to"], "cross": []}
+ },
+ {
+  "id": "VPCA-xiji2026_21",
+  "year": "（二十二）",
+  "passageId": "PCA-xiji2026",
+  "blankNum": 21,
+  "categories": [
+   "字彙選義",
+   "句型結構"
+  ],
+  "options": {
+   "A": "regularly",
+   "B": "terrain",
+   "C": "remove",
+   "D": "training",
+   "E": "trace",
+   "F": "carried",
+   "G": "descend",
+   "H": "recently",
+   "I": "tangled",
+   "J": "paddle"
+  },
+  "answer": "C",
+  "gloss": "移走、清除",
+  "collocation": "how to ___ it from shores；remove A from B（把 A 從 B 移走）；remove trash from the beach（把垃圾從海灘清走）",
+  "explanation": "how to 後面要接原形動詞，再接受詞 it。descend 和 paddle 也是原形動詞，字形合得上，但 descend it、paddle it 放在這裡都講不通。【作答線索】from shores that machines cannot reach 說明垃圾所在的地方，remove A from B 就是「把 A 從 B 移走」，how to remove it from shores 是「怎麼把垃圾從海岸移走」。【文內驗證】後面三段都在說怎麼清：垂降、獨木舟、垃圾車，都是在回答這個問題。",
+  "contextSpan": "句內",
+  "clue": {"inner": ["how to", "it from shores that machines cannot reach"], "cross": []}
+ },
+ {
+  "id": "VPCA-xiji2026_22",
+  "year": "（二十二）",
+  "passageId": "PCA-xiji2026",
+  "blankNum": 22,
+  "categories": [
+   "字詞搭配",
+   "詞性判斷"
+  ],
+  "options": {
+   "A": "regularly",
+   "B": "terrain",
+   "C": "remove",
+   "D": "training",
+   "E": "trace",
+   "F": "carried",
+   "G": "descend",
+   "H": "recently",
+   "I": "tangled",
+   "J": "paddle"
+  },
+  "answer": "I",
+  "gloss": "被纏住的",
+  "collocation": "get ___ in old nets；get tangled in + N（被……纏住）；a tangled rope（纏在一起的繩子）；tangled up in（被……纏住）",
+  "explanation": "get 後面要接形容詞或過去分詞。carried 也是過去分詞，有人想成「被漁網帶走」；可是這一句在說垃圾對動物的傷害，get carried in old nets 不是說法，也不是傷害。【作答線索】or 後面的 swallow pieces of plastic by mistake（誤吞塑膠碎片）是另一種傷害，所以空格也要是一種傷害：被舊漁網纏住。get tangled in 就是「被……纏住」。【文內驗證】上一句說垃圾裡有許多 abandoned fishing gear（廢棄漁具），漁網就是其中之一。",
+  "contextSpan": "句內",
+  "clue": {"inner": ["Sea animals may get", "in old nets", "or swallow pieces of plastic"], "cross": []}
+ },
+ {
+  "id": "VPCA-xiji2026_23",
+  "year": "（二十二）",
+  "passageId": "PCA-xiji2026",
+  "blankNum": 23,
+  "categories": [
+   "字彙選義",
+   "詞性判斷"
+  ],
+  "options": {
+   "A": "regularly",
+   "B": "terrain",
+   "C": "remove",
+   "D": "training",
+   "E": "trace",
+   "F": "carried",
+   "G": "descend",
+   "H": "recently",
+   "I": "tangled",
+   "J": "paddle"
+  },
+  "answer": "B",
+  "gloss": "地形",
+  "collocation": "steep, rocky ___；because of + N（因為……）；rough terrain（崎嶇的地形）；mountainous terrain（山地地形）",
+  "explanation": "because of 後面接名詞，steep, rocky 兩個形容詞後面要放名詞。training 和 trace 也是名詞，字形合得上，但 steep, rocky training、steep, rocky trace 都講不通。【作答線索】steep（陡峭的）和 rocky（多岩石的）是用來形容土地的樣子，terrain 就是「地形」；因為地形陡峭、多岩石，大型機具進不去。【文內驗證】第一段說海岸排列著玄武岩峭壁，與這裡的 steep, rocky 前後呼應。",
+  "contextSpan": "句內",
+  "clue": {"inner": ["because of their steep, rocky"], "cross": []}
+ },
+ {
+  "id": "VPCA-xiji2026_24",
+  "year": "（二十二）",
+  "passageId": "PCA-xiji2026",
+  "blankNum": 24,
+  "categories": [
+   "字彙選義",
+   "語意連貫"
+  ],
+  "options": {
+   "A": "regularly",
+   "B": "terrain",
+   "C": "remove",
+   "D": "training",
+   "E": "trace",
+   "F": "carried",
+   "G": "descend",
+   "H": "recently",
+   "I": "tangled",
+   "J": "paddle"
+  },
+  "answer": "G",
+  "gloss": "向下走、下降",
+  "collocation": "fix ropes … and ___ into narrow cracks；descend into + N（往下進到……）；descend a cliff（下一道峭壁）",
+  "explanation": "and 前後是並列的動作：fix ropes 和空格，都是 volunteers 做的，所以空格要原形動詞。paddle 也是原形動詞，但划獨木舟的是下一句的 Kayak teams，而且沒辦法 paddle into narrow cracks。【作答線索】ropes 固定在 the top of a cliff（崖頂），人從上往下，descend 就是「往下走」；descend into narrow cracks 是順著繩索下到狹窄的岩縫裡。【文內驗證】後面 where they pack the trash into bags 說他們到了縫底才把垃圾裝袋，與「往下」前後相符。",
+  "contextSpan": "句內",
+  "clue": {"inner": ["fix ropes at the top of a cliff", "into narrow cracks"], "cross": []}
+ },
+ {
+  "id": "VPCA-xiji2026_25",
+  "year": "（二十二）",
+  "passageId": "PCA-xiji2026",
+  "blankNum": 25,
+  "categories": [
+   "語意連貫",
+   "字彙選義"
+  ],
+  "options": {
+   "A": "regularly",
+   "B": "terrain",
+   "C": "remove",
+   "D": "training",
+   "E": "trace",
+   "F": "carried",
+   "G": "descend",
+   "H": "recently",
+   "I": "tangled",
+   "J": "paddle"
+  },
+  "answer": "J",
+  "gloss": "用槳划",
+  "collocation": "They ___ through reefs and tight channels；paddle through + N（划著穿過……）；paddle a kayak／canoe（划獨木舟）",
+  "explanation": "They 指前一句的 Kayak teams，空格要原形動詞（joined 是前一句的動詞）。descend 也是原形動詞，但 descend through reefs 要說「往下」，獨木舟隊在水面上移動，不是往下。【作答線索】Kayak teams（獨木舟隊）在 reefs and tight channels（礁石和狹窄的水道）之間移動，靠的是槳，paddle 就是「用槳划」。【文內驗證】下一句說垃圾袋 by water（用水路）運送，呼應「他們在水上移動」。",
+  "contextSpan": "跨句",
+  "contextNote": "線索在前一句 `Kayak teams joined them in 2025.`（獨木舟隊在 2025 年加入）——They 指獨木舟隊，在礁石和水道間用槳前進，所以填 paddle（用槳划）。",
+  "clue": {"inner": ["They", "through reefs and tight channels"], "cross": [{"sentence": "Kayak teams joined them in 2025.", "words": ["Kayak teams"]}]}
+ },
+ {
+  "id": "VPCA-xiji2026_26",
+  "year": "（二十二）",
+  "passageId": "PCA-xiji2026",
+  "blankNum": 26,
+  "categories": [
+   "詞性判斷",
+   "字詞搭配"
+  ],
+  "options": {
+   "A": "regularly",
+   "B": "terrain",
+   "C": "remove",
+   "D": "training",
+   "E": "trace",
+   "F": "carried",
+   "G": "descend",
+   "H": "recently",
+   "I": "tangled",
+   "J": "paddle"
+  },
+  "answer": "F",
+  "gloss": "被運送",
+  "collocation": "the full bags are ___ by water to Dongji Island；be carried to + 地點（被運往……）；carry A to B（把 A 運到 B）",
+  "explanation": "the full bags are 後面要接過去分詞表示被動，主詞 bags 是被運送的東西。tangled 也是過去分詞，但 bags are tangled by water 不通，而且垃圾袋不會「被水纏住」。【作答線索】by water 說明運送的方式，to Dongji Island 說明運往哪裡，carried 就是「被運送」。【文內驗證】後面 where they wait to be shipped out（在那裡等船運走）說垃圾運到東吉嶼後再換船，與「先運到那裡」前後相符。",
+  "contextSpan": "句內",
+  "clue": {"inner": ["the full bags are", "by water to Dongji Island"], "cross": []}
+ },
+ {
+  "id": "VPCA-xiji2026_27",
+  "year": "（二十二）",
+  "passageId": "PCA-xiji2026",
+  "blankNum": 27,
+  "categories": [
+   "字詞搭配",
+   "詞性判斷"
+  ],
+  "options": {
+   "A": "regularly",
+   "B": "terrain",
+   "C": "remove",
+   "D": "training",
+   "E": "trace",
+   "F": "carried",
+   "G": "descend",
+   "H": "recently",
+   "I": "tangled",
+   "J": "paddle"
+  },
+  "answer": "D",
+  "gloss": "訓練",
+  "collocation": "volunteers with water-safety ___；water-safety training（水域安全訓練）；receive training（接受訓練）；first-aid training（急救訓練）",
+  "explanation": "with water-safety 後面要接名詞，water-safety 是修飾這個名詞的複合形容詞。terrain 和 trace 也是名詞，但 water-safety terrain、water-safety trace 都不是說法。【作答線索】志工要划獨木舟橫渡水道，需要先學會水上安全，所以填 training（訓練）。【文內驗證】第三段前面說 experienced volunteers（經驗豐富的志工），與這裡的受過水域安全訓練前後呼應。",
+  "contextSpan": "句內",
+  "clue": {"inner": ["fifteen volunteers with water-safety"], "cross": []}
+ },
+ {
+  "id": "VPCA-xiji2026_28",
+  "year": "（二十二）",
+  "passageId": "PCA-xiji2026",
+  "blankNum": 28,
+  "categories": [
+   "語意連貫",
+   "詞性判斷"
+  ],
+  "options": {
+   "A": "regularly",
+   "B": "terrain",
+   "C": "remove",
+   "D": "training",
+   "E": "trace",
+   "F": "carried",
+   "G": "descend",
+   "H": "recently",
+   "I": "tangled",
+   "J": "paddle"
+  },
+  "answer": "H",
+  "gloss": "最近",
+  "collocation": "The park authority has ___ started；has recently started + N（最近開始了……）；until recently（直到最近）",
+  "explanation": "has 與 started 之間要放副詞。regularly 也是副詞，字形合得上，但 has regularly started a service 說成「定期開辦了一項服務」，開辦只有一次，不是會反覆發生的事。【作答線索】beginning in May 2026（從 2026 年 5 月開始）說明這項服務開始的時間不久，用 has recently started 表示「最近開始」，和現在完成式相配。【文內驗證】下一句說垃圾車 collect … four days a week（每週收運四天），那才是「固定地」做，與這裡的「最近」分得開。",
+  "contextSpan": "句內",
+  "clue": {"inner": ["has", "started a mobile garbage truck service", "beginning in May"], "cross": []}
+ },
+ {
+  "id": "VPCA-xiji2026_29",
+  "year": "（二十二）",
+  "passageId": "PCA-xiji2026",
+  "blankNum": 29,
+  "categories": [
+   "語意連貫",
+   "字詞搭配"
+  ],
+  "options": {
+   "A": "regularly",
+   "B": "terrain",
+   "C": "remove",
+   "D": "training",
+   "E": "trace",
+   "F": "carried",
+   "G": "descend",
+   "H": "recently",
+   "I": "tangled",
+   "J": "paddle"
+  },
+  "answer": "A",
+  "gloss": "固定地、定期地",
+  "collocation": "collect household waste ___, four days a week；regularly（定期地）：meet regularly／check regularly；on a regular basis（定期）",
+  "explanation": "collect household waste 後面放副詞，修飾收運的頻率。recently 也是副詞，但 collect waste recently 只能說最近收過，後面接 four days a week 就不合。【作答線索】four days a week（每週四天）是固定的次數，所以垃圾車是「定期」來收，regularly 就是「固定地、定期地」。【文內驗證】後半句 residents can hand over their sorted trash at the door 說居民可以在門口交垃圾，需要知道垃圾車什麼時候來，也是靠這種固定的時間。",
+  "contextSpan": "句內",
+  "clue": {"inner": ["collect household waste", "four days a week"], "cross": []}
+ },
+ {
+  "id": "VPCA-xiji2026_30",
+  "year": "（二十二）",
+  "passageId": "PCA-xiji2026",
+  "blankNum": 30,
+  "categories": [
+   "字詞搭配",
+   "語意連貫"
+  ],
+  "options": {
+   "A": "regularly",
+   "B": "terrain",
+   "C": "remove",
+   "D": "training",
+   "E": "trace",
+   "F": "carried",
+   "G": "descend",
+   "H": "recently",
+   "I": "tangled",
+   "J": "paddle"
+  },
+  "answer": "E",
+  "gloss": "痕跡",
+  "collocation": "leave no ___；leave no trace（不留痕跡）；without a trace（毫無蹤跡）；trace of（……的跡象）",
+  "explanation": "leave no 後面要接名詞。terrain 和 training 也是名詞，字形合得上，但 leave no terrain、leave no training 都不是說法。【作答線索】the rule of “leave no ___” 是遊客要遵守的規則，後面 and take their own trash home（把自己的垃圾帶走）說明規則的內容：離開時不留下任何跡象，也就是 leave no trace（不留痕跡）。【文內驗證】規則與整篇的主題前後相符：島上的問題就是垃圾留在海岸。",
+  "contextSpan": "句內",
+  "clue": {"inner": ["the rule of “leave no", "take their own trash home"], "cross": []}
  }
 ]

@@ -4791,5 +4791,445 @@
    "讓太空船這類物體困在一道光束裡，一直是科幻電影和影集常用的情節安排。但 Cizmar 博士說，這種技術永遠不會發展到那一步。這個過程會發生能量的轉移。對微小的粒子來說，這沒有害處，但對像太空船那麼大的東西來說，就是嚴重的問題。要拖動這樣的物體，需要大量的能量。產生的熱可能會把物體毀掉。"
   ],
   "internalNote": "第三百六十二場建檔。改編自 z102p2；命題分身出題，兩次盲測、四方審閱（引文事實、文法、學生讀者、大考體例）後裁定修訂，修訂後再以十篇全測的第三次盲測確認唯一解。"
+ },
+ {
+  "id": "PCA-lev2025",
+  "topic": "自我成長與心理",
+  "topic2": "人際關係",
+  "topicSub": "",
+  "tw": false,
+  "year": "（二十一）",
+  "accuracyRateSource": null,
+  "exam": "改編練習",
+  "examType": "改編練習",
+  "blankCount": 10,
+  "optionCount": 10,
+  "eliminationValid": true,
+  "unusedOptions": [],
+  "blankRange": [
+   21,
+   30
+  ],
+  "titleStatus": null,
+  "sourceNote": null,
+  "title": "道歉為什麼愛用長字（Why Apologies Use Longer Words）",
+  "flagNote": "本題庫改編練習：文章依 Lev-Ari（2025）發表於 British Journal of Psychology 的研究〈Sorries seem to have the harder words〉重新撰寫，照現行學測文意選填的版面出題（第 21–30 題，10 選 10），參考答案與解析由本題庫撰寫，沒有官方答對率。",
+  "flagKind": [
+   "出處說明"
+  ],
+  "options": {
+   "A": "written",
+   "B": "reach",
+   "C": "unusual",
+   "D": "assumption",
+   "E": "judged",
+   "F": "sincere",
+   "G": "effort",
+   "H": "collected",
+   "I": "rank",
+   "J": "effect"
+  },
+  "paras": [
+   {
+    "label": "【第一段】引言：道歉時，人們會挑比較長的字，心理學家想知道長字是否真的讓道歉顯得更有誠意",
+    "segs": [
+     [
+      "When people apologize, they often choose their words with care. A quick “Sorry!” is enough for bumping into a stranger,",
+      null
+     ],
+     [
+      " but",
+      "trans"
+     ],
+     [
+      " after a serious mistake, many of us",
+      null
+     ],
+     [
+      "21",
+      "blank"
+     ],
+     [
+      "for something longer, hoping to show that we really mean it.",
+      null
+     ],
+     [
+      " Psychologist Shiri Lev-Ari of Royal Holloway, University of London, set out to test whether longer words really do make an apology sound more",
+      "gradient"
+     ],
+     [
+      "22",
+      "blank"
+     ],
+     [
+      ".",
+      "gradient"
+     ]
+    ]
+   },
+   {
+    "label": "【第二段】研究一：真實的道歉貼文，字比較長，但並沒有比較罕見",
+    "segs": [
+     [
+      "To begin with",
+      "trans"
+     ],
+     [
+      ", Lev-Ari studied 50 apology posts",
+      "topic"
+     ],
+     [
+      "23",
+      "blank"
+     ],
+     [
+      "from social media, half of them by celebrities, and compared them with the same users’ other posts.",
+      "topic"
+     ],
+     [
+      " The apologies turned out to be much longer overall, and their words were longer too, by about one letter on average. This mattered because long words are often rare words, so length and rarity are easy to mix up.",
+      null
+     ],
+     [
+      " Yet",
+      "trans"
+     ],
+     [
+      " the words in the apologies were no more",
+      null
+     ],
+     [
+      "24",
+      "blank"
+     ],
+     [
+      "than those in the other posts, so rarity could not explain the difference.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第三段】研究二：請人評比意思相同的句子，字長影響評價，字的常見程度沒有影響",
+    "segs": [
+     [
+      "Next",
+      "trans"
+     ],
+     [
+      ", 49 adults in Britain read groups of three sentences that meant the same thing but differed in either word length or word commonness.",
+      "topic"
+     ],
+     [
+      " They were asked to",
+      null
+     ],
+     [
+      "25",
+      "blank"
+     ],
+     [
+      "each group from most to least apologetic. The sentences with longer words were",
+      null
+     ],
+     [
+      "26",
+      "blank"
+     ],
+     [
+      "to be more apologetic than those with shorter words of the same commonness.",
+      null
+     ],
+     [
+      " In contrast",
+      "trans"
+     ],
+     [
+      ", how common the words were had no separate",
+      null
+     ],
+     [
+      "27",
+      "blank"
+     ],
+     [
+      "on their answers.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第四段】解釋與限制：長字代表花了力氣；但只測了書面道歉，也分不開字長與正式程度",
+    "segs": [
+     [
+      "Lev-Ari explains the results by pointing to how hard people are willing to try.",
+      "topic"
+     ],
+     [
+      " Longer words take more",
+      null
+     ],
+     [
+      "28",
+      "blank"
+     ],
+     [
+      "to say or write, so choosing them tells the other person that you are trying hard.",
+      null
+     ],
+     [
+      " However",
+      "trans"
+     ],
+     [
+      ", the study has limits. Only",
+      null
+     ],
+     [
+      "29",
+      "blank"
+     ],
+     [
+      "apologies were tested, not spoken ones.",
+      null
+     ],
+     [
+      " Also",
+      "trans"
+     ],
+     [
+      ", formal words tend to be longer, so it is unclear whether readers respond to length itself or to the",
+      null
+     ],
+     [
+      "30",
+      "blank"
+     ],
+     [
+      "that formal words show that a speaker takes the matter seriously.",
+      null
+     ]
+    ]
+   }
+  ],
+  "thesis": "“Psychologist Shiri Lev-Ari of Royal Holloway, University of London, set out to test whether longer words really do make an apology sound more ___.”",
+  "thesisExplain": "這篇報導一項心理學研究，中心思想在第一段末句：Lev-Ari 想測試的是，長一點的字是不是真的讓道歉聽起來更有誠意。前面兩句先鋪陳背景：小事一句 Sorry 就夠，犯了嚴重的錯卻常改用比較長的說法，希望讓對方知道自己是認真的。後面三段就照「怎麼測、測到什麼、怎麼解釋」展開。第二段是研究一：真實的道歉貼文字數多，字也長了約一個字母，但字並沒有比較罕見；第三段是研究二：請人評比意思相同的句子，字長影響評價，字的常見程度沒有另外的影響；第四段解釋原因是長字要花比較多力氣，花力氣代表認真，同時交代研究的限制。寫作上，報導研究時先把問題問清楚，後面的證據才有東西可以回答。",
+  "macro": {
+   "structure": "研究報導型 — 引言(小事一句 Sorry 就夠，嚴重的錯卻會改用長一點的說法，研究者想測長字是否真的讓道歉更有誠意，全文中心思想) → 研究一(真實的道歉貼文：字數多、字較長，但字並不罕見) → 研究二(請人評比意思相同的句子：字長影響評價，常見程度沒有影響) → 解釋與限制(長字代表花力氣；只測書面道歉，也分不開字長與正式程度)",
+   "transitions": "but（轉折，小事一句 Sorry 就夠 ↔ 嚴重的錯改用長一點的說法）→ To begin with（順序，先說第一項研究）→ Yet（轉折，字雖然長，卻沒有比較罕見）→ Next（順序，再說第二項研究）→ In contrast（對比，字長有影響 ↔ 常見程度沒有影響）→ However（轉折，解釋之後交代研究的限制）→ Also（補充，再加上第二個限制）",
+   "outline": [
+    "1. 引言：道歉時人們會挑字；小事一句 Sorry 就夠，嚴重的錯卻常改用長一點的說法，Lev-Ari 想測長字是否真的讓道歉聽起來更有誠意(全文中心思想)",
+    "2. 研究一：50 則 X 平台上的道歉貼文，比起同一批人的其他貼文，整體更長，字也平均長約一個字母，但字並沒有比較罕見，所以差別來自長度，不是罕見",
+    "3. 研究二：49 位英國成人評比意思相同的三個句子，字比較長的句子被認為更有道歉的意思，字的常見程度沒有另外的影響",
+    "4. 解釋與限制：長字要花更多力氣，代表認真；但只測了書面道歉，而且正式的字通常也比較長，分不清讀者反應的是長度還是正式感"
+   ],
+   "patterns": "說明文 (Expository) + 研究報導 (Research Report)"
+  },
+  "zhTranslation": [
+   "人們道歉的時候，常常會小心挑選用字。不小心撞到陌生人，一句快速的「Sorry！」就夠了，但犯了嚴重的錯之後，我們很多人會改用比較長的說法，希望讓對方知道我們是認真的。倫敦大學皇家哈洛威學院的心理學家 Shiri Lev-Ari 想測試，比較長的字是不是真的會讓道歉聽起來更誠懇。",
+   "首先，Lev-Ari 研究了 50 則從社群媒體蒐集來的道歉貼文，其中一半出自名人，並拿它們和同一批使用者的其他貼文比較。結果道歉貼文整體長得多，裡面的字也比較長，平均長了大約一個字母。這一點很重要，因為長的字常常也是罕見的字，所以長度和罕見很容易混淆。然而，道歉貼文裡的字並沒有比其他貼文裡的字更不尋常，所以罕見解釋不了這個差別。",
+   "接著，49 位英國成人讀了好幾組句子，每組三句，意思相同，只在字的長度或常見程度上不同。他們要把每一組由「最像道歉」排到「最不像道歉」。字比較長的句子，比起字比較短、但常見程度相同的句子，被認為更有道歉的意思。相對的，字有多常見，對他們的答案沒有另外的影響。",
+   "Lev-Ari 用人們願意多努力來解釋這些結果。比較長的字，說或寫都要多花力氣，所以選擇它們，等於告訴對方你很努力。不過，這項研究有它的限制。只測試了書面的道歉，沒有測口頭的。此外，正式的字通常比較長，所以讀者到底是對長度本身有反應，還是對「正式的字代表說話的人很慎重」這個想法有反應，還不清楚。"
+  ],
+  "internalNote": "本場建檔。依 Lev-Ari（2025）重新撰寫（資料來源：BPS Research Digest 2025-06-27、作者在 The Conversation 的自述、British Journal of Psychology 論文資訊）；文字全部自寫，沒有照抄任何報導。事實範圍：研究一 50 則 X 平台道歉貼文（名人與非名人各半）與同一批人的其他貼文比較，道歉貼文整體較長、字平均長約一個字母、常見程度沒有差別；研究二 49 位英國成人，每組三句意思相同、只在字長或常見程度上不同，字長有影響、常見程度沒有獨立影響；限制為只測書面、字長與正式程度分不開。"
+ },
+ {
+  "id": "PCA-xiji2026",
+  "topic": "環境與災害",
+  "topic2": "",
+  "topicSub": "",
+  "tw": false,
+  "year": "（二十二）",
+  "accuracyRateSource": null,
+  "exam": "改編練習",
+  "examType": "改編練習",
+  "blankCount": 10,
+  "optionCount": 10,
+  "eliminationValid": true,
+  "unusedOptions": [],
+  "blankRange": [
+   21,
+   30
+  ],
+  "titleStatus": null,
+  "sourceNote": null,
+  "title": "西吉嶼的海廢清理（Cleaning Up Xiji Island）",
+  "flagNote": "本題庫改編練習：文章依內政部國家公園署 2026 年 8 月 23 日新聞稿〈淨心守護 澎湖南方四島重現潔淨海岸〉及相關報導的事實重新撰寫，照現行學測文意選填的版面出題（第 21–30 題，10 選 10），參考答案與解析由本題庫撰寫，沒有官方答對率。",
+  "flagKind": [
+   "出處說明"
+  ],
+  "options": {
+   "A": "regularly",
+   "B": "terrain",
+   "C": "remove",
+   "D": "training",
+   "E": "trace",
+   "F": "carried",
+   "G": "descend",
+   "H": "recently",
+   "I": "tangled",
+   "J": "paddle"
+  },
+  "paras": [
+   {
+    "label": "【第一段】引言：西吉嶼景色純淨，但每年冬天海漂垃圾都被推上岸，問題是怎麼清",
+    "segs": [
+     [
+      "Xiji is a small island in South Penghu Marine National Park, off the coast of Taiwan, and no one lives there. Its shores are lined with dark basalt cliffs, and coral reefs grow in the waters around it. Yet each winter, the northeast monsoon and ocean currents push floating trash onto the beaches and rocks of Xiji and the park’s other three islands.",
+      null
+     ],
+     [
+      " The challenge is not only how much trash arrives, but how to",
+      "gradient"
+     ],
+     [
+      "21",
+      "blank"
+     ],
+     [
+      "it from shores that machines cannot reach.",
+      "gradient"
+     ]
+    ]
+   },
+   {
+    "label": "【第二段】問題：垃圾量大，而且會傷害海洋動物",
+    "segs": [
+     [
+      "The amount is large.",
+      "topic"
+     ],
+     [
+      " In 2025, more than 80 tons of marine debris were cleared from the four islands, and most of it was abandoned fishing gear, foam, and plastic bottles. This is more than an ugly sight. Sea animals may get",
+      null
+     ],
+     [
+      "22",
+      "blank"
+     ],
+     [
+      "in old nets or swallow pieces of plastic by mistake.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第三段】方法：志工垂降、獨木舟接力，在機具進不去的海岸用人力清理",
+    "segs": [
+     [
+      "Big machines cannot enter the islands because of their steep, rocky",
+      "topic"
+     ],
+     [
+      "23",
+      "blank"
+     ],
+     [
+      ", so the work has to be done by people and boats.",
+      "topic"
+     ],
+     [
+      " Each year, experienced volunteers fix ropes at the top of a cliff and",
+      null
+     ],
+     [
+      "24",
+      "blank"
+     ],
+     [
+      "into narrow cracks, where they pack the trash into bags. Kayak teams joined them in 2025. They",
+      null
+     ],
+     [
+      "25",
+      "blank"
+     ],
+     [
+      "through reefs and tight channels. The full bags are then",
+      null
+     ],
+     [
+      "26",
+      "blank"
+     ],
+     [
+      "by water to Dongji Island, where they wait to be shipped out.",
+      null
+     ],
+     [
+      " In September 2026",
+      "trans"
+     ],
+     [
+      ", fifteen volunteers with water-safety",
+      null
+     ],
+     [
+      "27",
+      "blank"
+     ],
+     [
+      "crossed the channel between Dongji and Xiji by kayak and spent three days cleaning Xiji.",
+      null
+     ]
+    ]
+   },
+   {
+    "label": "【第四段】另一半：陸地上的垃圾車與遊客的責任",
+    "segs": [
+     [
+      "Cleaning up, however, is only half of the job.",
+      "topic"
+     ],
+     [
+      " The park authority has",
+      null
+     ],
+     [
+      "28",
+      "blank"
+     ],
+     [
+      "started a mobile garbage truck service on land, beginning in May 2026. The trucks collect household waste and food scraps",
+      null
+     ],
+     [
+      "29",
+      "blank"
+     ],
+     [
+      ", four days a week, and residents on the islands where people live can hand over their sorted trash at the door. Visitors are also asked to follow the rule of “leave no",
+      null
+     ],
+     [
+      "30",
+      "blank"
+     ],
+     [
+      "” and take their own trash home.",
+      null
+     ]
+    ]
+   }
+  ],
+  "thesis": "“The challenge is not only how much trash arrives, but how to ___ it from shores that machines cannot reach.”",
+  "thesisExplain": "這篇報導一項環境維護的做法，中心思想在第一段末句：難處不只是垃圾很多，而是要怎麼把垃圾從機器進不去的海岸移走。前面三句先鋪陳背景：西吉嶼是無人島，有玄武岩峭壁和珊瑚礁，卻每年冬天被東北季風和洋流推來的漂浮垃圾堆滿。後面三段就照「垃圾有多嚴重、怎麼清、清完之後還要做什麼」展開。第二段說垃圾量超過 80 噸，而且會傷害海洋動物；第三段說地形讓機具進不去，所以靠志工垂降繩索、獨木舟接力運送；第四段說清理只是工作的一半，陸地上還要有垃圾車，遊客也要把自己的垃圾帶走。寫作上，把「難處」放在引言的最後一句，後面各段說明的方法都是在回答這個難處，讀者就看得出每一段為什麼存在。",
+  "macro": {
+   "structure": "問題解決型 — 引言(西吉嶼景色純淨，卻每年冬天被海漂垃圾堆滿，難處是機器進不去的海岸怎麼清，全文中心思想) → 問題(垃圾量超過 80 噸，漁具、保麗龍、寶特瓶居多，會傷害動物) → 方法(機具進不去，改用志工垂降繩索與獨木舟接力運送) → 後續(清理只是一半，陸地上設垃圾車，遊客帶走自己的垃圾)",
+   "transitions": "Yet（轉折，景色純淨 ↔ 冬天垃圾堆積）→ This is more than an ugly sight（遞進，垃圾不只難看，還會傷害動物）→ because of（因果，地形使機具進不去）→ so（結果，只能靠人力與船）→ In September（時間，舉一次近期的清理作例子）→ however（轉折，清理只是工作的一半）→ has recently started（時間，陸地上的新做法，5 月起）",
+   "outline": [
+    "1. 引言：西吉嶼是無人島，有玄武岩峭壁和珊瑚礁，卻每年冬天被東北季風和洋流推來的垃圾堆滿；難處是機器進不去的海岸要怎麼清(全文中心思想)",
+    "2. 問題：2025 年四島清出超過 80 噸海漂垃圾，以廢棄漁具、保麗龍、寶特瓶居多；動物可能被漁網纏住，或誤食塑膠",
+    "3. 方法：地形陡峭，機具進不去；志工在崖頂架繩索垂降到狹窄的岩縫打包垃圾，獨木舟隊穿過礁石與狹窄水道，把垃圾運到東吉嶼等船運走；9 月有十五位受過水域安全訓練的志工划獨木舟渡海，花三天清理西吉嶼",
+    "4. 後續：清理只是一半；5 月起陸地上有行動垃圾車，每週四天收生活垃圾與廚餘；遊客也要實踐無痕旅遊，把垃圾帶走"
+   ],
+   "patterns": "說明文 (Expository) + 問題解決 (Problem-Solution)"
+  },
+  "zhTranslation": [
+   "西吉嶼是澎湖南方四島國家公園裡一座小島，位在台灣外海，島上沒有人居住。島的海岸排列著深色的玄武岩峭壁，周圍海域長著珊瑚礁。然而每年冬天，東北季風和洋流都會把漂浮的垃圾推上西吉嶼和公園裡另外三座島的沙灘與岩岸。難處不只是有多少垃圾漂來，還有要怎麼把垃圾從機器進不去的海岸移走。",
+   "垃圾的量很大。2025 年，四座島清出了超過 80 噸海漂垃圾，大部分是廢棄漁具、保麗龍和寶特瓶。這不只是難看而已。海洋動物可能被舊漁網纏住，或是不小心吞下塑膠碎片。",
+   "大型機具因為島上陡峭、多岩石的地形進不去，所以工作只能靠人和船。每年，經驗豐富的志工會在崖頂固定好繩索，順著繩索往下垂降到狹窄的岩縫，在那裡把垃圾裝進袋子。2025 年，獨木舟隊也加入了。他們划著獨木舟穿過礁石和狹窄的水道，裝滿的垃圾袋再由水路運到東吉嶼，在那裡等船運走。2026 年 9 月，十五位受過水域安全訓練的志工划獨木舟渡過東吉嶼和西吉嶼之間的水道，花了三天清理西吉嶼。",
+   "不過，清理只是工作的一半。從 2026 年 5 月起，公園管理單位最近在陸地上開辦了行動垃圾車服務。垃圾車定期收運，每週四天生活垃圾和廚餘，島上有人居住的地方，居民可以在家門口交出分類好的垃圾。也請遊客遵守「無痕旅遊（Leave No Trace）」的原則，把自己的垃圾帶走。"
+  ],
+  "internalNote": "本場建檔。依內政部國家公園署新聞稿（2026-08-23，政府公開資料）及公視、微笑台灣、Taiwan News 對 2026 中秋連假西吉嶼獨木舟淨灘的報導之事實重新撰寫，文字全部自寫。事實範圍：四島含東吉、西吉、東嶼坪、西嶼坪；2025 年清出逾 80 噸，廢棄漁具、保麗龍、寶特瓶居多；2025 年起崖頂繩索垂降加獨木舟協作（獨木舟由台灣獨木舟推廣協會加入）；2026 年 5 月起行動垃圾車（每週一、三、五、日）；2026 年中秋連假約 15 位受水域訓練志工、三天兩夜。不採用各報不一致的清出公斤數（257 公斤與 670 公斤兩種說法），也未用 ChatGPT 草稿裡的「1979 年遷村」等未查證說法。"
  }
 ]
