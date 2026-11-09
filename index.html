@@ -697,9 +697,9 @@ function kkOpt(w){ w = String(w == null ? '' : w).trim(); return (window.KK && w
 const HISTORY_KEY = 'gsat_pc_history_v1';
 const WRONG_KEY = 'gsat_pc_wrong_ids_v1';
 
-function loadHistory(){ try{ return JSON.parse(localStorage.getItem(HISTORY_KEY)) || []; }catch(e){ return []; } }
+function loadHistory(){ try{ const a = JSON.parse(localStorage.getItem(HISTORY_KEY)); return Array.isArray(a) ? a.filter(h => h && typeof h === 'object') : []; }catch(e){ return []; } }
 function saveHistory(h){ try{ localStorage.setItem(HISTORY_KEY, JSON.stringify(h)); }catch(e){} }
-function loadWrongIds(){ try{ return JSON.parse(localStorage.getItem(WRONG_KEY)) || []; }catch(e){ return []; } }
+function loadWrongIds(){ try{ const w = JSON.parse(localStorage.getItem(WRONG_KEY)); return Array.isArray(w) ? w.filter(x => typeof x === 'string') : []; }catch(e){ return []; } }
 function saveWrongIds(w){ try{ localStorage.setItem(WRONG_KEY, JSON.stringify(w)); }catch(e){} }
 /* 完成度：單題模式作答就算做過；整篇模式按「批改」才算（沒選答案的空格不算）；測試模式不留紀錄；改編練習不計入 */
 function renderProgress(){
@@ -1427,7 +1427,7 @@ function showHistoryDetail(){
   if(recent.length===0){ recHtml = '<div class="year-item">尚無作答記錄</div>'; }
   recent.forEach(h => {
     const it = ITEMS.find(x=>x.id===h.id);
-    const label = it ? `${it.year} 第${it.blankNum}題` : h.id;
+    const label = it ? `${it.year} 第${it.blankNum}題` : escapeHtml(h.id);
     const mark = h.correct ? '<span style="color:var(--sage);">✓ 答對</span>' : '<span style="color:var(--crimson);">✕ 答錯</span>';
     const time = new Date(h.t).toLocaleString('zh-TW', {month:'numeric', day:'numeric', hour:'2-digit', minute:'2-digit'});
     recHtml += `<div class="year-item"><span>${label}</span><span class="cnt">${mark}　${time}</span></div>`;
