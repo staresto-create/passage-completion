@@ -129,6 +129,27 @@
   .so-l{font-family:'IBM Plex Mono','Noto Sans TC',monospace; font-weight:700; color:var(--crimson); flex:0 0 auto;}
   .so-w{font-family:'Times New Roman',Times,'Liberation Serif','Noto Serif','Noto Sans TC',serif; font-size:15.5px; flex:1 1 auto;}
   .so-used{font-size:11px; color:var(--gold); flex:0 0 auto; white-space:nowrap;}
+  /* 固定選項面板（全文模式）：不蓋住文章、作答中沒有聲音 */
+  .opanel{position:fixed; left:0; right:0; bottom:0; z-index:80; background:var(--paper-card); border-top:2px solid var(--ink);
+    box-shadow:0 -4px 18px rgba(34,31,26,.18); padding:8px 10px calc(8px + env(safe-area-inset-bottom));}
+  .opanel[hidden]{display:none;}
+  .op-in{max-width:760px; margin:0 auto;}
+  .op-hd{display:flex; align-items:center; justify-content:space-between; gap:8px; min-height:30px; font-family:'IBM Plex Mono','Noto Sans TC',monospace; font-size:13px; font-weight:600; color:var(--crimson);}
+  .op-hd span{min-width:0;}
+  .op-clr{font:inherit; font-size:12px; font-weight:500; color:var(--ink-soft); background:none; border:1px solid var(--rule); border-radius:4px; padding:3px 9px; cursor:pointer;}
+  .op-clr:disabled{opacity:.35; cursor:default;}
+  .op-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:6px; margin-top:6px;}
+  @media (min-width:560px){ .op-grid{grid-template-columns:repeat(5,1fr);} }
+  .op-b{position:relative; font-family:'Times New Roman',Times,'Liberation Serif','Noto Serif','Noto Sans TC',serif; font-size:15px; min-height:40px; padding:4px 6px; border:1px solid var(--rule); border-radius:5px; background:var(--surface); color:var(--ink); cursor:pointer; text-align:left; display:flex; gap:5px; align-items:baseline; overflow-wrap:anywhere;}
+  .op-b b{font-family:'IBM Plex Mono','Noto Sans TC',monospace; font-size:12px; color:var(--crimson); flex:none;}
+  .op-b:disabled{opacity:.45; cursor:default;}
+  .op-b:not(:disabled):active{background:var(--tint-crimson); border-color:var(--crimson);}
+  .op-b.used{background:var(--tint-sand2); border-style:dashed;}
+  .op-b.mine{border-color:var(--gold); background:var(--tint-warm7); font-weight:700;}
+  .op-b i{position:absolute; top:1px; right:4px; font:normal 600 10px 'IBM Plex Mono',monospace; color:var(--gold);}
+  .op-b:focus-visible,.op-clr:focus-visible{outline:3px solid var(--crimson); outline-offset:1px;}
+  .blankTag.active{outline:3px solid var(--crimson); outline-offset:1px; background:var(--tint-crimson);}
+  .blankTag{scroll-margin-top:30vh; scroll-margin-bottom:46vh;}
   .blankTag.picked{border-color:var(--gold); background:var(--tint-warm7); color:var(--ink);}
   .grade-btn{display:block; width:100%; max-width:420px; margin:0 auto; padding:15px 20px; border-radius:4px;
     border:none; background:var(--crimson); color:#fff; font-family:'Noto Serif TC',serif; font-weight:700;
@@ -369,13 +390,13 @@ function kkOpt(w){ w = String(w == null ? '' : w).trim(); return (window.KK && w
   #printSheet .pw-b{white-space:nowrap; font-weight:700;}
   #printSheet .pw-o{display:grid; grid-template-columns:repeat(5,1fr); gap:2px 10px; margin:10px 0 0; font-size:11pt; line-height:1.5;}
   #printSheet .pw-o span{white-space:nowrap;}
-  .pwBar, .sheet, .sheet-mask{display:none !important;}
+  .pwBar, .sheet, .sheet-mask, .opanel{display:none !important;}
 }
 </style>
 </head>
 <body>
 <div class="wrap">
-<style>@media print{.sc-back{display:none !important}}</style><p class="sc-back" style="font-family:'Noto Sans TC',sans-serif; font-size:14px; line-height:1.5; margin:0 0 10px;"><a href="https://staresto-create.github.io/JCEE-vocab-questions/" style="color:var(--link-crimson); font-weight:700; text-decoration:underline; text-underline-offset:2px; white-space:nowrap; display:inline-block; padding:6px 0;">← 回題庫首頁</a></p>
+<style>@media print{.sc-back{display:none !important}}</style><p class="sc-back" style="font-family:'Noto Sans TC',sans-serif; font-size:14px; line-height:1.5; margin:0 0 10px;"><a href="" style="color:var(--link-crimson); font-weight:700; text-decoration:underline; text-underline-offset:2px; white-space:nowrap; display:inline-block; padding:6px 0;">← 回題庫首頁</a></p>
   <header class="top">
     <div class="title">文意選填</div>
     <div class="sub">學測 90–115 年 · 指考 91–110 年 · 560 題 / 56 篇 · 改編練習 22 篇 · 單題模式 / 全文模式</div>
@@ -503,7 +524,7 @@ function kkOpt(w){ w = String(w == null ? '' : w).trim(); return (window.KK && w
           <p class="sk-core">➜ Some people pick a name. <em>（有些人挑一個名字。）</em></p>
           <p class="sk-tip">💡 the sound of which they like 是關係子句，修飾前面的 name。of which 就是 whose 的另一種寫法——換成 whose sound they like，意思完全一樣。</p>
         </div>
-          <div class="sk-more">這種長句在每一種題型裡都會遇到——克漏字、單字題、中譯英，一個也躲不掉。完整說明和其他題庫的例句在<a href="https://staresto-create.github.io/JCEE-vocab-questions/" target="_blank" rel="noopener">題庫入口頁</a>。</div>
+          <div class="sk-more">這種長句在每一種題型裡都會遇到——克漏字、單字題、中譯英，一個也躲不掉。完整說明和其他題庫的例句在<a href="" target="_blank" rel="noopener">題庫入口頁</a>。</div>
         </div>
         <span class="strategy-toggle" style="margin-top:12px;" onclick="var m=document.getElementById('skelMore'); m.style.display = m.style.display==='none' ? 'block' : 'none';">🔍 展開／收合：看七個例句</span>
       </details>
@@ -685,11 +706,11 @@ function kkOpt(w){ w = String(w == null ? '' : w).trim(); return (window.KK && w
   <div id="printSheet" aria-hidden="true"></div>
 
   <footer>
-    <div style="font-family:'Noto Sans TC',sans-serif; font-size:13px; line-height:2; margin-bottom:12px;"><a href="https://staresto-create.github.io/JCEE-vocab-questions/" style="color:var(--link-crimson); font-weight:700; text-decoration:underline; text-underline-offset:2px; white-space:nowrap;">← 回題庫首頁</a><span style="padding:0 8px; opacity:.5;">·</span><a href="https://staresto-create.github.io/JCEE-vocab-questions/#rules" style="color:var(--link-crimson); font-weight:700; text-decoration:underline; text-underline-offset:2px; white-space:nowrap;">🧩 五個詞：拼圖的規則</a></div>
+    <div style="font-family:'Noto Sans TC',sans-serif; font-size:13px; line-height:2; margin-bottom:12px;"><a href="" style="color:var(--link-crimson); font-weight:700; text-decoration:underline; text-underline-offset:2px; white-space:nowrap;">← 回題庫首頁</a><span style="padding:0 8px; opacity:.5;">·</span><a href="https://staresto-create.github.io/JCEE-vocab-questions/#rules" style="color:var(--link-crimson); font-weight:700; text-decoration:underline; text-underline-offset:2px; white-space:nowrap;">🧩 五個詞：拼圖的規則</a></div>
     資料來源：學測 90–115 年、指考 91–110 年歷屆文意選填（大考中心公布，部分年度含官方答對率與鑑別度）；改編練習由本題庫改編自歷屆學測、指考閱讀測驗，或依公開的研究與官方資料重新寫成<br>
-    © 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · <a href="https://staresto-create.github.io/JCEE-vocab-questions/#terms" style="color:var(--link-crimson); font-weight:700; text-decoration:underline; text-underline-offset:2px; white-space:nowrap;">📖 使用與著作權</a><br>
+    © 2026 staresto-create ZZSH · 免費、無廣告的非營利自學題庫 · <a href="#terms" style="color:var(--link-crimson); font-weight:700; text-decoration:underline; text-underline-offset:2px; white-space:nowrap;">📖 使用與著作權</a><br>
     <a class="report-btn" id="reportLink" href="https://docs.google.com/forms/d/e/1FAIpQLSd6P1s7HqjvOmGqOzNDWcBQQ3F539SifSNiAfXvi6NqD2YP-Q/viewform?usp=pp_url&entry.1257494378=%E6%96%87%E6%84%8F%E9%81%B8%E5%A1%AB" target="_blank" rel="noopener">🐛 回報錯誤</a>
-  <p class="cc-note">本題庫自己寫的部分（解析、中譯、分類、標註與編排）採用 <a href="https://creativecommons.org/licenses/by-nc/4.0/deed.zh-hant" target="_blank" rel="license noopener">CC BY-NC 4.0</a>（姓名標示─非商業性）授權：可以分享，但須註明出處，不得用於商業用途。試題來源與完整說明請見<a href="https://staresto-create.github.io/JCEE-vocab-questions/#terms">使用與著作權</a>。</p>
+  <p class="cc-note">本題庫自己寫的部分（解析、中譯、分類、標註與編排）採用 <a href="https://creativecommons.org/licenses/by-nc/4.0/deed.zh-hant" target="_blank" rel="license noopener">CC BY-NC 4.0</a>（姓名標示─非商業性）授權：可以分享，但須註明出處，不得用於商業用途。試題來源與完整說明請見<a href="#terms">使用與著作權</a>。</p>
 </footer>
 </div>
 
@@ -1367,6 +1388,7 @@ function printWrongPassages(){ if(buildWrongSheet()) safePrint(); }
 window.addEventListener('afterprint', clearWrongSheet);
 
 function goHome(){
+  hidePanel();
   clearWrongSheet();
   document.getElementById('homeView').style.display='block';
   document.getElementById('practiceView').style.display='none';
@@ -1523,6 +1545,7 @@ function clueReviewHtml(it){
   return `<div class="clueRv"><div class="single-sentence">${r.sent}</div>${r.key}</div>`;
 }
 function renderSingle(){
+  hidePanel();
   const it = singleQueue[singleIdx];
   scrSaveSingle(it);
   document.getElementById('progText').innerHTML = `<span>單題模式</span><span>${singleIdx+1} / ${singleQueue.length}</span>`;
@@ -1630,7 +1653,7 @@ function renderFull(pid){
   const p = PASSAGES[pid];
   scrSaveFull(pid);
   const items = ITEMS.filter(it=>it.passageId===pid).sort((a,b)=>a.blankNum-b.blankNum);
-  if(window.__lastPid !== pid){ fullGraded = false; window.__blankChoices = {}; }
+  if(window.__lastPid !== pid){ fullGraded = false; window.__blankChoices = {}; window.__activeBlank = null; }
   document.getElementById('progText').innerHTML = `<span>全文模式</span><span>${examYear(p)} · ${dispTitle(p)}</span>`;
   updateFullProgress();
 
@@ -1644,12 +1667,12 @@ function renderFull(pid){
   ${pendingNote(p)}
   <div class="noPrint" style="font-size:12px; color:var(--ink-soft); margin:-6px 0 14px; line-height:1.7; ${claimsThesis(p) ? '' : 'display:none;'}">📌 提醒：不是每一段都有主旨句。開頭鋪陳的段落、承接前一段的延伸段落，還有敘事或描寫的段落，主旨常常藏在字裡行間，找不到一句可以直接畫線；整篇文章的核心思想，也不一定剛好對應某一句話。本題庫標示的是「最能呼應」的代表句，只供參考，不代表唯一答案。</div>
   ${PUZZLE_IDS.has(p.id) ? `<div class="noPrint" style="font-size:13px; margin:0 0 14px; line-height:1.8;"><a href="puzzle/${p.id}.html" style="color:var(--link-crimson); font-weight:700; text-decoration:underline; text-underline-offset:2px;">🧩 找到答題線索：逐格拆解這一回</a></div>` : ''}
-  <div class="sec-title">選項<span style="font-weight:400; text-transform:none; letter-spacing:0; font-size:11px; margin-left:6px;">（本篇 ${p.optionCount} 個選項填 ${p.blankCount} 格，每個最多用一次；${p.eliminationValid ? '<b>選項剛好用完</b>' : '會有 ' + (p.optionCount - p.blankCount) + ' 個<b>選項用不到</b>'}；點文章中的空格就能作答）</span></div>
+  <div class="sec-title">選項<span style="font-weight:400; text-transform:none; letter-spacing:0; font-size:11px; margin-left:6px;">（本篇 ${p.optionCount} 個選項填 ${p.blankCount} 格，每個最多用一次；${p.eliminationValid ? '<b>選項剛好用完</b>' : '會有 ' + (p.optionCount - p.blankCount) + ' 個<b>選項用不到</b>'}；先點文章中的空格，再從畫面下方選項面板點選；標示小數字的選項，表示已用在那一題，通常可先排除，但仍可再選）</span></div>
   <div class="opts-table" id="optsTable"></div>
   <div class="passage-text ${hintsOn?'':'hints-off'}" id="passageText"></div>
   <div style="text-align:center; margin:22px 0;">
     <button class="grade-btn" id="gradeBtn" onclick="gradeFullPassage()">送出批改<span class="gb-count" id="gbCount"></span></button>
-    <div style="font-size:11.5px; color:var(--ink-soft); margin-top:8px;">全部填完再送出，中途不會公布正解；送出後會顯示${p.exam === '改編練習' ? '' : '官方答對率與'}逐題檢討，並附逐格解析、全文主旨與全文中譯。</div>
+    <div style="font-size:11.5px; color:var(--ink-soft); margin-top:8px;">全部填完再送出，中途不會公布正解，也沒有聲音；送出後才有喇叭和 KK，並會顯示${p.exam === '改編練習' ? '' : '官方答對率與'}逐題檢討，並附逐格解析、全文主旨與全文中譯。</div>
   </div>
   <div id="gradeResult"></div>`;
 
@@ -1662,6 +1685,7 @@ function renderFull(pid){
   document.getElementById('practiceBody').classList.remove('isGraded');
   document.getElementById('practiceBody').innerHTML = html;
   renderPassageText(p, items);
+  showPanel();
 }
 // 該篇的段落文字是否真的帶有主旨句／轉折詞標記；沒有標記時不顯示提示開關與圖例
 function hasMarks(p){
@@ -1706,9 +1730,9 @@ function renderPassageText(p, items){
             ? `<span class="blankTag answered correct">${text} (${it.answer}) ${it.options[it.answer]}</span>`
             : `<span class="blankTag answered wrong">${text} 你選 ${chosen?'('+chosen+') '+it.options[chosen]:'未作答'} → 正解 (${it.answer}) ${it.options[it.answer]}</span>`;
         } else if(chosen){
-          inner = `<span class="blankTag picked" onclick="openSheet('${text}')">${text} (${chosen}) ${it.options[chosen]}</span>`;
+          inner = `<span class="blankTag picked ${String(text)===String(window.__activeBlank)?'active':''}" onclick="openSheet('${text}')">${text} (${chosen}) ${it.options[chosen]}</span>`;
         } else {
-          inner = `<span class="blankTag" onclick="openSheet('${text}')">?${text}</span>`;
+          inner = `<span class="blankTag ${String(text)===String(window.__activeBlank)?'active':''}" onclick="openSheet('${text}')">?${text}</span>`;
         }
         // 若空格夾在同一個標示句中間，底色要連續跨過空格，不可被切斷
         const HL = ['topic','thesis','gradient'];
@@ -1744,9 +1768,10 @@ function renderPassageText(p, items){
   // 選項總覽：同步標示已用掉的選項（作答管理用）
   const ot = document.getElementById('optsTable');
   if(ot){
+    ot.style.display = fullGraded ? '' : 'none';
     const used = usedLetterMap();
     ot.innerHTML = letters.map(l =>
-      `<div class="opt-cell ${used[l]?'used':''}"><b>(${l})</b> ${p.options[l]}${kkOpt(p.options[l])}${window.SPK?SPK.html(p.options[l],true):''}</div>`
+      `<div class="opt-cell ${used[l]?'used':''}"><b>(${l})</b> ${p.options[l]}${fullGraded ? kkOpt(p.options[l]) + (window.SPK?SPK.html(p.options[l],true):'') : ''}</div>`
     ).join('');
   }
 }
@@ -1758,33 +1783,65 @@ function usedLetterMap(){
   Object.keys(ch).forEach(n => { if(ch[n]) used[ch[n]] = n; });
   return used;
 }
-function openSheet(num){
-  const p = PASSAGES[window.__lastPid];
-  if(!p) return;
-  const used = usedLetterMap();
-  const letters = Object.keys(p.options).sort();
-  document.getElementById('sheetTitle').textContent = `第 ${num} 題`;
-  document.getElementById('sheetBody').innerHTML = letters.map(l => {
-    const u = used[l];
-    return `<div class="sheet-opt ${u?'used':''}" onclick="if(event.target.closest('.spk'))return;pickOption('${num}','${l}')">
-      <span class="so-l">(${l})</span><span class="so-w">${p.options[l]}${kkOpt(p.options[l])}${window.SPK?SPK.html(p.options[l],true):''}</span>
-      ${u?`<span class="so-used">已用於第${u}題</span>`:''}</div>`;
-  }).join('');
-  document.getElementById('sheetMask').classList.add('on');
-  document.getElementById('sheet').classList.add('on');
+function nextBlank(from){
+  const items = window.__lastItems || [], ch = window.__blankChoices || {};
+  const nums = items.map(it => String(it.blankNum));
+  const k = nums.indexOf(String(from));
+  for(let step=1; step<=nums.length; step++){
+    const n = nums[(k+step) % nums.length];
+    if(!ch[n]) return n;
+  }
+  return null;
 }
-function closeSheet(){
-  document.getElementById('sheetMask').classList.remove('on');
-  document.getElementById('sheet').classList.remove('on');
+function showPanel(){
+  const el = document.getElementById('opanel'); if(!el) return;
+  el.hidden = false; document.body.classList.add('hasPanel'); drawPanel();
+}
+function hidePanel(){
+  const el = document.getElementById('opanel'); if(!el) return;
+  el.hidden = true; document.body.classList.remove('hasPanel'); document.body.style.paddingBottom = '';
+}
+function drawPanel(){
+  const p = PASSAGES[window.__lastPid]; const el = document.getElementById('opanel');
+  if(!p || !el || el.hidden) return;
+  const act = window.__activeBlank, ch = window.__blankChoices || {}, used = usedLetterMap();
+  const items = window.__lastItems || [];
+  const filled = Object.keys(ch).filter(k => ch[k]).length;
+  let t;
+  if(act) t = `第 ${act} 題：請選一個選項`;
+  else if(filled >= items.length) t = '全部填完了，可以往下送出批改';
+  else t = '請點文章中的空格，再選一個選項';
+  document.getElementById('opTitle').textContent = t;
+  document.getElementById('opClr').disabled = !(act && ch[act]);
+  const letters = Object.keys(p.options).sort();
+  document.getElementById('opGrid').innerHTML = letters.map(l => {
+    const u = used[l], mine = act && ch[act] === l;
+    return `<button type="button" class="op-b ${u?'used':''} ${mine?'mine':''}" data-l="${l}" ${act?'':'disabled'} aria-label="${l} ${p.options[l]}${u?'，已用於第'+u+'題':''}"><b>(${l})</b><span>${p.options[l]}</span>${u?`<i>${u}</i>`:''}</button>`;
+  }).join('');
+  Array.prototype.forEach.call(document.querySelectorAll('#opGrid .op-b'), b => b.addEventListener('click', () => pickOption(window.__activeBlank, b.getAttribute('data-l'))));
+  document.body.style.paddingBottom = (el.offsetHeight + 12) + 'px';
+}
+function openSheet(num){
+  if(fullGraded) return;
+  window.__activeBlank = String(num);
+  renderPassageText(PASSAGES[window.__lastPid], window.__lastItems);
+  drawPanel();
+  const t = document.querySelector('.blankTag.active'); if(t && t.scrollIntoView) t.scrollIntoView({block:'nearest', behavior:'smooth'});
 }
 function pickOption(num, letter){
-  closeSheet();
-  if(fullGraded) return;
+  if(fullGraded || !num) return;
   window.__blankChoices = window.__blankChoices || {};
   window.__blankChoices[num] = letter;
+  window.__activeBlank = nextBlank(num);
   renderPassageText(PASSAGES[window.__lastPid], window.__lastItems);
+  drawPanel();
+  const t = document.querySelector('.blankTag.active'); if(t && t.scrollIntoView) t.scrollIntoView({block:'nearest', behavior:'smooth'});
 }
-
+function clearActive(){
+  const a = window.__activeBlank; if(!a || fullGraded) return;
+  delete window.__blankChoices[a];
+  renderPassageText(PASSAGES[window.__lastPid], window.__lastItems); drawPanel();
+}
 // ===== 交卷批改 =====
 function gradeFullPassage(){
   if(fullGraded) return;
@@ -1808,7 +1865,7 @@ function gradeFullPassage(){
       : (examOf(it) === '改編練習' ? '' : `<div class="pdTag">本場考試沒有官方逐題答對率</div>`);
     review += `<div class="rv-item ${ok?'ok':'ng'}">
       <div class="rv-hd"><b>第${it.blankNum}題</b>　${ok ? '✓ 答對' : '✕ 你選 '+(chosen?'('+chosen+') '+it.options[chosen]:'未作答')+'　正解 ('+it.answer+') '+it.options[it.answer]}${spanTagHtml(it)}</div>
-      <div class="rv-bd"><b>${it.options[it.answer]}</b>　${it.gloss||''}<br>
+      <div class="rv-bd"><b>${it.options[it.answer]}</b>${kkOpt(it.options[it.answer])}${window.SPK?SPK.html(it.options[it.answer],true):''}　${it.gloss||''}<br>
         <span class="rv-col">字詞搭配：${it.collocation||'—'}</span><br>${expInline(it.explanation)}</div>
       ${readMoreHtml(it)}
       ${clueReviewHtml(it)}
@@ -1846,7 +1903,7 @@ function gradeFullPassage(){
     <b>綱要：</b><br>${pg.macro.outline.map(o=>o).join('<br>')}
   </div>`;
   }
-  fullGraded = true;
+  fullGraded = true; window.__activeBlank = null; hidePanel();
   document.getElementById('practiceBody').classList.add('isGraded');
   document.getElementById('gradeBtn').style.display = 'none';
   document.getElementById('gradeResult').innerHTML = box;
@@ -1869,7 +1926,7 @@ function nextFullPassage(){
   const i = order.indexOf(window.__lastPid);
   if(order.length === 0 || (i >= 0 && i >= order.length - 1)){ alert('已經是最後一篇了。'); return; }
   const nid = order[i+1];  // 目前這篇不在篩選範圍內（i = -1）時，從範圍內第一篇開始
-  window.__blankChoices = {}; fullGraded = false; window.__lastPid = null;
+  window.__blankChoices = {}; fullGraded = false; window.__lastPid = null; window.__activeBlank = null;
   renderFull(nid);
   window.scrollTo({top:0, behavior:'smooth'});
 }
@@ -1889,12 +1946,10 @@ function applyAdaptHash(){
 init().then(function(){ applyAdaptHash(); applyTopicHash(); });
 </script>
 
-<div class="sheet-mask" id="sheetMask" onclick="closeSheet()"></div>
-<div class="sheet" id="sheet">
-  <div class="sheet-hd"><span id="sheetTitle"></span><span class="sheet-x" onclick="closeSheet()">✕</span></div>
-  <div class="sheet-tip">📌 每個選項最多用一次，標示「已用於第 N 題」的選項通常可先排除；但仍可點選，方便你自行判斷。<b>選項數多於空格數的年度，最後會有選項用不到</b>，別因為「只剩一個」就把它當成答案。</div>
-  <div class="sheet-body" id="sheetBody"></div>
-</div>
+<div class="opanel" id="opanel" hidden><div class="op-in">
+  <div class="op-hd"><span id="opTitle"></span><button type="button" class="op-clr" id="opClr" onclick="clearActive()">清除這格</button></div>
+  <div class="op-grid" id="opGrid"></div>
+</div></div>
 <a class="toBar" id="toBar" href="#unitbar" hidden>↑ 單元列</a>
 <script>
 /* 單元列：連到收合區塊的錨點會先展開；「↑ 單元列」在單元列捲出畫面後才出現 */
