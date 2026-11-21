@@ -1069,7 +1069,7 @@
   "answer": "H",
   "gloss": "（過去分詞）被發現的",
   "collocation": "paintings ___ inside pyramids and tombs；名詞 + 過去分詞片語（被動、後位修飾）；objects discovered at the site（在該遺址發現的文物）；the language spoken in that country（該國所使用的語言）",
-  "explanation": "空格前是名詞、後面接介系詞片語，你可能直覺想填動詞——但這一句已經有主要動詞 are depicted 了。【怎麼判斷】這裡要的是減化關係子句：paintings (which were) discovered inside pyramids…，把 which were 省略，只留過去分詞。(F) decorating 代進去讀不通：後面緊接的是 inside pyramids and tombs，看不出壁畫裝飾的是什麼。【文內驗證】同段的 Mummies have also been found with onions 用的 found 與 discovered 是同義字，方向一致。",
+  "explanation": "空格前是名詞、後面接介系詞片語，你可能直覺想填動詞——但這一句已經有主要動詞 are depicted 了。【怎麼判斷】這裡要的是減化關係子句：paintings (which were) discovered inside pyramids…，把 which were 省略，只留過去分詞。(F) decorating 代進去說不通：後面緊接的是 inside pyramids and tombs，看不出壁畫裝飾的是什麼。【文內驗證】同段的 Mummies have also been found with onions 用的 found 與 discovered 是同義字，方向一致。",
   "accuracyRate": 38,
   "discrimination": 66,
   "contextSpan": "句內",
@@ -4921,7 +4921,7 @@
   "readMore": {
    "label": "延伸閱讀：since 單獨當副詞，等於 since then",
    "url": "https://dictionary.cambridge.org/us/grammar/british-grammar/since",
-   "hint": "重點：上下文已經交代過時間點的時候，since 可以單獨當時間副詞，意思是 since then（從那時起），如 They had an argument a couple of years ago and they haven't spoken since.；語氣更強的說法是 ever since。本題 have since perished（從那以後就滅亡了）的 since 就是這個用法，夾在 have 和過去分詞中間；如果換成 in any way（以任何方式），句子就讀不通。"
+   "hint": "重點：上下文已經交代過時間點的時候，since 可以單獨當時間副詞，意思是 since then（從那時起），如 They had an argument a couple of years ago and they haven't spoken since.；語氣更強的說法是 ever since。本題 have since perished（從那以後就滅亡了）的 since 就是這個用法，夾在 have 和過去分詞中間；如果換成 in any way（以任何方式），句子就說不通。"
   },
   "clue": {"inner": ["which have", "perished"], "cross": []}
  },
