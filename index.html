@@ -1644,7 +1644,7 @@ function answerSingle(letter){
   });
   const spanTag = spanTagHtml(it);
   const ctxHtml = ctxBoxHtml(it);
-  const pd = (it.accuracyRate!=null) ? `<div class="pdTag">官方答對率 <b>P=${it.accuracyRate}%</b> ／ 鑑別度 <b>D=${it.discrimination}</b> ／ 難易度：<b>${tierOf(it.accuracyRate)}${isSpecialD(it.discrimination) ? '（特殊：鑑別度為負）' : ''}</b></div>` : '';
+  const pd = (it.accuracyRate!=null) ? `<div class="pdTag">官方答對率 <b>P=${it.accuracyRate}%</b> ／ 鑑別度 <b>D=${it.discrimination}</b> ／ 難易度：<b>${tierOf(it.accuracyRate)}${isSpecialD(it.discrimination) ? '（特殊：鑑別度為負）' : ''}</b></div>` : (examOf(it) === '改編練習' ? '' : `<div class="pdTag">大考中心沒有公布逐題答對率</div>`);
   document.getElementById('fbBox').innerHTML = `
     <div class="feedback">
       ${correct?'✓ 正確！':'✕ 正解是 ('+it.answer+') '+it.options[it.answer]}${spanTag}
@@ -1878,7 +1878,7 @@ function gradeFullPassage(){
     if(!testMode){ recordAnswer(it.id, ok); try{ if(chosen && window.SCProgress) SCProgress.mark('passage', it.id); }catch(e){} }
     const pd = (it.accuracyRate != null)
       ? `<div class="pdTag">官方答對率 <b>P=${it.accuracyRate}%</b> ／ 鑑別度 <b>D=${it.discrimination}</b> ／ 難易度：<b>${tierOf(it.accuracyRate)}${isSpecialD(it.discrimination) ? '（特殊：鑑別度為負）' : ''}</b></div>`
-      : (examOf(it) === '改編練習' ? '' : `<div class="pdTag">本場考試沒有官方逐題答對率</div>`);
+      : (examOf(it) === '改編練習' ? '' : `<div class="pdTag">大考中心沒有公布逐題答對率</div>`);
     review += `<div class="rv-item ${ok?'ok':'ng'}">
       <div class="rv-hd"><b>第${it.blankNum}題</b>　${ok ? '✓ 答對' : '✕ 你選 '+(chosen?'('+chosen+') '+it.options[chosen]:'未作答')+'　正解 ('+it.answer+') '+it.options[it.answer]}${spanTagHtml(it)}</div>
       <div class="rv-bd"><b>${it.options[it.answer]}</b>${kkOpt(it.options[it.answer])}${window.SPK?SPK.html(it.options[it.answer],true):''}　${it.gloss||''}<br>
