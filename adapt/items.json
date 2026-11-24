@@ -1994,7 +1994,7 @@
   "answer": "G",
   "gloss": "（形容詞）可行的",
   "collocation": "desalinating seawater is the only ___ means of providing water；a viable option／solution／alternative（可行的選擇／辦法／替代方案）；economically viable（在經濟上划得來的）",
-  "explanation": "viable 級數高，不少人不認得，改填 pressing，讀成「唯一迫切的方法」；可是迫切的是需求，不是方法。這一格要從前一句往下讀：human beings are steadily ___ the fresh water available from other sources，其他來源的淡水越來越少，到了中東、北非的鄉村地區，海水淡化就成了唯一「行得通」的辦法。【句構線索】the only ___ means of 是「冠詞 + 形容詞 + 名詞」，空格要修飾 means（方法），描述一個方法，最常說的就是它可不可行。【一字多義】viable 和 vital（攸關生死的）同源，都來自拉丁文的「生命」，原本指新生兒能夠存活，後來引申為方法「行得通」。",
+  "explanation": "viable 級別高，不少人不認得，改填 pressing，讀成「唯一迫切的方法」；可是迫切的是需求，不是方法。這一格要從前一句往下讀：human beings are steadily ___ the fresh water available from other sources，其他來源的淡水越來越少，到了中東、北非的鄉村地區，海水淡化就成了唯一「行得通」的辦法。【句構線索】the only ___ means of 是「冠詞 + 形容詞 + 名詞」，空格要修飾 means（方法），描述一個方法，最常說的就是它可不可行。【一字多義】viable 和 vital（攸關生死的）同源，都來自拉丁文的「生命」，原本指新生兒能夠存活，後來引申為方法「行得通」。",
   "contextSpan": "跨句",
   "contextNote": "線索在前一句 `as human beings are steadily ___ the fresh water available from other sources`（隨著人類漸漸用盡其他來源的淡水）——前一句說其他水源正在減少，所以到了中東、北非的鄉村，海水淡化成了唯一行得通的供水方法，空格填 viable（可行的）。",
   "clue": {"inner": ["the only", "means of providing water", "rural parts"], "cross": [{"sentence": "Despite these economic and environmental hurdles, desalination is looking increasingly attractive as human beings are steadily[28]the fresh water available from other sources.", "words": ["are steadily", "the fresh water available from other sources"]}]}

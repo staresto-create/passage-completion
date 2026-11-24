@@ -4894,9 +4894,9 @@
    30
   ],
   "titleStatus": null,
-  "sourceNote": "本篇為 111 年學測正式試題；115 學年度參考試卷沿用同一內容。",
+  "sourceNote": "本篇為 111 年學測正式試題；115 學年度起適用學測參考試卷沿用同一內容。",
   "title": "特技演員的崛起（The Rise of Stunt Performers）",
-  "flagNote": "111 年學測正式考題（第 21–30 題，選項 A–J）。附大考中心官方答對率（P）與鑑別度（D）。115 學年度參考試卷沿用了同一篇內容。",
+  "flagNote": "111 年學測正式考題（第 21–30 題，選項 A–J）。附大考中心官方答對率（P）與鑑別度（D）。115 學年度起適用學測參考試卷沿用了同一篇內容。",
   "flagKind": ["出處說明", "沿用題指認"],
   "options": {
    "A": "possible",
@@ -5122,7 +5122,7 @@
   "titleStatus": null,
   "sourceNote": "99 課綱學測參考試卷（102 年施測），大考中心沒有公布逐題答對率。",
   "title": "青少年晚起之謎（Teenage Sleep Patterns）",
-  "flagNote": "99 課綱適用的學測參考試卷內容。",
+  "flagNote": "99 課綱學測參考試卷（102 年施測）內容。",
   "flagKind": ["出處說明"],
   "options": {
    "A": "therefore",
@@ -5336,7 +5336,7 @@
   "titleStatus": null,
   "sourceNote": "95 課綱學測參考試卷（98 年施測），大考中心沒有公布逐題答對率。",
   "title": "太陽能的發展歷程（Solar Energy Over Time）",
-  "flagNote": "95 課綱適用的學測參考試卷內容。",
+  "flagNote": "95 課綱學測參考試卷（98 年施測）內容。",
   "flagKind": ["出處說明"],
   "options": {
    "A": "work",
@@ -6635,7 +6635,7 @@
   "topicSub": "",
   "tw": false,
   "year": "110年試辦考試",
-  "accuracyRateSource": "大考中心沒有公布逐題答對率（只公布級分統計）",
+  "accuracyRateSource": "大考中心沒有公布逐題答對率（試辦考試只公布級分對照、級分人數與成績標準）",
   "exam": "學測",
   "examType": "試辦考試",
   "blankCount": 10,
