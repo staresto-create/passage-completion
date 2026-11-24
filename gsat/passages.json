@@ -278,7 +278,7 @@
   "titleStatus": null,
   "sourceNote": null,
   "title": "失憶父親的溫暖（A Forgetful Father's Love）",
-  "flagNote": "開頭的 “Or so my mother told us.” 是省略句式，用來表示這是母親轉述、不是敘事者親眼所見的語氣：完整的意思是 or at least that is what my mother told us，前一句「父親婚後就開始健忘」只是母親的說法。",
+  "flagNote": "開頭的 “Or so my mother told us.” 是省略句型，用來表示這是母親轉述、不是敘事者親眼所見的語氣：完整的意思是 or at least that is what my mother told us，前一句「父親婚後就開始健忘」只是母親的說法。",
   "flagKind": ["語言現象說明"],
   "options": {
    "A": "little",
@@ -5108,7 +5108,7 @@
   "topicSub": "",
   "tw": false,
   "year": "99課綱（102年施測）",
-  "accuracyRateSource": "本卷非正式施測，無答對率",
+  "accuracyRateSource": "大考中心沒有公布逐題答對率",
   "exam": "學測",
   "examType": "參考試卷",
   "blankCount": 10,
@@ -5120,9 +5120,9 @@
    40
   ],
   "titleStatus": null,
-  "sourceNote": "99 課綱學測參考試卷（102 年施測），非正式施測，大考中心未公布逐題答對率。",
+  "sourceNote": "99 課綱學測參考試卷（102 年施測），大考中心沒有公布逐題答對率。",
   "title": "青少年晚起之謎（Teenage Sleep Patterns）",
-  "flagNote": "99 課綱適用的學測參考試卷內容（非正式考題）。",
+  "flagNote": "99 課綱適用的學測參考試卷內容。",
   "flagKind": ["出處說明"],
   "options": {
    "A": "therefore",
@@ -5322,7 +5322,7 @@
   "topicSub": "",
   "tw": false,
   "year": "95課綱（98年施測）",
-  "accuracyRateSource": "本卷非正式施測，無答對率",
+  "accuracyRateSource": "大考中心沒有公布逐題答對率",
   "exam": "學測",
   "examType": "參考試卷",
   "blankCount": 10,
@@ -5334,9 +5334,9 @@
    40
   ],
   "titleStatus": null,
-  "sourceNote": "95 課綱學測參考試卷（98 年施測），非正式施測，大考中心未公布逐題答對率。",
+  "sourceNote": "95 課綱學測參考試卷（98 年施測），大考中心沒有公布逐題答對率。",
   "title": "太陽能的發展歷程（Solar Energy Over Time）",
-  "flagNote": "95 課綱適用的學測參考試卷內容（非正式考題）。",
+  "flagNote": "95 課綱適用的學測參考試卷內容。",
   "flagKind": ["出處說明"],
   "options": {
    "A": "work",
@@ -6635,7 +6635,7 @@
   "topicSub": "",
   "tw": false,
   "year": "110年試辦考試",
-  "accuracyRateSource": "本卷非正式施測，無答對率",
+  "accuracyRateSource": "大考中心沒有公布逐題答對率（只公布級分統計）",
   "exam": "學測",
   "examType": "試辦考試",
   "blankCount": 10,
@@ -6647,9 +6647,9 @@
    30
   ],
   "titleStatus": null,
-  "sourceNote": "110 年試辦考試（適用於 108 課綱），非正式施測，大考中心未公布逐題答對率。",
+  "sourceNote": "110 年試辦考試（適用於 108 課綱），大考中心沒有公布逐題答對率。",
   "title": "非洲傳統宗教的亡者信仰（African Traditional Religions）",
-  "flagNote": "110 年試辦考試內容（適用於 108 課綱，非正式考題），第 21–30 題。大考中心未公布本場逐題答對率與鑑別度。",
+  "flagNote": "110 年試辦考試內容（適用於 108 課綱），第 21–30 題。大考中心未公布本場逐題答對率與鑑別度。",
   "flagKind": ["出處說明"],
   "options": {
    "A": "due",

@@ -221,6 +221,11 @@
   .navRow button{flex:1;}
   .backLink{display:inline-block; margin-bottom:14px; font-size:13px; color:var(--ink-soft); cursor:pointer;}
   .backLink:hover{color:var(--crimson);}
+  #backMap[hidden]{display:none;}
+  /* 從題目地圖進來時，作答區最下方（「下一題」與作答結果之後）也放一個回地圖的按鈕，不必捲回頁首 */
+  .mapEnd{display:flex; align-items:center; justify-content:center; min-height:44px; margin:18px 0 6px; border:1.5px solid var(--rule); border-radius:4px; font-size:14px; font-weight:700; color:var(--crimson); text-decoration:none;}
+  .mapEnd:hover{border-color:var(--crimson);}
+  .mapEnd[hidden]{display:none;}
 
   footer{text-align:center; font-size:11.5px; color:var(--ink-soft); margin-top:40px; line-height:1.8;}
   footer a{color:var(--crimson);}
@@ -443,7 +448,7 @@ function kkOpt(w){ w = String(w == null ? '' : w).trim(); return (window.KK && w
 
       <a class="hard-entry" href="map/">
         <span class="he-title">題目地圖：560 題依答對率排成一張圖 →</span>
-        <span class="he-sub">學測、指考每題一格，顏色越紅答對率越低，可以依難易、題型篩選。點任何一格，會直接開啟該題。</span>
+        <span class="he-sub">學測、指考每題一格，顏色越紅答對率越低，可以依難易、分類篩選。點任何一格，會直接開啟該題。</span>
       </a>
 
       <span class="strategy-toggle" id="u-strat" onclick="toggleStrategy()">📖 展開／收合：作答前必看的五大戰術與隱形連結</span>
@@ -644,7 +649,7 @@ function kkOpt(w){ w = String(w == null ? '' : w).trim(); return (window.KK && w
         <div class="cat-grid" id="catGrid"></div>
         <div class="sec-title">依難易度篩選<span style="font-weight:400; text-transform:none; letter-spacing:0; font-size:11px; margin-left:6px;">（選填，可複選；勾選後不限分類直接開始）</span></div>
         <div class="cat-grid" id="diffGrid"></div>
-        <div class="diff-note">難易度依大考中心公布的「全體考生答對率」（P 值）分成三級：<b>難</b>（P 值 25% 以下）／<b>中</b>（超過 25%、75% 以下）／<b>易</b>（超過 75%）。切點的由來：本題庫各題型的難易度都用同一套切點，方便互相比較。25% 原本是四選一的題目全部用猜的期望答對率；文意選填是 10 選 10 或 12 選 10，亂猜的期望答對率只有 10% 或更低，所以在這個題型，25% 以下表示四個考生裡答對的不到一個。75% 取的是對稱的另一端。<b>大考中心自己的難度用語是四級（難、中偏難、中偏易、易），與本題庫的三級不是同一套，不適合互相對照。</b><br><b>特殊</b>指鑑別度（D 值）為負值的題目。D 值＝高分群答對率－低分群答對率，官方的分組方式是把全體考生依原始得分排序後，取<b>前三分之一</b>與<b>後三分之一</b>；官方說明指出「良好試題的鑑別度應大於 0」，若為負值，代表低分群考生答對率反而高於高分群。本題庫 450 筆有鑑別度資料的題目<b>無一為負</b>（最小值學測 18、指考 11），所以這個籤目前篩不到任何題目；保留它是為了日後補進新年度資料時能立刻篩出。<br>難易度篩選同時涵蓋學測與指考的正式考題。有 110 題（學測 60、指考 50）沒有官方數據，勾選難易度時整批排除，原因分三種：<b>學測 90 年</b>——該年代大考中心只公布整卷層次的統計，逐題數據未公開；<b>四場補考</b>（學測 91、92，指考 93 敏督利、109）——大考中心未公布本卷逐題數據；<b>五份參考試卷與 110 年試辦考試</b>——非正式施測、沒有真實考生群，答對率這項統計並不存在，因此沒辦法拿參考卷的難度和正式卷相比。</div>
+        <div class="diff-note">難易度依大考中心公布的「全體考生答對率」（P 值）分成三級：<b>難</b>（25% 以下）／<b>中</b>（26–75%）／<b>易</b>（76% 以上）；大考中心公布的答對率都是整數。切點的由來：本題庫各題型的難易度都用同一套切點，方便互相比較。25% 原本是四選一的題目全部用猜的期望答對率；文意選填是 10 選 10 或 12 選 10，亂猜的期望答對率只有 10% 或更低，所以在這個題型，25% 以下表示四個考生裡答對的不到一個。75% 取的是對稱的另一端。<b>大考中心自己的難度用語是四級（難、中偏難、中偏易、易），與本題庫的三級不是同一套，不適合互相對照。</b><br>鑑別度（D 值）＝高分組答對率－低分組答對率，官方的分組方式是把全體考生依原始得分排序後，取<b>前三分之一</b>與<b>後三分之一</b>；大考中心說明「良好試題的鑑別度應該要大於0」，若為負值，代表低分組考生的答對率反而比高分組高。本題庫 450 筆有鑑別度資料的題目<b>無一為負</b>（最小值學測 18、指考 11）。<br>難易度篩選同時涵蓋學測與指考的正式考題。有 110 題（學測 60、指考 50）沒有答對率，勾選難易度時整批排除：這些試卷大考中心沒有公布逐題答對率，包括<b>學測 90 年</b>、<b>學測 91、92 年補考</b>、<b>指考 93 年補救考試與 109 年補考</b>、<b>五份參考試卷</b>與 <b>110 年學測試辦考試</b>（只公布級分統計）。</div>
         <div class="sec-title">依線索範圍篩選<span style="font-weight:400; text-transform:none; letter-spacing:0; font-size:11px; margin-left:6px;">（可複選，不選則不限範圍）</span></div>
         <div class="cat-grid" id="spanGrid"></div>
         <div class="span-legend">
@@ -674,11 +679,12 @@ function kkOpt(w){ w = String(w == null ? '' : w).trim(); return (window.KK && w
   </div>
 
   <div id="practiceView">
-    <span class="backLink" onclick="goHome()">← 回選單</span>
+    <span class="backLink" onclick="goHome()" style="padding:14px 0">← 回選單</span><a class="backLink" id="backMap" href="map/?back" hidden style="margin-left:22px;padding:14px 0;text-decoration:none">← 回題目地圖</a>
     <div class="printBar noPrint"><button type="button" class="printBtn" onclick="safePrint()">🖨️ 列印成考卷</button><span class="printSub">空白試卷，不含答案、解析和提示</span><div class="printMobile">手機上按鈕沒有反應時，也可以：iPhone 點「分享」（沒看到就先點「⋯」）→往下滑點「列印」；<span style="white-space:nowrap">Android（Chrome）</span>點「⋮」→「分享」→「列印」。</div></div>
     <div class="prog" id="progText"></div>
     <div class="bar"><div class="bar-fill" id="progBar" style="width:0%;"></div></div>
     <div id="practiceBody"></div>
+    <a class="mapEnd noPrint" id="backMapEnd" href="map/?back" hidden>← 回題目地圖</a>
   </div>
 
   <div id="historyView" style="display:none;">
@@ -699,7 +705,7 @@ function kkOpt(w){ w = String(w == null ? '' : w).trim(); return (window.KK && w
   
   <div class="noPrint" style="background:var(--paper-card); border:1px solid var(--rule); border-radius:4px; padding:13px 15px; margin:22px 0 6px; font-size:12.5px; line-height:1.8; color:var(--ink-soft);">
     <b style="font-family:'Noto Serif TC',serif; font-size:13.5px; color:var(--ink);">關於本題庫的資料</b><br>
-    答對率（P 值）與鑑別度（D 值）取自大考中心公布的官方統計，部分年度未公布，這些題目不會顯示數據。參考試卷與試辦考試屬非正式施測，篇名旁會標明。七類分類與線索範圍是老師的教學判斷、不是官方分類，見仁見智之處在所難免。解析由老師與 AI 共同撰寫、老師逐則看過。<br><b>改編練習</b>是本題庫自己改編的題目：文章改編自歷屆學測、指考閱讀測驗，照現行學測文意選填的版面出題，參考答案與解析都由本題庫撰寫。它們不是大考中心的試題，沒有官方答對率，也不算進 560 題、56 篇。<br>數字出處：大考中心統計資料索引頁<a href="https://www.ceec.edu.tw/xmdoc?xsmsid=0J018604485538810196" target="_blank" rel="noopener">學測各年度統計圖表↗</a>、<a href="https://www.ceec.edu.tw/xmdoc?xsmsid=0J018611000723433352" target="_blank" rel="noopener">指考／分科測驗各年度統計圖表↗</a>，逐題的「答對率及鑑別度表」就在各年度的統計圖表裡。名詞說明見大考中心<a href="https://www.ceec.edu.tw/xcepaper/cont?xsmsid=0J066588036013658199&amp;qunit=0J066614378153514816&amp;sid=0K042343829406896328" target="_blank" rel="noopener">《一起來認識學測與指考的試題答對率》↗</a>、<a href="https://www.ceec.edu.tw/xcepaper/cont?xsmsid=0J066588036013658199&amp;qunit=0J066614378153514816&amp;sid=0K073687789378174143" target="_blank" rel="noopener">《一起來認識學測與指考的試題鑑別度》↗</a>，收錄於「選才電子報 → 數字真相」專欄。<br>
+    答對率（P 值）與鑑別度（D 值）取自大考中心公布的官方統計，有些試卷大考中心沒有公布逐題答對率，這些題目不會顯示數據。出自參考試卷與試辦考試的文章，篇名旁會標明。七類分類與線索範圍是老師的教學判斷、不是官方分類，見仁見智之處在所難免。解析由老師與 AI 共同撰寫、老師逐則看過。<br><b>改編練習</b>是本題庫自己改編的題目：文章改編自歷屆學測、指考閱讀測驗，照現行學測文意選填的版面出題，參考答案與解析都由本題庫撰寫。它們不是大考中心的試題，沒有官方答對率，也不算進 560 題、56 篇。<br>數字出處：大考中心統計資料索引頁<a href="https://www.ceec.edu.tw/xmdoc?xsmsid=0J018604485538810196" target="_blank" rel="noopener">學測各年度統計圖表↗</a>、<a href="https://www.ceec.edu.tw/xmdoc?xsmsid=0J018611000723433352" target="_blank" rel="noopener">指考／分科測驗各年度統計圖表↗</a>，逐題的「答對率及鑑別度表」就在各年度的統計圖表裡。名詞說明見大考中心<a href="https://www.ceec.edu.tw/xcepaper/cont?xsmsid=0J066588036013658199&amp;qunit=0J066614378153514816&amp;sid=0K042343829406896328" target="_blank" rel="noopener">《一起來認識學測與指考的試題答對率》↗</a>、<a href="https://www.ceec.edu.tw/xcepaper/cont?xsmsid=0J066588036013658199&amp;qunit=0J066614378153514816&amp;sid=0K073687789378174143" target="_blank" rel="noopener">《一起來認識學測與指考的試題鑑別度》↗</a>，收錄於「選才電子報 → 數字真相」專欄。<br>
     <b>錯誤仍然可能存在</b>，發現任何問題歡迎回報，我會逐筆核對更正。本題庫完全免費、不用註冊、沒有廣告，歡迎自由分享。
   </div>
 
@@ -929,6 +935,7 @@ async function init(){
   scrMountStrip();
   renderProgress();
   startHard() || startFromQHash() || startFromFullHash();
+  try{ var fm = sessionStorage.getItem('pcFromMap'); sessionStorage.removeItem('pcFromMap'); if (fm && /^#(hard|q)-/.test(location.hash || '')){ var bm2=document.getElementById('backMap'); if(bm2) bm2.hidden=false; var be2=document.getElementById('backMapEnd'); if(be2) be2.hidden=false; } }catch(e){}
 }
 function toggleStrategy(){
   const el = document.getElementById('strategyBox');
@@ -955,7 +962,9 @@ function buildSingleYearGrid(){
   });
 }
 // 改編練習的 year 是（一）（二）……，緊接在「改編練習」後面，不留空格
-function examYear(p){ return p.exam === '改編練習' ? p.exam + p.year : p.exam + ' ' + p.year; }
+/* 特殊試卷的名稱：與題目地圖的寫法一致 */
+const SPECIAL_YEAR_LABELS = {'92年補考':'92 年學測補考','91年補考':'91 年學測補考','111年（＝115學年度參考試卷同內容）':'111 年學測','99課綱（102年施測）':'99 課綱學測參考試卷（102 年施測）','95課綱（98年施測）':'95 課綱學測參考試卷（98 年施測）','110年試辦考試':'110 年學測試辦考試','109年補考':'109 年指考補考','107年起施測參考試卷':'107 年起施測指考參考試卷','99課綱參考試卷（102年施測）':'99 課綱指考參考試卷（102 年施測）','95課綱參考試卷（98年施測）':'95 課綱指考參考試卷（98 年施測）','93年敏督利颱風受災地區考生補救考試':'93 年指考補救考試（敏督利颱風受災地區）'};
+function examYear(p){ return p.exam === '改編練習' ? p.exam + p.year : (SPECIAL_YEAR_LABELS[p.year] || p.exam + ' ' + p.year); }
 function dispTitle(p){
   return (p.title && p.year && p.title.indexOf(p.year) === 0) ? p.title.slice(p.year.length).trim() : p.title;
 }
@@ -1034,7 +1043,7 @@ function refreshAvail(){
   const spanOkI = it => selectedSpans.size === 0 || selectedSpans.has(it.contextSpan);
   const tierI = it => tierOf(it.accuracyRate, it.discrimination);
   const catOkI = it => selectedCats.size === 0 || (it.categories||[]).some(c => selectedCats.has(c));
-  const diffOkI = it => selectedDiffs.size === 0 || (tierI(it) && selectedDiffs.has(tierI(it)));
+  const diffOkI = it => diffMatch(it);
   const mainOkI = it => selectedDiffs.size > 0 ? diffOkI(it) : catOkI(it);
   const base = it => examOk(it) && (full || (yearOkI(it) && spanOkI(it) && mainOkI(it)));
   const cancelled = [];
@@ -1055,7 +1064,7 @@ function refreshAvail(){
       });
       document.querySelectorAll('#diffGrid .chip').forEach(el => {
         const d = el.dataset.v;
-        const av = ITEMS.some(it => examOk(it) && yearOkI(it) && spanOkI(it) && topicOk(it) && tierI(it) === d);
+        const av = ITEMS.some(it => examOk(it) && yearOkI(it) && spanOkI(it) && topicOk(it) && (d === '特殊' ? isSpecialD(it.discrimination) : tierI(it) === d));
         changed = setState(el, av, selectedDiffs, d) || changed;
       });
       document.querySelectorAll('#spanGrid .chip').forEach(el => {
@@ -1180,9 +1189,9 @@ function buildCatGrid(){
 function buildDiffGrid(){
   const grid = document.getElementById('diffGrid');
   grid.innerHTML = '';
-  ['難','中','易','特殊'].forEach(d => {
+  ['難','中','易','特殊'].filter(d => d!=='特殊' || ITEMS.some(it => isSpecialD(it.discrimination))).forEach(d => {
     const chip = document.createElement('div');
-    chip.className = 'chip'; chip.textContent = d; chip.dataset.v = d;
+    chip.className = 'chip'; chip.textContent = d === '特殊' ? '特殊：鑑別度為負' : d; chip.dataset.v = d;
     chip.onclick = () => { if(chip.classList.contains('disabled')) return; chip.classList.toggle('active'); selectedDiffs.has(d) ? selectedDiffs.delete(d) : selectedDiffs.add(d); refreshAvail(); };
     grid.appendChild(chip);
   });
@@ -1274,8 +1283,14 @@ function expInline(str){
     (s.h ? `<b>${renderNote(s.h)}</b>：` : '') + renderNote(s.body)
   ).join('<br>');
 }
-function tierOf(p, d){
-  if(d != null && d < 0) return '特殊';
+/* 難／中／易只看答對率，每題都歸其中一級；「特殊：鑑別度為負」是另外的標記，不從難中易扣掉 */
+function isSpecialD(d){ return d != null && d < 0; }
+function diffMatch(it){
+  if(selectedDiffs.size === 0) return true;
+  const t = tierOf(it.accuracyRate);
+  return (t && selectedDiffs.has(t)) || (selectedDiffs.has('特殊') && isSpecialD(it.discrimination));
+}
+function tierOf(p){
   if(p==null) return null;
   return p<=25?'難':p<=75?'中':'易';
 }
@@ -1320,8 +1335,7 @@ function startPractice(){
       if(!examOk(it) || !topicOk(it)) return false;
       const catOk = selectedCats.size===0 || (it.categories||[]).some(c=>selectedCats.has(c));
       const yearOk = selectedSingleYears.size===0 || selectedSingleYears.has(it.passageId);
-      const tier = tierOf(it.accuracyRate, it.discrimination);
-      const diffOk = selectedDiffs.size===0 || (tier && selectedDiffs.has(tier));
+      const diffOk = diffMatch(it);
       const spanOk = selectedSpans.size===0 || selectedSpans.has(it.contextSpan);
       if(selectedDiffs.size>0) return diffOk && yearOk && spanOk;
       return catOk && yearOk && spanOk;
@@ -1388,6 +1402,8 @@ function printWrongPassages(){ if(buildWrongSheet()) safePrint(); }
 window.addEventListener('afterprint', clearWrongSheet);
 
 function goHome(){
+  try{ sessionStorage.removeItem('pcFromMap'); sessionStorage.removeItem('pcMapState'); }catch(e){}
+  var bm=document.getElementById('backMap'); if(bm) bm.hidden=true; var be=document.getElementById('backMapEnd'); if(be) be.hidden=true;
   hidePanel();
   clearWrongSheet();
   document.getElementById('homeView').style.display='block';
@@ -1628,7 +1644,7 @@ function answerSingle(letter){
   });
   const spanTag = spanTagHtml(it);
   const ctxHtml = ctxBoxHtml(it);
-  const pd = (it.accuracyRate!=null) ? `<div class="pdTag">官方答對率 <b>P=${it.accuracyRate}%</b> ／ 鑑別度 <b>D=${it.discrimination}</b> ／ 難易度：<b>${tierOf(it.accuracyRate, it.discrimination)}</b></div>` : '';
+  const pd = (it.accuracyRate!=null) ? `<div class="pdTag">官方答對率 <b>P=${it.accuracyRate}%</b> ／ 鑑別度 <b>D=${it.discrimination}</b> ／ 難易度：<b>${tierOf(it.accuracyRate)}${isSpecialD(it.discrimination) ? '（特殊：鑑別度為負）' : ''}</b></div>` : '';
   document.getElementById('fbBox').innerHTML = `
     <div class="feedback">
       ${correct?'✓ 正確！':'✕ 正解是 ('+it.answer+') '+it.options[it.answer]}${spanTag}
@@ -1861,7 +1877,7 @@ function gradeFullPassage(){
     if(ok) correctCount++;
     if(!testMode){ recordAnswer(it.id, ok); try{ if(chosen && window.SCProgress) SCProgress.mark('passage', it.id); }catch(e){} }
     const pd = (it.accuracyRate != null)
-      ? `<div class="pdTag">官方答對率 <b>P=${it.accuracyRate}%</b> ／ 鑑別度 <b>D=${it.discrimination}</b> ／ 難易度：<b>${tierOf(it.accuracyRate, it.discrimination)}</b></div>`
+      ? `<div class="pdTag">官方答對率 <b>P=${it.accuracyRate}%</b> ／ 鑑別度 <b>D=${it.discrimination}</b> ／ 難易度：<b>${tierOf(it.accuracyRate)}${isSpecialD(it.discrimination) ? '（特殊：鑑別度為負）' : ''}</b></div>`
       : (examOf(it) === '改編練習' ? '' : `<div class="pdTag">本場考試沒有官方逐題答對率</div>`);
     review += `<div class="rv-item ${ok?'ok':'ng'}">
       <div class="rv-hd"><b>第${it.blankNum}題</b>　${ok ? '✓ 答對' : '✕ 你選 '+(chosen?'('+chosen+') '+it.options[chosen]:'未作答')+'　正解 ('+it.answer+') '+it.options[it.answer]}${spanTagHtml(it)}</div>
